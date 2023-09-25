@@ -112,39 +112,39 @@
       href: extensibility.md
     - name: Extensibility APIs 
       href: extensibility-apis.md
-    - name: Keymap extension
+    - name: Keymap
       href: extensions/keymap-extension.md
-    - name: Dashboard extension
+    - name: Dashboard
       href: extensions/dashboard-extension.md
-    - name: Notebook extension
+    - name: Notebook
       href: extensions/notebook-extension.md
-    - name: Jupyter Book extension
+    - name: Jupyter Book
       href: extensions/jupyter-book-extension.md
-    - name: Wizard extension
+    - name: Wizard
       href: extensions/wizard-extension.md
-  - name: Azure Arc extension
+  - name: Azure Arc
     href: extensions/azure-arc-extension.md
-  - name: Azure PostgreSQL migration extension
+  - name: Azure PostgreSQL migration
     items:
-    - name: Azure PostgreSQL migration extension
+    - name: Azure PostgreSQL migration
       href: extensions/azure-postgresql-migration-extension.md
     - name: Troubleshoot
       href: extensions/azure-postgresql-migration-extension-troubleshoot.md
-  - name: Azure SQL migration extension
+  - name: Azure SQL migration
     href: extensions/azure-sql-migration-extension.md
   - name: Azure Cosmos DB for MongoDB
     items:
-    - name: Azure Cosmos DB migration for MongoDB extension
+    - name: Azure Cosmos DB migration for MongoDB
       items:
-      - name: Overview
+      - name: Azure Cosmos DB migration for MongoDB
         href: extensions/database-migration-for-mongo-extension.md
-      - name: FAQ
+      - name: Azure Cosmos DB migration for MongoDB FAQ
         href: extensions/database-migration-for-mongodb-extension-faq.md
-    - name: Azure Cosmos DB API for MongoDB extension
-      href: extensions/azure-cosmos-db-mongodb-extension.md
-  - name: Azure Monitor Logs extension
+      - name: Azure Cosmos DB API for MongoDB
+        href: extensions/azure-cosmos-db-mongodb-extension.md
+  - name: Azure Monitor Logs
     href: extensions/azure-monitor-logs-extension.md
-  - name: Database Migration Assessment for Oracle extension
+  - name: Database Migration Assessment for Oracle
     items:
     - name: Overview
       href: extensions/database-migration-assessment-for-oracle-extension.md
@@ -152,15 +152,15 @@
       href: extensions/database-migration-assessment-for-oracle-extension-troubleshoot.md
   - name: Database Schema Conversion Toolkit
     href: extensions/dsct/toc.yml
-  - name: Data Virtualization extension
+  - name: Data Virtualization
     href: extensions/data-virtualization-extension.md
   - name: Extension for Oracle
     href: extensions/extension-for-oracle.md
   - name: GitHub Copilot extension
     href: extensions/github-copilot-extension.md
-  - name: Kusto extension
+  - name: Kusto 
     href: extensions/kusto-extension.md
-  - name: Machine Learning extension
+  - name: Machine Learning
     items:
     - name: Machine Learning extension overview
       href: extensions/machine-learning-extension.md
@@ -170,23 +170,23 @@
       href: extensions/machine-learning-extension-predictions.md
     - name: Import and view models
       href: extensions/machine-learning-extension-import-view-models.md
-  - name: Managed Instance extension
+  - name: Managed Instance
     href: extensions/azure-sql-managed-instance-extension.md
-  - name: MySQL extension
+  - name: MySQL
     href: extensions/mysql-extension.md
-  - name: PostgreSQL extension
+  - name: PostgreSQL
     href: extensions/postgres-extension.md
-  - name: PowerShell extension
+  - name: PowerShell
     href: extensions/powershell-extension.md
-  - name: SandDance extension
+  - name: SandDance
     href: extensions/sanddance-extension.md
-  - name: Schema Compare extension
+  - name: Schema Compare
     href: extensions/schema-compare-extension.md
-  - name: SQL Database Projects extension
+  - name: SQL Database Projects
     items:
-    - name: SQL Database Projects extension overview
+    - name: SQL Database Projects overview
       href: extensions/sql-database-project-extension.md
-    - name: Getting Started with the SQL Database Projects extension
+    - name: Getting Started with the SQL Database Projects
       href: extensions/sql-database-project-extension-getting-started.md
     - name: Build and Publish a Project
       href: extensions/sql-database-project-extension-build.md
@@ -196,9 +196,9 @@
       href: extensions/sql-database-project-extension-sdk-style-projects.md 
   - name: SQL Server Agent
     href: extensions/sql-server-agent-extension.md
-  - name: SQL Server Central Management Servers extension
+  - name: SQL Server Central Management Servers
     href: extensions/sql-server-cms-extension.md
-  - name: SQL Server dacpac extension
+  - name: SQL Server dacpac
     href: extensions/sql-server-dacpac-extension.md
   - name: SQL Server Import
     href: extensions/sql-server-import-extension.md
@@ -210,14 +210,14 @@
     href: notebooks/notebooks-guidance.md
   - name: Kernels
     items: 
-  - name: Log Analytics Kernel
-    href: notebooks/notebooks-azure-monitor-logs.md
-  - name: Python Kernel
-    href: notebooks/notebooks-python-kernel.md
-  - name: Python Kernel Offline
-    href: notebooks/notebooks-python-offline-installation.md
-  - name: SQL Kernel
-    href: notebooks/notebooks-sql-kernel.md
+    - name: Log Analytics Kernel
+      href: notebooks/notebooks-azure-monitor-logs.md
+    - name: Python Kernel
+      href: notebooks/notebooks-python-kernel.md
+    - name: Python Kernel Offline
+      href: notebooks/notebooks-python-offline-installation.md
+    - name: SQL Kernel
+      href: notebooks/notebooks-sql-kernel.md
   - name: Parameterization
     items: 
     - name: Papermill Parameterization
