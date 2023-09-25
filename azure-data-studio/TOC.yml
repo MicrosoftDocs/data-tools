@@ -102,8 +102,26 @@
       href: settings-list.md
 - name: Extensions
   items:
-  - name: Extensions overview
+  - name: Overview
     href: extensions/add-extensions.md
+  - name: Authoring
+    items:
+    - name: Extension authoring
+      href: extensions/extension-authoring.md
+    - name: Extensibility overview
+      href: extensibility.md
+    - name: Extensibility APIs 
+      href: extensibility-apis.md
+    - name: Keymap extension
+      href: extensions/keymap-extension.md
+    - name: Dashboard extension
+      href: extensions/dashboard-extension.md
+    - name: Notebook extension
+      href: extensions/notebook-extension.md
+    - name: Jupyter Book extension
+      href: extensions/jupyter-book-extension.md
+    - name: Wizard extension
+      href: extensions/wizard-extension.md
   - name: Azure Arc extension
     href: extensions/azure-arc-extension.md
   - name: Azure PostgreSQL migration extension
@@ -114,22 +132,24 @@
       href: extensions/azure-postgresql-migration-extension-troubleshoot.md
   - name: Azure SQL migration extension
     href: extensions/azure-sql-migration-extension.md
+  - name: Azure Cosmos DB for MongoDB
+    items:
+    - name: Azure Cosmos DB migration for MongoDB extension
+      items:
+      - name: Overview
+        href: extensions/database-migration-for-mongo-extension.md
+      - name: FAQ
+        href: extensions/database-migration-for-mongodb-extension-faq.md
+    - name: Azure Cosmos DB API for MongoDB extension
+      href: extensions/azure-cosmos-db-mongodb-extension.md
   - name: Azure Monitor Logs extension
     href: extensions/azure-monitor-logs-extension.md
-  - name: Azure Cosmos DB API for MongoDB extension
-    href: extensions/azure-cosmos-db-mongodb-extension.md
   - name: Database Migration Assessment for Oracle extension
     items:
     - name: Overview
       href: extensions/database-migration-assessment-for-oracle-extension.md
     - name: Troubleshoot
       href: extensions/database-migration-assessment-for-oracle-extension-troubleshoot.md
-  - name: Azure Cosmos DB migration for MongoDB extension
-    items:
-    - name: Overview
-      href: extensions/database-migration-for-mongo-extension.md
-    - name: FAQ
-      href: extensions/database-migration-for-mongodb-extension-faq.md
   - name: Database Schema Conversion Toolkit
     href: extensions/dsct/toc.yml
   - name: Data Virtualization extension
@@ -184,36 +204,14 @@
     href: extensions/sql-server-import-extension.md
   - name: SQL Server Profiler
     href: extensions/sql-server-profiler-extension.md
-  - name: Authoring
-    items:
-    - name: Extension authoring
-      href: extensions/extension-authoring.md
-    - name: Extensibility overview
-      href: extensibility.md
-    - name: Extensibility APIs 
-      href: extensibility-apis.md
-    - name: Keymap extension
-      href: extensions/keymap-extension.md
-    - name: Dashboard extension
-      href: extensions/dashboard-extension.md
-    - name: Notebook extension
-      href: extensions/notebook-extension.md
-    - name: Jupyter Book extension
-      href: extensions/jupyter-book-extension.md
-    - name: Wizard extension
-      href: extensions/wizard-extension.md
 - name: Notebooks
   items:
-  - name: Notebooks overview
+  - name: Overview
     href: notebooks/notebooks-guidance.md
-  - name: Notebooks views
-    href: notebooks/notebooks-views.md
+  - name: Kernels
+    items: 
   - name: Log Analytics Kernel
     href: notebooks/notebooks-azure-monitor-logs.md
-  - name: Kusto Kernel
-    href: notebooks/notebooks-kusto-kernel.md
-  - name: Kqlmagic
-    href: notebooks/notebooks-kqlmagic.md
   - name: Python Kernel
     href: notebooks/notebooks-python-kernel.md
   - name: Python Kernel Offline
@@ -228,6 +226,8 @@
       href: notebooks/parameterize-uri.md
     - name: Run with Parameters
       href: notebooks/run-with-parameters.md 
+  - name: Views
+    href: notebooks/notebooks-views.md
 - name: References
   items:
   - name: SQL tools
