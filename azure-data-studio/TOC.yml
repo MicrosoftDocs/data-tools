@@ -1,13 +1,12 @@
 - name: Azure Data Studio documentation
   href: ./index.yml
-
+  expanded: true
 - name: Download and release notes
   items:
   - name: Download Azure Data Studio
     href: download-azure-data-studio.md
   - name: Release notes
     href: release-notes-azure-data-studio.md
-
 - name: Overview
   items:
   - name: Azure Data Studio
