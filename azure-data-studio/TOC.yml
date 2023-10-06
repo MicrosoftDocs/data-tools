@@ -115,8 +115,6 @@
       href: extensions/keymap-extension.md
     - name: Dashboard
       href: extensions/dashboard-extension.md
-    - name: Notebook
-      href: extensions/notebook-extension.md
     - name: Jupyter Book
       href: extensions/jupyter-book-extension.md
     - name: Wizard
