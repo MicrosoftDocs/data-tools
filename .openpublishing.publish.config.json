@@ -31,5 +31,14 @@
       "branch_mapping": {}
     }
   ],
-  "branch_target_mapping": {}
+  "branch_target_mapping": {},
+  "docs_build_engine": {},
+  "contribution_branch_mappings": null,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "enable_branch_build_custom_validation": true,
+  "enable_pull_request_custom_validation": true,
+  "redirection_files": [
+    ".openpublishing.redirection.azure-data-studio.json"
+  ]
 }
