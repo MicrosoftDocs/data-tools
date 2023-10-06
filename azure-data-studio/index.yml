@@ -87,7 +87,7 @@ landingContent:
           - text: Extend the functionality of Azure Data Studio
             url:  extensions/add-extensions.md
           - text: GitHub Copilot extension
-            url:  extensions/github-copilot-extension.md
+            url:  extensions/github-copilot-extension-overview.md
           - text: Kusto (KQL)
             url:  extensions/kusto-extension.md
           - text: MySQL extension

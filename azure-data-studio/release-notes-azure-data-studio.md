@@ -117,8 +117,8 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 | Profiler Extension | Introduced a progress dialog when opening an XEL file |
 | Server Properties | Introduced support for viewing server properties (Preview) |
 | SQL Database Projects Extension | Released version 1.3.1 |
-| SQL Database Projects Extension | Added support for "Azure Synapse Serverless SQL Pool” target platform |
-| SQL Database Projects Extension | Added support for “Synapse Data Warehouse in Microsoft Fabric” target platform |
+| SQL Database Projects Extension | Added support for "Azure Synapse Serverless SQL Pool" target platform |
+| SQL Database Projects Extension | Added support for "Synapse Data Warehouse in Microsoft Fabric" target platform |
 | SQL Database Projects Extension | Updated to use Microsoft.Build.Sql SDK version 0.1.12-preview |
 
 #### Bug fixes in 1.46.0
@@ -151,7 +151,7 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 | Result Set | Corrected XML formatting when opening a column from the result set |
 | Result Set | Fixed issue where copying results to clipboard did not work |
 | Schema Compare | Added support to automatically resize the split view when the window changes size |
-| Schema Compare | Addressed error “StartIndex cannot be less than zero” which occurred when applying change using Schema Compare |
+| Schema Compare | Addressed error "StartIndex cannot be less than zero" which occurred when applying change using Schema Compare |
 | Schema Compare | Display 'Yes' button to re-compare after changing options in Schema Compare |
 | SQL Database Projects | Fixed issue where databases were not populated if a project was created from the server instead of a database |
 | SQL Database Projects | Addressed error 'Could not run the "SqlModelResolutionTask" task because MSBuild could not create or connect to a task host with runtime "NET" and architecture "arm64"' resulting in build failure on arm64 with SDK-style and legacy style projects |
@@ -304,7 +304,7 @@ For a full list of bug fixes addressed for the May 2023 Hotfix release, visit th
 | Connection | Added support for advanced connection options for other providers |
 | General | Added support for customizing table keyboard shortcuts |
 | General | Added warning notification on startup if Azure PII logging is enabled |
-| GitHub Copilot | GitHub Copilot extension for autocomplete-style suggestions added to extension gallery. Learn more at [GitHub Copilot extension](./extensions/github-copilot-extension.md) |
+| GitHub Copilot | GitHub Copilot extension for autocomplete-style suggestions added to extension gallery. Learn more at [GitHub Copilot extension](./extensions/github-copilot-extension-overview.md) |
 | Notebooks | Fixed issue where deleted text listed using the Find feature |
 | Object Explorer | Introduced filtering capability for Object Explorer (preview) |
 | Query Editor | Shorted text for Change Connection and Export as Notebook button |
