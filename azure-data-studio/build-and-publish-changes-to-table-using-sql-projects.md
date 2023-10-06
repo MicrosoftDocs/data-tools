@@ -5,8 +5,8 @@ author: tdoshin
 ms.author: timioshin
 ms.reviewer: maghan
 ms.date: 4/12/2023
-ms.service: Azure Data Studio
-ms.topic: how-to
+ms.service: azure-data-studio
+ms.topic: tutorial
 ---
 
 # Building and Deploying Changes to tables using the SQL Database Projects extension
@@ -29,7 +29,7 @@ You will also need to have the SQL Database Projects extension installed. Refer 
 
     :::image type="content" source="media/table-designer-azure-data-studio/table-designer-show-how-to-create-project-from-database.png" alt-text="Screenshot of the object explorer in Azure Data Studio showing how to create a project from a database object.":::
 
-2. Select the location in which you want to store your **Target project** in and name the file containing the project to your preference. You can also configure the **Folder structure** settings to any provided options in the drop-down. This tutorial will use the ***Schema/Object*** type folder structure. When done, select **Create**. When this project has been extracted, you will see a **Extract project files succeeded** message.
+2. Select the location in which you want to store your **Target project** in and name the file containing the project to your preference. You can also configure the **Folder structure** settings to any of the provided options in the drop-down. In this tutorial, we will use the ***Schema/Object*** type folder structure. When done, select **Create**. When this project has been extracted, you will see a **Extract project files succeeded** message.
 
 3. From the Azure Data Studio sidebar menu, select the **Database Projects** icon to open the SQL Database Projects extension. Navigate to the database project folder you created. Then, in the **Person** schema folder in this project, navigate to the **Tables** folder, and expand the drop-down of this folder. Right-click and open any of the tables in the designer mode to open the table design of this table. In this example, we work on the ***Person.sql*** table.
 

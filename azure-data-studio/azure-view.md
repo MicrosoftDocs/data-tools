@@ -84,7 +84,7 @@ Azure View provides quick access to help you connect to SQL Server instances and
 
 1. The **Manage Server** window will automatically open for the connected SQL server/database after connection succeeds.  If the connection was added to the **Default** or existing **Server group**, it appears in the **Connection View**.
 
-## Next steps
+## Related content
 
-- [Connect and query Azure SQL Database with [!INCLUDE [azure-data-studio-short](includes/azure-data-studio-short.md)]](quickstart-sql-database.md)
-- [Connect and query data in Azure Synapse Analytics with [!INCLUDE [azure-data-studio-short](includes/azure-data-studio-short.md)]](quickstart-sql-dw.md)
+- [Quickstart: Use Azure Data Studio to connect and query Azure SQL Database](quickstart-sql-database.md)
+- [Quickstart: Use Azure Data Studio to connect and query data using a dedicated SQL pool in Azure Synapse Analytics](quickstart-sql-dw.md)
