@@ -67,7 +67,7 @@
           "**/*.md": "jroth"
         },
         "breadcrumb_path": {
-          "**/*.md": "~/breadcrumb/toc.yml"
+          "**/*.yml": "/azure-data-studio/breadcrumb/toc.yml"
         },
         "layout": {
           "**/index.yml": "LandingPage"
