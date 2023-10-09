@@ -1,6 +1,5 @@
 {
   "build": {
-
     "content": [
       {
         "src": "./",
@@ -19,7 +18,6 @@
         ]
       }
     ],
-
     "resource": [
       {
         "src": "./",
@@ -34,57 +32,16 @@
         ]
       }
     ],
-
     "overwrite": [],
     "externalReference": [],
     "markdownEngineName": "markdig",
-
     "globalMetadata": {
-      "layout": "Conceptual",
-      "uhfHeaderId": "MSDocsHeader-DocsSQL",
-      "contributors_to_exclude": [
-        "hexiaokai",
-        "openpublishingbuild",
-        "sudeepku",
-        "saldana",
-        "iRaindrop"
-      ],
-      "searchScope": [
-        "azure data studio"
-      ],
-
-      "toc_preview": true,
+      "breadcrumb_path": "/azure-data-studio/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
       "feedback_system": "None",
-      "feedback_github_repo": "MicrosoftDocs/data-tools",
-      "feedback_product_url": "https://feedback.azure.com/d365community/search/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0?q=azure+data+studio",
-      "titleSuffix": "Azure Data Studio",
-      "recommendations": true
+      "permissioned-type": "public"
     },
-
-    "fileMetadata": {
-      "fileMetadata": {
-        "feedback_system": {
-          "azure-data-studio/**/*.md": "GitHub"
-        },
-        "feedback_product_url": {
-          "azure-data-studio/**/*.md": "https://github.com/microsoft/azuredatastudio/issues/",
-        },
-
-        "manager": {
-        "**/*.md": "jroth"
-      },
-
-      "breadcrumb_path": {
-        "**/*.md": "~/breadcrumb/toc.yml"
-      },
-      "layout": {
-        "**/index.yml": "LandingPage"
-      },
-
-      "titleSuffix": {
-        "azure-data-studio/**/*.md": "Azure Data Studio"
-      },
-
+    "fileMetadata": {},
     "template": [],
     "dest": "azure-data-studio"
   }
