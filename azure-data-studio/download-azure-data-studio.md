@@ -9,6 +9,7 @@ ms.service: azure-data-studio
 ms.topic: overview
 ms.custom: intro-overview
 ---
+
 # Download and install Azure Data Studio
 
 Azure Data Studio is a lightweight, cross-platform data management and development tool with connectivity to popular cloud and on-premises databases. Azure Data Studio supports Windows, macOS, and Linux, with immediate capability to connect to Azure SQL and SQL Server.  Browse the extension library for more database support options including MySQL, PostgreSQL, and CosmosDB.
