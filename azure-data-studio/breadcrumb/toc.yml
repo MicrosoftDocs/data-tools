@@ -1,11 +1,3 @@
 - name: Azure Data Studio
    tocHref: /azure-data-studio/
    topicHref: /azure-data-studio/index
-   items:
-   - name: Azure DevOps
-     tocHref: /azure/devops/
-     topicHref: /azure/devops/index
-    items:
-    - name: Azure Boards
-      tocHref: /azure/devops/boards/
-      topicHref: /azure/devops/boards/index
