@@ -36,7 +36,8 @@
     "externalReference": [],
     "markdownEngineName": "markdig",
     "globalMetadata": {
-      "layout": "Conceptual",
+      "breadcrumb_path": "/azure-data-studio/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-DocsSQL",
       "contributors_to_exclude": [
         "hexiaokai",
@@ -49,7 +50,7 @@
         "azure data studio"
       ],
       "toc_preview": true,
-      "feedback_system": "None",
+      "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/data-tools",
       "feedback_product_url": "https://feedback.azure.com/d365community/search/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0?q=azure+data+studio",
       "titleSuffix": "Azure Data Studio",
@@ -67,7 +68,7 @@
           "**/*.md": "jroth"
         },
         "breadcrumb_path": {
-          "**/*.md": "~/breadcrumb/toc.yml"
+          "**/*.yml": "~/breadcrumb/toc.yml"
         },
         "layout": {
           "**/index.yml": "LandingPage"
