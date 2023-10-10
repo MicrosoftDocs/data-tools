@@ -66,6 +66,9 @@
         "manager": {
           "**/*.md": "jroth"
         },
+        "breadcrumb_path": {
+          "**/*.yml": "~/breadcrumb/toc.yml"
+        },
         "layout": {
           "**/index.yml": "LandingPage"
         },
