@@ -1,7 +1,11 @@
-- name: Learn
-  tocHref: /
-  topicHref: /
-  items:
-    - name: Azure Data Studio
-      tocHref: /azure-data-studio/
-      topicHref: /azure-data-studio/index
+- name: Azure
+   tocHref: /azure/
+   topicHref: /azure/index
+   items:
+   - name: Azure DevOps
+     tocHref: /azure/devops/
+     topicHref: /azure/devops/index
+    items:
+    - name: Azure Boards
+      tocHref: /azure/devops/boards/
+      topicHref: /azure/devops/boards/index
