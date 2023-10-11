@@ -37,7 +37,6 @@
     "markdownEngineName": "markdig",
     "globalMetadata": {
       "breadcrumb_path": "/azure-data-studio/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-DocsSQL",
       "contributors_to_exclude": [
         "hexiaokai",
@@ -66,9 +65,6 @@
         },
         "manager": {
           "**/*.md": "jroth"
-        },
-        "breadcrumb_path": {
-          "**/*.yml": "~/breadcrumb/toc.yml"
         },
         "layout": {
           "**/index.yml": "LandingPage"
