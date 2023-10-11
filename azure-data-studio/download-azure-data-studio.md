@@ -12,7 +12,7 @@ ms.custom: intro-overview
 
 # Download and install Azure Data Studio
 
-Azure Data Studio is a lightweight, cross-platform data management and development tool with connectivity to popular cloud and on-premises databases. Azure Data Studio supports Windows, macOS, and Linux, with immediate capability to connect to Azure SQL and SQL Server.  Browse the extension library for more database support options including MySQL, PostgreSQL, and CosmosDB.
+Azure Data Studio is a lightweight, cross-platform data management and development tool with connectivity to popular cloud and on-premises databases. Azure Data Studio supports Windows, macOS, and Linux, with immediate capability to connect to Azure SQL and SQL Server.  Browse the extension library for more database support options including MySQL, PostgreSQL, and Cosmos DB.
 
 Azure Data Studio's familiar interface offers a modern editor experience with IntelliSense, code snippets, source control integration, and an integrated terminal.  Engineered with the data platform user in mind, its extensibility allows users to customize their experience by installing the extensions relevant to their workflow, including database migrations, charting, GitHub Copilot, and more!
 
@@ -37,7 +37,7 @@ Azure Data Studio 1.46.1 is the latest general availability (GA) version.
 | | .rpm<sup>1</sup> | [64-bit](https://go.microsoft.com/fwlink/?linkid=2247734) |
 | macOS | .zip | [Universal](https://go.microsoft.com/fwlink/?linkid=2247376)&emsp;[Intel Chip](https://go.microsoft.com/fwlink/?linkid=2247377)&emsp;[Apple Silicon](https://go.microsoft.com/fwlink/?linkid=2247465) |
 
-<sup>1</sup> There is a known issue with install on RHEL. For more information see the [release notes](release-notes-azure-data-studio.md#known-issues-in-1460).
+<sup>1</sup> There's a known issue with install on RHEL. For more information, see the [release notes](release-notes-azure-data-studio.md#known-issues-in-1460).
 
 If you have comments or suggestions or want to report a problem with downloading Azure Data Studio, submit an issue to our team on the [Azure Data Studio feedback page](https://github.com/microsoft/azuredatastudio/issues/).
 
