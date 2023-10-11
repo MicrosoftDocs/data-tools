@@ -22,6 +22,8 @@
   ],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/data-tools",
+  "git_repository_branch_open_to_public_contributors": "main",
   "need_preview_pull_request": true,
   "dependent_repositories": [
     {
@@ -32,13 +34,5 @@
     }
   ],
   "branch_target_mapping": {},
-  "docs_build_engine": {},
-  "contribution_branch_mappings": null,
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
-  "enable_branch_build_custom_validation": true,
-  "enable_pull_request_custom_validation": true,
-  "redirection_files": [
-    ".openpublishing.redirection.azure-data-studio.json"
-  ]
+  "targets": {}
 }
