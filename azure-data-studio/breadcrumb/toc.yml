@@ -1,6 +1,6 @@
-- name:  SQL
-  tocHref: /sql/
-  topicHref: /sql/
+- name:  Azure
+  tocHref: /azure/
+  topicHref: /azure/
   items:
   - name: Azure Data Studio
     tocHref: /azure-data-studio/
