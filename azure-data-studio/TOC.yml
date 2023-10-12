@@ -221,7 +221,7 @@
       - name: Install Python in an offline Windows environment
         href: notebooks/notebooks-python-offline-installation.md
       - name: Create and run a notebook with Kqlmagic
-        href: notebooks/kqlmagic.md
+        href: notebooks/notebooks-kqlmagic.md
     - name: SQL kernel
       href: notebooks/notebooks-sql-kernel.md
   - name: Parameterization
