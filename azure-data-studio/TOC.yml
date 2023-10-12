@@ -211,7 +211,7 @@
     href: notebooks/notebooks-guidance.md
   - name: https://learn.microsoft.com/en-us/azure-data-studio/notebooks/notebooks-kqlmagic
   - name: Create and run a notebook with Kqlmagic
-    href: notebooks/create-and-run-notebook-with-kqlmagic.md
+    href: notebooks/kqlmagic.md
   - name: Kernels
     items: 
     - name: Log Analytics Kernel
