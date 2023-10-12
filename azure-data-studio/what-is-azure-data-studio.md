@@ -3,7 +3,7 @@ title: What is Azure Data Studio
 description: Azure Data Studio is a free, light-weight tool, that runs on Windows, macOS, and Linux, for managing SQL Server, Azure SQL Database, and Azure Synapse Analytics.
 author: "markingmyname"
 ms.author: "maghan"
-ms.reviewer: erinstellato
+ms.reviewer: dlevy
 ms.date: 08/10/2023
 ms.service: azure-data-studio
 ms.topic: "overview"
