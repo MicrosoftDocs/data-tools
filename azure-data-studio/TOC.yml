@@ -209,15 +209,20 @@
   items:
   - name: Overview
     href: notebooks/notebooks-guidance.md
+  - name: https://learn.microsoft.com/en-us/azure-data-studio/notebooks/notebooks-kqlmagic
   - name: Kernels
     items: 
-    - name: Log Analytics Kernel
+    - name: Log Analytics kernel
       href: notebooks/notebooks-azure-monitor-logs.md
-    - name: Python Kernel
-      href: notebooks/notebooks-python-kernel.md
-    - name: Python Kernel Offline
-      href: notebooks/notebooks-python-offline-installation.md
-    - name: SQL Kernel
+    - name: Python kernel
+      items: 
+      - name: Create and run a Python notebook
+        href: notebooks/notebooks-python-kernel.md
+      - name: Install Python in an offline Windows environment
+        href: notebooks/notebooks-python-offline-installation.md
+      - name: Create and run a notebook with Kqlmagic
+        href: notebooks/notebooks-kqlmagic.md
+    - name: SQL kernel
       href: notebooks/notebooks-sql-kernel.md
   - name: Parameterization
     items: 
