@@ -8,6 +8,7 @@ ms.date: 11/03/2021
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
+
 # Create and run a notebook with Azure Monitor Logs (Preview)
 
 This article shows you how to create and run an [Azure Data Studio notebook](./notebooks-guidance.md) using the [Azure Monitor Log extension](../extensions/azure-monitor-logs-extension.md) to connect to a [Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-overview) to view results for an Azure SQL database.
