@@ -145,7 +145,6 @@ To learn more about Azure Data Studio, see the following resources:
 - [SQL tools](/sql/tools/overview-sql-tools)
 - [SSMS](/sql/ssms/download-sql-server-management-studio-ssms)
 - [Azure Data Architecture Guide](/azure/architecture/data-guide/)
-- [SQL Server Blog](https://cloudblogs.microsoft.com/sqlserver/)
 
 [!INCLUDE [contribute-to-content](includes/contribute-to-content.md)]
 
