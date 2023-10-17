@@ -9,7 +9,11 @@
       "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
-        "Conceptual": "Content"
+        "ZonePivotGroups": "Toc",
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "LandingData": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -21,12 +25,12 @@
     " mikeray@microsoft.com"
   ],
   "sync_notification_subscribers": [
-    "jroth@microsoft.com",
+    " jroth@microsoft.com",
     " Mark.Ghanayem@microsoft.com",
     " Masha.Thomas@microsoft.com",
     " Mike.Ray@microsoft.com",
     " randolphwest@microsoft.com",
-    "  sidandrews@microsoft.com",
+    " sidandrews@microsoft.com",
     " vanto@microsoft.com",
     " wiassaf@microsoft.com"
   ],
@@ -42,6 +46,33 @@
       "branch_mapping": {}
     }
   ],
-  "branch_target_mapping": {},
-  "targets": {}
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "PDF"
+    ],
+    "main": [
+      "Publish",
+      "PDF"
+    ],
+    "build-pdf": [
+      "Publish",
+      "PDF"
+    ]
+  },
+  "need_generate_pdf_url_template": true,
+  "targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "docs_build_engine": {},
+  "contribution_branch_mappings": null,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "enable_branch_build_custom_validation": true,
+  "enable_pull_request_custom_validation": true,
+  "redirection_files": [
+    ".openpublishing.redirection.azure-data-studio.json"
+  ]
 }
