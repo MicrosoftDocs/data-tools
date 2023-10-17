@@ -147,4 +147,3 @@ Because Azure Data Studio inherits user settings functionality from Visual Studi
 ## Related content
 
 - [Modify User and Workspace settings](settings.md)
-- [Move user settings](settings-move.md)

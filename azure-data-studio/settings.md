@@ -89,4 +89,3 @@ If you're updating Azure Data Studio and want to keep your settings, keyboard sh
 ## Related content
 
 - [User and Workspace settings](settings-list.md)
-- [Move user settings](settings-move.md)
