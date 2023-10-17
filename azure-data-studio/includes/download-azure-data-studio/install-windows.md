@@ -50,7 +50,7 @@ The user installer also provides a smoother background update experience. For mo
 1. Run the following command to install **Azure Data Studio**.
 
    ```cmd
-   winget search "azure data studio"
+   winget install "azure data studio"
    ```
 
 #### [Unattended install](#tab/win-unattended-install)
