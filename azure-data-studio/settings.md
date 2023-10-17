@@ -1,8 +1,8 @@
 ---
 title: Modify User and Workspace settings
 description: Learn how to use settings to customize Azure Data Studio's editor, user interface, and functional behavior to suit your preferences.
-author: erinstellato-ms
-ms.author: erinstellato
+author: dlevy-msft
+ms.author: dlevy
 ms.reviewer: maghan, randolphwest
 ms.date: 08/28/2023
 ms.service: azure-data-studio
@@ -66,6 +66,7 @@ Depending on your platform, the user settings file is located here:
 - **Mac** `$HOME/Library/Application Support/azuredatastudio/User/settings.json`
 - **Linux** `$HOME/.config/azuredatastudio/User/settings.json`
 
-## Next steps
+## Related content
 
 - [User and Workspace settings](settings-list.md)
+- [Move user settings](settings-move.md)

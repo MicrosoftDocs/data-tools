@@ -99,6 +99,8 @@
       href: settings.md
     - name: User and Workspace settings
       href: settings-list.md
+    - name: move user settings
+      href: settings-move.md
 - name: Extensions
   items:
   - name: Overview
