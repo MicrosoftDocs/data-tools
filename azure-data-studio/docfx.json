@@ -69,9 +69,6 @@
         "layout": {
           "**/index.yml": "LandingPage"
         },
-        "titleSuffix": {
-          "azure-data-studio/**/*.md": "Azure Data Studio"
-        },
         "template": [],
         "dest": "azure-data-studio"
       }

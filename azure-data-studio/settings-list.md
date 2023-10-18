@@ -1,8 +1,8 @@
 ---
 title: User and Workspace settings
 description: Descriptions for settings available in Azure Data Studio.
-author: erinstellato-ms
-ms.author: erinstellato
+author: dlevy-msft
+ms.author: dlevy
 ms.reviewer: maghan, randolphwest
 ms.date: 08/28/2023
 ms.service: azure-data-studio
@@ -143,3 +143,7 @@ By default, preview features aren't enabled in Azure Data Studio. Enable this op
 ## Resources
 
 Because Azure Data Studio inherits user settings functionality from Visual Studio Code, additional information about settings can be found in the [Settings for Visual Studio Code](https://code.visualstudio.com/docs/getstarted/settings) article.
+
+## Related content
+
+- [Modify User and Workspace settings](settings.md)
