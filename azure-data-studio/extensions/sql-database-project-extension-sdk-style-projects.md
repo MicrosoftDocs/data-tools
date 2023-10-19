@@ -4,7 +4,7 @@ description: Getting started using SDK-style SQL projects with the SQL Database 
 author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan
-ms.date: 4/12/2023
+ms.date: 10/19/2023
 ms.service: azure-data-studio
 ms.topic: conceptual
 ms.custom: intro-get-started
@@ -53,7 +53,7 @@ The target platform property is contained in the `DSP` tag in the `.sqlproj` fil
 
 ```xml
 <Project DefaultTargets="Build">
-  <Sdk Name="Microsoft.Build.Sql" Version="0.1.9-preview" />
+  <Sdk Name="Microsoft.Build.Sql" Version="0.1.12-preview" />
   <PropertyGroup>
     <Name>AdventureWorks</Name>
     <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
@@ -68,6 +68,8 @@ Valid settings for the target platform are:
 - `Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider`
 - `Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider`
 - `Microsoft.Data.Tools.Schema.Sql.SqlDwDatabaseSchemaProvider`
+- `Microsoft.Data.Tools.Schema.Sql.SqlServerlessDatabaseSchemaProvider`
+- `Microsoft.Data.Tools.Schema.Sql.SqlDwUnifiedDatabaseSchemaProvider`
 
 ### Database references
 The database model validation at build time can be extended past the contents of the SQL project through database references. Database references specified in the `.sqlproj` file can reference another SQL project or a `.dacpac` file, representing either another database or more components of the same database.
