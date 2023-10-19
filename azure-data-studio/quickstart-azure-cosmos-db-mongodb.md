@@ -3,8 +3,8 @@ title: "Quickstart: Connect and query Azure Cosmos DB API for MongoDB (preview)"
 description: Use Azure Data Studio to connect to Azure Cosmos DB for MongoDB API, and then query a collection.
 author: seesharprun
 ms.author: sidandrews
-ms.reviewer: esarroyo
-ms.date: 05/10/2023
+ms.reviewer: esarroyo, randolphwest
+ms.date: 01/03/2024
 ms.service: azure-data-studio
 ms.topic: quickstart
 ---
@@ -12,6 +12,9 @@ ms.topic: quickstart
 # Quickstart: Use Azure Data Studio to connect and query Azure Cosmos DB API for MongoDB (Preview)
 
 This quickstart shows how to use Azure Data Studio to connect to the Azure Cosmos DB API for MongoDB.
+
+> [!NOTE]  
+> [!INCLUDE [azure-active-directory-microsoft-entra-id](includes/azure-active-directory-microsoft-entra-id.md)]
 
 ## Prerequisites
 
@@ -41,8 +44,9 @@ To complete this quickstart, you need Azure Data Studio and an Azure Cosmos DB A
     | --- | --- | --- |
     | **Connection type** | *Mongo account* | Set this value to *Mongo account* to use with Azure Cosmos DB API for MongoDB. |
     | **Mongo account** | *\[cosmos-account-name\]* | Name of Azure Cosmos DB account. |
-    | **Authentication type** | *Azure Active Directory - Universal with MFA support* | Choose between *Azure Active Directory* or *Basic* authentication options. |
-    | **Account** | *\[current-aad-user-name\]* | Only visible if using *Azure Active Directory* authentication. Select the Azure AD account that you wish to use for authentication. |
+    | **Authentication type** | *Azure Active Directory - Universal with MFA support* | Choose between *Microsoft Entra ID* or *Basic* authentication options. |
+    | **Account** | *\[current-aad-user-name\]* | Only visible if using *Microsoft Entra* authentication. Select the Microsoft Entra account that you wish to use for authentication. |
+    | **Microsoft Entra tenant** | | Only visible if using Microsoft Entra authentication. Select the Microsoft Entra tenant the MongoDB instance resides in. |
     | **Username** | | Only visible if using *Basic* authentication. Enter the username for authentication. |
     | **Connection String** | | Only visible if using *Basic* authentication. Enter the connection string for authentication. |
     | **Server group** | *\<Default\>* | |
@@ -53,7 +57,7 @@ To complete this quickstart, you need Azure Data Studio and an Azure Cosmos DB A
 1. Select **Connect**.
 
     > [!IMPORTANT]
-    > If you selected *Azure Active Directory* authentication, you may be prompted to select a MongoDB connection string value to use for your connection.
+    > If you selected *Microsoft Entra* authentication, you may be prompted to select a MongoDB connection string value to use for your connection.
 
 Your server will open in the **SERVERS** sidebar after you've successfully connected.
 

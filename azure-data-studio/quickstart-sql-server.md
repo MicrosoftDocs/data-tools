@@ -7,7 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 01/03/2024
 ms.service: azure-data-studio
 ms.topic: "quickstart"
-ms.custom: intro-quickstart
+ms.custom:
+  - intro-quickstart
 ---
 # Quickstart: Use Azure Data Studio to connect and query SQL Server
 

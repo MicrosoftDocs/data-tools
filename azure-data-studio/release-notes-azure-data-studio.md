@@ -4,13 +4,16 @@ description: This article has release notes for Azure Data Studio.
 author: dlevy-msft
 ms.author: dlevy
 ms.reviewer: maghan, randolphwest
-ms.date: 11/08/2023
+ms.date: 01/03/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 # Release notes for Azure Data Studio
 
 This article provides details about updates, improvements, and bug fixes for the current and previous versions of Azure Data Studio.
+
+> [!NOTE]  
+> [!INCLUDE [azure-active-directory-microsoft-entra-id](includes/azure-active-directory-microsoft-entra-id.md)]
 
 ## Current Azure Data Studio release
 
@@ -435,7 +438,7 @@ For a full list of bug fixes addressed for the May 2023 release, visit the [May 
 | Connection | Added ability to include optional name and grouping when creating a new connection using a connection string |
 | Connection | Updating username in MSSQL connections to use Preferred username for the display name |
 | Connection | Fixed issue with encoding for OSX keychain on macOS |
-| Connection | Added support for Azure AD Multi-Factor Authentication and 'Sql Authentication Provider' on Linux |
+| Connection | Added support for Microsoft Entra multifactor authentication and 'Sql Authentication Provider' on Linux |
 | Dataverse | Addressed error generated when expanding the database node for a Dataverse database in Object Explorer |
 | IntelliCode extension | Fixed error that occurred when launching Azure Data Studio with Visual Studio Code IntelliCode extension installed |
 | PostgreSQL extension | Implemented support for exporting query results on Apple M1 from a notebook |
@@ -563,12 +566,12 @@ For a full list of bug fixes addressed for the January 2023 hotfix release, visi
 | Accessibility | Accessibility improvements were made in the Query Plan Viewer, Query History Extension and Migration Extension. |
 | Big Data Cluster | Fix missing connect icon in BDC view header bar. |
 | Big Data Cluster | Fixed issue preventing HDFS nodes for BDC servers in Object Explorer from expanding. |
-| Connection | Added ability to delete a connection that has expired Azure Active Directory credentials. |
-| Connection | Improved experience when Azure Active Directory token expiration occurs. |
+| Connection | Added ability to delete a connection that has expired Microsoft Entra credentials. |
+| Connection | Improved experience when Microsoft Entra token expiration occurs. |
 | Connection | Improved connection experience when using multiple Azure tenants. |
 | Connection | Addressed problem with adding a firewall exception for a nondefault Azure subscription. |
 | Migration Extension | Added support for non-public clouds for migration scenarios. |
-| MySQL Extension | Updated resource endpoints to support Azure Active Directory logins in the MySQL extension. |
+| MySQL Extension | Updated resource endpoints to support Microsoft Entra logins in the MySQL extension. |
 | Notebooks | Improve Intellisense refresh in Notebook cells. |
 | Notebooks | Address issue with "New Notebook Job" resulting in an empty form. |
 | Object Explorer | Fixed issue with database list not loading. |
@@ -653,7 +656,7 @@ For a full list of bug fixes addressed for the January 2023 release, visit the [
 | New Item | Details |
 | --- | --- |
 | Connections | Fixed bug that occurred when trying to connect to the Dedicated Admin Connection (DAC) on SQL Server. |
-| Connections | Fixed issue with wrong tenant showing up while trying to connect to a database with Azure Active Directory login. |
+| Connections | Fixed issue with wrong tenant showing up while trying to connect to a database with Microsoft Entra login. |
 | Connections | Fixed zoom reset behavior when adding a new connection. |
 | Connections | Fixed loading bug what occurred when attempting to sign in to Azure via proxy. |
 | Connections | Fixed issue encountered while attempting to connect to a "sleeping" Azure SQL Database. |
@@ -1236,7 +1239,7 @@ June 15, 2020 / version: 1.19.0
 | Announcing SQL Assessment API extension | This extension adds SQL Server best-practice assessment in Azure Data Studio. It exposes SQL Assessment API, which was previously available for use in PowerShell SqlServer module and SMO only, to let you evaluate your SQL Server instances and receive for them recommendations by SQL Server Team. Learn more about SQL Assessment API and what it's capable of [in this article.](/sql/tools/sql-assessment-api/sql-assessment-api-overview) |
 | [Machine Learning Extension improvements](./extensions/machine-learning-extension.md) | Now supports Azure SQL Managed Instance. |
 | Data Virtualization extension improvements | Now supports MongoDB and Teradata |
-| Postgres extension bug fixes | Fixed Azure AD Multi-Factor Authentication |
+| Postgres extension bug fixes | Fixed Microsoft Entra multifactor authentication |
 | Resolved bugs and issues | For a complete list of fixes see [Bugs and issues, on GitHub](https://github.com/microsoft/azuredatastudio/issues?q=is%3Aissue+milestone%3A%22June+2020+Release%22+is%3Aclosed). |
 
 ### May 2020 (hotfix)
@@ -1289,7 +1292,7 @@ March 18, 2020 / version: 1.16.0
 | :--- | :--- |
 | Added charting support in SQL Notebooks | When running a SQL query in a code cell, users can now create and save charts. |
 | Added Create Jupyter Book experience | Users can now create their own Jupyter Books using a notebook. |
-| Added Azure AD support for Postgres extension | |
+| Added Microsoft Entra ID support for Postgres extension | |
 | Fixed many accessibility bugs | [List of accessibility bugs](https://github.com/microsoft/azuredatastudio/issues?page=1&q=is%3Aissue+is%3Aclosed+milestone%3A%22S360+-+Accessibility%22+label%3AA11y_AzureDataStudio) |
 | VS Code merges to 1.42 | This release includes updates to VS Code from the three previous VS Code releases. [Read their release notes](https://code.visualstudio.com/updates/v1_42) to learn more. |
 | Resolved bugs and issues | For a complete list of fixes see [Bugs and issues, on GitHub](https://github.com/microsoft/azuredatastudio/issues?q=is%3Aissue+milestone%3A%22March+2020%22+is%3Aclosed). |
@@ -1420,7 +1423,7 @@ August 15, 2019 / version: 1.10.0
 | Release of SandDance 1.3.1 extension | - Smart chart detection<br />- 3D Visualizations<br />- Data filtering |
 | Notebook Improvements | - Add code or text cell in-line<br />- Added ability to right-click SQL results grid to save result as CSV, JSON, etc.<br />- Improvement to notebook loading performance for loading JSON faster<br />- View the full list of improvements [here](https://github.com/microsoft/azuredatastudio/issues?q=is%3Aissue+label%3A%22Area%3A+Notebooks%22+milestone%3A%22August+2019+Release%22+is%3Aclosed) |
 | SQL Server 2019 Support | This release includes support for extra SQL Server 2019 Big Data Cluster features including:<br />- Reduced time taken to load table and column information on the object-mapping page.<br />- Fixed a bug with loading existing database scoped credentials on the connection details page.<br />- Increased default sample size used for PROSE parsing. |
-| Dacpac extension now supports Azure AD |
+| Dacpac extension now supports Microsoft Entra ID |
 | Visual Studio Code July Release Merge 1.37 | Latest improvements can be found [here](https://code.visualstudio.com/updates/v1_37). |
 | Resolved bugs and issues | For a complete list of fixes see [Bugs and issues, on GitHub](https://github.com/microsoft/azuredatastudio/milestone/39?closed=1). |
 
@@ -1460,7 +1463,7 @@ June 6, 2019 / version: 1.8.0
   - Can't launch properties for Azure servers
   - Not all objects have property dialogs
   - Dialogs take a long time to start up
-  - Errors launching servers with some types of connections (such as Azure AD)
+  - Errors launching servers with some types of connections (such as Microsoft Entra ID)
 - Notebooks
   - [5838](https://github.com/microsoft/azuredatastudio/issues/5838) Allow users to use system Python for Notebooks
 - Schema Compare
@@ -1552,7 +1555,7 @@ January 09, 2019 / version: 1.3.8
 | Change | Details |
 | :--- | :--- |
 | Added a new user installer for Windows. | Unlike the existing system installer, the new user installer doesn't require administrator privileges. This also enables an easier upgrade experience for non-administrators. |
-| Added Azure Active Directory Authentication support. | |
+| Added Microsoft Entra authentication support. | |
 | Announcing Idera SQL DM Performance Insights (preview). | |
 | Data-Tier Application Wizard support in SQL Server Import extension. | |
 | Update to the SQL Server 2019 Preview extension. | See [Data Virtualization extension](./extensions/data-virtualization-extension.md). |

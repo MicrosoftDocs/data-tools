@@ -13,10 +13,13 @@ ms.topic: conceptual
 
 With the MySQL extension for Azure Data Studio, you can now connect to, query and manage MySQL databases along with your other databases, taking advantage of the modern editor experience and capabilities in Azure Data Studio, such as IntelliSense, code snippets, source control integration, native Jupyter Notebooks, an integrated terminal, and more.
 
+> [!NOTE]  
+> [!INCLUDE [azure-active-directory-microsoft-entra-id](../includes/azure-active-directory-microsoft-entra-id.md)]
+
 The Azure Data Studio functionality available for MySQL includes:
 
 - Connection manager, allowing you to connect to any MySQL server hosted on-premises, on virtual machines, on managed MySQL in other clouds, and on Azure Database for MySQL – Flexible Server.
-- Option to choose your preferred authentication method (MySQL native authentication and Azure Active Directory authentication)
+- Option to choose your preferred authentication method (MySQL native authentication and Microsoft Entra authentication)
 - Searchable object explorer view for database objects, with auto-completion
 - Query authoring and editing with Intellisense, syntax highlighting and code snippets
 - Ability to query results and save to csv, JSON, xml, or Excel

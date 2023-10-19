@@ -3,8 +3,8 @@ title: Connect and query an Azure SQL Database
 description: Do a quickstart in which you use Azure Data Studio to connect to an Azure SQL Database server, and then create and query a database.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan
-ms.date: 05/14/2019
+ms.reviewer: maghan, randolphwest
+ms.date: 01/03/2024
 ms.service: azure-data-studio
 ms.topic: quickstart
 ms.custom:
@@ -14,6 +14,9 @@ ms.custom:
 # Quickstart: Use Azure Data Studio to connect and query Azure SQL Database
 
 In this quickstart, you'll  use Azure Data Studio to connect to an Azure SQL Database server. You'll then run Transact-SQL (T-SQL) statements to create and query the TutorialDB database, which is used in other Azure Data Studio tutorials.
+
+> [!NOTE]  
+> [!INCLUDE [azure-active-directory-microsoft-entra-id](includes/azure-active-directory-microsoft-entra-id.md)]
 
 ## Prerequisites
 
@@ -27,7 +30,6 @@ If you don't have an Azure SQL server, complete one of the following Azure SQL D
 - [Create DB - CLI](/azure/sql-database/sql-database-get-started-cli)
 - [Create DB - PowerShell](/azure/sql-database/sql-database-get-started-powershell)
 
-
 ## Connect to your Azure SQL Database server
 
 Use Azure Data Studio to establish a connection to your Azure SQL Database server.
@@ -36,7 +38,7 @@ Use Azure Data Studio to establish a connection to your Azure SQL Database serve
    
    ![Screenshot showing the Welcome Azure Data Studio dialog box with the Next connection option called out.](media/quickstart-sql-database/new-connection-icon.png)
 
-2. This article uses SQL sign-in, but for Azure SQL Database, Azure AD Universal MFA authentication is also supported. Fill in the following fields using the server name, user name, and password for your Azure SQL server:
+2. This article uses SQL authentication, but Microsoft Entra authentication is supported for all SQL Server products and services. Fill in the following fields using the server name, user name, and password for your Azure SQL server:
 
    | Setting       | Suggested value | Description |
    | ------------ | ------------------ | ------------------------------------------------- | 

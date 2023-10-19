@@ -3,8 +3,8 @@ title: "Connect to a SQL Server instance"
 description: Explains the connection parameters to connect to an instance of SQL Server with Azure Data Studio. Includes details about how to secure and encrypt connections.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: "maghan"
-ms.date: 05/24/2023
+ms.reviewer: maghan, randolphwest
+ms.date: 01/03/2024
 ms.service: azure-data-studio
 ms.topic: "how-to"
 ---
@@ -13,16 +13,19 @@ ms.topic: "how-to"
 
 This article describes how to connect to SQL Server with Azure Data Studio 1.40 and higher.
 
+> [!NOTE]  
+> [!INCLUDE [azure-active-directory-microsoft-entra-id](includes/azure-active-directory-microsoft-entra-id.md)]
+
 ## Sql Authentication Provider
 
-Azure Data Studio 1.44 and later defaults to use the Sql Authentication Provider for Azure SQL connections and the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).  This provider is used with Active Directory Interactive authentication mode and enables server-side resource endpoint integration when fetching access tokens.  
+Azure Data Studio 1.44 and later defaults to use the Sql Authentication Provider for Azure SQL connections and the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview). This provider is used with the **Microsoft Entra ID - Universal with MFA support** authentication mode and enables server-side resource endpoint integration when fetching access tokens. 
 
 After a user upgrades to Azure Data Studio 1.44 and higher, the initial launch of the application will display the following message:
 
 --change this below
 :::image type="content" source="connect/connect-update-after-upgrade-no-tenant.png" alt-text="Screenshot of message about tenant list box removal after upgrading Azure Data Studio.":::
 
-With the Sql Authentication Provider, selection of a tenant is no longer required.  The Azure AD tenant list box has been removed from the Connection dialog because it's now handled by the underlying driver.  This change also allows for improved token refresh for Azure SQL Database connections.
+With the Sql Authentication Provider, selection of a tenant is no longer required.  The Microsoft Entra tenant list box has been removed from the Connection dialog because it's now handled by the underlying driver.  This change also allows for improved token refresh for Azure SQL Database connections.
 
 The **Mssql: Enable Sql Authentication Provider** option can be disabled within **File** > **Preferences** > **Settings**.
 
