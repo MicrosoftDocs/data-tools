@@ -131,14 +131,12 @@
     href: extensions/azure-sql-migration-extension.md
   - name: Azure Cosmos DB for MongoDB
     items:
-    - name: Azure Cosmos DB migration for MongoDB
-      items:
-      - name: Azure Cosmos DB migration for MongoDB
-        href: extensions/database-migration-for-mongo-extension.md
-      - name: Azure Cosmos DB migration for MongoDB FAQ
-        href: extensions/database-migration-for-mongodb-extension-faq.md
-      - name: Azure Cosmos DB API for MongoDB
-        href: extensions/azure-cosmos-db-mongodb-extension.md
+    - name: API for MongoDB RU extension
+      href: extensions/azure-cosmos-db-mongodb.md
+    - name: API for MongoDB vCore migration extension
+      href: extensions/azure-cosmos-db-mongodb-migration.md
+    - name: API for MongoDB vCore migration extension FAQ
+      href: extensions/azure-cosmos-db-mongodb-migration-faq.yml
   - name: Azure Monitor Logs
     href: extensions/azure-monitor-logs-extension.md
   - name: Database Migration Assessment for Oracle
