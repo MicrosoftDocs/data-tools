@@ -13,6 +13,8 @@
     href: what-is-azure-data-studio.md
   - name: Azure connectivity
     href: azure-connectivity.md
+  - name: Azure Data Studio license
+    href: license.md
 - name: Quickstarts
   items:
   - name: Connect & query SQL Server
