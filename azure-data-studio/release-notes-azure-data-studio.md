@@ -87,6 +87,7 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 
 | Azure Data Studio release | Build number | Release date | Hotfix |
 | --- | --- | --- | --- |
+| [November 2023](#november-2023) | 1.47.0 | November 8, 2023 | N/A |
 | [September 2023](#september-2023) | 1.46.0 | September 20, 2023 | [hotfix](#september-2023-hotfix) |
 | [July 2023](#july-2023) | 1.45.0 | July 26, 2023 | [hotfix](#july-2023-hotfix) |
 | [May 2023](#may-2023) | 1.44.0 | May 24, 2023 | [hotfix](#may-2023-hotfix) |
