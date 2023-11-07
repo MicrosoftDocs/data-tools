@@ -16,7 +16,7 @@ This article provides details about updates, improvements, and bug fixes for the
 
 :::image type="icon" source="includes/media/download.svg" border="false"::: **[Download and install the latest release!](./download-azure-data-studio.md)**
 
-### September 2023 (hotfix)
+### November 2023
 
 Azure Data Studio 1.47.0 is the latest general availability (GA) release.
 
@@ -69,7 +69,7 @@ Azure Data Studio 1.47.0 is the latest general availability (GA) release.
 | Shell | Updated shell default behavior to not open any editor when 'Show welcome page on startup' is not selected |
 | SQL Project | Fixed database project fails to build with syntax error when including a database scoped credential object |
 
-For details about the issue addressed in the November 2023 release, visit the [November 2023 Hotfix Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/105?closed=1).
+For details about the issue addressed in the November 2023 release, visit the [November 2023 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/105?closed=1).
 
 #### Known issues in 1.47.0
 
