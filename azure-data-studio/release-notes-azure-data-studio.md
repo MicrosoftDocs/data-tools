@@ -4,7 +4,7 @@ description: This article has release notes for Azure Data Studio.
 author: dlevy-msft
 ms.author: dlevy
 ms.reviewer: maghan, randolphwest
-ms.date: 10/03/2023
+ms.date: 11/08/2023
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -18,20 +18,60 @@ This article provides details about updates, improvements, and bug fixes for the
 
 ### September 2023 (hotfix)
 
-Azure Data Studio 1.46.1 is the latest general availability (GA) release.
+Azure Data Studio 1.47.0 is the latest general availability (GA) release.
 
-- Release number: 1.46.1
-- Release date: October 3, 2023
-
-#### Bug fixes in 1.46.1
+- Release number: 1.47.0
+- Release date: November 8, 2023
+ 
+ #### What's new in 1.47.0
 
 | New Item | Details |
 | --- | --- |
-| Security | Update to Electron v22.3.25 with patch for [CVE-2023-5217](https://github.com/advisories/GHSA-qqvq-6xgj-jw8g) |
+| Connection Manager | Improved visibility of advanced options in tabs and tooltips |
+| Database Properties | Usability improvements to object properties dialogs |
+| Extensibility | Allow extensions to hook into provider events |
+| Extensibility | Improved charting capability |
+| General | Add 'Mssql: Parallel Message Processing Limit' with a default of 100 to control the number of threads used for parallel processing in Azure Data Studio |
+| General | Updated notifications so they close automatically upon task completion |
+| Notebooks | Updated version to 6.5.6 and removed traitlets v5.9.0 from required notebook dependencies |
+| Object Explorer | Added ‘Select Top 1000 rows’ menu option for the history table of a system-versioned temporal table |
+| Object Explorer | Usabilitying improvements including added context menus |
+| Result Set | Added additional options for saving results to Excel |
+| Result Set | Enable XML formatting for varchar columns |
+| User Management | References to Azure Active Directory (Azure AD) have been updated to Microsoft Entra, see [Azure AD is Becoming Microsoft Entra ID](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-is-becoming-microsoft-entra-id/ba-p/2520436) - Microsoft Community Hub  for details. |
+| VS Code Merge | This merge picks-up upstream improvements from VS Code 1.80, 1.81, and 1.82. These releases contained numerous new features as well as quality, performance, stability, and compliance enhancements. The full details can be reviewed in the VS Code release notes at: [Visual Studio Code June 2023](https://code.visualstudio.com/updates/v1_80), [Visual Studio Code July 2023](https://code.visualstudio.com/updates/v1_81), and [Visual Studio Code August 2023](https://code.visualstudio.com/updates/v1_82). |
 
-For details about the issue addressed in the September 2023 hotfix release, visit the [September 2023 Hotfix Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/106?closed=1).
+#### Bug fixes in 1.47.0
 
-#### Known issues in 1.46.1
+| New Item | Details |
+| --- | --- |
+| Authentication | Fixed error "multiple matching_tokens occurred when acquiring token.” when authenticating to Azure resources |
+| Autocomplete | Fixed autocomplete suggests "abort" whenever new comment is begun |
+| Connection | Updated prefix for Clear Pooled Connections in the command paletteto use the MSSQL prefix |
+| Connection | Fixed settings values not being passed to STS service in proxied environments |
+| Connection | Removed tenant filter settings in Azure tree |
+| Extensibility | Fixed issue where server dashboard was loading before activation of extension completed |
+| Notebooks | Fixed issue where the Notebook Python process continued to run after Azure Data Studio is closed |
+| Notebooks | Fixed Jupyter Notebook entry in new file command under command palette does nothing |
+| Object Explorer | Fixed silent failure when attempting to open script files |
+| Object Explorer | Removed duplicate entry for Group By Schema from command palette |
+| Object Explorer | Fixed clicking manage for Azure SQL Database goes to logical server instead of database |
+| Profiler Extension | Fixed issue where Profiler columns were not resizeable |
+| Profiler Extension | Fixed ctrl+F not working in Profiler |
+| Query Editor | Updated maximum value supported for Query: Text Size setting to fix results not being copied to the clipboard |
+| Query Editor | Fixed issue where query editor would not open due to initialization errors |
+| Query Editor | Fixed error ‘Cannot connect to the database due to invalid OwnerUri’ after saving a new query file |
+| Query History | Fixed “Error loading query history items” |
+| Schema Compare | Fixed schema compare does not show that it is running while doing a comparison |
+| Schema Compare | Fixed Azure Data Studio stops responding after attempting to apply schema compare changes |
+| Shell | Shortened query tab titles for edit data |
+| Shell | Fixed Hyperlinks in info box not visible in dark theme |
+| Shell | Updated shell default behavior to not open any editor when 'Show welcome page on startup' is not selected |
+| SQL Project | Fixed database project fails to build with syntax error when including a database scoped credential object |
+
+For details about the issue addressed in the November 2023 release, visit the [November 2023 Hotfix Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/105?closed=1).
+
+#### Known issues in 1.47.0
 
  New Item | Details | Workaround |
 | --- | --- | --- |
@@ -97,6 +137,27 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 
 > [!NOTE]  
 > All previous versions of Azure Data Studio are not supported.
+
+### September 2023 (hotfix)
+
+Azure Data Studio 1.46.1 is the latest general availability (GA) release.
+
+- Release number: 1.46.1
+- Release date: October 3, 2023
+
+#### Bug fixes in 1.46.1
+
+| New Item | Details |
+| --- | --- |
+| Security | Update to Electron v22.3.25 with patch for [CVE-2023-5217](https://github.com/advisories/GHSA-qqvq-6xgj-jw8g) |
+
+For details about the issue addressed in the September 2023 hotfix release, visit the [September 2023 Hotfix Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/106?closed=1).
+
+#### Known issues in 1.46.1
+
+ New Item | Details | Workaround |
+| --- | --- | --- |
+| Installation | Azure Data Studio installation fails on RHEL 8 | Use RHEL 9, or manually install glibc-2.29 and add it to the Library Path and then re-install ADS |
 
 ### September 2023
 
