@@ -17,7 +17,7 @@ sections:
   - name: General
     questions:
       - question: |
-          How do I run my assessment if the **Run Validation** step is failing?
+          How do I run my assessment if the "Run Validation" step is failing?
         answer: |
           Refer to the error displayed on the extension to see why the validation is failing. Typically the issue is an inability to connect to the MongoDB endpoint. The issue could also potentially be the user not having sufficient privileges on the connected server to run the assessment.
 
@@ -25,7 +25,7 @@ sections:
 
           Use [`grantRolesToUser`](https://www.mongodb.com/docs/manual/reference/method/db.grantRolesToUser/) to configure appropriate roles for the currently connected user.
       - question: |
-          How do I see collection names and database names for assessments in the **Feature Compatibility** category?
+          How do I see collection names and database names for assessments in the "Feature Compatibility" category?
         answer: |
           The assessment uses the `serverStatus` command to perform the feature compatibility assessment. Since this command doesn't provide the details of database or collection names, the extension is unable to report the resource names.
 
@@ -87,7 +87,7 @@ sections:
           > [!WARNING]
           > The extension doesn't support the Azure Database Migration Service's self-hosted integration runtime.
       - question: |
-          Does the migration job\[s\] run locally on my machine?
+          Does the migration job[s] run locally on my machine?
         answer: |
           The database, collections, and indexes are created directly using commands from the local Azure Data Studio client. This functionality requires connectivity between the client running Azure Data Studio with both the source and target environments. 
 
