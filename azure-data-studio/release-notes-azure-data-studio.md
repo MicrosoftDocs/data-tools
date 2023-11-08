@@ -31,10 +31,10 @@ Azure Data Studio 1.47.0 is the latest general availability (GA) release.
 | Database Properties | Implemented usability improvements to object properties dialogs |
 | Extensibility | Allow extensions to hook into provider events |
 | Extensibility | Improved charting capability |
-| General | Added 'Mssql: Parallel Message Processing Limit' with a default of 100 to control the number of threads used for parallel processing in Azure Data Studio |
+| General | Added `Mssql: Parallel Message Processing Limit` with a default of 100 to control the number of threads used for parallel processing in Azure Data Studio |
 | General | Updated notifications so they close automatically upon task completion |
 | Notebooks | Updated version to 6.5.6 and removed traitlets v5.9.0 from required notebook dependencies |
-| Object Explorer | Added 'Select Top 1000' menu option for the history table of a system-versioned temporal table |
+| Object Explorer | Added `Select Top 1000` menu option for the history table of a system-versioned temporal table |
 | Object Explorer | Usability improvements including added context menus |
 | Result Set | Added additional options for saving results to Excel |
 | Result Set | Added support to display formatted XML data when stored as a VARCHAR data type |
@@ -58,15 +58,15 @@ Azure Data Studio 1.47.0 is the latest general availability (GA) release.
 | Object Explorer | Addressed behavior where selecting Manage for an Azure SQL Database opened the dashboard for the logical server instead of the database |
 | Profiler Extension | Fixed issue where Profiler columns were not resizeable |
 | Profiler Extension | Resolved problem where selecting Ctrl + F in the Profiler extension did not bring up Find dialog |
-| Query Editor | Updated maximum value supported for Query: Text Size setting to fix results not being copied to the clipboard |
+| Query Editor | Updated maximum value supported for `Query: Text Size` setting to fix results not being copied to the clipboard |
 | Query Editor | Fixed issue where query editor would not open due to initialization errors |
-| Query Editor | Fixed error 'Cannot connect to the database due to invalid OwnerUri' after saving a new query file |
-| Query History Extension | Fixed “Error loading query history items” |
+| Query Editor | Fixed error "Cannot connect to the database due to invalid OwnerUri" after saving a new query file |
+| Query History Extension | Fixed error loading query history items |
 | Schema Compare | Fixed issue where schema compare does not show that it is running while doing a comparison |
 | Schema Compare | Fixed issue where Azure Data Studio stops responding after attempting to apply schema compare changes |
 | Shell | Shortened query tab titles for edit data |
 | Shell | Updated hyperlinks to use correct theming so they are visible when using dark theme |
-| Shell | Updated shell default behavior to not open any editor when 'Show welcome page on startup' is not selected |
+| Shell | Updated shell default behavior to not open any editor when `Show welcome page on startup` is not selected |
 | SQL Project | Fixed issue where database project fails to build with syntax error when including a database scoped credential object |
 
 For details about the issues addressed in the November 2023 release, visit the [November 2023 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/105?closed=1).
