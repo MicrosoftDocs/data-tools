@@ -31,7 +31,8 @@ Azure Data Studio 1.47.0 is the latest general availability (GA) release.
 | Database Properties | Implemented usability improvements to object properties dialogs |
 | Extensibility | Allow extensions to hook into provider events |
 | Extensibility | Improved charting capability |
-| General | Added `Mssql: Parallel Message Processing Limit` with a default of 100 to control the number of threads used for parallel processing in Azure Data Studio |
+| General | Enabled `Mssql: Parallel Message Processing` by default to improve application performance when working with MSSQL connections. |
+| General | Added `Mssql: Parallel Message Processing Limit` with a default of 100 to control the number of threads used for parallel processing. |
 | General | Updated notifications so they close automatically upon task completion |
 | Notebooks | Updated version to 6.5.6 and removed traitlets v5.9.0 from required notebook dependencies |
 | Object Explorer | Added `Select Top 1000` menu option for the history table of a system-versioned temporal table |
