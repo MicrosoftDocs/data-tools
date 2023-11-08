@@ -49,7 +49,7 @@ Azure Data Studio 1.47.0 is the latest general availability (GA) release.
 | Authentication | Fixed error "multiple matching_tokens occurred when acquiring token." when authenticating to Azure resources |
 | Autocomplete | Fixed autocomplete suggests "abort" whenever new comment is begun |
 | Connection | Updated prefix for Clear Pooled Connections in the command palette to use the MSSQL prefix |
-| Connection | Fixed settings values not being passed to STS service in proxied environments |
+| Connection | Fixed proxy setting values not being passed to backend SQL Tools Service |
 | Connection | Removed tenant filter settings in Azure tree |
 | Extensibility | Fixed issue where server dashboard was loading before activation of extension completed |
 | Notebooks | Fixed issue where the Notebook Python process continued to run after Azure Data Studio is closed |
