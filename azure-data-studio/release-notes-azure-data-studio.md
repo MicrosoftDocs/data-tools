@@ -61,7 +61,7 @@ Azure Data Studio 1.47.0 is the latest general availability (GA) release.
 | Query Editor | Updated maximum value supported for Query: Text Size setting to fix results not being copied to the clipboard |
 | Query Editor | Fixed issue where query editor would not open due to initialization errors |
 | Query Editor | Fixed error 'Cannot connect to the database due to invalid OwnerUri' after saving a new query file |
-| Query History | Fixed “Error loading query history items” |
+| Query History Extension | Fixed “Error loading query history items” |
 | Schema Compare | Fixed issue where schema compare does not show that it is running while doing a comparison |
 | Schema Compare | Fixed issue where Azure Data Studio stops responding after attempting to apply schema compare changes |
 | Shell | Shortened query tab titles for edit data |
