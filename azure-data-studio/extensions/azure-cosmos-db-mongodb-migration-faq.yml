@@ -8,6 +8,8 @@ metadata:
   ms.reviewer: sidandrews
   ms.service: azure-data-studio
   ms.subservice: migration-extension
+  ms.custom:
+    - ignite-2023
   ms.topic: faq
   ms.date: 10/31/2023
 title: Azure Cosmos DB for MongoDB vCore migration extension for Azure Data Studio FAQ (preview)
