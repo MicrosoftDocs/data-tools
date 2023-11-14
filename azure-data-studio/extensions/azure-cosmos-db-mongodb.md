@@ -6,6 +6,8 @@ author: sandnair
 ms.author: sandnair
 ms.reviewer: sidandrews
 ms.service: azure-data-studio
+ms.custom:
+  - ignite-2023
 ms.topic: how-to
 ms.date: 10/31/2023
 # CustomerIntent: As a database developer, I want to use the extension, so that I can explore my data already in Azure Cosmos DB for MongoDB RU.
