@@ -92,6 +92,9 @@ Once the assessment extension installs, the next step is to connect to Oracle yo
    1. In the **Assessment name** field, enter a title, for example, `demo1`.
    1. Enter your **Assessment setting**.
       1. Enter the destination migration database in the **Target Platform** field. Currently, it supports Azure SQL and PostgreSQL as targets.
+            > [!NOTE]  
+     > PostgreSQL target is  in preview. This target option will be discontinued and recommend to export any prior assessments.
+   
       1. In the **Performance data collection** section, either select **Run performance data collection on Oracle database (connected)** or **Add AWR report**.
 
          The recommendation is to use the connected option if you're running this tool during a peak or realistic load. Otherwise, provide the AWR reports generated in the past for performance and sizing recommendations.
