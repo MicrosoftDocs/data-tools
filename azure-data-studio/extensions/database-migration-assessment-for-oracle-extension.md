@@ -124,7 +124,7 @@ Once the assessment extension installs, the next step is to connect to Oracle yo
      
      1. When you select Code assessment for SQL scenarios, select the schemas that you would like to access for Oracle to SQL conversion and migration. By default, all the eligible schemas are selected for the assessment.     
 
-1. Click on run validation to peform the prerequiste and various validation rules related to security permissions,  configuration settings etc. If validation fails, then you need to fix the errors to proceed further.
+1. Click on run validation to perform the prerequistes and various validation rules related to security permissions,  configuration settings etc. If validation fails, then you need to fix the errors to proceed further.
 2. When Validation is successful, you can click on Run assessment.
 
 
@@ -175,7 +175,7 @@ The SKU recommendation provides the following:
 
   :::image type="content" source="media/database-migration-assessment-for-oracle-extension/dmafo-skus.png" alt-text="Screenshot showing SKU recommendations.":::
 
-The SKU recommendation evaluates various performance metrics, such as CPU, memory, IOPS, latency, and storage. Based on the usage and the configuration data, the recommender provides the suitable target and the appropriate service tier. The SKU recommendation is based on the cntainer root instance or pluggable database utilization. Schema selection is ignored and not applicable to the SKU sizing.
+The SKU recommendation evaluates various performance metrics, such as CPU, memory, IOPS, latency, and storage. Based on the usage and the configuration data, the recommender provides the suitable target and the appropriate service tier. The SKU recommendation is based on the container root instance or pluggable database utilization. Schema selection is ignored and not applicable to the SKU sizing.
 
 > [!NOTE]  
 > If the automatic workload repository (AWR) feature is enabled on the Oracle instance, the SKU recommender will use the `DBA_HIST_` views to gather the performance metrics metadata. Otherwise, the recommender will use server configuration and other system view information for sizing the Azure SQL target.
