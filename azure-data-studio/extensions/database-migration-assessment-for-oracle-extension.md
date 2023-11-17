@@ -15,13 +15,11 @@ ms.custom: sql-migration-content
 
 The Database Migration Assessment for Oracle extension in Azure Data Studio helps you assess an Oracle workload for migrating to Azure SQL and Azure Database for PostgreSQL. The extension identifies an appropriate Azure SQL or PostgreSQL target with right-sizing recommendations, and how complex the migration can be.
 
-> [!NOTE]  
-> Try the latest Oracle to Azure Database for PostgreSQL workload and code assessment.
 
 ## Prerequisites
 
 - [Azure Data Studio version 1.39 or above](../download-azure-data-studio.md).
-- An [Oracle database](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html) running version 10g or higher.
+- An [Oracle database](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html) running version 11g or higher.
 - Oracle users should have CONNECT and SELECT ANY DICTIONARY privileges assigned.
 
 ## Install Azure Data Studio extension
@@ -65,10 +63,13 @@ Once the assessment extension installs, the next step is to connect to Oracle yo
    1. In the **Connection type** field, select **Oracle**.
    1. In the **Data Source** field, type in your Oracle server name and instance.
       1. You can provide the TNS name as well. (Make sure that the `ORACLE_HOME` environment variable is set and the `TNSNAMES.ORA` file is located in the `<ORACLE_HOME>/network/admin folder`.)
+      2. In case of container database, you can either connect the Container root database using CDB service ID or use the 
+         pluggable database service name to connect to pluggable database. 
    1. Provide the database username in the **User Id** field.
    1. Provide the database password in the **Password** field.
 
    :::image type="content" source="media/database-migration-assessment-for-oracle-extension/dmafo-connections-details.png" alt-text="connection details":::
+   
 
 1. Select **Connect**.
 
@@ -91,10 +92,16 @@ Once the assessment extension installs, the next step is to connect to Oracle yo
    1. In the **Assessment name** field, enter a title, for example, `demo1`.
    1. Enter your **Assessment setting**.
       1. Enter the destination migration database in the **Target Platform** field. Currently, it supports Azure SQL and PostgreSQL as targets.
+            > [!NOTE]  
+     > PostgreSQL target is  in preview. This target option will be discontinued and recommend to export any prior assessments.
+   
       1. In the **Performance data collection** section, either select **Run performance data collection on Oracle database (connected)** or **Add AWR report**.
 
          The recommendation is to use the connected option if you're running this tool during a peak or realistic load. Otherwise, provide the AWR reports generated in the past for performance and sizing recommendations.
 
+   > [!NOTE]  
+     > AWR report assessment option is not enabled for pluggable database.
+   
       1. Enter the multiplier value in the **Scale factor** field.
 
          1. If the recommended SKU needs to consider other peak loads, the scale factor multiplier should be greater than 1. For example, Burst Load, Seasonal usage, and future capacity planning. When a partial Oracle schema workload is migrated, the multiplier should be less than 1.
@@ -105,9 +112,9 @@ Once the assessment extension installs, the next step is to connect to Oracle yo
 
    :::image type="content" source="media/database-migration-assessment-for-oracle-extension/dmafo-assessment-details.png" alt-text="Screenshot showing the assessment details screen.":::
 
-1. When the target is PostgreSQL, there are two types of assessment:
+1.There are two types of assessment:
 
-   - **Workload Assessment.** In this assessment, the Oracle assessment module performs a lightweight discovery of the schema objects and categorizes the schema complexity for migration to various categories with a high-level estimate for conversion hours.
+   - **Workload Assessment.** In this assessment, the Oracle assessment module performs a lightweight discovery of the schema objects and categorizes the schema complexity for migration to various categories with a high-level estimate for conversion hours.  This preassessment helps to find the feasibility of the migration to the target platform.
 
    - **Code Assessment.** The code assessment performs an in-depth assessment of the Oracle schema objects and then suggests an overall readiness of the code objects with "ready", "need review", and "not ready" object types at a granular level and its associated conversion hours with higher accuracy.
 
@@ -117,6 +124,12 @@ Once the assessment extension installs, the next step is to connect to Oracle yo
      If the Oracle client and/or Ora2Pg isn't installed on the same machine as Azure Data Studio, either manually install them, or use the [Ora2Pg installation script](https://github.com/microsoft/OrcasNinjaTeam/tree/master/ora2pg-install) from GitHub.
 
      If the Oracle client and Ora2Pg are installed, ensure that the Oracle client home path, and Ora2Pg installation path are updated in the extension settings.
+     
+     1. When you select Code assessment for SQL scenarios, select the schemas that you would like to access for Oracle to SQL conversion and migration. By default, all the eligible schemas are selected for the assessment.     
+
+1. Click on run validation to perform the prerequisites and various validation rules related to security permissions,  configuration settings etc. If validation fails, then you need to fix the errors to proceed further.
+2. When Validation is successful, you can click on Run assessment.
+
 
 1. Now, you see the new assessment in the "Last five assessments" section.
 
@@ -150,7 +163,7 @@ The following Database details tab provides the breakdown per schema basis. It s
 
 :::image type="content" source="media/database-migration-assessment-for-oracle-extension/dmafo-per-schema-basis.png" alt-text="Screenshot showing the breakdown per schema basis.":::
 
-This estimation is based on a statistical model that applies to the object count, lines of code, enabled features, and size of the database. For more accurate estimate on the code conversion, use [SQL Server Migration Assistant for Oracle](/sql/ssma/oracle/sql-server-migration-assistant-for-oracle-oracletosql).
+This estimation is based on a statistical model that applies to the object count, lines of code, enabled features, and size of the database. For more accurate estimate on the code conversion, use code assessment.
 
 > [!NOTE]  
 > The following system or Oracle built-in schemas are excluded from the workload assessment:
@@ -165,7 +178,7 @@ The SKU recommendation provides the following:
 
   :::image type="content" source="media/database-migration-assessment-for-oracle-extension/dmafo-skus.png" alt-text="Screenshot showing SKU recommendations.":::
 
-The SKU recommendation evaluates various performance metrics, such as CPU, memory, IOPS, latency, and storage. Based on the usage and the configuration data, the recommender provides the suitable target and the appropriate service tier.
+The SKU recommendation evaluates various performance metrics, such as CPU, memory, IOPS, latency, and storage. Based on the usage and the configuration data, the recommender provides the suitable target and the appropriate service tier. The SKU recommendation is based on the container root instance or pluggable database utilization. Schema selection is ignored and not applicable to the SKU sizing.
 
 > [!NOTE]  
 > If the automatic workload repository (AWR) feature is enabled on the Oracle instance, the SKU recommender will use the `DBA_HIST_` views to gather the performance metrics metadata. Otherwise, the recommender will use server configuration and other system view information for sizing the Azure SQL target.
