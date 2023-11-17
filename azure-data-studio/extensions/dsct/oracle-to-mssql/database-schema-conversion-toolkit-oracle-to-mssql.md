@@ -1,5 +1,5 @@
 ---
-title: "Database Schema Conversion Toolkit (Preview)"
+title: "Database Schema Conversion Toolkit "
 description: Learn about Database Schema Conversion Toolkit and follow step-by-step instructions for migrating Oracle databases to Microsoft SQL platform.
 author: tdoshin
 ms.author: timioshin
@@ -9,7 +9,7 @@ ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
-# Database Schema Conversion Toolkit (Preview)
+# Database Schema Conversion Toolkit 
 
 The Database Schema Conversion Toolkit is an [Azure Data Studio](../../../what-is-azure-data-studio.md) extension for converting Oracle database schemas to Microsoft SQL platform. It helps in converting majority of the database storage objects and code objects to a format compatible with the target database. The Database Schema Conversion Toolkit in Azure Data Studio enables the previously unsupported migration and modernization of Oracle workloads in exclusively Linux environments compared to [SQL Server Migration Assistant](/sql/ssma/oracle/sql-server-migration-assistant-for-oracle-oracletosql).
 
