@@ -111,7 +111,7 @@ Once the assessment extension installs, the next step is to connect to Oracle yo
 
 1.There are two types of assessment:
 
-   - **Workload Assessment.** In this assessment, the Oracle assessment module performs a lightweight discovery of the schema objects and categorizes the schema complexity for migration to various categories with a high-level estimate for conversion hours.This preassessment helps to find the feasibility of the migration to the target platform.
+   - **Workload Assessment.** In this assessment, the Oracle assessment module performs a lightweight discovery of the schema objects and categorizes the schema complexity for migration to various categories with a high-level estimate for conversion hours.  This preassessment helps to find the feasibility of the migration to the target platform.
 
    - **Code Assessment.** The code assessment performs an in-depth assessment of the Oracle schema objects and then suggests an overall readiness of the code objects with "ready", "need review", and "not ready" object types at a granular level and its associated conversion hours with higher accuracy.
 
@@ -124,7 +124,7 @@ Once the assessment extension installs, the next step is to connect to Oracle yo
      
      1. When you select Code assessment for SQL scenarios, select the schemas that you would like to access for Oracle to SQL conversion and migration. By default, all the eligible schemas are selected for the assessment.     
 
-1. Click on run validation to perform the prerequistes and various validation rules related to security permissions,  configuration settings etc. If validation fails, then you need to fix the errors to proceed further.
+1. Click on run validation to perform the prerequisites and various validation rules related to security permissions,  configuration settings etc. If validation fails, then you need to fix the errors to proceed further.
 2. When Validation is successful, you can click on Run assessment.
 
 
