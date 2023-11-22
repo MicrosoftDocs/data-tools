@@ -141,18 +141,22 @@
       href: extensions/azure-cosmos-db-mongodb-migration-faq.yml
   - name: Azure Monitor Logs
     href: extensions/azure-monitor-logs-extension.md
-  - name: Database Migration Assessment for Oracle
+  - name: Database Migration Service Pack for Oracle
     items:
     - name: Overview
-      href: extensions/database-migration-assessment-for-oracle-extension.md
-    - name: Troubleshoot
-      href: extensions/database-migration-assessment-for-oracle-extension-troubleshoot.md
-  - name: Database Schema Conversion Toolkit
-    href: extensions/dsct/toc.yml
+      href: extensions/database-migration-service-pack-for-oracle.md
+    - name: Database Migration Assessment for Oracle
+      items:
+      - name: Overview
+        href: extensions/database-migration-assessment-for-oracle-extension.md
+      - name: Troubleshoot
+        href: extensions/database-migration-assessment-for-oracle-extension-troubleshoot.md
+    - name: Database Schema Conversion Toolkit
+      href: extensions/dsct/toc.yml
+    - name: Extension for Oracle
+      href: extensions/extension-for-oracle.md
   - name: Data Virtualization
     href: extensions/data-virtualization-extension.md
-  - name: Extension for Oracle
-    href: extensions/extension-for-oracle.md
   - name: GitHub Copilot
     items:
     - name: Overview
