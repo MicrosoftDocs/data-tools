@@ -213,7 +213,6 @@
   items:
   - name: Overview
     href: notebooks/notebooks-guidance.md
-  - name: https://learn.microsoft.com/en-us/azure-data-studio/notebooks/notebooks-kqlmagic
   - name: Kernels
     items: 
     - name: Log Analytics kernel
