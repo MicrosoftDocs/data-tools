@@ -1,10 +1,10 @@
 ---
 title: "Quickstart: Connect and query SQL Server"
-description: Do a quickstart in which you use Azure Data Studio to connect to SQL Server and then use Transact-SQL (T-SQL) statements to create a database.
-author: erinstellato-ms
-ms.author: erinstellato
+description: Use Azure Data Studio to connect to SQL Server and then use Transact-SQL (T-SQL) statements to create a database.
+author: dlevy-msft
+ms.author: dlevy
 ms.reviewer: maghan, randolphwest
-ms.date: 01/16/2023
+ms.date: 01/03/2024
 ms.service: azure-data-studio
 ms.topic: "quickstart"
 ms.custom: intro-quickstart
@@ -81,10 +81,7 @@ The query editor is still connected to the *master* database, but we want to cre
 
    :::image type="content" source="media/quickstart-sql-server/change-context.png" alt-text="Screenshot showing how to change context.":::
 
-1. Paste the following snippet into the query window and select **Run**:
-
-   > [!NOTE]  
-   > You can append this too, or overwrite the previous query in the editor. Note that selecting **Run** executes only the query that is selected. If nothing is selected, selecting **Run** executes all queries in the editor.
+1. Replace the text in the query window with the following snippet and select **Run**:
 
    ```sql
    -- Create a new table called 'Customers' in schema 'dbo'
@@ -107,7 +104,7 @@ After the query completes, the new **Customers** table appears in the list of ta
 
 ## Insert rows
 
-Paste the following snippet into the query window and select **Run**:
+Replace the text in the query window with the following snippet and select **Run**:
 
 ```sql
 -- Insert rows into table 'Customers'
@@ -127,7 +124,7 @@ GO
 
 ## View the data returned by a query
 
-Paste the following snippet into the query window and select **Run**:
+Replace the text in the query window with the following snippet and select **Run**:
 
 ```sql
 -- Select rows from table 'Customers'
@@ -136,6 +133,6 @@ SELECT * FROM dbo.Customers;
 
 :::image type="content" source="media/quickstart-sql-server/select-results.png" alt-text="Screenshot showing the results from the SELECT query.":::
 
-## Next steps
-
-Now that you've successfully connected to SQL Server and run a query try out the [Code editor tutorial](tutorial-sql-editor.md).
+## Related content
+ 
+- [Tutorial: Use the Transact-SQL editor to create database objects](tutorial-sql-editor.md)
