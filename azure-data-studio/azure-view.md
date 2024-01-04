@@ -8,6 +8,7 @@ ms.date: 03/22/2023
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
+
 # Explore and manage Azure SQL resources from the Azure View
 
 In this document, learn how you can explore and manage Azure SQL Server, Azure SQL database, Dedicated SQL Pools and additional resources through the Azure View in [!INCLUDE [azure-data-studio-short](includes/azure-data-studio-short.md)].
