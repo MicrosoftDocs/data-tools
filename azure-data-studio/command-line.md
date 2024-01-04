@@ -4,7 +4,7 @@ description: Learn more about the command line interface within Azure Data Studi
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 08/21/2023
+ms.date: 01/03/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -16,11 +16,14 @@ Azure Data Studio includes a built-in command line interface that lets you contr
 
 For examples of how to run command line tools inside Azure Data Studio, see [Integrated terminal](integrated-terminal.md).
 
+> [!NOTE]  
+> [!INCLUDE [azure-active-directory-microsoft-entra-id](includes/azure-active-directory-microsoft-entra-id.md)]
+
 ## Command line help
 
 To view an overview of the Azure Data Studio command line interface, open a terminal within Azure Data Studio (**View > Terminal**) or a command prompt and type `azuredatastudio --help`. The output contains the version, usage example, and list of command line options, as shown in the truncated example:
 
-```bash
+```output
 C:\>azuredatastudio --help
 Azure Data Studio 1.45.1
 

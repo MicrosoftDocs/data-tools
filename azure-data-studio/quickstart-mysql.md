@@ -3,16 +3,20 @@ title: "Quickstart: Use Azure Data Studio to connect and query MySQL"
 description: Use Azure Data Studio to connect to a MySQL server (hosted on-premises, on VMs, on managed MySQL in other clouds or on Azure Database for MySQL - Flexible Server), create a database, and use SQL statements to query, insert, update and delete data in the database.
 author: shreyaaithal
 ms.author: shaithal
-ms.reviewer: erinstellato
-ms.date: 07/04/2023
+ms.reviewer: erinstellato, randolphwest
+ms.date: 01/03/2024
 ms.service: azure-data-studio
 ms.topic: quickstart
-ms.custom: intro-quickstart
+ms.custom:
+  - intro-quickstart
 ---
 
 # Quickstart: Use Azure Data Studio to connect and query MySQL
 
 This quickstart shows how to use Azure Data Studio to connect to a MySQL server (hosted on-premises, on VMs, on managed MySQL in other clouds or on Azure Database for MySQL - Flexible Server), create a database, and use SQL statements to insert and query data in the database.
+
+> [!NOTE]  
+> [!INCLUDE [azure-active-directory-microsoft-entra-id](includes/azure-active-directory-microsoft-entra-id.md)]
 
 ## Prerequisites
 
@@ -39,7 +43,7 @@ To complete this quickstart, you need Azure Data Studio, the MySQL extension for
    | Setting       | Example value | Description |
    | ------------ | ------------------ | ------------------------------------------------- |
    | **Server name** | localhost / exampleserver.mysql.database.azure.con | The fully qualified server name. |
-   | **Authentication type** | Password | The authentication method for accessing your MySQL server. This option lets you choose between MySQL native authentication (Password) and Azure Active Directory authentication.|
+   | **Authentication type** | Password | The authentication method for accessing your MySQL server. This option lets you choose between MySQL native authentication (Password) and Microsoft Entra (Azure Active Directory) authentication.|
    | **User name** | exampleuser | The user name you want to sign in with. |
    | **Password** | *password* | The password for the account you're logging in with. |
    | **Remember Password** | *Check* | Check this box if you don't want to enter the password each time you connect. |

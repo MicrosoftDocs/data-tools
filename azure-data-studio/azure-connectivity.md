@@ -4,23 +4,26 @@ description: Explains the Azure connection options available in Azure Data Studi
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 09/20/2023
+ms.date: 01/03/2024
 ms.service: azure-data-studio
 ms.topic: "overview"
 ---
 # Azure Data Studio - Azure connectivity
 
-Azure Data Studio uses the Microsoft Authentication Library (MSAL) by default to acquire an access token from Azure Active Directory. The settings that apply to Azure authentication are discussed, along with commonly observed issues and their solutions.
+Azure Data Studio uses the Microsoft Authentication Library (MSAL) by default to acquire an access token from Microsoft Entra ID. The settings that apply to Microsoft Entra authentication are discussed, along with commonly observed issues and their solutions.
+
+> [!NOTE]  
+> [!INCLUDE [azure-active-directory-microsoft-entra-id](includes/azure-active-directory-microsoft-entra-id.md)]
 
 ## Azure: Authentication library
 
 This setting is only available in Azure Data Studio 1.41 through 1.45. It is no longer available in Azure Data Studio 1.46 and later versions.
 
-This setting controls the authentication library used by Azure Data Studio when adding an Azure account. Microsoft Authentication Library (MSAL) offers authentication and authorization services using standard-compliant implementations of OAuth 2.0 and OpenID Connect (OIDC) 1.0. Read more about [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview). In Azure Data Studio 1.46 and later versions, MSAL is the only library in use, as ADAL (Active Directory Authentication Library) is deprecated.
+This setting controls the authentication library used by Azure Data Studio when adding a Microsoft Entra account. Microsoft Authentication Library (MSAL) offers authentication and authorization services using standard-compliant implementations of OAuth 2.0 and OpenID Connect (OIDC) 1.0. Read more about [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview). In Azure Data Studio 1.46 and later versions, MSAL is the only library in use, as ADAL (Active Directory Authentication Library) is deprecated.
 
 ## Azure authentication method
 
-Azure Data Studio supports multi-factor authentication with Azure accounts using the following modes:
+Azure Data Studio supports Microsoft Entra multifactor authentication (MFA) using the following modes:
 
 - Using Code Grant authentication (enabled by default)
 - Using Device Code authentication
@@ -49,11 +52,11 @@ When **Code Grant method** is checked, users are prompted to authenticate with b
 
 When **Device Code method** is enabled, users are provided with a code and a URL to enter which can then be used to sign in.
 
-When both options are checked, users are prompted to select one of the two authentication modes when adding an Azure account.
+When both options are checked, users are prompted to select one of the two authentication modes when adding a Microsoft Entra account.
 
-## Azure account configuration
+## Azure cloud configuration
 
-Azure Data Studio supports Azure Active Directory (Azure AD) authentication with National clouds. **Azure Public Cloud** is enabled by default, but users can enable other national clouds as needed:
+Azure Data Studio supports Microsoft Entra authentication with [national clouds](/entra/identity-platform/authentication-national-cloud). **Azure Public Cloud** is enabled by default, but users can enable other national clouds as needed:
 
 `Settings.json`
 
@@ -85,9 +88,9 @@ These settings apply filters on Azure resources and tenants.
 
 :::image type="content" source="media/azure-connectivity/resource-config.png" alt-text="Screenshot of Azure authentication resource configuration options.":::
 
-## Proxy setup for Azure authentication
+## Proxy setup for Microsoft Entra authentication
 
-If using Azure Data Studio (ADS) behind a proxy, users must specify proxy settings for ADS to communicate with external endpoints. There are two ways to provide proxy settings for ADS to use:
+If using Azure Data Studio behind a proxy, users must specify proxy settings for Azure Data Studio to communicate with external endpoints. There are two ways to provide proxy settings for Azure Data Studio to use:
 
 - Setting proxy configuration in the Azure Data Studio (**Settings > Http: Proxy Settings**)
 - Setting environment variables for proxy configuration
@@ -293,7 +296,7 @@ Once that is complete, you should be able to sign in, and not have the browser r
 
 If the user application is running in an environment behind a proxy, user authentication may not complete, and these steps can be used to resolve the issue.
 
-1. Recheck environment variables and **http.proxy** settings in ADS. If the proxy requires user authentication, providing a username/password in **http.proxy** URL can resolve authentication issues; otherwise, ADS can't read logged-in user credentials. Alternatively, running ADS as a different user can be attempted, as it may help resolve Authentication issues with Proxy. However, the latter only works for some scenarios.
+1. Recheck environment variables and **http.proxy** settings in Azure Data Studio. If the proxy requires user authentication, providing a username/password in **http.proxy** URL can resolve authentication issues; otherwise, Azure Data Studio can't read logged-in user credentials. Alternatively, you can try running Azure Data Studio as a different user, as it may help resolve authentication issues with proxy. However, the latter only works for some scenarios.
 
 1. The URLs to allow can vary on a case-by-case basis. To verify you aren't blocking any URLs from going through, go to **Help > Toggle Developer Tools** and select the **Network** tab. Here you see any URLs that are getting blocked that you may need to allow to add your account successfully.
 
@@ -301,11 +304,11 @@ If the user application is running in an environment behind a proxy, user authen
 
 **To conclude:**
 
-As a cross-platform application, ADS proxy resolution fetches the proxy from either setting within the application, or through environment variables. The aim is to avoid interaction with system settings, which can vary significantly on different operating systems.
+As a cross-platform application, Azure Data Studio proxy resolution fetches the proxy from either setting within the application, or through environment variables. The aim is to avoid interaction with system settings, which can vary significantly on different operating systems.
 
 ### Issue: Azure Core extension is disabled
 
-Azure Core extension is a built-in extension in Azure Data Studio. Ensure it's not disabled or uninstalled accidentally. This extension is required to authenticate Azure accounts and connect to resources with Azure MFA authentication.
+Azure Core extension is a built-in extension in Azure Data Studio. Ensure it's not disabled or uninstalled accidentally. This extension is required to authenticate Microsoft Entra accounts and connect to resources using MFA.
 
 :::image type="content" source="media/azure-connectivity/azure-connectivity-azure-core-extension.png" alt-text="Screenshot of built-in Azure Core extension.":::
 
@@ -315,11 +318,11 @@ Azure Data Studio's default behavior includes validating system's root CA certif
 
 :::image type="content" source="media/azure-connectivity/azure-connectivity-system-certificates.png" alt-text="Screenshot of system certificates setting.":::
 
-```
+```json
 "http.systemCertificates": true
 ```
 
-If a system's root CA certificate is expired, authentication requests to Azure Active Directory fail, and an error is captured in the Azure account logs:
+If a system's root CA certificate is expired, authentication requests to Microsoft Entra ID fail, and an error is captured in the Azure account logs:
 
 `error: certificate is expired`
 
@@ -327,7 +330,7 @@ To mitigate this error, you should remove any expired Root CA Certificates or di
 
 ## Capture logs for Azure authentication
 
-Azure Data Studio captures Error events for Azure account activity by default. To enable more detailed traces, users can modify these settings:
+Azure Data Studio captures Error events for Microsoft Entra account activity by default. To enable more detailed traces, users can modify these settings:
 
 ### Azure: Logging level
 
@@ -343,7 +346,7 @@ This setting configures the logging level for information from Azure core that c
 
 ### Azure: PII logging
 
-Users can enable PII (Personally Identifiable Information) logging for local testing and debugging purposes. This setting enables more thorough logging of the authentication process, but may contain sensitive information such as access tokens or user IDs when authenticating with Azure. Because this logging captures sensitive information, it's recommended to:
+Users can enable PII (Personally Identifiable Information) logging for local testing and debugging purposes. This setting enables more thorough logging of the authentication process, but may contain sensitive information such as access tokens or user IDs when authenticating with Microsoft Entra ID. Because this logging captures sensitive information, it's recommended to:
 
 - Not share these logs with anyone else, especially when adding logs to GitHub issues
 - Disable the setting once the necessary information has been collected
@@ -369,16 +372,16 @@ This setting disables system keychain integration to prevent repeated keychain a
 
 :::image type="content" source="media/azure-connectivity/keychain.png" alt-text="Screenshot of Azure authentication keychain configuration.":::
 
-## Clear Azure account token cache
+## Clear Microsoft Entra account token cache
 
-Azure Data Studio maintains a cache of access tokens to prevent the throttling of token requests to Azure Active Directory (Azure AD). It's possible that Azure Data Studio's token cache may be outdated, which requires cleaning up expired access tokens from the application cache.
+Azure Data Studio maintains a cache of access tokens to prevent the throttling of token requests to Microsoft Entra ID. It's possible that Azure Data Studio's token cache may be outdated, which requires cleaning up expired access tokens from the application cache.
 
-Execute this command from **Command Palette (Ctrl/CMD + Shift + P)** to clear access tokens for linked Azure accounts:
+Execute this command from **Command Palette (Ctrl/CMD + Shift + P)** to clear access tokens for linked Microsoft Entra accounts:
 
 `Azure Accounts: Clear Azure Account Token Cache (accounts.clearTokenCache)`
 
-## Clear all saved Azure accounts
+## Clear all saved Microsoft Entra accounts
 
-Execute this command from **Command Palette (Ctrl/CMD + Shift + P)** to remove all linked Azure accounts from Azure Data Studio:
+Execute this command from **Command Palette (Ctrl/CMD + Shift + P)** to remove all linked Microsoft Entra accounts from Azure Data Studio:
 
 **Clear all saved accounts (clearSavedAccounts)**
