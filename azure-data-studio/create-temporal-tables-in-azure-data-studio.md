@@ -7,15 +7,16 @@ ms.reviewer: maghan
 ms.date: 09/24/2022
 ms.service: azure-data-studio
 ms.topic: tutorial
+# CustomerIntent: As a <type of user>, I want <what?> so that <why?>.
 ---
 
-# System-Versioned Tables
+# Tutorial: System-Versioned tables
 
 [!INCLUDE [sql-asdb-asmi](includes/applies-to-version/sql-asdb-asmi.md)]
 
 system-versioned tables, also known as temporal tables, can also be configured directly on Azure Data Studio. If you're new to system versioning, check out the [temporal tables on SQL Server documentation.](/sql/relational-databases/tables/creating-a-system-versioned-temporal-table) system-versioning tables must have the period columns defined.
 
-## Creating a system-versioned Table
+## Creating a system-versioned table
 
 1. Create a table called "Department" with the column properties as seen below. To do this, right-click on the Tables folder in the Connections pane and select "New Table". Next, in the Table Properties pane, select the "System Versioning Enabled" check box. You can decide to rename this history table or leave the default name as is.
 
@@ -28,6 +29,6 @@ system-versioned tables, also known as temporal tables, can also be configured d
 > [!NOTE]
 > system-versioned tables require a primary key.
 
-## Next steps
+## Next step
 
 - [Download Azure Data Studio](./download-azure-data-studio.md)
