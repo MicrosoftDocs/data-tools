@@ -4,7 +4,7 @@ description: This article has release notes for Azure Data Studio.
 author: dlevy-msft
 ms.author: dlevy
 ms.reviewer: maghan, randolphwest
-ms.date: 01/03/2024
+ms.date: 01/10/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -19,63 +19,22 @@ This article provides details about updates, improvements, and bug fixes for the
 
 :::image type="icon" source="includes/media/download.svg" border="false"::: **[Download and install the latest release!](./download-azure-data-studio.md)**
 
-### November 2023
+### November 2023 (hotfix)
 
-Azure Data Studio 1.47.0 is the latest general availability (GA) release.
+Azure Data Studio 1.47.1 is the latest general availability (GA) release.
 
-- Release number: 1.47.0
-- Release date: November 8, 2023
+- Release number: 1.47.1
+- Release date: January 10, 2024
  
- #### What's new in 1.47.0
+#### Bug fixes in 1.47.1
 
 | New Item | Details |
 | --- | --- |
-| Connection | Improved visibility of advanced options in tabs and tooltips |
-| Database Properties | Implemented usability improvements to object properties dialogs |
-| Extensibility | Allow extensions to hook into provider events |
-| Extensibility | Improved charting capability |
-| General | Enabled `Mssql: Parallel Message Processing` by default to improve application performance when working with MSSQL connections. |
-| General | Added `Mssql: Parallel Message Processing Limit` with a default of 100 to control the number of threads used for parallel processing. |
-| General | Updated notifications so they close automatically upon task completion |
-| Notebooks | Updated version to 6.5.6 and removed traitlets v5.9.0 from required notebook dependencies |
-| Object Explorer | Added `Select Top 1000` menu option for the history table of a system-versioned temporal table |
-| Object Explorer | Usability improvements including added context menus |
-| Result Set | Added additional options for saving results to Excel |
-| Result Set | Added support to display formatted XML data when stored as a VARCHAR data type |
-| User Management | References to Azure Active Directory (Azure AD) have been updated to Microsoft Entra, see [Azure AD is Becoming Microsoft Entra ID](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-is-becoming-microsoft-entra-id/ba-p/2520436) for details. |
-| VS Code Merge | Merges upstream improvements from VS Code 1.80, 1.81, and 1.82. These releases contained numerous new features as well as quality, performance, stability, and compliance enhancements. The full details can be reviewed in the VS Code release notes at: [Visual Studio Code June 2023](https://code.visualstudio.com/updates/v1_80), [Visual Studio Code July 2023](https://code.visualstudio.com/updates/v1_81), and [Visual Studio Code August 2023](https://code.visualstudio.com/updates/v1_82). |
+| Query Editor | Fixed query results with blank string interpreted as XML |
+| Shell | Fixed not all installation files signed |
+| Security | Update to [Microsoft.Data.SqlClient 5.1.3](https://github.com/dotnet/SqlClient/blob/main/release-notes/5.1/5.1.3.md) that patches [CVE-2024-0056](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-0056) |
 
-#### Bug fixes in 1.47.0
-
-| New Item | Details |
-| --- | --- |
-| Authentication | Fixed error "multiple matching_tokens occurred when acquiring token." when authenticating to Azure resources |
-| Autocomplete | Fixed autocomplete suggests "abort" whenever new comment is begun |
-| Connection | Updated prefix for Clear Pooled Connections in the command palette to use the MSSQL prefix |
-| Connection | Fixed proxy setting values not being passed to backend SQL Tools Service |
-| Connection | Removed tenant filter config setting |
-| Extensibility | Fixed issue where server dashboard was loading before activation of extension completed |
-| Notebooks | Fixed issue where the Notebook Python process continued to run after Azure Data Studio is closed |
-| Notebooks | Fixed Jupyter Notebook entry in new file command under command palette does nothing |
-| Object Explorer | Fixed silent failure when attempting to open script files |
-| Object Explorer | Removed duplicate entry for Group By Schema from command palette |
-| Object Explorer | Addressed behavior where selecting Manage for an Azure SQL Database opened the dashboard for the logical server instead of the database |
-| Profiler Extension | Fixed issue where Profiler columns were not resizeable |
-| Profiler Extension | Resolved problem where selecting Ctrl + F in the Profiler extension did not bring up Find dialog |
-| Query Editor | Updated maximum value supported for `Query: Text Size` setting to fix results not being copied to the clipboard |
-| Query Editor | Fixed issue where query editor would not open due to initialization errors |
-| Query Editor | Fixed error "Cannot connect to the database due to invalid OwnerUri" after saving a new query file |
-| Query History Extension | Fixed error loading query history items |
-| Schema Compare | Fixed issue where schema compare does not show that it is running while doing a comparison |
-| Schema Compare | Fixed issue where Azure Data Studio stops responding after attempting to apply schema compare changes |
-| Shell | Shortened query tab titles for edit data |
-| Shell | Updated hyperlinks to use correct theming so they are visible when using dark theme |
-| Shell | Updated shell default behavior to not open any editor when `Show welcome page on startup` is not selected |
-| SQL Project | Fixed issue where database project fails to build with syntax error when including a database scoped credential object |
-
-For details about the issues addressed in the November 2023 release, visit the [November 2023 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/105?closed=1).
-
-#### Known issues in 1.47.0
+#### Known issues in 1.47.1
 
  New Item | Details | Workaround |
 | --- | --- | --- |
@@ -91,7 +50,7 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 
 | Azure Data Studio release | Build number | Release date | Hotfix |
 | --- | --- | --- | --- |
-| [November 2023](#november-2023) | 1.47.0 | November 8, 2023 | N/A |
+| [November 2023](#november-2023) | 1.47.0 | November 8, 2023 | [hotfix](#november-2023-hotfix) |
 | [September 2023](#september-2023) | 1.46.0 | September 20, 2023 | [hotfix](#september-2023-hotfix) |
 | [July 2023](#july-2023) | 1.45.0 | July 26, 2023 | [hotfix](#july-2023-hotfix) |
 | [May 2023](#may-2023) | 1.44.0 | May 24, 2023 | [hotfix](#may-2023-hotfix) |
@@ -142,6 +101,68 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 
 > [!NOTE]  
 > All previous versions of Azure Data Studio are not supported.
+
+### November 2023
+
+Azure Data Studio 1.47.0 is the latest general availability (GA) release.
+
+- Release number: 1.47.0
+- Release date: November 8, 2023
+ 
+ #### What's new in 1.47.0
+
+| New Item | Details |
+| --- | --- |
+| Connection | Improved visibility of advanced options in tabs and tooltips |
+| Database Properties | Implemented usability improvements to object properties dialogs |
+| Extensibility | Allow extensions to hook into provider events |
+| Extensibility | Improved charting capability |
+| General | Enabled `Mssql: Parallel Message Processing` by default to improve application performance when working with MSSQL connections. |
+| General | Added `Mssql: Parallel Message Processing Limit` with a default of 100 to control the number of threads used for parallel processing. |
+| General | Updated notifications so they close automatically upon task completion |
+| Notebooks | Updated version to 6.5.6 and removed traitlets v5.9.0 from required notebook dependencies |
+| Object Explorer | Added `Select Top 1000` menu option for the history table of a system-versioned temporal table |
+| Object Explorer | Usability improvements including added context menus |
+| Result Set | Added additional options for saving results to Excel |
+| Result Set | Added support to display formatted XML data when stored as a VARCHAR data type |
+| User Management | References to Azure Active Directory (Azure AD) have been updated to Microsoft Entra, see [Azure AD is Becoming Microsoft Entra ID](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-is-becoming-microsoft-entra-id/ba-p/2520436) for details. |
+| VS Code Merge | Merges upstream improvements from VS Code 1.80, 1.81, and 1.82. These releases contained numerous new features and quality, performance, stability, and compliance enhancements. The full details can be reviewed in the VS Code release notes at: [Visual Studio Code June 2023](https://code.visualstudio.com/updates/v1_80), [Visual Studio Code July 2023](https://code.visualstudio.com/updates/v1_81), and [Visual Studio Code August 2023](https://code.visualstudio.com/updates/v1_82). |
+
+#### Bug fixes in 1.47.0
+
+| New Item | Details |
+| --- | --- |
+| Authentication | Fixed error "multiple matching_tokens occurred when acquiring token." when authenticating to Azure resources |
+| Autocomplete | Fixed autocomplete suggests "abort" whenever new comment is begun |
+| Connection | Updated prefix for Clear Pooled Connections in the command palette to use the MSSQL prefix |
+| Connection | Fixed proxy setting values not being passed to backend SQL Tools Service |
+| Connection | Removed tenant filter config setting |
+| Extensibility | Fixed issue where server dashboard was loading before activation of extension completed |
+| Notebooks | Fixed issue where the Notebook Python process continued to run after Azure Data Studio is closed |
+| Notebooks | Fixed Jupyter Notebook entry in new file command under command palette does nothing |
+| Object Explorer | Fixed silent failure when attempting to open script files |
+| Object Explorer | Removed duplicate entry for Group By Schema from command palette |
+| Object Explorer | Addressed behavior where selecting Manage for an Azure SQL Database opened the dashboard for the logical server instead of the database |
+| Profiler Extension | Fixed issue where Profiler columns weren't resizeable |
+| Profiler Extension | Resolved problem where selecting Ctrl + F in the Profiler extension didn't bring up Find dialog |
+| Query Editor | Updated maximum value supported for `Query: Text Size` setting to fix results not being copied to the clipboard |
+| Query Editor | Fixed issue where query editor wouldn't open due to initialization errors |
+| Query Editor | Fixed error "Cannot connect to the database due to invalid OwnerUri" after saving a new query file |
+| Query History Extension | Fixed error loading query history items |
+| Schema Compare | Fixed issue where schema compare doesn't show that it's running while doing a comparison |
+| Schema Compare | Fixed issue where Azure Data Studio stops responding after attempting to apply schema compare changes |
+| Shell | Shortened query tab titles for edit data |
+| Shell | Updated hyperlinks to use correct theming so they're visible when using dark theme |
+| Shell | Updated shell default behavior to not open any editor when `Show welcome page on startup` isn't selected |
+| SQL Project | Fixed issue where database project fails to build with syntax error when including a database scoped credential object |
+
+For details about the issues addressed in the November 2023 release, visit the [November 2023 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/105?closed=1).
+
+#### Known issues in 1.47.0
+
+ New Item | Details | Workaround |
+| --- | --- | --- |
+| Installation | Azure Data Studio installation fails on RHEL 8 | Use RHEL 9, or manually install glibc-2.29 and add it to the Library Path and then re-install ADS |
 
 ### September 2023 (hotfix)
 
@@ -198,7 +219,7 @@ For details about the issue addressed in the September 2023 hotfix release, visi
 | Connection | Introduced notification when a duplicate connection exists upon dragging a connection to a different group |
 | Connection | Fixed issue to prevent Dashboard server name from being replaced with profile name |
 | Connection | Added retry logic to wait for resume when establishing connection to a serverless Azure database |
-| Connection | Fixed issue where tab color did not align with server group color |
+| Connection | Fixed issue where tab color didn't align with server group color |
 | Connection | Updated Cluster Server connection property to have the correct Boolean value for Cosmos DB |
 | Connection | Fixed issue with advanced connection options not correctly transferred to change password dialog |
 | Connection | Addressed incorrect label for first connection in the Recent connections list |
@@ -210,17 +231,17 @@ For details about the issue addressed in the September 2023 hotfix release, visi
 | Query Editor | Fixed Intellisense refresh behavior |
 | Query Editor | Improved query execution performance |
 | Query Editor | Improved read performance for large data sets |
-| Query Editor | Addressed issue where selecting Cancel would not immediately cancel a query that was executing |
+| Query Editor | Addressed issue where selecting Cancel wouldn't immediately cancel a query that was executing |
 | Query Editor | Resolved problem of queries hanging when executing against Synapse Dedicated Pool |
 | Query Plan Viewer | Fixed issue where missing index definition recommendation included incorrect column |
 | Query Plan Viewer | Addressed issue with query plan XML having the incorrect format |
 | Result Set | Corrected XML formatting when opening a column from the result set |
-| Result Set | Fixed issue where copying results to clipboard did not work |
+| Result Set | Fixed issue where copying results to clipboard didn't work |
 | Schema Compare | Added support to automatically resize the split view when the window changes size |
 | Schema Compare | Addressed error "StartIndex cannot be less than zero" which occurred when applying change using Schema Compare |
 | Schema Compare | Display 'Yes' button to re-compare after changing options in Schema Compare |
-| SQL Database Projects | Fixed issue where databases were not populated if a project was created from the server instead of a database |
-| SQL Database Projects | Addressed error 'Could not run the "SqlModelResolutionTask" task because MSBuild could not create or connect to a task host with runtime "NET" and architecture "arm64"' resulting in build failure on arm64 with SDK-style and legacy style projects |
+| SQL Database Projects | Fixed issue where databases weren't populated if a project was created from the server instead of a database |
+| SQL Database Projects | Addressed error 'Could not run the "SqlModelResolutionTask" task because MSBuild couldn't create or connect to a task host with runtime "NET" and architecture "arm64"' resulting in build failure on arm64 with SDK-style and legacy style projects |
 | Welcome Page | Improved display of Install button under the extension list on Welcome Page |
 
 For a full list of bug fixes addressed for the September 2023 hotfix release, visit the [September 2023 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/102?closed=1).
@@ -243,10 +264,10 @@ For a list of the current known issues, visit the [issues list on GitHub](https:
 | New Item | Details |
 | --- | --- |
 | Connection | Fixed an issue that prevented all connections from appearing in the recent and saved connection tree views. |
-| Connection | Fixed an issue where temporary connections were not saved in the recent connection list. |
+| Connection | Fixed an issue where temporary connections weren't saved in the recent connection list. |
 | Database Migration Assessment for Oracle | Resolved issue where links to open the assessment output were no longer working. |
 | Database Schema Conversion Toolkit | Resolved issue where links to open the conversion output were no longer working. |
-| Profiler | Fixed an issue where the session dropdown was not populated when Profiler is opened. |
+| Profiler | Fixed an issue where the session dropdown wasn't populated when Profiler is opened. |
 | Profiler | Addressed an issue where the running state was incorrectly set after a session was started. |
 
 For a full list of bug fixes addressed for the July 2023 hotfix release, visit the [July 2023 Hotfix Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/104?closed=1).
@@ -317,7 +338,7 @@ For a full list of bug fixes addressed for the July 2023 hotfix release, visit t
 | Object Explorer | Fixed issue with unexpected connection drops in Object Explorer |
 | Query Editor | Corrected syntax highlighting for nested multi-line comments |
 | Query Editor | Addressed issue where folding behavior incorrectly included blank lines at the end of a text block |
-| Query Editor | Resolved issue when executing USE DATABASE_NAME command and database context did not change in the status bar |
+| Query Editor | Resolved issue when executing USE DATABASE_NAME command and database context didn't change in the status bar |
 | Query Plan Viewer | Fixed issue with filter icon appearing over query text in Top Operations window |
 | Result Set | Fixed issue where HTML entered in Edit Rows mode was being rendered |
 | Result Set | Fixed incorrect aggregation (sum) when selecting rows in the result set and implemented performance improvements |
@@ -387,7 +408,7 @@ For a full list of bug fixes addressed for the May 2023 Hotfix release, visit th
 | --- | --- |
 | Accessibility | Added labels to radio groups in SQL Database Projects dialog |
 | Accessibility | Fixed issue with narrator reading character twice in network share path for Azure SQL migration extension |
-| Accessibility | Addressed problem where keyboard focus did not shift to error message when creating a new database |
+| Accessibility | Addressed problem where keyboard focus didn't shift to error message when creating a new database |
 | Accessibility | Fixed issue with voiceover not announcing label names correctly when updating a database project |
 | Connection | Improved token refresh behavior |
 | Connection | Enabled support to login with blank passwords when creating MSSQL connection |
@@ -405,9 +426,9 @@ For a full list of bug fixes addressed for the May 2023 Hotfix release, visit th
 | Schema Compare | Update scmp files to be backwards compatible |
 | SQL Database Projects Extension | Fixed multiple issues related to SQLCMD variables and projects |
 | SQL Database Projects Extension | Addressed a failure that was occurring when using schema compare with Azure Synapse dedicated pools |
-| SQL Database Projects Extension | Resolved problem where a database project would not build after a reference to a system database was added from SSDT |
+| SQL Database Projects Extension | Resolved problem where a database project wouldn't build after a reference to a system database was added from SSDT |
 | SQL Database Projects Extension | Fixed issue where projects were listed twice when using multi root workspaces |
-| SQL Database Projects Extension | Fixed an issue where file structure information was not stored in the scmp file after a schema compare |
+| SQL Database Projects Extension | Fixed an issue where file structure information wasn't stored in the scmp file after a schema compare |
 | SQL Database Projects (VS Code) | Updated default folder location when creating a new project from database workflow |
 
 For a full list of bug fixes addressed for the May 2023 release, visit the [May 2023 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/98?closed=1).
