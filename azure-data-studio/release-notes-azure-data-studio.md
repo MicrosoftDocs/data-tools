@@ -4,7 +4,7 @@ description: This article has release notes for Azure Data Studio.
 author: dlevy-msft
 ms.author: dlevy
 ms.reviewer: maghan, randolphwest
-ms.date: 01/10/2024
+ms.date: 02/28/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -19,22 +19,46 @@ This article provides details about updates, improvements, and bug fixes for the
 
 :::image type="icon" source="includes/media/download.svg" border="false"::: **[Download and install the latest release!](./download-azure-data-studio.md)**
 
-### November 2023 (hotfix)
+### February 2024
 
-Azure Data Studio 1.47.1 is the latest general availability (GA) release.
+Azure Data Studio 1.48.0 is the latest general availability (GA) release.
 
-- Release number: 1.47.1
-- Release date: January 10, 2024
- 
-#### Bug fixes in 1.47.1
+- Release number: 1.48.0
+- Release date: February 28, 2024
+
+#### What's new in 1.48.0
 
 | New Item | Details |
 | --- | --- |
-| Query Editor | Fixed query results with blank string interpreted as XML |
-| Shell | Fixed not all installation files signed |
-| Security | Update to [Microsoft.Data.SqlClient 5.1.3](https://github.com/dotnet/SqlClient/blob/main/release-notes/5.1/5.1.3.md) that patches [CVE-2024-0056](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-0056) |
+| Backup/Restore | Add restore from S3-compatible storage to restore dialog |
+| Backup/Restore | Add Restore Database option to Database context menu in Object Explorer |
+| Backup/Restore | Add SQL Server Restore from URL to restore dialog |
+| Copilot | Add ability to change github account |
+| Query Editor | Add Session ID / SPID to query editor tabs |
+| Object Explorer | Add ability to enable Ledger in Create Database dialog |
+| Shell | Support Connect command when launching ADS from the command line |
 
-#### Known issues in 1.47.1
+#### Bug fixes in 1.48.0
+
+| New Item | Details |
+| --- | --- |
+|Connections | Fixed Azure AD - Universal with MFA support doesn't work on Redhat Linux |
+|Connections | Fixed Error: “Cannot read properties of undefined (reading 'serverInfo')” |
+|Connections | Fixed proxy errors browsing Azure resources |
+|Connections | Fixed Error: “UserName cannot be null or empty when using SqlLogin authentication” message when using ’Active Directory Default' authentication |
+|Edit Data | Deleting row causes focus to be in wrong row |
+|Notebooks | Fixed Installing Notebook dependencies failed with error: Cannot read property 'version' of undefined |
+|Notebooks | Fixed "Open in editor" link in Notebooks search results doesn't work |
+|Object Explorer | Removed the drop database icon from the connection browser menu |
+|Query Editor | Fixed tabs not visible in query editor |
+|Query Editor | Fixed query editor does not display any results when results being with “#” |
+|Query Editor | Improved speed when copying data from results grid to clipboard |
+|Query Editor | Fixed blank/empty results pane after executing a query |
+|Query Editor | Fixed invalid results when field contains HTML or XML |
+
+For details about the issues addressed in the February 2024 release, visit the [February 2024 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/107?closed=1).
+
+#### Known issues in 1.48.0
 
  New Item | Details | Workaround |
 | --- | --- | --- |
@@ -50,6 +74,7 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 
 | Azure Data Studio release | Build number | Release date | Hotfix |
 | --- | --- | --- | --- |
+| [February 2024](#february-2024) | 1.48.0 | February 28, 2024 | N/A |
 | [November 2023](#november-2023) | 1.47.0 | November 8, 2023 | [hotfix](#november-2023-hotfix) |
 | [September 2023](#september-2023) | 1.46.0 | September 20, 2023 | [hotfix](#september-2023-hotfix) |
 | [July 2023](#july-2023) | 1.45.0 | July 26, 2023 | [hotfix](#july-2023-hotfix) |
@@ -101,6 +126,28 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 
 > [!NOTE]  
 > All previous versions of Azure Data Studio are not supported.
+
+
+### November 2023 (hotfix)
+
+Azure Data Studio 1.47.1 is the latest general availability (GA) release.
+
+- Release number: 1.47.1
+- Release date: January 10, 2024
+ 
+#### Bug fixes in 1.47.1
+
+| New Item | Details |
+| --- | --- |
+| Query Editor | Fixed query results with blank string interpreted as XML |
+| Shell | Fixed not all installation files signed |
+| Security | Update to [Microsoft.Data.SqlClient 5.1.3](https://github.com/dotnet/SqlClient/blob/main/release-notes/5.1/5.1.3.md) that patches [CVE-2024-0056](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-0056) |
+
+#### Known issues in 1.47.1
+
+ New Item | Details | Workaround |
+| --- | --- | --- |
+| Installation | Azure Data Studio installation fails on RHEL 8 | Use RHEL 9, or manually install glibc-2.29 and add it to the Library Path and then re-install ADS |
 
 ### November 2023
 
