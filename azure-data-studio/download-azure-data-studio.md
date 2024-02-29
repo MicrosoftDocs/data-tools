@@ -37,7 +37,7 @@ Azure Data Studio 1.48.0 is the latest general availability (GA) version.
 | | .deb | [x64](https://go.microsoft.com/fwlink/?linkid=2261573) |
 | | .rpm<sup>1</sup> | [x64](https://go.microsoft.com/fwlink/?linkid=2261574) |
 
-<sup>1</sup> There's a known issue with install on RHEL. For more information, see the [release notes](release-notes-azure-data-studio.md#known-issues-in-1470).
+<sup>1</sup> There's a known issue with install on RHEL. For more information, see the [release notes](release-notes-azure-data-studio.md#known-issues-in-1480).
 
 If you have comments or suggestions or want to report a problem with downloading Azure Data Studio, submit an issue to our team on the [Azure Data Studio feedback page](https://github.com/microsoft/azuredatastudio/issues/).
 
