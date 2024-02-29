@@ -31,7 +31,7 @@ Azure Data Studio 1.48.0 is the latest general availability (GA) release.
 | New Item | Details |
 | --- | --- |
 | Backup/Restore | Add restore from S3-compatible storage to restore dialog |
-| Backup/Restore | Add Restore Database option to Database context menu in Object Explorer |
+| Backup/Restore | Updated Restore Database option to Database context menu in Object Explorer |
 | Backup/Restore | Add SQL Server Restore from URL to restore dialog |
 | Copilot | Add ability to change github account |
 | Query Editor | Add Session ID / SPID to query editor tabs |
