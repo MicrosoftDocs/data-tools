@@ -49,7 +49,7 @@
         "azure data studio"
       ],
       "toc_preview": true,
-      "feedback_system": "GitHub",
+      "feedback_system": "Standard",
       "feedback_github_repo": "MicrosoftDocs/data-tools",
       "feedback_product_url": "https://feedback.azure.com/d365community/search/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0?q=azure+data+studio",
       "titleSuffix": "Azure Data Studio",
@@ -58,7 +58,7 @@
     "fileMetadata": {
       "fileMetadata": {
         "feedback_system": {
-          "azure-data-studio/**/*.md": "GitHub"
+          "azure-data-studio/**/*.md": "Standard"
         },
         "feedback_product_url": {
           "azure-data-studio/**/*.md": "https://github.com/microsoft/azuredatastudio/issues/",
