@@ -65,6 +65,7 @@ If you have the Azure Data Studio Insiders build installed and want to open it f
 ## Launch with Query Editor
 
 Sometimes you may want to open a script in the Query Editor when opening Azure Data Studio. You can launch Azure Data Studio with an existing script by providing the path of the file:
+*It only opens the script in Azure Data Studio, and you cannot run the script with this command.
 
 ```bash
 azuredatastudio .\samplescript.sql
@@ -98,12 +99,6 @@ The following options can be provided in the URL:
 - `connectionProperties`: Advanced connection properties that a provider supports. Value must be a json object containing key-value pairs in format: `{"key1":"value1"}`.
 
 ## Examples
-
-#### Command prompt: Integrated authentication
-
-```bash
-azuredatastudio --server localhost --provider mssql --authenticationType Integrated
-```
 
 #### Command prompt: Launch the Insider build with a saved script
 
