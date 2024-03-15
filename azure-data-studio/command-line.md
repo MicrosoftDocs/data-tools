@@ -99,12 +99,6 @@ The following options can be provided in the URL:
 
 ## Examples
 
-#### Command prompt: Integrated authentication
-
-```bash
-azuredatastudio --server localhost --provider mssql --authenticationType Integrated
-```
-
 #### Command prompt: Launch the Insider build with a saved script
 
 ```bash
