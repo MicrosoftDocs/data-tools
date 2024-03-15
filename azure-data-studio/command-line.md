@@ -1,10 +1,10 @@
 ---
 title: Command line interface in Azure Data Studio
 description: Learn more about the command line interface within Azure Data Studio and how to use it.
-author: erinstellato-ms
-ms.author: erinstellato
+author: dzsquared
+ms.author: drskwier
 ms.reviewer: maghan, randolphwest
-ms.date: 01/03/2024
+ms.date: 03/15/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -24,8 +24,7 @@ For examples of how to run command line tools inside Azure Data Studio, see [Int
 To view an overview of the Azure Data Studio command line interface, open a terminal within Azure Data Studio (**View > Terminal**) or a command prompt and type `azuredatastudio --help`. The output contains the version, usage example, and list of command line options, as shown in the truncated example:
 
 ```output
-C:\>azuredatastudio --help
-Azure Data Studio 1.45.1
+Azure Data Studio 1.48.0
 
 Usage: azuredatastudio.exe [options][paths...]
 
@@ -64,7 +63,7 @@ If you have the Azure Data Studio Insiders build installed and want to open it f
 
 ## Launch with Query Editor
 
-Sometimes you may want to open a script in the Query Editor when opening Azure Data Studio. You can launch Azure Data Studio with an existing script by providing the path of the file:
+Sometimes you might want to open a script in the Query Editor when opening Azure Data Studio. You can launch Azure Data Studio with an existing script by providing the path of the file:
 
 ```bash
 azuredatastudio .\samplescript.sql
@@ -87,23 +86,30 @@ The following commands are supported when launching Azure Data Studio from a com
 
 ### Supported options
 
-The following options can be provided in the URL:
+The following options can be provided in the URL.
 
-- `provider`: Connection provider to use, for example, MSSQL, PGSQL, and so on.
-- `server`: Name of target server or host name
-- `database`: Name of database
-- `user`: Name of user
-- `authenticationType`: Authentication mode to be used, accepted values: `AzureMFA`, `SqlLogin`, `Integrated`, and so on.
-- `applicationName`: Provide an application name that is used in the connection profile
-- `connectionProperties`: Advanced connection properties that a provider supports. Value must be a json object containing key-value pairs in format: `{"key1":"value1"}`.
+| Option | Description |
+| --- | --- |
+| `provider` |  Connection provider to use, for example, MSSQL, PGSQL, and so on. |
+| `server` |  Name of target server or host name. |
+| `database` |  Name of database. |
+| `user` |  Name of user. |
+| `authenticationType` |  Authentication mode to be used, accepted values: `AzureMFA`, `SqlLogin`, `Integrated`, and so on. |
+| `applicationName` |  Provide an application name that is used in the connection profile. |
+| `connectionProperties` |  Advanced connection properties that a provider supports. Value must be a json object containing key-value pairs in format `{"key1":"value1"}`. |
 
 ## Examples
 
 #### Command prompt: Integrated authentication
 
 ```bash
-azuredatastudio --server localhost --provider mssql --authenticationType Integrated
+azuredatastudio --server localhost --authenticationType Integrated
 ```
+
+You might be prompted with a "Trust server certificate" warning.
+
+> [!NOTE]  
+> For users connecting to an on-premises SQL Server or SQL Server in a Virtual Machine, the Database Engine must be configured to support encrypted connections. For complete instructions, see [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption).
 
 #### Command prompt: Launch the Insider build with a saved script
 
