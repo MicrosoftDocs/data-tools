@@ -161,7 +161,7 @@ Now, use the assessment report to perform an offline migration of your data from
     > Currently the extension doesn't support Private Endpoint enabled source or target MongoDB instances.
     > - Configure the source MongoDB instance to allow connections from global Azure datacenters.
     > - Add firewall exceptions to the Azure Cosmos DB for MongoDB vCore target account to permit connections from global Azure datacenters. For more information, see the [Azure Cosmos DB firewall configuration](/azure/cosmos-db/how-to-configure-firewall).
-    > - To locate the relevant IP range information download JSON from [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files) and look for "DataFactory.<Target Cosmos DB Account Region>" within the JSON file.
+    > - To locate the relevant IP range information download JSON from [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files) and look for "DataFactory.{Target Cosmos DB Account Region}" within the JSON file.
 
 
 1. Choose either **Skip** or **Migrate** for each collection in the list of mappings. Collections that already exist in the target are automatically marked with an icon and set to **Skip** by default. Select **Next** to configure the Azure Database Migration Service (DMS).

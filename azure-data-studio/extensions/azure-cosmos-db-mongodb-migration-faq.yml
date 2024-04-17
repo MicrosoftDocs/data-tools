@@ -87,7 +87,7 @@ sections:
       - question: |
           How should I configure my source server firewalls to avoid connectivity issues?
         answer: |
-          Configure the source MongoDB instance to allow connections from global Azure datacenters. For more information, see [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files).To locate the relevant IP range information within the JSON file look for "DataFactory.<Target Cosmos DB Account Region>".
+          Configure the source MongoDB instance to allow connections from global Azure datacenters. For more information, see [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files).To locate the relevant IP range information within the JSON file look for "DataFactory.{Target Cosmos DB Account Region}".
           > [!WARNING]
           > The extension doesn't support Private Endpoint enabled source or target MongoDB instances.
 
