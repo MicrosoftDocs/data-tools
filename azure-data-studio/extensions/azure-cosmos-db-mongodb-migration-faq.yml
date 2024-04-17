@@ -84,10 +84,13 @@ sections:
         answer: |
           Add firewall exceptions to the Azure Cosmos DB for MongoDB vCore target account to accept connections from global Azure datacenters. For more information, see [Azure Cosmos DB firewall configuration](/azure/cosmos-db/how-to-configure-firewall).
 
-          Also, configure the source MongoDB instance to allow connections from global Azure datacenters. For more information, see [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files).
-
+      - question: |
+          How should I configure my source server firewalls to avoid connectivity issues?
+        answer: |
+          Configure the source MongoDB instance to allow connections from global Azure datacenters. For more information, see [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files).To locate the relevant IP range information within the JSON file look for "DataFactory.<Target Cosmos DB Account Region>".
           > [!WARNING]
-          > The extension doesn't support the Azure Database Migration Service's self-hosted integration runtime.
+          > The extension doesn't support Private Endpoint enabled source or target MongoDB instances.
+
       - question: |
           Does the migration job[s] run locally on my machine?
         answer: |

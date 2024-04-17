@@ -79,7 +79,7 @@ Use the extension for the first time to connect to the existing MongoDB "source"
 
     | | Value |
     | --- | --- |
-    | **Connection type** | `Mongo account` |
+    | **Connection type** | `Azure Cosmos DB for MongoDB` |
     | **Connection string/Parameters** | *Use the connection string or parameters for your existing source MongoDB instance.* |
     | **Server group** | `Default` |
     | **Name (optional)** | *Provide a unique name for this connection.* |
@@ -117,6 +117,10 @@ The assessment examines your current MongoDB data estate and utilization. The as
         >
         > The `serverStatus` command returns feature usage only since the last restart, so you would need to ensure that sufficient time has passed since the last server restart to get an assessment that accurately reflects your actual workload.
 
+    1. Provide the path to **Data assessment logs**.
+        > [!TIP]
+        > Although this field is optional, providing data assessment logs can yield more detailed insights about the workload. These logs are obtained by scanning data and reading verbose logs. The data assessment runs independently as a CLI before initiating the migration assessment, and the resulting JSON is then supplied here. Download the data assessment CLI [here](https://aka.ms/MongoMigrationDataAssessment).
+
     1. Select **Run validation** to validate the assessment inputs.
 
 1. Once the validation is successful, select **Start assessment** to run the assessment.
@@ -153,6 +157,13 @@ Now, use the assessment report to perform an offline migration of your data from
 
 1. Select **Test connection** to validate the credentials for the Azure Cosmos DB for MongoDB account. Select **Next** to navigate to the mapping of collections from the source to the target.
 
+    > [!IMPORTANT]
+    > Currently the extension doesn't support Private Endpoint enabled source or target MongoDB instances.
+    > - Configure the source MongoDB instance to allow connections from global Azure datacenters.
+    > - Add firewall exceptions to the Azure Cosmos DB for MongoDB vCore target account to permit connections from global Azure datacenters. For more information, see the [Azure Cosmos DB firewall configuration](/azure/cosmos-db/how-to-configure-firewall).
+    > - To locate the relevant IP range information download JSON from [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files) and look for "DataFactory.<Target Cosmos DB Account Region>" within the JSON file.
+
+
 1. Choose either **Skip** or **Migrate** for each collection in the list of mappings. Collections that already exist in the target are automatically marked with an icon and set to **Skip** by default. Select **Next** to configure the Azure Database Migration Service (DMS).
 
     :::image type="content" source="media/azure-cosmos-db-mongodb-migration/collection-mapping.png" lightbox="media/azure-cosmos-db-mongodb-migration/collection-mapping.png" alt-text="Screenshot of the mapping of collections from the source to the target.":::
@@ -163,6 +174,9 @@ Now, use the assessment report to perform an offline migration of your data from
 1. Choose an existing Azure Database Migration Service instance from the dropdown or select **Create New** to create a new migration service. Azure Database Migration Service is a service that migrates data to and from Azure data platforms by using cloud infrastructure for data transfer, instead of relying on local resources.
 
     :::image type="content" source="media/azure-cosmos-db-mongodb-migration/select-migration-service.png" lightbox="media/azure-cosmos-db-mongodb-migration/select-migration-service.png" alt-text="Screenshot of the option to choose a migration service.":::
+
+    > [!IMPORTANT]
+    > If you're using Database Migration Service for the first time, make sure that the Microsoft.DataMigration [resource provider is registered in your subscription](/azure/dms/quickstart-create-data-migration-service-portal#register-the-resource-provider).
 
 1. Select **Next** to view the migration summary. Once you reviewed and confirmed the details, select **Create Schema** to create resources on the target account.
 
