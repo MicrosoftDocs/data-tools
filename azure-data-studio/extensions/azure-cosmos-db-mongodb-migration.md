@@ -113,9 +113,7 @@ The assessment examines your current MongoDB data estate and utilization. The as
     1. Provide the path to **MongoDB Logs**.
 
         > [!TIP]
-        > This is an optional field, providing the logs path yields more detailed insights at the collection level. When the log folder isn’t specified, the tool relies on information from the `serverStatus` command for the assessment.
-
-        > Keep in mind that the 'serverStatus' command reports feature usage only since the last server restart. To obtain an assessment that accurately reflects your actual workload, ensure sufficient time has elapsed since the most recent server restart.
+        > This is an optional field, providing the logs path yields more detailed insights at the collection level. When the log folder isn’t specified, the tool relies on information from the `serverStatus` command for the assessment. Keep in mind that the 'serverStatus' command reports feature usage only since the last server restart. To obtain an assessment that accurately reflects your actual workload, ensure sufficient time has elapsed since the most recent server restart.
 
     1. Provide the path to **Data assessment logs**.
         > [!TIP]
