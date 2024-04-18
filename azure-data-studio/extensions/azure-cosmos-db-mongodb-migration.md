@@ -113,13 +113,13 @@ The assessment examines your current MongoDB data estate and utilization. The as
     1. Provide the path to **MongoDB Logs**.
 
         > [!TIP]
-        > This is an optional field, however specifying the logs path results in more granular findings at the collection level. When the log folder isn't specified, the tool uses details from the `serverStatus` command to perform the assessment.
-        >
-        > The `serverStatus` command returns feature usage only since the last restart, so you would need to ensure that sufficient time has passed since the last server restart to get an assessment that accurately reflects your actual workload.
+        > This is an optional field, providing the logs path yields more detailed insights at the collection level. When the log folder isn’t specified, the tool relies on information from the `serverStatus` command for the assessment.
+
+        > Keep in mind that the 'serverStatus' command reports feature usage only since the last server restart. To obtain an assessment that accurately reflects your actual workload, ensure sufficient time has elapsed since the most recent server restart.
 
     1. Provide the path to **Data assessment logs**.
         > [!TIP]
-        > Although this field is optional, providing data assessment logs can yield more detailed insights about the workload. These logs are obtained by scanning data and reading verbose logs. The data assessment runs independently as a CLI before initiating the migration assessment, and the resulting JSON is then supplied here. Download the data assessment CLI [here](https://aka.ms/MongoMigrationDataAssessment).
+        > While this field remains optional, including data assessment logs can offer more comprehensive insights into the workload. These logs are acquired by scanning data and reviewing detailed logs. The data assessment independently executes as a command-line interface (CLI) before initiating the migration assessment, and the resulting JSON is subsequently provided here. Download the data assessment CLI [here](https://aka.ms/MongoMigrationDataAssessment).
 
     1. Select **Run validation** to validate the assessment inputs.
 
@@ -160,7 +160,7 @@ Now, use the assessment report to perform an offline migration of your data from
     > [!IMPORTANT]
     > Currently the extension doesn't support Private Endpoint enabled source or target MongoDB instances.
     > - Configure the source MongoDB instance to allow connections from global Azure datacenters.
-    > - Add firewall exceptions to the Azure Cosmos DB for MongoDB vCore target account to permit connections from global Azure datacenters. For more information, see the [Azure Cosmos DB firewall configuration](/azure/cosmos-db/how-to-configure-firewall).
+    > - Add [firewall exceptions](/azure/cosmos-db/how-to-configure-firewall) to the Azure Cosmos DB for MongoDB vCore target account to permit connections from global Azure datacenters.
     > - To locate the relevant IP range information download JSON from [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files) and look for "DataFactory.{Target Cosmos DB Account Region}" within the JSON file.
 
 

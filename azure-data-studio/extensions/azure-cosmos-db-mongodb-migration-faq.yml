@@ -82,12 +82,12 @@ sections:
       - question: |
           How should I configure my Azure Cosmos DB for MongoDB vCore and MongoDB firewalls to avoid connectivity issues?
         answer: |
-          Add firewall exceptions to the Azure Cosmos DB for MongoDB vCore target account to accept connections from global Azure datacenters. For more information, see [Azure Cosmos DB firewall configuration](/azure/cosmos-db/how-to-configure-firewall).
+          Add [firewall exceptions](/azure/cosmos-db/how-to-configure-firewall) to the Azure Cosmos DB for MongoDB vCore target account to accept connections from global Azure datacenters. To locate the relevant IP range information download JSON from [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files) and look for "DataFactory.{Target Cosmos DB Account Region}" within the JSON file.
 
       - question: |
           How should I configure my source server firewalls to avoid connectivity issues?
         answer: |
-          Configure the source MongoDB instance to allow connections from global Azure datacenters. For more information, see [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files).To locate the relevant IP range information within the JSON file look for "DataFactory.{Target Cosmos DB Account Region}".
+          Configure the source MongoDB instance to allow connections from global Azure datacenters. To locate the relevant IP range information download JSON from [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files) and look for "DataFactory.{Target Cosmos DB Account Region}" within the JSON file.
           > [!WARNING]
           > The extension doesn't support Private Endpoint enabled source or target MongoDB instances.
 
