@@ -66,25 +66,25 @@ To install the Azure SQL migration extension on a disconnected computer, you mus
 
 1. Download [!INCLUDE [azure-data-studio-short](../includes/azure-data-studio-short.md)] for the disconnected machine, from [Download and install Azure Data Studio](../download-azure-data-studio.md), and take note of the platform.
 
-1. Download the latest Azure SQL migration extension VSIX file from the following location: [https://sqlopsextensions.blob.core.windows.net/extensions/sql-migration/sql-migration-1.5.1.vsix](https://sqlopsextensions.blob.core.windows.net/extensions/sql-migration/sql-migration-1.5.1.vsix).
+1. Download the latest Azure SQL migration extension VSIX file from the following location: [https://sqlopsextensions.blob.core.windows.net/extensions/sql-migration/sql-migration-1.5.4.vsix](https://sqlopsextensions.blob.core.windows.net/extensions/sql-migration/sql-migration-1.5.4.vsix).
 
    > [!NOTE]
-   > You can change the version number, which is `1.5.1` in this example, if you download a later version.
+   > You can change the version number, which is `1.5.4` in this example, if you download a later version.
 
 1. Download the required SQL tool service binaries. Follow this step after you install the Azure SQL migration extension on your disconnected machine.
 
-   1. On disconnected machine, open the following path: `%USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.1`
+   1. On disconnected machine, open the following path: `%USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.4`
 
       > [!NOTE]
-      > You can change the version number, which is `1.5.1` in this example, if you download a later version.
+      > You can change the version number, which is `1.5.4` in this example, if you download a later version.
 
    1. Open the `config.json` file to find the version number for SQL tool service binaries to be downloaded. For example:
 
       ```json
-      "version": "4.11.0.20"
+      "version": "4.12.0.4"
       ```
 
-   1. Visit the releases tab of the GitHub repository using this version number. For example, [https://github.com/microsoft/sqltoolsservice/releases/tag/4.11.0.20](https://github.com/microsoft/sqltoolsservice/releases/tag/4.11.0.20).
+   1. Visit the releases tab of the GitHub repository using this version number. For example, [https://github.com/microsoft/sqltoolsservice/releases/tag/4.12.0.4](https://github.com/microsoft/sqltoolsservice/releases/tag/4.12.0.4).
 
    1. Depending upon the disconnected machine platform, download the `Microsoft.SqlTools.Migration` zip file. For example:
 
@@ -99,21 +99,21 @@ To install the Azure SQL migration extension on a disconnected computer, you mus
 
 1. To install the Azure SQL migration extension, open [!INCLUDE [azure-data-studio-short](../includes/azure-data-studio-short.md)] and navigate to **File** > **Install Extension from VSIX package**. Locate the VSIX file you copied to the disconnected machine.
 
-1. On the disconnected machine, navigate to the following path: `%USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.1`.
+1. On the disconnected machine, navigate to the following path: `%USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.4`.
 
    > [!NOTE]
-   > You can change the version number, which is `1.5.1` in this example, if you download a later version.
+   > You can change the version number, which is `1.5.4` in this example, if you download a later version.
 
-1. Create folders in the path to add the following subdirectories: `migrationService\windows\4.11.0.20`. Your folder structure should look similar to the following example:
+1. Create folders in the path to add the following subdirectories: `\migrationService\windows\4.12.0.4\`. Your folder structure should look similar to the following example:
 
    ```output
-   %USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.1\ migrationService\Windows\4.11.0.20
+   %USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.4\migrationService\Windows\4.12.0.4
    ```
 
    > [!NOTE]
-   > You can change both the version number (which is `4.11.0.20` in this example) and platform (which is `windows` in this example), to match the version and platform downloaded the previous steps.
+   > You can change both the version number (which is `4.12.0.4` in this example) and platform (which is `windows` in this example), to match the version and platform downloaded the previous steps.
 
-1. Extract the zipped `Microsoft.SqlTools.Migration` file in this path.
+1. Extract the zipped `Microsoft.SqlTools.Migration` file under the above mentioned path.
 
 1. Restart [!INCLUDE [azure-data-studio-short](../includes/azure-data-studio-short.md)].
 
