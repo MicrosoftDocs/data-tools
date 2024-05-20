@@ -15,7 +15,7 @@ ms.custom:
 
 This article provides the steps to quickly view, edit, and create keyboard shortcuts in Azure Data Studio.
 
-Because Azure Data Studio inherits its key binding functionality from Visual Studio Code, detailed information about advanced customizations, using different keyboard layouts, etc., is in the [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/getstarted/keybindings) article. Some key binding features might not be available (for example, Keymap extensions are not supported in Azure Data Studio).
+Because Azure Data Studio inherits its key binding functionality from Visual Studio Code, detailed information about advanced customizations, using different keyboard layouts, etc., is in the [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/getstarted/keybindings) article. Some key binding features might not be available (for example, Keymap extensions aren't supported in Azure Data Studio).
 
 ## Open the Keyboard Shortcuts editor
 
@@ -23,7 +23,7 @@ To view all currently defined keyboard shortcuts:
 
 Open the **Keyboard Shortcuts** editor from the **File** menu: **File** > **Preferences** > **Keyboard Shortcuts** (**Azure Data Studio** > **Preferences** > **Keyboard Shortcuts** on Mac).
 
-In addition to displaying current key bindings, the **Keyboard Shortcuts** editor lists the available commands that do not have keyboard shortcuts defined. The **Keyboard Shortcuts** editor enables you to easily change, remove, reset, and define new key bindings.
+In addition to displaying current key bindings, the **Keyboard Shortcuts** editor lists the available commands that don't have keyboard shortcuts defined. The **Keyboard Shortcuts** editor enables you to easily change, remove, reset, and define new key bindings.
 
 ## Edit existing keyboard shortcuts
 
