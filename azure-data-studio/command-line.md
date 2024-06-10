@@ -24,7 +24,7 @@ For examples of how to run command line tools inside Azure Data Studio, see [Int
 To view an overview of the Azure Data Studio command line interface, open a terminal within Azure Data Studio (**View > Terminal**) or a command prompt and type `azuredatastudio --help`. The output contains the version, usage example, and list of command line options, as shown in the truncated example:
 
 ```output
-Azure Data Studio 1.48.0
+Azure Data Studio 1.48.1
 
 Usage: azuredatastudio.exe [options][paths...]
 
