@@ -1,10 +1,10 @@
 ---
 title: Azure Data Studio release notes
 description: This article has release notes for Azure Data Studio.
-author: dlevy-msft
-ms.author: dlevy
+author: akatesmith
+ms.author: katsmith
 ms.reviewer: maghan, randolphwest
-ms.date: 02/28/2024
+ms.date: 06/18/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -24,14 +24,13 @@ This article provides details about updates, improvements, and bug fixes for the
 Azure Data Studio 1.48.1 is the latest general availability (GA) release.
 
 - Release number: 1.48.1
-- Release date: June 13, 2024
+- Release date: June 18, 2024
  
 #### Bug fixes in 1.48.1
 
 | New Item | Details |
 | --- | --- |
 | Shell | Improved in-app update notifications to use Microsoft Download Center directly |
-| Shell | Improved something about the extension gallery |
 
 #### Known issues in 1.48.1
 
