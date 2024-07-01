@@ -59,7 +59,6 @@ Options
 
 You can launch Azure Data Studio from the command line to quickly open a file, folder, or project. Typically, you open Azure Data Studio within the context of a folder. From an open terminal or command prompt, navigate to your project folder and type `azuredatastudio`.
 
-If you have the Azure Data Studio Insiders build installed and want to open it from a command line, use `azuredatastudio-insiders`.
 
 ## Launch with Query Editor
 
@@ -111,10 +110,10 @@ You might be prompted with a "Trust server certificate" warning.
 > [!NOTE]  
 > For users connecting to an on-premises SQL Server or SQL Server in a Virtual Machine, the Database Engine must be configured to support encrypted connections. For complete instructions, see [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption).
 
-#### Command prompt: Launch the Insider build with a saved script
+#### Command prompt: Launch Azure Data Studio with a saved script
 
 ```bash
-azuredatastudio-insider --server localhost --provider mssql --user sa .\samplescript.sql
+azuredatastudio --server localhost --provider mssql --user sa .\samplescript.sql
 ```
 
 #### Browser

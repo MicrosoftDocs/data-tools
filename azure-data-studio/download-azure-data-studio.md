@@ -74,10 +74,6 @@ If you have comments or suggestions or want to report a problem with downloading
 
 For details about the latest release of Azure Data Studio, see [Release notes for Azure Data Studio](./release-notes-azure-data-studio.md).
 
-## Download the insiders build of Azure Data Studio
-
-As an alternative, if you want to try out the beta features and send feedback, you can [download the insiders build of Azure Data Studio](https://github.com/microsoft/azuredatastudio#try-out-the-latest-insiders-build-from-main-branch).
-
 ## Supported operating systems
 
 Azure Data Studio runs on Windows, macOS, and Linux. The following versions are supported:
