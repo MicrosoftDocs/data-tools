@@ -4,7 +4,7 @@ description: Build and Publish with SQL Server Database Projects extension
 author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan
-ms.date: 4/12/2023
+ms.date: 07/02/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -61,11 +61,11 @@ Creating a new container exposes the following options:
 * SQL Server admin password: the *sa* password for the new instance
 * SQL Server docker image: the version base of the container
 
-For more information on the Azure SQL local development container, see [Azure SQL Database Emulator](/azure/azure-sql/database/local-dev-experience-sql-database-emulator).
+For more information on the Azure SQL local development container, see [Azure SQL Database dev container template](/azure/azure-sql/database/local-dev-experience-dev-containers).
 
 For more information on SQL Server in containers, see [Configure and customize SQL Server Docker containers](/sql/linux/sql-server-linux-docker-container-configure).
 
-## Next steps
+## Related content
 
 - [SQL Database Projects extension](sql-database-project-extension.md)
 - [Build SQL database projects from command line](sql-database-project-extension-build-from-command-line.md)
