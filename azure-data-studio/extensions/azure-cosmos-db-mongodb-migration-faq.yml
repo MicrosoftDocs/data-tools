@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 metadata:
-  title: Azure Cosmos DB for MongoDB vCore migration extension FAQ (preview)
+  title: Azure Cosmos DB for MongoDB migration extension FAQ (preview)
   titleSuffix: Azure Data Studio
-  description: Frequently asked questions about the Azure Cosmos DB for MongoDB vCore migration extension in Azure Data Studio.
+  description: Frequently asked questions about the Azure Cosmos DB for MongoDB  migration extension in Azure Data Studio.
   author: sandnair
   ms.author: sandnair
   ms.reviewer: sidandrews
@@ -11,10 +11,10 @@ metadata:
   ms.custom:
     - ignite-2023
   ms.topic: faq
-  ms.date: 10/31/2023
-title: Azure Cosmos DB for MongoDB vCore migration extension for Azure Data Studio FAQ (preview)
+  ms.date: 06/19/2023
+title: Azure Cosmos DB for MongoDB migration extension for Azure Data Studio FAQ (preview)
 summary: |
-  The Azure Cosmos DB for MongoDB vCore migration extension helps you in migrating your MongoDB workloads to Azure Cosmos DB. This article answers commonly asked questions about the migration extension.
+  The Azure Cosmos DB for MongoDB migration extension helps you in migrating your MongoDB workloads to Azure Cosmos DB. This article answers commonly asked questions about the migration extension.
 sections:
   - name: General
     questions:
@@ -45,19 +45,19 @@ sections:
       - question: |
           Why are some collections missing or disabled on the collection mapping step?
         answer: |
-          Azure Cosmos DB for MongoDB vCore doesn't support time series, clustered, or capped collections. Thus, these types of collections are either missing or disabled in the collection mapping step.
+          vCore-based Azure Cosmos DB for MongoDB doesn't support time series, clustered, or capped collections. Thus, these types of collections are either missing or disabled in the collection mapping step.
       - question: |
-          Why are views missing or disabled on the collection mapping step when Azure Cosmos DB for MongoDB vCore supports views?
+          Why are views missing or disabled on the collection mapping step when vCore-based Azure Cosmos DB for MongoDB  supports views?
         answer: |
-          Azure Cosmos DB for MongoDB vCore supports the creation of new views. However, the migration extension doesn't provide support for migrating existing views. 
+          vCore-based Azure Cosmos DB for MongoDB supports the creation of new views. However, the migration extension doesn't provide support for migrating existing views. 
 
           After the migration is finished, you can always recreate the views.
       - question: |
           How much storage should I expect to use in the target account after migration?
         answer: |
-          Azure Cosmos DB for MongoDB vCore doesn't compress data on disk. A typical rough estimate is to double the storage size consumed by the collections on the source MongoDB instance to estimate the storage in the target Azure Cosmos DB for MongoDB vCore account.
+          vCore-based Azure Cosmos DB for MongoDB doesn't compress data on disk. A typical rough estimate is to double the storage size consumed by the collections on the source MongoDB instance to estimate the storage in the target vCore-based Azure Cosmos DB for MongoDB  account.
       - question: |
-          Which collections and databases are skipped when migrating from MongoDB to Azure Cosmos DB for MongoDB vCore?
+          Which collections and databases are skipped when migrating from MongoDB to vCore-based Azure Cosmos DB for MongoDB?
         answer: |
           The following databases and collections are considered **internal** for MongoDB:
             
@@ -66,7 +66,11 @@ sections:
           | **Databases** | `admin`, `local`, `system` `config` |
           | **Collections** | *Any collection with prefix `system`.* |
 
-          Since the internal databases and collections aren't required in Azure Cosmos DB for MongoDB vCore, the extension doesn't enable the migration of these databases.
+          Since the internal databases and collections aren't required in vCore-based Azure Cosmos DB for MongoDB, the extension doesn't enable the migration of these databases.
+      - question: |
+          Is it possible to migrate databases and collections whose names start with numbers?
+        answer: |
+          This is a known issue. The migration doesn't support databases and collections whose names start with numbers. 
       - question: |
           If I select multiple collections to migrate, do they get migrated in parallel?
         answer: |
@@ -80,19 +84,19 @@ sections:
         answer: |
           When you select multiple collections to migrate, the order in which the collections are migrated isn't configurable. If you wish to control the order of migration, migrate the collections in smaller batches based on your desired sequence. For best performance, avoid combining larger collections with smaller collections in a batch.
       - question: |
-          How should I configure my Azure Cosmos DB for MongoDB vCore and MongoDB firewalls to avoid connectivity issues?
+          How should I configure my vCore-based Azure Cosmos DB for MongoDB  and MongoDB firewalls to avoid connectivity issues?
         answer: |
-          Add [firewall exceptions](/azure/cosmos-db/how-to-configure-firewall) to the Azure Cosmos DB for MongoDB vCore target account to accept connections from global Azure datacenters. To locate the relevant IP range information download JSON from [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files) and look for "AzureCloud.{Target Cosmos DB Account Region}" within the JSON file.
+          Add firewall exceptions to the vCore-based Azure Cosmos DB for MongoDB  target account to accept connections from global Azure datacenters. For more information, see [Azure Cosmos DB firewall configuration](/azure/cosmos-db/how-to-configure-firewall).
 
       - question: |
           How should I configure my source server firewalls to avoid connectivity issues?
         answer: |
-          Configure the source MongoDB instance to allow connections from global Azure datacenters. To locate the relevant IP range information download JSON from [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files) and look for "AzureCloud.{Target Cosmos DB Account Region}" within the JSON file.
+          Configure the source MongoDB instance to allow connections from global Azure datacenters. For more information, see [global Azure IP address ranges](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files).
           > [!WARNING]
           > The extension doesn't support Private Endpoint enabled source or target MongoDB instances.
-
+          > The extension doesn't support the Azure Database Migration Service's self-hosted integration runtime.
       - question: |
-          Does the migration job[s] run locally on my machine?
+          Does the migration jobs run locally on my machine?
         answer: |
           The database, collections, and indexes are created directly using commands from the local Azure Data Studio client. This functionality requires connectivity between the client running Azure Data Studio with both the source and target environments. 
 
@@ -112,7 +116,7 @@ sections:
       - question: |
           What is included in an assessment report?
         answer: |
-          The initial part of the report has the key details of the assessment run including a summary of the source MongoDB environment. Details include source MongoDB version, license type and instance type. This part also contains a list of the databases and collections assessed, with their respective assessment summaries and migration readiness.
+          The initial part of the report has the key details of the assessment run including a summary of the source MongoDB environment. Details include source MongoDB version, license type, and instance type. This part also contains a list of the databases and collections assessed, with their respective assessment summaries and migration readiness.
 
           The findings are grouped into **Critical**, **Warning** and **Informational** categories. These categories help you prioritize the findings according to their importance.
 
@@ -122,7 +126,7 @@ sections:
           | --- | --- |
           | **Collection Options** | Findings related to the unsupported collection settings. Examples include time series and collations. |
           | **Features** | Findings related to unsupported database commands, query syntax or operators, including aggregation pipeline queries. In the extra details column, you would be able to see how often the particular feature was being used on the source endpoint. |
-          | **Limits and Quotas** | Findings related to Azure Cosmos DB for MongoDB vCore specific quotas and limits. |
+          | **Limits and Quotas** | Findings related to vCore-based Azure Cosmos DB for MongoDB  specific quotas and limits. |
           | **Indexes** | Findings related to the unsupported MongoDB index types or properties. |
           | **Shard Keys** | Findings related to unsupported shard key configurations. |
       - question: |
@@ -140,5 +144,5 @@ additionalContent: |
   ## Related content
 
   - [Add Azure Data Studio extension](add-extensions.md)
-  - [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/vcore)
-  - [Azure Cosmos DB for MongoDB vCore migration options](/azure/cosmos-db/mongodb/vcore/migration-options)
+  - [vCore-based Azure Cosmos DB for MongoDB](/azure/cosmos-db/mongodb/vcore)
+  - [vCore-based Azure Cosmos DB for MongoDB migration options](/azure/cosmos-db/mongodb/vcore/migration-options)
