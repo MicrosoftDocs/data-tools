@@ -61,7 +61,7 @@ Creating a new container exposes the following options:
 * SQL Server admin password: the *sa* password for the new instance
 * SQL Server docker image: the version base of the container
 
-For more information on the Azure SQL local development container, see [Azure SQL Database dev container template](/azure/azure-sql/database/local-dev-experience-dev-containers).
+For more information on the Azure SQL local development container, see [Azure SQL Database development container template](/azure/azure-sql/database/local-dev-experience-dev-containers).
 
 For more information on SQL Server in containers, see [Configure and customize SQL Server Docker containers](/sql/linux/sql-server-linux-docker-container-configure).
 
