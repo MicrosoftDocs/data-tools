@@ -26,10 +26,9 @@ The SQL Server Profiler extension (preview) provides a simple SQL Server tracing
 
 1. To open the extensions manager and access the available extensions, select the extensions icon, or select **Extensions** in the **View** menu.
 1. Enter *SQL Server Profiler*.
-
- :::image type="content" source="media/sql-server-profiler-extension/profiler-extension.png" alt-text="Screenshot of Profiler Extension Manager." lightbox="media/sql-server-profiler-extension/profiler-extension.png":::
-
 1. Select the extension and **Install** it.
+
+    :::image type="content" source="media/sql-server-profiler-extension/profiler-extension.png" alt-text="Screenshot of Profiler Extension Manager." lightbox="media/sql-server-profiler-extension/profiler-extension.png":::
 
 ## Start Profiler
 
