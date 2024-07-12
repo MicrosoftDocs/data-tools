@@ -49,6 +49,9 @@ To complete this quickstart, you need Azure Data Studio, the PostgreSQL extensio
 
 After successfully connecting, your server opens in the **SERVERS** sidebar.
 
+> [!NOTE]
+> To connect to an Azure Database for PostgreSQL with Entra ID, visit [Use Microsoft Entra ID for authentication with PostgreSQL](/azure/postgresql/single-server/how-to-configure-sign-in-azure-ad-authentication).
+
 ## Create a database
 
 The following steps create a database named **tutorialdb**:
