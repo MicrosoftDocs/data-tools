@@ -4,7 +4,7 @@ description: Learn how to install and use the SQL Server Profiler extension. An 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan
-ms.date: 07/12/2024
+ms.date: 07/11/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
