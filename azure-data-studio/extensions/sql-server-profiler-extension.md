@@ -4,7 +4,7 @@ description: Learn how to install and use the SQL Server Profiler extension. An 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan
-ms.date: 08/07/2023
+ms.date: 07/12/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -25,31 +25,31 @@ The SQL Server Profiler extension (preview) provides a simple SQL Server tracing
 ## Install the SQL Server Profiler extension
 
 1. To open the extensions manager and access the available extensions, select the extensions icon, or select **Extensions** in the **View** menu.
-2. Select an available extension to view its details.
+1. Enter *SQL Server Profiler*.
 
-    ![Profiler Extension Manager](media/sql-server-profiler-extension/profiler-extension.png)
+ :::image type="content" source="media/sql-server-profiler-extension/profiler-extension.png" alt-text="Screenshot of Profiler Extension Manager." lightbox="media/sql-server-profiler-extension/profiler-extension.png":::
 
-3. Select the extension you want and **Install** it.
-4. Select **Reload** to enable the extension (only required the first time you install an extension).
+1. Select the extension and **Install** it.
 
 ## Start Profiler
 
 1. To start Profiler, first make a connection to a server in the Servers tab.
-2. After you make a connection, type **Alt + P** to launch Profiler, or right-click on the server connection and select **Launch Profiler.**
-3. Select a session template from the dropdown.  For Azure SQL DB, Standard_Azure is the only template available.
-4. Edit the session name if appropriate, and select Start.
-5. The session will be started automatically and you will start to see events in the viewer.
-6. To stop Profiler, type **Alt + S** or use the Stop button in the toolbar.  
-7. The hotkey **Alt + S** is a toggle. To restart Profiler, type **Alt + S** or use the Start button in the toolbar.  
+1. After you make a connection, type **Alt + P** to launch Profiler, or right-click on the server connection and select **Launch Profiler.**
+1. Select a session template from the dropdown list. For Azure SQL DB, Standard_Azure is the only template available.
+1. Edit the session name if appropriate, and select Start.
+1. The session will be started automatically and you will start to see events in the viewer.
+1. To stop Profiler, type **Alt + S** or use the Stop button in the toolbar.
+1. The hotkey **Alt + S** is a toggle. To restart Profiler, type **Alt + S** or use the Start button in the toolbar.
 
-    ![View profiler](media/sql-server-profiler-extension/view-profiler.png)
+ :::image type="content" source="media/sql-server-profiler-extension/view-profiler.png" alt-text="Screenshot of View profiler." lightbox="media/sql-server-profiler-extension/view-profiler.png":::
 
 ## Open a saved XEL file
 
 1. To view a XEL file that you have saved locally, open the Command Palette using **Ctrl/CMD + Shift + P** and then type **Profiler: Open XEL File** and select the command.
-2. Browse to the saved XEL file and select Open.
-3. The file will open in the viewer. 
+1. Browse to the saved XEL file and select Open.
+1. The file will open in the viewer.
 
-## Next steps
+## Next step
 
-To learn more about Profiler and extended events, see [Extended Events](/sql/relational-databases/extended-events/extended-events).
+> [!div class="nextstepaction"]
+> [Extended Events](/sql/relational-databases/extended-events/extended-events)
