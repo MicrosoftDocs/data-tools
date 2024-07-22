@@ -45,7 +45,7 @@ sections:
       - question: |
           Why are some collections missing or disabled on the collection mapping step?
         answer: |
-          vCore-based Azure Cosmos DB for MongoDB doesn't support time series, clustered, or capped collections. Thus, these types of collections are either missing or disabled in the collection mapping step.
+          vCore-based Azure Cosmos DB for MongoDB doesn't support time series, , or clustered collections. Thus, these types of collections are either missing or disabled in the collection mapping step.
       - question: |
           Why are views missing or disabled on the collection mapping step when vCore-based Azure Cosmos DB for MongoDB  supports views?
         answer: |
