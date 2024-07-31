@@ -12,6 +12,9 @@ ms.topic: troubleshooting
 
 # Troubleshoot Azure PostgreSQL migration extension errors
 
+> [!NOTE]
+> This extension is on the retirement path. You must export any prior assessments.
+
 This article explains how to determine, diagnose, and fix issues/errors you might encounter when using the Azure PostgreSQL migration extension.
 
 ## Troubleshoot
