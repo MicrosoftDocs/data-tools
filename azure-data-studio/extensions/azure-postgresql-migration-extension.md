@@ -12,7 +12,8 @@ ms.topic: conceptual
 
 # Azure PostgreSQL migration (assessment) extension Preview
 
-[!INCLUDE [database-migration-services-postgresql-ads](../includes/database-migration-services-postgresql-ads.md)]
+> [!NOTE]
+> This extension is on the retirement path. You must export any prior assessments.
 
 The Azure PostgreSQL migration extension in Azure Data Studio helps you assess your PostgreSQL workload for migrating to Azure Database for PostgreSQL - Flexible Server. The extension identifies an appropriate PostgreSQL target with rightsizing recommendations for migrations.
 
