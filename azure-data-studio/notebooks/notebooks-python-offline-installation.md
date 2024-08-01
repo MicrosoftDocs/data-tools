@@ -1,9 +1,9 @@
 ---
 title: Python installation in an offline Windows environment
 description: This tutorial shows how you can install Python in an offline Windows environment
-author: lucyzhang929
-ms.author: luczhan
-ms.reviewer: erinstellato, maghan
+author: erinstellato-ms
+ms.author: erinstellato
+ms.reviewer: maghan, randolphwest
 ms.date: 07/31/2024
 ms.service: azure-data-studio
 ms.topic: how-to
