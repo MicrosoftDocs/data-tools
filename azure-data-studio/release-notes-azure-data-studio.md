@@ -4,7 +4,7 @@ description: This article has release notes for Azure Data Studio.
 author: akatesmith
 ms.author: katsmith
 ms.reviewer: maghan, randolphwest
-ms.date: 07/31/2024
+ms.date: 08/01/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -19,12 +19,12 @@ This article provides details about updates, improvements, and bug fixes for the
 
 :::image type="icon" source="includes/media/download.svg" border="false"::: **[Download and install the latest release!](./download-azure-data-studio.md)**
 
-<!-- ### July 2024
+### August 2024
 
 Azure Data Studio 1.49 is the latest general availability (GA) release.
 
 - Release number: 1.49.0
-- Release date: July 31, 2024
+- Release date: August 1, 2024
  
 #### What's new in 1.49.0
 
@@ -39,28 +39,9 @@ Azure Data Studio 1.49 is the latest general availability (GA) release.
 | Accessibility | Accessibility improvements were made in the Database Properties dialog. |
 | Query editor | Fixed query editor override of transaction isolation level setting in T-SQL script |
 
-For details about the issues addressed in the July 2024 release, visit the [July 2024 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/110?closed=1).
+For details about the issues addressed in the August 2024 release, visit the [August 2024 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/110?closed=1).
 
 #### Known issues in 1.49.0
-
- New Item | Details | Workaround |
-| --- | --- | --- |
-| Installation | Azure Data Studio installation fails on RHEL 8 | Use RHEL 9, or manually install glibc-2.29 and add it to the Library Path and then re-install ADS | -->
-
-### June 2024 (hotfix)
-
-Azure Data Studio 1.48.1 is the latest general availability (GA) release.
-
-- Release number: 1.48.1
-- Release date: June 18, 2024
- 
-#### Bug fixes in 1.48.1
-
-| New Item | Details |
-| --- | --- |
-| Shell | Improved in-app update notifications to use Microsoft Download Center directly |
-
-#### Known issues in 1.48.1
 
  New Item | Details | Workaround |
 | --- | --- | --- |
@@ -129,7 +110,7 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 > [!NOTE]  
 > All previous versions of Azure Data Studio are not supported.
 
-<!-- ### June 2024 (hotfix)
+### June 2024 (hotfix)
 
 - Release number: 1.48.1
 - Release date: June 18, 2024
@@ -144,7 +125,7 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 
  New Item | Details | Workaround |
 | --- | --- | --- |
-| Installation | Azure Data Studio installation fails on RHEL 8 | Use RHEL 9, or manually install glibc-2.29 and add it to the Library Path and then re-install ADS | -->
+| Installation | Azure Data Studio installation fails on RHEL 8 | Use RHEL 9, or manually install glibc-2.29 and add it to the Library Path and then re-install ADS |
 
 ### February 2024
 
