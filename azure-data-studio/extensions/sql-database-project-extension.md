@@ -72,7 +72,7 @@ The SQL Database Projects extension has a dependency on the .NET SDK (required) 
 
 ### .NET SDK
 
-The .NET SDK is required for project build functionality and you are prompted to install the .NET SDK if a supported version can't be detected by the extension.  The .NET SDK can be downloaded and installed for [Windows, macOS, and Linux](https://aka.ms/sqlprojects-dotnet). 
+The .NET SDK is required for project build functionality and you are prompted to install the .NET SDK if a supported version can't be detected by the extension.  The .NET SDK can be downloaded and installed for [Windows, macOS, and Linux](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). 
 
 If you would like to [check currently installed versions](/dotnet/core/install/how-to-detect-installed-versions) of the dotnet SDK, open a terminal and run the following command:
 
