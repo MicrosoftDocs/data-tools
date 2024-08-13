@@ -141,3 +141,4 @@ In the following example `.code-workspace` file, the `folders` array lists all f
 
 - [Getting Started with the SQL Database Projects extension](sql-database-project-extension-getting-started.md)
 - [Build and Publish a project with SQL Database Projects extension](sql-database-project-extension-build.md)
+- [Get help with the SQL Database Projects extension](https://github.com/microsoft/azuredatastudio/issues)
