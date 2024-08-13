@@ -20,7 +20,7 @@ This article describes three ways to get started with the SQL Database Projects 
 
     ![New viewlet](media/sql-database-projects-extension/projects-viewlet.png)
 
-Once you've created or opened a SQL project, you're ready to start developing with SQL projects.  Some actions you might take are:
+Once you've created or opened a SQL project, you're ready to start developing with SQL projects. Some actions you might take are:
 
 - [editing a table in table designer](../build-and-publish-changes-to-table-using-sql-projects.md)
 - building and publishing the project
@@ -29,12 +29,12 @@ Once you've created or opened a SQL project, you're ready to start developing wi
 
 ## Create an empty database project
 
-In the **Database Projects** view select the **New Project** button and enter a project name in the text input that appears.  In the "Select a Folder" dialog that appears, select a directory for the project's folder, .sqlproj file, and other contents to reside in.
+In the **Database Projects** view, select the **New Project** button and enter a project name in the text input that appears. In the "Select a Folder" dialog that appears, select a directory for the project's folder, `.sqlproj` file, and other contents to reside in.
 The empty project is opened and visible in the **Database Projects** view for editing.
 
 ## Open an existing project
 
-In the **Database Projects** view, select the **Open Project** button and open an existing *.sqlproj* file from the file picker that appears. Existing projects can originate from Azure Data Studio, VS Code or [Visual Studio SQL Server Data Tools](/sql/ssdt/sql-server-data-tools).
+In the **Database Projects** view, select the **Open Project** button and open an existing `.sqlproj` file from the file picker that appears. Existing projects can originate from Azure Data Studio, VS Code or [Visual Studio SQL Server Data Tools](/sql/ssdt/sql-server-data-tools).
 
 The existing project is opened and its contents are visible in the **Database Projects** view for editing.
 
@@ -44,11 +44,11 @@ Instead of starting from an empty project, you can quickly populate a SQL Databa
 
 ### In Object Explorer
 
-In the **Connections** view, connect to the SQL instance that contains the database to be extracted.  Right-click on the database and select **Create Project from Database** from the context menu.
+In the **Connections** view, connect to the SQL instance that contains the database to be extracted. Right-click on the database and select **Create Project from Database** from the context menu.
 
 :::image type="content" source="media/sql-database-projects-extension/create-project-from-database.png" alt-text="Screenshot of create Project from Database dialog.":::
 
-The folder structure setting is set to *Schema/Object Type* by default and offers different ways to automatically organize the existing objects when they are scripted out.  The options for the folder structure setting are:
+The folder structure setting is set to *Schema/Object Type* by default and offers different ways to automatically organize the existing objects when they are scripted out. The options for the folder structure setting are:
 
 - File: a single file is created for all the objects
 - Flat: a single folder is created for all the objects in individual files
@@ -57,9 +57,9 @@ The folder structure setting is set to *Schema/Object Type* by default and offer
 - Schema/Object Type: a folder is created per schema and within the folder a folder is created per object type and each object is scripted out to a file
 
 ### In Database Projects view
-In the **Project** view select the **Import Project from Database** button and connect to a SQL instance.  Once the connection is established, select a database from the list available databases and set the name of the project.
+In the **Project** view, select the **Import Project from Database** button and connect to a SQL instance. Once the connection is established, select a database from the list available databases and set the name of the project.
 
-Finally, select a folder structure of the extraction.  The new project is opened and contains SQL scripts for the contents of the selected database.
+Finally, select a folder structure of the extraction. The new project is opened and contains SQL scripts for the contents of the selected database.
 
 ## Further actions
 
@@ -69,13 +69,13 @@ Deploying the database project is achieved in the SQL Database Projects extensio
 
 ### Schema compare
 
-The SQL Database Projects extension interacts with the [Schema Compare extension](schema-compare-extension.md), if installed, to compare the contents of a project to a dacpac, existing database, or another project.  The resulting schema comparison can be used to view and apply the differences from source to target.
+The SQL Database Projects extension interacts with the [Schema Compare extension](schema-compare-extension.md), if installed, to compare the contents of a project to a dacpac, existing database, or another project. The resulting schema comparison can be used to view and apply the differences from source to target.
 
 :::image type="content" source="media/sql-database-projects-extension/sql-project-schema-compare.png" alt-text="Screenshot of schema compare dialog comparing a SQL project to a database.":::
 
 ### Update project from database
 
-If changes have been made to a database that are not yet made to the SQL project, the SQL project can be updated from the state of a database.  This is done by selecting **Update Project from Database** from the context menu of a database in the **Connections** view or from the context menu of a SQL project in the **Database Projects** view.
+If changes are made to a database that are not yet made to the SQL project, the SQL project can be updated from the state of a database. This update is done by selecting **Update Project from Database** from the context menu of a database in the **Connections** view or from the context menu of a SQL project in the **Database Projects** view.
 
 :::image type="content" source="media/sql-database-projects-extension/update-project-from-database.png" alt-text="Screenshot of update Project from Database dialog.":::
 
