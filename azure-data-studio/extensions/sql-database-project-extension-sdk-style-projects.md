@@ -160,3 +160,5 @@ Pre- and post-deployment scripts are SQL scripts that are included in the projec
 
 - [Build and Publish a project with the SQL Database Projects extension](sql-database-project-extension-build.md)
 - [Install SqlPackage for deployment from the CLI](/sql/tools/sqlpackage/sqlpackage-download)
+- [Get help with the SQL Database Projects extension](https://github.com/microsoft/azuredatastudio/issues)
+- [Get help with SQL projects and DacFx](https://github.com/microsoft/dacfx)

@@ -84,3 +84,4 @@ If changes have been made to a database that are not yet made to the SQL project
 
 - [Build and Publish a project with SQL Database Projects extension](sql-database-project-extension-build.md)
 - [Publish a project with GitHub sql-action](https://github.com/azure/sql-action)
+- [Get help with the SQL Database Projects extension](https://github.com/microsoft/azuredatastudio/issues)

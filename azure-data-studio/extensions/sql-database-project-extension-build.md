@@ -69,3 +69,4 @@ For more information on SQL Server in containers, see [Configure and customize S
 
 - [SQL Database Projects extension](sql-database-project-extension.md)
 - [Build SQL database projects from command line](sql-database-project-extension-build-from-command-line.md)
+- [Get help with the SQL Database Projects extension](https://github.com/microsoft/azuredatastudio/issues)

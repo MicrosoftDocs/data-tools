@@ -94,3 +94,5 @@ dotnet build "/home/myuser/Documents/DatabaseProject1/DatabaseProject1.sqlproj" 
 - [SQL Database Projects extension](sql-database-project-extension.md)
 - [SDK-style SQL projects in SQL Database Projects extension](sql-database-project-extension-sdk-style-projects.md)
 - [Publish SQL database projects](sql-database-project-extension-build.md#publish-a-database-project)
+- [Get help with the SQL Database Projects extension](https://github.com/microsoft/azuredatastudio/issues)
+- [Get help with SQL projects and DacFx](https://github.com/microsoft/dacfx)
