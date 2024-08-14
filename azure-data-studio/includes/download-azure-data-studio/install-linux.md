@@ -12,6 +12,9 @@ You can install Azure Data Studio on Red Hat Enterprise Linux (RHEL), SUSE Linux
 
 #### [RHEL](#tab/redhat-install)
 
+> [!NOTE]
+>  Azure Data Studio installation failure is a known issue on RHEL 8. Manually install glibc-2.29 and add it to the Library Path and then re-install ADS to resolve the issue.
+
 #### Install using .rpm file
 
 1. Download Azure Data Studio for Red Hat Enterprise Linux by using the [.rpm](https://azuredatastudio-update.azurewebsites.net/latest/linux-rpm-x64/stable) file.
