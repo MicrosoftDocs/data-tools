@@ -1,10 +1,10 @@
 ---
 title: Azure Data Studio release notes
 description: This article has release notes for Azure Data Studio.
-author: akatesmith
-ms.author: katsmith
+author: dzsquared
+ms.author: drskwier
 ms.reviewer: maghan, randolphwest
-ms.date: 08/01/2024
+ms.date: 08/15/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -19,29 +19,24 @@ This article provides details about updates, improvements, and bug fixes for the
 
 :::image type="icon" source="includes/media/download.svg" border="false"::: **[Download and install the latest release!](./download-azure-data-studio.md)**
 
-### August 2024
+### August 2024 (hotfix)
 
-Azure Data Studio 1.49 is the latest general availability (GA) release.
+Azure Data Studio 1.49.1 is the latest general availability (GA) release.
 
-- Release number: 1.49.0
-- Release date: August 1, 2024
- 
-#### What's new in 1.49.0
+- Release number: 1.49.1
+- Release date: August 15, 2024
 
-| New Item | Details |
-| --- | --- |
-| SQL Database Projects Extension | Support for Fabric mirrored SQL database (preview) target platform |
-
-#### Bug fixes in 1.49.0
+#### Bug fixes in 1.49.1
 
 | New Item | Details |
 | --- | --- |
-| Accessibility | Accessibility improvements were made in the Database Properties dialog. |
-| Query editor | Fixed query editor override of transaction isolation level setting in T-SQL script |
+| Extensibility | Fixed minimum version detection error causing extensions to incorrectly show no extension update available |
+| Installer | Fixed the certificate signing the Azure Data Studio Windows installers displaying as signed by Microsoft Azure instead of Microsoft |
+| Shell | Fixed an issue with the Windows executable of Azure Data Studio has product version property as undefined |
 
-For details about the issues addressed in the August 2024 release, visit the [August 2024 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/110?closed=1).
+For details about the issues addressed in the August 2024 hotfix release, visit the [August 2024 hotfix Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/114?closed=1).
 
-#### Known issues in 1.49.0
+#### Known issues in 1.49.1
 
  New Item | Details | Workaround |
 | --- | --- | --- |
@@ -57,6 +52,7 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 
 | Azure Data Studio release | Build number | Release date | Hotfix |
 | --- | --- | --- | --- |
+| [August 2024](#august-2024) | 1.49.0 | August 1, 2024 | [hotfix](#august-2024-hotfix) |
 | [February 2024](#february-2024) | 1.48.0 | February 28, 2024 | [hotfix](#june-2024-hotfix) |
 | [November 2023](#november-2023) | 1.47.0 | November 8, 2023 | [hotfix](#november-2023-hotfix) |
 | [September 2023](#september-2023) | 1.46.0 | September 20, 2023 | [hotfix](#september-2023-hotfix) |
@@ -109,6 +105,26 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 
 > [!NOTE]  
 > All previous versions of Azure Data Studio are not supported.
+
+### August 2024
+
+- Release number: 1.49.0
+- Release date: August 1, 2024
+
+#### What's new in 1.49.0
+
+| New Item | Details |
+| --- | --- |
+| SQL Database Projects Extension | Support for Fabric mirrored SQL database (preview) target platform |
+
+#### Bug fixes in 1.49.0
+
+| New Item | Details |
+| --- | --- |
+| Accessibility | Accessibility improvements were made in the Database Properties dialog. |
+| Query editor | Fixed query editor override of transaction isolation level setting in T-SQL script |
+
+For details about the issues addressed in the August 2024 release, visit the [August 2024 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/110?closed=1).
 
 ### June 2024 (hotfix)
 
