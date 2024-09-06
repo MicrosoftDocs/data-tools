@@ -22,7 +22,6 @@ Azure Data Studio 1.44 and later defaults to use the Sql Authentication Provider
 
 After a user upgrades to Azure Data Studio 1.44 and higher, the initial launch of the application will display the following message:
 
---change this below
 :::image type="content" source="connect/connect-update-after-upgrade-no-tenant.png" alt-text="Screenshot of message about tenant list box removal after upgrading Azure Data Studio.":::
 
 With the Sql Authentication Provider, selection of a tenant is no longer required.  The Microsoft Entra tenant list box has been removed from the Connection dialog because it's now handled by the underlying driver.  This change also allows for improved token refresh for Azure SQL Database connections.
