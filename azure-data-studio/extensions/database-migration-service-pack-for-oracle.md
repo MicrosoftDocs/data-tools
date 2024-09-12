@@ -13,6 +13,9 @@ ms.custom: sql-migration-content
 
 # Database Migration Service Pack for Oracle
 
+> [!NOTE]  
+> This extension will be retired on **December 15, 2024**. We will stop supporting this tool for any issues that arise, and will not issue any bug fixes or further updates.
+
 The Database Migration Service Pack for Oracle is a comprehensive extension pack to facilitate the seamless migration of Oracle databases to Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure Virtual Machines. This service pack comprises two essential extensions:
 
 - Database Assessment for Oracle

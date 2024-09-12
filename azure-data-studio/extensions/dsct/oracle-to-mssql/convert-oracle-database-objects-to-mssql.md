@@ -11,6 +11,9 @@ ms.topic: conceptual
 
 # Convert Oracle database objects to Microsoft SQL
 
+> [!NOTE]  
+> This extension will be retired on **December 15, 2024**. We will stop supporting this tool for any issues that arise, and will not issue any bug fixes or further updates.
+
 Once Database Schema Conversion Toolkit (Oracle to Microsoft SQL) extension is [installed](./install-remove-database-schema-conversion-toolkit-oracle-to-mssql.md), you can start converting your Oracle database objects to the Microsoft SQL platform.
 
 ## Create target SQL Database project

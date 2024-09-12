@@ -11,6 +11,9 @@ ms.topic: conceptual
 
 # Database Schema Conversion Toolkit (DSCT)
 
+> [!NOTE]  
+> This extension will be retired on **December 15, 2024**. We will stop supporting this tool for any issues that arise, and will not issue any bug fixes or further updates.
+
 Database Schema Conversion Toolkit (DSCT) is an extension for [Azure Data Studio](../../what-is-azure-data-studio.md) designed to automate database schema conversion between different database platforms. This documentation explains the installation of the extensions, common scenarios, and what database platforms are compatible.
   
 ## Supported sources and targets

@@ -11,6 +11,9 @@ ms.topic: conceptual
 
 # Configure conversion
 
+> [!NOTE]  
+> This extension will be retired on **December 15, 2024**. We will stop supporting this tool for any issues that arise, and will not issue any bug fixes or further updates.
+
 The Database Schema Conversion Toolkit (Oracle to Microsoft SQL) is aiming to provide a solution to database schema migrations. While default conversion is fairly reasonable, there are cases when users may want to adjust some of the conversion settings to better suit their needs.
 
 ## Configuration user interface
