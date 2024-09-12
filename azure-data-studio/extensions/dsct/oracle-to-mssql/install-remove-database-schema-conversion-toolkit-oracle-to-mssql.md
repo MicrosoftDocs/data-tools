@@ -11,6 +11,9 @@ ms.topic: conceptual
 
 # Install and remove Database Schema Conversion Toolkit (Oracle to Microsoft SQL)
 
+> [!NOTE]  
+> This extension will be retired on **December 15, 2024**. We will stop supporting this tool for any issues that arise, and will not issue any bug fixes or further updates.
+
 To use Database Schema Conversion Toolkit (Oracle to Microsoft SQL) features, you will need to [install the Azure Data Studio](../../../download-azure-data-studio.md) first.
 
 Once Azure Data Studio is installed, select **Extensions** under the **View** menu and search for "Database Schema Conversion Toolkit" on the Extensions Marketplace. Select **Database Schema Conversion Toolkit (Oracle to Microsoft SQL)** and select the **Install** button in the search results list.
