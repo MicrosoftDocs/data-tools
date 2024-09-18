@@ -1,10 +1,10 @@
 ---
 title: Notebooks with Python Kernel in Azure Data Studio
 description: This tutorial shows how you can create and run a Python notebook.
-author: markingmyname
-ms.author: maghan
-ms.reviewer: mikeray, alayu
-ms.date: 08/01/2024
+author: erinstellato-ms
+ms.author: erinstellato
+ms.reviewer: maghan
+ms.date: 09/18/2024
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
@@ -44,7 +44,7 @@ The first time you connect to the Python kernel in a notebook, the **Configure P
 
 To view the location and version of the active Python kernel, create a code cell and run the following Python commands:
 
-```python
+```cmd
 import os
 import sys
 print(sys.version_info)
