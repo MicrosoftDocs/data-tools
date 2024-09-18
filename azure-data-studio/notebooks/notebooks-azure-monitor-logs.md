@@ -98,7 +98,7 @@ Here's a sample query to view AzureMetrics results.
 AzureMetrics
 ```
 
-   :::image type="content" source="media/notebooks-azure-monitor-logs/azure-metrics-results.png" alt-text="Screenshot of azure metrics code cell results." lightbox="media/notebooks-azure-monitor-logs/azure-metrics-results.png":::
+   :::image type="content" source="media/notebooks-azure-monitor-logs/azure-metrics-results.png" alt-text="Screenshot of Azure metrics code cell results." lightbox="media/notebooks-azure-monitor-logs/azure-metrics-results.png":::
 
 ### AzureDiagnostics
 
@@ -112,7 +112,7 @@ AzureDiagnostics
 | take 10
 ```
 
-   :::image type="content" source="media/notebooks-azure-monitor-logs/azure-diagnostics-results.png" alt-text="Screenshot of azure diagnostics code cell results." lightbox="media/notebooks-azure-monitor-logs/azure-diagnostics-results.png":::
+   :::image type="content" source="media/notebooks-azure-monitor-logs/azure-diagnostics-results.png" alt-text="Screenshot of Azure diagnostics code cell results." lightbox="media/notebooks-azure-monitor-logs/azure-diagnostics-results.png":::
 
 ### Analyze events by Diagnostic Settings
 
@@ -126,7 +126,7 @@ AzureDiagnostics
 | summarize count() by OperationName
 ```
 
-   :::image type="content" source="media/notebooks-azure-monitor-logs/azure-diagnostics-summarize results-operation-name.png" alt-text="Screenshot of azure diagnostics summarize code cell results.":::
+   :::image type="content" source="media/notebooks-azure-monitor-logs/azure-diagnostics-summarize results-operation-name.png" alt-text="Screenshot of Azure diagnostics summarize code cell results.":::
 
 You can try some more examples from the [Azure Monitor Logs samples repo](https://github.com/MsSQLGirl/jubilant-data-wizards/blob/main/Simple%20Demo/KQL%20Notebooks/AzureMonitorLogsSample.ipynb).
 
