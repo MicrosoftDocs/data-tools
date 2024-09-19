@@ -8,7 +8,8 @@ ms.date: 02/23/2023
 ms.service: azure-data-studio
 ms.subservice: migration-extension
 ms.topic: conceptual
-ms.custom: sql-migration-content
+ms.collection:
+  - sql-migration-content
 ---
 
 # Troubleshoot Database Migration Assessment for Oracle extension errors
