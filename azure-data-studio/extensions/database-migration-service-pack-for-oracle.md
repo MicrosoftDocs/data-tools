@@ -8,7 +8,8 @@ ms.date: 11/22/2023
 ms.service: azure-data-studio
 ms.subservice: migration-extension
 ms.topic: conceptual
-ms.custom: sql-migration-content
+ms.collection:
+  - sql-migration-content
 ---
 
 # Database Migration Service Pack for Oracle

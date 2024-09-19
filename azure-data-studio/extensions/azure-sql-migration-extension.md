@@ -8,7 +8,7 @@ ms.date: 01/23/2024
 ms.service: azure-data-studio
 ms.subservice: migration-extension
 ms.topic: conceptual
-ms.custom:
+ms.collection:
   - sql-migration-content
 ---
 
