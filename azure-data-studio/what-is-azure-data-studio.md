@@ -13,7 +13,7 @@ ms.custom:
 
 # What is Azure Data Studio?
 
-Azure Data Studio is a powerful, cross-platform data management and development tool for data professionals. It provides a modern editor experience with IntelliSense, code snippets, source control integration, and an integrated terminal, making it easier to manage and develop databases.
+Azure Data Studio is a lightweight, cross-platform data management and development tool for data professionals. It provides a modern editor experience with IntelliSense, code snippets, source control integration, and an integrated terminal, making it easier to manage and develop databases.
 
 With Windows, macOS, and Linux support, Azure Data Studio allows you to connect to various databases, including Azure SQL, SQL Server, MySQL, PostgreSQL, and Cosmos DB. Its extensibility enables users to customize their experience by installing relevant extensions for their workflow.
 
@@ -66,8 +66,7 @@ See [Extension authoring](extensions/extension-authoring.md) to learn about auth
 **Use SQL Server Management Studio if you:**
 
 - Are doing complex administrative or platform configuration.
-- Are doing security management, including user management, vulnerability assessment, and configuration of security features.
-- Performance tuning advisors and dashboards need to be made use of.
+- Are doing security management, including user management, vulnerability assessment, and configuration of security features.Need to make use of performance tuning advisors and dashboards.
 - Use database diagrams and table designers.
 - Need access to Registered Servers.
 - Make use of live query stats or client statistics.
