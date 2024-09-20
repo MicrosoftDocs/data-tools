@@ -3,7 +3,7 @@ title: Back up and restore a database
 description: Follow this tutorial to learn how to back up and restore databases by using Azure Data Studio.
 author: markingmyname
 ms.author: maghan
-ms.date: 07/11/2024
+ms.date: 09/19/2024
 ms.service: azure-data-studio
 ms.topic: tutorial
 ms.custom:
@@ -55,7 +55,7 @@ After you select **Backup**, the **Backup database** dialog box disappears and t
 
 ## Restore a database from a backup file
 
-1. Open the **SERVERS** sidebar by selecting **Ctrl+G**. Then right-click your server, and select **Manage**.
+1. Open the **SERVERS** sidebar by selecting **Ctrl+G**. Then right-click your database, and select **Manage**.
 
 1. Open the **Restore database** dialog box by selecting **Restore** on the **Tasks** widget.
 
