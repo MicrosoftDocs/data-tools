@@ -31,7 +31,7 @@ Azure Data Studio 1.49.1 is the latest general availability (GA) version.
 | --- | --- | --- |
 | Windows | User Installer | [x64](https://go.microsoft.com/fwlink/?linkid=2282284)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2282071) |
 | | System Installer | [x64](https://go.microsoft.com/fwlink/?linkid=2282377)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2282285) |
-| | .zip | [x64](https://go.microsoft.com/fwlink/?linkid=2282377)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2282072) |
+| | .zip | [x64](https://go.microsoft.com/fwlink/?linkid=2282378)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2282072) |
 | macOS | .zip | [Universal](https://go.microsoft.com/fwlink/?linkid=2282073)&emsp;[Intel Chip](https://go.microsoft.com/fwlink/?linkid=2282379)&emsp;[Apple Silicon](https://go.microsoft.com/fwlink/?linkid=2282286) |
 | Linux | .tar.gz | [x64](https://go.microsoft.com/fwlink/?linkid=2282074) |
 | | .deb | [x64](https://go.microsoft.com/fwlink/?linkid=2282287) |
