@@ -51,28 +51,28 @@ To ensure that the Microsoft.DataMigration resource provider is registered in yo
 
 Azure portal:
 
-    1. Go to the Azure portal and navigate to your subscription.
-    2. In the left-hand menu, select Resource providers under Settings.
-    3. Search for Microsoft.DataMigration in the search box at the top.
-    4. If it is not registered, select it and click on the Register button.
+1. Go to the Azure portal and navigate to your subscription.
+2. In the left-hand menu, select Resource providers under Settings.
+3. Search for Microsoft.DataMigration in the search box at the top.
+4. If it is not registered, select it and click on the Register button.
 
 Azure CLI:
 
-    1. Open the Azure Cloud Shell or your local terminal.
-    2. Run the following command to register the resource provider:
-    
-    ```azurecli
-    az provider register --namespace Microsoft.DataMigration
-    ```
+1. Open the Azure Cloud Shell or your local terminal.
+2. Run the following command to register the resource provider:
+
+```azurecli
+az provider register --namespace Microsoft.DataMigration
+```
 
 PowerShell:
 
-    1. Open the Azure Cloud Shell or your local PowerShell.
-    2. Run the following command to register the resource provider:
-    
-    ```powershell
-    Register-AzResourceProvider -ProviderNamespace "Microsoft.DataMigration"
-    ```
+1. Open the Azure Cloud Shell or your local PowerShell.
+2. Run the following command to register the resource provider:
+
+```powershell
+Register-AzResourceProvider -ProviderNamespace "Microsoft.DataMigration"
+```
 
 ## Install the extension
 
