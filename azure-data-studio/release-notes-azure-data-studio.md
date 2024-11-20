@@ -46,7 +46,6 @@ For a list of the current known issues, visit the [issues list on GitHub](https:
 
 | Azure Data Studio release | Build number | Release date | Hotfix |
 | --- | --- | --- | --- |
-| [November 2024](#november-2024) | 1.50.0 | November 20, 2024 | N/A |
 | [August 2024](#august-2024) | 1.49.0 | August 1, 2024 | [hotfix](#august-2024-hotfix) |
 | [February 2024](#february-2024) | 1.48.0 | February 28, 2024 | [hotfix](#june-2024-hotfix) |
 | [November 2023](#november-2023) | 1.47.0 | November 8, 2023 | [hotfix](#november-2023-hotfix) |
