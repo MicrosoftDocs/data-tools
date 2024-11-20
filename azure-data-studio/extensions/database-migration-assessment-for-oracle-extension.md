@@ -1,10 +1,10 @@
 ---
-title: Database Migration Assessment for Oracle extension
+title: Database Migration Assessment for Oracle Extension
 description: Learn how to install the Azure Data Studio Database Migration Assessment for Oracle extension. This extension helps guide you choose the best Azure SQL database and Azure Database for PostgreSQL migration path.
 author: nilabjaball
 ms.author: niball
 ms.reviewer: maghan, randolphwest
-ms.date: 11/22/2023
+ms.date: 11/19/2024
 ms.service: azure-data-studio
 ms.subservice: migration-extension
 ms.topic: conceptual
@@ -21,8 +21,10 @@ The Database Migration Assessment for Oracle extension in Azure Data Studio help
 
 ## Prerequisites
 
-- [Azure Data Studio version 1.39 or above](../download-azure-data-studio.md).
+- [Azure Data Studio version 1.39 or later version](../download-azure-data-studio.md).
+
 - An [Oracle database](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html) running version 11g or higher.
+
 - Oracle users should have CONNECT and SELECT ANY DICTIONARY privileges assigned.
 
 ## Install Azure Data Studio extension
@@ -115,7 +117,7 @@ Once the assessment extension installs, the next step is to connect to Oracle yo
 
 1. There are two types of assessment:
 
-   - **Workload Assessment.** In this assessment, the Oracle assessment module performs a lightweight discovery of the schema objects and categorizes the schema complexity for migration to various categories with a high-level estimate for conversion hours.  This preassessment helps to find the feasibility of the migration to the target platform.
+   - **Workload Assessment.** In this assessment, the Oracle assessment module performs a lightweight discovery of the schema objects and categorizes the schema complexity for migration to various categories with a high-level estimate for conversion hours. This preassessment helps to find the feasibility of the migration to the target platform.
 
    - **Code Assessment.** The code assessment performs an in-depth assessment of the Oracle schema objects and then suggests an overall readiness of the code objects with "ready", "need review", and "not ready" object types at a granular level and its associated conversion hours with higher accuracy.
 
@@ -128,7 +130,7 @@ Once the assessment extension installs, the next step is to connect to Oracle yo
 
      - When you select Code assessment for SQL scenarios, select the schemas that you would like to access for Oracle to SQL conversion and migration. By default, all the eligible schemas are selected for the assessment.
 
-1. Choose **Run validation** to perform the prerequisites and various validation rules related to security permissions,  configuration settings etc. If validation fails, then you need to fix the errors to proceed further.
+1. Choose **Run validation** to perform the prerequisites and various validation rules related to security permissions, configuration settings etc. If validation fails, then you need to fix the errors to proceed further.
 
 1. When Validation is successful, you can select **Run assessment**.
 
