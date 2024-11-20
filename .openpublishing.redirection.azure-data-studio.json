@@ -139,6 +139,16 @@
       "source_path": "azure-data-studio/extensions/azure-cosmos-db-mongodb-extension.md",
       "redirect_url": "/azure-data-studio/extensions/azure-cosmos-db-mongodb",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "azure-data-studio/extensions/azure-postgresql-migration-extension-troubleshoot.md",
+      "redirect_url": "/azure-data-studio/extensions/postgres-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/azure-postgresql-migration-extension.md",
+      "redirect_url": "/azure-data-studio/extensions/postgres-extension",
+      "redirect_document_id": false
     }
   ]
 }

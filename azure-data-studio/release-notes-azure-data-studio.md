@@ -1,10 +1,10 @@
 ---
 title: Azure Data Studio release notes
 description: This article has release notes for Azure Data Studio.
-author: dzsquared
-ms.author: drskwier
+author: croblesm
+ms.author: roblescarlos
 ms.reviewer: maghan, randolphwest
-ms.date: 09/06/2024
+ms.date: 11/19/2024
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
@@ -19,34 +19,28 @@ This article provides details about updates, improvements, and bug fixes for the
 
 :::image type="icon" source="includes/media/download.svg" border="false"::: **[Download and install Azure Data Studio](download-azure-data-studio.md)**
 
-### August 2024 (hotfix)
+### November 2024
 
-Azure Data Studio 1.49.1 is the latest general availability (GA) release.
+Azure Data Studio 1.50.0 is the latest general availability (GA) release.
 
-- Release number: 1.49.1
-- Release date: August 15, 2024
+- Release number: 1.50.0
+- Release date: November 20, 2024
 
-#### Bug fixes in 1.49.1
+#### Bug fixes in 1.50.0
 
-| New item | Details |
+| Category | Details |
 | --- | --- |
-| Extensibility | Fixed minimum version detection error causing extensions to incorrectly show no extension update available |
-| Installer | Fixed the certificate signing the Azure Data Studio Windows installers displaying as signed by Microsoft Azure instead of Microsoft |
-| Shell | Fixed an issue with the Windows executable of Azure Data Studio has product version property as undefined |
+| Core | Upgraded to Electron v30.5.1 to incorporate upstream fixes |
+| SQL Database Projects | Updated to 1.4.4 to include the latest version of DacFx |
+| Query Editor | Fixed compatibility issue with `DESC` keyword and snippets |
 
-For details about the issues addressed in the August 2024 hotfix release, visit the [August 2024 hotfix Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/114?closed=1).
-
-#### Known issues in 1.49.1
-
-| New item | Details | Workaround |
-| --- | --- | --- |
-| Installation | Azure Data Studio installation fails on RHEL 8 | Use RHEL 9, or manually install glibc-2.29 and add it to the Library Path and then re-install ADS |
-
-For a list of the current known issues, visit the [issues list on GitHub](https://github.com/microsoft/azuredatastudio/issues?q=is%3Aissue).
+For details about the issues addressed in the November 2024 release, visit the [November 2024 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/113?closed=1).
 
 ## Azure Data Studio feedback
 
 You can reference [Azure Data Studio feedback](https://github.com/microsoft/azuredatastudio/issues/new/choose) for other known issues and to provide feedback to the product team.
+
+For a list of the current known issues, visit the [issues list on GitHub](https://github.com/microsoft/azuredatastudio/issues?q=is%3Aissue).
 
 ## Previous Azure Data Studio releases and updates
 
@@ -105,6 +99,27 @@ You can reference [Azure Data Studio feedback](https://github.com/microsoft/azur
 
 > [!NOTE]  
 > All previous versions of Azure Data Studio aren't supported.
+
+### August 2024 (hotfix)
+
+- Release number: 1.49.1
+- Release date: August 15, 2024
+
+#### Bug fixes in 1.49.1
+
+| New item | Details |
+| --- | --- |
+| Extensibility | Fixed minimum version detection error causing extensions to incorrectly show no extension update available |
+| Installer | Fixed the certificate signing the Azure Data Studio Windows installers displaying as signed by Microsoft Azure instead of Microsoft |
+| Shell | Fixed an issue with the Windows executable of Azure Data Studio has product version property as undefined |
+
+For details about the issues addressed in the August 2024 hotfix release, visit the [August 2024 hotfix Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/114?closed=1).
+
+#### Known issues in 1.49.1
+
+| New item | Details | Workaround |
+| --- | --- | --- |
+| Installation | Azure Data Studio installation fails on RHEL 8 | Use RHEL 9, or manually install glibc-2.29 and add it to the Library Path and then re-install ADS |
 
 ### August 2024
 
@@ -1689,4 +1704,4 @@ January 09, 2019 / version: 1.3.8
 - [Quickstart: Use Azure Data Studio to connect and query SQL Server](quickstart-sql-server.md)
 - [Quickstart: Use Azure Data Studio to connect and query Azure SQL Database](quickstart-sql-database.md)
 - [Quickstart: Use Azure Data Studio to connect and query data using a dedicated SQL pool in Azure Synapse Analytics](quickstart-sql-dw.md)
-- [https://github.com/Microsoft/azuredatastudio](https://github.com/Microsoft/azuredatastudio)
+- [Azure Data Studio - GitHub repository](https://github.com/Microsoft/azuredatastudio)
