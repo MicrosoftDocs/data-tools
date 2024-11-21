@@ -1,10 +1,10 @@
 ---
 title: Download and install Azure Data Studio
 description: Download and install Azure Data Studio for Windows, macOS, or Linux. This article provides release dates, version numbers, system requirements, and download links.
-author: dzsquare
-ms.author: drskwier
+author: croblesm
+ms.author: roblescarlos
 ms.reviewer: maghan, randolphwest
-ms.date: 08/15/2024
+ms.date: 11/20/2024
 ms.service: azure-data-studio
 ms.topic: overview
 ms.custom: intro-overview
@@ -22,10 +22,10 @@ For more information about Azure Data Studio, visit [What is Azure Data Studio?]
 
 ## Download Azure Data Studio
 
-Azure Data Studio 1.49.1 is the latest general availability (GA) version.
+Azure Data Studio 1.50.0 is the latest general availability (GA) version.
 
-- Release number: 1.49.1
-- Release date: August 15, 2024
+- Release number: 1.50.0
+- Release date: November 20, 2024
   
 | Platform | Type | Download |
 | --- | --- | --- |
@@ -36,7 +36,6 @@ Azure Data Studio 1.49.1 is the latest general availability (GA) version.
 | Linux | .tar.gz | [x64](https://go.microsoft.com/fwlink/?linkid=2282074) |
 | | .deb | [x64](https://go.microsoft.com/fwlink/?linkid=2282287) |
 | | .rpm | [x64](https://go.microsoft.com/fwlink/?linkid=2282380) |
-
 
 If you have comments or suggestions or want to report a problem with downloading Azure Data Studio, submit an issue to our team on the [Azure Data Studio feedback page](https://github.com/microsoft/azuredatastudio/issues/).
 
