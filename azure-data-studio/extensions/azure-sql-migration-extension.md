@@ -1,10 +1,10 @@
 ---
-title: Azure SQL migration extension for Azure Data Studio
+title: Azure SQL Migration Extension for Azure Data Studio
 description: This article describes how you can migrate your data using the Azure SQL migration extension with Azure Data Studio.
-author: croblesm
-ms.author: roblescarlos
+author: nilabjaball
+ms.author: niball
 ms.reviewer: randolphwest
-ms.date: 01/23/2024
+ms.date: 11/19/2024
 ms.service: azure-data-studio
 ms.subservice: migration-extension
 ms.topic: conceptual
@@ -68,14 +68,18 @@ To install the Azure SQL migration extension on a disconnected computer, you mus
 
 1. Download the latest Azure SQL migration extension VSIX file from the following location: [https://sqlopsextensions.blob.core.windows.net/extensions/sql-migration/sql-migration-1.5.4.vsix](https://sqlopsextensions.blob.core.windows.net/extensions/sql-migration/sql-migration-1.5.4.vsix).
 
-   > [!NOTE]
+   > [!NOTE]  
    > You can change the version number, which is `1.5.4` in this example, if you download a later version.
 
 1. Download the required SQL tool service binaries. Follow this step after you install the Azure SQL migration extension on your disconnected machine.
 
-   1. On disconnected machine, open the following path: `%USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.4`
+   1. On the disconnected machine, open the following path:
 
-      > [!NOTE]
+      ```output
+      %USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.4
+      ```
+
+      > [!NOTE]  
       > You can change the version number, which is `1.5.4` in this example, if you download a later version.
 
    1. Open the `config.json` file to find the version number for SQL tool service binaries to be downloaded. For example:
@@ -84,7 +88,7 @@ To install the Azure SQL migration extension on a disconnected computer, you mus
       "version": "4.12.0.4"
       ```
 
-   1. Visit the releases tab of the GitHub repository using this version number. For example, [https://github.com/microsoft/sqltoolsservice/releases/tag/4.12.0.4](https://github.com/microsoft/sqltoolsservice/releases/tag/4.12.0.4).
+   1. Visit the releases tab of the GitHub repository using this version number. For example, <https://github.com/microsoft/sqltoolsservice/releases/tag/4.12.0.4>.
 
    1. Depending upon the disconnected machine platform, download the `Microsoft.SqlTools.Migration` zip file. For example:
 
@@ -99,9 +103,13 @@ To install the Azure SQL migration extension on a disconnected computer, you mus
 
 1. To install the Azure SQL migration extension, open [!INCLUDE [azure-data-studio-short](../includes/azure-data-studio-short.md)] and navigate to **File** > **Install Extension from VSIX package**. Locate the VSIX file you copied to the disconnected machine.
 
-1. On the disconnected machine, navigate to the following path: `%USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.4`.
+1. On the disconnected machine, navigate to the following path:
 
-   > [!NOTE]
+   ```output
+   %USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.4
+   ```
+
+   > [!NOTE]  
    > You can change the version number, which is `1.5.4` in this example, if you download a later version.
 
 1. Create folders in the path to add the following subdirectories: `\migrationService\windows\4.12.0.4\`. Your folder structure should look similar to the following example:
@@ -110,7 +118,7 @@ To install the Azure SQL migration extension on a disconnected computer, you mus
    %USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-migration-1.5.4\migrationService\Windows\4.12.0.4
    ```
 
-   > [!NOTE]
+   > [!NOTE]  
    > You can change both the version number (which is `4.12.0.4` in this example) and platform (which is `windows` in this example), to match the version and platform downloaded the previous steps.
 
 1. Extract the zipped `Microsoft.SqlTools.Migration` file under the above mentioned path.
@@ -133,17 +141,18 @@ The Azure SQL migration extension supports assessment and generates Azure recomm
 
 The following migration modes are supported for the corresponding Azure SQL targets.
 
-- **Online** - The source SQL Server database is available for reading and writing activity, while database backups are continuously restored on target Azure SQL. Application downtime is limited to the duration of the cutover at the end of migration.
-
-- **Offline** - The source database can't be used for writing activity while backup files are restored on the target Azure SQL database. Application downtime persists from the start until the completion of the migration process.
+| Migration mode | Description |
+| --- | --- |
+| **Online** | The source SQL Server database is available for reading and writing activity, while database backups are continuously restored on target Azure SQL. Application downtime is limited to the duration of the cutover at the end of migration. |
+| **Offline** | The source database can't be used for writing activity while backup files are restored on the target Azure SQL database. Application downtime persists from the start until the completion of the migration process. |
 
 ### Support matrix
 
 | Azure SQL target | Migration mode |
 | --- | --- |
-Azure SQL Managed Instance | [Online](/azure/dms/tutorial-sql-server-managed-instance-online-ads) / [Offline](/azure/dms/tutorial-sql-server-managed-instance-offline-ads) |
-SQL Server on Azure Virtual Machine|[Online](/azure/dms/tutorial-sql-server-to-virtual-machine-online-ads) / [Offline](/azure/dms/tutorial-sql-server-to-virtual-machine-offline-ads) |
-Azure SQL Database  | [Offline](/azure/dms/tutorial-sql-server-azure-sql-database-offline-ads) |
+| Azure SQL Managed Instance | [Online](/azure/dms/tutorial-sql-server-managed-instance-online-ads) / [Offline](/azure/dms/tutorial-sql-server-managed-instance-offline-ads) |
+| SQL Server on Azure Virtual Machine | [Online](/azure/dms/tutorial-sql-server-to-virtual-machine-online-ads) / [Offline](/azure/dms/tutorial-sql-server-to-virtual-machine-offline-ads) |
+| Azure SQL Database | [Offline](/azure/dms/tutorial-sql-server-azure-sql-database-offline-ads) |
 
 > [!TIP]  
 > For information on pre-requisites, features and migration workflow, see [Migration using Azure Data Studio](/azure/dms/migration-using-azure-data-studio)
@@ -153,6 +162,7 @@ Azure SQL Database  | [Offline](/azure/dms/tutorial-sql-server-azure-sql-databas
 You can raise a support request to get Microsoft support assistance if you encounter issues or errors with your database migrations using the Azure SQL migration extension.
 
 Select the **New support request** button in the upper section of the extension. It automatically takes you to the Azure portal, where you can fill in the details and then submit a support request.
+
 :::image type="content" source="media/azure-sql-migration-extension/extension-support.png" alt-text="Screenshot of Get help from Microsoft support for the extension." lightbox="media/azure-sql-migration-extension/extension-support.png":::
 
 You can submit ideas/suggestions for improvement, and other feedback, including bugs, in the [Azure Community forum - Azure Database Migration Service](https://feedback.azure.com/d365community/forum/2dd7eb75-ef24-ec11-b6e6-000d3a4f0da0).
