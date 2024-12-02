@@ -4,7 +4,7 @@ description: Download and install Azure Data Studio for Windows, macOS, or Linux
 author: croblesm
 ms.author: roblescarlos
 ms.reviewer: maghan, randolphwest
-ms.date: 11/20/2024
+ms.date: 12/02/2024
 ms.service: azure-data-studio
 ms.topic: overview
 ms.custom: intro-overview
@@ -29,13 +29,13 @@ Azure Data Studio 1.50.0 is the latest general availability (GA) version.
   
 | Platform | Type | Download |
 | --- | --- | --- |
-| Windows | User Installer | [x64](https://go.microsoft.com/fwlink/?linkid=2282284)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2282071) |
-| | System Installer | [x64](https://go.microsoft.com/fwlink/?linkid=2282377)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2282285) |
-| | .zip | [x64](https://go.microsoft.com/fwlink/?linkid=2282378)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2282072) |
-| macOS | .zip | [Universal](https://go.microsoft.com/fwlink/?linkid=2282073)&emsp;[Intel Chip](https://go.microsoft.com/fwlink/?linkid=2282379)&emsp;[Apple Silicon](https://go.microsoft.com/fwlink/?linkid=2282286) |
-| Linux | .tar.gz | [x64](https://go.microsoft.com/fwlink/?linkid=2282074) |
-| | .deb | [x64](https://go.microsoft.com/fwlink/?linkid=2282287) |
-| | .rpm | [x64](https://go.microsoft.com/fwlink/?linkid=2282380) |
+| Windows | User Installer | [x64](https://go.microsoft.com/fwlink/?linkid=2298047)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2298049) |
+| | System Installer | [x64](https://go.microsoft.com/fwlink/?linkid=2298048)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2297725) |
+| | .zip | [x64](https://go.microsoft.com/fwlink/?linkid=2298102)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2297726) |
+| macOS | .zip | [Universal](https://go.microsoft.com/fwlink/?linkid=2298050)&emsp;[Intel Chip](https://go.microsoft.com/fwlink/?linkid=2298103)&emsp;[Apple Silicon](https://go.microsoft.com/fwlink/?linkid=2297727) |
+| Linux | .tar.gz | [x64](https://go.microsoft.com/fwlink/?linkid=2298104) |
+| | .deb | [x64](https://go.microsoft.com/fwlink/?linkid=2298051) |
+| | .rpm | [x64](https://go.microsoft.com/fwlink/?linkid=2298105) |
 
 If you have comments or suggestions or want to report a problem with downloading Azure Data Studio, submit an issue to our team on the [Azure Data Studio feedback page](https://github.com/microsoft/azuredatastudio/issues/).
 
