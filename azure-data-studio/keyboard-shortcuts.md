@@ -51,7 +51,7 @@ To create new keyboard shortcuts:
 
 1. Press the desired combination of keys, then press **Enter** to save it.
 
-## Reset keyboard shortcutys to default
+## Reset keyboard shortcuts to default
 
 1. Open Azure Data Studio: Launch Azure Data Studio on your computer.
 
