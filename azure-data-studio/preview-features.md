@@ -57,8 +57,6 @@ You can enable or disable preview features at any time in Settings.
 - Central Management Servers
 - Data Migration for Oracle
 - Database Administration Tool Extensions for Windows
-- Database Migration Assessment for Oracle
-- Database Schema Conversion Toolkit
 - Kusto
 - SQL Managed Instance Dashboard
 - Oracle
