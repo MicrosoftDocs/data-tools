@@ -149,6 +149,111 @@
       "source_path": "azure-data-studio/extensions/azure-postgresql-migration-extension.md",
       "redirect_url": "/azure-data-studio/extensions/postgres-extension",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct00000.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct00001.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct00002.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct00003.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct00004.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct00005.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct01000.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct01001.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct01002.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct01100.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct01101.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct01102.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/conversion-messages/dsct01103.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/oracle-to-mssql/configure-conversion.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/oracle-to-mssql/convert-oracle-database-objects-to-mssql.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/oracle-to-mssql/database-schema-conversion-toolkit-oracle-to-mssql.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/oracle-to-mssql/install-remove-database-schema-conversion-toolkit-oracle-to-mssql.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/dsct/database-schema-conversion-toolkit.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/database-migration-assessment-for-oracle-extension-troubleshoot.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/database-migration-assessment-for-oracle-extension.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/database-migration-service-pack-for-oracle.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
     }
   ]
 }
