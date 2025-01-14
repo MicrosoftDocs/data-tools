@@ -254,6 +254,16 @@
       "source_path": "azure-data-studio/extensions/database-migration-service-pack-for-oracle.md",
       "redirect_url": "/sql/ssma/oracle",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/extension-for-oracle.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/quickstart-oracle.md",
+      "redirect_url": "/sql/ssma/oracle",
+      "redirect_document_id": false
     }
   ]
 }
