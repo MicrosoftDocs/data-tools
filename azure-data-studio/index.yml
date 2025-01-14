@@ -113,9 +113,5 @@ landingContent:
             url:  extensions/azure-sql-migration-extension.md
           - text: Azure PostgreSQL migration extension
             url:  extensions/azure-postgresql-migration-extension.md
-          - text: Database Migration Assessment for Oracle
-            url:  extensions/database-migration-assessment-for-oracle-extension.md
           - text: Azure Cosmos DB migration for MongoDB
             url:  extensions/database-migration-for-mongo-extension.md
-          - text: Database Schema Conversion Toolkit
-            url:  extensions/dsct/database-schema-conversion-toolkit.md           
