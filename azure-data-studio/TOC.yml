@@ -135,10 +135,6 @@
       href: extensions/azure-cosmos-db-mongodb-migration-faq.yml
   - name: Azure Monitor Logs
     href: extensions/azure-monitor-logs-extension.md
-  - name: Database Migration Service Pack for Oracle
-    items:
-    - name: Extension for Oracle
-      href: extensions/extension-for-oracle.md
   - name: Data Virtualization
     href: extensions/data-virtualization-extension.md
   - name: GitHub Copilot
