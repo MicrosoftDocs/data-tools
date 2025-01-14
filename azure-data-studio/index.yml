@@ -41,7 +41,7 @@ landingContent:
             url: quickstart-sql-dw.md
           - text: Connect and query data in MySQL
             url: quickstart-mysql.md
-          - text: Connect and query data in  PostgreSQL
+          - text: Connect and query data in PostgreSQL
             url: quickstart-postgres.md
 
   - title: Azure Data Studio features
