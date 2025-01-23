@@ -28,7 +28,7 @@ Azure Data Studio ships with a Git source control manager (SCM), but you still n
 
 1. Select **Source Control**, then select the git icon.
 
-   :::image type="content" source="media/source-control/source-control.png" alt-text="Source control git icon." lightbox="media/source-control/source-control.png":::
+   :::image type="content" source="media/source-control/source-control.png" alt-text="Screenshot of source control git icon." lightbox="media/source-control/source-control.png":::
 
 1. Enter the path to the folder you want to initialize as a Git repository and press **Enter**.
 
