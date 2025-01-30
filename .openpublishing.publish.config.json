@@ -23,7 +23,6 @@
       "build_source_folder": "ssms",
       "build_output_subfolder": "ssms",
       "locale": "en-us",
-      "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
