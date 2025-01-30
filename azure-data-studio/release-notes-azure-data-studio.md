@@ -20,22 +20,23 @@ This article provides details about updates, improvements, and bug fixes for the
 
 :::image type="icon" source="includes/media/download.svg" border="false"::: **[Download and install Azure Data Studio](download-azure-data-studio.md)**
 
-### November 2024
+### January 2025
 
-Azure Data Studio 1.50.0 is the latest general availability (GA) release.
+Azure Data Studio 1.51.0 is the latest general availability (GA) release.
 
-- Release number: 1.50.0
-- Release date: November 20, 2024
+- Release number: 1.51.0
+- Release date: January 29, 2025
 
-#### Bug fixes in 1.50.0
+#### Bug fixes in 1.51.0
 
 | Category | Details |
 | --- | --- |
-| Core | Upgraded to Electron v30.5.1 to incorporate upstream fixes |
-| SQL Database Projects | Updated to 1.4.4 to include the latest version of DacFx |
-| Query Editor | Fixed compatibility issue with `DESC` keyword and snippets |
+| Core | Fixed dependency conflicts preventing Notebook kernels from starting. |
+| Core | Added a warning prompt before loading Jupyter configuration scripts from shared locations. |
+| Proxies | Fixed tunneling issues for HTTPS-over-HTTP proxies. |
+| Accessibility | Addressed minor accessibility bugs. |
 
-For details about the issues addressed in the November 2024 release, visit the [November 2024 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/113?closed=1).
+For details about the issues addressed in the January 2025 release, visit the [January 2025 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/115?closed=1).
 
 ## Azure Data Studio feedback
 
@@ -47,6 +48,7 @@ For a list of the current known issues, visit the [issues list on GitHub](https:
 
 | Azure Data Studio release | Build number | Release date | Hotfix |
 | --- | --- | --- | --- |
+| [November 2024](#november-2024) | 1.50.0 |  November 20, 2024 | N/A |
 | [August 2024](#august-2024) | 1.49.0 | August 1, 2024 | [hotfix](#august-2024-hotfix) |
 | [February 2024](#february-2024) | 1.48.0 | February 28, 2024 | [hotfix](#june-2024-hotfix) |
 | [November 2023](#november-2023) | 1.47.0 | November 8, 2023 | [hotfix](#november-2023-hotfix) |
@@ -100,6 +102,19 @@ For a list of the current known issues, visit the [issues list on GitHub](https:
 
 > [!NOTE]  
 > All previous versions of Azure Data Studio aren't supported.
+
+### November 2024
+
+- Release number: 1.50.0
+- Release date: November 20, 2024
+
+#### Bug fixes in 1.50.0
+
+| Category | Details |
+| --- | --- |
+| Core | Upgraded to Electron v30.5.1 to incorporate upstream fixes |
+| SQL Database Projects | Updated to 1.4.4 to include the latest version of DacFx |
+| Query Editor | Fixed compatibility issue with `DESC` keyword and snippets |
 
 ### August 2024 (hotfix)
 
