@@ -205,6 +205,8 @@ Now, use the assessment report to perform a migration of your data from your sou
     - **Online migration** copies collection data, ensuring updates are also replicated during the process. This method is advantageous with minimal downtime, allowing continuous operations for business continuity. Use this option when ongoing operations are crucial, and reducing downtime is a priority.
     - **Offline migration** captures a snapshot of the database at the beginning, offering a simpler and predictable approach. It works well when using a static copy of the database is acceptable, and real-time updates aren't essential.
 
+> [!IMPORTANT]
+> To ensure successful online migrations from MongoDB, ChangeStream must be enabled on the source MongoDB server. Without ChangeStream, any modifications made to the data after the initial migration will not be captured in the target system, potentially causing data inconsistencies. Therefore, use the online migration mode only if ChangeStream is enabled on your source MongoDB server.
 
 1. Select **Next** to view the migration summary. Once you reviewed and confirmed the details, select **Create Schema** to create resources on the target account.
 
