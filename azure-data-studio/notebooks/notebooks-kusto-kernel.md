@@ -1,15 +1,17 @@
 ---
-title: Notebooks with Kusto Kernel in Azure Data Studio
+title: Notebooks With Kusto Kernel in Azure Data Studio
 description: This tutorial shows how you can create and run a Kusto notebook.
-author: markingmyname
-ms.author: maghan
-ms.reviewer: jukoesma
-ms.date: 09/22/2020
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
 
 # Create and run a Kusto (KQL) notebook (Preview)
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 This article shows you how to create and run an [Azure Data Studio notebook](./notebooks-guidance.md) using the [Kusto (KQL) extension](../extensions/kusto-extension.md), connecting to an Azure Data Explorer cluster.
 

@@ -3,8 +3,8 @@ title: Azure SQL Migration Extension for Azure Data Studio
 description: This article describes how you can migrate your data using the Azure SQL migration extension with Azure Data Studio.
 author: nilabjaball
 ms.author: niball
-ms.reviewer: randolphwest
-ms.date: 11/19/2024
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.subservice: migration-extension
 ms.topic: conceptual
@@ -13,6 +13,8 @@ ms.collection:
 ---
 
 # Azure SQL migration extension for Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 [!INCLUDE [database-migration-services-ads](../includes/database-migration-services-ads.md)]
 

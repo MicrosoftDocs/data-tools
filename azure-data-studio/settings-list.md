@@ -1,15 +1,17 @@
 ---
-title: User and Workspace settings
+title: User and Workspace Settings
 description: Descriptions for settings available in Azure Data Studio.
-author: dlevy-msft
-ms.author: dlevy
-ms.reviewer: maghan, randolphwest
-ms.date: 08/28/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
 
 # User and Workspace settings
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 Customizing your Azure Data Studio experience is easy, as described in [Modify User Settings](settings.md), but understanding the impact of each change requires knowledge of the setting you're modifying. Each setting has a short description in the Settings editor, with additional information provided on this page. Not every setting in Azure Data Studio is included; submit feedback for any missing entries.
 

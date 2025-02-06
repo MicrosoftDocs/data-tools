@@ -1,13 +1,14 @@
 ---
-title: Azure Data Studio license
+title: Azure Data Studio License
 description: License for Azure Data Studio
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: maghan,dlevy
-ms.date: 10/30/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: "overview"
-ms.custom: intro-overview
+ms.custom:
+  - intro-overview
 ---
 
 # Microsoft Software License Terms

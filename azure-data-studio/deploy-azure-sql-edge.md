@@ -1,10 +1,10 @@
 ---
-title: Deploy Azure SQL Edge with Azure Data Studio
+title: Deploy Azure SQL Edge With Azure Data Studio
 description: How to deploy Azure SQL Edge instances in Azure Data Studio
-author: dzsquared
-ms.author: drskwier
-ms.reviewer: maghan
-ms.date: 09/22/2020
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ms.custom:
@@ -13,6 +13,8 @@ ms.custom:
 ---
 
 # Deploy Azure SQL Edge with Azure Data Studio (Preview)
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 [Azure SQL Edge](/azure/azure-sql-edge/overview) is a relational database engine optimized for IoT and Azure IoT Edge deployments. It provides capabilities to create a high-performance data storage and processing layer for IoT applications and solutions. This article shows you how to deploy an Azure SQL Edge instance with Azure Data Studio and the deployment scenarios that are supported with the deployment wizard.  
 

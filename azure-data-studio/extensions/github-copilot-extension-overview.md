@@ -1,15 +1,17 @@
 ---
-title: GitHub Copilot extension - Overview
+title: GitHub Copilot Extension - Overview
 description: Install GitHub Copilot extension for Azure Data Studio and get started.
-author: subhojit-msft
-ms.author: subasak
-ms.reviewer: erinstellato, drskwier, randolphwest
-ms.date: 10/05/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # GitHub Copilot extension: Overview
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 [GitHub Copilot](https://github.com/features/copilot) is an AI-powered pair programmer extension for [!INCLUDE [azure-data-studio-short](../includes/azure-data-studio-short.md)] that provides you with context-aware code completions, suggestions, and even entire code snippets. This powerful tool helps developers write code more efficiently, reduce the time spent on repetitive tasks, and minimize errors.
 

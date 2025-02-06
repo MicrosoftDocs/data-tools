@@ -1,15 +1,17 @@
 ---
-title: Analyzing query plans in Azure Data Studio
+title: Analyzing Query Plans in Azure Data Studio
 description: How to use Query Plan Viewer to view and analyze plans in Azure Data Studio.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: maghan
-ms.date: 11/22/2022
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Query Plan Viewer in Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 [!INCLUDE [sql-asdb-asmi](includes/applies-to-version/sql-asdb-asmi.md)]
 

@@ -1,15 +1,17 @@
 ---
-title: Add extensions
+title: Add Extensions
 description: Learn how to add functionality to Azure Data Studio by selecting and installing extensions from among those provided by Microsoft and third parties.
-author: markingmyname
-ms.author: maghan
-ms.reviewer: erinstellato, randolphwest
-ms.date: 05/02/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Extend the functionality of Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 Extensions in Azure Data Studio provide an easy way to add more functionality to the base Azure Data Studio installation.
 

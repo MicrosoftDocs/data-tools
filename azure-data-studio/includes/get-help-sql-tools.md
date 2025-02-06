@@ -1,7 +1,8 @@
 ---
-author: rothja
-ms.author: jroth
-ms.date: 05/21/2019
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: sql
 ms.topic: include
 ---

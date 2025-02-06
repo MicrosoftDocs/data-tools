@@ -1,14 +1,17 @@
 ---
-title: "Azure connectivity"
+title: "Azure Connectivity"
 description: Explains the Azure connection options available in Azure Data Studio.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
-ms.date: 01/03/2024
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: "overview"
 ---
+
 # Azure Data Studio - Azure connectivity
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 Azure Data Studio uses the Microsoft Authentication Library (MSAL) by default to acquire an access token from Microsoft Entra ID. The settings that apply to Microsoft Entra authentication are discussed, along with commonly observed issues and their solutions.
 

@@ -1,16 +1,19 @@
 ---
-title: Connect and query with Azure Synapse Analytics
+title: Connect and Query With Azure Synapse Analytics
 description: This quickstart shows connecting to a dedicated SQL pool in Azure Synapse Analytics using Azure Data Studio.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: maghan, wiassaf
-ms.date: 08/24/2022
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan, wiassaf
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: quickstart
-ms.custom: intro-quickstart
+ms.custom:
+  - intro-quickstart
 ---
 
 # Quickstart: Use Azure Data Studio to connect and query data using a dedicated SQL pool in Azure Synapse Analytics
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 This quickstart shows connecting to a dedicated SQL pool in Azure Synapse Analytics using Azure Data Studio.
 

@@ -1,15 +1,17 @@
 ---
-title: Azure Data Studio troubleshooting
+title: Azure Data Studio Troubleshooting
 description: "Learn how to get logs and troubleshoot Azure Data Studio, which is helpful in reporting bug reports."
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
-ms.date: 08/29/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Azure Data Studio troubleshooting
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 Azure Data Studio tracks issues and feature requests using on a [GitHub repository issue tracker](https://github.com/Microsoft/azuredatastudio/issues) for the `azuredatastudio` repository.
 

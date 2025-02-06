@@ -1,15 +1,17 @@
 ---
-title: Explore Azure SQL resources with the Azure View
+title: Explore Azure SQL Resources With the Azure View
 description: Learn how to explore and manage Azure SQL Server, Azure SQL Database, and Azure SQL Managed Instance through the Azure View.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
-ms.date: 03/22/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
 
 # Explore and manage Azure SQL resources from the Azure View
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 In this document, learn how you can explore and manage Azure SQL Server, Azure SQL database, Dedicated SQL Pools and additional resources through the Azure View in [!INCLUDE [azure-data-studio-short](includes/azure-data-studio-short.md)].
 

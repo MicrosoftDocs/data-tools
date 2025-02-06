@@ -1,15 +1,17 @@
 ---
-title: Enable or disable usage data collection and crash reporting
+title: Enable or Disable Usage Data Collection and Crash Reporting
 description: This article explains how to control if usage and crash reporting data is collected and sent to Microsoft.
-author: erinstellato-ms
-ms.author: erinstellato
+author: croblesm
+ms.author: roblescarlos
 ms.reviewer: wopeter
-ms.date: 05/17/2021
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
 
 # Enable or disable usage data collection for Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 Azure Data Studio contains Internet-enabled features that can collect and send anonymous feature usage and diagnostic data to Microsoft.
 

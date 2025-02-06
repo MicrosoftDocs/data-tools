@@ -1,15 +1,17 @@
 ---
-title: Modify User and Workspace settings
+title: Modify User and Workspace Settings
 description: Learn how to use settings to customize Azure Data Studio's editor, user interface, and functional behavior to suit your preferences.
-author: dlevy-msft
-ms.author: dlevy
-ms.reviewer: maghan, randolphwest
-ms.date: 08/28/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
 
 # Modify User and Workspace settings
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 Azure Data Studio can easily be configured to suit your preferences and requirements by changing its settings. Nearly every part of Azure Data Studio's editor, user interface, and functional behavior has options you can modify.
 

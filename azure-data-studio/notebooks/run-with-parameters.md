@@ -1,15 +1,17 @@
 ---
-title: Parameterize notebooks in Azure Data Studio with the Run with Parameters action
+title: Parameterize Notebooks in Azure Data Studio With the Run With Parameters Action
 description: Learn how to create a parameterized notebook in Azure Data Studio by using the Run with Parameters action.
-author: vasubhog
-ms.author: vabhog
-ms.reviewer: mikeray, alayu, maghan
-ms.date: 06/14/2021
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
 
 # Create a parameterized notebook by using the Run with Parameters action
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 *Parameterization* in Azure Data Studio is running the same notebook with a different set of parameters.
 

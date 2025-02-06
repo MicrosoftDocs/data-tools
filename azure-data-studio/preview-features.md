@@ -1,14 +1,17 @@
 ---
-title: Preview features in Azure Data Studio
+title: Preview Features in Azure Data Studio
 description: Learn more about Azure Data Studio preview features and how to enable and use them.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
-ms.date: 09/20/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
+
 # Preview features in Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 In Azure Data Studio, new features and improvements are often first released as preview features before they're made generally available (GA). The amount of time a feature remains in preview can vary based on user feedback, quality checks, and long-term road maps. By enabling preview features, you get full access to Azure Data Studio features and the chance to provide early feedback.
 

@@ -1,15 +1,17 @@
 ---
-title: Azure Arc extension
+title: Azure Arc Extension
 description: Learn how to install and use the Azure Arc extension to try out Azure Arc data services.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: maghan
-ms.date: 08/02/2021
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Azure Arc extension for Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 The [Azure Arc extension](/azure/azure-arc/data/) is an extension for creating and managing Azure Arc data services resources.
 

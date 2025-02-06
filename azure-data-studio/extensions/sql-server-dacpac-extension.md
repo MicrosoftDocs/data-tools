@@ -1,15 +1,17 @@
 ---
-title: SQL Server dacpac extension
+title: SQL Server Dacpac Extension
 description: Learn how to install and launch the Data-tier Application Wizard, which makes it easy to deploy and extract dacpac files, and import and export bacpac files.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: "maghan"
-ms.date: 11/04/2019
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # SQL Server dacpac extension
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 **The Data-tier Application Wizard** provides an easy-to-use wizard experience to deploy and extract dacpac files and import and export bacpac files.
 

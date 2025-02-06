@@ -1,15 +1,17 @@
 ---
-title: Azure Data Studio release notes
+title: Azure Data Studio Release Notes
 description: This article has release notes for Azure Data Studio.
 author: croblesm
 ms.author: roblescarlos
-ms.reviewer: maghan, randolphwest
-ms.date: 11/20/2024
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: concept-article
 ---
 
 # Release notes for Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 This article provides details about updates, improvements, and bug fixes for the current and previous versions of Azure Data Studio.
 

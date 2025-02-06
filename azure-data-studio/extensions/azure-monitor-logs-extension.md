@@ -1,15 +1,17 @@
 ---
-title: Azure Monitor Logs extension for Azure Data Studio
+title: Azure Monitor Logs Extension for Azure Data Studio
 description: This article describes how you can connect and query Log Analytics Workspace IDs with Azure Data Studio.
-author: markingmyname
-ms.author: maghan
-ms.reviewer: jukoesma
-ms.date: 11/03/2021
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Azure Monitor Logs extension for Azure Data Studio (Preview)
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 The Azure Monitor Logs extension for [Azure Data Studio](../what-is-azure-data-studio.md) enables you to connect and query a [Log Analytics workspace](/azure/azure-monitor/logs/quick-create-workspace).
 

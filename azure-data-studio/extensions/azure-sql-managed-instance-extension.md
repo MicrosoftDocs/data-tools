@@ -1,15 +1,17 @@
 ---
-title: Azure SQL Managed Instance extension
+title: Azure SQL Managed Instance Extension
 description: Use Azure Data Studio with Azure SQL Managed Instance
-author: jovanpop-msft
-ms.author: jovanpop
-ms.reviewer: erinstellato
-ms.date: 10/07/2019
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Azure SQL Managed Instance dashboard for Azure Data Studio (Preview)
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 The Azure SQL Managed Instance extension provides a dashboard for working with an [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-index) in [Azure Data Studio](https://github.com/Microsoft/azuredatastudio). This extension provides the following features:
 

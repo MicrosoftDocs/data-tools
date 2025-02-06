@@ -1,15 +1,17 @@
 ---
-title: Building and publishing changes to database tables using the SQL Database Projects extension
+title: Building and Publishing Changes to Database Tables Using the SQL Database Projects Extension
 description: How to use SQL Database Projects to build and publish changes to a database table in Azure Data Studio
-author: tdoshin
-ms.author: timioshin
-ms.reviewer: maghan
-ms.date: 4/12/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: tutorial
 ---
 
 # Building and Deploying Changes to tables using the SQL Database Projects extension
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 [!INCLUDE [sql-asdb-asmi](includes/applies-to-version/sql-asdb-asmi.md)]
 
