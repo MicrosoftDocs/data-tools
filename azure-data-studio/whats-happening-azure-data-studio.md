@@ -89,11 +89,11 @@ Azure Data Studio users have diverse needs, from connecting to Azure SQL databas
 | SQL Server Agent | Manage and automate SQL Server Agent jobs. | [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) |
 | SQL Server Profiler | Trace and monitor SQL Server activity. | [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) |
 | Database administration | Tools for managing databases on Windows. | [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) |
-| Schema | Compare and synchronize database schemas. | Visual Studio SQL Server Data Tools (SSDT) |
-| Flat-file import | Import .txt and .csv files into databases. | In development for MSSQL extension for Visual Studio Code |
-| DACPAC import/export | Deploy and extract DACPAC files. | SqlPackage / MSSQL extension for Visual Studio Code |
-| Azure SQL migration | Migrate SQL Server to Azure SQL. | Azure portal (future updates planned) |
-| Notebooks | SQL + Markdown interactive documents. | Polyglot Notebooks in Visual Studio Code |
+| Schema | Compare and synchronize database schemas. | Visual Studio SQL Server Data Tools (SSDT). In development for MSSQL extension for VS Code. |
+| Flat-file import | Import `.txt` and `.csv` files into databases. | Bulk insert / PowerShell. In development for MSSQL extension for Visual Studio Code. |
+| DACPAC import/export | Deploy and extract DACPAC files. | SqlPackage / MSSQL extension for Visual Studio Code. |
+| Azure SQL migration | Migrate SQL Server to Azure SQL. | Azure portal (future updates planned). |
+| Notebooks | SQL + Markdown interactive documents. | Polyglot Notebooks in Visual Studio Code. |
 | SQL Database Projects | Create, manage, and deploy SQL database projects. | Fully supported in the MSSQL extension for VS Code and Visual Studio. |
 
 ### Alternative Azure Data Studio capabilities
