@@ -1,8 +1,8 @@
 ---
-author: VanMSFT
-ms.author: vanto
-ms.reviewer: randolphwest
-ms.date: 01/24/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: sql
 ms.topic: include
 ---

@@ -1,10 +1,10 @@
 ---
-title: "Quickstart: Use Azure Data Studio to connect and query MySQL"
+title: "Quickstart: Use Azure Data Studio to Connect and Query MySQL"
 description: Use Azure Data Studio to connect to a MySQL server (hosted on-premises, on VMs, on managed MySQL in other clouds or on Azure Database for MySQL - Flexible Server), create a database, and use SQL statements to query, insert, update and delete data in the database.
-author: shreyaaithal
-ms.author: shaithal
-ms.reviewer: erinstellato, randolphwest
-ms.date: 01/03/2024
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: quickstart
 ms.custom:
@@ -12,6 +12,8 @@ ms.custom:
 ---
 
 # Quickstart: Use Azure Data Studio to connect and query MySQL
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 This quickstart shows how to use Azure Data Studio to connect to a MySQL server (hosted on-premises, on VMs, on managed MySQL in other clouds or on Azure Database for MySQL - Flexible Server), create a database, and use SQL statements to insert and query data in the database.
 

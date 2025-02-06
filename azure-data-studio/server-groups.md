@@ -1,16 +1,19 @@
 ---
-title: Server groups
+title: Server Groups
 description: Learn how to group servers and databases into server groups and assign colors to the groups. You can drag and drop servers into the proper groups.
-author: "markingmyname"
-ms.author: "maghan"
-ms.reviewer: erinstellato
-ms.date: "09/24/2018"
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
-ms.custom: updatefrequency5
+ms.custom:
+  - updatefrequency5
 ---
 
 # Server groups in Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 Server groups provide a way to organize your connections to the servers and databases you work with. When you create server groups, the configuration details are saved into *User Settings*.
 

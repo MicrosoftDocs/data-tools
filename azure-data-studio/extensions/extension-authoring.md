@@ -1,15 +1,17 @@
 ---
-title: Create extensions
+title: Create Extensions
 description: You can add functionality to Azure Data Studio with an extension. Learn how to create an extension and publish it to the extensions gallery.
-author: markingmyname
-ms.author: maghan
-ms.reviewer: alayu
-ms.date: 08/26/2020
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Extend functionality by creating Azure Data Studio extensions
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 Extensions in Azure Data Studio provide an easy way to add more functionality to the base Azure Data Studio installation.
 
@@ -58,6 +60,8 @@ npm install -g @vscode/vsce
 cd myExtensionName
 vsce package
 # The myExtensionName.vsix file has now been generated
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 ```
 
 With a VSIX package, you can share your extension locally and privately by sharing the .vsix file and using the command **Extensions: Install From VSIX File** from the command palette to install the extension in Azure Data Studio.

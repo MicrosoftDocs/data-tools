@@ -1,16 +1,19 @@
 ---
-title: Getting started with the SQL Database Projects extension
+title: Getting Started With the SQL Database Projects Extension
 description: Getting started using the SQL Database Projects extension for Azure Data Studio or VS Code
-author: dzsquared
-ms.author: drskwier
-ms.reviewer: maghan
-ms.date: 4/12/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
-ms.custom: intro-get-started
+ms.custom:
+  - intro-get-started
 ---
 
 # Getting started with the SQL Database Projects extension
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 This article describes three ways to get started with the SQL Database Projects extension:
 

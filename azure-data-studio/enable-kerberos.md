@@ -1,14 +1,17 @@
 ---
-title: Connect your SQL Server instance using Windows authentication (Kerberos)
+title: "Connect Your SQL Server Instance Using Windows Authentication (Kerberos)"
 description: Learn how to connect Azure Data Studio to your SQL Server instance by using Microsoft Kerberos integrated authentication.
-author: markingmyname
-ms.author: maghan
-ms.reviewer: alayu, randolphwest
-ms.date: 06/15/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
+
 # Connect Azure Data Studio to SQL Server using Kerberos
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 Azure Data Studio supports connecting to SQL Server by using Kerberos.
 
@@ -62,6 +65,8 @@ Edit the `/etc/network/interfaces` file so that your Active Directory domain con
 ```output
 <...>
 # The primary network interface
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 auto eth0
 iface eth0 inet dhcp
 dns-nameservers **<AD domain controller IP address>**

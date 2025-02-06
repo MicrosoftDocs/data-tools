@@ -1,9 +1,10 @@
 ---
-title: SSMS and Azure Data Studio installation
+title: SSMS and Azure Data Studio Installation
 description: Message that explains Azure Data Studio is included in SSMS installation.
-author: markingmyname
-ms.author: maghan
-ms.date: 10/20/2020
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: sql
 ms.subservice: ssms
 ms.topic: include

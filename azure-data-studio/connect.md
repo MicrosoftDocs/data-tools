@@ -1,15 +1,17 @@
 ---
-title: "Connect to a SQL Server instance"
+title: "Connect to a SQL Server Instance"
 description: Explains the connection parameters to connect to an instance of SQL Server with Azure Data Studio. Includes details about how to secure and encrypt connections.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
-ms.date: 01/03/2024
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: "how-to"
 ---
 
 # Connect with Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 This article describes how to connect to SQL Server with Azure Data Studio 1.40 and higher.
 

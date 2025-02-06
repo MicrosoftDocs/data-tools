@@ -1,14 +1,17 @@
 ---
-title: Use Jupyter Notebooks views
+title: Use Jupyter Notebooks Views
 description: Learn how to use notebook views
-author: markingmyname
-ms.author: maghan
-ms.date: 10/27/2021
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
 
 # Notebook views (Preview)
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 Notebook Views is ideal for consumers of notebook results such as data analysis outcomes. Notebook authors can hide complexities and select the cells that are relevant for consumers.
 

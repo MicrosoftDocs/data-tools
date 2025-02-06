@@ -1,15 +1,17 @@
 ---
-title: Build a Project from the Command Line
+title: Build a Project From the Command Line
 description: Build a SQL Server Database Project from the command line
-author: dzsquared
-ms.author: drskwier
-ms.reviewer: maghan
-ms.date: 5/24/2022
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Build a database project from command line
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 While the SQL Database Project extension provides a graphical user interface to [build a database project](sql-database-project-extension-build.md), a command line build experience is also available for Windows, macOS, and Linux environments. The steps to build a project from the command line are different between [SDK-style SQL projects](sql-database-project-extension-sdk-style-projects.md) and the previous non-SDK-style SQL project format. This article outlines the prerequisites and syntax needed to build a dacpac from a SQL project at the command line for both SQL project types.
 

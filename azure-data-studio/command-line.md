@@ -1,14 +1,17 @@
 ---
-title: Command line interface in Azure Data Studio
+title: Command Line Interface in Azure Data Studio
 description: Learn more about the command line interface within Azure Data Studio and how to use it.
-author: dzsquared
-ms.author: drskwier
-ms.reviewer: maghan, randolphwest
-ms.date: 03/15/2024
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
+
 # The Azure Data Studio command line interface
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 Azure Data Studio includes a built-in command line interface that lets you control how you launch the application. You can open files, install extensions, change the display language, and output diagnostics through command line options (switches).
 

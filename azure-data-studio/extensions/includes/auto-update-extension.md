@@ -1,8 +1,8 @@
 ---
 author: MikeRayMSFT
 ms.author: mikeray
-ms.reviewer: randolphwest
-ms.date: 11/19/2024
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: sql
 ms.topic: include
 ---

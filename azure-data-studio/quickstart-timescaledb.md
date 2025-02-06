@@ -1,15 +1,17 @@
 ---
-title: "Quickstart: Connect and query Managed Service for TimescaleDB on Azure hyper table"
+title: "Quickstart: Connect and Query Managed Service for TimescaleDB on Azure Hyper Table"
 description: Do a quickstart in which you use Azure Data Studio to connect to Managed Service for TimescaleDB, and then use SQL statements to create and query a database.
-author: "sunilagarwal"
-ms.author: "sunila"
-ms.reviewer: "maghan"
-ms.date: 11/15/2022
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: quickstart
 ---
 
 # Quickstart: Use Azure Data Studio to connect and query Managed Service for TimescaleDB on Azure
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 This article shows how to use Azure Data Studio to connect to Managed Service for TimescaleDB on Azure and then use SQL statements to create a hyper table and query it.
 

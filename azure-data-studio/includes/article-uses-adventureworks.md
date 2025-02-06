@@ -1,7 +1,7 @@
 ---
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/09/2023
+ms.date: 02/06/2025
 ms.service: sql
 ms.topic: include
 ---

@@ -1,16 +1,19 @@
 ---
-title: Build a custom insight widget
+title: Build a Custom Insight Widget
 description: This tutorial demonstrates how to build custom insight widgets and add them to database and server dashboards in Azure Data Studio.
-author: markingmyname
-ms.author: maghan
-ms.reviewer: alayu
-ms.date: 08/26/2020
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: tutorial
-ms.custom: updatefrequency5
+ms.custom:
+  - updatefrequency5
 ---
 
 # Tutorial: Build a custom insight widget
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 This tutorial demonstrates how to use your own insight queries to build custom insight widgets.
 

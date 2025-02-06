@@ -1,19 +1,21 @@
 ---
-title: Azure Cosmos DB for MongoDB RU extension (preview)
+title: "Azure Cosmos DB for MongoDB RU Extension (Preview)"
 titleSuffix: Azure Data Studio
 description: Connect to and query a collection using the Azure Data Studio extension for Azure Cosmos DB for MongoDB RU.
 author: sandnair
 ms.author: sandnair
 ms.reviewer: sidandrews
+ms.date: 02/06/2025
 ms.service: azure-data-studio
+ms.topic: how-to
 ms.custom:
   - ignite-2023
-ms.topic: how-to
-ms.date: 10/31/2023
 # CustomerIntent: As a database developer, I want to use the extension, so that I can explore my data already in Azure Cosmos DB for MongoDB RU.
 ---
 
 # Azure Cosmos DB for MongoDB RU extension for Azure Data Studio (preview)
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 The Azure Cosmos DB API for MongoDB RU extension enables you to manage and query your API for MongoDB RU accounts using the capabilities of Azure Data Studio.
 

@@ -1,16 +1,19 @@
 ---
-title: Deploy SQL Server in a container via Notebook
+title: Deploy SQL Server in a Container Via Notebook
 description: This tutorial shows how you can deploy SQL Server in a container.
-author: dzsquared
-ms.author: drskwier
-ms.reviewer: markingmyname
-ms.date: 7/22/2022
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: tutorial
-ms.custom: intro-deployment
+ms.custom:
+  - intro-deployment
 ---
 
 # Deploy SQL Server in a container using Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
 
 You can deploy SQL Server in a container using Azure Data Studio through the deployment wizard and notebooks.
 

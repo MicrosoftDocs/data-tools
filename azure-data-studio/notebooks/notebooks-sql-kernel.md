@@ -1,15 +1,17 @@
 ---
-title: Notebooks with SQL Kernel in Azure Data Studio
+title: Notebooks With SQL Kernel in Azure Data Studio
 description: This tutorial shows how you can create and run a SQL Server notebook.
-author: markingmyname
-ms.author: maghan
-ms.reviewer: mikeray, alayu
-ms.date: 07/01/2020
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
 
 # Create and run a SQL Server notebook
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 [!INCLUDE [sqlserver2019](../includes/applies-to-version/sqlserver2019.md)]
 

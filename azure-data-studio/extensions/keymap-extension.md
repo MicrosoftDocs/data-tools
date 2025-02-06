@@ -1,15 +1,17 @@
 ---
-title: Create keymap extension
+title: Create Keymap Extension
 description: This tutorial demonstrates how to create a keymap extension to add custom functionality to Azure Data Studio.
-author: markingmyname
-ms.author: maghan
-ms.reviewer: alayu
-ms.date: 08/28/2020
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Create an Azure Data Studio Keymap extension
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 This tutorial demonstrates how to create a new Azure Data Studio extension. The extension creates familiar SSMS key bindings in Azure Data Studio.
 

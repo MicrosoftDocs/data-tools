@@ -1,14 +1,17 @@
 ---
-title: Make predictions with Machine Learning extension
+title: Make Predictions With Machine Learning Extension
 description: Learn how to use Machine Learning extension for Azure Data Studio to make predictions with an ONNX model in your database.
-author: rothja
-ms.author: jroth
-ms.date: 06/09/2020
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Make predictions with Machine Learning extension for Azure Data Studio (Preview)
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 Learn how to use the [Machine Learning extension for Azure Data Studio](machine-learning-extension.md) to make predictions with an ONNX model in your database. The extension will generate a T-SQL script using [PREDICT](/sql/t-sql/queries/predict-transact-sql) to make predictions on the dataset stored in your table with a model that is previously imported, resides in a local file, or from Azure Machine Learning.
 

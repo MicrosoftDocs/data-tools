@@ -1,14 +1,17 @@
 ---
 title: Data Virtualization Extension
 description: Data Virtualization extension for Azure Data Studio
-author: markingmyname
-ms.author: maghan
-ms.date: 12/23/2024
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Data Virtualization extension for Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 The Data Virtualization extension for Azure Data Studio provides support for the [External Table Wizard with ODBC data sources](/sql/relational-databases/polybase/data-virtualization).
 

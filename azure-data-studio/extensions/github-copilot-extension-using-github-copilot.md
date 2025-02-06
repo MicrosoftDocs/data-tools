@@ -1,15 +1,17 @@
 ---
-title: GitHub Copilot extension - Using GitHub Copilot
+title: GitHub Copilot Extension - Using GitHub Copilot
 description: Using GitHub Copilot extension for Azure Data Studio.
-author: subhojit-msft
-ms.author: subasak
-ms.reviewer: erinstellato, randolphwest
-ms.date: 10/05/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Use GitHub Copilot
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 This article describes ways to use the [GitHub Copilot extension](github-copilot-extension-overview.md) for [!INCLUDE [azure-data-studio-short](../includes/azure-data-studio-short.md)].
 

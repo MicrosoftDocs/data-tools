@@ -1,14 +1,17 @@
 ---
-title: Notebooks with Kqlmagic (Kusto Query Language) in Azure Data Studio
+title: "Notebooks With Kqlmagic (Kusto Query Language) in Azure Data Studio"
 description: This tutorial shows how you can create and run Kqlmagic in an Azure Data Studio notebook.
-author: markingmyname
-ms.author: maghan
-ms.date: 12/07/2022
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
 ---
 
 # Create and run a notebook with Kqlmagic
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 **Kqlmagic** is a command that extends the capabilities of the Python kernel in **[Azure Data Studio notebooks](./notebooks-guidance.md)**. You can combine Python and **[Kusto query language (KQL)](/azure/data-explorer/kusto/query)** to query and visualize data using rich Plotly library integrated with `render` commands. Kqlmagic brings you the benefit of notebooks, data analysis, and rich Python capabilities all in the same location. Supported data sources with Kqlmagic include **[Azure Data Explorer](/azure/data-explorer/data-explorer-overview)**, **[Application Insights](/azure/azure-monitor/app/app-insights-overview)**, and **[Azure Monitor logs](/azure/azure-monitor/platform/data-platform-logs)**.
 

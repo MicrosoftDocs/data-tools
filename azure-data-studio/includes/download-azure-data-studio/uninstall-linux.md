@@ -1,7 +1,8 @@
 ---
-author: markingmyname
-ms.author: maghan
-ms.date: 10/17/2023
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: include
 ---

@@ -1,15 +1,17 @@
 ---
 title: Build and Publish a Project
 description: Build and Publish with SQL Server Database Projects extension
-author: dzsquared
-ms.author: drskwier
-ms.reviewer: maghan
-ms.date: 07/02/2024
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # Build and Publish a project
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 The build process in the SQL Database Projects extension for Azure Data Studio and VS Code allows for *dacpac* creation in Windows, macOS, and Linux environments. The project can be deployed to a local or cloud environment with the publish process.
 

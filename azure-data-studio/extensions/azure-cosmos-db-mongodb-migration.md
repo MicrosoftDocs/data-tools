@@ -1,20 +1,22 @@
 ---
-title: Azure Cosmos DB for MongoDB migration extension (preview)
+title: "Azure Cosmos DB for MongoDB Migration Extension (Preview)"
 titleSuffix: Azure Data Studio
 description: Perform assessments and migrate data from MongoDB to Azure Cosmos DB for MongoDB using the Azure Data Studio extension and Azure Database Migration Service.
 author: sandnair
 ms.author: sandnair
 ms.reviewer: sidandrews
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.subservice: migration-extension
+ms.topic: how-to
 ms.custom:
   - ignite-2023
-ms.topic: how-to
-ms.date: 06/19/2024
 # CustomerIntent: As a database developer, I want to use the migration extension, so that I can evaluate and then eventually migrate my existing data to vCore-based Azure Cosmos DB for MongoDB.
 ---
 
 # Azure Cosmos DB for MongoDB migration extension for Azure Data Studio (preview)
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 The Azure Cosmos DB for MongoDB migration extension helps you in migrating your MongoDB workloads to Azure Cosmos DB. You can use this extension to:
 

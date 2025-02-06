@@ -1,15 +1,17 @@
 ---
-title: PowerShell extension
+title: PowerShell Extension
 description: Learn how to install and use the Azure Data Studio PowerShell extension, which provides rich PowerShell editor support for writing and debugging scripts.
-author: "SQLvariant"
-ms.author: "aanelson"
-ms.reviewer: "alayu, maghan"
-ms.date: "04/19/2019"
+author: croblesm
+ms.author: roblescarlos
+ms.reviewer: randolphwest, maghan
+ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
 ---
 
 # PowerShell Editor Support for Azure Data Studio
+
+[!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
 This extension provides rich PowerShell editor support in [Azure Data Studio](https://github.com/Microsoft/azuredatastudio).
 Now you can write and debug PowerShell scripts using the excellent IDE-like interface that Azure Data Studio provides.

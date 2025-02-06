@@ -9,6 +9,8 @@
     href: release-notes-azure-data-studio.md
 - name: Overview
   items:
+  - name: What's happening to Azure Data Studio?
+    href: whats-happening-azure-data-studio.md
   - name: Azure Data Studio
     href: what-is-azure-data-studio.md
   - name: Azure connectivity
