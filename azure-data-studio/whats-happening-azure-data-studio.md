@@ -111,7 +111,8 @@ For users who relied on Azure Data Studio for non-SQL Server-related tasks (for 
 | **PostgreSQL** | Manage PostgreSQL databases. | PostgreSQL for Visual Studio Code |
 | **MySQL** | Manage MySQL databases. | Pending announcement |
 | **Azure Cosmos DB** | Manage Azure Cosmos DB API for MongoDB. | Azure Databases for Visual Studio Code |
-| **Azure Cosmos DB migration** | Migrate MongoDB to Azure Cosmos DB. | Azure portal (updates planned) |
+| **Azure Cosmos DB Migration for MongoDB** | Migrate MongoDB to Azure Cosmos DB. | Pending announcement |
+
 
 ### Available resources
 
