@@ -59,8 +59,8 @@ jobs:
                 $CatastrophicError = $False
 
                 $SignOffString = "#sign-off"
-                $ReviewingString = "#reviewing"
-                $ApprovedString = "#approved"
+                $ReviewingString = "#review-pr"
+                $ApprovedString = "#approve-pr"
                 $SignOffRegex = "\s*$SignOffString\s*"
                 $ReviewingRegex = "\s*$ReviewingString\s*"
                 $ApprovedRegex = "\s*$ApprovedString\s*"
@@ -429,6 +429,9 @@ jobs:
 
                                 If ($MonitoredFoldersFound) 
                                 {
+                                    Write-Host "GitHub Request Event: $GitRequestEvent"
+                                    Write-Host "GitHub Action: $GitHubAction"
+                                    
                                     If (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) 
                                     {
                                         Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
@@ -477,11 +480,14 @@ jobs:
                 $SuccessfulPost = $False
                 $RetryCount = 0
         
+                Write-Host "Reporting Status:"
+                Write-Host "$StatusJson"
+
                 # Loop to try set the status on the PR. Keep trying until either the status is successfully posted or we run out of attempts.
                 # In the unlikely event of a water landing or failure of all six attempts, the status will not set and the user will need to 
                 # submit a new sign off request.
                 Do 
-                {
+                {                  
                     Try 
                     {
         
