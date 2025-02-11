@@ -445,25 +445,22 @@ jobs:
                 }
                 Catch
                 {
+                    # Capture and display detailed exception information
                     Write-Host "An error occurred: $($_.Exception.Message)"
                     Write-Host "Exception type: $($_.Exception.GetType().FullName)"
                     Write-Host "Line number: $($_.InvocationInfo.ScriptLineNumber)"
                     Write-Host "Position: $($_.InvocationInfo.OffsetInLine)"
                     Write-Host "Script name: $($_.InvocationInfo.ScriptName)"
-                    
-                    # Read and display surrounding lines of code
+                    Write-Host "Error line: $($_.InvocationInfo.Line)"
+
+                    # Read and display the line of code that caused the error
                     $scriptPath = $($_.InvocationInfo.ScriptName)
                     if ($scriptPath) {
                         $lines = Get-Content -Path $scriptPath
                         $errorLine = $_.InvocationInfo.ScriptLineNumber
-                        $startLine = [Math]::Max(0, $errorLine - 3)
-                        $endLine = [Math]::Min($lines.Length - 1, $errorLine + 2)
-                        Write-Host "Code around the error:"
-                        for ($i = $startLine; $i -le $endLine; $i++) {
-                            Write-Host "$i: $($lines[$i])"
-                        }
-                    }    
-                        
+                        Write-Host "Code at error line $errorLine: $($lines[$errorLine - 1])"
+                    }
+
                     # For catastrophic failure, make sure to not block PRs
                     $Status.state = "success"
                     $Status.description = "Unexpected error in workflow. Allowing sign off."
