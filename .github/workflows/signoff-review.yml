@@ -451,6 +451,19 @@ jobs:
                     Write-Host "Position: $($_.InvocationInfo.OffsetInLine)"
                     Write-Host "Script name: $($_.InvocationInfo.ScriptName)"
                     
+                    # Read and display surrounding lines of code
+                    $scriptPath = $($_.InvocationInfo.ScriptName)
+                    if ($scriptPath) {
+                        $lines = Get-Content -Path $scriptPath
+                        $errorLine = $_.InvocationInfo.ScriptLineNumber
+                        $startLine = [Math]::Max(0, $errorLine - 3)
+                        $endLine = [Math]::Min($lines.Length - 1, $errorLine + 2)
+                        Write-Host "Code around the error:"
+                        for ($i = $startLine; $i -le $endLine; $i++) {
+                            Write-Host "$i: $($lines[$i])"
+                        }
+                    }    
+                        
                     # For catastrophic failure, make sure to not block PRs
                     $Status.state = "success"
                     $Status.description = "Unexpected error in workflow. Allowing sign off."
