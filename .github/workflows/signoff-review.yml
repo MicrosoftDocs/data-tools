@@ -445,9 +445,16 @@ jobs:
                 }
                 Catch
                 {
+                    Write-Host "An error occurred: $($_.Exception.Message)"
+                    Write-Host "Exception type: $($_.Exception.GetType().FullName)"
+                    Write-Host "Line number: $($_.InvocationInfo.ScriptLineNumber)"
+                    Write-Host "Position: $($_.InvocationInfo.OffsetInLine)"
+                    Write-Host "Script name: $($_.InvocationInfo.ScriptName)"
+                    
                     # For catastrophic failure, make sure to not block PRs
                     $Status.state = "success"
-                    $Status.description = "Unexpected error in workflow. Allowing sign off."                        
+                    $Status.description = "Unexpected error in workflow. Allowing sign off."
+                    $CatastrophicError = $True                     
                 }
 
                 # Get ready to send $Status to GitHub. First need to convert the $Status object to JSON. Then set a couple variables to prepare for an attempt loop
