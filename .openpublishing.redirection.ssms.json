@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path": "docs/ssms/index.md",
+      "redirect_url": "/ssms/download-sql-server-management-studio-ssms",
+      "redirect_document_id": false
+    }
+  ]
+}
