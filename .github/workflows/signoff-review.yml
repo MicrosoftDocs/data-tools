@@ -7,8 +7,8 @@ permissions:
 on: 
   issue_comment:
     types: [created]
- # pull_request_target:
- #   types: [opened, reopened, synchronize]
+  pull_request_target:
+    types: [opened, reopened, synchronize]
 
 jobs:
     build:
@@ -319,11 +319,16 @@ jobs:
                     #
                     # For now using folder check rather than the branch check for testing
 
-                    If ($TargetBranch -eq $DefaultBranch) 
+                    Write-Host "Target branch: $TargetBranch"
+
+                    If ($TargetBranch -eq $DefaultBranch)
                     {
 
                         Write-Host "Target branch is default branch $DefaultBranch."
-        
+
+                        Write-Host "GitHub Request Event: $GitRequestEvent"
+                        Write-Host "GitHub Action: $GitHubAction"
+
                         If (($GitRequestEvent -eq "issue_comment") -and (($GitHubAction -eq "created"))) 
                         {
 
@@ -331,6 +336,8 @@ jobs:
 
                             # Get the contents of the comment that was added to the PR
                             $CommentBody = $GitHubData.event.comment.body
+
+                            Write-Host "Comment: $CommentBody"
 
                             # Check to see if comment includes #sign-off, #reviewing, or #approved
                             $SignOffFound = $CommentBody -match $SignOffRegex
@@ -355,7 +362,7 @@ jobs:
                             If ($SignOffFound -or $ApprovedFound) 
                             {
 
-                                Write-Host "Sign off string `"$SignOffString` or '$ApprovedString' found on PR/Issue #$PrIssueNumber."
+                                Write-Host "String `"$SignOffString` or '$ApprovedString' found on PR/Issue #$PrIssueNumber."
                                 
                                 # Get permission level of user who created the comment. Need to use .role_name instead of .permission because .permission provides only legacy values. 
                                 # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
@@ -414,7 +421,6 @@ jobs:
                                     } 
                                     Else 
                                     {
-                                    
                                         Write-Host "No files from monitored folders found. Allowing sign off."
 
                                         # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.
@@ -427,27 +433,35 @@ jobs:
                             {
                                 Write-Host "Comment not sign off or approval."
 
-                                If ($MonitoredFoldersFound) 
+                                If (!$MonitoredFoldersFound) 
                                 {
-                                    Write-Host "GitHub Request Event: $GitRequestEvent"
-                                    Write-Host "GitHub Action: $GitHubAction"
-                                    
-                                    If (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) 
-                                    {
-                                        Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
-                                        $Status.state = "pending"
-                                        $Status.description = "Waiting for sign off."
-                                    }
-                                    
-                                    # If it is not a build event, just don't report back anything. Don't change the status.
+                                    Write-Host "Approving as folders are not being monitored."
+
+                                    $Status.state = "success"
+                                    $Status.description = "No monitored folders. Allowing sign off." 
                                 }
                                 Else
                                 {
-                                    $Status.state = "success"
-                                    $Status.description = "No monitored folders. Allowing sign off." 
+                                    Write-Host "Folders monitored. No status returned."
                                 }   
                             }
                         }
+                        Else
+                        {
+                            Write-Host "Non-comment GitHub Event"
+
+                            If (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) 
+                            {
+                                Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
+                                $Status.state = "pending"
+                                $Status.description = "Waiting for sign off."
+                            }
+                        }
+                    }
+                    else
+                    {
+                        $Status.state = "success"
+                        $Status.description = "Target branch not $DefaultBranch, so approving by default."
                     }
                 }
                 Catch
