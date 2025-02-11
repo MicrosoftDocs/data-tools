@@ -427,18 +427,22 @@ jobs:
                             {
                                 Write-Host "Comment not sign off or approval."
 
-                                # If a monitored folder is found, add the review label and fail the check.
-                                If (-not $MonitoredFoldersFound) 
+                                If ($MonitoredFoldersFound) 
+                                {
+                                    If (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) 
+                                    {
+                                        Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
+                                        $Status.state = "pending"
+                                        $Status.description = "Waiting for sign off."
+                                    }
+                                    
+                                    # If it is not a build event, just don't report back anything. Don't change the status.
+                                }
+                                Else
                                 {
                                     $Status.state = "success"
                                     $Status.description = "No monitored folders. Allowing sign off." 
-                                }
-                            }
-                            ElseIf (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) 
-                            {
-                                Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
-                                $Status.state = "pending"
-                                $Status.description = "Waiting for sign off."
+                                }   
                             }
                         }
                     }
@@ -458,7 +462,7 @@ jobs:
                     if ($scriptPath) {
                         $lines = Get-Content -Path $scriptPath
                         $errorLine = $_.InvocationInfo.ScriptLineNumber
-                        Write-Host "$($lines[$errorLine - 1])"
+                        Write-Host "Code at error line $errorLine : $($lines[$errorLine - 1])"
                     }
 
                     # For catastrophic failure, make sure to not block PRs
