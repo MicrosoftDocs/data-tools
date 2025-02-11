@@ -56,6 +56,8 @@ jobs:
                 $Status.Add("context", $StatusCheckName)
                 $Status.Add("target_url", $StatusHelpUrl)
 
+                $CatastrophicError = $False
+
                 $SignOffString = "#sign-off"
                 $ReviewingString = "#reviewing"
                 $ApprovedString = "#approved"
@@ -297,180 +299,183 @@ jobs:
                 #####################
                 #####################               
 
-                # Get PR data so we can get the base branch of the PR. Doing this here so we don't need to do unnecessary calls if other criteria fail.
-                $PrData = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $PrUrl
-                $TargetBranch = $PrData.base.ref
-                $StatusUrl = $PrData.statuses_url
-                $PrHtmlUrl = $PrData.html_url
-
-                Write-Host "PR status url: $StatusUrl"
-
-                # Only run checks if target is default branch. Otherwise let it pass.
-                #
-                # To test against a target branch other than the default branch (main), set "$DefaultBranch" to the name of a test branch
-                # and place this workflow in that branch's .github/workflows folder. Then create another test branch off the first, and create
-                # a PR to the target test branch. Remember to comment out or remove the $DefaultBranch assignment after testing. :)
-                #
-                # $DefaultBranch = "do-not-merge-signoff-workflow"
-                #
-                # For now using folder check rather than the branch check for testing
-
-                If ($TargetBranch -eq $DefaultBranch) 
+                Try
                 {
+                    # Get PR data so we can get the base branch of the PR. Doing this here so we don't need to do unnecessary calls if other criteria fail.
+                    $PrData = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $PrUrl
+                    $TargetBranch = $PrData.base.ref
+                    $StatusUrl = $PrData.statuses_url
+                    $PrHtmlUrl = $PrData.html_url
 
-                    Write-Host "Target branch is default branch $DefaultBranch."
-    
-                    If (($GitRequestEvent -eq "issue_comment") -and (($GitHubAction -eq "created"))) 
+                    Write-Host "PR status url: $StatusUrl"
+
+                    # Only run checks if target is default branch. Otherwise let it pass.
+                    #
+                    # To test against a target branch other than the default branch (main), set "$DefaultBranch" to the name of a test branch
+                    # and place this workflow in that branch's .github/workflows folder. Then create another test branch off the first, and create
+                    # a PR to the target test branch. Remember to comment out or remove the $DefaultBranch assignment after testing. :)
+                    #
+                    # $DefaultBranch = "do-not-merge-signoff-workflow"
+                    #
+                    # For now using folder check rather than the branch check for testing
+
+                    If ($TargetBranch -eq $DefaultBranch) 
                     {
 
-                        Write-Host "Comment added on PR."
-
-                        # Get the contents of the comment that was added to the PR
-                        $CommentBody = $GitHubData.event.comment.body
-
-                        # Check to see if comment includes #sign-off, #reviewing, or #approved
-                        $SignOffFound = $CommentBody -match $SignOffRegex
-                        $ReviewingFound = $CommentBody -match $ReviewingRegex
-                        $ApprovedFound = $CommentBody -match $ApprovedRegex
-
-                        Write-Host "Regex result found #sign-off: $SignOffFound."
-                        Write-Host "Regex result found #reviewing: $ReviewingFound."
-                        Write-Host "Regex result found #approved: $ApprovedFound."
-
-                        # Get the list of files on the PR.
-                        $PrFiles = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri "$PrUrl/files"
-
-                        Write-Host "Checking for monitored folders in PR"
-
-                        # Check to see if any files in the PR exist in one or more monitored branches. Only a single
-                        # file needs to be in a monitored branch for the workflow to block the PR.
-                        $MonitoredFoldersFound = Test-MonitoredFolders -PrFileList $PrFiles -MonitoredFolderList $MonitoredFolders
-                    
-                        Write-Host "Monitored folders found: $MonitoredFoldersFound"
-
-                        If ($SignOffFound -or $ApprovedFound) 
+                        Write-Host "Target branch is default branch $DefaultBranch."
+        
+                        If (($GitRequestEvent -eq "issue_comment") -and (($GitHubAction -eq "created"))) 
                         {
 
-                            Write-Host "Sign off string `"$SignOffString` or '$ApprovedString' found on PR/Issue #$PrIssueNumber."
-                            
-                            # Get permission level of user who created the comment. Need to use .role_name instead of .permission because .permission provides only legacy values. 
-                            # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
-                            $UserPermission = $(Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $UserPermissionUrl).role_name
+                            Write-Host "Comment added on PR."
 
-                            Write-Host "User $CommentUser permission level: $UserPermission."
+                            # Get the contents of the comment that was added to the PR
+                            $CommentBody = $GitHubData.event.comment.body
 
-                            # If user has write or above, allow check to pass. If not, add content team review label.
-                            If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin")) 
+                            # Check to see if comment includes #sign-off, #reviewing, or #approved
+                            $SignOffFound = $CommentBody -match $SignOffRegex
+                            $ReviewingFound = $CommentBody -match $ReviewingRegex
+                            $ApprovedFound = $CommentBody -match $ApprovedRegex
+
+                            Write-Host "Regex result found #sign-off: $SignOffFound."
+                            Write-Host "Regex result found #reviewing: $ReviewingFound."
+                            Write-Host "Regex result found #approved: $ApprovedFound."
+
+                            # Get the list of files on the PR.
+                            $PrFiles = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri "$PrUrl/files"
+
+                            Write-Host "Checking for monitored folders in PR"
+
+                            # Check to see if any files in the PR exist in one or more monitored branches. Only a single
+                            # file needs to be in a monitored branch for the workflow to block the PR.
+                            $MonitoredFoldersFound = Test-MonitoredFolders -PrFileList $PrFiles -MonitoredFolderList $MonitoredFolders
+                        
+                            Write-Host "Monitored folders found: $MonitoredFoldersFound"
+
+                            If ($SignOffFound -or $ApprovedFound) 
                             {
 
-                                Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
+                                Write-Host "Sign off string `"$SignOffString` or '$ApprovedString' found on PR/Issue #$PrIssueNumber."
+                                
+                                # Get permission level of user who created the comment. Need to use .role_name instead of .permission because .permission provides only legacy values. 
+                                # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
+                                $UserPermission = $(Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $UserPermissionUrl).role_name
 
-                                # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.
-                                $Status.state = "success"
-                                $Status.description = "Content team sign off allowed."
+                                Write-Host "User $CommentUser permission level: $UserPermission."
 
-                                # If the user doesn't have sufficient permissions, the following block checks to see whether any files are in monitored branches. 
-                                # If yes, block the PR. If no, allow the PR.
-                            } 
-                            Else 
-                            {
-                                # If a monitored folder is found, add the review label and fail the check.
-                                If ($MonitoredFoldersFound) 
+                                # If user has write or above, allow check to pass. If not, add content team review label.
+                                If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin")) 
                                 {
 
-                                    Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check and add review label."
-
-                                    # Check if label exists on the *REPO*.
-                                    $LabelExists = Test-RepoLabel -RepoUri $RepoLabelUrl -Name $ContentReviewNeededLabel
-                                    
-                                    If (!$LabelExists) 
-                                    {
-
-                                        # Create label on the *REPO* if it doesn't exist.
-                                        New-RepoLabel -RepoUri $RepoLabelUrl -Name $ContentReviewNeededLabel -Color $ContentReviewNeededLabelColor -Description $ContentReviewNeededLabelDescription
-                                    }
-
-                                    # Check to see if the label exists on the *PR*.
-                                    $LabelResultsArray = Test-PrLabel -LabelArray $ContentReviewNeededLabel -IssueUrl $IssueUrl
-
-                                    # Only add the label if it doesn't already exist on the *PR*
-                                    If (!$LabelResultsArray.$ContentReviewNeededLabel) 
-                                    {
-                                        Write-Host "Label $ContentReviewNeededLabel doesn't exist on $IssueUrl. Adding label."
-
-                                        # Add the label to the *PR*
-                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
-                                    }
-
-                                    # Set the properties on the $Status object to fail the check. $Status will be sent to GitHub at the end of the workflow.
-                                    $Status.state = "failure"
-                                    $Status.description = "Sign off not allowed. Content team review required."
-
-                                    $CheckFailed = $True
-                                } 
-                                Else 
-                                {
-                                 
-                                    Write-Host "No files from monitored folders found. Allowing sign off."
+                                    Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
 
                                     # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.
                                     $Status.state = "success"
-                                    $Status.description = "Content team sign off not required. Allowing sign off."
+                                    $Status.description = "Content team sign off allowed."
+
+                                    # If the user doesn't have sufficient permissions, the following block checks to see whether any files are in monitored branches. 
+                                    # If yes, block the PR. If no, allow the PR.
+                                } 
+                                Else 
+                                {
+                                    # If a monitored folder is found, add the review label and fail the check.
+                                    If ($MonitoredFoldersFound) 
+                                    {
+
+                                        Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check and add review label."
+
+                                        # Check if label exists on the *REPO*.
+                                        $LabelExists = Test-RepoLabel -RepoUri $RepoLabelUrl -Name $ContentReviewNeededLabel
+                                        
+                                        If (!$LabelExists) 
+                                        {
+
+                                            # Create label on the *REPO* if it doesn't exist.
+                                            New-RepoLabel -RepoUri $RepoLabelUrl -Name $ContentReviewNeededLabel -Color $ContentReviewNeededLabelColor -Description $ContentReviewNeededLabelDescription
+                                        }
+
+                                        # Check to see if the label exists on the *PR*.
+                                        $LabelResultsArray = Test-PrLabel -LabelArray $ContentReviewNeededLabel -IssueUrl $IssueUrl
+
+                                        # Only add the label if it doesn't already exist on the *PR*
+                                        If (!$LabelResultsArray.$ContentReviewNeededLabel) 
+                                        {
+                                            Write-Host "Label $ContentReviewNeededLabel doesn't exist on $IssueUrl. Adding label."
+
+                                            # Add the label to the *PR*
+                                            Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
+                                        }
+
+                                        # Set the properties on the $Status object to fail the check. $Status will be sent to GitHub at the end of the workflow.
+                                        $Status.state = "failure"
+                                        $Status.description = "Sign off not allowed. Content team review required."
+
+                                        $CheckFailed = $True
+                                    } 
+                                    Else 
+                                    {
+                                    
+                                        Write-Host "No files from monitored folders found. Allowing sign off."
+
+                                        # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.
+                                        $Status.state = "success"
+                                        $Status.description = "Content team sign off not required. Allowing sign off."
+                                    }
+                                }
+                            } 
+                            Else 
+                            {
+                                Write-Host "Comment not sign off or approval."
+
+                                # If a monitored folder is found, add the review label and fail the check.
+                                If (-not $MonitoredFoldersFound) 
+                                {
+                                    $Status.state = "success"
+                                    $Status.description = "No monitored folders. Allowing sign off." 
                                 }
                             }
-                        } 
-                        Else 
-                        {
-                            Write-Host "Comment not sign off or approval."
-
-                            # If a monitored folder is found, add the review label and fail the check.
-                            If (-not $MonitoredFoldersFound) 
+                            ElseIf (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) 
                             {
-                                $Status.state = "success"
-                                $Status.description = "No monitored folders. Allowing sign off." 
+                                Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
+                                $Status.state = "pending"
+                                $Status.description = "Waiting for sign off."
                             }
                         }
-
-                        # This section, if uncommented along with the "pull_request_target" event up in the workflow definition, is uncommented, will cause the PR to set the
-                        # sign off check to "pending". This is more of a cosmetic thing and I don't think is necessary. I put it in to test the experience and instead of removing
-                        # right away, I'm leaving it in just incase it's preferable to see "pending" instead of "expected". Downside to using the "pull_request_target" even is that
-                        # the workflow itself becomes a check, so a second check will appear in the PR check list.
-                        #  } ElseIf (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) {
-                        #  
-                        #      Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
-                        #
-                        #      $Status.state = "pending"
-                        #      $Status.description = "Waiting for sign off."
-                        #
                     }
-
-                    # Get ready to send $Status to GitHub. First need to convert the $Status object to JSON. Then set a couple variables to prepare for an attempt loop
-                    # to deal with transient communication failures that may prevent the workflow from setting the status.
-                    $StatusJson = $Status | ConvertTo-Json
-                    $SuccessfulPost = $False
-                    $RetryCount = 0
-            
-                    # Loop to try set the status on the PR. Keep trying until either the status is successfully posted or we run out of attempts.
-                    # In the unlikely event of a water landing or failure of all six attempts, the status will not set and the user will need to 
-                    # submit a new sign off request.
-                    Do 
-                    {
-                        Try 
-                        {
-            
-                            # Send POST request to GitHub 
-                            Invoke-RestMethod -Headers $GitHubHeaders -Uri $StatusUrl -Method POST -Body $StatusJson -ErrorAction Stop 
-                            $SuccessfulPost = $True
-                        } 
-                        Catch 
-                        {
-            
-                            # If the request fails for any reason, retry it after a delay, up to six times.
-                            $RetryCount++
-                            Start-Sleep 1
-                        }
-                    } Until (($SuccessfulPost) -or ($RetryCount -gt 5))
                 }
+                Catch
+                {
+                    # For catastrophic failure, make sure to not block PRs
+                    $Status.state = "success"
+                    $Status.description = "Unexpected error in workflow. Allowing sign off."                        
+                }
+
+                # Get ready to send $Status to GitHub. First need to convert the $Status object to JSON. Then set a couple variables to prepare for an attempt loop
+                # to deal with transient communication failures that may prevent the workflow from setting the status.
+                $StatusJson = $Status | ConvertTo-Json
+                $SuccessfulPost = $False
+                $RetryCount = 0
+        
+                # Loop to try set the status on the PR. Keep trying until either the status is successfully posted or we run out of attempts.
+                # In the unlikely event of a water landing or failure of all six attempts, the status will not set and the user will need to 
+                # submit a new sign off request.
+                Do 
+                {
+                    Try 
+                    {
+        
+                        # Send POST request to GitHub 
+                        Invoke-RestMethod -Headers $GitHubHeaders -Uri $StatusUrl -Method POST -Body $StatusJson -ErrorAction Stop 
+                        $SuccessfulPost = $True
+                    } 
+                    Catch 
+                    {
+        
+                        # If the request fails for any reason, retry it after a delay, up to six times.
+                        $RetryCount++
+                        Start-Sleep 1
+                    }
+                } Until (($SuccessfulPost) -or ($RetryCount -gt 5))
 
                 If ($CheckFailed) 
                 {
@@ -481,4 +486,15 @@ jobs:
 
                     # Force the workflow to fail so the validation failure can be tracked in Actions. In this workflow, this has no effect other than logging the failure.
                     Throw "User $CommentUser with permission level $UserPermission isn't allowed to sign off on PRs. Request sign off from a content team member."
+                } 
+                ElseIf ($CatastrophicError)
+                {
+                    # Makes sure the workflow looks failed so we can investigate the bug
+
+                    echo "# Pull request validation error" >> $env:GITHUB_STEP_SUMMARY
+                    echo "" >> $env:GITHUB_STEP_SUMMARY
+                    echo "The user $CommentUser with permission level $UserPermission tried to sign off PR: $PrHtmlUrl. There was an unexpected error in the workflow, so sign-off was allowed to prevent blocking PRs. Please contact the developer of the workflow to investigate." >> $env:GITHUB_STEP_SUMMARY
+
+                    # Force the workflow to fail so the validation failure can be tracked in Actions. In this workflow, this has no effect other than logging the failure.
+                    Throw "User $CommentUser signed off but an unexpected error occurred. Please contact contact team to investigate the workflow. Sign off allowed to prevent blocking PRs."
                 }
