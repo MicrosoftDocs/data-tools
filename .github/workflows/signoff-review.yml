@@ -458,7 +458,7 @@ jobs:
                     if ($scriptPath) {
                         $lines = Get-Content -Path $scriptPath
                         $errorLine = $_.InvocationInfo.ScriptLineNumber
-                        Write-Host "Code at error line $errorLine: $($lines[$errorLine - 1])"
+                        Write-Host "$($lines[$errorLine - 1])"
                     }
 
                     # For catastrophic failure, make sure to not block PRs
