@@ -368,10 +368,9 @@ jobs:
                                 # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.
                                 $Status.state = "success"
                                 $Status.description = "Content team sign off allowed."
-                            }
 
-                            # If the user doesn't have sufficient permissions, the following block checks to see whether any files are in monitored branches. 
-                            # If yes, block the PR. If no, allow the PR.
+                                # If the user doesn't have sufficient permissions, the following block checks to see whether any files are in monitored branches. 
+                                # If yes, block the PR. If no, allow the PR.
                             } 
                             Else 
                             {
