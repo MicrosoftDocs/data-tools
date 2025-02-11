@@ -22,6 +22,21 @@ This article provides details about updates, improvements, and bug fixes for the
 
 :::image type="icon" source="includes/media/download.svg" border="false"::: **[Download and install Azure Data Studio](download-azure-data-studio.md)**
 
+### January 2025 (hotfix)
+
+- Release number: 1.51.1
+- Release date: February 10, 2025
+
+#### Bug fixes in 1.51.1
+
+| Category | Details |
+| --- | --- |
+| Core | Added banner with information about ADS retirement |
+| Core | Added notification about ADS retirement |
+| Documentation | Updated README with ADS retirement information |
+
+For details about ADS retirement, visit [aka.ms/ads-retirement](https://aka.ms/ads-retirement).
+
 ### January 2025
 
 Azure Data Studio 1.51.0 is the latest general availability (GA) release.

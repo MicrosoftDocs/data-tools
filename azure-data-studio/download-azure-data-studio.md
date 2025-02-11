@@ -25,10 +25,10 @@ For more information about Azure Data Studio, visit [What is Azure Data Studio?]
 
 ## Download Azure Data Studio
 
-Azure Data Studio 1.51.0 is the latest general availability (GA) version.
+Azure Data Studio 1.51.1 is the latest general availability (GA) version.
 
-- Release number: 1.51.0
-- Release date: January 29, 2025
+- Release number: 1.51.1
+- Release date: February 10, 2025
   
 | Platform | Type | Download |
 | --- | --- | --- |
