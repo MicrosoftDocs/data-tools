@@ -294,14 +294,17 @@ jobs:
                     )
 
                     Write-Host "Removing "$LabelName" label from PR."
+                    Write-Host "IssueUrl: $IssueUrl"
 
                     $Labels = $GitHubData.event.pull_request.labels
                     Write-Host "Current Labels: $Labels"
 
                     If ($Labels.Length -gt 0) 
                     {
+                        Write-Host "Labels greater than 0"
                         ForEach ($Label in $Labels) 
                         {
+                            Write-Host "Label: $Label"
                             If ($Label.name -eq $LabelName) 
                             {
                                 Try 
@@ -463,7 +466,7 @@ jobs:
                                         if ($LabelResultsArray.$ContentApprovedLabel)
                                         {
                                             Write-Host "Remove $ContentApprovedLabel"
-                                            Remove-Label -Name $ContentApprovedLabel -IssueUrl $IssueUrl
+                                            Remove-Label -LabelName $ContentApprovedLabel -IssueUrl $IssueUrl
                                         }
                                     }
                                 } 
