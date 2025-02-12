@@ -440,7 +440,7 @@ jobs:
 
                                     Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
 
-                                    If ($SignOffFound -or $ApprovedFound -or $ReviewingFound) 
+                                    If ($SignOffFound -or $ApprovedFound) 
                                     {
                                         # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.                                   
                                         $Status.state = "success"
