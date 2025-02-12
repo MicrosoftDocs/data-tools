@@ -396,9 +396,9 @@ jobs:
                             $ReviewingFound = $CommentBody -match $ReviewingRegex
                             $ApprovedFound = $CommentBody -match $ApprovedRegex
 
-                            Write-Host "Regex result found $SignOffString: $SignOffFound."
-                            Write-Host "Regex result found $ReviewingString: $ReviewingFound."
-                            Write-Host "Regex result found $ApprovedString: $ApprovedFound."
+                            Write-Host "Regex result found $SignOffString : $SignOffFound."
+                            Write-Host "Regex result found $ReviewingString : $ReviewingFound."
+                            Write-Host "Regex result found $ApprovedString : $ApprovedFound."
 
                             # Get the list of files on the PR.
                             $PrFiles = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri "$PrUrl/files"
