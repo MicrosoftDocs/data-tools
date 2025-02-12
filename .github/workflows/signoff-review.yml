@@ -59,6 +59,7 @@ jobs:
                 $CatastrophicError = $False
 
                 $ContentApprovalMessage = "Approved by content team."
+                $ContentNeedsReviewMessage = "Needs review by content team when ready for sign off."
 
                 $SignOffString = "#sign-off"
                 $ReviewingString = "#review-pr"
@@ -179,16 +180,14 @@ jobs:
                     # Try to submit the request to GitHub API to create the label
                     Try {
 
-                        Write-Host "Creating label $Name with color $Color on repo $RepoUri."
+                        Write-Host "Creating label $Name in repo $RepoUri."
                         
                         $Result = Invoke-RestMethod -Uri $RepoUri -Headers $GitHubHeaders  -Body $Body -Method POST
 
                     } Catch {
 
                         Write-Error "ERROR: Failed to create new label $Name on repo $RepoUri. Error: $($Error[0].Exception.Message)."
-
                     }
-
                 }
 
                 #####################
@@ -209,17 +208,13 @@ jobs:
                     $LabelResults = $Null
 
                     # Get list of labels on issue/PR
-                    Try {
-
-                        Write-Host "Getting labels on issue $IssueLabelUrl."
-
+                    Try 
+                    {
                         $LabelResults = Invoke-RestMethod -Uri $IssueLabelUrl -Headers $GitHubHeaders  -ErrorAction Stop
-
-                    } Catch {
-
+                    } 
+                    Catch 
+                    {
                         Write-Error "ERROR: Failed to get list of labels on $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
-
-
                     }
 
                     ForEach ($Label in $LabelArray) {
@@ -233,22 +228,17 @@ jobs:
                             } Else {
 
                                 $LabelHashTable.Add($Label, $False)
-
                             }
 
                         } Else {
 
                             $LabelHashTable.Add($Label, $False)
-
                         }
-
                     }
 
 
                     # Return array of labels on Issue/PR
                     Return $LabelHashTable
-
-
                 }
 
                 #####################
@@ -260,15 +250,14 @@ jobs:
                     param(
 
                         $IssueUrl,
-                        $LabelName
-                        
+                        $LabelName               
                     )
 
                     # Check to see if the label exists on the *PR*.
                     $LabelResultsArray = Test-PrLabel -LabelArray $LabelName -IssueUrl $IssueUrl
 
                     # Only add the label if it doesn't already exist on the *PR*
-                    If (!$LabelResultsArray.$LabeName)
+                    If (!$LabelResultsArray.$LabelName)
                     {
                         # Construct label URL based on issue or pull request URL
                         $IssueLabelUrl = "$IssueUrl/labels"
@@ -317,14 +306,16 @@ jobs:
                         $MonitoredFolderFound = [bool]($PrFileList | Where {$_.filename -like "*$MonitoredFolder*"})
 
                         If ($MonitoredFolderFound) {
-                            Write-Host "Monitored folder found!"
                             Break
                         }
                     }
 
                     Return $MonitoredFolderFound
-
                 }
+
+                #####################
+                #####################
+                #     Workflow      #         
                 #####################
                 #####################               
 
@@ -429,7 +420,7 @@ jobs:
 
                                         # Set the properties on the $Status object to fail the check. $Status will be sent to GitHub at the end of the workflow.
                                         $Status.state = "failure"
-                                        $Status.description = "Sign off not allowed. Content team review required."
+                                        $Status.description = $ContentNeedsReviewMessage
 
                                         $CheckFailed = $True
                                     } 
@@ -471,7 +462,7 @@ jobs:
                                     {
                                         Write-Host "Folders monitored and no content team approval yet. Returning pending."
                                         $Status.state = "pending"
-                                        $Status.description = "Needs review by content team when ready for sign off."
+                                        $Status.description = $ContentNeedsReviewMessage
                                     }
                                 }   
                             }
