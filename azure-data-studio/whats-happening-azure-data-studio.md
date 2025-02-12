@@ -7,8 +7,7 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: concept-article
-ms.custom:
-  - deprecation announcement
+ms.custom: deprecation announcement
 ---
 
 # What's happening to Azure Data Studio?
