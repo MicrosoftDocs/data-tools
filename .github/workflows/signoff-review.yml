@@ -485,7 +485,7 @@ jobs:
                                             # Check if it is already in review:
                                             $LabelResultsArray = Test-PrLabel -LabelArray $ContentReviewInProgressLabel -IssueUrl $IssueUrl
 
-                                            If (!$LabelResultsArray.$ContentReviewInProgressLabel)
+                                            If ($LabelResultsArray.$ContentReviewInProgressLabel)
                                             {
                                                 Write-Host "$ContentReviewInProgressLabel already set, so not changing label or status."
 
