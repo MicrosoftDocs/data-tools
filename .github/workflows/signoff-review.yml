@@ -7,8 +7,8 @@ permissions:
 on: 
   issue_comment:
     types: [created]
-  pull_request_target:
-    types: [opened, reopened, synchronize]
+#  pull_request_target:
+#    types: [opened, reopened, synchronize]
 
 jobs:
     build:
@@ -58,6 +58,10 @@ jobs:
 
                 $CatastrophicError = $False
 
+                $ContentApprovalMessage = "Approved by content team."
+                $ContentNeedsReviewMessage = "Needs review by content team when ready for sign off."
+                $ContentInReviewMessage = "PR is currently being reviewed by content team for approval."
+
                 $SignOffString = "#sign-off"
                 $ReviewingString = "#review-pr"
                 $ApprovedString = "#approve-pr"
@@ -73,10 +77,9 @@ jobs:
                 $ContentReviewInProgressLabelColor = "33DDFF"
                 $ContentReviewInProgressLabelDescription = "The content team is reviewing the pull request."
                 $ContentReviewInProgressLabel = "content-team-reviewing"
-                $ContentApprovedLabel = "2A8000"
-                $ContentApprovedDescription = "The content team approved the pull request."
-                $ContentReviewCompletedLabel = "content-team-reviewed"
-
+                $ContentApprovedLabelColor = "2A8000"
+                $ContentApprovedLabelDescription = "The content team approved the pull request."
+                $ContentApprovedLabel = "content-team-approved"
 
                 Write-Host "Repo: $GitHubRepoName"
                 Write-Host "Sender: $GitHubSender"
@@ -89,6 +92,28 @@ jobs:
                 # Make the job summary section show up so the job always looks consistent.
                 echo "" >> $env:GITHUB_STEP_SUMMARY
 
+                #####################
+                #####################
+                # Initialize-Labels
+
+                Function Initialize-Label {
+
+                    [CmdletBinding()]
+                    param(
+                        $LabelName,
+                        $LabelColor,
+                        $LabelDescription
+                    )
+
+                    # Check if label exists on the *REPO*.
+                    $LabelExists = Test-RepoLabel -RepoUri $RepoLabelUrl -Name $LabelName
+                    
+                    If (!$LabelExists) 
+                    {
+                        # Create label on the *REPO* if it doesn't exist.
+                        New-RepoLabel -RepoUri $RepoLabelUrl -Name $LabelName -Color $LabelColor -Description $LabelDescription
+                    }
+                }
 
                 #####################
                 #####################
@@ -156,22 +181,20 @@ jobs:
                     # Try to submit the request to GitHub API to create the label
                     Try {
 
-                        Write-Host "Creating label $Name with color $Color on repo $RepoUri."
+                        Write-Host "Creating label $Name in repo $RepoUri."
                         
                         $Result = Invoke-RestMethod -Uri $RepoUri -Headers $GitHubHeaders  -Body $Body -Method POST
 
                     } Catch {
 
                         Write-Error "ERROR: Failed to create new label $Name on repo $RepoUri. Error: $($Error[0].Exception.Message)."
-
                     }
-
                 }
 
                 #####################
                 #####################
                 # Test-PrLabel
-                Function Test-Prlabel {
+                Function Test-PrLabel {
 
                     [CmdletBinding()]
                     param(
@@ -186,17 +209,13 @@ jobs:
                     $LabelResults = $Null
 
                     # Get list of labels on issue/PR
-                    Try {
-
-                        Write-Host "Getting labels on issue $IssueLabelUrl."
-
+                    Try 
+                    {
                         $LabelResults = Invoke-RestMethod -Uri $IssueLabelUrl -Headers $GitHubHeaders  -ErrorAction Stop
-
-                    } Catch {
-
+                    } 
+                    Catch 
+                    {
                         Write-Error "ERROR: Failed to get list of labels on $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
-
-
                     }
 
                     ForEach ($Label in $LabelArray) {
@@ -210,22 +229,17 @@ jobs:
                             } Else {
 
                                 $LabelHashTable.Add($Label, $False)
-
                             }
 
                         } Else {
 
                             $LabelHashTable.Add($Label, $False)
-
                         }
-
                     }
 
 
                     # Return array of labels on Issue/PR
                     Return $LabelHashTable
-
-
                 }
 
                 #####################
@@ -235,35 +249,66 @@ jobs:
                 Function Set-PrLabel {
 
                     param(
-
                         $IssueUrl,
-                        $LabelName
-                        
+                        $LabelName               
                     )
 
-                    # Construct label URL based on issue or pull request URL
-                    $IssueLabelUrl = "$IssueUrl/labels"
+                    # Check to see if the label exists on the *PR*.
+                    $LabelResultsArray = Test-PrLabel -LabelArray $LabelName -IssueUrl $IssueUrl
 
-                    # Construct JSON statement that will be sent to GitHub as the body of the web request. Includes only the label name. GitHub expects an array even thought it's a single value
-                    # Convert array to JSON
-                    $Body = @()
-                    $Body += $LabelName
-                    $Body = ConvertTo-Json -InputObject $Body
+                    # Only add the label if it doesn't already exist on the *PR*
+                    If (!$LabelResultsArray.$LabelName)
+                    {
+                        # Construct label URL based on issue or pull request URL
+                        $IssueLabelUrl = "$IssueUrl/labels"
 
-                    # Try to submit the request to GitHub API to apply they label to the issue or pull request
-                    Try {
+                        # Construct JSON statement that will be sent to GitHub as the body of the web request. Includes only the label name. GitHub expects an array even thought it's a single value
+                        # Convert array to JSON
+                        $Body = @()
+                        $Body += $LabelName
+                        $Body = ConvertTo-Json -InputObject $Body
 
-                        Write-Host "Setting label $LabelName on URL $IssueLabelUrl."
+                        # Try to submit the request to GitHub API to apply they label to the issue or pull request
+                        Try {
 
-                        $Result = Invoke-RestMethod -Uri $IssueLabelUrl -Body $Body -Headers $GitHubHeaders  -Method POST
+                            Write-Host "Setting label $LabelName on URL $IssueLabelUrl."
+
+                            $Result = Invoke-RestMethod -Uri $IssueLabelUrl -Body $Body -Headers $GitHubHeaders  -Method POST
 
 
-                    } Catch {
+                        } Catch {
 
-                        Write-Error "ERROR: Failed to set label on URL $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
+                            Write-Error "ERROR: Failed to set label on URL $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
 
+                        }
                     }
+                }
 
+                #####################
+                #####################
+                Function Remove-Label 
+                {
+                    param(
+                        $IssueUrl,
+                        $LabelName               
+                    )
+
+                    Write-Host "Remove $LabelName"
+
+                    # Check to see if the approved label exists on the *PR* and remove it
+                    $LabelResultsArray = Test-PrLabel -LabelArray $LabelName -IssueUrl $IssueUrl
+                    if ($LabelResultsArray.$LabelName)
+                    {
+                        Write-Host "Removing "$LabelName" label from PR."
+                        Write-Host "IssueUrl: $IssueUrl"
+                        $LabelUrlName = $LabelName.Replace(" ", "%20")
+                        $LabelUrl = "$IssueUrl/labels/$LabelUrlName"
+                        Write-Host "$LabelUrl"
+
+                        $Result = Invoke-WebRequest -UseBasicParsing -Uri $LabelUrl -Headers $GitHubHeaders -Method Delete -ErrorAction Stop
+
+                        Write-Host "Successfully removed $LabelName label."
+                    }                 
                 }
 
                 #####################
@@ -288,14 +333,16 @@ jobs:
                         $MonitoredFolderFound = [bool]($PrFileList | Where {$_.filename -like "*$MonitoredFolder*"})
 
                         If ($MonitoredFolderFound) {
-                            Write-Host "Monitored folder found!"
                             Break
                         }
                     }
 
                     Return $MonitoredFolderFound
-
                 }
+
+                #####################
+                #####################
+                #     Workflow      #         
                 #####################
                 #####################               
 
@@ -308,7 +355,7 @@ jobs:
                     $PrHtmlUrl = $PrData.html_url
 
                     Write-Host "PR status url: $StatusUrl"
-
+                    
                     # Only run checks if target is default branch. Otherwise let it pass.
                     #
                     # To test against a target branch other than the default branch (main), set "$DefaultBranch" to the name of a test branch
@@ -323,30 +370,35 @@ jobs:
 
                     If ($TargetBranch -eq $DefaultBranch)
                     {
-
                         Write-Host "Target branch is default branch $DefaultBranch."
-
                         Write-Host "GitHub Request Event: $GitRequestEvent"
                         Write-Host "GitHub Action: $GitHubAction"
 
+                        Write-Host "Initialize labels needed by the workflow"
+                        Initialize-Label -LabelName $ContentReviewNeededLabel -LabelColor $ContentReviewNeededLabelColor -LabelDescription $ContentReviewNeededLabelDescription
+                        Initialize-Label -LabelName $ContentReviewInProgressLabel -LabelColor $ContentReviewInProgressLabelColor -LabelDescription $ContentReviewInProgressLabelDescription
+                        Initialize-Label -LabelName $ContentApprovedLabel -LabelColor $ContentApprovedLabelColor -LabelDescription $ContentApprovedLabelDescription
+
                         If (($GitRequestEvent -eq "issue_comment") -and (($GitHubAction -eq "created"))) 
                         {
-
                             Write-Host "Comment added on PR."
 
                             # Get the contents of the comment that was added to the PR
                             $CommentBody = $GitHubData.event.comment.body
 
-                            Write-Host "Comment: $CommentBody"
+                            Write-Host "Comment:"
+                            Write-Host "--------------------------"
+                            Write-Host "$CommentBody"
+                            Write-Host "--------------------------"
 
                             # Check to see if comment includes #sign-off, #reviewing, or #approved
                             $SignOffFound = $CommentBody -match $SignOffRegex
                             $ReviewingFound = $CommentBody -match $ReviewingRegex
                             $ApprovedFound = $CommentBody -match $ApprovedRegex
 
-                            Write-Host "Regex result found #sign-off: $SignOffFound."
-                            Write-Host "Regex result found #reviewing: $ReviewingFound."
-                            Write-Host "Regex result found #approved: $ApprovedFound."
+                            Write-Host "Regex result found $SignOffString : $SignOffFound."
+                            Write-Host "Regex result found $ReviewingString : $ReviewingFound."
+                            Write-Host "Regex result found $ApprovedString : $ApprovedFound."
 
                             # Get the list of files on the PR.
                             $PrFiles = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri "$PrUrl/files"
@@ -359,10 +411,10 @@ jobs:
                         
                             Write-Host "Monitored folders found: $MonitoredFoldersFound"
 
-                            If ($SignOffFound -or $ApprovedFound) 
+                            If ($SignOffFound -or $ApprovedFound -or $ReviewingFound) 
                             {
 
-                                Write-Host "String `"$SignOffString` or '$ApprovedString' found on PR/Issue #$PrIssueNumber."
+                                Write-Host "String `"$SignOffString` or '$ApprovedString or $ReviewingString' found on PR/Issue #$PrIssueNumber."
                                 
                                 # Get permission level of user who created the comment. Need to use .role_name instead of .permission because .permission provides only legacy values. 
                                 # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
@@ -376,56 +428,86 @@ jobs:
 
                                     Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
 
-                                    # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.
-                                    $Status.state = "success"
-                                    $Status.description = "Content team sign off allowed."
+                                    If ($SignOffFound -or $ApprovedFound) 
+                                    {
+                                        # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.                                   
+                                        $Status.state = "success"
+                                        $Status.description = $ContentApprovalMessage
 
-                                    # If the user doesn't have sufficient permissions, the following block checks to see whether any files are in monitored branches. 
-                                    # If yes, block the PR. If no, allow the PR.
+                                        Write-Host "Adding $ContentApprovedLabel label to the PR"
+                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
+
+                                        Write-Host "Removing other labels"
+                                        Remove-Label -LabelName $ContentReviewInProgressLabel -IssueUrl $IssueUrl
+                                        Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
+                                        
+                                    }
+                                    ElseIf ($ReviewingFound)
+                                    {
+                                        # Content team is explicitly setting this back to review state, so remove any approved tags and add review tag.
+                                        $Status.state = "pending"
+                                        $Status.description = $ContentInReviewMessage
+
+                                        Write-Host "Adding $ContentReviewInProgressLabel label to the PR"
+                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewInProgressLabel
+
+                                        Write-Host "Removing other labels"
+                                        Remove-Label -LabelName $ContentApprovedLabel -IssueUrl $IssueUrl
+                                        Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
+                                    }
                                 } 
                                 Else 
                                 {
-                                    # If a monitored folder is found, add the review label and fail the check.
-                                    If ($MonitoredFoldersFound) 
+                                    # If the content team has already approved, report success.
+                                    # Technically, this means that once approved they could sneak other changes in, but maybe that is ok as we would see.
+
+                                    $LabelResultsArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
+
+                                    If (!$LabelResultsArray.$ContentApprovedLabel)
                                     {
-
-                                        Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check and add review label."
-
-                                        # Check if label exists on the *REPO*.
-                                        $LabelExists = Test-RepoLabel -RepoUri $RepoLabelUrl -Name $ContentReviewNeededLabel
-                                        
-                                        If (!$LabelExists) 
-                                        {
-
-                                            # Create label on the *REPO* if it doesn't exist.
-                                            New-RepoLabel -RepoUri $RepoLabelUrl -Name $ContentReviewNeededLabel -Color $ContentReviewNeededLabelColor -Description $ContentReviewNeededLabelDescription
-                                        }
-
-                                        # Check to see if the label exists on the *PR*.
-                                        $LabelResultsArray = Test-PrLabel -LabelArray $ContentReviewNeededLabel -IssueUrl $IssueUrl
-
-                                        # Only add the label if it doesn't already exist on the *PR*
-                                        If (!$LabelResultsArray.$ContentReviewNeededLabel) 
-                                        {
-                                            Write-Host "Label $ContentReviewNeededLabel doesn't exist on $IssueUrl. Adding label."
-
-                                            # Add the label to the *PR*
-                                            Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
-                                        }
-
-                                        # Set the properties on the $Status object to fail the check. $Status will be sent to GitHub at the end of the workflow.
-                                        $Status.state = "failure"
-                                        $Status.description = "Sign off not allowed. Content team review required."
-
-                                        $CheckFailed = $True
-                                    } 
-                                    Else 
-                                    {
-                                        Write-Host "No files from monitored folders found. Allowing sign off."
-
-                                        # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.
+                                        Write-Host "Content team already approved. Returning success."
                                         $Status.state = "success"
-                                        $Status.description = "Content team sign off not required. Allowing sign off."
+                                        $Status.description = ContentApprovalMessage                             
+                                    }
+                                    else
+                                    {
+                                        # If a monitored folder is found, add the review label and fail the check.
+                                        If ($MonitoredFoldersFound) 
+                                        {
+                                            # Check failed. Add label.
+                                            Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check."
+                                            Write-Host "Adding the content-team-review-needed label."
+
+                                            # Check if it is already in review:
+                                            $LabelResultsArray = Test-PrLabel -LabelArray $ContentReviewInProgressLabel -IssueUrl $IssueUrl
+
+                                            If (!$LabelResultsArray.$ContentReviewInProgressLabel)
+                                            {
+                                                # Already in review so just keep the same status and message
+                                                $Status.state = "pending"
+                                                $Status.description = $ContentInReviewMessage
+                                            }
+                                            else
+                                            {
+                                                Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
+                                                
+                                                # Fail with message
+                                                $Status.state = "failure"
+                                                $Status.description = $ContentNeedsReviewMessage
+                                            }
+
+                                            $CheckFailed = $True
+                                        } 
+                                        Else 
+                                        {
+                                            Write-Host "No files from monitored folders found. Allowing sign off."
+
+                                            # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.
+                                            $Status.state = "success"
+                                            $Status.description = "Content team sign off not required. Allowing sign off."
+                                        
+                                            # Add no labels as this is just outside of our workflow
+                                        }
                                     }
                                 }
                             } 
@@ -442,12 +524,29 @@ jobs:
                                 }
                                 Else
                                 {
-                                    Write-Host "Folders monitored. No status returned."
+                                    # Check to see if the content team has approved this yet
+                                    $LabelResultsArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
+
+                                    if ($LabelResultsArray.$ContentApprovedLabel)
+                                    {
+                                        Write-Host "Content team already approved. Returning success."
+                                        $Status.state = "success"
+                                        $Status.description = $ContentApprovalMessage
+                                    }
+                                    else
+                                    {
+                                        Write-Host "Folders monitored and no content team approval yet. Returning pending."
+                                        $Status.state = "pending"
+                                        $Status.description = $ContentNeedsReviewMessage
+                                    }
                                 }   
                             }
                         }
                         Else
                         {
+                            # At the moment, this code block doesn't happen because we've commented out the 
+                            # events at the top that would set things like pull request open to this code path.
+                            # Leave it in here in case we find a use for that in the future. It didn't offer any advantages in testing.
                             Write-Host "Non-comment GitHub Event"
 
                             If (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) 
