@@ -292,38 +292,16 @@ jobs:
                         $IssueUrl,
                         $LabelName               
                     )
-
+                    
                     Write-Host "Removing "$LabelName" label from PR."
                     Write-Host "IssueUrl: $IssueUrl"
+                    $LabelUrlName = $LabelName.Replace(" ", "%20")
+                    $LabelUrl = "$IssuesUrl/labels/$LabelUrlName"
+                    Write-Host "$LabelUrl"
 
-                    $Labels = $GitHubData.event.pull_request.labels
-                    Write-Host "Current Labels: $Labels"
+                    $Result = Invoke-WebRequest -UseBasicParsing -Uri $LabelUrl -Headers $GitHubHeaders -Method Delete -ErrorAction Stop
 
-                    If ($Labels.Length -gt 0) 
-                    {
-                        Write-Host "Labels greater than 0"
-                        ForEach ($Label in $Labels) 
-                        {
-                            Write-Host "Label: $Label"
-                            If ($Label.name -eq $LabelName) 
-                            {
-                                Try 
-                                {
-                                    $LabelUrlName = $LabelName.Replace(" ", "%20")
-                                    $IssuesUrl = $GitHubData.event.pull_request.issue_url
-                                    $LabelUrl = "$IssuesUrl/labels/$LabelUrlName"
-
-                                    $Result = Invoke-WebRequest -UseBasicParsing -Uri $LabelUrl -Headers $GitHubHeaders -Method Delete -ErrorAction Stop
-
-                                    Write-Host "Successfully removed $LabelName label."                 
-                                } 
-                                Catch 
-                                {
-                                    Write-Host "ERROR: Failed to remove $LabelName label."
-                                }
-                            }
-                        }
-                    }
+                    Write-Host "Successfully removed $LabelName label."                 
                 }
 
                 #####################
