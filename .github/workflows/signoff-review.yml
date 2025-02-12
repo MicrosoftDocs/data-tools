@@ -60,6 +60,7 @@ jobs:
 
                 $ContentApprovalMessage = "Approved by content team."
                 $ContentNeedsReviewMessage = "Needs review by content team when ready for sign off."
+                $ContentInReviewMessage = "PR is currently being reviewed by content team for sign off approval."
 
                 $SignOffString = "#sign-off"
                 $ReviewingString = "#review-pr"
@@ -248,7 +249,6 @@ jobs:
                 Function Set-PrLabel {
 
                     param(
-
                         $IssueUrl,
                         $LabelName               
                     )
@@ -280,6 +280,45 @@ jobs:
 
                             Write-Error "ERROR: Failed to set label on URL $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
 
+                        }
+                    }
+                }
+
+                #####################
+                #####################
+                Function Remove-Label 
+                {
+                    param(
+                        $IssueUrl,
+                        $LabelName               
+                    )
+
+                    Write-Host "Removing "$LabelName" label from PR."
+
+                    $Labels = $GitHubData.event.pull_request.labels
+                    Write-Host "Current Labels: $Labels"
+
+                    If ($Labels.Length -gt 0) 
+                    {
+                        ForEach ($Label in $Labels) 
+                        {
+                            If ($Label.name -eq $LabelName) 
+                            {
+                                Try 
+                                {
+                                    $LabelUrlName = $LabelName.Replace(" ", "%20")
+                                    $IssuesUrl = $GitHubData.event.pull_request.issue_url
+                                    $LabelUrl = "$IssuesUrl/labels/$LabelUrlName"
+
+                                    $Result = Invoke-WebRequest -UseBasicParsing -Uri $LabelUrl -Headers $GitHubHeaders -Method Delete -ErrorAction Stop
+
+                                    Write-Host "Successfully removed $LabelName label."                 
+                                } 
+                                Catch 
+                                {
+                                    Write-Host "ERROR: Failed to remove $LabelName label."
+                                }
+                            }
                         }
                     }
                 }
@@ -384,7 +423,7 @@ jobs:
                         
                             Write-Host "Monitored folders found: $MonitoredFoldersFound"
 
-                            If ($SignOffFound -or $ApprovedFound) 
+                            If ($SignOffFound -or $ApprovedFound -or $ReviewingFound) 
                             {
 
                                 Write-Host "String `"$SignOffString` or '$ApprovedString' found on PR/Issue #$PrIssueNumber."
@@ -401,12 +440,32 @@ jobs:
 
                                     Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
 
-                                    # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.                                   
-                                    $Status.state = "success"
-                                    $Status.description = $ContentApprovalMessage
+                                    If ($SignOffFound -or $ApprovedFound -or $ReviewingFound) 
+                                    {
+                                        # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.                                   
+                                        $Status.state = "success"
+                                        $Status.description = $ContentApprovalMessage
 
-                                    Write-Host "Adding content-team-approved label to the PR"
-                                    Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
+                                        Write-Host "Adding $ContentApprovedLabel label to the PR"
+                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
+                                    }
+                                    ElseIf ($ReviewingFound)
+                                    {
+                                        # Content team is explicitly setting this back to review state, so remove any approved tags and add review tag.
+                                        $Status.state = "pending"
+                                        $Status.description = $ContentInReviewMessage
+
+                                        Write-Host "Adding $ContentReviewInProgress label to the PR"
+                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewInProgressLabel
+
+                                        # Check to see if the approved label exists on the *PR* and remove it
+                                        $LabelResultsArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
+                                        if ($LabelResultsArray.$ContentApprovedLabel)
+                                        {
+                                            Write-Host "Remove $ContentApprovedLabel"
+                                            Remove-Label -Name $ContentApprovedLabel -IssueUrl $IssueUrl
+                                        }
+                                    }
                                 } 
                                 Else 
                                 {
