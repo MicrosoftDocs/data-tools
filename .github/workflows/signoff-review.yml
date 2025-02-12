@@ -88,6 +88,7 @@ jobs:
                 Write-Host "GitHub state: $GitHubState"
                 Write-Host "Default branch: $DefaultBranch"
                 Write-Host "PR number: $PrIssueNumber"
+                Write-Host "Commenter user name: $CommentUser"
 
                 # Make the job summary section show up so the job always looks consistent.
                 echo "" >> $env:GITHUB_STEP_SUMMARY
@@ -454,6 +455,8 @@ jobs:
                                         Write-Host "Removing other labels"
                                         Remove-Label -LabelName $ContentApprovedLabel -IssueUrl $IssueUrl
                                         Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
+
+                                        # TODO: Find a way to assign the $CommenterUserName to the PR
                                     }
                                 } 
                                 Else 
@@ -467,7 +470,7 @@ jobs:
                                     {
                                         Write-Host "Content team already approved. Returning success."
                                         $Status.state = "success"
-                                        $Status.description = ContentApprovalMessage                             
+                                        $Status.description = $ContentApprovalMessage                             
                                     }
                                     else
                                     {
