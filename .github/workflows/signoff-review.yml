@@ -73,10 +73,9 @@ jobs:
                 $ContentReviewInProgressLabelColor = "33DDFF"
                 $ContentReviewInProgressLabelDescription = "The content team is reviewing the pull request."
                 $ContentReviewInProgressLabel = "content-team-reviewing"
-                $ContentApprovedLabel = "2A8000"
-                $ContentApprovedDescription = "The content team approved the pull request."
-                $ContentReviewCompletedLabel = "content-team-reviewed"
-
+                $ContentApprovedLabelColor = "2A8000"
+                $ContentApprovedLabelDescription = "The content team approved the pull request."
+                $ContentApprovedLabel = "content-team-approved"
 
                 Write-Host "Repo: $GitHubRepoName"
                 Write-Host "Sender: $GitHubSender"
@@ -89,6 +88,28 @@ jobs:
                 # Make the job summary section show up so the job always looks consistent.
                 echo "" >> $env:GITHUB_STEP_SUMMARY
 
+                #####################
+                #####################
+                # Initialize-Labels
+
+                Function Initialize-Label {
+
+                    [CmdletBinding()]
+                    param(
+                        $LabelName,
+                        $LabelColor,
+                        $LabelDescription
+                    )
+
+                    # Check if label exists on the *REPO*.
+                    $LabelExists = Test-RepoLabel -RepoUri $RepoLabelUrl -Name $LabelName
+                    
+                    If (!$LabelExists) 
+                    {
+                        # Create label on the *REPO* if it doesn't exist.
+                        New-RepoLabel -RepoUri $RepoLabelUrl -Name $LabelName -Color $LabelColor -Description $LabelDescription
+                    }
+                }
 
                 #####################
                 #####################
@@ -308,7 +329,7 @@ jobs:
                     $PrHtmlUrl = $PrData.html_url
 
                     Write-Host "PR status url: $StatusUrl"
-
+                    
                     # Only run checks if target is default branch. Otherwise let it pass.
                     #
                     # To test against a target branch other than the default branch (main), set "$DefaultBranch" to the name of a test branch
@@ -323,21 +344,26 @@ jobs:
 
                     If ($TargetBranch -eq $DefaultBranch)
                     {
-
                         Write-Host "Target branch is default branch $DefaultBranch."
-
                         Write-Host "GitHub Request Event: $GitRequestEvent"
                         Write-Host "GitHub Action: $GitHubAction"
 
+                        Write-Host "Initialize labels needed by the workflow"
+                        Initialize-Label $ContentReviewNeededLabel, $ContentReviewNeededLabelColor, $ContentReviewNeededLabelDescription
+                        Initialize-Label $ContentReviewInProgressLabel, $ContentReviewInProgressLabelColor, $ContentReviewInProgressLabelDescription
+                        Initialize-Label $ContentApprovedLabel, $ContentApprovedLabelColor, $ContentApprovedLabelDescription
+
                         If (($GitRequestEvent -eq "issue_comment") -and (($GitHubAction -eq "created"))) 
                         {
-
                             Write-Host "Comment added on PR."
 
                             # Get the contents of the comment that was added to the PR
                             $CommentBody = $GitHubData.event.comment.body
 
-                            Write-Host "Comment: $CommentBody"
+                            Write-Host "Comment:"
+                            Write-Host "--------------------------"
+                            Write-Host "$CommentBody"
+                            Write-Host "--------------------------"
 
                             # Check to see if comment includes #sign-off, #reviewing, or #approved
                             $SignOffFound = $CommentBody -match $SignOffRegex
@@ -376,42 +402,22 @@ jobs:
 
                                     Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
 
-                                    # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.
+                                    # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.                                   
                                     $Status.state = "success"
                                     $Status.description = "Content team sign off allowed."
 
-                                    # If the user doesn't have sufficient permissions, the following block checks to see whether any files are in monitored branches. 
-                                    # If yes, block the PR. If no, allow the PR.
+                                    Write-Host "Adding content-team-approved label to the PR"
+                                    Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
                                 } 
                                 Else 
                                 {
                                     # If a monitored folder is found, add the review label and fail the check.
                                     If ($MonitoredFoldersFound) 
                                     {
-
-                                        Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check and add review label."
-
-                                        # Check if label exists on the *REPO*.
-                                        $LabelExists = Test-RepoLabel -RepoUri $RepoLabelUrl -Name $ContentReviewNeededLabel
-                                        
-                                        If (!$LabelExists) 
-                                        {
-
-                                            # Create label on the *REPO* if it doesn't exist.
-                                            New-RepoLabel -RepoUri $RepoLabelUrl -Name $ContentReviewNeededLabel -Color $ContentReviewNeededLabelColor -Description $ContentReviewNeededLabelDescription
-                                        }
-
-                                        # Check to see if the label exists on the *PR*.
-                                        $LabelResultsArray = Test-PrLabel -LabelArray $ContentReviewNeededLabel -IssueUrl $IssueUrl
-
-                                        # Only add the label if it doesn't already exist on the *PR*
-                                        If (!$LabelResultsArray.$ContentReviewNeededLabel) 
-                                        {
-                                            Write-Host "Label $ContentReviewNeededLabel doesn't exist on $IssueUrl. Adding label."
-
-                                            # Add the label to the *PR*
-                                            Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
-                                        }
+                                        # Check failed. Add label.
+                                        Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check."
+                                        Write-Host "Adding the content-team-review-needed label."
+                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
 
                                         # Set the properties on the $Status object to fail the check. $Status will be sent to GitHub at the end of the workflow.
                                         $Status.state = "failure"
@@ -426,6 +432,8 @@ jobs:
                                         # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.
                                         $Status.state = "success"
                                         $Status.description = "Content team sign off not required. Allowing sign off."
+                                    
+                                        # Add no labels as this is just outside of our workflow
                                     }
                                 }
                             } 
