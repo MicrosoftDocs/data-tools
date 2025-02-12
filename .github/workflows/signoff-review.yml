@@ -292,16 +292,23 @@ jobs:
                         $IssueUrl,
                         $LabelName               
                     )
-                    
-                    Write-Host "Removing "$LabelName" label from PR."
-                    Write-Host "IssueUrl: $IssueUrl"
-                    $LabelUrlName = $LabelName.Replace(" ", "%20")
-                    $LabelUrl = "$IssueUrl/labels/$LabelUrlName"
-                    Write-Host "$LabelUrl"
 
-                    $Result = Invoke-WebRequest -UseBasicParsing -Uri $LabelUrl -Headers $GitHubHeaders -Method Delete -ErrorAction Stop
+                    Write-Host "Remove $LabelName"
 
-                    Write-Host "Successfully removed $LabelName label."                 
+                    # Check to see if the approved label exists on the *PR* and remove it
+                    $LabelResultsArray = Test-PrLabel -LabelArray $LabelName -IssueUrl $IssueUrl
+                    if ($LabelResultsArray.$LabelName)
+                    {
+                        Write-Host "Removing "$LabelName" label from PR."
+                        Write-Host "IssueUrl: $IssueUrl"
+                        $LabelUrlName = $LabelName.Replace(" ", "%20")
+                        $LabelUrl = "$IssueUrl/labels/$LabelUrlName"
+                        Write-Host "$LabelUrl"
+
+                        $Result = Invoke-WebRequest -UseBasicParsing -Uri $LabelUrl -Headers $GitHubHeaders -Method Delete -ErrorAction Stop
+
+                        Write-Host "Successfully removed $LabelName label."
+                    }                 
                 }
 
                 #####################
@@ -429,6 +436,11 @@ jobs:
 
                                         Write-Host "Adding $ContentApprovedLabel label to the PR"
                                         Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
+
+                                        Write-Host "Removing other labels"
+                                        Remove-Label -LabelName $ContentReviewInProgressLabel -IssueUrl $IssueUrl
+                                        Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
+                                        
                                     }
                                     ElseIf ($ReviewingFound)
                                     {
@@ -436,16 +448,12 @@ jobs:
                                         $Status.state = "pending"
                                         $Status.description = $ContentInReviewMessage
 
-                                        Write-Host "Adding $ContentReviewInProgress label to the PR"
+                                        Write-Host "Adding $ContentReviewInProgressLabel label to the PR"
                                         Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewInProgressLabel
 
-                                        # Check to see if the approved label exists on the *PR* and remove it
-                                        $LabelResultsArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
-                                        if ($LabelResultsArray.$ContentApprovedLabel)
-                                        {
-                                            Write-Host "Remove $ContentApprovedLabel"
-                                            Remove-Label -LabelName $ContentApprovedLabel -IssueUrl $IssueUrl
-                                        }
+                                        Write-Host "Removing other labels"
+                                        Remove-Label -LabelName $ContentApprovedLabel -IssueUrl $IssueUrl
+                                        Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
                                     }
                                 } 
                                 Else 
