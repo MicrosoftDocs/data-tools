@@ -296,7 +296,7 @@ jobs:
                     Write-Host "Removing "$LabelName" label from PR."
                     Write-Host "IssueUrl: $IssueUrl"
                     $LabelUrlName = $LabelName.Replace(" ", "%20")
-                    $LabelUrl = "$IssuesUrl/labels/$LabelUrlName"
+                    $LabelUrl = "$IssueUrl/labels/$LabelUrlName"
                     Write-Host "$LabelUrl"
 
                     $Result = Invoke-WebRequest -UseBasicParsing -Uri $LabelUrl -Headers $GitHubHeaders -Method Delete -ErrorAction Stop
@@ -407,7 +407,7 @@ jobs:
                             If ($SignOffFound -or $ApprovedFound -or $ReviewingFound) 
                             {
 
-                                Write-Host "String `"$SignOffString` or '$ApprovedString' found on PR/Issue #$PrIssueNumber."
+                                Write-Host "String `"$SignOffString` or '$ApprovedString or $ReviewingString' found on PR/Issue #$PrIssueNumber."
                                 
                                 # Get permission level of user who created the comment. Need to use .role_name instead of .permission because .permission provides only legacy values. 
                                 # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
