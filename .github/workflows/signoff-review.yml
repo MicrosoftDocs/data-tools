@@ -415,7 +415,7 @@ jobs:
                             If ($SignOffFound -or $ApprovedFound -or $ReviewingFound) 
                             {
 
-                                Write-Host "String `"$SignOffString` or '$ApprovedString or $ReviewingString' found on PR/Issue #$PrIssueNumber."
+                                Write-Host "String $SignOffString or $ApprovedString or $ReviewingString found on PR/Issue #$PrIssueNumber."
                                 
                                 # Get permission level of user who created the comment. Need to use .role_name instead of .permission because .permission provides only legacy values. 
                                 # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
@@ -445,13 +445,13 @@ jobs:
                                     }
                                     ElseIf ($ReviewingFound)
                                     {
-                                        # Content team is explicitly setting this back to review state, so remove any approved tags and add review tag.
                                         $Status.state = "pending"
                                         $Status.description = $ContentInReviewMessage
 
                                         Write-Host "Adding $ContentReviewInProgressLabel label to the PR"
                                         Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewInProgressLabel
 
+                                        # Content team is explicitly setting this back to review state, so remove any approved tags and add review tag.
                                         Write-Host "Removing other labels"
                                         Remove-Label -LabelName $ContentApprovedLabel -IssueUrl $IssueUrl
                                         Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
@@ -466,7 +466,7 @@ jobs:
 
                                     $LabelResultsArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
 
-                                    If (!$LabelResultsArray.$ContentApprovedLabel)
+                                    If ($LabelResultsArray.$ContentApprovedLabel)
                                     {
                                         Write-Host "Content team already approved. Returning success."
                                         $Status.state = "success"
