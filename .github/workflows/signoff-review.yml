@@ -270,18 +270,20 @@ jobs:
                         $Body = ConvertTo-Json -InputObject $Body
 
                         # Try to submit the request to GitHub API to apply they label to the issue or pull request
-                        Try {
-
+                        Try 
+                        {
                             Write-Host "Setting label $LabelName on URL $IssueLabelUrl."
 
                             $Result = Invoke-RestMethod -Uri $IssueLabelUrl -Body $Body -Headers $GitHubHeaders  -Method POST
-
-
-                        } Catch {
-
-                            Write-Error "ERROR: Failed to set label on URL $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
-
+                        } 
+                        Catch 
+                        {
+                            Write-Error "ERROR: Failed to set label $LabelName on URL $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
                         }
+                    }
+                    Else
+                    {
+                        Write-Host "Label $LabelName already exists on PR"
                     }
                 }
 
@@ -479,19 +481,21 @@ jobs:
                                         {
                                             # Check failed. Add label.
                                             Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check."
-                                            Write-Host "Adding the content-team-review-needed label."
 
                                             # Check if it is already in review:
                                             $LabelResultsArray = Test-PrLabel -LabelArray $ContentReviewInProgressLabel -IssueUrl $IssueUrl
 
                                             If (!$LabelResultsArray.$ContentReviewInProgressLabel)
                                             {
+                                                Write-Host "$ContentReviewInProgressLabel already set, so not changing label or status."
+
                                                 # Already in review so just keep the same status and message
                                                 $Status.state = "pending"
                                                 $Status.description = $ContentInReviewMessage
                                             }
                                             else
                                             {
+                                                Write-Host "Adding the $ContentReviewNeededLabel label."
                                                 Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
                                                 
                                                 # Fail with message
