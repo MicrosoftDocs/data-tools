@@ -69,7 +69,7 @@ jobs:
                 $ReviewingRegex = "\s*$ReviewingString\s*"
                 $ApprovedRegex = "\s*$ApprovedString\s*"
 
-                $EscalationEmail = "[DB Docs Team](mailto:rogue1@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20PR%20254&body=$IssueUrl)"
+                $EscalationEmail = "[DB Docs Team](mailto:rogue1@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20PR%20254&body=$PrUrl)"
                 $NeedsContentTeamReviewMessage = "Thank you for signing off. This PR will be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
                 $CurrentlyInReviewMessage = $NeedsContentTeamReviewMessage # change this to something custom
                 $CheckFailed = $False
@@ -359,7 +359,8 @@ jobs:
                         $Message
                     )
 
-                    $CommentsUrl = $GitHubData.event.pull_request.comments_url
+                    $CommentsUrl = $GitHubData.event.issue.comments_url
+                    Write-Host "$CommentsUrl"
 
                     $BodyHash = @{}
                     $BodyHash.body = $Message
