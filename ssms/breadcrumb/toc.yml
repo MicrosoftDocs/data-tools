@@ -1,0 +1,7 @@
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+    - name: SQL Server Management Studio
+      tocHref: /ssms/
+      topicHref: /ssms/download-sql-server-management-studio-ssms
