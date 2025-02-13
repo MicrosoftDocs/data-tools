@@ -15,7 +15,7 @@ ms.topic: how-to
 
 [!INCLUDE [sqlserver2019](../includes/applies-to-version/sqlserver2019.md)]
 
-This tutorial demonstrates how to create and run a notebook in Azure Data Studio using SQL Server.
+This tutorial demonstrates how to create and run a notebook in Azure Data Studio using SQL Server. 
 
 ## Prerequisites
 
