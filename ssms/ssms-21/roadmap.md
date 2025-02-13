@@ -28,7 +28,7 @@ Extensibility in [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] starts with 
 
 ## Git tooling
 
-Git integration returns to SSMS, allowing administrators and database developers to manage script repositories. This integration supports common Git operations such as cloning, committing, pushing, and pulling changes directly from SSMS. You can create GitHub internal repos with better guardrails to ensure security, providing a seamless and secure way to manage your codebase.
+Git integration returns to SSMS, allowing administrators and database developers to manage script repositories. This integration supports common Git operations such as cloning, committing, pushing, and pulling changes directly from SSMS. You can create internal GitHub repos with better guardrails to ensure security, providing a seamless and secure way to manage your codebase.
 
 ## Performance and productivity
 

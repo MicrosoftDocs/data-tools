@@ -1,4 +1,6 @@
 items:
+- name: Microsoft SQL documentation >
+  href: /sql
 - name: SQL Server Management Studio 21 Preview
   items:
   - name: Frequently asked questions
@@ -1124,6 +1126,8 @@ items:
       href: visual-db-tools/print-query-results-visual-database-tools.md
 - name: Resources
   items:
+  - name: Microsoft SQL documentation >
+    href: /sql
   - name: SSMS Support Policy
     href: support-policy.md
   - name: User Assistance in SSMS
