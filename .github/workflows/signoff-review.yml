@@ -30,6 +30,7 @@ jobs:
                 # Get GitHub data and event
                 $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
                 $GitRequestEvent = $GitHubData.event_name
+                $PrGitHubLink = $GitHubData.event_name.issue.html_url
 
                 $AccessToken = $env:AccessToken
                 $MonitoredFolders = $env:MonitoredFolders | ConvertFrom-Json
@@ -69,9 +70,9 @@ jobs:
                 $ReviewingRegex = "\s*$ReviewingString\s*"
                 $ApprovedRegex = "\s*$ApprovedString\s*"
 
-                $EscalationEmail = "[DB Docs Team](mailto:rogue1@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20PR%20254&body=$PrUrl)"
+                $EscalationEmail = "[DB Docs Team](mailto:rogue1@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20PR%20254&body=$PrGitHubLink)"
                 $NeedsContentTeamReviewMessage = "Thank you for signing off. This PR will be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
-                $CurrentlyInReviewMessage = $NeedsContentTeamReviewMessage # change this to something custom
+                $CurrentlyInReviewMessage = "This PR is currently assigned to the Database Docs team for review. It must be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
                 $CheckFailed = $False
 
                 $ContentReviewNeededLabelColor = "eeee88"
@@ -92,6 +93,7 @@ jobs:
                 Write-Host "Default branch: $DefaultBranch"
                 Write-Host "PR number: $PrIssueNumber"
                 Write-Host "Issue URL: $IssueUrl"
+                Write-Host "PR URL: $PrGitHubLink"
                 Write-Host "Commenter user name: $CommentUser"
 
                 # Make the job summary section show up so the job always looks consistent.
@@ -471,9 +473,6 @@ jobs:
                                     {
                                         Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
 
-                                        # This is a test
-                                        Set-PrComment -Message $CurrentlyInReviewMessage
-
                                         If ($SignOffFound -or $ApprovedFound) 
                                         {
                                             # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.                                   
@@ -535,7 +534,11 @@ jobs:
                                                     $Status.state = "pending"
                                                     $Status.description = $ContentInReviewMessage
 
-                                                    Set-PrComment "This pull request is currently being reviewed by the Database Docs "
+                                                    If ($SignOffFound)
+                                                    {
+                                                        Write-Host "User signed off without permissions but it is already in review with content team"
+                                                        Set-PrComment $CurrentlyInReviewMessage
+                                                    }
                                                 }
                                                 else
                                                 {
@@ -545,6 +548,8 @@ jobs:
                                                     # Fail with message
                                                     $Status.state = "failure"
                                                     $Status.description = $ContentNeedsReviewMessage
+
+                                                    Set-PrComment $NeedsContentTeamReviewMessage
                                                 }
 
                                                 $CheckFailed = $True
