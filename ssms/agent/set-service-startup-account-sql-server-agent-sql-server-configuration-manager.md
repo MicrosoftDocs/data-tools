@@ -3,7 +3,6 @@ title: Set the Service Startup Account
 description: "Set the Service Startup Account for SQL Server Agent (SQL Server Configuration Manager)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
 ms.date: 10/03/2023
 ms.service: sql-server-management-studio
 ms.topic: how-to

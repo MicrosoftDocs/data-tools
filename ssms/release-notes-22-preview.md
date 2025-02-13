@@ -3,7 +3,7 @@ title: "Release Notes for SQL Server Management Studio (SSMS) 22 Preview"
 description: Release notes for SQL Server Management Studio (SSMS) 22 Preview.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, mbarickman, maghan
+ms.reviewer: randolphwest, mbarickman
 ms.date: 10/14/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new

@@ -3,7 +3,6 @@ title: "Manage Objects Using Object Explorer"
 description: "This article is an overview of managing objects using Object Explorer in SQL Server Management Studio."
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: mikeray
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: article

@@ -3,7 +3,6 @@ title: Select an Account for the SQL Server Agent Service
 description: The service startup account defines the Microsoft Windows account in which SQL Server Agent runs and its network permissions.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
 ms.date: 07/26/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to

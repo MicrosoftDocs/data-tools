@@ -3,7 +3,7 @@ title: SQL Server Options Page - Azure Services
 description: "Options (Azure Services)"
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan
+ms.reviewer: randolphwest
 ms.date: 08/14/2024
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

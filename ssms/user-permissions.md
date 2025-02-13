@@ -3,7 +3,7 @@ title: User Permissions and SQL Server Management Studio
 description: Learn how to install SQL Server Management Studio on a computer that has an earlier or later version of SQL Server Management Studio already installed.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
+ms.reviewer: randolphwest
 ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

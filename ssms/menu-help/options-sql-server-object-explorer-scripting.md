@@ -3,7 +3,7 @@ title: "Options (SQL Server Object Explorer - Scripting)"
 description: Description of options within the SQL Server Object Explorer - Scripting window.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
+ms.reviewer: randolphwest
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

@@ -3,7 +3,7 @@ title: "Connect to Server (Additional Connection Parameters Page) Database Engin
 description: Connect to Server (Additional Connection Parameters page) Database Engine.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
+ms.reviewer: randolphwest
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

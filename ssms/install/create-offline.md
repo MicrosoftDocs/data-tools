@@ -3,7 +3,7 @@ title: Create an Offline Installation of SQL Server Management Studio
 description: Create an offline installation package to install SQL Server Management Studio (SSMS) offline when you have an unreliable internet connection or low bandwidth.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan, mbarickman
+ms.reviewer: randolphwest, mbarickman
 ms.date: 09/25/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

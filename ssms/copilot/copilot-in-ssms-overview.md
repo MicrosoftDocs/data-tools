@@ -4,7 +4,7 @@ titleSuffix: Copilot in SQL Server Management Studio
 description: Learn about Copilot in SQL Server Management Studio.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
+ms.reviewer: randolphwest
 ms.date: 10/13/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

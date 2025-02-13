@@ -3,7 +3,7 @@ title: Connect and Query SQL Server Using SSMS
 description: Connect to a SQL Server instance in SSMS. Create and query a SQL Server database in SSMS running basic Transact-SQL (T-SQL) queries.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: mikeray, randolphwest, mbarickman
+ms.reviewer: randolphwest, mbarickman
 ms.date: 04/16/2025
 ms.update-cycle: 1825-days
 ms.service: sql-server-management-studio

@@ -3,7 +3,6 @@ title: Resize the Job History Log
 description: "Resize the Job History Log"
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
 ms.date: 05/09/2022
 ms.service: sql-server-management-studio
 ms.topic: how-to

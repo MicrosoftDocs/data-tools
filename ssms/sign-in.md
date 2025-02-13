@@ -3,7 +3,7 @@ title: Sign in or Switch User Accounts in SQL Server Management Studio
 description: Learn how to sign in to SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan, mbarickman
+ms.reviewer: randolphwest, mbarickman
 ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

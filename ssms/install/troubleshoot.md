@@ -3,7 +3,7 @@ title: Troubleshoot Installation and Upgrade Issues for SQL Server Management St
 description: Learn how to troubleshoot issues with SQL Server Management Studio (SSMS) installation and upgrades.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
+ms.reviewer: randolphwest
 ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general

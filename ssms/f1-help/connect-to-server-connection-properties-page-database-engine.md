@@ -3,7 +3,7 @@ title: "Connect to Server (Connection Properties) - Database Engine"
 description: Learn how to use the connect to the server (Connection Properties page) in the database engine to manage your SQL Server connections and settings.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
+ms.reviewer: randolphwest
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

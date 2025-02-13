@@ -3,7 +3,7 @@ title: Use Command-Line Parameters to Install SQL Server Management Studio
 description: Use command-line parameters to install SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan, mbarickman
+ms.reviewer: randolphwest, mbarickman
 ms.date: 10/13/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

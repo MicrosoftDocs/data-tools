@@ -3,7 +3,7 @@ title: Command-Line Parameter Examples for SQL Server Management Studio Installa
 description: Examples of using command-line parameters to install SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan, mbarickman
+ms.reviewer: randolphwest, mbarickman
 ms.date: 09/25/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

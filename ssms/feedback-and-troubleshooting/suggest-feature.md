@@ -3,7 +3,7 @@ title: Suggest a Feature for SQL Server Management Studio
 description: Learn how to suggest features and improvements for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
+ms.reviewer: randolphwest
 ms.date: 06/26/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general

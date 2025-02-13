@@ -3,7 +3,7 @@ title: Connect and Query Azure SQL Database
 description: Connect to and query an Azure SQL Database using SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: mikeray, randolphwest, maghan
+ms.reviewer: randolphwest
 ms.date: 09/12/2025
 ms.service: sql-server-management-studio
 ms.topic: quickstart
