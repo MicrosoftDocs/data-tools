@@ -24,7 +24,7 @@
       "build_output_subfolder": "ssms",
       "locale": "en-us",
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       },
