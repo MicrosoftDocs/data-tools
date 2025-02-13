@@ -24,25 +24,46 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.gif",
+          "**/*.jpg",
+          "**/*.svg"
         ],
         "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "**/docfx.json",
-          "_repo.en-us/**"
-        ]
+          "**/obj/**"
+        ],
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/breadcrumb/ssms/toc.yml",
-      "feedback_system": "Standard",
-      "permissioned-type": "secret"
+      "uhfHeaderId": "MSDocsHeader-DocsSQL",
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
+      "feedback_system": "Standard"
     },
     "fileMetadata": {},
-    "template": []
+    "template": [],
+    "dest": "ssms",
+    "rules": {
+      "docs-link-absolute": {
+        "exclude": [
+          "download-sql-server-management-studio-ssms.md"
+        ]
+      },
+      "sensitive-language-ma": {
+        "exclude": [
+          "agent/**/*.md",
+          "database-engine/install-windows/**/*.md"
+        ]
+      },
+      "sensitive-language-sl": {
+        "exclude": []
+      },
+      "sensitive-language-wl": {
+        "exclude": []
+      },
+      "sensitive-language-bl": {
+        "exclude": []
+      }
+    }
   }
 }
