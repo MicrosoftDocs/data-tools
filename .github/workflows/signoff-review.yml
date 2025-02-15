@@ -37,7 +37,12 @@ jobs:
                 $GitRequestEvent = $GitHubData.event_name
                 if ($GitRequestEvent -eq "pull_request") 
                 {
-                    $PrGitHubLink = $GitHubData.pull_request.html_url
+                    Write-Host "1 $GitHubData.event"
+                    Write-Host "2 $GitHubData.event.pull_request"
+                    Write-Host "3 $GitHubData.event.issue"
+                    Write-Host "4 $GitHubData.event.pull_request.url"
+                    Write-Host "5 $GitHubData.event.pull_request.html_url"
+                    $PrGitHubLink = $GitHubData.event.pull_request.html_url
                 }
 
                 $AccessToken = $env:AccessToken
