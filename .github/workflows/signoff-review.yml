@@ -35,7 +35,7 @@ jobs:
                 # Get GitHub data and event
                 $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
                 $GitRequestEvent = $GitHubData.event_name
-                if ($GitRequestEvent -eq "pull_request") 
+                if ($GitRequestEvent -eq "issue_commment") 
                 {
                     Write-Host "1 $GitHubData.event"
                     Write-Host "2 $GitHubData.event.pull_request"
@@ -83,7 +83,7 @@ jobs:
                 $ReviewingRegex = "\s*$ReviewingString\s*"
                 $ApprovedRegex = "\s*$ApprovedString\s*"
 
-                $EscalationEmail = "[DB Docs Team](mailto:dbdocsprreviews@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20PR%20254&body=$PrGitHubLink)"
+                $EscalationEmail = "[DB Docs Team](mailto:dbdocsprreviews@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20$GitHubRepoName%20PR%20254&body=$PrGitHubLink)"
                 $NeedsContentTeamReviewMessage = "Thank you for signing off. This PR will be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
                 $CurrentlyInReviewMessage = "This PR is currently assigned to the Database Docs team for review. It must be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
                 $CheckFailed = $False
