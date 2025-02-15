@@ -24,29 +24,15 @@
       "build_output_subfolder": "ssms",
       "locale": "en-us",
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       },
       "build_entry_point": "docs"
     }
   ],
-  "notification_subscribers": [
-    "maghan@microsoft.com",
-    " jroth@microsoft.com",
-    " mikeray@microsoft.com",
-    "randolphwest@microsoft.com"
-  ],
-  "sync_notification_subscribers": [
-    " jroth@microsoft.com",
-    " Mark.Ghanayem@microsoft.com",
-    " Masha.Thomas@microsoft.com",
-    " Mike.Ray@microsoft.com",
-    " randolphwest@microsoft.com",
-    " sidandrews@microsoft.com",
-    " vanto@microsoft.com",
-    " wiassaf@microsoft.com"
-  ],
+  "notification_subscribers": [],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/data-tools",
   "git_repository_branch_open_to_public_contributors": "main",
@@ -86,6 +72,7 @@
   "enable_branch_build_custom_validation": true,
   "enable_pull_request_custom_validation": true,
   "redirection_files": [
-    ".openpublishing.redirection.azure-data-studio.json"
+    ".openpublishing.redirection.azure-data-studio.json",
+    ".openpublishing.redirection.ssms.json"
   ]
 }
