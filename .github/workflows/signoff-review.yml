@@ -39,7 +39,7 @@ jobs:
                 {
                     $test1 = $GitHubData.event
                     $test2 = $GitHubData.event.pull_request
-                    $test3 = $GitHubData.event.issue
+                    $test3 = $GitHubData.event.issue.html_url
                     $test4 = $GitHubData.event.pull_request.url
                     $test5 = $GitHubData.event.pull_request.html_url
 
@@ -48,7 +48,7 @@ jobs:
                     Write-Host "3 $test3"
                     Write-Host "4 $test4"
                     Write-Host "5 $test5"
-                    $PrGitHubLink = $GitHubData.event.pull_request.html_url
+                    $PrGitHubLink = $GitHubData.event.issue.html_url
                 }
 
                 $AccessToken = $env:AccessToken
