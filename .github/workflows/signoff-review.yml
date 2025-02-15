@@ -35,7 +35,7 @@ jobs:
                 # Get GitHub data and event
                 $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
                 $GitRequestEvent = $GitHubData.event_name
-                if ($GitRequestEvent -eq "issue_commment") 
+                if ($GitRequestEvent -eq "issue_comment") 
                 {
                     Write-Host "1 $GitHubData.event"
                     Write-Host "2 $GitHubData.event.pull_request"
