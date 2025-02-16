@@ -79,8 +79,9 @@ jobs:
                 $ApprovedRegex = "\s*$ApprovedString\s*"
 
                 $EscalationEmail = "[DB Docs Team](mailto:dbdocsprreviews@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20$GitHubRepoName%20PR%20$PrIssueNumber&body=$PrGitHubLink)"
-                $NeedsContentTeamReviewMessage = "Thank you for signing off. This PR will be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
+                $NeedsContentTeamReviewMessage = "TThis PR will be reviewed and approved by the Database Docs team before merging. They will work with you and the PR review team to publish your changes. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
                 $CurrentlyInReviewMessage = "This PR is currently assigned to the Database Docs team for review. It must be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
+                $AssignedReviewerMessage = "Assigning the pull request to @!!USER!! for review. #assign: !!USER!!"
                 $CheckFailed = $False
 
                 $ContentReviewNeededLabelColor = "eeee88"
@@ -400,12 +401,38 @@ jobs:
                 {
                     param
                     (
+                        $PrData,
                         $GitHubAssignee
                     )
 
-                    Write-Host "Adding user $GitHubAssignee to $IssueUrl"
+                    Try
+                    {
+                        Write-Host "PrData: $PrData"
+                        
+                        $CurrentAssignees = $PrData.assignees | ForEach-Object { $_.login }
 
-                    Set-PrComment -Message "Message assigned to $GitHubAssignee for review. #assign: $GitHubAssignee"
+                        Write-Host "Current assignees: $CurrentAssignees"
+
+                        if ($CurrentAssignees ne $null -and $CurrentAssignees -contains $GitHubAssignee)
+                        {
+                            # User is not already assigned to the PR. Assign them using the #assign comment
+                            # that PR Merger will read and act on
+
+                            Write-Host "Adding user $GitHubAssignee to $IssueUrl"
+
+                            $AssignedReviewerMessage = $AssignedReviewerMessage -replace "!!USER!!", $GitHubAssignee
+
+                            Set-PrComment -Message $AssignedReviewerMessage
+                        }
+                        else
+                        {
+                            Write-Host "User already assigned to PR."
+                        }
+                    }
+                    Catch
+                    {
+                        Write-Host "Error assigning user to PR! Error: $($error[0].Exception.Message)."
+                    }
                 }
 
                 #####################
@@ -582,7 +609,7 @@ jobs:
                                     # Also assign the user to the PR. This way the person who gave approval or signed off
                                     # can shepherd the PR through the final stages of publishing.
                                     Write-Host "Assigning $CommentUser to the PR"
-                                    Add-PrAssignee -GitHubAssignee $CommentUser
+                                    Add-PrAssignee -PrData $PrData -GitHubAssignee $CommentUser
                                 }       
                             }
                             ElseIf ($ReviewingFound)
@@ -641,8 +668,9 @@ jobs:
                                     Write-Host "Adding the $ContentReviewNeededLabel label."
                                     Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
                                     
-                                    # Fail with message
-                                    $Status.state = "failure"
+                                    # Even though the check failed, leave the status as pending.
+                                    # It is always pending until the content team has approved.
+                                    $Status.state = "pending"
                                     $Status.description = $ContentNeedsReviewMessage
 
                                     Set-PrComment $NeedsContentTeamReviewMessage
