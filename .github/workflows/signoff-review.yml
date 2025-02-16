@@ -413,7 +413,7 @@ jobs:
 
                         Write-Host "Current assignees: $CurrentAssignees"
 
-                        if ($CurrentAssignees ne $null -and $CurrentAssignees -contains $GitHubAssignee)
+                        if ($CurrentAssignees -ne $null -and $CurrentAssignees -contains $GitHubAssignee)
                         {
                             # User is not already assigned to the PR. Assign them using the #assign comment
                             # that PR Merger will read and act on
