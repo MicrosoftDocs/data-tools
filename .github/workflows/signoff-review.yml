@@ -80,7 +80,7 @@ jobs:
                 $ApprovedRegex = "\s*$ApprovedString\s*"
 
                 $EscalationEmail = "[DB Docs Team](mailto:dbdocsprreviews@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20$GitHubRepoName%20PR%20$PrIssueNumber&body=$PrGitHubLink)"
-                $NeedsContentTeamReviewMessage = "TThis PR will be reviewed and approved by the Database Docs team before merging. They will work with you and the PR review team to publish your changes. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
+                $NeedsContentTeamReviewMessage = "This PR will be reviewed and approved by the Database Docs team before merging. They will work with you and the PR review team to publish your changes. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
                 $CurrentlyInReviewMessage = "This PR is currently assigned to the Database Docs team for review. It must be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
                 $AssignedReviewerMessage = "Assigning the pull request to @!!USER!! for review. #assign: !!USER!!"
                 $CheckFailed = $False
@@ -407,24 +407,20 @@ jobs:
 
                     Try
                     {
-                        Write-Host "PrData: $PrData"
-                        
                         $Assignees = $PrData.assignees
                         $CurrentAssignees = $PrData.assignees | ForEach-Object { $_.login }
 
                         Write-Host "Current assignees: $CurrentAssignees"
 
-                        $AlreadyAdded = $false
+                        $AlreadyAdded = $False
 
                         # Loop through each of the eligible assignees found in the PR.
                         ForEach ($User in $Assignees) 
                         {
-                            Write-Host "$User"
-
                             If ($User.login -eq $GitHubAssignee) 
                             {
                                 Write-Host "Found matching user already assigned to PR"
-                                $AlreadyAdded = true
+                                $AlreadyAdded = $True
                             } 
                         }
 
