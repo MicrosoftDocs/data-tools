@@ -400,53 +400,12 @@ jobs:
                 {
                     param
                     (
-                        $IssueUrl,
-                        $PrData,
                         $GitHubAssignee
                     )
 
                     Write-Host "Adding user $GitHubAssignee to $IssueUrl"
 
-                    $UsersToAssign = @()
-
-                    Try
-                    {
-                        Write-Host "PrData: $PrData"
-                        
-                        $PullsUrl = $PrData.url
-
-                        Write-Host "Pulls URL: $PullsUrl"
-                        Write-Host "Issue URL: $IssueUrl"
-
-                        $CurrentAssignees = $PrData.assignees | ForEach-Object { $_.login }
-
-                        Write-Host "Current Assignees: $CurrentAssignees"
-
-                        $UpdatedAssignees = $CurrentAssignees + $GitHubAssignee
-
-                        Write-Host "Updated Assignees: $UpdatedAssignees"
-
-                        $Body = @{
-                            assignees = $NewAssignees
-                        } | ConvertTo-Json
-
-                        Try 
-                        {                   
-                            Invoke-RestMethod -Method PATCH -Headers $GitHubHeaders -Uri $PullsUrl -Body $Body
-
-                            Write-Host "User added to PR"
-                        }
-                        Catch
-                        {
-                            Write-Host "ERROR: Failed assign GitHub user $GitHubAssignee on URL $AssigneeUrl. Error: $($Error[0].Exception.Message)."
-                        }
-                    }
-                    Catch
-                    {
-                        Write-Host "ERROR: Unable to retrieve assignees and add GitHub user $GitHubAssignee on URL $AssigneeUrl. Error: $($Error[0].Exception.Message)."
-
-                        return
-                    }
+                    Set-PrComment -Message "Message assigned to $GitHubAssignee for review. #assign: $GitHubAssignee"
                 }
 
                 #####################
@@ -623,7 +582,7 @@ jobs:
                                     # Also assign the user to the PR. This way the person who gave approval or signed off
                                     # can shepherd the PR through the final stages of publishing.
                                     Write-Host "Assigning $CommentUser to the PR"
-                                    Add-PrAssignee -IssueUrl $IssueUrl -PrData $PrData -GitHubAssignee $CommentUser
+                                    Add-PrAssignee -GitHubAssignee $CommentUser
                                 }       
                             }
                             ElseIf ($ReviewingFound)
@@ -644,7 +603,7 @@ jobs:
                                 # Also assign the user to the PR. This way the person who added the reviewing label
                                 # can shepherd the PR through the final stages of publishing.
                                 Write-Host "Assigning $CommentUser to the PR"                                
-                                Add-PrAssignee -IssueUrl $IssueUrl -PrData $PrData -GitHubAssignee $CommentUser
+                                Add-PrAssignee -GitHubAssignee $CommentUser
                             }
                         } 
                         Else 
