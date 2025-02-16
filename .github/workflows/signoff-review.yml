@@ -413,6 +413,11 @@ jobs:
                     {
                         Write-Host "PrData: $PrData"
                         
+                        $PullsUrl = $PrData.url
+
+                        Write-Host "Pulls URL: $PullsUrl"
+                        Write-Host "Issue URL: $IssueUrl"
+
                         $CurrentAssignees = $PrData.assignees | ForEach-Object { $_.login }
 
                         Write-Host "Current Assignees: $CurrentAssignees"
@@ -425,11 +430,9 @@ jobs:
                             assignees = $NewAssignees
                         } | ConvertTo-Json
 
-                        Write-Host "IssueUrl: $IssueUrl"
-
                         Try 
                         {                   
-                            Invoke-RestMethod -Method PATCH -Headers $GitHubHeaders -Uri $IssueUrl -Body $Body
+                            Invoke-RestMethod -Method PATCH -Headers $GitHubHeaders -Uri $PullsUrl -Body $Body
 
                             Write-Host "User added to PR"
                         }
