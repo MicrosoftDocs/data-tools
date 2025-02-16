@@ -408,11 +408,27 @@ jobs:
                     {
                         Write-Host "PrData: $PrData"
                         
+                        $Assignees = $PrData.assignees
                         $CurrentAssignees = $PrData.assignees | ForEach-Object { $_.login }
 
+                        Write-Host "PrData.assignees: $Assigneees"
                         Write-Host "Current assignees: $CurrentAssignees"
 
-                        if ($CurrentAssignees -ne $null -and ($CurrentAssignees -contains $GitHubAssignee))
+                        $AlreadyAdded = $false
+
+                        # Loop through each of the eligible assignees found in the PR.
+                        ForEach ($User in $Assignees) 
+                        {
+                            Write-Host "$User"
+
+                            If ($User -eq $GitHubAssignee) 
+                            {
+                                Write-Host "Found matching user already assigned to PR"
+                                $AlreadyAdded = true
+                            } 
+                        }
+
+                        if (-not $AlreadyAdded)
                         {
                             # User is not already assigned to the PR. Assign them using the #assign comment
                             # that PR Merger will read and act on
