@@ -13,6 +13,7 @@ on:
 jobs:
     build:
         name: Run Script
+        if: github.repository_visibility == 'private'
         runs-on: ubuntu-latest
         steps:
           - name: Script
@@ -22,7 +23,7 @@ jobs:
               AccessToken: ${{ secrets.GITHUB_TOKEN }}
               # For testing set to a little used folder as the only target
               MonitoredFolders: '[
-                    "azure-data-studio/notebooks/",
+                    "ssms/solution/",
                 ]'
   
             run: |
@@ -411,7 +412,6 @@ jobs:
                         $Assignees = $PrData.assignees
                         $CurrentAssignees = $PrData.assignees | ForEach-Object { $_.login }
 
-                        Write-Host "PrData.assignees: $Assigneees"
                         Write-Host "Current assignees: $CurrentAssignees"
 
                         $AlreadyAdded = $false
@@ -421,7 +421,7 @@ jobs:
                         {
                             Write-Host "$User"
 
-                            If ($User -eq $GitHubAssignee) 
+                            If ($User.login -eq $GitHubAssignee) 
                             {
                                 Write-Host "Found matching user already assigned to PR"
                                 $AlreadyAdded = true
@@ -672,11 +672,8 @@ jobs:
                                     $Status.state = "pending"
                                     $Status.description = $ContentInReviewMessage
 
-                                    If ($SignOffFound)
-                                    {
-                                        Write-Host "User signed off without permissions but it is already in review with content team"
-                                        Set-PrComment $CurrentlyInReviewMessage
-                                    }
+                                    Write-Host "User signed off without permissions but it is already in review with content team"
+                                    Set-PrComment $CurrentlyInReviewMessage
                                 }
                                 Else
                                 {
@@ -702,6 +699,8 @@ jobs:
                         # and add the do-not-merge label
                         Write-Host "Removing ready-to-merge label"
                         Remove-Label -LabelName "ready-to-merge" -IssueUrl $IssueUrl
+                        Write-Host "Adding the do-not-merge label"
+                        Set-PrLabel -LabelName "do-not-merge" -IssueUrl $IssueUrl
                     }
                 }
                 Catch
