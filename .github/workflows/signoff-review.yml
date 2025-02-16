@@ -401,6 +401,7 @@ jobs:
                     param
                     (
                         $IssueUrl,
+                        $PrData,
                         $GitHubAssignee
                     )
 
@@ -410,11 +411,9 @@ jobs:
 
                     Try
                     {
-                        $Response = Invoke-RestMethod -Uri $IssueUrl -Headers $GitHubHeaders -Method GET
-
-                        Write-Host "Response: $Response"
-
-                        $CurrentAssignees = $Response.assignees | ForEach-Object { $_.login }
+                        Write-Host "PrData: $PrData"
+                        
+                        $CurrentAssignees = $PrData.assignees | ForEach-Object { $_.login }
 
                         Write-Host "Current Assignees: $CurrentAssignees"
 
@@ -623,7 +622,7 @@ jobs:
                                     # Also assign the user to the PR. This way the person who gave approval or signed off
                                     # can shepherd the PR through the final stages of publishing.
                                     Write-Host "Assigning $CommentUser to the PR"
-                                    Add-PrAssignee -IssueUrl $IssueUrl -GitHubAssignee $CommentUser
+                                    Add-PrAssignee -IssueUrl $IssueUrl -PrData $PrData -GitHubAssignee $CommentUser
                                 }       
                             }
                             ElseIf ($ReviewingFound)
@@ -644,7 +643,7 @@ jobs:
                                 # Also assign the user to the PR. This way the person who added the reviewing label
                                 # can shepherd the PR through the final stages of publishing.
                                 Write-Host "Assigning $CommentUser to the PR"                                
-                                Add-PrAssignee -IssueUrl $IssueUrl -GitHubAssignee $CommentUser
+                                Add-PrAssignee -IssueUrl $IssueUrl -PrData $PrData -GitHubAssignee $CommentUser
                             }
                         } 
                         Else 
