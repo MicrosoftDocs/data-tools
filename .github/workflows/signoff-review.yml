@@ -410,21 +410,29 @@ jobs:
 
                     Try
                     {
-                        $CurrentAssignees = (Invoke-RestMethod -Uri $IssueUrl -Headers $GitHubHeaders -Method GET).assignees
+                        $Response = Invoke-RestMethod -Uri $IssueUrl -Headers $GitHubHeaders -Method GET
+
+                        Write-Host "Response: $Response"
+
+                        $CurrentAssignees = $Response.assignees | ForEach-Object { $_.login }
 
                         Write-Host "Current Assignees: $CurrentAssignees"
 
-                        $UsersToAssign = $CurrentAssignees.login + $GitHubAssignee
+                        $UpdatedAssignees = $CurrentAssignees + $GitHubAssignee
+
+                        Write-Host "Updated Assignees: $UpdatedAssignees"
 
                         $Body = @{}
-                        $Body.Add("assignees", $UsersToAssign)
+                        $Body.Add("assignees", $UpdatedAssignees)
                         $Body = $Body | ConvertTo-Json
 
                         $AssigneeUrl = "$IssueUrl/assignees"
+
+                        Write-Host "AssigneeUrl: $AssigneeUrl"
                     }
                     Catch
                     {
-                        Write-Error "ERROR: Unable to retrieve assignees and add GitHub user $GitHubAssignee on URL $AssigneeUrl. Error: $($Error[0].Exception.Message)."
+                        Write-Host "ERROR: Unable to retrieve assignees and add GitHub user $GitHubAssignee on URL $AssigneeUrl. Error: $($Error[0].Exception.Message)."
 
                         return
                     }
@@ -437,7 +445,7 @@ jobs:
                     }
                     Catch
                     {
-                        Write-Error "ERROR: Failed assign GitHub user $GitHubAssignee on URL $AssigneeUrl. Error: $($Error[0].Exception.Message)."
+                        Write-Host "ERROR: Failed assign GitHub user $GitHubAssignee on URL $AssigneeUrl. Error: $($Error[0].Exception.Message)."
                     }
                 }
 
