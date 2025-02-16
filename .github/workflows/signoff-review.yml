@@ -318,7 +318,6 @@ jobs:
                     if ($LabelResultsArray.$LabelName)
                     {
                         Write-Host "Removing "$LabelName" label from PR."
-                        Write-Host "IssueUrl: $IssueUrl"
                         $LabelUrlName = $LabelName.Replace(" ", "%20")
                         $LabelUrl = "$IssueUrl/labels/$LabelUrlName"
                         Write-Host "$LabelUrl"
@@ -413,7 +412,7 @@ jobs:
 
                         Write-Host "Current assignees: $CurrentAssignees"
 
-                        if ($CurrentAssignees -ne $null -and $CurrentAssignees -contains $GitHubAssignee)
+                        if ($CurrentAssignees -ne $null -and ($CurrentAssignees -contains $GitHubAssignee))
                         {
                             # User is not already assigned to the PR. Assign them using the #assign comment
                             # that PR Merger will read and act on
@@ -426,7 +425,7 @@ jobs:
                         }
                         else
                         {
-                            Write-Host "User already assigned to PR."
+                            Write-Host "User $GitHubAssignee already assigned to PR."
                         }
                     }
                     Catch
@@ -630,7 +629,7 @@ jobs:
                                 # Also assign the user to the PR. This way the person who added the reviewing label
                                 # can shepherd the PR through the final stages of publishing.
                                 Write-Host "Assigning $CommentUser to the PR"                                
-                                Add-PrAssignee -GitHubAssignee $CommentUser
+                                Add-PrAssignee -PrData $PrData -GitHubAssignee $CommentUser
                             }
                         } 
                         Else 
@@ -679,6 +678,14 @@ jobs:
                                 $CheckFailed = $True
                             }
                         }                  
+                    }
+
+                    if ($Status.state -ne "success")
+                    {
+                        # If the state is anything other than success, attempt to remove the ready-to-merge label
+                        # and add the do-not-merge label
+                        Write-Host "Removing ready-to-merge label"
+                        Remove-Label -LabelName "ready-to-merge" -IssueUrl $IssueUrl
                     }
                 }
                 Catch
