@@ -421,30 +421,28 @@ jobs:
 
                         Write-Host "Updated Assignees: $UpdatedAssignees"
 
-                        $Body = @{}
-                        $Body.Add("assignees", $UpdatedAssignees)
-                        $Body = $Body | ConvertTo-Json
+                        $Body = @{
+                            assignees = $NewAssignees
+                        } | ConvertTo-Json
 
-                        $AssigneeUrl = "$IssueUrl/assignees"
+                        Write-Host "IssueUrl: $IssueUrl"
 
-                        Write-Host "AssigneeUrl: $AssigneeUrl"
+                        Try 
+                        {                   
+                            Invoke-RestMethod -Method PATCH -Headers $GitHubHeaders -Uri $IssueUrl -Body $Body
+
+                            Write-Host "User added to PR"
+                        }
+                        Catch
+                        {
+                            Write-Host "ERROR: Failed assign GitHub user $GitHubAssignee on URL $AssigneeUrl. Error: $($Error[0].Exception.Message)."
+                        }
                     }
                     Catch
                     {
                         Write-Host "ERROR: Unable to retrieve assignees and add GitHub user $GitHubAssignee on URL $AssigneeUrl. Error: $($Error[0].Exception.Message)."
 
                         return
-                    }
-
-                    Try 
-                    {                   
-                        $Result = Invoke-RestMethod -Uri $AssigneeUrl -Body $Body -Headers $GitHubHeaders -Method POST
-
-                        Write-Host "User added to PR"
-                    }
-                    Catch
-                    {
-                        Write-Host "ERROR: Failed assign GitHub user $GitHubAssignee on URL $AssigneeUrl. Error: $($Error[0].Exception.Message)."
                     }
                 }
 
