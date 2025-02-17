@@ -17,7 +17,7 @@ helpviewer_keywords:
 
 [!INCLUDE [sql-windows-only](includes/applies-to-version/sql-windows-only.md)]
 
-This article describes how to configure login auditing in [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] on Windows, to monitor [!INCLUDE [ssDEnoversion](includes/ssdenoversion-md.md)] login activity. Login auditing can be configured to write to the error log on the following events.
+This article describes how to configure login auditing in [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] on Windows, to monitor [!INCLUDE [ssDEnoversion](includes/ssdenoversion-md.md)] login activity. Login auditing can be configured to write to the error log on the following events. 
 
 - Failed logins
 - Successful logins
