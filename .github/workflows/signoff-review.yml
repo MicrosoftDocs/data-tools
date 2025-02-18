@@ -13,6 +13,7 @@ on:
 jobs:
     build:
         name: Run Script
+        if: github.repository_visibility == 'private'
         runs-on: ubuntu-latest
         steps:
           - name: Script
@@ -22,7 +23,7 @@ jobs:
               AccessToken: ${{ secrets.GITHUB_TOKEN }}
               # For testing set to a little used folder as the only target
               MonitoredFolders: '[
-                    "azure-data-studio/notebooks/",
+                    "ssms/solution/",
                 ]'
   
             run: |
@@ -37,17 +38,6 @@ jobs:
                 $GitRequestEvent = $GitHubData.event_name
                 if ($GitRequestEvent -eq "issue_comment") 
                 {
-                    $test1 = $GitHubData.event
-                    $test2 = $GitHubData.event.pull_request
-                    $test3 = $GitHubData.event.issue.html_url
-                    $test4 = $GitHubData.event.pull_request.url
-                    $test5 = $GitHubData.event.pull_request.html_url
-
-                    Write-Host "1 $test1"
-                    Write-Host "2 $test2"
-                    Write-Host "3 $test3"
-                    Write-Host "4 $test4"
-                    Write-Host "5 $test5"
                     $PrGitHubLink = $GitHubData.event.issue.html_url
                 }
 
@@ -89,9 +79,10 @@ jobs:
                 $ReviewingRegex = "\s*$ReviewingString\s*"
                 $ApprovedRegex = "\s*$ApprovedString\s*"
 
-                $EscalationEmail = "[DB Docs Team](mailto:dbdocsprreviews@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20$GitHubRepoName%20PR%20254&body=$PrGitHubLink)"
-                $NeedsContentTeamReviewMessage = "Thank you for signing off. This PR will be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
+                $EscalationEmail = "[DB Docs Team](mailto:dbdocsprreviews@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20$GitHubRepoName%20PR%20$PrIssueNumber&body=$PrGitHubLink)"
+                $NeedsContentTeamReviewMessage = "This PR will be reviewed and approved by the Database Docs team before merging. They will work with you and the PR review team to publish your changes. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
                 $CurrentlyInReviewMessage = "This PR is currently assigned to the Database Docs team for review. It must be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
+                $AssignedReviewerMessage = "Assigning the pull request to @!!USER!! for review. #assign: !!USER!!"
                 $CheckFailed = $False
 
                 $ContentReviewNeededLabelColor = "eeee88"
@@ -328,7 +319,6 @@ jobs:
                     if ($LabelResultsArray.$LabelName)
                     {
                         Write-Host "Removing "$LabelName" label from PR."
-                        Write-Host "IssueUrl: $IssueUrl"
                         $LabelUrlName = $LabelName.Replace(" ", "%20")
                         $LabelUrl = "$IssueUrl/labels/$LabelUrlName"
                         Write-Host "$LabelUrl"
@@ -403,6 +393,58 @@ jobs:
                     Return $PostCommentSuccess
                 }
 
+                #####################
+                #####################
+                # Add-PrAssignee
+
+                Function Add-PrAssignee 
+                {
+                    param
+                    (
+                        $PrData,
+                        $GitHubAssignee
+                    )
+
+                    Try
+                    {
+                        $Assignees = $PrData.assignees
+                        $CurrentAssignees = $PrData.assignees | ForEach-Object { $_.login }
+
+                        Write-Host "Current assignees: $CurrentAssignees"
+
+                        $AlreadyAdded = $False
+
+                        # Loop through each of the eligible assignees found in the PR.
+                        ForEach ($User in $Assignees) 
+                        {
+                            If ($User.login -eq $GitHubAssignee) 
+                            {
+                                Write-Host "Found matching user already assigned to PR"
+                                $AlreadyAdded = $True
+                            } 
+                        }
+
+                        if (-not $AlreadyAdded)
+                        {
+                            # User is not already assigned to the PR. Assign them using the #assign comment
+                            # that PR Merger will read and act on
+
+                            Write-Host "Adding user $GitHubAssignee to $IssueUrl"
+
+                            $AssignedReviewerMessage = $AssignedReviewerMessage -replace "!!USER!!", $GitHubAssignee
+
+                            Set-PrComment -Message $AssignedReviewerMessage
+                        }
+                        else
+                        {
+                            Write-Host "User $GitHubAssignee already assigned to PR."
+                        }
+                    }
+                    Catch
+                    {
+                        Write-Host "Error assigning user to PR! Error: $($error[0].Exception.Message)."
+                    }
+                }
 
                 #####################
                 #####################
@@ -489,7 +531,16 @@ jobs:
                     # Check to see if any files in the PR exist in one or more monitored branches. Only a single
                     # file needs to be in a monitored branch for the workflow to block the PR.
                     $MonitoredFoldersFound = Test-MonitoredFolders -PrFileList $PrFiles -MonitoredFolderList $MonitoredFolders
-                
+
+                    # Check to see what labels are already on the PR
+                    $LabelReviewNeededArray = Test-PrLabel -LabelArray $ContentReviewNeededLabel -IssueUrl $IssueUrl
+                    $LabelReviewInProgressArray = Test-PrLabel -LabelArray $ContentReviewInProgressLabel -IssueUrl $IssueUrl
+                    $LabelApprovedArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
+
+                    $ReviewNeededLabelSet = $LabelReviewNeededArray.$ContentReviewNeededLabel
+                    $ReviewInProgressLabelSet = $LabelReviewInProgressArray.$ContentReviewInProgressLabel
+                    $ApprovedLabelSet = $LabelApprovedArray.$ContentApprovedLabel
+                    
                     Write-Host "Monitored folders found: $MonitoredFoldersFound"
 
                     # Workflow processing:
@@ -513,23 +564,18 @@ jobs:
 
                         # Check to see if the content team has approved this yet
                         # If so, always return success. If not, always keep at pending until approved.
-                        $LabelResultsArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
-
-                        If ($LabelResultsArray -ne $null)
+                        if ($ApprovedLabelSet)
                         {
-                            if ($LabelResultsArray.$ContentApprovedLabel)
-                            {
-                                Write-Host "Content team already approved. Returning success."
-                                $Status.state = "success"
-                                $Status.description = $ContentApprovalMessage
-                            }
-                            else
-                            {
-                                Write-Host "Folders monitored and no content team approval yet. Returning pending."
-                                $Status.state = "pending"
-                                $Status.description = $ContentNeedsReviewMessage
-                            }
-                        }   
+                            Write-Host "Content team already approved. Returning success."
+                            $Status.state = "success"
+                            $Status.description = $ContentApprovalMessage
+                        }
+                        else
+                        {
+                            Write-Host "Folders monitored and no content team approval yet. Returning pending."
+                            $Status.state = "pending"
+                            $Status.description = $ContentNeedsReviewMessage
+                        }
                     }
                     Else
                     {
@@ -562,10 +608,7 @@ jobs:
                                 # Check to see if any of the workflow labels are on the PR. If NOT, then
                                 # don't add the approval message. That way we can differentiate the ones that went through
                                 # the workflow and the ones where we owned it start to finish and it was never blocked for review.
-                                $LabelReviewNeededArray = Test-PrLabel -LabelArray $ContentReviewNeededLabel -IssueUrl $IssueUrl
-                                $LabelReviewInProgressArray = Test-PrLabel -LabelArray $ContentReviewInProgressLabel -IssueUrl $IssueUrl
-
-                                if ($LabelReviewNeededArray.$ContentReviewNeededLabel -or $LabelReviewInProgressArray.$ContentReviewInProgressLabel)
+                                if ($ReviewInProgressLabelSet -or $ReviewNeededLabelSet)
                                 {
                                     Write-Host "Adding $ContentApprovedLabel label to the PR"
                                     Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
@@ -573,6 +616,11 @@ jobs:
                                     Write-Host "Removing other labels"
                                     Remove-Label -LabelName $ContentReviewInProgressLabel -IssueUrl $IssueUrl
                                     Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
+
+                                    # Also assign the user to the PR. This way the person who gave approval or signed off
+                                    # can shepherd the PR through the final stages of publishing.
+                                    Write-Host "Assigning $CommentUser to the PR"
+                                    Add-PrAssignee -PrData $PrData -GitHubAssignee $CommentUser
                                 }       
                             }
                             ElseIf ($ReviewingFound)
@@ -590,7 +638,10 @@ jobs:
                                 Remove-Label -LabelName $ContentApprovedLabel -IssueUrl $IssueUrl
                                 Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
 
-                                # TODO: Find a way to assign the $CommenterUserName to the PR
+                                # Also assign the user to the PR. This way the person who added the reviewing label
+                                # can shepherd the PR through the final stages of publishing.
+                                Write-Host "Assigning $CommentUser to the PR"                                
+                                Add-PrAssignee -PrData $PrData -GitHubAssignee $CommentUser
                             }
                         } 
                         Else 
@@ -598,23 +649,18 @@ jobs:
                             # If the content team has already approved, report success.
                             # Technically, this means that once approved they could sneak other changes in, but maybe that is ok as we would see.
 
-                            $LabelResultsArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
-
-                            If ($LabelResultsArray.$ContentApprovedLabel)
+                            If ($ApprovedLabelSet)
                             {
                                 Write-Host "Content team already approved. Returning success."
                                 $Status.state = "success"
                                 $Status.description = $ContentApprovalMessage                             
                             }
-                            else
+                            Else
                             {
                                 # Check failed. Add label.
                                 Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check."
 
-                                # Check if it is already in review:
-                                $LabelResultsArray = Test-PrLabel -LabelArray $ContentReviewInProgressLabel -IssueUrl $IssueUrl
-
-                                If ($LabelResultsArray.$ContentReviewInProgressLabel)
+                                If ($ReviewInProgressLabelSet)
                                 {
                                     Write-Host "$ContentReviewInProgressLabel already set, so not changing label or status."
 
@@ -622,19 +668,17 @@ jobs:
                                     $Status.state = "pending"
                                     $Status.description = $ContentInReviewMessage
 
-                                    If ($SignOffFound)
-                                    {
-                                        Write-Host "User signed off without permissions but it is already in review with content team"
-                                        Set-PrComment $CurrentlyInReviewMessage
-                                    }
+                                    Write-Host "User signed off without permissions but it is already in review with content team"
+                                    Set-PrComment $CurrentlyInReviewMessage
                                 }
-                                else
+                                Else
                                 {
                                     Write-Host "Adding the $ContentReviewNeededLabel label."
                                     Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
                                     
-                                    # Fail with message
-                                    $Status.state = "failure"
+                                    # Even though the check failed, leave the status as pending.
+                                    # It is always pending until the content team has approved.
+                                    $Status.state = "pending"
                                     $Status.description = $ContentNeedsReviewMessage
 
                                     Set-PrComment $NeedsContentTeamReviewMessage
@@ -643,6 +687,16 @@ jobs:
                                 $CheckFailed = $True
                             }
                         }                  
+                    }
+
+                    if ($Status.state -ne "success")
+                    {
+                        # If the state is anything other than success, attempt to remove the ready-to-merge label
+                        # and add the do-not-merge label
+                        Write-Host "Removing ready-to-merge label"
+                        Remove-Label -LabelName "ready-to-merge" -IssueUrl $IssueUrl
+                        Write-Host "Adding the do-not-merge label"
+                        Set-PrLabel -LabelName "do-not-merge" -IssueUrl $IssueUrl
                     }
                 }
                 Catch
