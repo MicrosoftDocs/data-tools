@@ -105,6 +105,7 @@ jobs:
                 Write-Host "PR number: $PrIssueNumber"
                 Write-Host "Issue URL: $IssueUrl"
                 Write-Host "PR URL: $PrGitHubLink"
+                Write-Host "User Permission URL: $UserPermissionUrl"
                 Write-Host "Commenter user name: $CommentUser"
                 Write-Host "Pull request opener name: $PullRequestOpener"
 
@@ -486,6 +487,7 @@ jobs:
                     $ReviewingFound = $false
                     $ApprovedFound = $false
                     $ActionableComment = $false
+                    $PROpenEvent = $false
                     $EventIsCommentCreated = (($GitRequestEvent -eq "issue_comment") -and (($GitHubAction -eq "created")))
                     If ($EventIsCommentCreated) 
                     {
@@ -513,6 +515,9 @@ jobs:
                         # Leave it in here in case we find a use for that in the future. It didn't offer any advantages in testing.
                         Write-Host "Non-comment GitHub Event"
                         Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
+
+                        $PROpenEvent = $true
+
                         $Status.state = "pending"
                         $Status.description = "Waiting for sign off."
                     }
@@ -521,189 +526,196 @@ jobs:
                         Write-Host "GitHub event not a PR comment"
                     }
 
-                    Write-Host "Regex result found $SignOffString : $SignOffFound."
-                    Write-Host "Regex result found $ReviewingString : $ReviewingFound."
-                    Write-Host "Regex result found $ApprovedString : $ApprovedFound."
-
-                    # Check to see if it is a monitored folder
-                    # Get the list of files on the PR.
-                    Write-Host "Checking for monitored folders in PR"
-                    $PrFiles = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri "$PrUrl/files"
-
-                    # Check to see if any files in the PR exist in one or more monitored branches. Only a single
-                    # file needs to be in a monitored branch for the workflow to block the PR.
-                    $MonitoredFoldersFound = Test-MonitoredFolders -PrFileList $PrFiles -MonitoredFolderList $MonitoredFolders
-
-                    # Check to see what labels are already on the PR
-                    $LabelReviewNeededArray = Test-PrLabel -LabelArray $ContentReviewNeededLabel -IssueUrl $IssueUrl
-                    $LabelReviewInProgressArray = Test-PrLabel -LabelArray $ContentReviewInProgressLabel -IssueUrl $IssueUrl
-                    $LabelApprovedArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
-
-                    $ReviewNeededLabelSet = $LabelReviewNeededArray.$ContentReviewNeededLabel
-                    $ReviewInProgressLabelSet = $LabelReviewInProgressArray.$ContentReviewInProgressLabel
-                    $ApprovedLabelSet = $LabelApprovedArray.$ContentApprovedLabel
-                    
-                    Write-Host "Monitored folders found: $MonitoredFoldersFound"
-
-                    # Workflow processing:
-                    If (-not $TargetingMonitoredBranch)
+                    if ($PROpenEvent)
                     {
-                        Write-Host "Approving as $TargetBranch branch is not being monitored."
-
-                        $Status.state = "success"
-                        $Status.description = "Target branch not $DefaultBranch, so approving by default."
+                        Write-Host "THIS IS A PR OPEN EVENT"
                     }
-                    ElseIf (-not $MonitoredFoldersFound)
+                    else
                     {
-                        Write-Host "Approving as no monitored folders found."
+                        Write-Host "Regex result found $SignOffString : $SignOffFound."
+                        Write-Host "Regex result found $ReviewingString : $ReviewingFound."
+                        Write-Host "Regex result found $ApprovedString : $ApprovedFound."
 
-                        $Status.state = "success"
-                        $Status.description = "No monitored folders. Allowing sign off." 
-                    }
-                    ElseIf (-not $ActionableComment)
-                    {
-                        Write-Host "Comment not sign off, review, or approval."
+                        # Check to see if it is a monitored folder
+                        # Get the list of files on the PR.
+                        Write-Host "Checking for monitored folders in PR"
+                        $PrFiles = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri "$PrUrl/files"
 
-                        # Check to see if the content team has approved this yet
-                        # If so, always return success. If not, always keep at pending until approved.
-                        if ($ApprovedLabelSet)
-                        {
-                            Write-Host "Content team already approved. Returning success."
-                            $Status.state = "success"
-                            $Status.description = $ContentApprovalMessage
-                        }
-                        else
-                        {
-                            # The comment was not one to take action on
-                            # In the past, we returned pending, but below we are just not returning 
-                            # any status from the workflow so we don't change anything
+                        # Check to see if any files in the PR exist in one or more monitored branches. Only a single
+                        # file needs to be in a monitored branch for the workflow to block the PR.
+                        $MonitoredFoldersFound = Test-MonitoredFolders -PrFileList $PrFiles -MonitoredFolderList $MonitoredFolders
 
-                            # This status is left in case we want to go back to pending in this case
-                            Write-Host "Folders monitored and no content team approval yet. Returning pending."
-                            $Status.state = "pending"
-                            $Status.description = $ContentNeedsReviewMessage
-                        }
-                    }
-                    Else
-                    {
-                        # The branch is targeted, the folder is monitored, and the comment contains an action
+                        # Check to see what labels are already on the PR
+                        $LabelReviewNeededArray = Test-PrLabel -LabelArray $ContentReviewNeededLabel -IssueUrl $IssueUrl
+                        $LabelReviewInProgressArray = Test-PrLabel -LabelArray $ContentReviewInProgressLabel -IssueUrl $IssueUrl
+                        $LabelApprovedArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
 
-                        Write-Host "Initialize labels needed by the workflow"
-                        Initialize-Label -LabelName $ContentReviewNeededLabel -LabelColor $ContentReviewNeededLabelColor -LabelDescription $ContentReviewNeededLabelDescription
-                        Initialize-Label -LabelName $ContentReviewInProgressLabel -LabelColor $ContentReviewInProgressLabelColor -LabelDescription $ContentReviewInProgressLabelDescription
-                        Initialize-Label -LabelName $ContentApprovedLabel -LabelColor $ContentApprovedLabelColor -LabelDescription $ContentApprovedLabelDescription
-
-                        Write-Host "String $SignOffString or $ApprovedString or $ReviewingString found on PR/Issue #$PrIssueNumber."
+                        $ReviewNeededLabelSet = $LabelReviewNeededArray.$ContentReviewNeededLabel
+                        $ReviewInProgressLabelSet = $LabelReviewInProgressArray.$ContentReviewInProgressLabel
+                        $ApprovedLabelSet = $LabelApprovedArray.$ContentApprovedLabel
                         
-                        # Get permission level of user who created the comment. Need to use .role_name instead of .permission because .permission provides only legacy values. 
-                        # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
-                        $UserPermission = $(Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $UserPermissionUrl).role_name
+                        Write-Host "Monitored folders found: $MonitoredFoldersFound"
 
-                        Write-Host "User $CommentUser permission level: $UserPermission."
-
-                        # If user has write or above, allow check to pass. If not, add content team review label.
-                        If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin")) 
+                        # Workflow processing:
+                        If (-not $TargetingMonitoredBranch)
                         {
-                            Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
+                            Write-Host "Approving as $TargetBranch branch is not being monitored."
 
-                            If ($SignOffFound -or $ApprovedFound) 
-                            {
-                                # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.                                   
-                                $Status.state = "success"
-                                $Status.description = $ContentApprovalMessage
-
-                                # Check to see if any of the workflow labels are on the PR. If NOT, then
-                                # don't add the approval message. That way we can differentiate the ones that went through
-                                # the workflow and the ones where we owned it start to finish and it was never blocked for review.
-                                if ($ReviewInProgressLabelSet -or $ReviewNeededLabelSet)
-                                {
-                                    Write-Host "Adding $ContentApprovedLabel label to the PR"
-                                    Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
-
-                                    Write-Host "Removing other labels"
-                                    Remove-Label -LabelName $ContentReviewInProgressLabel -IssueUrl $IssueUrl
-                                    Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
-
-                                    # Also assign the user to the PR. This way the person who gave approval or signed off
-                                    # can shepherd the PR through the final stages of publishing.
-                                    Write-Host "Assigning $CommentUser to the PR"
-                                    Add-PrAssignee -PrData $PrData -GitHubAssignee $CommentUser
-                                }       
-                            }
-                            ElseIf ($ReviewingFound)
-                            {
-                                Write-Host "Adding $ContentReviewInProgressLabel label to the PR"
-
-                                # Status is pending while reviewing
-                                $Status.state = "pending"
-                                $Status.description = $ContentInReviewMessage
-
-                                Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewInProgressLabel
-
-                                # Content team is explicitly setting this back to review state, so remove any approved tags and add review tag.
-                                Write-Host "Removing other labels"
-                                Remove-Label -LabelName $ContentApprovedLabel -IssueUrl $IssueUrl
-                                Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
-
-                                # Also assign the user to the PR. This way the person who added the reviewing label
-                                # can shepherd the PR through the final stages of publishing.
-                                Write-Host "Assigning $CommentUser to the PR"                                
-                                Add-PrAssignee -PrData $PrData -GitHubAssignee $CommentUser
-                            }
-                        } 
-                        Else 
+                            $Status.state = "success"
+                            $Status.description = "Target branch not $DefaultBranch, so approving by default."
+                        }
+                        ElseIf (-not $MonitoredFoldersFound)
                         {
-                            # If the content team has already approved, report success.
-                            # Technically, this means that once approved they could sneak other changes in, but maybe that is ok as we would see.
+                            Write-Host "Approving as no monitored folders found."
 
-                            If ($ApprovedLabelSet)
+                            $Status.state = "success"
+                            $Status.description = "No monitored folders. Allowing sign off." 
+                        }
+                        ElseIf (-not $ActionableComment)
+                        {
+                            Write-Host "Comment not sign off, review, or approval."
+
+                            # Check to see if the content team has approved this yet
+                            # If so, always return success. If not, always keep at pending until approved.
+                            if ($ApprovedLabelSet)
                             {
                                 Write-Host "Content team already approved. Returning success."
                                 $Status.state = "success"
-                                $Status.description = $ContentApprovalMessage                             
+                                $Status.description = $ContentApprovalMessage
                             }
-                            Else
+                            else
                             {
-                                # Check failed. Add label.
-                                Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check."
+                                # The comment was not one to take action on
+                                # In the past, we returned pending, but below we are just not returning 
+                                # any status from the workflow so we don't change anything
 
-                                If ($ReviewInProgressLabelSet)
+                                # This status is left in case we want to go back to pending in this case
+                                Write-Host "Folders monitored and no content team approval yet. Returning pending."
+                                $Status.state = "pending"
+                                $Status.description = $ContentNeedsReviewMessage
+                            }
+                        }
+                        Else
+                        {
+                            # The branch is targeted, the folder is monitored, and the comment contains an action
+
+                            Write-Host "Initialize labels needed by the workflow"
+                            Initialize-Label -LabelName $ContentReviewNeededLabel -LabelColor $ContentReviewNeededLabelColor -LabelDescription $ContentReviewNeededLabelDescription
+                            Initialize-Label -LabelName $ContentReviewInProgressLabel -LabelColor $ContentReviewInProgressLabelColor -LabelDescription $ContentReviewInProgressLabelDescription
+                            Initialize-Label -LabelName $ContentApprovedLabel -LabelColor $ContentApprovedLabelColor -LabelDescription $ContentApprovedLabelDescription
+
+                            Write-Host "String $SignOffString or $ApprovedString or $ReviewingString found on PR/Issue #$PrIssueNumber."
+                            
+                            # Get permission level of user who created the comment. Need to use .role_name instead of .permission because .permission provides only legacy values. 
+                            # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
+                            $UserPermission = $(Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $UserPermissionUrl).role_name
+
+                            Write-Host "User $CommentUser permission level: $UserPermission."
+
+                            # If user has write or above, allow check to pass. If not, add content team review label.
+                            If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin")) 
+                            {
+                                Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
+
+                                If ($SignOffFound -or $ApprovedFound) 
                                 {
-                                    Write-Host "$ContentReviewInProgressLabel already set, so not changing label or status."
+                                    # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.                                   
+                                    $Status.state = "success"
+                                    $Status.description = $ContentApprovalMessage
 
-                                    # Already in review so just keep the same status and message
+                                    # Check to see if any of the workflow labels are on the PR. If NOT, then
+                                    # don't add the approval message. That way we can differentiate the ones that went through
+                                    # the workflow and the ones where we owned it start to finish and it was never blocked for review.
+                                    if ($ReviewInProgressLabelSet -or $ReviewNeededLabelSet)
+                                    {
+                                        Write-Host "Adding $ContentApprovedLabel label to the PR"
+                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
+
+                                        Write-Host "Removing other labels"
+                                        Remove-Label -LabelName $ContentReviewInProgressLabel -IssueUrl $IssueUrl
+                                        Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
+
+                                        # Also assign the user to the PR. This way the person who gave approval or signed off
+                                        # can shepherd the PR through the final stages of publishing.
+                                        Write-Host "Assigning $CommentUser to the PR"
+                                        Add-PrAssignee -PrData $PrData -GitHubAssignee $CommentUser
+                                    }       
+                                }
+                                ElseIf ($ReviewingFound)
+                                {
+                                    Write-Host "Adding $ContentReviewInProgressLabel label to the PR"
+
+                                    # Status is pending while reviewing
                                     $Status.state = "pending"
                                     $Status.description = $ContentInReviewMessage
 
-                                    Write-Host "User signed off without permissions but it is already in review with content team"
-                                    Set-PrComment $CurrentlyInReviewMessage
+                                    Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewInProgressLabel
+
+                                    # Content team is explicitly setting this back to review state, so remove any approved tags and add review tag.
+                                    Write-Host "Removing other labels"
+                                    Remove-Label -LabelName $ContentApprovedLabel -IssueUrl $IssueUrl
+                                    Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
+
+                                    # Also assign the user to the PR. This way the person who added the reviewing label
+                                    # can shepherd the PR through the final stages of publishing.
+                                    Write-Host "Assigning $CommentUser to the PR"                                
+                                    Add-PrAssignee -PrData $PrData -GitHubAssignee $CommentUser
+                                }
+                            } 
+                            Else 
+                            {
+                                # If the content team has already approved, report success.
+                                # Technically, this means that once approved they could sneak other changes in, but maybe that is ok as we would see.
+
+                                If ($ApprovedLabelSet)
+                                {
+                                    Write-Host "Content team already approved. Returning success."
+                                    $Status.state = "success"
+                                    $Status.description = $ContentApprovalMessage                             
                                 }
                                 Else
                                 {
-                                    Write-Host "Adding the $ContentReviewNeededLabel label."
-                                    Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
-                                    
-                                    # Even though the check failed, leave the status as pending.
-                                    # It is always pending until the content team has approved.
-                                    $Status.state = "pending"
-                                    $Status.description = $ContentNeedsReviewMessage
+                                    # Check failed. Add label.
+                                    Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check."
 
-                                    Set-PrComment $NeedsContentTeamReviewMessage
+                                    If ($ReviewInProgressLabelSet)
+                                    {
+                                        Write-Host "$ContentReviewInProgressLabel already set, so not changing label or status."
+
+                                        # Already in review so just keep the same status and message
+                                        $Status.state = "pending"
+                                        $Status.description = $ContentInReviewMessage
+
+                                        Write-Host "User signed off without permissions but it is already in review with content team"
+                                        Set-PrComment $CurrentlyInReviewMessage
+                                    }
+                                    Else
+                                    {
+                                        Write-Host "Adding the $ContentReviewNeededLabel label."
+                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
+                                        
+                                        # Even though the check failed, leave the status as pending.
+                                        # It is always pending until the content team has approved.
+                                        $Status.state = "pending"
+                                        $Status.description = $ContentNeedsReviewMessage
+
+                                        Set-PrComment $NeedsContentTeamReviewMessage
+                                    }
+
+                                    $CheckFailed = $True
                                 }
+                            }                  
+                        }
 
-                                $CheckFailed = $True
-                            }
-                        }                  
-                    }
-
-                    if ($Status.state -ne "success")
-                    {
-                        # If the state is anything other than success, attempt to remove the ready-to-merge label
-                        # and add the do-not-merge label
-                        Write-Host "Removing ready-to-merge label"
-                        Remove-Label -LabelName "ready-to-merge" -IssueUrl $IssueUrl
-                        Write-Host "Adding the do-not-merge label"
-                        Set-PrLabel -LabelName "do-not-merge" -IssueUrl $IssueUrl
+                        if ($Status.state -ne "success")
+                        {
+                            # If the state is anything other than success, attempt to remove the ready-to-merge label
+                            # and add the do-not-merge label
+                            Write-Host "Removing ready-to-merge label"
+                            Remove-Label -LabelName "ready-to-merge" -IssueUrl $IssueUrl
+                            Write-Host "Adding the do-not-merge label"
+                            Set-PrLabel -LabelName "do-not-merge" -IssueUrl $IssueUrl
+                        }
                     }
                 }
                 Catch
