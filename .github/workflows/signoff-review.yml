@@ -54,6 +54,7 @@ jobs:
                 If ($GitRequestEvent -eq "issue_comment") {$PrIssueNumber = $GitHubData.event.issue.number} ElseIf ($GitRequestEvent -eq "pull_request_target") {$PrIssueNumber = $GitHubData.event.pull_request.number}
                 If ($GitRequestEvent -eq "issue_comment") {$PrUrl = $GitHubData.event.issue.pull_request.url} ElseIf ($GitRequestEvent -eq "pull_request_target") {$PrUrl = $GitHubData.event.pull_request.url}
                 $UserPermissionUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$CommentUser/permission" )
+                $UserPermissionPROpenerUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$PullRequestOpener/permission" )
                 $RepoLabelUrl = $GitHubData.event.repository.labels_url
                 $IssueUrl = $GitHubData.event.issue.url
 
@@ -106,6 +107,7 @@ jobs:
                 Write-Host "Issue URL: $IssueUrl"
                 Write-Host "PR URL: $PrGitHubLink"
                 Write-Host "User Permission URL: $UserPermissionUrl"
+                Write-Host "User Permission URL (PR Opener): $UserPermissionPROpenerUrl"
                 Write-Host "Commenter user name: $CommentUser"
                 Write-Host "Pull request opener name: $PullRequestOpener"
 
@@ -528,7 +530,25 @@ jobs:
 
                     if ($PROpenEvent)
                     {
-                        Write-Host "THIS IS A PR OPEN EVENT"
+                        # This won't run. Leaving the code in for the future, but it is considered a different check. 
+                        # So it won't help with the comment check. :(
+
+                        # Get permission level of user who created the PR. Need to use .role_name instead of .permission because .permission provides only legacy values. 
+                        # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
+                        $UserPermission = $(Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $UserPermissionPROpenerUrl).role_name
+
+                        Write-Host "User $PullRequestOpener permission level: $UserPermission."
+
+                        # If user has write or above, allow check to pass. If not, add content team review label.
+                        If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin"))
+                        {
+                            Write-Host "Approving as pull request creator $PullRequestOpener has permission."
+
+                            $Status.state = "success"
+                            $Status.description = "Pull request opener $PullRequestOpener is pre-approved."                            
+                        }
+                        
+                        $ActionableComment = $True
                     }
                     else
                     {
@@ -561,12 +581,16 @@ jobs:
                         {
                             Write-Host "Approving as $TargetBranch branch is not being monitored."
 
+                            $ActionableComment = $True
+
                             $Status.state = "success"
                             $Status.description = "Target branch not $DefaultBranch, so approving by default."
                         }
                         ElseIf (-not $MonitoredFoldersFound)
                         {
                             Write-Host "Approving as no monitored folders found."
+
+                            $ActionableComment = $True
 
                             $Status.state = "success"
                             $Status.description = "No monitored folders. Allowing sign off." 
