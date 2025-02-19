@@ -1,6 +1,6 @@
 ---
 title: "Close a Solution"
-description: "Close a Solution"
+description: "Close a Solution" 
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: "01/19/2017"
@@ -17,7 +17,7 @@ You can close a solution and remove it from Solution Explorer. Closing a solutio
 > [!NOTE]  
 > Closing Solution Explorer does not automatically close the solution. It only hides the Solution Explorer window.  
   
-### To close a solution  
+### To close a solution
   
 1.  On the **File** menu, click **Close Solution**.  
   
