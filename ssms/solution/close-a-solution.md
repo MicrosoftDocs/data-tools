@@ -17,7 +17,7 @@ You can close a solution and remove it from Solution Explorer. Closing a solutio
 > [!NOTE]  
 > Closing Solution Explorer does not automatically close the solution. It only hides the Solution Explorer window.  
   
-### To close a solution  
+### To close a solution
   
 1.  On the **File** menu, click **Close Solution**.  
   
