@@ -15,7 +15,7 @@ helpviewer_keywords:
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 You can copy items using Solution Explorer or Windows Explorer.  
   
-### To copy items within Solution Explorer  
+### To copy items within Solution Explorer
   
 1.  In Solution Explorer, select the item you want to copy.  
   
