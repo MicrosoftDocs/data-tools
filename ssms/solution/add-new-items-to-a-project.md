@@ -1,6 +1,6 @@
 ---
 title: "Add New Items to a Project"
-description: "Add New Items to a Project"
+description: "Add New Items to a Project" 
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: "01/19/2017"

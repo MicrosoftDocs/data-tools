@@ -1,6 +1,6 @@
 ---
 title: "Add an Existing Project to a Solution"
-description: "Add an Existing Project to a Solution"
+description: "Add an Existing Project to a Solution" 
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: "01/19/2017"
