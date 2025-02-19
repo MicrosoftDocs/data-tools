@@ -1,6 +1,6 @@
 ---
 title: "Close a Solution"
-description: "Close a Solution"
+description: "Close a Solution" 
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: "01/19/2017"
