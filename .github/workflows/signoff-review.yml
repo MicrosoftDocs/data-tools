@@ -7,8 +7,8 @@ permissions:
 on: 
   issue_comment:
     types: [created]
-#  pull_request_target:
-#    types: [opened, reopened, synchronize]
+  pull_request_target:
+    types: [opened]
 
 jobs:
     build:
@@ -50,6 +50,7 @@ jobs:
                 $GitHubSender = $GitHubData.event.sender.login
                 $GitHubRepoName = $GitHubData.event.repository.name
                 $CommentUser = $GitHubData.event.comment.user.login
+                $PullRequestOpener = $GitHubData.event.pull_request.user.login
                 If ($GitRequestEvent -eq "issue_comment") {$PrIssueNumber = $GitHubData.event.issue.number} ElseIf ($GitRequestEvent -eq "pull_request_target") {$PrIssueNumber = $GitHubData.event.pull_request.number}
                 If ($GitRequestEvent -eq "issue_comment") {$PrUrl = $GitHubData.event.issue.pull_request.url} ElseIf ($GitRequestEvent -eq "pull_request_target") {$PrUrl = $GitHubData.event.pull_request.url}
                 $UserPermissionUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$CommentUser/permission" )
@@ -105,6 +106,7 @@ jobs:
                 Write-Host "Issue URL: $IssueUrl"
                 Write-Host "PR URL: $PrGitHubLink"
                 Write-Host "Commenter user name: $CommentUser"
+                Write-Host "Pull request opener name: $PullRequestOpener"
 
                 # Make the job summary section show up so the job always looks consistent.
                 echo "" >> $env:GITHUB_STEP_SUMMARY
@@ -572,6 +574,11 @@ jobs:
                         }
                         else
                         {
+                            # The comment was not one to take action on
+                            # In the past, we returned pending, but below we are just not returning 
+                            # any status from the workflow so we don't change anything
+
+                            # This status is left in case we want to go back to pending in this case
                             Write-Host "Folders monitored and no content team approval yet. Returning pending."
                             $Status.state = "pending"
                             $Status.description = $ContentNeedsReviewMessage
@@ -735,23 +742,28 @@ jobs:
                 # Loop to try set the status on the PR. Keep trying until either the status is successfully posted or we run out of attempts.
                 # In the unlikely event of a water landing or failure of all six attempts, the status will not set and the user will need to 
                 # submit a new sign off request.
-                Do 
-                {                  
-                    Try 
-                    {
-        
-                        # Send POST request to GitHub 
-                        Invoke-RestMethod -Headers $GitHubHeaders -Uri $StatusUrl -Method POST -Body $StatusJson -ErrorAction Stop 
-                        $SuccessfulPost = $True
-                    } 
-                    Catch 
-                    {
-        
-                        # If the request fails for any reason, retry it after a delay, up to six times.
-                        $RetryCount++
-                        Start-Sleep 1
-                    }
-                } Until (($SuccessfulPost) -or ($RetryCount -gt 5))
+                if ($ActionableComment)
+                {
+                    # Only post a status back if an actionable comment was provided
+                    # Otherwise leave as expected with no result
+                    Do 
+                    {                  
+                        Try 
+                        {
+            
+                            # Send POST request to GitHub 
+                            Invoke-RestMethod -Headers $GitHubHeaders -Uri $StatusUrl -Method POST -Body $StatusJson -ErrorAction Stop 
+                            $SuccessfulPost = $True
+                        } 
+                        Catch 
+                        {
+            
+                            # If the request fails for any reason, retry it after a delay, up to six times.
+                            $RetryCount++
+                            Start-Sleep 1
+                        }
+                    } Until (($SuccessfulPost) -or ($RetryCount -gt 5))
+                }
 
                 # Print out current date and time
                 $currentDateTime = Get-Date
