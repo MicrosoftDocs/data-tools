@@ -1,6 +1,6 @@
 ---
 title: "Azure Connectivity"
-description: Explains the Azure connection options available in Azure Data Studio.
+description: Explains the Azure connection options available in Azure Data Studio. 
 author: croblesm
 ms.author: roblescarlos
 ms.reviewer: randolphwest, maghan
