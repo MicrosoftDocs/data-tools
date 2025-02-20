@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "projects [SQL Server Management Studio], default locations"
   - "default project locations"
 ---
-# Change the Default Location for Projects
+# Change the Default Location for Projects 
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 The default location for files and projects is the [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] Projects folder in your My Documents folder.  
   
