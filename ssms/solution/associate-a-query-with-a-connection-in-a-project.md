@@ -1,6 +1,6 @@
 ---
 title: "Associate a Query with a Connection in a Project"
-description: "Associate a Query with a Connection in a Project"
+description: "Associate a Query with a Connection in a Project" 
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: "01/19/2017"
