@@ -60,8 +60,8 @@ jobs:
                 ElseIf ($GitRequestEvent -eq "pull_request_target") 
                 {
                     $PrIssueNumber = $GitHubData.event.pull_request.number
-                    $PrUrl = $GitHubData.event.pull_request.url
-                    $IssueUrl = $GitHubData.event.issue_url
+                    $PrUrl = $GitHubData.event.pull_request.html_url
+                    $IssueUrl = $GitHubData.event.pull_request.issue_url
                 }
                 If ($GitRequestEvent -eq "issue_comment") {$PrUrl = $GitHubData.event.issue.pull_request.url} ElseIf ($GitRequestEvent -eq "pull_request_target") {$PrUrl = $GitHubData.event.pull_request.url}
                 $UserPermissionUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$CommentUser/permission" )
