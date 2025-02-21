@@ -1,2 +1,2 @@
 {:allowed-branchname-matches ["main" "release-.*"]
- :allowed-filename-matches ["azure-data-studio"]}
+ :allowed-filename-matches ["azure-data-studio/" "ssms/"]}
