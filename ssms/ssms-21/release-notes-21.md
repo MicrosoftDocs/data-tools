@@ -23,6 +23,20 @@ This article details updates, improvements, and bug fixes for the current and pr
 
 [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is the latest preview release of SSMS. If you need a previous version of SSMS, see [previous SSMS releases](../release-notes-ssms.md#previous-ssms-releases).
 
+### 21.0 Preview 4.1
+
+- Release number: 21.0 Preview 4.1
+
+- Build number: 21.0.85
+
+- Release date: February 24, 2025
+
+#### What's new in 21.0 Preview 4.1
+
+|Feature|Details|
+| -------- | -------- |
+| Visual Studio   | Updated to Visual Studio 17.14 Preview 1.1.   |
+
 ### 21.0 Preview 4
 
 - Release number: 21.0 Preview 4
