@@ -16,6 +16,28 @@ You can install Azure Data Studio on Red Hat Enterprise Linux (RHEL), SUSE Linux
 > [!NOTE]
 >  Azure Data Studio installation failure is a known issue on RHEL 8. Manually install glibc-2.29 and add it to the Library Path and then re-install ADS to resolve the issue.
 
+#### Install using .rpm file
+
+1. Download Azure Data Studio for Red Hat Enterprise Linux by using the [.rpm](https://azuredatastudio-update.azurewebsites.net/latest/linux-rpm-x64/stable) file.
+
+1. To extract the file, open a new terminal window, and then run the following commands:
+
+   ```bash
+   cd ~
+   sudo yum install ./Downloads/azuredatastudio-linux-<version string>.rpm
+   ```
+
+1. To start Azure Data Studio, run this command:
+
+   ```bash
+   azuredatastudio
+   ```
+
+If you have missing dependencies, run this command:
+
+```bash
+yum install libXScrnSaver
+```
 #### Install using .tar.gz file
 
 1. Download Azure Data Studio for Linux by using the [.tar.gz](https://azuredatastudio-update.azurewebsites.net/latest/linux-x64/stable) file.
@@ -94,7 +116,61 @@ If you have missing dependencies:
 sudo zypper install libXScrnSaver
 ```
 
+#### Install using .tar.gz file
+
+1. Download Azure Data Studio for Ubuntu or Debian by using the [.tar.gz](https://azuredatastudio-update.azurewebsites.net/latest/linux-x64/stable) file.
+
+1. To extract the file, open a new terminal window, and then run the following commands:
+
+    ```bash
+    cd ~
+    cp ~/Downloads/azuredatastudio-linux-<version string>.tar.gz ~
+    tar -xvf ~/azuredatastudio-linux-<version string>.tar.gz
+    ```
+
+1. Move the extracted folder to `/opt`:
+   
+   ```bash
+   sudo mv ~/azuredatastudio-linux-x64 /opt/azuredatastudio
+   ```
+
+1. Create a symbolic link:
+   
+   ```bash
+   sudo ln -s /opt/azuredatastudio/azuredatastudio /usr/local/bin/azuredatastudio
+   ```
+
+1. To start Azure Data Studio, run:
+
+    ```bash
+    azuredatastudio
+    ```
+
+If you have missing dependencies:
+```bash
+sudo zypper install libXScrnSaver
+```
+
 #### [Ubuntu and Debian](#tab/ubuntu-install)
+
+#### Install using .deb file
+
+1. Download Azure Data Studio for Ubuntu or Debian by using the [.deb](https://azuredatastudio-update.azurewebsites.net/latest/linux-deb-x64/stable) file.
+
+1. To extract the .deb file, open a new terminal window, and then run the following commands:
+   ```bash
+   cd ~
+   sudo dpkg -i ./Downloads/azuredatastudio-linux-<version string>.deb
+   ```
+1. To start Azure Data Studio, run this command:
+   ```bash
+   azuredatastudio
+   ```
+If you have missing dependencies, install them with the following command:
+
+```bash
+sudo apt-get install libunwind8
+```
 
 #### Install using .tar.gz file
 
