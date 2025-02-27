@@ -72,7 +72,7 @@ jobs:
                 $GitHubHeaders.Add("Authorization","token $($AccessToken)")
                 $GitHubHeaders.Add("User-Agent", "OfficeDocs")
 
-                $StatusHelpUrl = "https://review.learn.microsoft.com/en-us/office-authoring-guide/pr-criteria?branch=main"
+                $StatusHelpUrl = "https://dev.azure.com/msft-skilling/Content/_wiki/wikis/Database%20Docs/2358/Partner-publishing-workflow-pilot"
                 $StatusCheckName = "PR signed off by content team"
                 $Status = @{}
                 $Status.Add("context", $StatusCheckName)
@@ -534,9 +534,6 @@ jobs:
                     }
                     ElseIf (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize")))
                     {
-                        # At the moment, this code block doesn't happen because we've commented out the 
-                        # events at the top that would set things like pull request open to this code path.
-                        # Leave it in here in case we find a use for that in the future. It didn't offer any advantages in testing.
                         Write-Host "Non-comment GitHub Event"
                         Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
 
