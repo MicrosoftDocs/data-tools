@@ -72,7 +72,7 @@ jobs:
                 $GitHubHeaders.Add("Authorization","token $($AccessToken)")
                 $GitHubHeaders.Add("User-Agent", "OfficeDocs")
 
-                $StatusHelpUrl = "https://review.learn.microsoft.com/en-us/office-authoring-guide/pr-criteria?branch=main"
+                $StatusHelpUrl = "https://dev.azure.com/msft-skilling/Content/_wiki/wikis/Database%20Docs/2358/Partner-publishing-workflow-pilot"
                 $StatusCheckName = "PR signed off by content team"
                 $Status = @{}
                 $Status.Add("context", $StatusCheckName)
@@ -92,8 +92,8 @@ jobs:
                 $ApprovedRegex = "\s*$ApprovedString\s*"
 
                 $EscalationEmail = "[DB Docs Team](mailto:dbdocsprreviews@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20$GitHubRepoName%20PR%20$PrIssueNumber&body=$PrGitHubLink)"
-                $NeedsContentTeamReviewMessage = "This PR will be reviewed and approved by the Database Docs team before merging. They will work with you and the PR review team to publish your changes. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
-                $CurrentlyInReviewMessage = "This PR is currently assigned to the Database Docs team for review. It must be reviewed and approved by the Database Docs team before merging. This is in addition to the more tactical review by our PR Review team. If you have any questions, please email $EscalationEmail . Thank you for working with us to improve content quality for our customers!"
+                $NeedsContentTeamReviewMessage = "The content team will review this pr and work with you to publish your changes. Thank you for working with us to improve content quality for our customers!`n`n**To expedite your review**, please reach out to the content lead in your area or email the $EscalationEmail."
+                $CurrentlyInReviewMessage = "This PR is currently assigned to the content team for review. It must be reviewed and approved by the content team before merging.`n`n**To expedite your review**, please reach out to the content lead in your area or email the $EscalationEmail."
                 $AssignedReviewerMessage = "Assigning the pull request to @!!USER!! for review. #assign: !!USER!!"
                 $CheckFailed = $False
 
@@ -534,9 +534,6 @@ jobs:
                     }
                     ElseIf (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize")))
                     {
-                        # At the moment, this code block doesn't happen because we've commented out the 
-                        # events at the top that would set things like pull request open to this code path.
-                        # Leave it in here in case we find a use for that in the future. It didn't offer any advantages in testing.
                         Write-Host "Non-comment GitHub Event"
                         Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
 
