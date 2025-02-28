@@ -33,10 +33,10 @@ jobs:
         {
             Write-Host "Checking if $PR_USER is a member of $ORG"
 
-            $url = "https://api.github.com/orgs/$ORG/members/$PR_USER"
+            $url = "https://api.github.com/orgs/$ORG/members"
 
             Write-Host "$url"
-
+            
             $response = Invoke-RestMethod -Uri $url -Headers $GitHubHeaders -Method Get -StatusCodeVariable statusCode
             Write-Host "$response"
 
