@@ -11,7 +11,7 @@ ms.topic: troubleshooting-general
 
 # Report a problem with SQL Server Management Studio 21 Preview
 
-You can report a problem from SQL Server Management Studio (SSMS) using the **Help** > **Send feedback** menu or by using the [SQL Feedback site](https://aka.ms/sqlfeedback). When reporting an issue, it's recommended that you search the site first to see if a similar issue exists. Expand the **Groups** menu on the feedback site and select **Tooling**. Enter relevant text or keywords in the Search dialog to find existing items for the problem.
+You can report a problem from SQL Server Management Studio (SSMS) using the **Help** > **Send feedback** menu or by using the [SSMS user feedback site](https://aka.ms/ssms-feedback). When reporting an issue, it's recommended that you search the site first to see if a similar issue exists. Expand the **Groups** menu on the feedback site and select **Tooling**. Enter relevant text or keywords in the Search dialog to find existing items for the problem.
 
 Include as much detail as possible when describing the problem, including step-by-step instructions and information such as the version of SSMS (available in **Help** > **About**), the version of SQL, and the Operating System version and language. For any error message, include the entire text and use the **Show Details** button in the error dialog to capture complete details about the error to add to the item description.
 

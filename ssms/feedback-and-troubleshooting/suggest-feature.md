@@ -11,7 +11,7 @@ ms.topic: troubleshooting-general
 
 # Suggest a feature or improvement for SQL Server Management Studio 21 Preview
 
-Users of SQL Server Management Studio (SSMS) can submit requests for improvement or new functionality using the [SQL Feedback site](https://aka.ms/sqlfeedback) using **Help** > **Send feedback**. Submitted ideas are regularly reviewed, and SSMS users can upvote and comment on ideas they support.
+Users of SQL Server Management Studio (SSMS) can submit requests for improvement or new functionality using the [SSMS user feedback site](https://aka.ms/ssms-feedback), or using **Help** > **Send feedback**. Submitted ideas are regularly reviewed, and SSMS users can upvote and comment on ideas they support.
 
 When providing feedback, searching the site first is recommended to see if a similar idea exists. Expand the **Groups** menu on the feedback site and select **Tooling**. To search existing items, enter relevant text or keywords in the Search dialog.
 

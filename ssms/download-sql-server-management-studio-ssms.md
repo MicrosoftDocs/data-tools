@@ -196,6 +196,6 @@ Supported hardware:
 - [Download SQL Server Data Tools (SSDT) for Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt)
 - [Latest updates and version history for SQL Server](/troubleshoot/sql/releases/download-and-install-latest-updates?bc=%2fsql%2fbreadcrumb%2ftoc.json&toc=%2fsql%2ftoc.json)
 - [Azure Data Architecture Guide](/azure/architecture/data-guide/)
-- [SQL Server Blog](https://cloudblogs.microsoft.com/sqlserver/)
+- [SQL Server Blog](https://www.microsoft.com/sql-server/blog/)
 
 [!INCLUDE [contribute-to-content](includes/paragraph-content/contribute-to-content.md)]
