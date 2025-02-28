@@ -37,7 +37,10 @@ jobs:
 
             Write-Host "$url"
 
-            $response = Invoke-RestMethod -Uri $url -Headers $GitHubHeaders -Method Get -StatusCodeVariable statusCode
+            #$response = Invoke-RestMethod -Uri $url -Headers $GitHubHeaders -Method Get -StatusCodeVariable statusCode
+            $response = Invoke-RestMethod -Uri "https://api.github.com/user/orgs" -Headers $GitHubHeaders
+
+            Write-Host "$response"
 
             If ($statusCode -eq 204) 
             {
