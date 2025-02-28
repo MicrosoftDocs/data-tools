@@ -21,34 +21,32 @@ jobs:
         $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
         $GitRequestEvent = $GitHubData.event_name
         $AccessToken = $env:AccessToken      
-        $GitHubHeaders = @{}
-        $GitHubHeaders.Add("Authorization","token $($AccessToken)")
-        $GitHubHeaders.Add("User-Agent", "OfficeDocs")
+        $GitHubHeaders = @{
+            Authorization = "token $($AccessToken)"
+            "User-Agent" = "OfficeDocs"
+        }
 
-        $GITHUB_TOKEN = "${{ secrets.GITHUB_TOKEN }}"
         $PR_USER = $GitHubData.event.pull_request.user.login
         $ORG = "MicrosoftDocs"
 
         Try
         {
-            Write-Host "Checking is $PR_USER is a member of $ORG"
+            Write-Host "Checking if $PR_USER is a member of $ORG"
 
             $url = "https://api.github.com/orgs/$ORG/members/$PR_USER"
 
             Write-Host "$url"
 
-            #$response = Invoke-RestMethod -Uri $url -Headers $GitHubHeaders -Method Get -StatusCodeVariable statusCode
-            $response = Invoke-RestMethod -Uri "https://api.github.com/user/orgs" -Headers $GitHubHeaders
-
+            $response = Invoke-RestMethod -Uri $url -Headers $GitHubHeaders -Method Get -StatusCodeVariable statusCode
             Write-Host "$response"
 
             If ($statusCode -eq 204) 
             {
-            Write-Host "$PR_USER is a member of the $ORG organization."
+                Write-Host "$PR_USER is a member of the $ORG organization."
             } 
             Else 
             {
-            Write-Host "$PR_USER is not a member of the $ORG organization."
+                Write-Host "$PR_USER is not a member of the $ORG organization."
             }
         }
         Catch
