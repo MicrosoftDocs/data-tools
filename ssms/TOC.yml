@@ -1135,4 +1135,4 @@ items:
   - name: Anonymous Usage Data
     href: sql-server-management-studio-telemetry-ssms.md
   - name: Feedback >> 
-    href: https://aka.ms/sqlfeedback
+    href: https://aka.ms/ssms-feedback

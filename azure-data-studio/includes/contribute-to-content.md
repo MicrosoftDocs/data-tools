@@ -1,8 +1,7 @@
 ---
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest, maghan
-ms.date: 02/06/2025
+ms.date: 02/28/2025
 ms.service: azure-data-studio
 ms.topic: include
 ---
@@ -11,4 +10,4 @@ ms.topic: include
 
 Did you know that you can edit content yourself? If you do so, not only do you help improve our documentation, but you also get credited as a contributor to the page.
 
-For more information, see [Edit Microsoft Learn documentation](/contribute/content/how-to-write-quick-edits)
+For more information, see [Edit Microsoft Learn documentation](/contribute/content/how-to-write-quick-edits).

@@ -1,8 +1,7 @@
 ---
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 10/27/2022
+ms.date: 02/28/2025
 ms.service: sql-server-management-studio
 ms.topic: include
 ---
@@ -10,4 +9,4 @@ ms.topic: include
 
 Did you know that you can edit SQL content yourself? If you do so, not only do you help improve our documentation, but you also get credited as a contributor to the page.
 
-For more information, see [How to contribute to SQL Server documentation](/sql/sql-server/sql-server-docs-contribute)
+For more information, see [Edit Microsoft Learn documentation](/contribute/content/how-to-write-quick-edits).
