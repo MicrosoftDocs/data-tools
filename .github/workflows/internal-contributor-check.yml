@@ -1,23 +1,45 @@
-name: Check for MSFT contributors
-
-permissions:
-  pull-requests: write
-  statuses: write
+name: Check Membership
 
 on:
   pull_request:
     types: [opened]
 
 jobs:
-    build:
-        name: Run Script
-        if: github.repository_visibility == 'private'
-        runs-on: ubuntu-latest
-        steps:
-          - name: Check if PR opener is in MicrosoftDocs organization
-            run: |
+  check-membership:
+    runs-on: ubuntu-latest
 
-                PR_USER=$(jq -r .pull_request.user.login "$GITHUB_EVENT_PATH")
-                ORG_MEMBERS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/orgs/MicrosoftDocs/members")
-                echo "$ORG_MEMBERS" | jq -e --arg PR_USER "$PR_USER" '.[] | select(.login == $PR_USER)' > /dev/null && echo "User is a member of MicrosoftDocs organization." && exit 1 || echo "User is not in MicrosoftDocs."
-            
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Check if user is a member of MicrosoftDocs
+      shell: pwsh
+      env: 
+        PayloadJson: ${{ toJSON(github) }}
+        AccessToken: ${{ secrets.GITHUB_TOKEN }}
+
+      run: |
+
+        # Get GitHub data and event
+        $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
+        $GitRequestEvent = $GitHubData.event_name
+        $AccessToken = $env:AccessToken      
+        $GitHubHeaders = @{}
+        $GitHubHeaders.Add("Authorization","token $($AccessToken)")
+        $GitHubHeaders.Add("User-Agent", "OfficeDocs")
+
+        $GITHUB_TOKEN = "${{ secrets.GITHUB_TOKEN }}"
+        $PR_USER = $GitHubData.event.pull_request.user.login
+        $ORG = "MicrosoftDocs"
+
+        $url = "https://api.github.com/orgs/$ORG/members/$PR_USER"
+        $response = Invoke-RestMethod -Uri $url -Headers $GitHubHeaders -Method Get -StatusCodeVariable statusCode
+
+        If ($statusCode -eq 204) 
+        {
+          Write-Host "$PR_USER is a member of the $ORG organization."
+        } 
+        Else 
+        {
+          Write-Host "$PR_USER is not a member of the $ORG organization."
+        }
