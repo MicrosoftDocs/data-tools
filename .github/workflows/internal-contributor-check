@@ -1,17 +1,23 @@
 name: Check for MSFT contributors
 
+permissions:
+  pull-requests: write
+  statuses: write
+
 on:
-  pull_request_target:
+  pull_request:
     types: [opened]
 
 jobs:
-  check-org:
-    runs-on: ubuntu-latest
-    if: github.repository_visibility == 'private'
-    steps:
-      - name: Check if PR opener is in MicrosoftDocs organization
-        id: check_org
-        run: |
-          PR_USER=$(jq -r .pull_request.user.login "$GITHUB_EVENT_PATH")
-          ORG_MEMBERS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/orgs/MicrosoftDocs/members")
-          echo "$ORG_MEMBERS" | jq -e --arg PR_USER "$PR_USER" '.[] | select(.login == $PR_USER)' > /dev/null && echo "User is a member of MicrosoftDocs organization." && exit 1 || echo "User is not in MicrosoftDocs."
+    build:
+        name: Run Script
+        if: github.repository_visibility == 'private'
+        runs-on: ubuntu-latest
+        steps:
+          - name: Check if PR opener is in MicrosoftDocs organization
+            run: |
+
+                PR_USER=$(jq -r .pull_request.user.login "$GITHUB_EVENT_PATH")
+                ORG_MEMBERS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/orgs/MicrosoftDocs/members")
+                echo "$ORG_MEMBERS" | jq -e --arg PR_USER "$PR_USER" '.[] | select(.login == $PR_USER)' > /dev/null && echo "User is a member of MicrosoftDocs organization." && exit 1 || echo "User is not in MicrosoftDocs."
+            
