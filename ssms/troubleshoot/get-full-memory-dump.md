@@ -73,7 +73,7 @@ To capture diagnostic information to troubleshoot an OutOfMemoryException from S
 
 ## Share the information
 
-1. To share the information with the SSMS Team, log the issue at https://aka.ms/sqlfeedback.
+1. To share the information with the SSMS team, log the issue at the [SSMS user feedback site](https://aka.ms/ssms-feedback).
 1. Then share the memory dump file collected to OneDrive (or equivalent) where the file can be collected.
 
     > [!Important]
