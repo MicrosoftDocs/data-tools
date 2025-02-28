@@ -31,22 +31,25 @@ jobs:
 
         Try
         {
-            Write-Host "Checking if $PR_USER is a member of $ORG"
-
-            $url = "https://api.github.com/orgs/$ORG/members"
-
-            Write-Host "$url"
+            Write-Host "Checking if $PR_USER has a microsoft.com email address"
             
-            $response = Invoke-RestMethod -Uri $url -Headers $GitHubHeaders -Method Get -StatusCodeVariable statusCode
-            Write-Host "$response"
+            $url = "https://api.github.com/users/$PR_USER"
+            
+            # Make the API request
+            $response = Invoke-RestMethod -Uri $url -Headers $GitHubHeaders
 
-            If ($statusCode -eq 204) 
-            {
-                Write-Host "$PR_USER is a member of the $ORG organization."
-            } 
-            Else 
-            {
-                Write-Host "$PR_USER is not a member of the $ORG organization."
+            Write-Host $response
+            
+            # Extract the email
+            $email = $response.email
+
+            Write-Host $email
+            
+            # Check if the email contains @microsoft.com
+            if ($email -and $email -like "*@microsoft.com") {
+                Write-Output "The user's email is a Microsoft email: $email"
+            } else {
+                Write-Output "The user's email is not a Microsoft email or is not available."
             }
         }
         Catch
