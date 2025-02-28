@@ -1,4 +1,4 @@
-name: Check Membership
+name: Internal contributor check
 
 on:
   pull_request:
@@ -9,9 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
     - name: Check if user is a member of MicrosoftDocs
       shell: pwsh
       env: 
@@ -32,14 +29,40 @@ jobs:
         $PR_USER = $GitHubData.event.pull_request.user.login
         $ORG = "MicrosoftDocs"
 
-        $url = "https://api.github.com/orgs/$ORG/members/$PR_USER"
-        $response = Invoke-RestMethod -Uri $url -Headers $GitHubHeaders -Method Get -StatusCodeVariable statusCode
+        Try
+        {
+            Write-Host "Checking is $PR_USER is a member of $ORG"
 
-        If ($statusCode -eq 204) 
+            $url = "https://api.github.com/orgs/$ORG/members/$PR_USER"
+
+            Write-Host "$url"
+
+            $response = Invoke-RestMethod -Uri $url -Headers $GitHubHeaders -Method Get -StatusCodeVariable statusCode
+
+            If ($statusCode -eq 204) 
+            {
+            Write-Host "$PR_USER is a member of the $ORG organization."
+            } 
+            Else 
+            {
+            Write-Host "$PR_USER is not a member of the $ORG organization."
+            }
+        }
+        Catch
         {
-          Write-Host "$PR_USER is a member of the $ORG organization."
-        } 
-        Else 
-        {
-          Write-Host "$PR_USER is not a member of the $ORG organization."
+            # Capture and display detailed exception information
+            Write-Host "An error occurred: $($_.Exception.Message)"
+            Write-Host "Exception type: $($_.Exception.GetType().FullName)"
+            Write-Host "Line number: $($_.InvocationInfo.ScriptLineNumber)"
+            Write-Host "Position: $($_.InvocationInfo.OffsetInLine)"
+            Write-Host "Script name: $($_.InvocationInfo.ScriptName)"
+            Write-Host "Error line: $($_.InvocationInfo.Line)"
+
+            # Read and display the line of code that caused the error
+            $scriptPath = $($_.InvocationInfo.ScriptName)
+            if ($scriptPath) {
+                $lines = Get-Content -Path $scriptPath
+                $errorLine = $_.InvocationInfo.ScriptLineNumber
+                Write-Host "Code at error line $errorLine : $($lines[$errorLine - 1])"
+            }
         }
