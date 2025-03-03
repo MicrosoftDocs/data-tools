@@ -23,7 +23,8 @@ jobs:
               AccessToken: ${{ secrets.GITHUB_TOKEN }}
               # For testing set to a little used folder as the only target
               MonitoredFolders: '[
-                    "ssms/solution/",
+                    "ssms/",
+                    "azure-data-studio/"
                 ]'
   
             run: |
@@ -675,6 +676,12 @@ jobs:
 
                                     Write-Host "Adding $ContentApprovedLabel label to the PR"
                                     Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
+
+                                    If ($ApprovedFound)
+                                    {
+                                        # If explicitly approved, set the content team reviewed label as well for tracking
+                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewInProgressLabel
+                                    }
 
                                     Write-Host "Removing other labels"
                                     # Don't remove the in progress label as we can see this to see what we reviewed
