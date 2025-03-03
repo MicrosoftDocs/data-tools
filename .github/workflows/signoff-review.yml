@@ -23,7 +23,8 @@ jobs:
               AccessToken: ${{ secrets.GITHUB_TOKEN }}
               # For testing set to a little used folder as the only target
               MonitoredFolders: '[
-                    "ssms/solution/",
+                    "ssms/",
+                    "azure-data-studio/"
                 ]'
   
             run: |
