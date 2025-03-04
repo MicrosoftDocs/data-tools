@@ -4,7 +4,7 @@ description: Azure Data Studio is being deprecated.
 author: croblesm
 ms.author: roblescarlos
 ms.reviewer: randolphwest, maghan
-ms.date: 02/06/2025
+ms.date: 03/04/2025
 ms.service: azure-data-studio
 ms.topic: concept-article
 ms.custom: deprecation announcement
@@ -107,7 +107,7 @@ For users who relied on Azure Data Studio for non-SQL Server-related tasks (for 
 
 | Azure Data Studio extension | Description | Replacement |
 | --- | --- | --- |
-| **PostgreSQL** | Manage PostgreSQL databases. | PostgreSQL for Visual Studio Code |
+| **PostgreSQL** | Manage PostgreSQL databases. | Pending announcement |
 | **MySQL** | Manage MySQL databases. | Pending announcement |
 | **Azure Cosmos DB** | Manage Azure Cosmos DB API for MongoDB. | Azure Databases for Visual Studio Code |
 | **Azure Cosmos DB Migration for MongoDB** | Migrate MongoDB to Azure Cosmos DB. | Pending announcement |
