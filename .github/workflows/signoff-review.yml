@@ -27,7 +27,7 @@ jobs:
                     "azure-data-studio/"
                 ]'
   
-           run: |
+            run: |
   
                 # Print out current date and time
                 $currentDateTime = Get-Date
