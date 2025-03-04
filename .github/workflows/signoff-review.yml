@@ -52,18 +52,22 @@ jobs:
                 $GitHubRepoName = $GitHubData.event.repository.name
                 $CommentUser = $GitHubData.event.comment.user.login
                 $PullRequestOpener = $GitHubData.event.pull_request.user.login
+                
                 If ($GitRequestEvent -eq "issue_comment") 
                 {   
                     $PrIssueNumber = $GitHubData.event.issue.number
                     $PrUrl = $GitHubData.event.issue.pull_request.url
                     $IssueUrl = $GitHubData.event.issue.url
+                    $CommentsUrl = $GitHubData.event.issue.comments_url
                 }
                 ElseIf ($GitRequestEvent -eq "pull_request_target") 
                 {
                     $PrIssueNumber = $GitHubData.event.pull_request.number
                     $PrUrl = $GitHubData.event.pull_request.html_url
                     $IssueUrl = $GitHubData.event.pull_request.issue_url
+                    $CommentsUrl = $GitHubData.event.pull_request.comments_url
                 }
+
                 If ($GitRequestEvent -eq "issue_comment") {$PrUrl = $GitHubData.event.issue.pull_request.url} ElseIf ($GitRequestEvent -eq "pull_request_target") {$PrUrl = $GitHubData.event.pull_request.url}
                 $UserPermissionUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$CommentUser/permission" )
                 $UserPermissionPROpenerUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$PullRequestOpener/permission" )
@@ -92,9 +96,11 @@ jobs:
                 $ReviewingRegex = "\s*$ReviewingString\s*"
                 $ApprovedRegex = "\s*$ApprovedString\s*"
 
-                $EscalationEmail = "[DB Docs Team](mailto:dbdocsprreviews@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20$GitHubRepoName%20PR%20$PrIssueNumber&body=$PrGitHubLink)"
-                $NeedsContentTeamReviewMessage = "The content team will review this pr and work with you to publish your changes. Thank you for working with us to improve content quality for our customers!`n`n**To expedite your review**, please reach out to the content lead in your area or email the $EscalationEmail."
-                $CurrentlyInReviewMessage = "This PR is currently assigned to the content team for review. It must be reviewed and approved by the content team before merging.`n`n**To expedite your review**, please reach out to the content lead in your area or email the $EscalationEmail."
+                $EscalationEmail = "[Data Docs Team](mailto:dbdocsprreviews@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20$GitHubRepoName%20PR%20$PrIssueNumber&body=$PrGitHubLink)"
+                $ContentLeadsUrl = "[content lead in your area](https://dev.azure.com/msft-skilling/Content/_dashboards/dashboard/b25043af-cab3-4b2c-8aac-9e8da15a796b)"
+                $PROpenMessage = "Thank you for your contribution! All PRs will be reviewed and approved by the content team. They will remain in a pending state until approved even after they successfully build and stage. When you are ready for the content team to publish this PR, sign off as normal. If you have any questions, please reach out to $ContentLeadsUrl or email the $EscalationEmail."
+                $NeedsContentTeamReviewMessage = "The content team will review this pr and work with you to publish your changes. Thank you for working with us to improve content quality for our customers!`n`n**To expedite your review**, please reach out to $ContentLeadsUrl or email the $EscalationEmail."
+                $CurrentlyInReviewMessage = "This PR is currently assigned to the content team for review. It must be reviewed and approved by the content team before merging.`n`n**To expedite your review**, please reach out to the $ContentLeadsUrl or email the $EscalationEmail."
                 $AssignedReviewerMessage = "Assigning the pull request to @!!USER!! for review. #assign: !!USER!!"
                 $CheckFailed = $False
 
@@ -397,9 +403,8 @@ jobs:
                         [Parameter(Mandatory=$True)]
                         $Message
                     )
-
-                    $CommentsUrl = $GitHubData.event.issue.comments_url
-                    Write-Host "$CommentsUrl"
+                    
+                    Write-Host "Adding comment in pr..."
 
                     $BodyHash = @{}
                     $BodyHash.body = $Message
@@ -558,7 +563,7 @@ jobs:
 
                         Write-Host "User $PullRequestOpener permission level: $UserPermission."
 
-                        # If user has write or above, allow check to pass. If not, add content team review label.
+                        # If user has write or above, allow check to pass. If not, provide a welcome message
                         If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin"))
                         {
                             Write-Host "Approving as pull request creator $PullRequestOpener has permission."
@@ -569,6 +574,13 @@ jobs:
 
                             $Status.state = "success"
                             $Status.description = "Pull request opener $PullRequestOpener is pre-approved."                            
+                        }
+                        Else
+                        {
+                            # Provide a welcome message
+                            Write-Host "User creating PR is not pre-approved. Adding welcome message."
+
+                            Set-PrComment $PROpenMessage
                         }
                         
                         $ActionableComment = $True
