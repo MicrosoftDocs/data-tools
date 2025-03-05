@@ -97,10 +97,10 @@ jobs:
                 $ApprovedRegex = "\s*$ApprovedString\s*"
 
                 $EscalationEmail = "[Data Docs Team](mailto:dbdocsprreviews@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20$GitHubRepoName%20PR%20$PrIssueNumber&body=$PrGitHubLink)"
-                $ContentLeadsUrl = "[content lead in your area](https://dev.azure.com/msft-skilling/Content/_dashboards/dashboard/b25043af-cab3-4b2c-8aac-9e8da15a796b)"
+                $ContentLeadsUrl = "[the content lead in your area](https://dev.azure.com/msft-skilling/Content/_dashboards/dashboard/b25043af-cab3-4b2c-8aac-9e8da15a796b)"
                 $PROpenMessage = "Thank you for your contribution! All PRs will be reviewed and approved by the content team. They will remain in a pending state until approved even after they successfully build and stage. When you are ready for the content team to publish this PR, sign off as normal. If you have any questions, please reach out to $ContentLeadsUrl or email the $EscalationEmail."
                 $NeedsContentTeamReviewMessage = "The content team will review this pr and work with you to publish your changes. Thank you for working with us to improve content quality for our customers!`n`n**To expedite your review**, please reach out to $ContentLeadsUrl or email the $EscalationEmail."
-                $CurrentlyInReviewMessage = "This PR is currently assigned to the content team for review. It must be reviewed and approved by the content team before merging.`n`n**To expedite your review**, please reach out to the $ContentLeadsUrl or email the $EscalationEmail."
+                $CurrentlyInReviewMessage = "This PR is currently assigned to the content team for review. It must be reviewed and approved by the content team before merging.`n`n**To expedite your review**, please reach out to $ContentLeadsUrl or email the $EscalationEmail."
                 $AssignedReviewerMessage = "Assigning the pull request to @!!USER!! for review. #assign: !!USER!!"
                 $CheckFailed = $False
 
