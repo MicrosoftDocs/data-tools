@@ -329,6 +329,8 @@ items:
     href: troubleshoot/enable-copying-find-replace-window.md
   - name: Enable tabs to move
     href: troubleshoot/workaround-move-tabs.md
+  - name: Configure Azure SQL Managed Instance link >>
+    href: /azure/azure-sql/managed-instance/managed-instance-link-configure-how-to-ssms?toc=/ssms/toc.json&bc=/ssms/breadcrumb/toc.json
   - name: Troubleshoot
     items:
     - name: Install failed or requires restart
