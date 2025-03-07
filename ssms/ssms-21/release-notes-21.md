@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio 21 Preview (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 02/11/2025
+ms.date: 03/11/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ---
@@ -22,6 +22,41 @@ This article details updates, improvements, and bug fixes for the current and pr
 **[Download SQL Server Management Studio 21 Preview](https://aka.ms/ssms/21/preview/vs_SSMS.exe)**
 
 [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is the latest preview release of SSMS. If you need a previous version of SSMS, see [previous SSMS releases](../release-notes-ssms.md#previous-ssms-releases).
+
+### 21.0 Preview 5
+
+- Release number: 21.0 Preview 5
+- Build number: 21.0.107
+- Release date: March 11, 2025
+
+#### What's new in 21.0 Preview 5
+
+| Feature | Details |
+| --- | --- |
+| Azure SQL Database | Added support for MANUAL_CUTOVER and PERFORM_CUTOVER. For more information, see [Improving the conversion to Hyperscale with greater efficiency](https://techcommunity.microsoft.com/blog/azuresqlblog/improving-the-conversion-to-hyperscale-with-greater-efficiency/4377505). |
+| Command Line | Added the `-A` option to specify the authentication method to use when connecting from the command line. Accepted values are authentication types from [SqlAuthenticationMethod](/dotnet/api/microsoft.data.sqlclient.sqlauthenticationmethod) supported by SSMS. The `–G` (use Entra ID authentication) and `–E` (use Windows Authentication) options are now deprecated and will be removed in a later version. |
+| Connection | When you connect to a server from command line parameters, SSMS displays a prompt to confirm the connection and parameters. |
+| Connection | Added **Close Idle SQL Connections** command under the Help menu. For more information see [Connection Pooling in SQL Server Management Studio](https://aka.ms/ssms-close-idle-connections). |
+| IntelliSense | Added support for Vector functions. | 
+| Individual Components (Visual Studio Installer) | Reinstated Analysis Services and Reporting Services as Business Intelligence components in the Visual Studio Installer. |
+| Libraries | Updated Server Management Objects (SMO) to version 17.100.64. |
+| Scripting	| Added support for scripting objects that use the Vector data type. |
+| Theming | Improved dark theme support for the Activity Monitor and Object Explorer Details dialogs. |
+| Tools | Removed Azure Data Studio entry from the Tools menu. For more information, see [What’s Happening to Azure Data Studio](https://aka.ms/ads-retirement). |
+| Visual Studio | Updated to Visual Studio 17.14 Preview 2. |
+
+#### Bug fixes in 21.0 Preview 5
+
+| Feature | Details |
+| --- | --- |
+| Accessibility	| Fixed screen reader compatibility and keyboard navigation issues in the Always Encrypted wizard. |
+| Accessibility | Fixed tabbing order for the **Replace in Files** dialog. See [In SSMS 21.0 Replace in Files the tab order is incorrect](https://feedback.azure.com/d365community/idea/d90e7984-d4cd-ef11-95f6-6045bd77c83d). |
+| Accessibility	| Fixed keyboard navigation issues in Profiler. |
+| File | Addressed an issue that created duplicate entries in the **Add New Item** dialog when configuring a Project in the Solution Explorer. |
+| Find | Resolved issue with **Find in Files** when searching in text results, accessed through **Edit** > **Find and Replace** > **Find in Files**, or with CTRL + F. See [Support find in SSMS 21 text results window](https://feedback.azure.com/d365community/idea/d3c87d96-68be-ef11-95f5-6045bdbfaf80). |
+| Import/Export Data-Tier Application | Updated the file and log location to use default instead of master database location during a bacpac import. |
+| Object Explorer | Addressed an issue that incorrectly displayed Vector data type columns. |
+| Query Editor | Resolved an issue where characters in the range of 160-191 were displayed with a strikethrough. |
 
 ### 21.0 Preview 4.1
 
