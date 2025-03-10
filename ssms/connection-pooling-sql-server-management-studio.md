@@ -35,18 +35,18 @@ While connection pooling improves performance, it also results in connections st
 
 There are a few options available to close these idle connections:
 
-1. Wait until ADO.NET closes the connections. This happens for connections which haven't been used for between four and eight minutes.
+- Wait until ADO.NET closes the connections. This happens for connections which haven't been used for between four and eight minutes.
 
-1. Some operations in [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)] (such as `DROP DATABASE`) provide the option to close all existing connections before performing the operation.
+- Some operations in [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)] (such as `DROP DATABASE`) provide the option to close all existing connections before performing the operation.
 
-1. Use the **Close Idle SQL Connections** command under the **Help** menu. This option immediately closes all idle connections for the current instance of [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)]. Active connections aren't affected except for immediately being closed when they're done being used instead of being returned to the pool.
+- Use the **Close Idle SQL Connections** command under the **Help** menu. This option immediately closes all idle connections for the current instance of [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)]. Active connections aren't affected except for immediately being closed when they're done being used instead of being returned to the pool.
 
    > [!NOTE]  
    > Closing idle connections can result in decreased performance the next time a new connection to the server is needed, because the connection needs to be reestablished.
 
-1. Close [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)]. Closing [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)] immediately closes all open connections associated with that database or instance.
+- Close [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)]. Closing [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)] immediately closes all open connections associated with that database or instance.
 
-1. Run the [KILL](/sql/t-sql/language-elements/kill-transact-sql) statement to close any sessions that are blocking your operation.
+- Run the [KILL](/sql/t-sql/language-elements/kill-transact-sql) statement to close any sessions that are blocking your operation.
 
 ## Related content
 
