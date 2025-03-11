@@ -58,7 +58,7 @@ items:
 - name: Download SSMS
   href: download-sql-server-management-studio-ssms.md
 - name: Release notes
-  href: release-notes-ssms.md  
+  href: release-notes-ssms.md
 - name: Overview
   items:
   - name: SQL Server Management Studio (SSMS)
@@ -80,7 +80,7 @@ items:
   - name: SSMS Configuration
     href: tutorials/ssms-configuration.md
   - name: Import and export SSMS settings
-    href: tutorials/import-export-settings.md        
+    href: tutorials/import-export-settings.md
   - name: SSMS tips & tricks
     href: tutorials/ssms-tricks.md
   - name: Script objects
@@ -89,6 +89,8 @@ items:
     href: /sql/relational-databases/import-export/import-flat-file-wizard
 - name: Concepts
   items:
+  - name: Connection Pooling in SSMS
+    href: connection-pooling-sql-server-management-studio.md
   - name: Tool Windows in SSMS
     href: tool-windows-in-sql-server-management-studio.md
   - name: Use SSMS to Build Database Projects
@@ -335,7 +337,7 @@ items:
     items:
     - name: Install failed or requires restart
       href: troubleshoot/install-failed-requires-restart.md
-    - name: Get full memory dump 
+    - name: Get full memory dump
       href: troubleshoot/get-full-memory-dump.md
     - name: Advanced troubleshooting for SSMS
       href: troubleshoot/ssms-troubleshoot.md
