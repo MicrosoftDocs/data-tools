@@ -645,6 +645,8 @@ jobs:
                             # If so, always return success. If not, always keep at pending until approved.
                             if ($ApprovedLabelSet)
                             {
+                                $ActionableComment = $True
+                                
                                 Write-Host "Content team already approved. Returning success."
                                 $Status.state = "success"
                                 $Status.description = $ContentApprovalMessage
