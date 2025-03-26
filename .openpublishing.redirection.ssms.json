@@ -4,6 +4,11 @@
       "source_path": "ssms/index.md",
       "redirect_url": "/ssms/download-sql-server-management-studio-ssms",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/install-extensions-in-sql-server-management-studio-ssms.md",
+      "redirect_url": "/ssms/download-sql-server-management-studio-ssms",
+      "redirect_document_id": false
     }
   ]
 }
