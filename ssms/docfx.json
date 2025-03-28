@@ -55,16 +55,9 @@
         "agent/**/*.md": "SQL Server Agent",
         "/visual-db-tools/**/*.md": "Visual Database Tools"
       },
-    "rules": {
-      "docs-link-absolute": {
-      "exclude": [
-        "download-sql-server-management-studio-ssms.md"
-        ]
-      },
       "sensitive-language-ma": {
       "exclude": [
-        "agent/**/*.md",
-        "database-engine/install-windows/**/*.md"
+        "agent/**/*.md"
       ]
       },
       "sensitive-language-sl": {
@@ -79,4 +72,3 @@
       }
     }
   }
-}
