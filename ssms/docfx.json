@@ -30,9 +30,10 @@
         ],
         "exclude": [
           "**/obj/**"
-        ],
+        ]
       }
     ],
+
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -49,20 +50,32 @@
           "download-sql-server-management-studio-ssms.md"
         ]
       },
-      "sensitive-language-ma": {
-        "exclude": [
-          "agent/**/*.md",
-          "database-engine/install-windows/**/*.md"
+      "titleSuffix": {
+        "**/*.md": "SQL Server Management Studio (SSMS)",
+        "agent/**/*.md": "SQL Server Agent",
+        "/visual-db-tools/**/*.md": "Visual Database Tools"
+      },
+    "rules": {
+      "docs-link-absolute": {
+      "exclude": [
+        "download-sql-server-management-studio-ssms.md"
         ]
       },
+      "sensitive-language-ma": {
+      "exclude": [
+        "agent/**/*.md",
+        "database-engine/install-windows/**/*.md"
+      ]
+      },
       "sensitive-language-sl": {
-        "exclude": []
+      "exclude": []
       },
       "sensitive-language-wl": {
-        "exclude": []
+      "exclude": []
       },
       "sensitive-language-bl": {
-        "exclude": []
+      "exclude": []
+        }
       }
     }
   }
