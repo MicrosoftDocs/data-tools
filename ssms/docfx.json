@@ -6,6 +6,7 @@
           "**/*.md",
           "**/*.yml"
         ],
+
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -20,6 +21,7 @@
         ]
       }
     ],
+
     "resource": [
       {
         "files": [
@@ -30,9 +32,10 @@
         ],
         "exclude": [
           "**/obj/**"
-        ],
+        ]
       }
     ],
+
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -40,6 +43,7 @@
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "feedback_system": "Standard"
     },
+
     "fileMetadata": {},
     "template": [],
     "dest": "ssms",
@@ -49,21 +53,30 @@
           "download-sql-server-management-studio-ssms.md"
         ]
       },
+
+      "titleSuffix": {
+        "**/*.md": "SQL Server Management Studio (SSMS)",
+        "agent/**/*.md": "SQL Server Agent",
+        "/visual-db-tools/**/*.md": "Visual Database Tools"
+      },
+
       "sensitive-language-ma": {
-        "exclude": [
-          "agent/**/*.md",
-          "database-engine/install-windows/**/*.md"
+      "exclude": [
+        "agent/**/*.md"
         ]
       },
+
       "sensitive-language-sl": {
-        "exclude": []
+      "exclude": []
       },
+
       "sensitive-language-wl": {
-        "exclude": []
+      "exclude": []
       },
+      
       "sensitive-language-bl": {
-        "exclude": []
+      "exclude": []
+        }
       }
     }
   }
-}
