@@ -23,6 +23,8 @@ This article details updates, improvements, and bug fixes for the current and pr
 
 [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is the latest preview release of SSMS. If you need a previous version of SSMS, see [previous SSMS releases](../release-notes-ssms.md#previous-ssms-releases).
 
+<a id="21.0.107-pre5.0"></a>
+
 ### 21.0 Preview 5
 
 - Release number: 21.0 Preview 5
@@ -36,7 +38,7 @@ This article details updates, improvements, and bug fixes for the current and pr
 | Azure SQL Database | Added support for MANUAL_CUTOVER and PERFORM_CUTOVER. For more information, see [Improving the conversion to Hyperscale with greater efficiency](https://techcommunity.microsoft.com/blog/azuresqlblog/improving-the-conversion-to-hyperscale-with-greater-efficiency/4377505). |
 | Command Line | Added the `-A` option to specify the authentication method to use when connecting from the command line. Accepted values are authentication types from [SqlAuthenticationMethod](/dotnet/api/microsoft.data.sqlclient.sqlauthenticationmethod) supported by SSMS. The `–G` (use Entra ID authentication) and `–E` (use Windows Authentication) options are now deprecated and will be removed in a later version. |
 | Connection | When you connect to a server from command line parameters, SSMS displays a prompt to confirm the connection and parameters. |
-| Connection | Added **Close Idle SQL Connections** command under the Help menu. For more information see [Connection Pooling in SQL Server Management Studio](https://aka.ms/ssms-close-idle-connections). |
+| Connection | Added **Close Idle SQL Connections** command under the Help menu. For more information, see [Connection Pooling in SQL Server Management Studio](https://aka.ms/ssms-close-idle-connections). |
 | IntelliSense | Added support for Vector functions. | 
 | Individual Components (Visual Studio Installer) | Reinstated Analysis Services and Reporting Services as Business Intelligence components in the Visual Studio Installer. |
 | Libraries | Updated Server Management Objects (SMO) to version 17.100.64. |
@@ -57,6 +59,8 @@ This article details updates, improvements, and bug fixes for the current and pr
 | Import/Export Data-Tier Application | Updated the file and log location to use default instead of master database location during a bacpac import. |
 | Object Explorer | Addressed an issue that incorrectly displayed Vector data type columns. |
 | Query Editor | Resolved an issue where characters in the range of 160-191 were displayed with a strikethrough. |
+
+<a id="21.0.85-pre4.1"></a> 
 
 ### 21.0 Preview 4.1
 
@@ -97,6 +101,8 @@ This article details updates, improvements, and bug fixes for the current and pr
 | Query Plans | Addressed an issue where canceling a query while running a live query plan caused SSMS to crash. See [Live query statistics hangs waiting for plan and cancelling query kills SSMS](https://feedback.azure.com/d365community/idea/9e4420f1-afac-ee11-92bc-000d3ae54955). |
 | Query Plans | Addressed an issue where viewing live query statistics for a table with a geography data type caused an error. |
 
+<a id="21.0.83-pre3.0"></a>
+
 ### 21.0 Preview 3
 
 - Release number: 21.0 Preview 3
@@ -112,7 +118,7 @@ This article details updates, improvements, and bug fixes for the current and pr
 | Configuration | The default value for a firewall rule name created in SSMS uses the format `ClientIPAddress_YYYY-MM-DD_HH-MM-SS`. |
 | Find | Reinstated the **Quick Find** option, accessed through **Edit** > **Find and Replace** > **Quick Find**, or with **CTRL + F**. See [SSMS 21.0 Preview 1.0 - "Quick Find" missing, instead "Find in files" pops up](https://feedback.azure.com/d365community/idea/76326fd1-57b6-ef11-95f6-000d3ae2b698). |
 | Installation | Updated the default Code Snippets folder location to be major-version specific (`%USERPROFILE%\Documents\SQL Server Management Studio 21\Code Snippets\SQL\My Code Snippets`). |
-| Query Store | Added theme support for Plan Id box and toolbar dropdown lists in Query Store reports. |
+| Query Store | Added theme support for Plan ID box and toolbar dropdown lists in Query Store reports. |
 | Intellisense | Added support for VECTOR data type. |
 | Visual Studio | Updated to Visual Studio 17.13 Preview 3. |
 
@@ -125,10 +131,12 @@ This article details updates, improvements, and bug fixes for the current and pr
 | Intellisense | Disabling IntelliSense by unchecking **Enable IntelliSense** in **Tools** > **Options** > **Text Editor** > **Transact-SQL** > **IntelliSense** now persists between restarts of SSMS. See [Intellisense enabled for SSMS 21 despite being off in the settings](https://feedback.azure.com/d365community/idea/d7b6fb21-8aa3-ef11-95f6-000d3a01397d). |
 | License | Updated the "Microsoft Software License Terms" link in the Visual Studio Install splash screen to direct to the SSMS 21 license. |
 | Query Plans | Updated operator Property dialog to correctly display Columns With Stale Statistics warning. |
-| Query Store | Improved readability for Plan Id text in the Top Resource Consuming Queries report for High Contrast Mode. |
+| Query Store | Improved readability for Plan ID text in the Top Resource Consuming Queries report for High Contrast Mode. |
 | Security | Added the ability to assign a new user to a database login from the user properties dialog. |
 | Security | Corrected size of "Add" button on the Login Properties dialog. |
 | SQL Agent | Removed unsupported SQL Agent features for Azure SQL Managed Instance including targets, multi-server administration, and Operator pager options. |
+
+<a id="21.0.73-pre2.1"></a>
 
 ### 21.0 Preview 2.1
 
@@ -192,6 +200,8 @@ This article details updates, improvements, and bug fixes for the current and pr
 | Theming | Improved themed support for **Recently Used Templates** in Template Explorer. |
 | Theming | Improved theme support in the Messages tab of the results pane. |
 | Theming | Addressed issue where the results window would show as white until the results appeared with dark theme enabled. |
+
+<a id="21.0.47-pre1.0"></a>
 
 ### 21.0 Preview 1
 
