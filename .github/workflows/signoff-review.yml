@@ -564,7 +564,7 @@ jobs:
                         Write-Host "User $PullRequestOpener permission level: $UserPermission."
 
                         # If user has write or above, allow check to pass. If not, provide a welcome message
-                        If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin"))
+                        If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin") -or ($UserPermission -eq "triage"))
                         {
                             Write-Host "Approving as pull request creator $PullRequestOpener has permission."
 
@@ -678,7 +678,7 @@ jobs:
                             Write-Host "User $CommentUser permission level: $UserPermission."
 
                             # If user has write or above, allow check to pass. If not, add content team review label.
-                            If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin")) 
+                            If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin") -or ($UserPermission -eq "triage")) 
                             {
                                 Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
 
