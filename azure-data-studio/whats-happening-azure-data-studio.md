@@ -4,7 +4,7 @@ description: Azure Data Studio is being deprecated.
 author: croblesm
 ms.author: roblescarlos
 ms.reviewer: randolphwest, maghan
-ms.date: 03/04/2025
+ms.date: 03/31/2025
 ms.service: azure-data-studio
 ms.topic: concept-article
 ms.custom: deprecation announcement
@@ -91,7 +91,8 @@ Azure Data Studio users have diverse needs, from connecting to Azure SQL databas
 | Schema | Compare and synchronize database schemas. | Visual Studio SQL Server Data Tools (SSDT). In development for MSSQL extension for VS Code. |
 | Flat-file import | Import `.txt` and `.csv` files into databases. | Bulk insert / PowerShell. In development for MSSQL extension for Visual Studio Code. |
 | DACPAC import/export | Deploy and extract DACPAC files. | SqlPackage / MSSQL extension for Visual Studio Code. |
-| Azure SQL migration | Migrate SQL Server to Azure SQL. | Azure portal (future updates planned). |
+| SQL Server assessment | Assess an existing SQL Server data estate to prepare for migration. | [Assess migration readiness with SQL Server enabled by Azure Arc](/sql/sql-server/azure-arc/migration-assessment). |
+| Azure SQL migration | Migrate SQL Server to Azure SQL. | Alternative migration tools for [Azure SQL Managed Instance](/data-migration/sql-server/managed-instance/overview#migration-tools), [SQL Serve on Azure VMs](/data-migration/sql-server/virtual-machines/overview#migrate), and [Azure SQL Database](/data-migration/sql-server/database/overview#migration-tools). |
 | Notebooks | SQL + Markdown interactive documents. | Polyglot Notebooks in Visual Studio Code. |
 | SQL Database Projects | Create, manage, and deploy SQL database projects. | Fully supported in the MSSQL extension for VS Code and Visual Studio. |
 
