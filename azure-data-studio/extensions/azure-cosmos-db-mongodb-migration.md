@@ -9,6 +9,8 @@ ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.subservice: migration-extension
 ms.topic: how-to
+ms.collection:
+  - data-tools
 ms.custom:
   - ignite-2023
 # CustomerIntent: As a database developer, I want to use the migration extension, so that I can evaluate and then eventually migrate my existing data to vCore-based Azure Cosmos DB for MongoDB.

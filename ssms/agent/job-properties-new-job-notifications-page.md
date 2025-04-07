@@ -1,11 +1,13 @@
 ---
-title: Job Properties - New Job (Notifications Page)
+title: "Job Properties - New Job (Notifications Page)"
 description: "Job Properties - New Job (Notifications Page)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.ag.job.notifications.f1"
 ---

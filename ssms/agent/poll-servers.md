@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 04/18/2022
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "target servers [SQL Server], polling interval"
   - "polling master servers [SQL Server]"

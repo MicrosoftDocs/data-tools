@@ -1,12 +1,15 @@
 ---
-title: Install non-English language versions
+title: Install Non-English Language Versions
 description: Install non-English language versions of SQL Server Management Studio (SSMS). This article applies to SSMS 17.x.
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 04/25/2019
 ms.service: sql-server-management-studio
 ms.topic: conceptual
-ms.custom: intro-installation
+ms.collection:
+  - data-tools
+ms.custom:
+  - intro-installation
 ---
 
 # Install non-English language versions of SQL Server Management Studio (SSMS)

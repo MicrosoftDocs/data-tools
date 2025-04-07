@@ -1,5 +1,5 @@
 ---
-title: Release notes for (SSMS)
+title: "Release Notes For (SSMS)"
 description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 02/11/2025
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 
 # Release notes for SQL Server Management Studio (SSMS)

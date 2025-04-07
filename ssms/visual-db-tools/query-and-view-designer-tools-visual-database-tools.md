@@ -7,6 +7,8 @@ ms.reviewer: vanto
 ms.date: 09/17/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "vdt.querydesigner"
   - "vdt.pane.diagram"

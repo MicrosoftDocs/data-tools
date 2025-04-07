@@ -1,5 +1,5 @@
 ---
-title: Administer servers with SQL Server Management Studio
+title: Administer Servers with SQL Server Management Studio
 description: Administer servers with SQL Server Management Studio.
 author: rwestMSFT
 ms.author: randolphwest
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 05/23/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Management Studio [SQL Server], servers"
   - "servers [SQL Server], administering"

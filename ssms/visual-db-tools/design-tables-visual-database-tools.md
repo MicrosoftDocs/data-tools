@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 11/29/2023
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "Visual Database Tools [SQL Server], Table Designer"
   - "Table Designer, designing tables"

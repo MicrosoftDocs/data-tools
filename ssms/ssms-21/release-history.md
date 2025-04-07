@@ -1,5 +1,5 @@
 ---
-title: Release history for SQL Server Management Studio 21 Preview
+title: Release History for SQL Server Management Studio 21 Preview
 description: Learn about the release history for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 11/12/2024
 ms.service: sql-server-management-studio
 ms.topic: concept-article
+ms.collection:
+  - data-tools
 ---
 # Release history for SQL Server Management Studio
 

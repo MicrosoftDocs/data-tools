@@ -1,5 +1,5 @@
 ---
-title: Connect and query SQL Server on Azure VM using SSMS
+title: Connect and Query SQL Server on Azure VM Using SSMS
 description: Connect to a SQL Server instance on an Azure VM using SSMS. Create and query SQL Server on an Azure VM by running basic T-SQL queries in SSMS.
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: mikeray, randolphwest
 ms.date: 02/29/2024
 ms.service: sql-server-management-studio
 ms.topic: quickstart
+ms.collection:
+  - data-tools
 ms.custom:
   - intro-quickstart
 ---
@@ -97,7 +99,7 @@ The following table lists the requirements to connect to SQL Server on Azure VM.
 
 | Requirement | Description |
 | --- | --- |
-| [Enable SQL Server authentication mode](/sql/database-engine/configure-windows/change-server-authentication-modeuse-ssms) | SQL Server authentication is needed to connect to the VM remotely unless you configured Active Directory on a virtual network. |
+| [Enable SQL Server authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode#use-ssms) | SQL Server authentication is needed to connect to the VM remotely unless you configured Active Directory on a virtual network. |
 | [Create a Login](/sql/relational-databases/security/authentication-access/create-a-login) | If you're using SQL authentication, you need a SQL login with a user name and password that also has permissions to your target database. |
 | Enable TCP/IP protocol | SQL Server must allow connections over TCP. |
 | [Configure a Windows Firewall for Database Engine Access](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access) | The firewall on the VM must allow inbound traffic on the SQL Server port (default 1433). |

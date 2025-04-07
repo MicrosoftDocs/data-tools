@@ -1,11 +1,13 @@
 ---
-title: New Operator Properties (General Page)
+title: "New Operator Properties (General Page)"
 description: "Operator Properties - New Operator (General Page)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.ag.operator.general.f1"
 ---

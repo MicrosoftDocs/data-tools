@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: quickstart
+ms.collection:
+  - data-tools
 ---
 
 # Quickstart: Use Azure Data Studio to connect and query Managed Service for TimescaleDB on Azure

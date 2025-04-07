@@ -1,5 +1,5 @@
 ---
-title: Import registered server information
+title: Import Registered Server Information
 description: Learn how to import saved registered server information in SQL Server Management Studio.
 author: rwestMSFT
 ms.author: randolphwest
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 01/22/2025
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.swb.importregisteredservers.f1"
 helpviewer_keywords:

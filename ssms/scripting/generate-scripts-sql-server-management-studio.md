@@ -7,6 +7,8 @@ ms.reviewer: mathoma
 ms.date: 04/07/2020
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 
 # Generate Scripts (SQL Server Management Studio)

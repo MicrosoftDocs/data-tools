@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 06/03/2020
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "jobs [SQL Server Agent], assigning"
   - "SQL Server Agent jobs, categories"

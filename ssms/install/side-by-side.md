@@ -1,5 +1,5 @@
 ---
-title: Install SQL Server Management Studio (SSMS) versions side-by-side
+title: "Install SQL Server Management Studio (SSMS) Versions Side-by-Side"
 description: Learn how to install SQL Server Management Studio (SSMS) on a computer that has an earlier or later version of SQL Server Management Studio (SSMS) already installed.
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 11/12/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 ---
 # Install SQL Server Management Studio versions side-by-side
 

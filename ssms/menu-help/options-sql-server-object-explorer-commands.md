@@ -1,5 +1,5 @@
 ---
-title: Options - SQL Server Object Explorer commands
+title: Options - SQL Server Object Explorer Commands
 description: Description of options within the SQL Server Object Explorer - Commands window.
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 02/29/2024
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 ---
 
 # Options (SQL Server Object Explorer - Commands)

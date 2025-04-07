@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 08/30/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Agent, security"
   - "security [SQL Server Agent], about security"
@@ -78,8 +80,8 @@ The following table describes how to map the login based on the SQL Agent job ow
 
 |SQL Agent job owner |How to map the login  |
 |---------|---------|
-|User that is not **sysadmin**    | Map the [local user](/sql/relational-databases/system-stored-procedures/sp-addlinkedsrvlogin-transact-sqlc-map-specific-local-login-to-a-remote-server-login) that owns the SQL Agent job to the remote login.        |
-|**sysadmin**     | Map [all local users](/sql/relational-databases/system-stored-procedures/sp-addlinkedsrvlogin-transact-sqld-map-all-local-logins-to-a-remote-server-login) to the remote login by setting the `@locallogin` parameter to `NULL`.     |
+|User that is not **sysadmin**    | Map the [local user](/sql/relational-databases/system-stored-procedures/sp-addlinkedsrvlogin-transact-sql#c-map-specific-local-login-to-a-remote-server-login) that owns the SQL Agent job to the remote login.        |
+|**sysadmin**     | Map [all local users](/sql/relational-databases/system-stored-procedures/sp-addlinkedsrvlogin-transact-sql#d-map-all-local-logins-to-a-remote-server-login) to the remote login by setting the `@locallogin` parameter to `NULL`.     |
 
 
 > [!NOTE]

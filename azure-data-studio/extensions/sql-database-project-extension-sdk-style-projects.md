@@ -1,5 +1,5 @@
 ---
-title: Use SDK-Style Projects With the SQL Database Projects Extension
+title: Use SDK-Style Projects with the SQL Database Projects Extension
 description: Getting started using SDK-style SQL projects with the SQL Database Projects extension for Azure Data Studio or Visual Studio Code
 author: croblesm
 ms.author: roblescarlos
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ms.custom:
   - intro-get-started
 ---

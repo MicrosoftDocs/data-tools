@@ -1,11 +1,13 @@
 ---
-title: "Set Up the Job History Log"
+title: "Set up the Job History Log"
 description: "Set Up the Job History Log"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "jobs [SQL Server Agent], history"
   - "logs [SQL Server], jobs"

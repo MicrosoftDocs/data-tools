@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 11/21/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "proxies [SQL Server Agent], creating"
 ---

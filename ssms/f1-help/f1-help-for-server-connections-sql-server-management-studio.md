@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 11/16/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Management Studio [SQL Server], Help"
   - "SQL Server Management Studio Help [SQL Server], server connections"

@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 09/25/2023
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "job steps [SQL Server Agent]"
   - "security [SQL Server Agent], enabling alert job step tokens"

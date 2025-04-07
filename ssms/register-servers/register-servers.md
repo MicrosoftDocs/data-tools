@@ -7,6 +7,8 @@ ms.manager: jroth
 ms.date: 03/14/2017
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.swb.sqlserverregisteredserver.dhelp"
 helpviewer_keywords:

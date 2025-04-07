@@ -7,6 +7,8 @@ ms.reviewer: maghan
 ms.date: 12/21/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Management Studio [SQL Server], user interface elements"
   - "user interface [SQL Server Management Studio]"

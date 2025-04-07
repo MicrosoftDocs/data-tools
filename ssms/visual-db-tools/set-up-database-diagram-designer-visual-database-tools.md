@@ -1,11 +1,13 @@
 ---
-title: Set Up Database Diagram Designer
+title: Set up Database Diagram Designer
 description: "Set Up Database Diagram Designer (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "vdt.diagnostic.InstallSqlDiagramSupport"
 helpviewer_keywords:

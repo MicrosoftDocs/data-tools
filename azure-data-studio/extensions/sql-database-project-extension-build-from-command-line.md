@@ -1,5 +1,5 @@
 ---
-title: Build a Project From the Command Line
+title: Build a Project from the Command Line
 description: Build a SQL Server Database Project from the command line
 author: croblesm
 ms.author: roblescarlos
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 
 # Build a database project from command line

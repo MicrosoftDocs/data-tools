@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 10/03/2023
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Agent, service accounts"
   - "startup accounts [SQL Server]"

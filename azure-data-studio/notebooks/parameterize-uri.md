@@ -1,5 +1,5 @@
 ---
-title: Parameterize Notebooks in Azure Data Studio With URI Parameterization
+title: Parameterize Notebooks in Azure Data Studio with URI Parameterization
 description: Learn how to create a parameterized notebook in Azure Data Studio by using URI parameterization.
 author: croblesm
 ms.author: roblescarlos
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 ---
 
 # Create a parameterized notebook by using the notebook URI

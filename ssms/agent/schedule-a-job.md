@@ -1,5 +1,5 @@
 ---
-title: "Configure schedule for SQL Server Agent job"
+title: "Configure Schedule for SQL Server Agent Job"
 description: Learn how to create a schedule for a job for the SQL Server Agent to run with SQL Server or Azure SQL Managed Instance by using SQL Server Management Studio (SSMS), Transact-SQL, or SQL Server Management Objects (SMO).
 author: rwestMSFT
 ms.author: randolphwest
@@ -7,6 +7,8 @@ ms.reviewer: mathoma
 ms.date: 09/27/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "scheduling jobs [SQL Server]"
   - "SQL Server Agent jobs, scheduling"

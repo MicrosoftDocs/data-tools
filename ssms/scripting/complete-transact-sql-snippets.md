@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "03/14/2017"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "IntelliSense [SQL Server], completing snippets"
   - "snippets [Transact-SQL], completing"

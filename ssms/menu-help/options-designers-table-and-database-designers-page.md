@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "12/08/2021"
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "VS.ToolsOptionsPages.Designers.Table_Designer"
 ---

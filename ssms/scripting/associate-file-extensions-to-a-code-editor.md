@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 12/26/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "file extensions [SQL Server]"
   - "associating file extensions [SQL Server]"

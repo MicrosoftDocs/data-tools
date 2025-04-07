@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "03/14/2017"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 # IntelliSense (SQL Server Management Studio)
 [!INCLUDE [SQL Server Azure SQL Database](../includes/applies-to-version/sql-asdb-asdbmi.md)]

@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 06/03/2020
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.ag.tsxwiz.complete.f1"
   - "sql13.ag.tsxwiz.cover.f1"

@@ -10,6 +10,7 @@ ms.subservice: migration-extension
 ms.topic: conceptual
 ms.collection:
   - sql-migration-content
+  - data-tools
 ---
 
 # Azure SQL migration extension for Azure Data Studio

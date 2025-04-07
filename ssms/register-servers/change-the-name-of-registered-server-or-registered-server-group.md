@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 08/02/2016
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 
 # Change the Name of Registered Server or Registered Server Group

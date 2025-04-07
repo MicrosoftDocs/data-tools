@@ -1,5 +1,5 @@
 ---
-title: Connect to Server (Additional Connection Parameters page) Database Engine
+title: "Connect to Server (Additional Connection Parameters Page) Database Engine"
 description: Connect to Server (Additional Connection Parameters page) Database Engine.
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 11/16/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.swb.connecttosqlserver.additionalconnparams.f1"
 ---

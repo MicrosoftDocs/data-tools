@@ -1,11 +1,13 @@
 ---
-title: "Insert Surround-with Transact-SQL snippets"
+title: "Insert Surround-With Transact-SQL Snippets"
 description: Learn how to insert a surround-with snippet to serve as a starting point for placing statements in code blocks.
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: "03/14/2017"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "snippets [Transact-SQL], surround with"
   - "IntelliSense [SQL Server], surround with snippets"

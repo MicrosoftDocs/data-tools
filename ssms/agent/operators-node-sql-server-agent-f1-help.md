@@ -1,11 +1,13 @@
 ---
-title: Operators Node (SQL Server Agent F1 Help)
+title: "Operators Node (SQL Server Agent F1 Help)"
 description: "Operators Node (SQL Server Agent F1 Help)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 12/05/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 ---
 
 # Operators Node (SQL Server Agent F1 Help)

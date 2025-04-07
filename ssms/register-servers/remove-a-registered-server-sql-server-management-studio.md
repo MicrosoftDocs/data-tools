@@ -7,6 +7,8 @@ ms.reviewer: mikeray
 ms.date: 12/16/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "removing registered servers"
   - "deleting registered servers"

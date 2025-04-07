@@ -1,5 +1,5 @@
 ---
-title: SSMS Options page - Output Window
+title: SSMS Options Page - Output Window
 description: "Output Window in SQL Server Management Studio"
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: maghan
 ms.date: 11/13/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "VS.ToolsOptionsPages.Query_Execution.Sql_Server.General"
 helpviewer_keywords:
