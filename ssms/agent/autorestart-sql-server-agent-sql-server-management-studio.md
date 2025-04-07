@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 07/28/2021
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Agent, starting"
   - "autostart SQL Server Agent"

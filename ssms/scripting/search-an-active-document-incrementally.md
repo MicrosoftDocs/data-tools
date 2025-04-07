@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "03/01/2017"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "searches [SQL Server Management Studio], incremental"
   - "Query Editor [SQL Server Management Studio], incremental search"

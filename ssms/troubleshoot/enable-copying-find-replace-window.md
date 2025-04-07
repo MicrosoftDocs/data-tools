@@ -1,5 +1,5 @@
 ---
-title: Enable copying from find and replace window
+title: Enable Copying from Find and Replace Window
 description: "Workaround to enable copying from find and replace window "
 author: dzsquared
 ms.author: drskwier
@@ -7,6 +7,8 @@ ms.reviewer: maghan
 ms.date: 11/03/2020
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 
 # Workaround to enable copying from find and replace window

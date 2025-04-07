@@ -1,5 +1,5 @@
 ---
-title: Options (SQL Server Object Explorer - Scripting)
+title: "Options (SQL Server Object Explorer - Scripting)"
 description: Description of options within the SQL Server Object Explorer - Scripting window.
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: maghan
 ms.date: 05/24/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "VS.ToolsOptionsPages.ObjectExplorerScripting"
   - "VS.ToolsOptionsPages.Sql_Server_Object_Explorer.ObjectExplorerScripting"

@@ -1,5 +1,5 @@
 ---
-title: Execute statements against multiple servers simultaneously
+title: Execute Statements Against Multiple Servers Simultaneously
 description: "Execute statements against multiple servers at the same time."
 author: rwestMSFT
 ms.author: randolphwest
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 12/21/2022
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "multiserver queries"
   - "executing queries against multiple servers"

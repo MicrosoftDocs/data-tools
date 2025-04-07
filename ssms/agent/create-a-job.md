@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 09/19/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "jobs [SQL Server Agent], creating"
   - "SQL Server Agent jobs, creating"

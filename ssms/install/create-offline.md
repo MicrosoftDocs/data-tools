@@ -1,5 +1,5 @@
 ---
-title: Create an offline installation of SQL Server Management Studio 21 Preview
+title: Create an Offline Installation of SQL Server Management Studio 21 Preview
 description: Create an offline installation package to install SQL Server Management Studio (SSMS) offline when you have an unreliable internet connection or low bandwidth.
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 11/12/2024
 ms.service: sql-server-management-studio
 ms.topic: concept-article
+ms.collection:
+  - data-tools
 ---
 # Create an offline installation of SQL Server Management Studio 21 Preview
 

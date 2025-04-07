@@ -1,5 +1,5 @@
 ---
-title: System requirements for SQL Server Management Studio 21 Preview
+title: System Requirements for SQL Server Management Studio 21 Preview
 description: Learn about the system requirements for SQL Server Management Studio (SSMS) on Windows.
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 11/12/2024
 ms.service: sql-server-management-studio
 ms.topic: concept-article
+ms.collection:
+  - data-tools
 keywords:
   - "requirements ssms, system requirements ssms"
   - "SQL Server Management Studio requirements"

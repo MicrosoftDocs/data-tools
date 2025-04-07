@@ -1,11 +1,13 @@
 ---
-title: Change a Server's Registration
+title: "Change a Server's Registration"
 description: "Change a Server's Registration (SQL Server Management Studio)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 
 # Change a Server's Registration (SQL Server Management Studio)

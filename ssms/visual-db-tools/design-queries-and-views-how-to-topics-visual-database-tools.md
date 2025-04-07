@@ -1,11 +1,13 @@
 ---
-title: Design Queries and Views How-to Topics
+title: Design Queries and Views How-To Topics
 description: "Design Queries and Views How-to Topics (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "vs.solutionexplorer.file.query"
 helpviewer_keywords:

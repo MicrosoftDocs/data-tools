@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 10/06/2020
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "ActiveX scripting jobs [SQL Server]"
   - "job steps [Analysis Services]"

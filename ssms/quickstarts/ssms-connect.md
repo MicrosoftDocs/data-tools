@@ -7,6 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 02/29/2024
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 ---
 # Connect with SQL Server Management Studio
 

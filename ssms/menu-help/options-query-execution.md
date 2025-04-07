@@ -1,5 +1,5 @@
 ---
-title: SSMS Options page - Query Execution
+title: SSMS Options Page - Query Execution
 description: SSMS Options (Query Execution)
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: maghan
 ms.date: 01/26/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "VS.ToolsOptionsPages.Query_Execution.Sql_Server.General"
 dev_langs:

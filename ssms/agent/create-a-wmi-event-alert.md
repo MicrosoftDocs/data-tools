@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 09/20/2022
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "WMI event alerts [SQL Server Management Studio]"
 ---

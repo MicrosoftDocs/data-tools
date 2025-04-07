@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 ---
 # Change Steps of a SQL Server Agent Master Job
 [!INCLUDE [SQL Server SQL MI](../includes/applies-to-version/sql-asdbmi.md)]

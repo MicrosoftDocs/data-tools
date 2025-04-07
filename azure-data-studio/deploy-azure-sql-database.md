@@ -1,5 +1,5 @@
 ---
-title: Deploy Azure SQL Database Via Notebook
+title: Deploy Azure SQL Database via Notebook
 description: This tutorial shows how you can create an Azure SQL Database.
 author: croblesm
 ms.author: roblescarlos
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: tutorial
+ms.collection:
+  - data-tools
 ms.custom:
   - intro-deployment
   - updatefrequency5

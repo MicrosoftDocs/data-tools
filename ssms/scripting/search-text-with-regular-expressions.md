@@ -1,5 +1,5 @@
 ---
-title: "Search text with regular expressions"
+title: "Search Text with Regular Expressions"
 description: "Learn how to use regular expressions in the Find what field of a Find and Replace dialog box to specify a pattern to be matched."
 author: rwestMSFT
 ms.author: randolphwest
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 07/11/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 f1_keywords:
   - "vswildcardsbuilder"
   - "vsregexbuilder"

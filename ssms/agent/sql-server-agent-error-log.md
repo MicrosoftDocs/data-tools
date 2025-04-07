@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "logs [SQL Server], SQL Server Agent"
   - "messages [SQL Server], SQL Server Agent"

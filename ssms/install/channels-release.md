@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 11/12/2024
 ms.service: sql-server-management-studio
 ms.topic: concept-article
+ms.collection:
+  - data-tools
 ---
 # Channels for SQL Server Management Studio 21 Preview
 

@@ -7,6 +7,8 @@ ms.reviewer: maghan
 ms.date: 12/21/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "hosting Web browsers"
   - "Web browsers [SQL Server Management Studio]"

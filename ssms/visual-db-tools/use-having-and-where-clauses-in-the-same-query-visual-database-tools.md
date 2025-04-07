@@ -1,5 +1,5 @@
 ---
-title: Use HAVING and WHERE clauses in the same query
+title: Use HAVING and WHERE Clauses in the Same Query
 description: "Use HAVING and WHERE clauses in the same query (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 10/16/2023
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "search criteria [SQL Server], excluding rows"
   - "search criteria [SQL Server], WHERE clause"

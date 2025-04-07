@@ -1,11 +1,13 @@
 ---
-title: Make a master server
+title: Make a Master Server
 description: Make a Master Server
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 05/14/2021
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.ag.msxwiz.operator.f1"
   - "sql13.ag.msxwiz.login.f1"

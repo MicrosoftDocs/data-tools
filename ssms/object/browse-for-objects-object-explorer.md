@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "01/19/2017"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.swb.common.matchingobjects.f1"
   - "sql13.swb.common.browseobjects.f1"

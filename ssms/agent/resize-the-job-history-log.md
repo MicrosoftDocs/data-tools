@@ -6,8 +6,11 @@ ms.author: randolphwest
 ms.reviewer: randolphwest
 ms.date: 05/09/2022
 ms.service: sql-server-management-studio
-ms.custom: linux-related-content
 ms.topic: how-to
+ms.collection:
+  - data-tools
+ms.custom:
+  - linux-related-content
 helpviewer_keywords:
   - "jobs [SQL Server Agent], history"
   - "resizing job history log"

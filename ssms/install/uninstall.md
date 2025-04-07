@@ -1,5 +1,5 @@
 ---
-title: Uninstall or remove SQL Server Management Studio 21 Preview
+title: Uninstall or Remove SQL Server Management Studio 21 Preview
 description: Learn how to repair an installation of SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 11/12/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 ---
 # Uninstall or remove SQL Server Management Studio 21 Preview
 

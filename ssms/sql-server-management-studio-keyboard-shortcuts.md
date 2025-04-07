@@ -1,11 +1,13 @@
 ---
-title: SQL Server Management Studio keyboard shortcuts
+title: SQL Server Management Studio Keyboard Shortcuts
 description: SQL Server Management Studio keyboard shortcuts
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 09/19/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "VS.ToolsOptionsPages.Environment.Keyboard"
   - "VS.ToolsOptionsPages.Environment.Keyboard.Query_Shortcuts"

@@ -1,5 +1,5 @@
 ---
-title: Create a multiserver environment
+title: Create a Multiserver Environment
 description: Multiserver administration requires that you set up a master server (MSX) and one or more target servers (TSX).
 author: rwestMSFT
 ms.author: randolphwest
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 10/03/2023
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Agent, multiserver environments"
   - "master servers [SQL Server], about master servers"

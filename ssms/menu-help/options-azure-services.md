@@ -1,5 +1,5 @@
 ---
-title: SQL Server Options page - Azure Services
+title: SQL Server Options Page - Azure Services
 description: "Options (Azure Services)"
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: maghan
 ms.date: 08/14/2024
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "VS.ToolsOptionsPages.Azure_Services.Azure_Cloud"
 dev_langs:

@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 03/11/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
+ms.collection:
+  - data-tools
 ---
 
 # Known issues in SQL Server Management Studio 21 Preview

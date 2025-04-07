@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "09/24/2018"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "diagrams [SQL Server], creating"
   - "database diagrams [SQL Server], creating"

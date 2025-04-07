@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 09/12/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 
 # Local audit for SSMS usage and diagnostic data collection

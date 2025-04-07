@@ -1,11 +1,13 @@
 ---
-title: Configure Error Logs (General Page)
+title: "Configure Error Logs (General Page)"
 description: "Configure SQL Server Agent Error Logs (General Page)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.ag.errorlog.configure.f1"
 ---
