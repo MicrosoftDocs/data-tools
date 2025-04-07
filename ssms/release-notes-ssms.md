@@ -1,10 +1,10 @@
 ---
-title: "Release Notes For (SSMS)"
+title: "Release Notes For SQL Server Management Studio (SSMS)"
 description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
-ms.date: 02/11/2025
+ms.reviewer: maghan, randolphwest, mbarickman
+ms.date: 04/08/2025
 ms.service: sql-server-management-studio
 ms.topic: conceptual
 ms.collection:
@@ -21,9 +21,71 @@ This article details updates, improvements, and bug fixes for the current and pr
 
 ## Current SSMS release
 
-:::image type="icon" source="includes/media/download.svg" border="false"::: **[Download SQL Server Management Studio (SSMS) 20.2](https://aka.ms/ssmsfullsetup)**
+:::image type="icon" source="includes/media/download.svg" border="false"::: **[Download SQL Server Management Studio (SSMS) 20.2.1](https://aka.ms/ssmsfullsetup)**
 
-SSMS 20.2 is the latest general availability (GA) release of SSMS. If you need a previous version of SSMS, see [previous SSMS releases](release-notes-ssms.md#previous-ssms-releases).
+SSMS 20.2.1 is the latest general availability (GA) release of SSMS. If you need a previous version of SSMS, see [previous SSMS releases](release-notes-ssms.md#previous-ssms-releases).
+
+### 20.2.1
+
+:::image type="icon" source="includes/media/download.svg" border="false"::: **[Download SSMS 20.2.1](https://go.microsoft.com/fwlink/?linkid=2313753)**
+
+- Release number: 20.2.1
+- Build number: 20.2.37.0
+- Release date: April 8, 2025
+
+Available languages:
+
+- [Chinese (Simplified)](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x804)
+- [Chinese (Traditional)](https://go.microsoft.com/fwlink/?linkid=2278035&clcid=0x404)
+- [English (United States)](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x409)
+- [French](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x40c)
+- [German](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x407)
+- [Italian](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x410)
+- [Japanese](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x411)
+- [Korean](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x412)
+- [Portuguese (Brazil)](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x416)
+- [Russian](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x419)
+- [Spanish](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x40a)
+
+#### Security advisories 20.2.1
+
+| Feature | Details |
+| --- | --- |
+| [CVE-2025-29803](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29803) | This security update addresses an Elevation of Privilege vulnerability in the Visual Studio Tools for Applications 2022 Installer. |
+
+#### Known issues 20.2.1
+
+| Feature | Details | Workaround |
+| --- | --- | --- |
+| Analysis Services | When you connect to Analysis Services with Microsoft Entra MFA, if you add a new role or open properties for a role, the message "the identity of the user being added to the role is not fetched properly" appears. | This error is benign and can be ignored. The error is addressed within the Azure infrastructure, and no updates to SSMS are required. |
+| Analysis Services | After adding a new role, or when opening properties for an existing role, you can't use **Search by name or email address** to add a user. | A user can be added with the **Manual Entry** option. |
+| Database Designer | Selecting the Design option for a view referencing a table using spatial data causes SSMS to crash. | Use T-SQL to make changes to the view. |
+| Database Mirroring | If you launch the Database Mirroring Monitor from the mirrored node, the primary node isn't listed. | Register the mirrored node from Database Mirroring Monitoring, or use SSMS 18.12.1 to monitor from the mirrored node. |
+| General SSMS | Import settings from SSMS 17 option not available. | Settings can be imported from SSMS 18. |
+| Linked servers | Creating a linked server to Azure SQL Database with [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] selected as Server type connects to the `master` database. | To create a linked server to Azure SQL Database, select **Other data source** for the **Server type**, and select **Microsoft OLE DB Provider for SQL Server** or **Microsoft OLE DB Driver for SQL Server** as the **Provider**. Enter the logical server name in the Data source field and the database name in the Catalog field. |
+| Maintenance Plan | Selecting "Contents" after adding a backup file within the Destination pane of the Backup Database Task, causes the dialog to disappear. | Use SSMS 20.1 or SSMS 19.3 to access the Contents dialog. |
+| PolyBase | PolyBase node isn't visible in Object Explorer when you connect to [!INCLUDE [sssql22-md](includes/sssql22-md.md)]. | Use SSMS 18.12.1. |
+| Profiler | The Profiler menu isn't localized. | No current alternative. |
+| Replication | If Azure SQL Managed Instance is the publisher and SSMS is running on a machine that isn't in the same virtual network as the publisher, you aren't able to insert a tracer token via Replication Monitor. | To insert tracer tokens, use Replication Monitor in SSMS on a machine that is in the same virtual network as the Azure SQL Managed Instance publisher. |
+| Stretch Database | Removed Stretch Database Wizard. | Use T-SQL to configure Stretch Database or use SSMS 18.9.1 or earlier to use the Stretch Database Wizard. |
+
+See [Known issues using Strict Encryption in 20.0](#known-issues-using-strict-encryption-in-200) for known issues using SSMS 20.x and Strict Encryption.
+
+You can reference the [SSMS Developer Community](https://aka.ms/ssms-feedback) site for other known issues and to provide feedback to the product team.
+
+## Previous SSMS releases
+
+Download previous SSMS versions by selecting the download link in the related section.
+
+| SSMS version | Build number | Release date |
+| --- | --- | --- |
+| [20.2](#202) | 20.2.30.0 | July 9, 2024 |
+| [20.1](#201) | 20.1.10.0 | April 9, 2024 |
+| [20.0](#200) | 20.0.70.0 | March 19, 2024 |
+| [19.3](#193) | 19.3.4.0 | January 10, 2024 |
+| [18.12.1](#18121) | 15.0.18420.0 | June 21, 2022 |
+| [17.9.1](#1791) | 14.0.17289.0 | November 21, 2018 |
+| [16.5.3](#1653) | 13.0.16106.4 | January 30, 2017 |
 
 ### 20.2
 
@@ -90,7 +152,7 @@ Available languages:
 
 | Feature | Details | Workaround |
 | --- | --- | --- |
-| Analysis Services | When you connect to Analysis Services with Microsoft Entra MFA, if you add a new role or open properties for a role, the message "the identity of the user being added to the role isn't fetched properly" appears. | This error is benign and can be ignored. The error is addressed within the Azure infrastructure, and no updates to SSMS are required. |
+| Analysis Services | When you connect to Analysis Services with Microsoft Entra MFA, if you add a new role or open properties for a role, the message "the identity of the user being added to the role is not fetched properly" appears. | This error is benign and can be ignored. The error is addressed within the Azure infrastructure, and no updates to SSMS are required. |
 | Analysis Services | After adding a new role, or when opening properties for an existing role, you can't use **Search by name or email address** to add a user. | A user can be added with the **Manual Entry** option. |
 | Database Designer | Selecting the Design option for a view referencing a table using spatial data causes SSMS to crash. | Use T-SQL to make changes to the view. |
 | Database Mirroring | If you launch the Database Mirroring Monitor from the mirrored node, the primary node isn't listed. | Register the mirrored node from Database Mirroring Monitoring, or use SSMS 18.12.1 to monitor from the mirrored node. |
@@ -105,19 +167,6 @@ Available languages:
 See [Known issues using Strict Encryption in 20.0](#known-issues-using-strict-encryption-in-200) for known issues using SSMS 20.x and Strict Encryption.
 
 You can reference the [SSMS Developer Community](https://aka.ms/ssms-feedback) site for other known issues and to provide feedback to the product team.
-
-## Previous SSMS releases
-
-Download previous SSMS versions by selecting the download link in the related section.
-
-| SSMS version | Build number | Release date |
-| --- | --- | --- |
-| [20.1](#201) | 20.1.10.0 | April 9, 2024 |
-| [20.0](#200) | 20.0.70.0 | March 19, 2024 |
-| [19.3](#193) | 19.3.4.0 | January 10, 2024 |
-| [18.12.1](#18121) | 15.0.18420.0 | June 21, 2022 |
-| [17.9.1](#1791) | 14.0.17289.0 | November 21, 2018 |
-| [16.5.3](#1653) | 13.0.16106.4 | January 30, 2017 |
 
 ### 20.1
 
@@ -163,7 +212,7 @@ Available languages:
 
 | Feature | Details | Workaround |
 | --- | --- | --- |
-| Analysis Services | When you connect to Analysis Services with Microsoft Entra MFA, if you add a new role or open properties for a role, the message "the identity of the user being added to the role isn't fetched properly" appears. | This error is benign and can be ignored. The error is addressed within the Azure infrastructure, and no updates to SSMS are required. |
+| Analysis Services | When you connect to Analysis Services with Microsoft Entra MFA, if you add a new role or open properties for a role, the message "the identity of the user being added to the role is not fetched properly" appears. | This error is benign and can be ignored. The error is addressed within the Azure infrastructure, and no updates to SSMS are required. |
 | Analysis Services | After adding a new role, or when opening properties for an existing role, you can't use **Search by name or email address** to add a user. | A user can be added with the **Manual Entry** option. |
 | Database Designer | Selecting the Design option for a view referencing a table using spatial data causes SSMS to crash. | Use T-SQL to make changes to the view. |
 | Database Mirroring | If you launch the Database Mirroring Monitor from the mirrored node, the primary node isn't listed. | Register the mirrored node from Database Mirroring Monitoring, or use SSMS 18.12.1 to monitor from the mirrored node. |
@@ -227,7 +276,7 @@ Available languages:
 
 | Feature | Details | Workaround |
 | --- | --- | --- |
-| Analysis Services | When you connect to Analysis Services with Microsoft Entra MFA, if you add a new role or open properties for a role, the message "the identity of the user being added to the role isn't fetched properly" appears. | This error is benign and can be ignored. The error is addressed within the Azure infrastructure, and no updates to SSMS are required. |
+| Analysis Services | When you connect to Analysis Services with Microsoft Entra MFA, if you add a new role or open properties for a role, the message "the identity of the user being added to the role is not fetched properly" appears. | This error is benign and can be ignored. The error is addressed within the Azure infrastructure, and no updates to SSMS are required. |
 | Analysis Services | After adding a new role, or when opening properties for an existing role, you can't use **Search by name or email address** to add a user. | A user can be added with the **Manual Entry** option. |
 | Database Designer | Selecting the Design option for a view referencing a table using spatial data causes SSMS to crash. | Use T-SQL to make changes to the view. |
 | Database Mirroring | If you launch the Database Mirroring Monitor from the mirrored node, the primary node isn't listed. | Register the mirrored node from Database Mirroring Monitoring, or use SSMS 18.12.1 to monitor from the mirrored node. |
