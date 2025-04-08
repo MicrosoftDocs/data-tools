@@ -36,7 +36,7 @@ SSMS 20.2.1 is the latest general availability (GA) release of SSMS. If you need
 Available languages:
 
 - [Chinese (Simplified)](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x804)
-- [Chinese (Traditional)](https://go.microsoft.com/fwlink/?linkid=2278035&clcid=0x404)
+- [Chinese (Traditional)](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x404)
 - [English (United States)](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x409)
 - [French](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x40c)
 - [German](https://go.microsoft.com/fwlink/?linkid=2313753&clcid=0x407)
