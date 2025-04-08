@@ -1,11 +1,13 @@
 ---
-title: New Operator (Notifications Page)
+title: "New Operator (Notifications Page)"
 description: "Operator Properties - New Operator (Notifications Page)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.ag.operator.notifications.f1"
 ---

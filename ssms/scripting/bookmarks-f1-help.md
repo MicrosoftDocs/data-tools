@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "03/01/2017"
 ms.service: sql-server-management-studio
 ms.topic: "reference"
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Management Studio [SQL Server], Help"
   - "bookmarks [SQL Server Management Studio]"

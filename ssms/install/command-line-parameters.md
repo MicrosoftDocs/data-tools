@@ -1,5 +1,5 @@
 ---
-title: Use command-line parameters to install SQL Server Management Studio 21 Preview
+title: Use Command-Line Parameters to Install SQL Server Management Studio 21 Preview
 description: Use command-line parameters to install SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 11/12/2024
 ms.service: sql-server-management-studio
 ms.topic: concept-article
+ms.collection:
+  - data-tools
 ---
 # Use command-line parameters to install SQL Server Management Studio 21 Preview
 

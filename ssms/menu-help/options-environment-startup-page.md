@@ -1,11 +1,13 @@
 ---
-title: " SQL Server Options page - Environment - Startup"
+title: "SQL Server Options Page - Environment - Startup"
 description: "Options (Environment - Startup page)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 11/05/2018
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 ---
 
 # Options (Environment - Startup page)

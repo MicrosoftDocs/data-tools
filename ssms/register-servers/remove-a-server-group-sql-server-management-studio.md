@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 03/07/2017
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "removing server groups"
   - "Registered Servers [SQL Server], server groups"

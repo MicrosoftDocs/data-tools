@@ -7,6 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 07/12/2024
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.swb.aboutsqlserverworkbench.f1"
 helpviewer_keywords:

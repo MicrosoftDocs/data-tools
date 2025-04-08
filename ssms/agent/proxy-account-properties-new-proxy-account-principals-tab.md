@@ -1,11 +1,13 @@
 ---
-title: New Proxy Account (Principals Tab)
+title: "New Proxy Account (Principals Tab)"
 description: "Proxy Account Properties - New Proxy Account (Principals Tab)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.ag.proxy.permissions.f1"
 ---

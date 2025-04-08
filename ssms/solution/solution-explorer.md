@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 08/01/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Management Studio [SQL Server], solutions"
   - "projects [SQL Server Management Studio], about projects"

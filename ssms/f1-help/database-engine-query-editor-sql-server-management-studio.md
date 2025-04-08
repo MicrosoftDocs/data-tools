@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 11/16/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.swb.query.advanced.f1"
   - "sql13.swb.query.ansi.f1"

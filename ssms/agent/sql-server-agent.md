@@ -7,6 +7,8 @@ ms.reviewer: mathoma
 ms.date: 09/27/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Agent, about SQL Server Agent"
   - "automatic administration steps"

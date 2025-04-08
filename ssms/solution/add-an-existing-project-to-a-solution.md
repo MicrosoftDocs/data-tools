@@ -7,6 +7,8 @@ ms.reviewer: maghan
 ms.date: 02/19/2025
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "vs.addexistingproject"
 helpviewer_keywords:

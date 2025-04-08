@@ -1,5 +1,5 @@
 ---
-title: Workload and component IDs for SQL Server Management Studio 21 Preview
+title: Workload and Component IDs for SQL Server Management Studio 21 Preview
 description: List the workload and component IDs that can be used when creating an offline installation of SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 11/12/2024
 ms.service: sql-server-management-studio
 ms.topic: concept-article
+ms.collection:
+  - data-tools
 ---
 # Workload and component IDs for SQL Server Management Studio 21 Preview
 

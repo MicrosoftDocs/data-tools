@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Agent alerts, event types"
   - "SQL Server Agent alerts, names"

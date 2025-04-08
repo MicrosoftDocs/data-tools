@@ -3,10 +3,12 @@ title: "Modify a Job"
 description: "Modify a Job"
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: "mikeray"
+ms.reviewer: mikeray
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "jobs [SQL Server Agent], modifying"
   - "modifying jobs"

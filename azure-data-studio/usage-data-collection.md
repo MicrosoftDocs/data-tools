@@ -7,6 +7,8 @@ ms.reviewer: wopeter
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 ---
 
 # Enable or disable usage data collection for Azure Data Studio

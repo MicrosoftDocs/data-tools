@@ -1,5 +1,5 @@
 ---
-title: Advanced troubleshooting for SSMS
+title: Advanced Troubleshooting for SSMS
 description: "Get diagnostic data after a SQL Server Management Studio (SSMS) crash"
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 05/10/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 
 # Advanced troubleshooting for SQL Server Management Studio (SSMS)

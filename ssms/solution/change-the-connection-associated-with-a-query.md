@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "01/19/2017"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "connections [SQL Server Management Studio], query associations"
   - "projects [SQL Server Management Studio], connections"

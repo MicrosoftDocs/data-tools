@@ -1,5 +1,5 @@
 ---
-title: Manage Packages With Machine Learning Extension
+title: Manage Packages with Machine Learning Extension
 description: Learn how to manage Python or R packages in your database with the [Machine Learning extension for Azure Data Studio.
 author: croblesm
 ms.author: roblescarlos
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 
 # Manage packages in database with Machine Learning extension for Azure Data Studio (Preview)

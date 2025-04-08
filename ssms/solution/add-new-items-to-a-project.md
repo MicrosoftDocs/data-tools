@@ -1,11 +1,13 @@
 ---
 title: "Add New Items to a Project"
-description: "Add New Items to a Project" 
+description: "Add New Items to a Project"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: "01/19/2017"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "projects [SQL Server Management Studio], item additions"
   - "adding project items"

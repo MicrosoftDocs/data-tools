@@ -1,11 +1,13 @@
 ---
-title: "Identify issues with IntelliSense (SSMS)"
+title: "Identify Issues with IntelliSense (SSMS)"
 description: Learn about the cases where Intellisense in SQL Server Management Studio (SSMS) does not work as you might expect.
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: "03/14/2017"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "unavailable options [IntelliSense]"
   - "IntelliSense [SQL Server], troubleshooting"

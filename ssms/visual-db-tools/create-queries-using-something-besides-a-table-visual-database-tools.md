@@ -1,11 +1,13 @@
 ---
-title: Create Queries using Something Besides a Table
+title: Create Queries Using Something Besides a Table
 description: "Create Queries using Something Besides a Table (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "user-defined functions [SQL Server], queries"
   - "queries [SQL Server], creating"

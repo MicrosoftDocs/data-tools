@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "01/28/2019"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 ---
 # Connect to a SQL Server or Azure SQL Database
 

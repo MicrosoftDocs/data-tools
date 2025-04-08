@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 06/03/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "autohide [SQL Server Management Studio]"
   - "SQL Server Management Studio [SQL Server], tool windows"

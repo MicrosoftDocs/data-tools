@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "02/28/2017"
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "jobs [SQL Server Agent], modifying"
   - "jobs [SQL Server Agent], master jobs"

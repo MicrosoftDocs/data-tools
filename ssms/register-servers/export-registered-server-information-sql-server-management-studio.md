@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 01/22/2025
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.swb.exportregisteredservers.f1"
 helpviewer_keywords:

@@ -7,6 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 03/11/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
+ms.collection:
+  - data-tools
 ---
 
 # Release notes for SQL Server Management Studio 21 Preview

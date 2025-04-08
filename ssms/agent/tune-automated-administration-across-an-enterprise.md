@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 12/05/2023
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "performance [SQL Server], automated administration"
   - "tuning automated administration [SQL Server]"

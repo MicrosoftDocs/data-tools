@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 07/11/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "moving registered server or server group"
   - "Registered Servers [SQL Server], server groups"

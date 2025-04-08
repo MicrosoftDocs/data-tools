@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 09/27/2023
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.swb.registerserver.general.sqlce.f1"
   - "sql13.swb.registerserver.general.sqlserver.f1"

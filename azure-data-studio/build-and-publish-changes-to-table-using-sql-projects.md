@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: tutorial
+ms.collection:
+  - data-tools
 ---
 
 # Building and Deploying Changes to tables using the SQL Database Projects extension

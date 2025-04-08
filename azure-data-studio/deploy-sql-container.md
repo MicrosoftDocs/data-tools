@@ -1,5 +1,5 @@
 ---
-title: Deploy SQL Server in a Container Via Notebook
+title: Deploy SQL Server in a Container via Notebook
 description: This tutorial shows how you can deploy SQL Server in a container.
 author: croblesm
 ms.author: roblescarlos
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: tutorial
+ms.collection:
+  - data-tools
 ms.custom:
   - intro-deployment
 ---

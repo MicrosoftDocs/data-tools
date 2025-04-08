@@ -1,5 +1,5 @@
 ---
-title: Connect to Server (Always Encrypted page) - Database Engine
+title: "Connect to Server (Always Encrypted Page) - Database Engine"
 description: This article describes how to use the Connect to Server (Always Encrypted page) Database Engine.
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 11/22/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.swb.connecttosqlserver.alwaysencrypted.f1"
 ---
@@ -45,7 +47,7 @@ Select the attestation protocol to use when you connect to a database configured
 - If the client app uses attestation, and, if so,
 - It specifies the type of the attestation service it uses.
 
-Available options are **None**, **Host Guardian Service**, and **Microsoft Azure Attestation**. For more information, see [Always Encrypted with secure enclaves](/sql/relational-databases/security/encryption/always-encrypted-enclavessecure-enclave-attestation).
+Available options are **None**, **Host Guardian Service**, and **Microsoft Azure Attestation**. For more information, see [Always Encrypted with secure enclaves](/sql/relational-databases/security/encryption/always-encrypted-enclaves#secure-enclave-attestation).
 
 #### URL
 

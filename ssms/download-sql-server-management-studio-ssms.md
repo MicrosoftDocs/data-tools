@@ -1,5 +1,5 @@
 ---
-title: Download SQL Server Management Studio (SSMS)
+title: "Download SQL Server Management Studio (SSMS)"
 description: Download the latest version of SQL Server Management Studio (SSMS) for managing and configuring instances of SQL Server and Azure SQL.
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,6 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 02/11/2025
 ms.service: sql-server-management-studio
 ms.topic: overview
+ms.collection:
+  - data-tools
 keywords:
   - "install ssms, download ssms, latest ssms"
   - "SQL Server Management Studio"

@@ -7,6 +7,8 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
 ms.topic: tutorial
+ms.collection:
+  - data-tools
 # CustomerIntent: As a <type of user>, I want <what?> so that <why?>.
 ---
 

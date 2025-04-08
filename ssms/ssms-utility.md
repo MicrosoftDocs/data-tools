@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 07/24/2020
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Management Studio [SQL Server], opening"
   - "command prompt utilities [SQL Server], sqlwb"

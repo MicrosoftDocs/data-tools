@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 12/11/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.ag.alert.options.f1"
 ---

@@ -7,6 +7,8 @@ ms.reviewer: maghan, randolphwest
 ms.date: 11/12/2024
 ms.service: sql-server-management-studio
 ms.topic: concept-article
+ms.collection:
+  - data-tools
 ---
 # SQL Server Management Studio 21 Preview product roadmap
 

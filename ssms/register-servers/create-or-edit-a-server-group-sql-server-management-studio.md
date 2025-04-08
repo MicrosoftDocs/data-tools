@@ -3,10 +3,12 @@ title: Create or Edit a Server Group
 description: "Create or Edit a Server Group (SQL Server Management Studio)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: "mikeray"
+ms.reviewer: mikeray
 ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.swb.editgroup.f1"
   - "sql13.swb.newgroup.f1"

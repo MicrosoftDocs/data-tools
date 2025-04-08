@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 08/01/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "jobs [SQL Server Agent], starting"
   - "SQL Server Agent jobs, starting"

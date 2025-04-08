@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 ---
 # Remove Steps from a SQL Server Agent Master Job
 [!INCLUDE [SQL Server](../includes/applies-to-version/sqlserver.md)]

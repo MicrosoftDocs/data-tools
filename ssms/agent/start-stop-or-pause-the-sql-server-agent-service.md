@@ -1,5 +1,5 @@
 ---
-title: Start, stop, or pause the SQL Server Agent service
+title: Start, Stop, or Pause the SQL Server Agent Service
 description: Start, stop, or pause the SQL Server Agent service.
 author: rwestMSFT
 ms.author: randolphwest
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 07/26/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "SQL Server Agent, starting"
   - "SQL Server Agent, pausing"

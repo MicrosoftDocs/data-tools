@@ -6,6 +6,8 @@ ms.author: randolphwest
 ms.date: "03/16/2017"
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "Transact-SQL IntelliSense"
   - "IntelliSense [SQL Server], Transact-SQL syntax"

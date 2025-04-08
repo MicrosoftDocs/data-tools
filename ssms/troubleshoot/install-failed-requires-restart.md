@@ -1,5 +1,5 @@
 ---
-title: SSMS setup failed or requires restart
+title: SSMS Setup Failed or Requires Restart
 description: "Troubleshooting SSMS installation problems"
 author: erinstellato-ms
 ms.author: erinstellato
@@ -7,7 +7,10 @@ ms.reviewer: maghan, randolphwest
 ms.date: 05/10/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
-ms.custom: intro-installation
+ms.collection:
+  - data-tools
+ms.custom:
+  - intro-installation
 ---
 
 

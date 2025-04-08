@@ -1,5 +1,5 @@
 ---
-title: Configure login auditing
+title: Configure Login Auditing
 description: Configure login auditing for SQL Server on Windows, using SSMS.
 author: rwestMSFT
 ms.author: randolphwest
@@ -7,6 +7,8 @@ ms.reviewer: randolphwest
 ms.date: 07/12/2024
 ms.service: sql-server-management-studio
 ms.topic: conceptual
+ms.collection:
+  - data-tools
 helpviewer_keywords:
   - "auditing [SQL Server]"
   - "audits [SQL Server], logins"
