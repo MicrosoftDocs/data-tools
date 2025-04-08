@@ -3,8 +3,8 @@ title: "Download SQL Server Management Studio (SSMS)"
 description: Download the latest version of SQL Server Management Studio (SSMS) for managing and configuring instances of SQL Server and Azure SQL.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
-ms.date: 02/11/2025
+ms.reviewer: maghan, randolphwest, mbarickman
+ms.date: 04/08/2025
 ms.service: sql-server-management-studio
 ms.topic: overview
 ms.collection:
@@ -34,25 +34,25 @@ Use SSMS to query, design, and manage your databases and data warehouses, wherev
 
 For customers needing a cross-platform companion to SSMS for managing SQL and other Azure databases, use [Azure Data Studio](/azure-data-studio/download-azure-data-studio).
 
-For details and more information about what's new in this release, see [Release notes for SQL Server Management Studio (SSMS) 20.2](release-notes-ssms.md).
+For details and more information about what's new in this release, see [Release notes for SQL Server Management Studio (SSMS) 20.2.1](release-notes-ssms.md).
 
 For details and download information for SQL Server Management Studio 21 Preview 1, see [Install SQL Server Management Studio 21 Preview](install/install.md)
 
 ## Download SSMS
 
-:::image type="icon" source="includes/media/download.svg" border="false"::: **[Download SQL Server Management Studio (SSMS) 20.2](https://aka.ms/ssmsfullsetup)**
+:::image type="icon" source="includes/media/download.svg" border="false"::: **[Download SQL Server Management Studio (SSMS) 20.2.1](https://aka.ms/ssmsfullsetup)**
 
-SSMS 20.2 is the latest generally available (GA) version. If you have a *preview* version of SSMS 20 installed, uninstall it before installing SSMS 20.2. Installing SSMS 20.2 doesn't upgrade or replace SSMS 19.x and earlier versions.
+SSMS 20.2.1 is the latest generally available (GA) version. If you have a *preview* version of SSMS 20 installed, uninstall it before installing SSMS 20.2.1. Installing SSMS 20.2.1 doesn't upgrade or replace SSMS 19.x and earlier versions.
 
-- Release number: 20.2
-- Build number: 20.2.30.0
-- Release date: July 9, 2024
+- Release number: 20.2.1
+- Build number: 20.2.37.0
+- Release date: April 8, 2025
 
 By using SQL Server Management Studio, you agree to its [license terms](/Legal/sql/sql-server-management-studio-license-terms) and [privacy statement](https://privacy.microsoft.com/privacystatement). If you have comments or suggestions or want to report issues, the best way to contact the SSMS team is at the [SSMS Developer Community](https://aka.ms/ssms-feedback) site.
 
 The SSMS 20.x installation doesn't upgrade or replace SSMS 19.x and earlier versions. SSMS 20.x installs alongside previous versions, so both versions are available. However, if you have an earlier *preview* version of SSMS 20 installed, you must uninstall it before installing the latest release of SSMS 20. You can see if you have a preview version by going to the **Help > About** window.
 
-If a computer contains side-by-side installations of SSMS, verify you start the correct version for your specific needs. The latest version is labeled **Microsoft SQL Server Management Studio v20.2**.
+If a computer contains side-by-side installations of SSMS, verify you start the correct version for your specific needs. The latest version is labeled **Microsoft SQL Server Management Studio v20.2.1**.
 
 [!INCLUDE [ssms-ads-install](includes/ssms-azure-data-studio-install.md)]
 
@@ -60,7 +60,7 @@ If a computer contains side-by-side installations of SSMS, verify you start the 
 
 This release of SSMS can be installed in the following languages:
 
-SQL Server Management Studio 20.2:
+SQL Server Management Studio 20.2.1:
 
 - [Chinese (Simplified)](https://aka.ms/ssmsfullsetup?clcid=0x804)
 - [Chinese (Traditional)](https://aka.ms/ssmsfullsetup?clcid=0x404)
