@@ -92,6 +92,9 @@ Install the Azure Cosmos DB for MongoDB migration extension in Azure Data Studio
 
 1. Select **Install**.
 
+> [!IMPORTANT]
+> The extension saves files locally, which could be vulnerable to compromise by a malicious actor with adequate access to the machine. This could lead to crashes, execution of requests within the user's security context, and other potential issues. It is advised to install the software on machines that are hardened and managed by your organization, adhering to the latest best practices.
+
 ## Configure extension settings
 
 You can configure some extension settings after installing the extension. This step is optional. If no settings are explicitly configured, the extension uses default settings.
