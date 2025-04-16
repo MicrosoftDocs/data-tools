@@ -25,7 +25,7 @@ This article details updates, improvements, and bug fixes for the current and pr
 
 [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is the latest preview release of SSMS. If you need a previous version of SSMS, see [previous SSMS releases](../release-notes-ssms.md#previous-ssms-releases).
 
-<a id="21.0.0-pre6.0"></a>
+<a id="21.0.0-pre.6.0"></a>
 
 ### 21.0 Preview 6
 
