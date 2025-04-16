@@ -4,7 +4,7 @@ description: Learn about the system requirements for SQL Server Management Studi
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.date: 04/16/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -43,7 +43,7 @@ To download the latest version of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.
 
 The following operating systems aren't supported:
 
-- 32-bit and ARM32 operating systems.
+- 32-bit and Arm32 operating systems.
 - [Windows 11 Home in S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85#WindowsVersion=Windows_11), [Windows Enterprise IoT](/windows/iot/product-family/windows-iot), [Windows 10 IoT Core](/windows/iot-core/windows-iot), [Windows 10 Enterprise LTSC edition](/windows/deployment/update/waas-overview), [Windows 10 S](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85), and [Windows 10 Team Edition](/surface-hub).
 - Server IoT and Minimal Server Interface options for Windows Server.
 - Windows containers.
@@ -54,8 +54,8 @@ The following operating systems aren't supported:
 ### Hardware
 
 - x64 processor; Quad-core or better recommended.
-  - ARM64 processors aren't supported for SSMS 21 Preview 1
-  - ARM32 processors aren't supported.
+  - Arm64 processors aren't supported.
+  - Arm32 processors aren't supported.
 - Minimum of 4-GB of RAM. Many factors impact resources used; we recommend 16-GB RAM for typical professional solutions.
 - Hard disk space: Minimum of 4-GB up to 50-GB of available space, depending on features installed; typical installations require 20-50 GB of free space. We recommend installing Windows and SSMS on a solid-state drive (SSD) to increase performance.
 - Video card that supports a minimum display resolution of WXGA (1366 by 768); SSMS works best at a resolution of 1920 by 1080 or higher.

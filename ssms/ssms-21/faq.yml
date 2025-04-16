@@ -5,7 +5,7 @@ metadata:
   author: erinstellato-ms
   ms.author: erinstellato
   ms.reviewer: maghan, randolphwest
-  ms.date: 02/11/2025
+  ms.date: 04/16/2025
   ms.service: sql-server-management-studio
   ms.topic: faq
 title: SQL Server Management Studio 21 Preview FAQ
@@ -113,7 +113,7 @@ sections:
           - Make use of live query stats or client statistics.
          
       - question: "Who typically uses SSMS?"
-        answer: Database administrators (DBAs) typically use SSMS, but any data professional such as database administrator or system administrator can use SSMS.
+        answer: Database administrators (DBAs) typically use SSMS, but any data professional such as database developers, data engineers, or system administrators can use SSMS.
 
       - question: "Does SSMS 21 integrate with Azure Synapse Analytics?"
         answer: |

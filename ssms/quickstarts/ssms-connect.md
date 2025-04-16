@@ -4,7 +4,7 @@ description: Explains the connection parameters to connect to an instance of SQL
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 02/29/2024
+ms.date: 04/16/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -77,7 +77,7 @@ The following table describes the connection details.
 | **Password** | Enter the password for the user (if available). The password field is unavailable for specific **Authentication** types. |
 | ***Encryption** <sup>1</sup> | Select the encryption level for the connection. The default value is *Mandatory*. |
 | **Trust server certificate** | Check this option to bypass server certificate validation. The default value is *False* (unchecked), which promotes better security using trusted certificates. |
-| **Host name in the certificate** | The value provided in this option is used to specify a different, but expected, CN or SAN in the server certificate for the server to which SSMS is connecting. This option can be left blank, so that certificate validation ensures that the Common Name (CN) or Subject Alternate Name (SAN) in the certificate matches the server name to which you're connecting. This parameter can be populated when the server name doesn't match the CN or SAN, for example, when using DNS aliases. For more information, see [Encryption and certificate validation in Microsoft.Data.SqlClient](/sql/connect/ado-net/encryption-and-certificate-validation). |
+| **Host name in the certificate** | The value provided in this option is used to specify a different, but expected, CN or SAN in the server certificate for the server to which SSMS is connecting. This option can be left blank, so that certificate validation ensures that the Common Name (CN) or Subject Alternative Name (SAN) in the certificate matches the server name to which you're connecting. This parameter can be populated when the server name doesn't match the CN or SAN, for example, when using DNS aliases. For more information, see [Encryption and certificate validation in Microsoft.Data.SqlClient](/sql/connect/ado-net/encryption-and-certificate-validation). |
 
 <sup>1</sup> The value selected by the user represents the desired and minimal level of encryption. SSMS negotiates with the SQL engine (via the driver) to determine the encryption used, and the connection can be established with a different (yet more secure) level of encryption. For example, if you select *Optional* for the **Encryption** option, and the server has **Force Encryption** enabled and a trusted certificate, then the connection is encrypted.
 

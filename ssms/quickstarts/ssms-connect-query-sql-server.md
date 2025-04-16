@@ -3,14 +3,18 @@ title: Connect and Query SQL Server Using SSMS
 description: Connect to a SQL Server instance in SSMS. Create and query a SQL Server database in SSMS running basic Transact-SQL (T-SQL) queries.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: mikeray, randolphwest
-ms.date: 09/25/2024
+ms.reviewer: mikeray, randolphwest, mbarickman
+ms.date: 04/16/2025
 ms.service: sql-server-management-studio
 ms.topic: quickstart
 ms.collection:
   - data-tools
 ms.custom:
   - UpdateFrequency5
+f1_keywords:
+  - "sql13.swb.connection.modern.default.f1"
+  - "sql13.swb.connection.modern.advanced.f1"
+  - "VS.ToolsOptionsPages.Environment.Connection_Dialog"
 ---
 
 # Quickstart: Connect and query a SQL Server instance using SQL Server Management Studio (SSMS)
@@ -41,7 +45,7 @@ To learn more about SQL Server Management Studio, see [Tips and tricks for using
 
 To complete this quickstart, you need the following prerequisites:
 
-- Install [Download SQL Server Management Studio (SSMS)](../download-sql-server-management-studio-ssms.md).
+- Install [SQL Server Management Studio (SSMS)](../download-sql-server-management-studio-ssms.md).
 - [Install SQL Server from the Installation Wizard (Setup)](/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup) and configure a [SQL Server instance](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads).
 
 ## Connect to a SQL Server instance
@@ -50,15 +54,42 @@ To connect to your SQL Server instance, follow these steps:
 
 1. Start SQL Server Management Studio. The first time you run SSMS, the **Connect to Server** window opens. If it doesn't open, you can open it manually by selecting **Object Explorer** > **Connect** > **Database Engine**.
 
-    :::image type="content" source="media/ssms-connect-query-sql-server/connect-object-explorer.png" alt-text="Screenshot of the connect link in Object Explorer.":::
+   :::image type="content" source="media/ssms-connect-query-sql-server/connect-object-explorer.png" alt-text="Screenshot of the connect link in Object Explorer.":::
 
-1. The **Connect to Server** dialog box appears. Enter the following information:
+2. The **Connect to Server** dialog box appears. In SSMS 21 Preview, you can customize your connection dialog experience in **Tools > Options > Environment > Connection Dialog**. Use the Modern connection dialog for a modern format when connecting to the Database Engine. Use the Classic connection dialog experience when connecting to the Database Engine, and SQL Server Analysis Services (SSAS), SQL Server Reporting Services (SSRS), and SQL Server Integration Services (SSIS).
+
+   ### [Modern connection dialog](#tab/modern)
+
+   Modern connection dialog:
+
+   :::image type="content" source="media/ssms-connect-query-sql-server/ssms-21-modern-connection-dialog-preview.png" alt-text="Screenshot of modern connection dialog for SQL Server.":::
+
+   | Setting | Suggested values | Description |
+   | --- | --- | --- |
+   | **Server Name** | The fully qualified server name | For **Server name**, enter the name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you're NOT using the default instance - ***MSSQLSERVER*** - you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Additional tips and tricks for using SSMS](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
+   | **Authentication** | Windows Authentication<br /><br />SQL Server Authentication<br /><br />Microsoft Entra authentication | Windows Authentication is set as default.<br /><br />You can also use **SQL Server Authentication** to connect. However, if you select **SQL Server Authentication**, a username and password are required.<br /><br />**Microsoft Entra authentication** is available for [!INCLUDE [sssql22-md](../includes/sssql22-md.md)] and later versions. For step-by-step configuration instructions, see [Tutorial: Set up Microsoft Entra authentication for SQL Server](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-setup-tutorial)<br /><br />For more information about authentication types, see [Connect to the server (database engine)](../f1-help/connect-to-server-login-page-database-engine.md). |
+   | **User Name** | Server account user ID | The user ID from the server account used to sign in to the server. A login is required when using **SQL Server Authentication**. |
+   | **Password** | Server account password | The password from the server account used to sign in to the server. A password is required when using **SQL Server Authentication**. |
+   | **Database Name** (optional) | Name of the database | For **Database name**, enter the name of the database you want to connect to. The default value *\<default>* is typically set to `master`. |
+   | **Encrypt** <sup>1</sup> | Encryption method | Select the encryption level for the connection. The default value is *Mandatory*. |
+   | **Trust Server Certificate** | Trust Server Certificate | Check this option to bypass server certificate validation. The default value is *False* (unchecked), which promotes better security using trusted certificates. |
+   | **Color** (optional) | *\<default>* | Selecting a color changes the status bar color to help organize and identify your connections. The default value for **Color** is the default color for the status bar, but you can also choose from the following values: Red, Green, Blue, Yellow, and Orange. You can define a custom color using the **Custom...** button. |
+
+   <sup>1</sup> [!INCLUDE [ssms-encryption](../includes/ssms-encryption.md)]
+
+   You can modify extra connection options by selecting **Advanced...**. Examples of connection options include the connection timeout value, [application intent](/sql/database-engine/availability-groups/windows/listeners-client-connectivity-application-failover#ConnectToSecondary), and the [network protocol](/sql/sql-server/connect-to-database-engine#network-protocol-considerations). This article uses default values for these fields.
+
+   ### [Classic connection dialog](#tab/classic)
+
+   Classic connection dialog:
+
+   :::image type="content" source="media/ssms-connect-query-sql-server/connect-to-sql-server-object-explorer-ssms20.png" alt-text="Screenshot of classic connection dialog for SQL Server.":::
 
    | Setting | Suggested values | Description |
    | --- | --- | --- |
    | **Server type** | Database Engine | For **Server type**, select **Database Engine** (usually the default option). |
    | **Server name** | The fully qualified server name | For **Server name**, enter the name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you're NOT using the default instance - ***MSSQLSERVER*** - you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Additional tips and tricks for using SSMS](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
-   | **Authentication** | Windows Authentication<br /><br />SQL Server Authentication<br /><br />Microsoft Entra authentication | Windows Authentication is set as default.<br />You can also use **SQL Server Authentication** to connect. However, if you select **SQL Server Authentication**, a username and password are required.<br />**Microsoft Entra authentication** is available for [!INCLUDE [sssql22-md](../includes/sssql22-md.md)] and later versions. For step-by-step configuration instructions, see [Tutorial: Set up Microsoft Entra authentication for SQL Server](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-setup-tutorial)<br />For more information about authentication types, see [Connect to the server (database engine)](../f1-help/connect-to-server-login-page-database-engine.md). |
+   | **Authentication** | Windows Authentication<br /><br />SQL Server Authentication<br /><br />Microsoft Entra authentication | Windows Authentication is set as default.<br /><br />You can also use **SQL Server Authentication** to connect. However, if you select **SQL Server Authentication**, a username and password are required.<br /><br />**Microsoft Entra authentication** is available for [!INCLUDE [sssql22-md](../includes/sssql22-md.md)] and later versions. For step-by-step configuration instructions, see [Tutorial: Set up Microsoft Entra authentication for SQL Server](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-setup-tutorial)<br /><br />For more information about authentication types, see [Connect to the server (database engine)](../f1-help/connect-to-server-login-page-database-engine.md). |
    | **Login** | Server account user ID | The user ID from the server account used to sign in to the server. A login is required when using **SQL Server Authentication**. |
    | **Password** | Server account password | The password from the server account used to sign in to the server. A password is required when using **SQL Server Authentication**. |
    | **Encryption** <sup>1</sup> | Encryption method | Select the encryption level for the connection. The default value is *Mandatory*. |
@@ -67,19 +98,19 @@ To connect to your SQL Server instance, follow these steps:
 
    <sup>1</sup> [!INCLUDE [ssms-encryption](../includes/ssms-encryption.md)]
 
-   :::image type="content" source="media/ssms-connect-query-sql-server/connect-to-sql-server-object-explorer-ssms20.png" alt-text="Screenshot of connection dialog for SQL Server.":::
+   You can modify extra connection options by selecting **Options**. Examples of connection options include the connection timeout value, [application intent](/sql/database-engine/availability-groups/windows/listeners-client-connectivity-application-failover#ConnectToSecondary), and the [network protocol](/sql/sql-server/connect-to-database-engine#network-protocol-considerations). This article uses default values for these fields.
 
-1. After you complete all the fields, select **Connect**.
+   ---
 
-   You can also modify extra connection options by selecting **Options**. Examples of connection options are the database you're connecting to, the connection timeout value, and the network protocol. This article uses the default values for all the fields.
+3. After you complete all the fields, select **Connect**.
 
-1. To verify that your SQL Server connection succeeded, expand and explore the objects within **Object Explorer** where the server name, the SQL Server version, and the username are displayed. These objects are different depending on the server type.
+4. To verify that your SQL Server connection succeeded, expand and explore the objects within **Object Explorer** where the server name, the SQL Server version, and the username are displayed. These objects are different depending on the server type.
 
    :::image type="content" source="media/ssms-connect-query-sql-server/connect-on-prem.png" alt-text="Screenshot of connecting to an on-premises server.":::
 
 ## Create a database
 
-Now let's create a database named TutorialDB by following the below steps:
+Now let's create a database named `TutorialDB` by following the below steps:
 
 1. Right-click your server instance in Object Explorer, and then select **New Query**:
 
