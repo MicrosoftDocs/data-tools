@@ -8,7 +8,6 @@
         "title": "[BULK] - DocuTune remediation - Content SFI",
         "batchSize": 9,
         "maxBatches": 100,
-        "groupByFolder": "articles/*",
         "body": "Remediating articles to align with content SFI guidance related to sensitive terms with GUIDs, thumbprints, and secrets.",
         "newBranchNamePrefix": "",
         "headRemote": "origin",
