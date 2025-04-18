@@ -24,7 +24,7 @@ jobs:
               # For testing set to a little used folder as the only target
               BlockedFilesAndFolders: '[
                     "ssms/f1-help/connect-to-microsoft-azure-storage.md",
-                    "ssms/f1-help/connect-to-server-login-page-database-engine.md"
+                    "ssms/f1-help/connect-to-any-sql-server-component-from-sql-server-management-studio.md"
                 ]'
   
             run: |
