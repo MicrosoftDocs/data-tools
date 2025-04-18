@@ -366,7 +366,7 @@ jobs:
                     
                     ForEach ($BlockedFileOrFolder in $BlockedFilesAndFoldersList)
                     {
-                        $MatchedFiles = $PrFileList | Where-Object { $_.filename -like "*$BlockedFileOrFolder*" }
+                        $MatchedFiles = $PrFileList | Where-Object { $_ -like "*$BlockedFileOrFolder*" }
                         $BlockedFilesAndFoldersList += $MatchedFiles
                     }
                     
@@ -549,8 +549,6 @@ jobs:
 
                             $ActionableComment = $True
 
-                            Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
-
                             $Status.state = "success"
                             $Status.description = "Target branch not $DefaultBranch, so approving by default."
                         }
@@ -559,8 +557,6 @@ jobs:
                             Write-Host "Approving as no blocked files or folders found."
 
                             $ActionableComment = $True
-
-                            Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
 
                             $Status.state = "success"
                             $Status.description = "No blocked files or folders found. Allowing sign off." 
