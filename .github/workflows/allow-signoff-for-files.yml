@@ -101,6 +101,9 @@ jobs:
                 $ContentApprovedLabelColor = "2A8000"
                 $ContentApprovedLabelDescription = "Changes are permitted to the files in this PR."
                 $ContentApprovedLabel = "pr-files-approved"
+                $FilesBlockedForConfLabelColor = "eeee88"
+                $FilesBlockedForConfLabelDescription = "Files in PR were blocked from sign off due to upcoming conference."
+                $FilesBlockedForConfLabel = "files-blocked-for-conference"
 
                 Write-Host "Repo: $GitHubRepoName"
                 Write-Host "Sender: $GitHubSender"
@@ -127,6 +130,7 @@ jobs:
                 {
                     Write-Host "Initialize labels needed by the workflow"
                     Initialize-Label -LabelName $ContentApprovedLabel -LabelColor $ContentApprovedLabelColor -LabelDescription $ContentApprovedLabelDescription
+                    Initialize-Label -LabelName $FilesBlockedForConfLabel -LabelColor $FilesBlockedForConfLabelColor -LabelDescription $FilesBlockedForConfLabelDescription
                 }
 
                 #####################
@@ -513,6 +517,7 @@ jobs:
                                 $PRContainsBlockedFilesMessage += "- $BlockedFile`n"
                             }
 
+                            Set-PrLabel -IssueUrl $IssueUrl -LabelName $FilesBlockedForConfLabel
                             Set-PrComment $PRContainsBlockedFilesMessage
                         }
                         else
@@ -645,6 +650,7 @@ jobs:
                                         $PRContainsBlockedFilesMessage += "- $BlockedFile`n"
                                     }
 
+                                    Set-PrLabel -IssueUrl $IssueUrl -LabelName $FilesBlockedForConfLabel
                                     Set-PrComment $PRContainsBlockedFilesMessage
 
                                     $CheckFailed = $True
