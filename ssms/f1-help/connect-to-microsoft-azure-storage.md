@@ -21,7 +21,7 @@ Use the **Azure Storage Connection** dialog to specify a storage account and val
 
 ## Options
 
-Specify the following information about your Azure account, and then select **Next** to continue.
+Specify the following information about your Azure account, and then select **Next** to continue.  
 
 1. **Storage Account** - Specify the storage account name.
 
