@@ -364,9 +364,16 @@ jobs:
                     
                     $BlockedFilesAndFoldersList = @()
                     
+                    ForEach ($PRFile in $PrFileList)
+                    {
+                        Write-Host "$PRFile"
+                    }
+
                     ForEach ($BlockedFileOrFolder in $BlockedFilesAndFoldersList)
                     {
+                        Write-Host "$BlockedFileOrFolder"
                         $MatchedFiles = $PrFileList | Where-Object { $_ -like "*$BlockedFileOrFolder*" }
+                        Write-Host "MatchedFiles = $MatchedFiles"
                         $BlockedFilesAndFoldersList += $MatchedFiles
                     }
                     
