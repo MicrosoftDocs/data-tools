@@ -362,7 +362,7 @@ jobs:
                         $BlockedFilesAndFoldersList
                     )
                     
-                    $BlockedFilesAndFoldersList = @()
+                    $FoundFilesAndFolders = @()
                     
                     ForEach ($PRFile in $PrFileList)
                     {
@@ -375,10 +375,10 @@ jobs:
                         Write-Host "$BlockedFile"
                         $MatchedFiles = $PrFileList | Where-Object { $_.filename -like "*$BlockedFile*" }
                         Write-Host "MatchedFiles = $MatchedFiles"
-                        $BlockedFilesAndFoldersList += $MatchedFiles
+                        $FoundFilesAndFolders += $MatchedFiles
                     }
                     
-                    Return $BlockedFilesAndFoldersList
+                    Return $FoundFilesAndFolders
                 }
                     
 
