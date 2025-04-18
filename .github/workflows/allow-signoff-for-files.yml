@@ -78,7 +78,7 @@ jobs:
                 $GitHubHeaders.Add("User-Agent", "OfficeDocs")
 
                 $StatusHelpUrl = "https://dev.azure.com/msft-skilling/Content/_wiki/wikis/Database%20Docs/2358/Partner-publishing-workflow-pilot"
-                $StatusCheckName = "Allow sign-off of PR files
+                $StatusCheckName = "Allow sign-off of PR files"
                 $Status = @{}
                 $Status.Add("context", $StatusCheckName)
                 $Status.Add("target_url", $StatusHelpUrl)
