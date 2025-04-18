@@ -364,20 +364,24 @@ jobs:
                     
                     $FoundFilesAndFolders = @()
                     
+                    Write-Host "Files in PR:"
+                    Write-Host "-------------------"
                     ForEach ($PRFile in $PrFileList)
                     {
                         $File = $PRFile.filename
                         Write-Host "$File"
                     }
 
-                    Write-Host "BlockedFilesAndFoldersList: $BlockedFilesAndFoldersList"
                     ForEach ($BlockedFile in $BlockedFilesAndFoldersList)
                     {
-                        Write-Host "$BlockedFile"
+                        Write-Host "Checking for file: $BlockedFile"
                         $MatchedFile = $PrFileList | Where-Object { $_.filename -like "*$BlockedFile*" }
-                        $File = $MatchedFile.filename
-                        Write-Host "MatchedFiles = $File"
-                        $FoundFilesAndFolders += $File
+                        if ($MatchedFile)
+                        {
+                            $File = $MatchedFile.filename
+                            Write-Host "Found blocked file = $File"
+                            $FoundFilesAndFolders += $File
+                        }
                     }
                     
                     Return $FoundFilesAndFolders
@@ -496,14 +500,10 @@ jobs:
                         $BlockedFilesAndFoldersList = Test-BlockedFilesAndFolders -PrFileList $PrFiles -BlockedFilesAndFoldersList $BlockedFilesAndFolders
                         $BlockedFilesFound = $BlockedFilesAndFoldersList.Count -gt 0
 
-                        Write-Host "Blocked files found: $BlockedFilesFound"
-                        ForEach ($BlockedFile in $BlockedFilesAndFoldersList) 
-                        {
-                            Write-Host "Blocked File Found: $BlockedFile"
-                        }
-
                         if ($BlockedFilesFound)
                         {
+                            Write-Host "Blocked files found!"
+                        
                             $Status.state = "pending"
                             $Status.description = $SignoffBlockedMessage
 
@@ -540,10 +540,9 @@ jobs:
                         $BlockedFilesAndFoldersList = Test-BlockedFilesAndFolders -PrFileList $PrFiles -BlockedFilesAndFoldersList $BlockedFilesAndFolders
                         $BlockedFilesFound = $BlockedFilesAndFoldersList.Count -gt 0
 
-                        Write-Host "Blocked files found: $BlockedFilesFound"
-                        ForEach ($BlockedFile in $BlockedFilesAndFoldersList) 
+                        if ($BlockedFilesFound)
                         {
-                            Write-Host "Blocked File Found: $BlockedFile"
+                            Write-Host "Blocked files found!"
                         }
 
                         # Check to see what labels are already on the PR
