@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest, mbarickman
-ms.date: 04/08/2025
+ms.date: 04/18/2025
 ms.service: sql-server-management-studio
 ms.topic: conceptual
 ms.collection:
@@ -51,7 +51,7 @@ Available languages:
 
 | Feature | Details |
 | --- | --- |
-| [CVE-2025-29803](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29803) | This security update addresses an Elevation of Privilege vulnerability in the Visual Studio Tools for Applications 2022 Installer. |
+| Security | Addressed vulnerability [CVE-2025-29803](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29803) for Visual Studio Tools for Applications 2019. If you have already installed SSMS 20.2 or an earlier version installed on your machine, you are not exposed to this vulnerability. Installing SSMS 20.2.1 does not update existing VSTA files if you have SSMS 20.2 or earlier versions installed. If security or vulnerability tracking applications state that your system is still at risk after updating to SSMS 20.2.1 from an earlier 20.x release, you can install the latest [Microsoft Visual Studio Tools for Applications 2019](https://www.microsoft.com/download/details.aspx?id=58317) to update VSTA. |
 
 #### Known issues 20.2.1
 
