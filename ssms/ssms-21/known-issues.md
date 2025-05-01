@@ -4,7 +4,7 @@ description: Learn about known issues in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 04/16/2025
+ms.date: 05/01/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -19,6 +19,7 @@ This page lists known issues for [!INCLUDE [ssms-21-md](../includes/ssms-21-md.m
 
 | Feature | Details | Workaround |
 | --- | --- | --- |
+| Always Encrypted | When trying to sign into Azure from the Always Encrypted wizard, the sign-in process triggers multiple sign-in attempts and eventually generates the error `You don't have access to this`. This prevents secure enclave enablement and new column master key creation. | Use SSMS 20.2 to enable secure enclaves or create a new column master key. |
 | Arm64 | There's no support for Arm64, and SSMS can't be installed on Arm64 devices. | Run SSMS on a device that isn't Arm64. |
 | Designers | Closing the view editor before saving in the View Designer generates the error "Object reference not set to an instance of an object. (SqlEditors)". | Save the new view before closing the editor in the View Designer. |
 | Designers | The JSON data type isn't available for columns when creating or editing a table in Table Designer. See [SSMS 21.0 Preview 2.0 - Table Designer missing the "json" datatype](https://feedback.azure.com/d365community/idea/d2e6f106-9fb8-ef11-95f5-6045bdbfaf80). | Use T-SQL to add columns with the JSON data type, this functionality is planned for a later release. |
