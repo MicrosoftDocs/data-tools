@@ -26,23 +26,23 @@ Memory-optimized tables must have a nonclustered primary key. For an introductio
 1. To create a memory-optimized Table, we must ensure a filegroup has been created for our database. In the object explorer, open a new query editor window from the server level, as we'll create an entirely new database in which our memory-optimized table resides. In the query editor, copy, paste, and execute the following code:
 
     ```sql
-        CREATE DATABASE imoltp
-        GO
-       --------------------------------------
-        -- create database with a memory-optimized
-        -- filegroup and a container.
+        CREATE DATABASE imoltp
+        GO
+       --------------------------------------
+        -- create database with a memory-optimized
+        -- filegroup and a container.
     
-        ALTER DATABASE imoltp ADD FILEGROUP imoltp_mod
-         CONTAINS MEMORY_OPTIMIZED_DATA;
+        ALTER DATABASE imoltp ADD FILEGROUP imoltp_mod
+         CONTAINS MEMORY_OPTIMIZED_DATA;
     
-        ALTER DATABASE imoltp ADD FILE (
-            name='imoltp_mod1', filename='c:\data\imoltp_mod1')
-            TO FILEGROUP imoltp_mod;
+        ALTER DATABASE imoltp ADD FILE (
+            name='imoltp_mod1', filename='c:\data\imoltp_mod1')
+            TO FILEGROUP imoltp_mod;
     
-        ALTER DATABASE imoltp
-            SET MEMORY_OPTIMIZED_ELEVATE_TO_SNAPSHOT = ON;
-        GO
-        --
+        ALTER DATABASE imoltp
+            SET MEMORY_OPTIMIZED_ELEVATE_TO_SNAPSHOT = ON;
+        GO
+        --
     ```
 
     The code above creates a new database, adds a filegroup to the database, adds a file to the filegroup, and finally sets the isolation level for any memory-optimized table added to this database to Snapshot.
