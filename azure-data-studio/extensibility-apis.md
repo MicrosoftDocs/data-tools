@@ -45,19 +45,19 @@ Gets a dictionary containing the credentials associated with a connection. These
 ```javascript
 > let connection = azdata.connection.getCurrentConnection();
 connection: {
-    providerName: 'MSSQL',
-    connectionId: 'd97bb63a-466e-4ef0-ab6f-00cd44721dcc',
-    options: {
-        server: 'mairvine-sql-server',
-        user: 'sa',
-        authenticationType: 'sqlLogin',
-        ...
+    providerName: 'MSSQL',
+    connectionId: 'd97bb63a-466e-4ef0-ab6f-00cd44721dcc',
+    options: {
+        server: 'mairvine-sql-server',
+        user: 'sa',
+        authenticationType: 'sqlLogin',
+        ...
  },
-    ...
+    ...
 }
 > let credentials = azdata.connection.getCredentials(connection.connectionId);
 credentials: {
-    password: 'abc123'
+    password: 'abc123'
 }
 ```
 
@@ -124,27 +124,27 @@ Get the parent node of this node. Returns undefined if there's no parent.
 
 ```cs
 private async interactWithOENode(selectedNode: azdata.objectexplorer.ObjectExplorerNode): Promise<void> {
-    let choices = ['Expand', 'Collapse', 'Select', 'Select (multi)', 'Deselect', 'Deselect (multi)'];
-    if (selectedNode.isLeaf) {
+    let choices = ['Expand', 'Collapse', 'Select', 'Select (multi)', 'Deselect', 'Deselect (multi)'];
+    if (selectedNode.isLeaf) {
  choices[0] += ' (is leaf)';
  choices[1] += ' (is leaf)';
  } else {
-        let expanded = await selectedNode.isExpanded();
-        if (expanded) {
+        let expanded = await selectedNode.isExpanded();
+        if (expanded) {
  choices[0] += ' (is expanded)';
  } else {
  choices[1] += ' (is collapsed)';
  }
  }
-    let parent = await selectedNode.getParent();
-    if (parent) {
+    let parent = await selectedNode.getParent();
+    if (parent) {
  choices.push('Get Parent');
  }
-    let children = await selectedNode.getChildren();
+    let children = await selectedNode.getChildren();
  children.forEach(child => choices.push(child.label));
-    let choice = await vscode.window.showQuickPick(choices);
+    let choice = await vscode.window.showQuickPick(choices);
  let nextNode: azdata.objectexplorer.ObjectExplorerNode = undefined;
-    if (choice === choices[0]) {
+    if (choice === choices[0]) {
  selectedNode.setExpandedState(vscode.TreeItemCollapsibleState.Expanded);
  } else if (choice === choices[1]) {
  selectedNode.setExpandedState(vscode.TreeItemCollapsibleState.Collapsed);
@@ -159,20 +159,20 @@ private async interactWithOENode(selectedNode: azdata.objectexplorer.ObjectExplo
  } else if (choice === 'Get Parent') {
  nextNode = parent;
  } else {
-        let childNode = children.find(child => child.label === choice);
+        let childNode = children.find(child => child.label === choice);
  nextNode = childNode;
  }
-    if (nextNode) {
-        let updatedNode = await azdata.objectexplorer.getNode(nextNode.connectionId, nextNode.nodePath);
-        this.interactWithOENode(updatedNode);
+    if (nextNode) {
+        let updatedNode = await azdata.objectexplorer.getNode(nextNode.connectionId, nextNode.nodePath);
+        this.interactWithOENode(updatedNode);
  }
 }
 
 vscode.commands.registerCommand('mssql.objectexplorer.interact', () => {
  azdata.objectexplorer.getActiveConnectionNodes().then(activeConnections => {
  vscode.window.showQuickPick(activeConnections.map(connection => connection.label + ' ' + connection.connectionId)).then(selection => {
-            let selectedNode = activeConnections.find(connection => connection.label + ' ' + connection.connectionId === selection);
-            this.interactWithOENode(selectedNode);
+            let selectedNode = activeConnections.find(connection => connection.label + ' ' + connection.connectionId === selection);
+            this.interactWithOENode(selectedNode);
  });
  });
 });
