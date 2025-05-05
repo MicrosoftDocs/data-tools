@@ -4,7 +4,7 @@ description: This article describes how you can migrate your data using the Azur
 author: nilabjaball
 ms.author: niball
 ms.reviewer: randolphwest, maghan
-ms.date: 02/06/2025
+ms.date: 04/21/2025
 ms.service: azure-data-studio
 ms.subservice: migration-extension
 ms.topic: conceptual
@@ -140,6 +140,10 @@ The Azure SQL migration extension supports assessment and generates Azure recomm
 - Azure SQL Managed Instance
 - Azure SQL Database
 
+#### Track migration and view Arc assessments
+
+The SQL migration extension in Azure Data Studio enhances SQL migration tracking, by displaying precomputed Arc assessments and SKU recommendations for SQL Server instances enabled by Azure Arc. For non-Arc enabled SQL Server instances, you can track the migration process in the Azure portal at no additional cost.  
+
 ### Migration modes
 
 The following migration modes are supported for the corresponding Azure SQL targets.
@@ -168,14 +172,12 @@ Select the **New support request** button in the upper section of the extension.
 
 :::image type="content" source="media/azure-sql-migration-extension/extension-support.png" alt-text="Screenshot of Get help from Microsoft support for the extension." lightbox="media/azure-sql-migration-extension/extension-support.png":::
 
-You can submit ideas/suggestions for improvement, and other feedback, including bugs, in the [Azure Community forum - Azure Database Migration Service](https://feedback.azure.com/d365community/forum/2dd7eb75-ef24-ec11-b6e6-000d3a4f0da0).
-
-> [!NOTE]  
-> You can also use the **Feedback** button if you have any suggestions or feedback to improve the extension.
+You can submit ideas/suggestions for improvement, and other feedback, including bugs, in the [Azure Community forum - Azure Database Migration Service](https://feedback.azure.com/d365community/forum/2dd7eb75-ef24-ec11-b6e6-000d3a4f0da0). You can also use the **Feedback** button if you have any suggestions or feedback to improve the extension.
 
 ## Related content
 
 - [Database migrations using Azure Data Studio](/azure/dms/migration-using-azure-data-studio)
 - [Download and install Azure Data Studio](../download-azure-data-studio.md)
+- [Connect your SQL Server to Azure Arc](/sql/sql-server/azure-arc/connect)
 - [Release notes for Azure Data Studio](../release-notes-azure-data-studio.md)
 - [Extend the functionality of Azure Data Studio](add-extensions.md)
