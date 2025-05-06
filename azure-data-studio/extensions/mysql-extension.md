@@ -22,7 +22,7 @@ With the MySQL extension for Azure Data Studio, you can now connect to, query an
 
 The Azure Data Studio functionality available for MySQL includes:
 
-- Connection manager, allowing you to connect to any MySQL server hosted on-premises, on virtual machines, on managed MySQL in other clouds, and on Azure Database for MySQL – Flexible Server.
+- Connection manager, allowing you to connect to any MySQL server hosted on-premises, on virtual machines, on managed MySQL in other clouds, and on Azure Database for MySQL – Flexible Server.
 - Option to choose your preferred authentication method (MySQL native authentication and Microsoft Entra authentication)
 - Searchable object explorer view for database objects, with auto-completion
 - Query authoring and editing with Intellisense, syntax highlighting and code snippets

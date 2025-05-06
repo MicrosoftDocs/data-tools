@@ -5,7 +5,7 @@ metadata:
   author: erinstellato-ms
   ms.author: erinstellato
   ms.reviewer: maghan, randolphwest
-  ms.date: 02/11/2025
+  ms.date: 04/16/2025
   ms.service: sql-server-management-studio
   ms.topic: faq
 title: SQL Server Management Studio 21 Preview FAQ
@@ -113,7 +113,7 @@ sections:
           - Make use of live query stats or client statistics.
          
       - question: "Who typically uses SSMS?"
-        answer: Database administrators (DBAs) typically use SSMS, but any data professional such as database administrator or system administrator can use SSMS.
+        answer: Database administrators (DBAs) typically use SSMS, but any data professional such as database developers, data engineers, or system administrators can use SSMS.
 
       - question: "Does SSMS 21 integrate with Azure Synapse Analytics?"
         answer: |
@@ -127,13 +127,13 @@ sections:
         answer: |
           We'll make dark theme available across more dialogs in SSMS 21 over time.  Initial support exists for dialogs that are most frequently accessed by users, including Object Explorer, Query Editor, Results pane, and Template Explorer. If you plan to use dark theme, and would like to provide feedback on the dialogs that you use the most, please go to the [SSMS 21 dark theme support](https://feedback.azure.com/d365community/idea/35006f2b-73a0-ef11-8a69-7c1e520a48ea) feedback item and add a comment.
 
-      - question: "Where is Copilot for SSMS?"
+      - question: "Where is Copilot in SSMS?"
         answer: |
-          Copilot for SSMS will soon be available in private preview.
+          Copilot in SSMS will soon be available in private preview.
 
-      - question: "Will Copilot for SSMS be installed by default?"
+      - question: "Will Copilot in SSMS be installed by default?"
         answer: |
-          No.  When available, Copilot for SSMS will be an opt-in experience, available as an extension.
+          No.  When available, Copilot in SSMS will be an opt-in experience, available as an extension.
 
       - question: "Will there be additional previews for SSMS 21?"
         answer: |

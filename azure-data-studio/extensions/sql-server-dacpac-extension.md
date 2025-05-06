@@ -15,7 +15,7 @@ ms.collection:
 
 [!INCLUDE [azure-data-studio-deprecation](../includes/azure-data-studio-deprecation.md)]
 
-**The Data-tier Application Wizard** provides an easy-to-use wizard experience to deploy and extract dacpac files and import and export bacpac files.
+**The Data-tier Application Wizard** provides an easy-to-use wizard experience to deploy and extract dacpac files and import and export bacpac files.
 
 ## Features
 

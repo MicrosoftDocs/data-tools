@@ -3,8 +3,8 @@ title: Release Notes for SQL Server Management Studio 21 Preview
 description: Release notes for SQL Server Management Studio 21 Preview (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
-ms.date: 03/11/2025
+ms.reviewer: maghan, randolphwest, mbarickman
+ms.date: 05/01/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -25,6 +25,66 @@ This article details updates, improvements, and bug fixes for the current and pr
 
 [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is the latest preview release of SSMS. If you need a previous version of SSMS, see [previous SSMS releases](../release-notes-ssms.md#previous-ssms-releases).
 
+<a id="21.0.0-pre.7.0"></a>
+
+### 21.0 Preview 7
+
+- Release number: 21.0 Preview 7
+- Release date: May 1, 2025
+
+#### What's new in 21.0 Preview 7
+
+| Feature | Details |
+| --- | --- |
+| Connection Dialog | When using the Modern connection dialog (preview), the dialog will remember the set size of the dialog. |
+| Libraries | Updated the DacFx version to 170.0.94. |
+| New File Templates | Reinstated the **File > New > File** menu item and list of file templates, and added a SQL Query file template. |
+| Visual Studio | Updated to Visual Studio 17.14 Preview 5. |
+| Workloads | Workloads are now available in the Visual Studio Installer: Business Intelligence, Hybrid and Migration, and Code tools. When installing or modifying SSMS 21 Preview, you can customize your SSMS experience to fit your needs. |
+
+#### Bug fixes in 21.0 Preview 7
+
+| Feature | Details |
+| --- | --- |
+| Connection Dialog | Addressed multiple issues with the Modern connection dialog (preview) related to warnings about corrupted connection profiles, ApplicationIntent field improperly being set, and order in which connection properties are displayed when imported. See [new login history experience - history upside down (recent connections at the bottom)](https://developercommunity.visualstudio.com/t/new-login-experience---history-upside-do/10891468). |
+| Database Diagrams | Fixed an issue where Object Explorer was not automatically refreshing when a new database diagram was created. |
+| Query plans | Fixed an issue in the UI where an additional blank line was present in the query text sample of an estimated query plan. See [Request: remove the additional blank link in query text sample when viewing estimated query plan](https://developercommunity.visualstudio.com/t/Request:-remove-the-additional-blank-lin/10881785). |
+| Query store | Updated the colors in Query Store's plan summary graph to increase readability when comparing multiple plans. See [Query Store - Plan summary graph colors are hard to look at](https://developercommunity.visualstudio.com/t/Query-Store---Plan-summary-graph-colors-/10889498). |
+| Source Control | Addressed a bug that prevented differential views from being properly colorized. See [SSMS 21, Git Changes, Manage Branches, select Branch, select specific commit, then View Commit Details, select specific sql code change, no coloring](https://developercommunity.visualstudio.com/t/SSMS-21-Git-Changes-Manage-Branches-s/10881432). |
+| SQL Server Profiler | Fixed an issue that prevented SQL Server Profiler from successfully connecting to an Azure endpoint using Entra MFA. See [SQL Profiler 21 Preview 6 - Could not load file or assembly](https://developercommunity.visualstudio.com/t/SQL-Profiler-21-Preview-6---Could-not-lo/10891845). |
+| Status Bar | Updated display logic in the status bar that updated the Session ID (SPID) before executing a query, leading to stale SPID in the event of a silent server reconnect. The SPID now updates after execution. See [The SPID reported by SSMS in the status bar is incorrect after the server restarts](https://developercommunity.visualstudio.com/t/The-SPID-reported-by-SSMS-in-the-status-/10867977). |
+
+<a id="21.0.0-pre.6.0"></a>
+
+### 21.0 Preview 6
+
+- Release number: 21.0 Preview 6
+- Release date: April 16, 2025
+
+#### What's new in 21.0 Preview 6
+
+| Feature | Details |
+| --- | --- |
+| Connection Dialog | Introduced a Modern connection dialog experience for SQL Server database engines. You can enable or disable this experience within **Tools > Options > Environment > Connection Dialog**. |
+| Intellisense | Added support for the `REGEXP_LIKE` function. |
+| Migration Component | Added the [Migration component (preview)](../migrate-sql-server-component.md) under **Individual Components > Hybrid and Migration** in the Visual Studio Installer. |
+| Presenter Mode | Reinstated [Presenter mode](../presenter-mode.md) as an option under **View > Presenter Mode**. |
+| Query Plans | Added JSON index and Implicit Broadcast support to Query Plans. |
+| Results Grid | Added the ability to customize the Results Grid cell border color. See [SSMS 21 - Add option to change ResultGrid cell border color](https://developercommunity.visualstudio.com/t/SSMS-21---Add-option-to-change-ResultGri/10859450). |
+| Theming | Improved dark theme support for Query Store, Query Plans, and Object Explorer Details window. |
+| Vector Data Types | Added support for Vector data type in object designers, the edit data window, and Object Explorer. |
+| Visual Studio | Updated to Visual Studio 17.14 Preview 3. |
+
+#### Bug fixes in 21.0 Preview 6
+
+| Feature | Details |
+| --- | --- |
+| Code Search | Fixed an issue where the code search function was not opening .sql files. See [Code Search Feature does not open file](https://developercommunity.visualstudio.com/t/Code-Search-Feature-does-not-open-file/10851354). |
+| Database Diagrams | Fixed an issue where closing a new database diagram before saving generated an error. |
+| Query Editor | Addressed an issue where a new query window opened from the Object Explorer context menu would not get focus. See [In SQL Server Management Studio 21 Preview 5 windows created from right click new query option don't get focus](https://developercommunity.visualstudio.com/t/In-SQL-Server-Management-Studio-21-Previ/10872981). |
+| Recent Files in Taskbar Icon | Resolved a problem where recent files were not displaying in the jump list of the SSMS 21 Windows icon. See [Missing recent files on Windows pinned taskbar icon](https://developercommunity.visualstudio.com/t/Missing-recent-files-on-Windows-pinned-t/10852288). |
+| Terminal Window | Fixed an error where the term 'EnterVsDevShell' was not recognized. See [Open Terminal Windows Error](https://developercommunity.visualstudio.com/t/Open-Terminal-Windows-Error/10850459). |
+
 <a id="21.0.107-pre5.0"></a>
 
 ### 21.0 Preview 5
@@ -44,18 +104,18 @@ This article details updates, improvements, and bug fixes for the current and pr
 | IntelliSense | Added support for Vector functions. | 
 | Individual Components (Visual Studio Installer) | Reinstated Analysis Services and Reporting Services as Business Intelligence components in the Visual Studio Installer. |
 | Libraries | Updated Server Management Objects (SMO) to version 17.100.64. |
-| Scripting	| Added support for scripting objects that use the Vector data type. |
+| Scripting | Added support for scripting objects that use the Vector data type. |
 | Theming | Improved dark theme support for the Activity Monitor and Object Explorer Details dialogs. |
-| Tools | Removed Azure Data Studio entry from the Tools menu. For more information, see [What’s Happening to Azure Data Studio](https://aka.ms/ads-retirement). |
+| Tools | Removed Azure Data Studio entry from the Tools menu. For more information, see [What's Happening to Azure Data Studio](https://aka.ms/ads-retirement). |
 | Visual Studio | Updated to Visual Studio 17.14 Preview 2. |
 
 #### Bug fixes in 21.0 Preview 5
 
 | Feature | Details |
 | --- | --- |
-| Accessibility	| Fixed screen reader compatibility and keyboard navigation issues in the Always Encrypted wizard. |
+| Accessibility | Fixed screen reader compatibility and keyboard navigation issues in the Always Encrypted wizard. |
 | Accessibility | Fixed tabbing order for the **Replace in Files** dialog. See [In SSMS 21.0 Replace in Files the tab order is incorrect](https://feedback.azure.com/d365community/idea/d90e7984-d4cd-ef11-95f6-6045bd77c83d). |
-| Accessibility	| Fixed keyboard navigation issues in Profiler. |
+| Accessibility | Fixed keyboard navigation issues in Profiler. |
 | File | Addressed an issue that created duplicate entries in the **Add New Item** dialog when configuring a Project in the Solution Explorer. |
 | Find | Resolved issue with **Find in Files** when searching in text results, accessed through **Edit** > **Find and Replace** > **Find in Files**, or with CTRL + F. See [Support find in SSMS 21 text results window](https://feedback.azure.com/d365community/idea/d3c87d96-68be-ef11-95f5-6045bdbfaf80). |
 | Import/Export Data-Tier Application | Updated the file and log location to use default instead of master database location during a bacpac import. |

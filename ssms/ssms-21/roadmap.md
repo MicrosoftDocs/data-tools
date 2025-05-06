@@ -4,7 +4,7 @@ description: Roadmap for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 11/12/2024
+ms.date: 04/16/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -36,7 +36,7 @@ Git integration returns to SSMS, allowing administrators and database developers
 
 [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] also includes performance and productivity improvements:
 
-- A new connection experience that simplifies the process of connecting to SQL Server instances and Azure SQL databases.
+- A [new connection experience](../quickstarts/ssms-connect-query-sql-server.md?tabs=modern#connect-to-a-sql-server-instance) that simplifies the process of connecting to SQL Server instances and Azure SQL databases.
 - Start time improvements, reducing the time it takes to launch SSMS and get to work.
 
 ## Query Editor

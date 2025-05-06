@@ -51,8 +51,12 @@ items:
     href: ssms-21/sign-in.md
   - name: Access multiple accounts
     href: ssms-21/sign-in-access-multiple-accounts.md
+  - name: Modern connection dialog
+    href: quickstarts/ssms-connect-query-sql-server.md?tabs=modern#connect-to-a-sql-server-instance
   - name: Release history
     href: ssms-21/release-history.md
+  - name: SQL Server migration component (Preview)
+    href: migrate-sql-server-component.md
   - name: Product roadmap
     href: ssms-21/roadmap.md
 - name: Download SSMS
@@ -69,7 +73,7 @@ items:
     href: quickstarts/ssms-connect.md
   - name: Connect and query SQL Server
     href: quickstarts/ssms-connect-query-sql-server.md
-  - name: Connect & query SQL Server on Azure VM
+  - name: Connect and query SQL Server on Azure VM
     href: quickstarts/ssms-connect-query-sql-server-azure-vm.md
   - name: Connect and query Azure SQL Database
     href: quickstarts/ssms-connect-query-azure-sql.md
@@ -81,7 +85,7 @@ items:
     href: tutorials/ssms-configuration.md
   - name: Import and export SSMS settings
     href: tutorials/import-export-settings.md
-  - name: SSMS tips & tricks
+  - name: SSMS tips and tricks
     href: tutorials/ssms-tricks.md
   - name: Script objects
     href: tutorials/scripting-ssms.md
@@ -130,7 +134,7 @@ items:
       href: agent/implement-sql-server-agent-security.md
     - name: Implement Jobs
       href: agent/implement-jobs.md
-    - name: Monitor & Respond to Events
+    - name: Monitor and Respond to Events
       href: agent/monitor-and-respond-to-events.md
     - name: Automated Administration Across an Enterprise
       href: agent/automated-administration-across-an-enterprise.md
@@ -250,9 +254,9 @@ items:
         href: scripting/color-coding-in-query-editors.md
     - name: Code outlining
       href: scripting/code-outlining.md
-    - name: Drag & Drop Text
+    - name: Drag and Drop Text
       href: scripting/drag-and-drop-text.md
-    - name: Search & Replace
+    - name: Search and Replace
       href: scripting/search-and-replace.md
       items:
       - name: Search an Active Document Incrementally
@@ -263,7 +267,7 @@ items:
         href: scripting/search-documents-using-results-lists.md
       - name: Search Text with Regular Expressions
         href: scripting/search-text-with-regular-expressions.md
-      - name: Find & Replace
+      - name: Find and Replace
         href: scripting/find-and-replace.md
       - name: Find in Files
         href: scripting/find-in-files.md
@@ -276,7 +280,7 @@ items:
       items:
       - name: Bookmarks F1 Help
         href: scripting/bookmarks-f1-help.md
-    - name: Print Code & Results
+    - name: Print Code and Results
       href: scripting/print-code-and-results.md
     - name: IntelliSense
       href: scripting/intellisense-sql-server-management-studio.md
@@ -319,7 +323,7 @@ items:
     href: install-other-languages.md
   - name: Use templates in SSMS
     href: template/templates-ssms.md
-  - name: Customize Menus & Shortcut Keys
+  - name: Customize Menus and Shortcut Keys
     href: customize-menus-and-shortcut-keys.md
   - name: Configure WMI to Show Server Status in SQL Server Tools
     href: configure-wmi-to-show-server-status-in-sql-server-tools.md
@@ -361,7 +365,7 @@ items:
         href: agent/choose-the-right-sql-server-agent-service-account-for-multiserver-environments.md
       - name: Clear the Job History Log
         href: agent/clear-the-job-history-log.md
-      - name: Configure a User to Create & Manage SQL Server Agent Jobs
+      - name: Configure a User to Create and Manage SQL Server Agent Jobs
         href: agent/configure-a-user-to-create-and-manage-sql-server-agent-jobs.md
       - name: Enlist a Target Server to a Master Server
         href: agent/enlist-a-target-server-to-a-master-server.md
@@ -477,7 +481,7 @@ items:
         href: agent/create-an-analysis-services-job-step.md
       - name: an Operator
         href: agent/create-an-operator.md
-      - name: Create & Attach Schedules to Jobs
+      - name: Create and Attach Schedules to Jobs
         href: agent/create-and-attach-schedules-to-jobs.md
       - name: Jobs
         href: agent/create-jobs.md
@@ -533,7 +537,7 @@ items:
       items:
       - name: an Alias for SQL Server Agent Service
         href: agent/set-sql-server-alias-for-sql-server-agent-service-ssms.md
-      - name: CPU Idle Time & Duration (SSMS)
+      - name: CPU Idle Time and Duration (SSMS)
         href: agent/set-cpu-idle-time-and-duration-sql-server-management-studio.md
       - name: Encryption Options on Target Servers
         href: agent/set-encryption-options-on-target-servers.md
@@ -549,7 +553,7 @@ items:
         href: agent/set-sql-server-connection-for-sql-server-agent-service-ssms.md
       - name: Up the Job History Log
         href: agent/set-up-the-job-history-log.md
-    - name: Start & Stop
+    - name: Start and Stop
       items:
       - name: Start a Job
         href: agent/start-a-job.md
@@ -589,7 +593,7 @@ items:
       href: register-servers/create-a-new-registered-server-sql-server-management-studio.md
     - name: Register a Connected Server
       href: register-servers/register-a-connected-server-sql-server-management-studio.md
-    - name: Create a Central Management Server & Server Group
+    - name: Create a Central Management Server and Server Group
       href: register-servers/create-a-central-management-server-and-server-group.md
     - name: Execute Statements Against Multiple Servers Simultaneously
       href: register-servers/execute-statements-against-multiple-servers-simultaneously.md
@@ -618,7 +622,7 @@ items:
   - name: Scripting of Database Engine
     href: scripting/database-engine-scripting.md
     items:
-    - name: Query & Text Editors
+    - name: Query and Text Editors
       href: /previous-versions/sql/sql-server-2012/ms173477(v=sql.110)?redirectedfrom=MSDN
     - name: XML Editor
       href: scripting/xml-editor-sql-server-management-studio.md
@@ -626,17 +630,17 @@ items:
       href: scripting/configure-editors-sql-server-management-studio.md
     - name: Associate File Extensions to a Code Editor
       href: scripting/associate-file-extensions-to-a-code-editor.md
-    - name: Change Font Color, Size, & Style
+    - name: Change Font Color, Size, and Style
       href: scripting/change-font-color-size-and-style.md
     - name: Use the Properties Window in Management Studio
       href: scripting/use-the-properties-window-in-management-studio.md
     - name: Open an Editor
       href: scripting/open-an-editor-sql-server-management-studio.md
-    - name: Manage the Editor & View Mode
+    - name: Manage the Editor and View Mode
       href: scripting/manage-the-editor-and-view-mode.md
     - name: Manage Code Formatting
       href: scripting/manage-code-formatting.md
-    - name: Navigate Code & Text
+    - name: Navigate Code and Text
       href: scripting/navigate-code-and-text.md
     - name: Color Coding in Query Editors
       href: scripting/color-coding-in-query-editors.md
@@ -644,17 +648,17 @@ items:
       href: scripting/configure-editors-sql-server-management-studio.md
     - name: Associate File Extensions to a Code Editor
       href: scripting/associate-file-extensions-to-a-code-editor.md
-    - name: Change Font Color, Size, & Style
+    - name: Change Font Color, Size, and Style
       href: scripting/change-font-color-size-and-style.md
     - name: Use the Properties Window in Management Studio
       href: scripting/use-the-properties-window-in-management-studio.md
     - name: Open an Editor
       href: scripting/open-an-editor-sql-server-management-studio.md
-    - name: Manage the Editor & View Mode
+    - name: Manage the Editor and View Mode
       href: scripting/manage-the-editor-and-view-mode.md
     - name: Manage Code Formatting
       href: scripting/manage-code-formatting.md
-    - name: Navigate Code & Text
+    - name: Navigate Code and Text
       href: scripting/navigate-code-and-text.md
 - name: References
   items:
@@ -662,17 +666,19 @@ items:
     href: /sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide
   - name: SSMS environment
     items:
-    - name: The SSMS Environment
+    - name: The SSMS environment
       href: the-sql-server-management-studio-environment.md
-    - name: General User Interface Elements
+    - name: General user interface elements
       href: general-user-interface-elements.md
-    - name: SSMS Web Browser
+    - name: Presenter mode in SSMS
+      href: presenter-mode.md
+    - name: SSMS Web browser
       href: sql-server-management-studio-web-browser.md
-    - name: Property Pages in SSMS
+    - name: Property pages in SSMS
       href: property-pages-in-sql-server-management-studio.md
-    - name: Properties Window in SSMS
+    - name: Properties window in SSMS
       href: properties-window-management-studio.md
-    - name: Use the Toolbox
+    - name: Use the toolbox
       href: use-the-toolbox.md
   - name: F1 help
     items:
@@ -716,7 +722,7 @@ items:
       href: menu-help/options-environment-help-general-page.md
     - name: Options (Environment - General Page)
       href: menu-help/options-environment-general-page.md
-    - name: Options (Environment - Fonts & Colors Page)
+    - name: Options (Environment - Fonts and Colors Page)
       href: menu-help/options-environment-fonts-and-colors-page.md
     - name: Options (Environment - Keyboard Page)
       href: menu-help/options-environment-keyboard-page.md
@@ -724,7 +730,7 @@ items:
       href: menu-help/options-environment-startup-page.md
     - name: Options (Query Execution options - Help - General Page)
       href: menu-help/options-query-execution.md
-    - name: Options (Designers - Table & Database Designers Page)
+    - name: Options (Designers - Table and Database Designers Page)
       href: menu-help/options-designers-table-and-database-designers-page.md
     - name: Options (Designers - Analysis Services Designers - General)
       href: menu-help/options-designers-analysis-services-designers-general.md
@@ -774,7 +780,7 @@ items:
       href: object/hide-system-objects-in-object-explorer.md
     - name: Object Explorer Details Pane
       href: object/object-explorer-details-pane.md
-    - name: Open & Configure Object Explorer
+    - name: Open and Configure Object Explorer
       href: object/open-and-configure-object-explorer.md
     - name: Connect to an Instance From Object Explorer
       href: object/connect-to-an-instance-from-object-explorer.md
@@ -800,7 +806,7 @@ items:
       href: solution/solution-explorer.md
     - name: Copy Items in a Solution
       href: solution/copy-items-in-a-solution.md
-    - name: Files That Manage Solutions & Projects
+    - name: Files That Manage Solutions and Projects
       href: solution/files-that-manage-solutions-and-projects.md
     - name: Solutions
       href: solution/solutions-sql-server-management-studio.md
@@ -832,7 +838,7 @@ items:
       href: solution/miscellaneous-files.md
     - name: Change the Default Location for Projects
       href: solution/change-the-default-location-for-projects.md
-    - name: Rename Solutions & Project Items
+    - name: Rename Solutions and Project Items
       href: solution/rename-solutions-and-project-items.md
     - name: Close a Solution
       href: solution/close-a-solution.md
@@ -900,7 +906,7 @@ items:
       href: visual-db-tools/remove-joins-visual-database-tools.md
     - name: Table Properties
       href: visual-db-tools/table-properties-visual-database-tools.md
-    - name: Development, Test, & Production Databases
+    - name: Development, Test, and Production Databases
       href: visual-db-tools/development-test-and-production-databases-visual-database-tools.md
     - name: Summarize Query Results
       href: visual-db-tools/summarize-query-results-visual-database-tools.md
@@ -908,7 +914,7 @@ items:
       href: visual-db-tools/upgrade-database-diagrams-from-previous-editions-visual-database-tools.md
     - name: Design Tables
       href: visual-db-tools/design-tables-visual-database-tools.md
-    - name: Permissions & Visual Database Tools
+    - name: Permissions and Visual Database Tools
       href: visual-db-tools/permissions-and-visual-database-tools-visual-database-tools.md
     - name: Add Related Tables to Diagrams
       href: visual-db-tools/add-related-tables-to-diagrams-visual-database-tools.md
@@ -924,13 +930,13 @@ items:
       href: visual-db-tools/show-column-names-in-the-diagram-pane-visual-database-tools.md
     - name: Create UNION Queries
       href: visual-db-tools/create-union-queries-visual-database-tools.md
-    - name: Open the Query & View Designer
+    - name: Open the Query and View Designer
       href: visual-db-tools/open-the-query-and-view-designer-visual-database-tools.md
     - name: Combine Conditions When OR Has Precedence
       href: visual-db-tools/combine-conditions-when-or-has-precedence-visual-database-tools.md
     - name: Group Rows in Query Results
       href: visual-db-tools/group-rows-in-query-results-visual-database-tools.md
-    - name: Sort & Group Query Results
+    - name: Sort and Group Query Results
       href: visual-db-tools/sort-and-group-query-results-visual-database-tools.md
     - name: Exclude Duplicate Rows
       href: visual-db-tools/exclude-duplicate-rows-visual-database-tools.md
@@ -1002,7 +1008,7 @@ items:
       href: visual-db-tools/results-pane-visual-database-tools.md
     - name: Criteria Pane
       href: visual-db-tools/criteria-pane-visual-database-tools.md
-    - name: Display Query & View Designer Panes
+    - name: Display Query and View Designer Panes
       href: visual-db-tools/display-query-and-view-designer-panes-visual-database-tools.md
     - name: Create Queries with Unnamed Parameters
       href: visual-db-tools/create-queries-with-unnamed-parameters-visual-database-tools.md
@@ -1024,7 +1030,7 @@ items:
       href: visual-db-tools/work-with-data-in-the-results-pane-visual-database-tools.md
     - name: Clear Query Results
       href: visual-db-tools/clear-query-results-visual-database-tools.md
-    - name: Use the Query & View Designer with International Data
+    - name: Use the Query and View Designer with International Data
       href: visual-db-tools/use-the-query-and-view-designer-with-international-data-visual-database-tools.md
     - name: Show Query Properties
       href: visual-db-tools/show-query-properties-visual-database-tools.md
@@ -1038,7 +1044,7 @@ items:
       href: visual-db-tools/copy-queries-visual-database-tools.md
     - name: Sort with ORDER BY
       href: visual-db-tools/sort-with-order-by-visual-database-tools.md
-    - name: Combine Conditions When & Has Precedence
+    - name: Combine Conditions When and Has Precedence
       href: visual-db-tools/combine-conditions-when-and-has-precedence-visual-database-tools.md
     - name: Create Make Table Queries
       href: visual-db-tools/create-make-table-queries-visual-database-tools.md
@@ -1074,17 +1080,17 @@ items:
       href: visual-db-tools/specify-search-criteria-visual-database-tools.md
     - name: Arrange Tables in Diagrams
       href: visual-db-tools/arrange-tables-in-diagrams-visual-database-tools.md
-    - name: Adding & Changing a Database Diagram
+    - name: Adding and Changing a Database Diagram
       href: visual-db-tools/walkthrough-adding-and-changing-a-database-diagram.md
     - name: Table-Valued Object (Column) Properties
       href: visual-db-tools/table-valued-object-column-properties-visual-database-tools.md
-    - name: How the Query & View Designer Represents Joins
+    - name: How the Query and View Designer Represents Joins
       href: visual-db-tools/how-the-query-and-view-designer-represents-joins-visual-database-tools.md
-    - name: Design Queries & Views How-to Topics
+    - name: Design Queries and Views How-to Topics
       href: visual-db-tools/design-queries-and-views-how-to-topics-visual-database-tools.md
-    - name: Use HAVING & WHERE Clauses in the Same Query
+    - name: Use HAVING and WHERE Clauses in the Same Query
       href: visual-db-tools/use-having-and-where-clauses-in-the-same-query-visual-database-tools.md
-    - name: Navigate in the Query & View Designer
+    - name: Navigate in the Query and View Designer
       href: visual-db-tools/navigate-in-the-query-and-view-designer-visual-database-tools.md
     - name: Work with Columns in Aggregate Queries
       href: visual-db-tools/work-with-columns-in-aggregate-queries-visual-database-tools.md
@@ -1100,11 +1106,11 @@ items:
       href: visual-db-tools/create-update-queries-visual-database-tools.md
     - name: Copy Tables from One Database Diagrams to Another
       href: visual-db-tools/copy-tables-from-one-database-diagrams-to-another-visual-database-tools.md
-    - name: Change the Font Color, Size, & Style in Diagrams
+    - name: Change the Font Color, Size, and Style in Diagrams
       href: visual-db-tools/change-the-font-color-size-and-style-in-diagrams-visual-database-tools.md
     - name: Verify Queries
       href: visual-db-tools/verify-queries-visual-database-tools.md
-    - name: Query & View Designer Tools
+    - name: Query and View Designer Tools
       href: visual-db-tools/query-and-view-designer-tools-visual-database-tools.md
     - name: Remove Tables from Database Diagrams
       href: visual-db-tools/remove-tables-from-database-diagrams-visual-database-tools.md
