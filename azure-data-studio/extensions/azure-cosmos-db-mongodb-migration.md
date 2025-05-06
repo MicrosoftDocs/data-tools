@@ -38,6 +38,7 @@ The Azure Cosmos DB for MongoDB migration extension helps you in migrating your 
 - An existing vCore-based Azure Cosmos DB for MongoDB  account.
   - If you don't have an Azure subscription, [create an account for free](https://azure.microsoft.com/free).
 - Latest version of [Azure Data Studio](..//download-azure-data-studio.md).
+- [.NET 8.0 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) installed on the client machine.
 - [MongoDB](https://www.mongodb.com/) running version 3.2 or higher.
 - Add firewall exceptions to the source MongoDB and vCore-based  Azure Cosmos DB for MongoDB target account to accept connections from global Azure datacenters.
 - If you're using Database Migration Service for the first time, make sure that the [Microsoft.DataMigration resource provider is registered in your subscription](#register-microsoftdatamigration-resource-provider-in-your-subscription).
