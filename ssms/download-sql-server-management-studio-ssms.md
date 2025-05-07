@@ -24,7 +24,7 @@ keywords:
   - "ssms express"
 ---
 
-# Download SQL Server Management Studio (SSMS)
+# Download SQL Server Management Studio (SSMS
 
 [!INCLUDE [sql-asdb-asdbmi-asa-fabricse-fabricdw](includes/applies-to-version/sql-asdb-asdbmi-asa-fabricse-fabricdw.md)]
 
