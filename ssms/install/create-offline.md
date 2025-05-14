@@ -1,16 +1,16 @@
 ---
-title: Create an Offline Installation of SQL Server Management Studio 21 Preview
+title: Create an Offline Installation of SQL Server Management Studio
 description: Create an offline installation package to install SQL Server Management Studio (SSMS) offline when you have an unreliable internet connection or low bandwidth.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.reviewer: randolphwest, maghan, mbarickman
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
   - data-tools
 ---
-# Create an offline installation of SQL Server Management Studio 21 Preview
+# Create an offline installation of SQL Server Management Studio
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -45,7 +45,7 @@ vs_ssms.exe --layout c:\localSSMSlayout --add Microsoft.Component.HelpViewer
 After the bootstrapper has finished downloading the layout files, the local layout folder can be moved to any other machine or environment you want to install SQL Server Management Studio on without requiring an internet connection.
 
 > [!NOTE]  
-> Make sure that your full installation path is less than 80 characters and that your machine has ample storage. SQL Server Management Studio requires a minimum of 4-GB of disk space. For more information, see [System requirements for SQL Server Management Studio 21 Preview](../ssms-21/system-requirements.md).
+> Make sure that your full installation path is less than 80 characters and that your machine has ample storage. SQL Server Management Studio requires a minimum of 4-GB of disk space. For more information, see [System requirements for SQL Server Management Studio](../system-requirements.md).
 
 ### Step 3 - Install SSMS from the local layout
 
@@ -61,6 +61,6 @@ c:\localSSMSlayout\vs_ssms.exe --noWeb --add Microsoft.Component.HelpViewer
 
 ## Related content
 
-- [Use command-line parameters to install SQL Server Management Studio 21 Preview](command-line-parameters.md)
-- [Install SQL Server Management Studio 21 Preview](install.md)
-- [Modify SQL Server Management Studio 21 Preview components and language packs](modify.md)
+- [Use command-line parameters to install SQL Server Management Studio](command-line-parameters.md)
+- [Install SQL Server Management Studio](install.md)
+- [Modify SQL Server Management Studio workloads, components, and language packs](modify.md)

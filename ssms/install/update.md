@@ -1,16 +1,16 @@
 ---
-title: Update SQL Server Management Studio 21 Preview
+title: Update SQL Server Management Studio
 description: Update your SQL Server Management Studio (SSMS) installation to the most recent release to access the latest feature changes and fixes for known issues.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
 ---
-# Update SQL Server Management Studio 21 Preview
+# Update SQL Server Management Studio
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -22,14 +22,14 @@ By default, in order to install, update, or modify SSMS, the account performing 
 
 SQL Server Management Studio (SSMS) must be closed before performing an update. We highly recommend saving your work before performing an update.
 
-We encourage you to update to the most [recent release](../ssms-21/release-notes-21.md) of SQL Server Management Studio (SSMS) so that you always get the latest features, security fixes, and improvements.
+We encourage you to update to the most [recent release](../release-notes-21.md) of SQL Server Management Studio (SSMS) so that you always get the latest features, security fixes, and improvements.
 
 There are many different ways to update an installation of SSMS:
 
 - Update using the Visual Studio Installer
 - Within SSMS, check for updates or use the notification hub
 - Configure SSMS to automatically update upon close
-- Update by running a [specific version of the bootstrapper](../ssms-21/release-history.md)
+- Update by running a [specific version of the bootstrapper](../release-history.md)
 - Update SSMS programmatically.
 
 Here's how to update SQL Server Management Studio (SSMS) using these various methods.
@@ -42,8 +42,8 @@ Here's how to update SQL Server Management Studio (SSMS) using these various met
 
    If you're prompted to update the Visual Studio Installer before continuing, do so by following the prompts.
 
-> [!NOTE]  
-> SSMS setup features and bug fixes are typically implemented in the installer. The installer ships the most current release for the latest supported SSMS version. This means that in general (unless otherwise specified), all new setup functionality is automatically available and works seamlessly in older versions of the product.
+   > [!NOTE]  
+   > SSMS setup features and bug fixes are typically implemented in the installer. The installer ships the most current release for the latest supported SSMS version. This means that in general (unless otherwise specified), all new setup functionality is automatically available and works seamlessly in older versions of the product.
 
 1. In the Visual Studio Installer, look for the installation of SSMS that you want to update.
 
@@ -74,11 +74,11 @@ Here's how to update SQL Server Management Studio (SSMS) using these various met
 
 ## Manually check for updates
 
-1. You can check to see if an update is available by choosing **Help** from the menu bar, and then choosing **Check for Updates**. You can also use the search box by selecting **Ctrl**+**Q**, typing **check for updates**, and then select the search result that matches. In the subsequent **Update available** dialog box, choose **Update**.
+You can check to see if an update is available by choosing **Help** from the menu bar, and then choosing **Check for Updates**. You can also use the search box by selecting **Ctrl**+**Q**, typing **check for updates**, and then select the search result that matches. In the subsequent **Update available** dialog box, choose **Update**.
 
 ## Run a specific bootstrapper to update the product to a specific version
 
-You can update your instance of SQL Server Management Studio to any specific version that has been released, as long as it's a higher version than what is currently installed. To update your instance of SQL Server Management Studio via this method, see the [release history](../ssms-21/release-history.md), download the bootstrapper that corresponds to the desired update version into your product installation directory, and then double-click on the file to initiate the update.
+You can update your instance of SQL Server Management Studio to any specific version that has been released, as long as it's a higher version than what is currently installed. To update your instance of SQL Server Management Studio via this method, see the [release history](../release-history.md), download the bootstrapper that corresponds to the desired update version into your product installation directory, and then double-click on the file to initiate the update.
 
 ## Customize update settings
 
@@ -86,7 +86,7 @@ There are several different settings that can be customized to control the updat
 
 ### Always Update on Close and other download behaviors
 
-1. On the menu bar, select **Tools** > **Options** > **Environment** > **Product Updates**. Observe the configuration options that are available to set in this dialog.
+On the menu bar, select **Tools** > **Options** > **Environment** > **Product Updates**. Observe the configuration options that are available to set in this dialog.
 
 - You can select the **Automatically download updates** setting, which allows updates to download while your machine is idle.
 
@@ -96,7 +96,7 @@ There are several different settings that can be customized to control the updat
 
 ### Configure source location of updates
 
-With [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], you can now configure the location from where your clients get their updates. These update source locations are called *channels*, and you can find more information about channel purpose and availability in the [Channels for SQL Server Management Studio 21 Preview](channels-release.md) documentation. Microsoft makes both the Release and the Preview channels available to everyone.
+With [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], you can now configure the location from where your clients get their updates. These update source locations are called *channels*, and you can find more information about channel purpose and availability in the [Channels for SQL Server Management Studio](channels-release.md) documentation. Microsoft makes both the Release and the Preview channels available to everyone.
 
 There are two ways to bring up the Update Settings dialog, which allows you to manually change the channel from which your SSMS installation should get its updates.
 
@@ -106,7 +106,7 @@ There are two ways to bring up the Update Settings dialog, which allows you to m
 
 By selecting the correct value in the **Update channel** dropdown list, you can control the source location of future updates for this installation of SSMS. Also keep in mind the following items:
 
-- The Preview and Release channels are available for SQL Server Management Studio 21 and higher.
+- The Preview and Release channels are available for SQL Server Management Studio 21 and later versions.
 
 - You can choose to update your installation of SSMS immediately after you configure the **Update channel** location, or you can defer the actual product update until a later time. The act of configuring the update channel and the act of updating the product are two independent events. For information on how to programmatically control the update channel, refer to [Use the modifySettings command](/visualstudio/install/use-command-line-parameters-to-install-visual-studio#modifysettings-command-and-command-line-parameters).
 
@@ -120,22 +120,20 @@ By selecting the correct value in the **Update channel** dropdown list, you can 
 
 ## Use the latest installer
 
-The most current release of the installer in the latest version of SSMS typically has the most robust and reliable feature set. This functionality often seamlessly works on lower versioned products. In order to manually acquire the latest version of the installer onto a client machine, you can do one of the following options:
+The most current release of the installer in the latest version of SSMS typically has the most robust and reliable feature set. This functionality often seamlessly works on lower versioned products. In order to manually acquire the latest version of the installer onto a client machine, [download any recent bootstrapper for the latest version of SSMS](install.md#step-2---determine-which-version-of-sql-server-management-studio-to-install) and then either:
 
-1. [Download any recent bootstrapper for the latest version of SSMS](install.md#step-2---determine-which-version-of-sql-server-management-studio-21-to-install) and then either:
+- Run the bootstrapper to initiate the installation. The latest installer is installed onto the machine first. Once the **Choose Workloads** tab appears, cancel the installation.
 
-   - Run the bootstrapper to initiate the installation. The latest installer is installed onto the machine first. Once the **Choose Workloads** tab appears, cancel the installation.
+- In a command window, use the bootstrapper to update the installer:
 
-   - In a command window, use the bootstrapper to update the installer:
-
-     ```cmd
-     vs_ssms.exe --update --quiet
-     ```
+  ```cmd
+  vs_ssms.exe --update --quiet
+  ```
 
 [!INCLUDE [support](../includes/support.md)]
 
 ## Related content
 
 - [Install SQL Server Management Studio versions side-by-side](side-by-side.md)
-- [Modify SQL Server Management Studio 21 Preview components and language packs](modify.md)
-- [Uninstall or remove SQL Server Management Studio 21 Preview](uninstall.md)
+- [Modify SQL Server Management Studio workloads, components, and language packs](modify.md)
+- [Uninstall or remove SQL Server Management Studio](uninstall.md)

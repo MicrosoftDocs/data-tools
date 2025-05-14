@@ -30,7 +30,7 @@ In this quickstart, you can get started using SQL Server Management Studio (SSMS
 
 To complete this article, you need SQL Server Management Studio (SSMS) and access to a data source.
 
-- Install [SQL Server Management Studio](../download-sql-server-management-studio-ssms.md)
+- [Install SQL Server Management Studio](../install/install.md)
 - [Azure Synapse Analytics](https://azure.microsoft.com/services/synapse-analytics/)
 
 ## Connect to a dedicated SQL pool (formerly SQL DW) in Azure Synapse Analytics

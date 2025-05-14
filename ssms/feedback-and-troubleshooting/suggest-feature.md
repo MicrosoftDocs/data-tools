@@ -11,7 +11,7 @@ ms.collection:
   - data-tools
 ---
 
-# Suggest a feature or improvement for SQL Server Management Studio 21 Preview
+# Suggest a feature or improvement for SQL Server Management Studio 21
 
 Users of SQL Server Management Studio (SSMS) can submit requests for improvement or new functionality using the [SSMS user feedback site](https://aka.ms/ssms-feedback), or using **Help** > **Send feedback**. Submitted ideas are regularly reviewed, and SSMS users can upvote and comment on ideas they support.
 
@@ -33,4 +33,4 @@ After you submit a suggestion for a feature or improvement, the Stage indicates 
 
 ## Related content
 
-- [Report a problem with SQL Server Management Studio 21 Preview](report-problem.md)
+- [Report a problem with SQL Server Management Studio 21](report-problem.md)

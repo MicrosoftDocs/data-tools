@@ -1,16 +1,16 @@
 ---
-title: Modify SQL Server Management Studio 21 Preview
+title: Modify SQL Server Management Studio
 description: Learn how to modify the SQL Server Management Studio (SSMS) installation.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
 ---
-# Modify SQL Server Management Studio 21 Preview components and language packs
+# Modify SQL Server Management Studio workloads, components, and language packs
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -39,9 +39,9 @@ To modify your SSMS installation, you need to open the Visual Studio Installer, 
 
 In the Visual Studio Installer, look for the installation of SSMS that you want to modify and then select **Modify**.
 
-## Change individual components
+## Change workloads or individual components
 
-SSMS contains the components you need for managing SQL Server and Azure SQL databases.
+Workloads group components that are commonly used together. Use workloads to modify SSMS so that it supports the work you want to do.
 
 1. In the Visual Studio Installer, on the **Workloads** tab, select the workloads that you want.
 
@@ -55,12 +55,9 @@ SSMS contains the components you need for managing SQL Server and Azure SQL data
 
 You can also use a [configuration file to modify an existing installation to add or remove components](/visualstudio/install/import-export-installation-configurations#programmatically-use-a-configuration-file-to-add-components-to-an-existing-installation). For more information, see [Import or export installation configurations](/visualstudio/install/import-export-installation-configurations).
 
-> [!TIP]  
-> For information about the SQL Server Data Tools (SSDT) component, see [Install SQL Server Data Tools (SSDT) for Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt).
-
 ## Modify language packs
 
-The Visual Studio Installer selects a default language pack for SSMS that matches the language of your operating system. You can change the default language whenever you want.
+The Visual Studio Installer selects a default language pack for SSMS that matches the language of your operating system. You can change the default language at any time.
 
 To change the default language:
 
@@ -72,6 +69,6 @@ To change the default language:
 
 ## Related content
 
-- [Update SQL Server Management Studio 21 Preview](update.md)
-- [Uninstall or remove SQL Server Management Studio 21 Preview](uninstall.md)
-- [Repair installation for SQL Server Management Studio 21 Preview](repair.md)
+- [Update SQL Server Management Studio](update.md)
+- [Uninstall or remove SQL Server Management Studio](uninstall.md)
+- [Repair installation for SQL Server Management Studio](repair.md)

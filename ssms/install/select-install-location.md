@@ -1,16 +1,16 @@
 ---
-title: Select Installation Locations for SQL Server Management Studio 21 Preview
+title: Select Installation Locations for SQL Server Management Studio
 description: Reduce the installation footprint of SQL Server Management Studio (SSMS) by changing the location of the download cache and components to different drives.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
 ---
-# Select installation locations for SQL Server Management Studio 21 Preview
+# Select installation locations for SQL Server Management Studio
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -50,7 +50,7 @@ You can reduce the installation footprint of SQL Server Management Studio (SSMS)
 
 ## Related content
 
-- [Install SQL Server Management Studio 21 Preview](install.md)
-- [Update SQL Server Management Studio 21 Preview](update.md)
-- [Modify SQL Server Management Studio 21 Preview components and language packs](modify.md)
-- [Uninstall or remove SQL Server Management Studio 21 Preview](uninstall.md)
+- [Install SQL Server Management Studio](install.md)
+- [Update SQL Server Management Studio](update.md)
+- [Modify SQL Server Management Studio workloads, components, and language packs](modify.md)
+- [Uninstall or remove SQL Server Management Studio](uninstall.md)

@@ -14,7 +14,7 @@ ms.collection:
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 To work with servers and databases, you must first connect to the server. You can connect to multiple servers at the same time.
 
-[SQL Server Management Studio (SSMS)](../download-sql-server-management-studio-ssms.md) supports several types of connections. This article provides details for connecting to SQL Server and Azure SQL Database (connecting to an Azure SQL single database or elastic pool). For information on the other connection options, see the [links](#see-also) at the bottom of this page.
+[SQL Server Management Studio (SSMS)](../sql-server-management-studio-ssms.md) supports several types of connections. This article provides details for connecting to SQL Server and Azure SQL Database (connecting to an Azure SQL single database or elastic pool). For information on the other connection options, see the [Related content](#related-content) at the end of this page.
   
 ## Connecting to a Server  
 
@@ -40,16 +40,12 @@ To work with servers and databases, you must first connect to the server. You ca
 
    ![Screenshot of the Object Explorer showing that the server is successfully connected.](../media/connect-to-server/connected.png)
 
-## Next Steps
+## Related content
 
-[Design, Create, and Update Tables](../visual-db-tools/design-tables-visual-database-tools.md)
-
-## See Also
-
-[SQL Server Management Studio (SSMS)](../sql-server-management-studio-ssms.md)  
-[Download SQL Server Management Studio (SSMS)](../download-sql-server-management-studio-ssms.md)
-
-[Analysis Services](/analysis-services/instances/connect-from-client-applications-analysis-services)  
-[Integration Services](/sql/integration-services/sql-server-integration-services)  
-[Reporting Services](/sql/reporting-services/tools/connect-to-a-report-server-in-management-studio)  
-[Azure Storage](../f1-help/connect-to-microsoft-azure-storage.md)
+- [Design, Create, and Update Tables](../visual-db-tools/design-tables-visual-database-tools.md)
+- [What is SQL Server Management Studio (SSMS)?](../sql-server-management-studio-ssms.md)
+- [Install SQL Server Management Studio](../install/install.md)
+- [Analysis Services](/analysis-services/instances/connect-from-client-applications-analysis-services)
+- [Integration Services](/sql/integration-services/sql-server-integration-services)
+- [Reporting Services](/sql/reporting-services/tools/connect-to-a-report-server-in-management-studio)
+- [Azure Storage](../f1-help/connect-to-microsoft-azure-storage.md)
