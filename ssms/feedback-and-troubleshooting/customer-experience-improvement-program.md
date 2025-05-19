@@ -33,5 +33,5 @@ The VSCEIP is turned on by default. You can turn it off or back on again by foll
 
 ## Related content
 
-- [Suggest a feature or improvement for SQL Server Management Studio 21 Preview](suggest-feature.md)
-- [Report a problem with SQL Server Management Studio 21 Preview](report-problem.md)
+- [Suggest a feature or improvement for SQL Server Management Studio 21](suggest-feature.md)
+- [Report a problem with SQL Server Management Studio 21](report-problem.md)

@@ -45,8 +45,8 @@ To learn more about SQL Server Management Studio, see [Tips and tricks for using
 
 To complete this quickstart, you need the following prerequisites:
 
-- Install [SQL Server Management Studio (SSMS)](../download-sql-server-management-studio-ssms.md).
-- [Install SQL Server from the Installation Wizard (Setup)](/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup) and configure a [SQL Server instance](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads).
+- [Install SQL Server Management Studio](../install/install.md).
+- [Install SQL Server from the Installation Wizard (Setup)](/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup) and configure a [SQL Server instance](https://www.microsoft.com/sql-server/sql-server-downloads).
 
 ## Connect to a SQL Server instance
 
@@ -56,7 +56,7 @@ To connect to your SQL Server instance, follow these steps:
 
    :::image type="content" source="media/ssms-connect-query-sql-server/connect-object-explorer.png" alt-text="Screenshot of the connect link in Object Explorer.":::
 
-2. The **Connect to Server** dialog box appears. In SSMS 21 Preview, you can customize your connection dialog experience in **Tools > Options > Environment > Connection Dialog**. Use the Modern connection dialog for a modern format when connecting to the Database Engine. Use the Classic connection dialog experience when connecting to the Database Engine, and SQL Server Analysis Services (SSAS), SQL Server Reporting Services (SSRS), and SQL Server Integration Services (SSIS).
+2. The **Connect to Server** dialog box appears. In SSMS 21, you can customize your connection dialog experience in **Tools > Options > Environment > Connection Dialog**. Use the Modern connection dialog for a modern format when connecting to the Database Engine. Use the Classic connection dialog experience when connecting to the Database Engine, and SQL Server Analysis Services (SSAS), SQL Server Reporting Services (SSRS), and SQL Server Integration Services (SSIS).
 
    ### [Modern connection dialog](#tab/modern)
 

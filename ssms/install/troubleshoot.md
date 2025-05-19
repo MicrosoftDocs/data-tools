@@ -4,13 +4,13 @@ description: Learn how to troubleshoot issues with SQL Server Management Studio 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
   - data-tools
 ---
-# Troubleshoot installation and upgrade issues for SQL Server Management Studio 21 Preview
+# Troubleshoot installation and upgrade issues for SQL Server Management Studio
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -24,7 +24,7 @@ Try the following possible resolutions that apply to a typical online installati
 
 The first thing to check is whether or not the issue you're encountering is a known issue with the Visual Studio Installer that Microsoft is working on fixing.
 
-To see if there's a workaround for your problem, check [Known issues in SQL Server Management Studio 21 Preview](../ssms-21/known-issues.md).
+To see if there's a workaround for your problem, check [Known issues in SQL Server Management Studio](../known-issues.md).
 
 #### 2. Try repairing SSMS
 
@@ -78,9 +78,7 @@ If you contact Microsoft Support, you might be asked to collect setup logs by us
 
 To collect the logs, follow these steps:
 
-1. [Download the tool](https://aka.ms/vscollect.exe).
-
-https://aka.ms/vscollect
+1. Download the tool from <https://aka.ms/vscollect>.
 
 1. Open an administrative command prompt.
 

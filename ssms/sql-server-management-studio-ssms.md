@@ -24,8 +24,8 @@ helpviewer_keywords:
 
 SQL Server Management Studio (SSMS) is an integrated environment for managing any SQL infrastructure. Use SSMS to access, configure, manage, administer, and develop all components of [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)], [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview), [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview), [SQL Server on Azure VM](/azure/azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview), and [Azure Synapse Analytics](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is/). SSMS provides a single comprehensive utility that combines a broad group of graphical tools with many rich script editors to provide access to [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] for developers and database administrators of all skill levels.
 
-- [**Download SQL Server Management Studio (SSMS)**](download-sql-server-management-studio-ssms.md)
-- [**Download SQL Server Developer**](https://my.visualstudio.com/Downloads?q=SQL%20Server%20Developer)
+- [**Install SQL Server Management Studio**](install/install.md)
+- [**Download SQL Server Developer edition**](https://my.visualstudio.com/Downloads?q=SQL%20Server%20Developer)
 - [**Download Visual Studio**](https://www.visualstudio.com/downloads/)
 
 :::image type="content" source="media/sql-server-management-studio-ssms/ssms.png" alt-text="Screenshot of SQL Server Management Studio.":::
@@ -94,9 +94,7 @@ SSMS provides an integrated environment for managing any SQL infrastructure, inc
 
 ## Non-English language versions
 
-The block on mixed languages setup has been lifted. You can install SSMS in German on a French Windows machine. If the operating system language doesn't match the SSMS language, the user needs to change the language under Tools > Options > International Settings. Otherwise, SSMS shows the English UI.
-
-For more information about different locales with previous versions, see [Install non-English language versions of SSMS](install-other-languages.md).
+The Visual Studio Installer selects a default language pack for SSMS that matches the language of your operating system. You can change the default language at any time. For more information, see [Modify SQL Server Management Studio workloads, components, and language packs](install/modify.md).
 
 ## Support policy
 
@@ -114,7 +112,7 @@ For diagnostic data collection and feature usage information, see the [SQL Serve
 
 ## Related content
 
-- [Install non-English language versions of SSMS](install-other-languages.md)
+- [Modify SQL Server Management Studio workloads, components, and language packs](install/modify.md)
 - [Connect to and query a SQL Server instance](quickstarts/ssms-connect-query-sql-server.md)
 - [Writing Transact-SQL Statements](/sql/t-sql/tutorial-writing-transact-sql-statements)
 - [Azure Data Studio](/azure-data-studio/what-is-azure-data-studio)

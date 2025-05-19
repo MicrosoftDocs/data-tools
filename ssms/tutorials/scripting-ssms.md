@@ -42,7 +42,7 @@ To script any object in **Object Explorer**, right-click it and select the **Scr
 
 To complete this tutorial, you need SQL Server Management Studio, access to a server that's running SQL Server, and an AdventureWorks database.
 
-* Install [SQL Server Management Studio](../download-sql-server-management-studio-ssms.md).
+* [Install SQL Server Management Studio](../install/install.md).
 * Install [SQL Server 2017 Developer Edition](https://www.microsoft.com/sql-server/sql-server-downloads).
 * Download [AdventureWorks sample databases](https://github.com/Microsoft/sql-server-samples/releases).
 

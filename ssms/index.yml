@@ -1,0 +1,79 @@
+### YamlMime:Landing
+
+title: SQL Server Management Studio
+summary: Obtain and use SQL Server Management Studio (SSMS) to connect to and query SQL Server, Azure SQL Database, Azure SQL Managed Instance, SQL database in Microsoft Fabric, and more.
+metadata:
+  title: SQL Server Management Studio
+  description: Learn how to use SQL Server Management Studio (SSMS) to connect to and query SQL Server, Azure SQL Database, Azure SQL Managed Instance, SQL database in Microsoft Fabric, and more.
+  author: rwestMSFT
+  ms.author: randolphwest
+  ms.date: 05/19/2025
+  ms.service: sql-server-management-studio
+  ms.topic: landing-page
+  ms.collection: data-tools
+landingContent:
+  - title: Overview
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is SSMS?
+            url: sql-server-management-studio-ssms.md
+
+  - title: Install
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Download and install SSMS
+            url: install/install.md
+          - text: Modify SSMS and language packs
+            url: install/modify.md
+          - text: Install SSMS with command-line parameters
+            url: install/command-line-parameters.md
+          - text: Channels for SQL Server Management Studio
+            url: install/channels-release.md
+
+  - title: What's new in SSMS?
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: SQL Server Management Studio release notes
+            url: release-notes-21.md
+          - text: Copilot in SQL Server Management Studio (preview)
+            url: copilot/copilot-in-ssms-overview.md
+
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Connect and query with SSMS
+            url: quickstarts/ssms-connect-query-sql-server.md
+          - text: Scripting SSMS
+            url: tutorials/scripting-ssms.md
+          - text: Tool windows
+            url: tool-windows-in-sql-server-management-studio.md
+          - text: Tips and tricks
+            url: tutorials/ssms-tricks.md
+
+  - title: Customize SSMS
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configuration
+            url: tutorials/ssms-configuration.md
+          - text: Import and export SSMS settings
+            url: tutorials/import-export-settings.md
+          - text: Customize menus and shortcut keys
+            url: customize-menus-and-shortcut-keys.md
+
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Troubleshoot installation issues
+            url: install/troubleshoot.md
+          - text: Known issues
+            url: known-issues.md
+          - text: Troubleshoot SSMS
+            url: troubleshoot/ssms-troubleshoot.md
+          - text: User assistance
+            url: user-assistance-in-sql-server-management-studio.md

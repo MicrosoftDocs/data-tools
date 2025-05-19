@@ -3,16 +3,16 @@ title: Sign in or Switch User Accounts in SQL Server Management Studio
 description: Learn how to sign in to SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.reviewer: randolphwest, maghan, mbarickman
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
 ---
-# Sign in or switch user accounts in SQL Server Management Studio 21 Preview
+# Sign in or switch user accounts in SQL Server Management Studio
 
-[!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
+[!INCLUDE [sql-asdb-asdbmi-asa](includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
 In this article, you learn how to sign in to SQL Server Management Studio (SSMS), add and switch user accounts, update your profile, sign out of your account, and the benefits to signing in. To learn how to access multiple user accounts in SSMS, see [Access multiple accounts](/visualstudio/ide/sign-in-access-multiple-accounts). For guidance on how to add your public GitHub or GitHub Enterprise account to your SSMS keychain, see [Work with GitHub accounts in Visual Studio](/visualstudio/ide/work-with-github-accounts).
 
@@ -48,7 +48,6 @@ While you don't have to sign in, there are many advantages to doing so.
 | Benefit | Description |
 | --- | --- |
 | Auto-connect to Azure | Access to your Azure account in SSMS without being prompted again for credentials for the same account. |
-| [Synchronize](/visualstudio/ide/synchronized-settings-in-visual-studio) your settings | Settings that you customize, such as key bindings, window layout, and color theme, apply immediately when you sign in to SSMS on any device. |
 
 ## Add and switch user accounts in SSMS
 
@@ -97,6 +96,6 @@ You can also use the **Account Settings** dialog to sign out of all accounts.
 
 ## Related content
 
-- [Access multiple accounts in SQL Server Management Studio 21 Preview](sign-in-access-multiple-accounts.md)
+- [Access multiple accounts in SQL Server Management Studio](sign-in-access-multiple-accounts.md)
 - [Work with GitHub accounts in Visual Studio](/visualstudio/ide/work-with-github-accounts)
 - [Sign in to Visual Studio with accounts that require multifactor authentication (MFA)](/visualstudio/ide/work-with-multi-factor-authentication)

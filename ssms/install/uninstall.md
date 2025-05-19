@@ -1,16 +1,16 @@
 ---
-title: Uninstall or Remove SQL Server Management Studio 21 Preview
+title: Uninstall or Remove SQL Server Management Studio
 description: Learn how to repair an installation of SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
 ---
-# Uninstall or remove SQL Server Management Studio 21 Preview
+# Uninstall or remove SQL Server Management Studio
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -89,6 +89,6 @@ Here's how to run the `InstallCleanup.exe` tool:
 
 ## Related content
 
-- [Modify SQL Server Management Studio 21 Preview components and language packs](modify.md)
-- [Update SQL Server Management Studio 21 Preview](update.md)
-- [Install SQL Server Management Studio 21 Preview](install.md)
+- [Modify SQL Server Management Studio workloads, components, and language packs](modify.md)
+- [Update SQL Server Management Studio](update.md)
+- [Install SQL Server Management Studio](install.md)
