@@ -1,13 +1,68 @@
 {
   "redirections": [
     {
-      "source_path": "ssms/index.md",
-      "redirect_url": "/ssms/download-sql-server-management-studio-ssms",
+      "source_path": "ssms/download-sql-server-management-studio-ssms.md",
+      "redirect_url": "/ssms/install/install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/release-notes-ssms.md",
+      "redirect_url": "/ssms/release-notes-20",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/ssms-21/faq.yml",
+      "redirect_url": "/ssms/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/ssms-21/known-issues.md",
+      "redirect_url": "/ssms/known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/ssms-21/release-history.md",
+      "redirect_url": "/ssms/release-history",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/ssms-21/release-notes-21.md",
+      "redirect_url": "/ssms/release-notes-21",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/ssms-21/roadmap.md",
+      "redirect_url": "/ssms/roadmap",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/ssms-21/sign-in-access-multiple-accounts.md",
+      "redirect_url": "/ssms/sign-in-access-multiple-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/ssms-21/sign-in.md",
+      "redirect_url": "/ssms/sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/ssms-21/system-requirements.md",
+      "redirect_url": "/ssms/system-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/ssms-21/user-permissions.md",
+      "redirect_url": "/ssms/user-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/install-other-languages.md",
+      "redirect_url": "/ssms/install/modify",
       "redirect_document_id": false
     },
     {
       "source_path": "ssms/install-extensions-in-sql-server-management-studio-ssms.md",
-      "redirect_url": "/ssms/download-sql-server-management-studio-ssms",
+      "redirect_url": "/ssms/install/install",
       "redirect_document_id": false
     }
   ]

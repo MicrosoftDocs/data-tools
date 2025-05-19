@@ -22,13 +22,16 @@ helpviewer_keywords:
 
 The tool components of SSMS include Registered Servers, Object Explorer, Solution Explorer, Template Explorer, the Object Explorer Details page, and the document window. To display a tool, on the **View** menu, select the tool name. To display the Query Editor tool, select the **New Query** button on the toolbar.
 
-To get started, [download SQL Server Management Studio](download-sql-server-management-studio-ssms.md).
+[Install SQL Server Management Studio](install/install.md) to get started.
 
 ## Encrypt your connection
 
 In [!INCLUDE [sssql19-md](includes/sssql19-md.md)] and earlier versions, network traffic between SSMS and [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] is unencrypted by default. Don't work with sensitive data (including passwords) in SSMS unless you establish an encrypted connection. For more information, see [How to: Enable Encrypted Connections to the Database Engine (SQL Server Configuration Manager)](/sql/database-engine/configure-windows/configure-sql-server-encryption).
 
-For more information about encryption in [!INCLUDE [ssmanstudiofull-md](includes/ssmanstudiofull-md.md)] 20 and later versions, see [Release notes for SQL Server Management Studio (SSMS)](release-notes-ssms.md).
+For more information about encryption in [!INCLUDE [ssmanstudiofull-md](includes/ssmanstudiofull-md.md)], see:
+
+- [Release notes for SQL Server Management Studio 21](release-notes-21.md)
+- [Release notes for SQL Server Management Studio 20](release-notes-20.md)
 
 ## SSMS features
 
@@ -52,6 +55,6 @@ To start and stop [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] or [!INCL
 
 ## Related content
 
-- [Download SQL Server Management Studio (SSMS)](download-sql-server-management-studio-ssms.md)
+- [Install SQL Server Management Studio](install/install.md)
 - [Use SQL Server Management Studio](sql-server-management-studio-ssms.md)
 - [How to: View server properties (SQL Server Management Studio)](/sql/database-engine/configure-windows/view-or-change-server-properties-sql-server)

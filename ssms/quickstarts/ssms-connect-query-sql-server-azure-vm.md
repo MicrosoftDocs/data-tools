@@ -32,7 +32,7 @@ Get started using SQL Server Management Studio (SSMS) to connect to your SQL Ser
 
 To complete this article, you need SQL Server Management Studio and access to a data source.
 
-- Install [SQL Server Management Studio](../download-sql-server-management-studio-ssms.md) (SSMS)
+- [Install SQL Server Management Studio](../install/install.md)
 - [SQL Server on an Azure VM](https://azure.microsoft.com/services/virtual-machines/sql-server/)
 
 ## Connect to SQL Virtual Machines

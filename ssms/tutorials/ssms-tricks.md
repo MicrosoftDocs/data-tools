@@ -25,19 +25,18 @@ helpviewer_keywords:
 This article includes some tips and tricks for using SQL Server Management Studio (SSMS). This article shows you how to:
 
 > [!div class="checklist"]
->  
-> * Comment/uncomment your Transact-SQL (T-SQL) text
-> * Indent your text
-> * Filter objects in Object Explorer
-> * Access your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] error log
-> * Find the name of your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance
+> - Comment/uncomment your Transact-SQL (T-SQL) text
+> - Indent your text
+> - Filter objects in Object Explorer
+> - Access your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] error log
+> - Find the name of your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance
 
 ## Prerequisites
 
 To test the steps provided in this article, you need SQL Server Management Studio, access to an instance of  SQL Server and an AdventureWorks database.
 
-- Install [SQL Server Management Studio](../download-sql-server-management-studio-ssms.md).
-- Install [SQL Server Developer Edition](https://www.microsoft.com/sql-server/sql-server-downloads).
+- [Install SQL Server Management Studio](../install/install.md).
+- Install [SQL Server Developer edition](https://www.microsoft.com/sql-server/sql-server-downloads).
 - Download an [AdventureWorks sample database](https://github.com/Microsoft/sql-server-samples/releases). To learn how to restore a database in SSMS, see [Restoring a database](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
 
 ## Comment/uncomment your T-SQL code

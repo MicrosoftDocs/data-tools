@@ -1,6 +1,6 @@
 ---
-title: SQL Server migration component (preview)
-description: "Learn about the preview SQL Server migration component in SQL Server Management Studio (SSMS)."
+title: SQL Server migration component
+description: "Learn about the SQL Server migration component in SQL Server Management Studio (SSMS)."
 author: nilabjaball
 ms.author: niball
 ms.reviewer: randolphwest
@@ -33,9 +33,9 @@ keywords:
   - components
 ---
 
-# Use the SQL Server migration component (preview) in SQL Server Management Studio
+# Use the SQL Server migration component in SQL Server Management Studio
 
-The migration component (preview) in SQL Server Management Studio (SSMS) checks upgrade and compatibility issues from lower versions of SQL Server to higher versions of SQL Server, running on-premises and on other virtual machine (VM) environments. The migration component finds compatibility issues related to breaking changes, behavior changes, deprecated features, and other information. The report also provides a feature parity check if you want to migrate from one cross-platform database to another. The upgrade adviser assessment report provides the effect of objects, the possible cause, and remediation steps.
+The migration component in SQL Server Management Studio (SSMS) checks upgrade and compatibility issues from lower versions of SQL Server to higher versions of SQL Server, running on-premises and on other virtual machine (VM) environments. The migration component finds compatibility issues related to breaking changes, behavior changes, deprecated features, and other information. The report also provides a feature parity check if you want to migrate from one cross-platform database to another. The upgrade adviser assessment report provides the effect of objects, the possible cause, and remediation steps.
 
 You can also physically migrate your database using the migration component. It follows the backup-copy-restore technology to move data from the source to the target by providing a backup folder and, optionally, a copy folder. Along with the data, the migration wizard transfers logins to simplify side by side migration.
 
@@ -48,7 +48,7 @@ You can also physically migrate your database using the migration component. It 
 
 1. Make sure that SQL Server Management Studio (SSMS) 21 is installed. Once the installation is complete, select **Modify** > **Individual Components**.
 
-1. Select the **Migration (Preview)** component, choose **Install while downloading** from the dropdown list, and select **Modify** to complete the installation.
+1. Select the **Migration** component, choose **Install while downloading** from the dropdown list, and select **Modify** to complete the installation.
 
 ## Assess your environment
 

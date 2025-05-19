@@ -57,7 +57,7 @@ By default, you connect to the `master` database. If you specify a user database
 
 ### Authentication
 
-The current version of SQL Server Management Studio (SSMS) offers eight authentication modes when you connect to a [!INCLUDE [ssDE](../includes/ssde-md.md)]. If your **Authentication** dialog box doesn't match the following list, download the [most recent version of SQL Server Management Studio](../download-sql-server-management-studio-ssms.md).
+The current version of SQL Server Management Studio (SSMS) offers eight authentication modes when you connect to a [!INCLUDE [ssDE](../includes/ssde-md.md)]. If your **Authentication** dialog box doesn't match the following list, [install the most recent version of SQL Server Management Studio](../install/install.md).
 
 - **Windows Authentication**: [!INCLUDE [msCoName](../includes/msconame-md.md)] Windows Authentication mode allows a user to connect through a Windows user account.
 

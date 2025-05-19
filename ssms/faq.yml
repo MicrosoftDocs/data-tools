@@ -1,23 +1,23 @@
 ### YamlMime:FAQ
 metadata:
-  title: SQL Server Management Studio 21 Preview frequently asked questions (FAQ)
+  title: SQL Server Management Studio 21 Frequently Asked Questions (FAQ)
   description: Get answers to frequently asked questions about SSMS.
   author: erinstellato-ms
   ms.author: erinstellato
   ms.reviewer: maghan, randolphwest
-  ms.date: 04/16/2025
+  ms.date: 05/19/2025
   ms.service: sql-server-management-studio
   ms.topic: faq
-title: SQL Server Management Studio 21 Preview FAQ
+title: SQL Server Management Studio 21 FAQ
 summary: |
-    SQL Server Management Studio 21 Preview is the latest preview version of Microsoft's integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL.
+  SQL Server Management Studio 21 is the latest generally available version of Microsoft's integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL.
 
 sections:
   - name: Ignored
     questions:
-      - question: "What is SQL Server Management Studio 21 Preview?"
+      - question: "What is SQL Server Management Studio 21?"
         answer: |
-          [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is the latest preview version of Microsoft's integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL. SQL Server Management Studio (SSMS) provides the ability to configure, monitor, and administer instances of SQL Server, as well as Azure SQL Managed Instance and Azure SQL databases. Use SSMS to deploy, monitor, and upgrade the data-tier components used by your applications, as well as develop queries and scripts. SSMS runs on Windows and is a free download from Microsoft.
+          [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] is the latest generally available version of Microsoft's integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL. SQL Server Management Studio (SSMS) provides the ability to configure, monitor, and administer instances of SQL Server, as well as Azure SQL Managed Instance and Azure SQL databases. Use SSMS to deploy, monitor, and upgrade the data-tier components used by your applications, as well as develop queries and scripts. SSMS runs on Windows and is a free download from Microsoft.
 
       - question: "What are the new features in SSMS 21?"
         answer: |
@@ -31,7 +31,7 @@ sections:
           - **Git Integration**: Integration with Git for tracking, managing, and collaborating on SQL scripts.
           - **Performance & Reliability**: Numerous under-the-hood enhancements for smoother performance and improved stability.
           - **Security Features**: A new Always Encryption Assessment wizard, and an updated Azure Authentication experience.
-          
+
           For a full list of new features, visit the official [release notes](release-notes-21.md).
 
       - question: "Where can I find more information about SSMS 21?"
@@ -54,7 +54,7 @@ sections:
           - **Memory**: 4-GB RAM minimum
           - **Hard Disk Space**: 4 GB of available disk space
           - **Display**: 1280 x 800 resolution or higher
-      
+
       - question: "Does SSMS 21 run on macOS?"
         answer: |
           No. SSMS is available only for Windows.
@@ -65,34 +65,34 @@ sections:
 
       - question: "Do I have to install Visual Studio to use SSMS 21?"
         answer: |
-          No.  SSMS 21 doesn't require any edition of Visual Studio (for example, Community, Enterprise) to be installed.  SSMS 21 isn't an extension or workload of Visual Studio.
+          No. SSMS 21 doesn't require any edition of Visual Studio (for example, Community, Enterprise) to be installed. SSMS 21 isn't an extension or workload of Visual Studio.
 
       - question: "What if I already have Visual Studio 2022 (or Visual Studio 2019) installed?"
         answer: |
-          It doesn't matter!  SSMS 21 is installed in a separate location that you can select in the installer.
+          It doesn't matter! SSMS 21 is installed in a separate location that you can select in the installer.
 
       - question: "Can I install Visual Studio 2022 after I've installed SSMS 21?"
         answer: |
           Yes.
 
       - question: "How much does SSMS 21 cost?"
-        answer: 
+        answer: |
           SSMS 21 is free for personal or enterprise use.
 
       - question: "Do I need a Visual Studio subscription to install or use SSMS 21?"
         answer: |
-          No. [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] has its own [EULA](/legal/sql/ssms/sql-server-management-studio-license-terms)) and remains a free application, just as it always has been.
+          No. [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] has its own [EULA](/legal/sql/ssms/sql-server-management-studio-license-terms)) and remains a free application, just as it always has been.
 
       - question: "Who should use SSMS 21?"
-        answer: 
+        answer: |
           Anyone can use SSMS 21! However, it's designed to simplify tasks performed by database administrators, database developers, system administrators, and independent software vendors.
 
       - question: "What can I do with SSMS 21?"
         answer: |
           SSMS 21 is a Visual Studio 2022-based solution, and offers an integrated experience when working with SQL Server, Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. SSMS 21 makes the core experiences that you rely on every day simple and easy with built-in features such as multiple tab windows, a rich SQL query editor, IntelliSense, keyword completion, code snippets, and source control integration (Git). You can execute queries on-demand, view, and save results as text or CSV, edit data, and browse database objects in object explorer.
-          
+
           SSMS 21 offers a consistent experience to back up and restore your databases. With support for SQL Server Always On Availability Groups, you can easily configure, monitor, and troubleshoot Availability Groups for your mission-critical SQL Server databases and quickly failover to a secondary database during a disaster. SSMS has been designed to make you more productive in the DevOps lifecycle of your databases of choice on the operating systems of your choice. As a result, you're always in control, and you can reduce risks, solve problems faster, and continuously deliver value that exceeds customers' expectations.
-          
+
       - question: "Is SSMS 21 Open Source?"
         answer: |
           No.
@@ -100,18 +100,18 @@ sections:
       - question: "Do you plan to open-source SSMS 21?"
         answer: |
           No.
-       
+
       - question: "When should I use SSMS 21?"
         answer: |
           Use SQL Server Management Studio 21 if you:
-        
+
           - Are doing complex administrative or platform configuration.
           - Are doing security management, including login, user, and role management, and implementation of Always Encrypted.
           - Need to make use of performance tuning advisors and dashboards.
           - Use database diagrams and table designers.
           - Need access to Registered Servers.
           - Make use of live query stats or client statistics.
-         
+
       - question: "Who typically uses SSMS?"
         answer: Database administrators (DBAs) typically use SSMS, but any data professional such as database developers, data engineers, or system administrators can use SSMS.
 
@@ -125,20 +125,25 @@ sections:
 
       - question: "Why isn't dark theme available for every window?"
         answer: |
-          We'll make dark theme available across more dialogs in SSMS 21 over time.  Initial support exists for dialogs that are most frequently accessed by users, including Object Explorer, Query Editor, Results pane, and Template Explorer. If you plan to use dark theme, and would like to provide feedback on the dialogs that you use the most, please go to the [SSMS 21 dark theme support](https://feedback.azure.com/d365community/idea/35006f2b-73a0-ef11-8a69-7c1e520a48ea) feedback item and add a comment.
+          We'll make dark theme available across more dialogs in SSMS 21 over time. Initial support exists for dialogs that are most frequently accessed by users, including Object Explorer, Query Editor, Results pane, and Template Explorer. If you plan to use dark theme, and would like to provide feedback on the dialogs that you use the most, please go to the [SSMS 21 dark theme support](https://feedback.azure.com/d365community/idea/35006f2b-73a0-ef11-8a69-7c1e520a48ea) feedback item and add a comment.
+
+      - question: "Where is the Git integration in SSMS?"
+        answer: |
+          The Git integration in SSMS is a separate component that can be installed using the Visual Studio Installer.
 
       - question: "Where is Copilot in SSMS?"
         answer: |
-          Copilot in SSMS will soon be available in private preview.
+          Copilot in SSMS is a separate component that can be installed using the Visual Studio Installer.
 
-      - question: "Will Copilot in SSMS be installed by default?"
+      - question: "Is Copilot in SSMS be installed by default?"
         answer: |
-          No.  When available, Copilot in SSMS will be an opt-in experience, available as an extension.
+          No.
 
-      - question: "Will there be additional previews for SSMS 21?"
+      - question: "Will there be additional releases for SSMS 21?"
         answer: |
-          Yes, there will be multiple previews of SSMS 21. Notifications will occur within SSMS 21 when a new preview is available.
+          Yes, there will be service and minor releases of SSMS 21. Notifications will occur within SSMS 21 when a new release is available.
 
       - question: "Where do I report issues or feedback requests for SSMS 21?"
         answer: |
           Use the [SSMS Developer Community](https://aka.ms/ssms-feedback) site.
+          You can also use the **Send Feedback** option in the **Help** menu in SSMS 21 to report issues or provide feedback. This option will open a new issue in the Developer Community site, where you can describe your issue or feedback request.

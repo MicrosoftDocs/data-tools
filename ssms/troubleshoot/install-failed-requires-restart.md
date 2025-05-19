@@ -29,10 +29,10 @@ Following these steps to uninstall the "Microsoft ODBC Driver 17 for SQL Server"
 1. Close any related applications, including SSMS, Visual Studio, or SQL Server Profiler.
 1. Go to Control Panel > Add/Remove Programs.
 1. Locate the entry for "Microsoft ODBC Driver 17 for SQL Server" and uninstall. This step may require a restart.
-1. Begin the SSMS installation. The latest version is available [here](../download-sql-server-management-studio-ssms.md).
+1. Begin the SSMS installation of the [latest version](../install/install.md).
 
 [!INCLUDE[get-help-sql-tools](../includes/paragraph-content/get-help-sql-tools.md)]
 
 ## Related content
 
-- [Download SSMS](../download-sql-server-management-studio-ssms.md)
+- [Install SQL Server Management Studio](../install/install.md)

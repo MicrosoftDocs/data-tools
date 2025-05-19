@@ -36,7 +36,7 @@ SQL Server Agent can run a job on a schedule, in response to a specific event, o
 
 SQL Server Agent uses the following components to define the tasks to be performed, when to perform the tasks, and how to report the success or failure of the tasks.
 
-Use the [SQL Server Configuration Manager](/sql/relational-databases/sql-server-configuration-manager) to manage the SQL Server Agent service, and use [SQL Server Management Studio (SSMS)](../download-sql-server-management-studio-ssms.md) to easily manage SQL Server Agent properties, jobs, alerts, operators, and proxies in a graphical user interface.
+Use the [SQL Server Configuration Manager](/sql/relational-databases/sql-server-configuration-manager) to manage the SQL Server Agent service, and use [SQL Server Management Studio (SSMS)](../sql-server-management-studio-ssms.md) to easily manage SQL Server Agent properties, jobs, alerts, operators, and proxies in a graphical user interface.
 
 ### Jobs
 

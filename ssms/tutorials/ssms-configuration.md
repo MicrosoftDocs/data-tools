@@ -30,7 +30,7 @@ This tutorial describes the various window components in SQL Server Management S
 
 To complete this tutorial, you need SQL Server Management Studio.  
 
-* Install [SQL Server Management Studio](../download-sql-server-management-studio-ssms.md).
+* [Install SQL Server Management Studio](../install/install.md)
 
 ## SQL Server Management Studio components
 
