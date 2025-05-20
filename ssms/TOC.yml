@@ -63,6 +63,8 @@ items:
             href: release-notes-19.md
       - name: SSMS support policy
         href: support-policy.md
+      - name: Feedback survey policies
+        href: feedback-survey-policies.md
       - name: User assistance in SSMS
         href: user-assistance-in-sql-server-management-studio.md
 
