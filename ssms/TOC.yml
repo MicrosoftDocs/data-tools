@@ -82,6 +82,8 @@ items:
         href: copilot/copilot-in-ssms-code-assistance.md
       - name: Scenarios
         href: copilot/copilot-in-ssms-scenarios.md
+      - name: Best practices
+        href: copilot/copilot-in-ssms-best-practices.md
       - name: Troubleshooting
         href: copilot/copilot-in-ssms-troubleshooting.md
 
