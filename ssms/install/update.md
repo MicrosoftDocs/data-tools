@@ -127,7 +127,7 @@ The most current release of the installer in the latest version of SSMS typicall
 - In a command window, use the bootstrapper to update the installer:
 
   ```cmd
-  vs_ssms.exe --update --quiet
+  vs_SSMS.exe --update --quiet
   ```
 
 [!INCLUDE [support](../includes/support.md)]

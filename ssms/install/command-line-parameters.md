@@ -26,7 +26,7 @@ When you install SQL Server Management Studio (SSMS) programmatically or from a 
 
 The following command-line verbs and parameters can be used with the following executables or programs:
 
-- The setup bootstrapper, which is the small (~1 MB) file (for example, vs_ssms.exe) that initiates the download process and the initial installation.
+- The setup bootstrapper, which is the small (~1 MB) file (for example, `vs_SSMS.exe`) that initiates the download process and the initial installation.
 - The Visual Studio installer that might already be installed on the machine and is located in the folder `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe`. You must initiate the installer programmatically from a *different* directory that the installer resides in. The installer is typically used for update or modify commands.
 
 Not all commands or parameters work in each of these situations, and any special caveats or exceptions are documented. Furthermore, in some scenarios you might not have access to all of these executables described previously. For example, client machines might only have the installer available for programmatic execution if SSMS was installed via a layout.
@@ -49,7 +49,7 @@ When the SSMS bootstrapper or the installer is invoked programmatically, to inst
 
 All SSMS command-line parameters are case-insensitive.
 
-Syntax example: `vs_ssms.exe [command] <optional parameters>...`
+Syntax example: `vs_SSMS.exe [command] <optional parameters>...`
 
 | **Command** | **Description** |
 | --- | --- |
@@ -153,7 +153,7 @@ Syntax examples:
   ```
 
   ```cmd
-   C:\>"C:\Program Files\Microsoft SQL Server Management Studio 21\Release\vs_ssms.exe" modifySettings --channelUri https://aka.ms/ssms/21/release/channel --productId Microsoft.VisualStudio.Product.Ssms --newChannelUri \\layoutserver\share\path\channelmanifest.json --removeOos true --quiet
+   C:\>"C:\Program Files\Microsoft SQL Server Management Studio 21\Release\vs_SSMS.exe" modifySettings --channelUri https://aka.ms/ssms/21/release/channel --productId Microsoft.VisualStudio.Product.Ssms --newChannelUri \\layoutserver\share\path\channelmanifest.json --removeOos true --quiet
   ```
 
 ## Remove channel command and command-line parameters
