@@ -5,7 +5,7 @@ description: Learn how to install Copilot in SQL Server Management Studio.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2025
+ms.date: 05/23/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -24,7 +24,7 @@ To use Copilot in SSMS, you need:
 - [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)]
 - An endpoint and deployment in [Azure OpenAI Service](/azure/ai-services/openai/overview)
 
-[!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is the GA version of SQL Server Management Studio (SSMS). For information related to SSMS 21 installation, see [Install SQL Server Management Studio 21](../install/install.md).
+[!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is the GA version of SQL Server Management Studio (SSMS). For information related to SSMS 21 installation, see [Install SQL Server Management Studio](../install/install.md).
 
 ## Install Copilot in SSMS using the Visual Studio Installer
 
@@ -41,7 +41,7 @@ To set up Copilot in SSMS, you must configure the Azure OpenAI resource. This re
 
 1. Select the **Copilot** button on the SQL Editor toolbar, go to **View** > **Copilot**, or type **Ctrl** + **Alt** + **C** to open the dialog to initially configure Copilot in SSMS.
 
-1. Within the **Welcome to Copilot in SQL Server Management Studio** dialog, enter the values for **Azure OpenAI Endpoint**, **Azure OpenAI Deployment**, and **Azure OpenAI API Key** that were provided to you. Depending on the configuration of the Azure OpenAI resource you're using, **Azure OpenAI API Key** might not be required.
+1. Within the **Welcome to Copilot in SQL Server Management Studio** dialog, enter the values for **Azure OpenAI Endpoint**, **Azure OpenAI Deployment**, and **Azure OpenAI API Key**. These values can also be provided by an administrator with from your [Azure OpenAI resource]. Depending on the configuration of the Azure OpenAI resource you're using, **Azure OpenAI API Key** might not be required.
 
 1. When complete, select **Launch Copilot**.
 

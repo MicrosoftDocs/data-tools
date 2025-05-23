@@ -5,7 +5,7 @@ description: Learn how to troubleshoot issues with Copilot in SQL Server Managem
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2025
+ms.date: 05/23/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -35,4 +35,5 @@ If you enter the endpoint and deployment values in the first-run experience (ini
 | | If the value for the deployment is correct and the deployment was just created, wait a few minutes and try again. |
 | Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid API key for an active subscription and use the correct regional API endpoint for your resource. | Confirm the configuration of your deployment and whether it uses Microsoft Entra authentication or API key. This error can appear if your deployment uses Microsoft Entra authentication and you enter an API key. |
 | | If your deployment uses an API key, confirm the API key you have is correct and that hasn't been rotated to a new value. |
+| HTTP 400 error | The deployment isn't configured with the `gpt-4o` model. |
 | HTTP 429 error | The endpoint has been throttled. |
