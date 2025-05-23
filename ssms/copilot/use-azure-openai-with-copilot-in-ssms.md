@@ -5,7 +5,7 @@ description: Learn about configuring Azure OpenAI to use with Copilot in SQL Ser
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2025
+ms.date: 05/23/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -16,7 +16,7 @@ f1_keywords:
 ---
 # Use Azure OpenAI with Copilot in SSMS
 
-Copilot in SQL Server Management Studio (SSMS) uses an endpoint and deployment in Azure OpenAI. This article provides the steps to create the necessary Azure OpenAI resources.
+Copilot in SQL Server Management Studio (SSMS) uses an endpoint and deployment in Azure OpenAI. This article provides the steps to create the necessary Azure OpenAI resources. For more information, see [Create and deploy an Azure OpenAI in Azure AI Foundry Models resource](/azure/ai-services/openai/how-to/create-resource).
 
 Access to deployments can be provided using Microsoft Entra authentication, or API Keys. Microsoft Entra authentication is recommended as a more secure option.
 
@@ -59,9 +59,15 @@ Endpoint creation is done in the Azure portal.
 
 1. Within the resource, expand **Resource Management**, then select **Keys and Endpoint**.
 
-1. Take note of the value for **Endpoint** on the **Keys and Endpoint** page. It's used for the **Azure OpenAI Endpoint** setting in the configuration dialog for Copilot in SSMS.
+1. Take note of the value for **Endpoint** on the **Keys and Endpoint** page because it will be used when you configure Copilot in SSMS.
 
-1. If you're using API key access, then either Key 1 or Key 2 can be used for the **Azure OpenAI API Key** setting in the configuration dialog for Copilot in SSMS.
+   > [!NOTE]  
+   > During the initial configuration of Copilot in SSMS, enter **Endpoint** in the **Azure OpenAI Endpoint** dialog.
+
+1. If you're using API key access, then either Key 1 or Key 2 can be used when you configure Copilot in SSMS. API key access is optional; Microsoft Entra authentication is recommended as a more secure option.
+
+   > [!NOTE]  
+   > During the initial configuration of Copilot in SSMS, enter Key 1 or Key 2 in the **Azure OpenAI API Key** dialog if using API key access.
 
 ## Use Microsoft Entra ID for access
 
@@ -108,7 +114,12 @@ The final step required is creating the deployment.
 
 1. On the **Deploy model** page, select **Customize**.
 
-1. Within the customization dialog, enter a value for **Deployment name**. The **Deployment name** is used for the **Azure OpenAI Deployment** setting in the configuration dialog for Copilot in SSMS.
+1. Within the customization dialog, enter a value for **Deployment name**.
+
+1. Take note of the value for **Deployment name** because it will be used when you configure Copilot in SSMS.
+
+   > [!NOTE]  
+   > During the initial configuration of Copilot in SSMS, enter **Deployment name** in the **Azure OpenAI Deployment** dialog.
 
 1. Set the **Deployment type**. Each deployment type includes a description about performance versus data residency. A deployment with 'standard' in the name is recommended for preview. If data residency isn't a concern, then Global Standard offers the best performance. Data Zone Standard provides a balanced trade-off, and Standard optimizes for a specific region at the potential cost of extra latency.
 
