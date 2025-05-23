@@ -39,7 +39,7 @@ You can install a language other than English by changing `en-US` to a locale fr
 To create a complete local layout for SQL Server Management Studio, run:
 
 ```cmd
-vs_ssms.exe --layout c:\localSSMSlayout --add Microsoft.Component.HelpViewer
+vs_SSMS.exe --layout c:\localSSMSlayout --add Microsoft.Component.HelpViewer
 ```
 
 After the bootstrapper has finished downloading the layout files, the local layout folder can be moved to any other machine or environment you want to install SQL Server Management Studio on without requiring an internet connection.
@@ -54,7 +54,7 @@ When you install SSMS from a local layout, the Visual Studio Installer uses the 
 For example, if you created a local installation layout using the command from step 2, then use the following command to run the installation and prevent the client machine from accessing the internet:
 
 ```cmd
-c:\localSSMSlayout\vs_ssms.exe --noWeb --add Microsoft.Component.HelpViewer
+c:\localSSMSlayout\vs_SSMS.exe --noWeb --add Microsoft.Component.HelpViewer
 ```
 
 [!INCLUDE [support](../includes/support.md)]

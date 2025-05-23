@@ -54,7 +54,7 @@ Uninstalling SSMS doesn't remove standalone products and components such as .NET
 
 This section provides links to the publicly released bootstrappers for SQL Server Management Studio. The bootstrappers initiate Visual Studio's installation process. Only the latest release is supported.
 
-To verify what version a given bootstrapper installs, right-click on the bootstrapper `vs_ssms.exe`, choose **Properties** > **Details**, and look at the Product Version information. The version number should always be read as *latest of that version*. A bootstrapper with a Product Version of 21.0 would install the latest 21.0.x servicing release that is available.
+To verify what version a given bootstrapper installs, right-click on the bootstrapper `vs_SSMS.exe`, choose **Properties** > **Details**, and look at the Product Version information. The version number should always be read as *latest of that version*. A bootstrapper with a Product Version of 21.0 would install the latest 21.0.x servicing release that is available.
 
 ### Evergreen bootstrapper
 
