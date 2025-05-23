@@ -57,7 +57,7 @@ Decide which version of SSMS to install. The most common options are:
 
 If you downloaded a bootstrapper file, you can use it to install SSMS. You need administrator permissions. The bootstrapper installs the latest version of the Visual Studio Installer. The installer is a separate program that provides everything you need to both install and customize SSMS.
 
-1. From your *Downloads* folder, double-click the bootstrapper named `vs_ssms.exe` to start the installation.
+1. From your *Downloads* folder, double-click the bootstrapper named `vs_SSMS.exe` to start the installation.
 
 1. If you receive a User Account Control notice, choose **Yes**. The dialog box asks you to acknowledge the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement) and [Microsoft Software License Terms](/legal/sql/ssms/sql-server-management-studio-license-terms). Choose **Continue**.
 
@@ -86,7 +86,7 @@ By default, the installer program tries to match the language of the operating s
 Another way that you can change the default language is by running the installer from the command line. For example, you can force the installer to run in English by using the following command:
 
 ```cmd
-vs_ssms.exe --locale en-US
+vs_SSMS.exe --locale en-US
 ```
 
 The installer remembers this setting when you run it again. The installer supports these language locales: `zh-cn`, `zh-tw`, `cs-cz`, `en-us`, `es-es`, `fr-fr`, `de-de`, `it-it`, `ja-jp`, `ko-kr`, `pl-pl`, `pt-br`, `ru-ru`, and `tr-tr`.
