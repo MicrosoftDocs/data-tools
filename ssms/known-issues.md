@@ -4,7 +4,7 @@ description: Learn about known issues in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 05/27/2025
+ms.date: 05/28/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -19,7 +19,7 @@ This page lists known issues for [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)]
 
 | Feature | Details | Workaround |
 | --- | --- | --- |
-| Arm64 | There's no support for Arm64, and SSMS can't be installed on Arm64 devices. | Run SSMS on a device that isn't Arm64. |
+| Arm64 | SSMS isn't currently supported on Arm64. | Run SSMS on a device that isn't Arm64. |
 | Designers | The JSON data type isn't available for columns when creating or editing a table in Table Designer. See [SSMS 21.0 Preview 2.0 - Table Designer missing the "json" datatype](https://feedback.azure.com/d365community/idea/d2e6f106-9fb8-ef11-95f5-6045bdbfaf80). | Use T-SQL to add columns with the JSON data type, this functionality is planned for a later release. |
 | Designers | Unable to use SSMS after closing the **New View** pane when the **Add Table** dialog is left open. See [SSMS 21 Preview 1: New View window "Add Table" not aware I closed out of New View](https://feedback.azure.com/d365community/idea/8790c2c0-22a8-ef11-95f6-000d3a01397d). | Close the **Add Table** dialog before closing the view pane. |
 | Extended Events | The Specify Data Storage page is truncated in the Extended Events Wizard. See [Extended Events Wizard is cut off on Specify Data Storage page](https://feedback.azure.com/d365community/idea/e7de428c-76ab-ef11-95f6-000d3a01397d). | Use the **New Session...** option to create an Extended Events session. |
