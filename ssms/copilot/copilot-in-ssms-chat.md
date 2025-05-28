@@ -5,7 +5,7 @@ description: Learn how to use the chat window for Copilot in SQL Server Manageme
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2025
+ms.date: 05/28/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -21,9 +21,12 @@ Copilot in SQL Server Management Studio (SSMS) includes a chat window to interac
 
 Within the chat window, you determine the context for the prompt you submit. The context can be the general Copilot, or a specific database, based on an open query editor window. Within the context of a database, Copilot in SSMS has knowledge of both the context (SQL version) and database (schema aware), so responses are tailored to your environment.
 
+> [!NOTE]  
+> Queries from Copilot in SSMS are executed under the context of the user's login and permissions. There are no separate permissions for Copilot in SSMS.
+
 ## Get started
 
-Once Copilot is configured, you can open the chat window using:
+Once Copilot is configured, open the chat window using:
 
 - **View** > **Copilot**
 - **Ctrl** + **Alt** + **C**

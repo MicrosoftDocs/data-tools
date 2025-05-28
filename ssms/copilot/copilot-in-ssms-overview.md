@@ -5,7 +5,7 @@ description: Learn about Copilot in SQL Server Management Studio.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/23/2025
+ms.date: 05/28/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -16,11 +16,11 @@ ms.collection:
 
 Use Copilot in SQL Server Management Studio (SSMS) to ask questions about your database and environment, and get help writing Transact-SQL (T-SQL) with AI.
 
-Copilot in SSMS doesn't retain any of your information (prompts, responses, system metadata, etc.) and doesn't use any of your data to train or retrain models.
+Copilot in SSMS doesn't retain any of your information (prompts, responses, system metadata, etc.) and doesn't use any of your data to train or retrain models. For more information, see [Data, privacy, and security for Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
 
 Copilot in SSMS can answer questions for databases in SQL Server, Azure SQL Database, Azure SQL Managed Instance, and SQL Database in Fabric. Copilot executes queries based on the permissions for your login. For example, if you don't have permission to select from the table `Sales.Orders` and you ask Copilot to write and execute a select query such as `SELECT TOP 100 * FROM Sales.Orders`, the query execution can't occur.
 
-Copilot in SSMS uses [Azure OpenAI resources](use-azure-openai-with-copilot-in-ssms.md), requiring an endpoint and deployment in your Azure subscription.
+Copilot in SSMS uses [Azure OpenAI resources](use-azure-openai-with-copilot-in-ssms.md), requiring an endpoint and deployment in your Azure subscription. Copilot in SSMS adheres to [Responsible AI practices for Azure OpenAI models](/legal/cognitive-services/openai/overview), and you can learn more about the AI principles for Copilot in SSMS in the [Transparency Note for Copilot in SQL Server Management Studio](/legal/sql/ssms/transparency-note-copilot).
 
 ## Related tasks
 
