@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest, mbarickman
-ms.date: 05/21/2025
+ms.date: 05/28/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -30,11 +30,32 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="21.1.3"></a>
+
+### 21.1.3
+
+**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
+
+- Release number: 21.1.3
+- Release date: May 27, 2025
+
+#### What's new in 21.1.3
+
+| Feature | Details |
+| --- | --- |
+| Visual Studio | Updated to Visual Studio 17.14.3. |
+
+#### Bug fixes in 21.1.3
+
+| Feature | Details |
+| --- | --- |
+| Extended Events | Fixed a bug where the context menu for Extended Events while Dark theme was enabled didn't have enough contrast to be readable. See [Filter context menu ExtEvents not readable](https://developercommunity.visualstudio.com/t/Filter-context-menu-ExtEvents-not-readab/10900655). |
+| Localization | Addressed an issue where reports weren't honoring the selected language in **Tools > Options > International Settings**. See [Wrong language located in elements in SSMS 21 and Profiler 21](https://developercommunity.visualstudio.com/t/Wrong-language-located-elements-in-SSMS-/10898516). |
+| Object Explorer Details | Fixed an issue where adding additional columns to the Object Explorer details pane generated an error. See [Invalid object reference in Object Explorer Details pane](https://developercommunity.visualstudio.com/t/Invalid-object-reference-in-Object-Explo/10898449). |
+
 <a id="21.0.1"></a>
 
 ### 21.0.1
-
-**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
 
 - Release number: 21.0.1
 - Release date: May 21, 2025
@@ -44,7 +65,6 @@ For previous versions of SSMS, see:
 | Feature | Details |
 | --- | --- |
 | Visual Studio | Updated to Visual Studio 17.14.1. |
-
 
 <a id="21.0.0"></a>
 
