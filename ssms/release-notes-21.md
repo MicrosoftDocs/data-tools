@@ -37,7 +37,7 @@ For previous versions of SSMS, see:
 **[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
 
 - Release number: 21.1.3
-- Release date: May 27, 2025
+- Release date: May 28, 2025
 
 #### What's new in 21.1.3
 
