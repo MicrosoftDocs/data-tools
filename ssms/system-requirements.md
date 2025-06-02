@@ -4,7 +4,7 @@ description: Learn about the system requirements for SQL Server Management Studi
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 05/19/2025
+ms.date: 06/02/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -34,6 +34,7 @@ To download the latest version of [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)
   - For supported Windows 11 versions, see [Windows 11 Enterprise and Education Support](/lifecycle/products/windows-11-enterprise-and-education)
 - Windows 10 minimum supported OS version or higher: Home, Professional, Education, and Enterprise.
   - For supported Windows 10 versions, see [Windows 10 Enterprise and Education Support](/lifecycle/products/windows-10-enterprise-and-education)
+- Windows Server 2025: Standard and Datacenter.
 - Windows Server 2022: Standard and Datacenter.
 - Windows Server 2019: Standard and Datacenter.
 - Windows Server 2016: Standard and Datacenter.
