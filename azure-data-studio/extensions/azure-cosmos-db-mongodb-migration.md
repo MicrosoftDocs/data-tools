@@ -42,6 +42,7 @@ The Azure Cosmos DB for MongoDB migration extension helps you in migrating your 
 - [MongoDB](https://www.mongodb.com/) running version 3.2 or higher.
 - Add firewall exceptions to the source MongoDB and vCore-based  Azure Cosmos DB for MongoDB target account to accept connections from global Azure datacenters.
 - If you're using Database Migration Service for the first time, make sure that the [Microsoft.DataMigration resource provider is registered in your subscription](#register-microsoftdatamigration-resource-provider-in-your-subscription).
+- To run an assessment, the user connected to MongoDb should have [`readAnyDatabase`](https://www.mongodb.com/docs/manual/reference/built-in-roles/#mongodb-authrole-readAnyDatabase) and [`clusterMonitor`](https://www.mongodb.com/docs/manual/reference/built-in-roles/#mongodb-authrole-clusterMonitor) roles assigned on the source instance.
 
 ## Prepare
 
