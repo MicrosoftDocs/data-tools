@@ -1,16 +1,16 @@
 ---
-title: Use Command-Line Parameters to Install SQL Server Management Studio 21 Preview
+title: Use Command-Line Parameters to Install SQL Server Management Studio
 description: Use command-line parameters to install SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.reviewer: randolphwest, maghan, mbarickman
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
   - data-tools
 ---
-# Use command-line parameters to install SQL Server Management Studio 21 Preview
+# Use command-line parameters to install SQL Server Management Studio
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -26,21 +26,19 @@ When you install SQL Server Management Studio (SSMS) programmatically or from a 
 
 The following command-line verbs and parameters can be used with the following executables or programs:
 
-- The setup bootstrapper, which is the small (~1 MB) file (for example, vs_ssms.exe) that initiates the download process and the initial installation.
+- The setup bootstrapper, which is the small (~1 MB) file (for example, `vs_SSMS.exe`) that initiates the download process and the initial installation.
 - The Visual Studio installer that might already be installed on the machine and is located in the folder `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe`. You must initiate the installer programmatically from a *different* directory that the installer resides in. The installer is typically used for update or modify commands.
 
 Not all commands or parameters work in each of these situations, and any special caveats or exceptions are documented. Furthermore, in some scenarios you might not have access to all of these executables described previously. For example, client machines might only have the installer available for programmatic execution if SSMS was installed via a layout.
 
-To get the latest bootstrappers for [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] that always install the latest version of the selected channel, download one of the files in the following table. Alternatively, to install a specific version or a specific channel of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], see [Release history for SQL Server Management Studio](../ssms-21/release-history.md). This page has links to the fixed version bootstrappers for each servicing release.
+To get the latest bootstrappers for [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] that always install the latest version of the selected channel, download one of the files in the following table. Alternatively, to install a specific version or a specific channel of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], see [Release history for SQL Server Management Studio](../release-history.md). This page has links to the fixed version bootstrappers for each servicing release.
 
 | Channel | Version | Bootstrapper |
 | --- | --- | --- | --- |
-| Preview | 21.0 | [SQL Server Management Studio 21 Preview](https://aka.ms/ssms/21/preview/vs_SSMS.exe) |
-
-The Release channel will be available when SQL Server Management Studio 21 is generally available (GA).
+| Release | 21.0.0 | [SQL Server Management Studio](https://aka.ms/ssms/21/release/vs_SSMS.exe) |
 
 > [!TIP]  
-> If you previously downloaded a bootstrapper file and want to verify what version it installs, here's how. In Windows, open File Explorer, right-click the bootstrapper file, choose **Properties** and then choose the **Details** tab. The **Product version** field describes the [channel and version](channels-release.md) that the bootstrapper installs. The version number should always be read as "latest servicing version of what is specified", and the channel is Release unless explicitly specified. A bootstrapper with a product version that says [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] installs the latest version of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] on the Preview channel.
+> If you previously downloaded a bootstrapper file and want to verify what version it installs, here's how. In Windows, open File Explorer, right-click the bootstrapper file, choose **Properties** and then choose the **Details** tab. The **Product version** field describes the [channel and version](channels-release.md) that the bootstrapper installs. The version number should always be read as "latest servicing version of what is specified", and the channel is Release unless explicitly specified. A bootstrapper with a product version that says [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] installs the latest version of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] from the Release channel.
 
 ## Install, update, modify, repair, uninstall, and export commands and command-line parameters
 
@@ -51,7 +49,7 @@ When the SSMS bootstrapper or the installer is invoked programmatically, to inst
 
 All SSMS command-line parameters are case-insensitive.
 
-Syntax example: `vs_ssms.exe [command] <optional parameters>...`
+Syntax example: `vs_SSMS.exe [command] <optional parameters>...`
 
 | **Command** | **Description** |
 | --- | --- |
@@ -151,11 +149,11 @@ You can modify the update settings and programmatically configure the source loc
 Syntax examples:
 
   ```cmd
-  C:\>"C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" modifySettings --installPath "C:\Program Files\Microsoft SQL Server Management Studio 21\Preview" --newChannelUri https://aka.ms/ssms/21/preview/channel --removeOos true
+  C:\>"C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" modifySettings --installPath "C:\Program Files\Microsoft SQL Server Management Studio 21\Release" --newChannelUri https://aka.ms/ssms/21/release/channel --removeOos true
   ```
 
   ```cmd
-   C:\>"C:\Program Files\Microsoft SQL Server Management Studio 21\Preview\vs_ssms.exe" modifySettings --channelUri https://aka.ms/ssms/21/preview/channel --productId Microsoft.SSMS.Product.Community --newChannelUri \\layoutserver\share\path\channelmanifest.json --removeOos true --quiet
+   C:\>"C:\Program Files\Microsoft SQL Server Management Studio 21\Release\vs_SSMS.exe" modifySettings --channelUri https://aka.ms/ssms/21/release/channel --productId Microsoft.VisualStudio.Product.Ssms --newChannelUri \\layoutserver\share\path\channelmanifest.json --removeOos true --quiet
   ```
 
 ## Remove channel command and command-line parameters
@@ -208,7 +206,7 @@ Depending on the result of the operation, the `%ERRORLEVEL%` environment variabl
 | 0 | Operation completed successfully |
 | 740 | Elevation required |
 | 1001 | Visual Studio installer process is running |
-| 1003 | Visual Studio is in use |
+| 1003 | SSMS is in use |
 | 1602 | Operation was canceled |
 | 1618 | Another installation running |
 | 1641 | Operation completed successfully, and reboot was initiated |
@@ -222,8 +220,8 @@ Depending on the result of the operation, the `%ERRORLEVEL%` environment variabl
 | 8003 | Out of support selectable failure |
 | 8004 | Target directory failure |
 | 8005 | Verifying source payloads failure |
-| 8006 | Visual Studio processes running |
-| 8010 | Operating System not supported. Refer to the [system requirements](../ssms-21/system-requirements.md). |
+| 8006 | SSMS processes running |
+| 8010 | Operating System not supported. Refer to the [system requirements](../system-requirements.md). |
 | -1073720687 | Connectivity failure |
 | -1073741510 | Microsoft Visual Studio Installer was terminated (by the user or external process) |
 | Other<br />(for example:<br />-1, 1, 1603) | Failure condition occurred - check the logs for more information |
@@ -234,4 +232,4 @@ Each operation generates several log files in the `%TEMP%` directory that indica
 
 ## Related content
 
-- [Create an offline installation of SQL Server Management Studio 21 Preview](create-offline.md)
+- [Create an offline installation of SQL Server Management Studio](create-offline.md)

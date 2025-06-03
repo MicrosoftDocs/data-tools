@@ -84,6 +84,6 @@ For more information, see [sp_add_jobstep (Transact-SQL)](/sql/relational-databa
   
 Use the **JobStep** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell. For more information, see [SQL Server Management Objects (SMO)](/sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide).  
 
-## See also
+## Related content
 
-- Download [SQL Server Management Studio (SSMS)](../download-sql-server-management-studio-ssms.md)
+- [Install SQL Server Management Studio](../install/install.md)

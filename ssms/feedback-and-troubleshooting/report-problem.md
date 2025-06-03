@@ -11,7 +11,7 @@ ms.collection:
   - data-tools
 ---
 
-# Report a problem with SQL Server Management Studio 21 Preview
+# Report a problem with SQL Server Management Studio 21
 
 You can report a problem from SQL Server Management Studio (SSMS) using the **Help** > **Send feedback** menu or by using the [SSMS user feedback site](https://aka.ms/ssms-feedback). When reporting an issue, it's recommended that you search the site first to see if a similar issue exists. Expand the **Groups** menu on the feedback site and select **Tooling**. Enter relevant text or keywords in the Search dialog to find existing items for the problem.
 
@@ -31,4 +31,4 @@ After you report a problem, the Stage indicates where the issue is in its lifecy
 
 ## Related content
 
-- [Suggest a feature or improvement for SQL Server Management Studio 21 Preview](suggest-feature.md)
+- [Suggest a feature or improvement for SQL Server Management Studio 21](suggest-feature.md)

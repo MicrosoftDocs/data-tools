@@ -1,16 +1,16 @@
 ---
-title: Repair SQL Server Management Studio 21 Preview
+title: Repair SQL Server Management Studio
 description: Learn how to uninstall SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
 ---
-# Repair installation for SQL Server Management Studio 21 Preview
+# Repair installation for SQL Server Management Studio
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -56,7 +56,7 @@ To repair your installation, follow these steps.
 
 ## Related content
 
-- [Install SQL Server Management Studio 21 Preview](install.md)
-- [Update SQL Server Management Studio 21 Preview](update.md)
-- [Uninstall or remove SQL Server Management Studio 21 Preview](uninstall.md)
-- [Troubleshoot installation and upgrade issues for SQL Server Management Studio 21 Preview](troubleshoot.md)
+- [Install SQL Server Management Studio](install.md)
+- [Update SQL Server Management Studio](update.md)
+- [Uninstall or remove SQL Server Management Studio](uninstall.md)
+- [Troubleshoot installation and upgrade issues for SQL Server Management Studio](troubleshoot.md)

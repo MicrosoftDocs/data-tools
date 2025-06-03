@@ -1,10 +1,10 @@
 ---
-title: System Requirements for SQL Server Management Studio 21 Preview
+title: System Requirements for SQL Server Management Studio
 description: Learn about the system requirements for SQL Server Management Studio (SSMS) on Windows.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
-ms.date: 04/16/2025
+ms.reviewer: randolphwest, maghan, mbarickman
+ms.date: 06/02/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -14,36 +14,34 @@ keywords:
   - "SQL Server Management Studio requirements"
   - "SSMS system requirements"
 ---
-# System requirements for SQL Server Management Studio 21 Preview
+# System requirements for SQL Server Management Studio
 
-[!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is a powerful tool for managing SQL Server instances, Azure SQL databases, and Azure SQL managed instances. This document outlines the system requirements needed to install and run [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] effectively.
+[!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] is a powerful tool for managing SQL Server instances, Azure SQL databases, and Azure SQL managed instances. This document outlines the system requirements needed to install and run [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] effectively.
 
-Ensure your system meets these requirements to take full advantage of the features and capabilities of SQL Server Management Studio (SSMS). For more information about [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], see [Release notes for SQL Server Management Studio 21 Preview](release-notes-21.md).
+Ensure your system meets these requirements to take full advantage of the features and capabilities of SQL Server Management Studio (SSMS). For more information about [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)], see [Release notes for SQL Server Management Studio (SSMS)](release-notes-21.md).
 
 ## Download SQL Server Management Studio 21
 
-To download the latest version of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], see [Install SQL Server Management Studio 21 Preview](../install/install.md). For instructions on installing and updating [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], see [Update SQL Server Management Studio 21 Preview](../install/update.md). Also, see instructions on how to [install offline](../install/create-offline.md).
+To download the latest version of [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)], see [Install SQL Server Management Studio](install/install.md). For instructions on installing and updating [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)], see [Update SQL Server Management Studio](install/update.md). Also, see instructions on how to [install offline](install/create-offline.md).
 
-[Download SSMS 21 Preview](https://aka.ms/ssms/21/preview/vs_SSMS.exe)
+[Download SSMS 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)
 
-> [!TIP]  
-> For SQL Server Management Studio 20 and earlier versions, see [Download SQL Server Management Studio (SSMS)](../download-sql-server-management-studio-ssms.md).
+## SQL Server Management Studio system requirements
 
-## SQL Server Management Studio 21 system requirements
-
-[!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is supported on the following 64-bit operating systems:
+[!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] is supported on the following 64-bit operating systems:
 
 - Windows 11 minimum supported OS version or higher: Home, Pro, Pro Education, Pro for Workstations, Enterprise, and Education
   - For supported Windows 11 versions, see [Windows 11 Enterprise and Education Support](/lifecycle/products/windows-11-enterprise-and-education)
 - Windows 10 minimum supported OS version or higher: Home, Professional, Education, and Enterprise.
   - For supported Windows 10 versions, see [Windows 10 Enterprise and Education Support](/lifecycle/products/windows-10-enterprise-and-education)
+- Windows Server 2025: Standard and Datacenter.
 - Windows Server 2022: Standard and Datacenter.
 - Windows Server 2019: Standard and Datacenter.
 - Windows Server 2016: Standard and Datacenter.
 
 The following operating systems aren't supported:
 
-- 32-bit and Arm32 operating systems.
+- 32-bit, Arm32, and Arm64 operating systems.
 - [Windows 11 Home in S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85#WindowsVersion=Windows_11), [Windows Enterprise IoT](/windows/iot/product-family/windows-iot), [Windows 10 IoT Core](/windows/iot-core/windows-iot), [Windows 10 Enterprise LTSC edition](/windows/deployment/update/waas-overview), [Windows 10 S](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85), and [Windows 10 Team Edition](/surface-hub).
 - Server IoT and Minimal Server Interface options for Windows Server.
 - Windows containers.
@@ -63,19 +61,19 @@ The following operating systems aren't supported:
 
 ### Supported languages
 
-[!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is available in English, Chinese (Simplified), Chinese (Traditional), Czech, French, German, Italian, Japanese, Korean, Polish, Portuguese (Brazil), Russian, Spanish, and Turkish. You can select the language of SSMS during installation. The Visual Studio Installer is available in the same 14 languages, and matches the language of Windows, if available.
+[!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] is available in English, Chinese (Simplified), Chinese (Traditional), Czech, French, German, Italian, Japanese, Korean, Polish, Portuguese (Brazil), Russian, Spanish, and Turkish. You can select the language of SSMS during installation. The Visual Studio Installer is available in the same 14 languages, and matches the language of Windows, if available.
 
 ### Additional requirements and guidance
 
-- Administrator rights are required to install or update [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)].
-- Refer to [Create an offline installation of SQL Server Management Studio 21 Preview](../install/create-offline.md) for guidance on how to install, deploy, update, and configure SQL Server Management Studio in an offline scenario.
-- .NET Framework 4.7.2 or above is required to *install* [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)]. [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] requires .NET Framework 4.8 to run. If .NET Framework 4.8 isn't already installed, it's installed during setup.
+- Administrator rights are required to install or update [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)].
+- Refer to [Create an offline installation of SQL Server Management Studio](install/create-offline.md) for guidance on how to install, deploy, update, and configure SQL Server Management Studio in an offline scenario.
+- .NET Framework 4.7.2 or above is required to *install* [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)]. [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] requires .NET Framework 4.8 to run. If .NET Framework 4.8 isn't already installed, it's installed during setup.
 - Team Foundation Server 2019 Office Integration requires Office 2016, Office 2013, or Office 2010.
 - Smart App Control, which is a Windows feature, isn't recommended to be enabled on machines. Any setting other than "off" might negatively impact SQL Server Management Studio performance.
 
 ## Related content
 
-- [Install SQL Server Management Studio 21 Preview](../install/install.md)
-- [Modify SQL Server Management Studio 21 Preview components and language packs](../install/modify.md)
-- [Create an offline installation of SQL Server Management Studio 21 Preview](../install/create-offline.md)
-- [Use command-line parameters to install SQL Server Management Studio 21 Preview](../install/command-line-parameters.md)
+- [Install SQL Server Management Studio](install/install.md)
+- [Modify SQL Server Management Studio workloads, components, and language packs](install/modify.md)
+- [Create an offline installation of SQL Server Management Studio](install/create-offline.md)
+- [Use command-line parameters to install SQL Server Management Studio](install/command-line-parameters.md)

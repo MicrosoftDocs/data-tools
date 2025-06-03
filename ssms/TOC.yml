@@ -1,1146 +1,1176 @@
 items:
-- name: Microsoft SQL documentation >
-  href: /sql
-- name: SQL Server Management Studio 21 Preview
-  items:
-  - name: Frequently asked questions
-    href: ssms-21/faq.yml
-  - name: Release notes
-    href: ssms-21/release-notes-21.md
-  - name: System requirements
-    href: ssms-21/system-requirements.md
-  - name: Known issues
-    href: ssms-21/known-issues.md
-  - name: Installation
-    items:
-    - name: Download and install
-      href: install/install.md
-    - name: Select installation location
-      href: install/select-install-location.md
-    - name: Install with command-line parameters
-      href: install/command-line-parameters.md
-    - name: Create an offline installation
-      href: install/create-offline.md
-    - name: Install local help documentation
-      href: install/local-help-content.md
-    - name: Install versions side-by-side
-      href: install/side-by-side.md
-    - name: Update
-      href: install/update.md
-    - name: Modify
-      href: install/modify.md
-    - name: Repair
-      href: install/repair.md
-    - name: Troubleshoot installation issues
-      href: install/troubleshoot.md
-    - name: Uninstall
-      href: install/uninstall.md
-    - name: Channels
-      href: install/channels-release.md
-  - name: Feedback and Troubleshooting
-    items:
-    - name: Suggest a feature
-      href: feedback-and-troubleshooting/suggest-feature.md
-    - name: Report a problem
-      href: feedback-and-troubleshooting/report-problem.md
-    - name: Customer Experience Improvement Program
-      href: feedback-and-troubleshooting/customer-experience-improvement-program.md
-  - name: User permissions
-    href: ssms-21/user-permissions.md
-  - name: Sign in or switch user accounts
-    href: ssms-21/sign-in.md
-  - name: Access multiple accounts
-    href: ssms-21/sign-in-access-multiple-accounts.md
-  - name: Modern connection dialog
-    href: quickstarts/ssms-connect-query-sql-server.md?tabs=modern#connect-to-a-sql-server-instance
-  - name: Release history
-    href: ssms-21/release-history.md
-  - name: SQL Server migration component (Preview)
-    href: migrate-sql-server-component.md
-  - name: Product roadmap
-    href: ssms-21/roadmap.md
-- name: Download SSMS
-  href: download-sql-server-management-studio-ssms.md
-- name: Release notes
-  href: release-notes-ssms.md
-- name: Overview
-  items:
-  - name: SQL Server Management Studio (SSMS)
-    href: sql-server-management-studio-ssms.md
-- name: Quickstarts
-  items:
-  - name: Connect with SQL Server Management Studio
-    href: quickstarts/ssms-connect.md
-  - name: Connect and query SQL Server
-    href: quickstarts/ssms-connect-query-sql-server.md
-  - name: Connect and query SQL Server on Azure VM
-    href: quickstarts/ssms-connect-query-sql-server-azure-vm.md
-  - name: Connect and query Azure SQL Database
-    href: quickstarts/ssms-connect-query-azure-sql.md
-  - name: Connect and query a dedicated SQL pool in Azure Synapse Analytics
-    href: quickstarts/ssms-connect-query-azure-synapse-analytics.md
-- name: Tutorials
-  items:
-  - name: SSMS Configuration
-    href: tutorials/ssms-configuration.md
-  - name: Import and export SSMS settings
-    href: tutorials/import-export-settings.md
-  - name: SSMS tips and tricks
-    href: tutorials/ssms-tricks.md
-  - name: Script objects
-    href: tutorials/scripting-ssms.md
-  - name: Import Flat File >
-    href: /sql/relational-databases/import-export/import-flat-file-wizard
-- name: Concepts
-  items:
-  - name: Connection Pooling in SSMS
-    href: connection-pooling-sql-server-management-studio.md
-  - name: Tool Windows in SSMS
-    href: tool-windows-in-sql-server-management-studio.md
-  - name: Use SSMS to Build Database Projects
-    href: build-database-projects-by-using-sql-server-management-studio.md
-  - name: Understand SSMS Windows Management
-    href: understand-sql-server-management-studio-windows-management.md
-  - name: Administer Servers with SSMS
-    href: administer-servers-with-sql-server-management-studio.md
-  - name: Arguments for External Tools
-    href: use-of-sql-server-features-and-capabilities-wwi-oltp.md
-  - name: Add an External Tool to the Tools Menu
-    href: add-an-external-tool-to-the-tools-menu-sql-server-management-studio.md
-  - name: SSMS Utility
-    href: ssms-utility.md
-  - name: SSMS Keyboard Shortcuts
-    href: sql-server-management-studio-keyboard-shortcuts.md
-  - name: Log File Viewer >
-    href: /sql/relational-databases/logs/log-file-viewer
-    items:
-    - name: F1 Help >
-      href: /sql/relational-databases/logs/log-file-viewer-f1-help
-    - name: Open >
-      href: /sql/relational-databases/logs/open-log-file-viewer
-    - name: View Offline >
-      href: /sql/relational-databases/logs/view-offline-log-files
-  - name: SQL Server Agent
-    items:
-    - name: SQL Server Agent
-      href: agent/sql-server-agent.md
-    - name: Post Download Instructions
-      href: agent/post-download-instructions.md
-    - name: Job Activity Monitor
-      href: agent/job-activity-monitor.md
-    - name: Automated Administration Tasks
-      href: agent/automated-administration-tasks-sql-server-agent.md
-    - name: Implement Agent Security
-      href: agent/implement-sql-server-agent-security.md
-    - name: Implement Jobs
-      href: agent/implement-jobs.md
-    - name: Monitor and Respond to Events
-      href: agent/monitor-and-respond-to-events.md
-    - name: Automated Administration Across an Enterprise
-      href: agent/automated-administration-across-an-enterprise.md
-    - name: Change Steps of a SQL Server Agent Master Job
-      href: agent/change-steps-of-a-sql-server-agent-master-job.md
-    - name: Change Scheduling Details for Master Job
-      href: agent/change-the-scheduling-details-for-a-sql-server-agent-master-job.md
-    - name: F1 Help
-      href: agent/sql-server-agent-f1-help.md
-      items:
-      - name: Jobs Node
-        href: agent/jobs-node-sql-server-agent-f1-help.md
-      - name: Alerts Node (SQL Server Agent F1 Help)
-        href: agent/alerts-node-sql-server-agent-f1-help.md
-      - name: Proxies Node (SQL Server Agent F1 Help)
-        href: agent/proxies-node-sql-server-agent-f1-help.md
-      - name: Operators Node (SQL Server Agent F1 Help)
-        href: agent/operators-node-sql-server-agent-f1-help.md
-      - name: Configure SQL Server Agent Error Logs (General Page)
-        href: agent/configure-sql-server-agent-error-logs-general-page.md
-      - name: Recycle SQL Server Agent Error Logs
-        href: agent/recycle-sql-server-agent-error-logs.md
-    - name: Agent Properties
-      items:
-      - name: Advanced Page
-        href: agent/sql-server-agent-properties-advanced-page.md
-      - name: Alert System Page
-        href: agent/sql-server-agent-properties-alert-system-page.md
-      - name: Connection Page
-        href: agent/sql-server-agent-properties-connection-page.md
-      - name: General Page
-        href: agent/sql-server-agent-properties-general-page.md
-      - name: History Page
-        href: agent/sql-server-agent-properties-history-page.md
-      - name: Job System Page
-        href: agent/sql-server-agent-properties-job-system-page.md
-    - name: Target servers
-      items:
-      - name: Download Instructions Tab
-        href: agent/target-servers-download-instructions-tab.md
-      - name: Target Server Status Tab
-        href: agent/target-servers-target-server-status-tab.md
-    - name: Alerts Properties
-      href: agent/alerts.md
-      items:
-      - name: General Page
-        href: agent/alert-properties-new-alert-general-page.md
-      - name: Options Page
-        href: agent/alert-properties-new-alert-options-page.md
-      - name: New Alert Response Page
-        href: agent/alert-properties-new-alert-response-page.md
-      - name: History Page
-        href: agent/alert-properties-history-page.md
-    - name: Job Categories
-      items:
-      - name: Manage Job Categories
-        href: agent/job-categories-manage-job-categories.md
-      - name: New Job Category
-        href: agent/job-categories-properties-new-job-category.md
-    - name: Job Properties
-      items:
-      - name: Jobs That Reference a Schedule
-        href: agent/jobs-that-reference-a-schedule.md
-      - name: Alerts Page
-        href: agent/job-properties-new-job-alerts-page.md
-      - name: General Page
-        href: agent/job-properties-new-job-general-page.md
-      - name: Notifications Page
-        href: agent/job-properties-new-job-notifications-page.md
-      - name: Schedules Page
-        href: agent/job-properties-new-job-schedules-page.md
-      - name: Steps Page
-        href: agent/job-properties-new-job-steps-page.md
-      - name: Targets Page
-        href: agent/job-properties-new-job-targets-page.md
-    - name: New job step properties
-      items:
-      - name: Advanced Page
-        href: agent/job-step-properties-new-job-step-advanced-page.md
-      - name: General Page
-        href: agent/job-step-properties-new-job-step-general-page.md
-    - name: Operator Properties
-      items:
-      - name: Operator Properties History Page
-        href: agent/operator-properties-history-page.md
-      - name: New Operator (General Page)
-        href: agent/operator-properties-new-operator-general-page.md
-      - name: New Operator (Notifications Page)
-        href: agent/operator-properties-new-operator-notifications-page.md
-    - name: Proxy Account Properties
-      items:
-      - name: References Tab
-        href: agent/proxy-account-properties-references-tab.md
-      - name: New Proxy Account (General Page)
-        href: agent/proxy-account-properties-new-proxy-account-general-page.md
-      - name: New Proxy Account (Principals Tab)
-        href: agent/proxy-account-properties-new-proxy-account-principals-tab.md
-  - name: Register servers
-    items:
-    - name: Register servers
-      href: register-servers/register-servers.md
-    - name: Registered Servers F1 Help
-      href: register-servers/registered-servers-f1-help.md
-  - name: Scripting with SSMS
-    items:
-    - name: Generate scripts
-      items:
-      - name: Overview
-        href: scripting/generate-scripts-sql-server-management-studio.md
-      - name: Generate Scripts Wizard
-        href: scripting/generate-and-publish-scripts-wizard.md
-      - name: Objects supported by the Generate Scripts Wizard
-        href: scripting/objects-supported-by-the-generate-scripts-wizard.md
-      - name: XML editor
-        href: scripting/xml-editor-sql-server-management-studio.md
-      - name: Color coding in query editors
-        href: scripting/color-coding-in-query-editors.md
-    - name: Code outlining
-      href: scripting/code-outlining.md
-    - name: Drag and Drop Text
-      href: scripting/drag-and-drop-text.md
-    - name: Search and Replace
-      href: scripting/search-and-replace.md
-      items:
-      - name: Search an Active Document Incrementally
-        href: scripting/search-an-active-document-incrementally.md
-      - name: Search Documents Interactively
-        href: scripting/search-documents-interactively.md
-      - name: Search Documents Using Results Lists
-        href: scripting/search-documents-using-results-lists.md
-      - name: Search Text with Regular Expressions
-        href: scripting/search-text-with-regular-expressions.md
-      - name: Find and Replace
-        href: scripting/find-and-replace.md
-      - name: Find in Files
-        href: scripting/find-in-files.md
-      - name: Find Results Windows
-        href: scripting/find-results-windows.md
-      - name: Replace in Files
-        href: scripting/replace-in-files.md
-    - name: Manage Bookmarks
-      href: scripting/manage-bookmarks.md
-      items:
-      - name: Bookmarks F1 Help
-        href: scripting/bookmarks-f1-help.md
-    - name: Print Code and Results
-      href: scripting/print-code-and-results.md
-    - name: IntelliSense
-      href: scripting/intellisense-sql-server-management-studio.md
-      items:
-      - name: Configure IntelliSense
-        href: scripting/configure-intellisense-sql-server-management-studio.md
-      - name: Parameter Info (IntelliSense)
-        href: scripting/parameter-info-intellisense.md
-      - name: Quick Info (IntelliSense)
-        href: scripting/quick-info-intellisense.md
-      - name: Complete Word (IntelliSense)
-        href: scripting/complete-word-intellisense.md
-      - name: Automatic Matching of Syntax Pairs
-        href: scripting/automatic-matching-of-syntax-pairs.md
-      - name: Troubleshooting IntelliSense (SSMS)
-        href: scripting/troubleshooting-intellisense.md
-      - name: T-SQL Syntax Supported by IntelliSense
-        href: scripting/transact-sql-syntax-supported-by-intellisense.md
-    - name: T-SQL Code Snippets
-      href: scripting/transact-sql-code-snippets.md
-      items:
-      - name: Insert T-SQL Snippets
-        href: scripting/insert-transact-sql-snippets.md
-      - name: Insert Surround-with T-SQL snippets
-        href: scripting/insert-surround-with-transact-sql-snippets.md
-      - name: Complete T-SQL Snippets
-        href: scripting/complete-transact-sql-snippets.md
-      - name: Add T-SQL Snippets
-        href: scripting/add-transact-sql-snippets.md
-      - name: Status Bar (Database Engine Query Editor)
-        href: scripting/status-bar-database-engine-query-editor.md
-      - name: View Spatial Data in Object Explorer
-        href: scripting/view-spatial-data-in-object-explorer.md
-        items:
-        - name: Spatial Results Window
-          href: scripting/spatial-results-window.md
-- name: How-to
-  items:
-  - name: Install non-English SSMS
-    href: install-other-languages.md
-  - name: Use templates in SSMS
-    href: template/templates-ssms.md
-  - name: Customize Menus and Shortcut Keys
-    href: customize-menus-and-shortcut-keys.md
-  - name: Configure WMI to Show Server Status in SQL Server Tools
-    href: configure-wmi-to-show-server-status-in-sql-server-tools.md
-  - name: Configure Login Auditing
-    href: configure-login-auditing-sql-server-management-studio.md
-  - name: Enable copying from find and replace window
-    href: troubleshoot/enable-copying-find-replace-window.md
-  - name: Enable tabs to move
-    href: troubleshoot/workaround-move-tabs.md
-  - name: Configure Azure SQL Managed Instance link >>
-    href: /azure/azure-sql/managed-instance/managed-instance-link-configure-how-to-ssms?toc=/ssms/toc.json&bc=/ssms/breadcrumb/toc.json
-  - name: Troubleshoot
-    items:
-    - name: Install failed or requires restart
-      href: troubleshoot/install-failed-requires-restart.md
-    - name: Get full memory dump
-      href: troubleshoot/get-full-memory-dump.md
-    - name: Advanced troubleshooting for SSMS
-      href: troubleshoot/ssms-troubleshoot.md
-  - name: SQL Server Agent
-    items:
-    - name: Configure
-      items:
-      - name: Configure
-        href: agent/configure-sql-server-agent.md
-      - name: Assign a Job to a Job Category
-        href: agent/assign-a-job-to-a-job-category.md
-      - name: Assign Alerts to an Operator
-        href: agent/assign-alerts-to-an-operator.md
-      - name: Automatically Delete a Job
-        href: agent/automatically-delete-a-job.md
-      - name: Auto Restart SQL Server Agent
-        href: agent/autorestart-sql-server-agent-sql-server-management-studio.md
-      - name: Change an Operator's Availability
-        href: agent/change-an-operator-s-availability.md
-      - name: Change the Membership of a Job Category
-        href: agent/change-the-membership-of-a-job-category.md
-      - name: Choose the Right Agent Service Account for Multiserver Environments
-        href: agent/choose-the-right-sql-server-agent-service-account-for-multiserver-environments.md
-      - name: Clear the Job History Log
-        href: agent/clear-the-job-history-log.md
-      - name: Configure a User to Create and Manage SQL Server Agent Jobs
-        href: agent/configure-a-user-to-create-and-manage-sql-server-agent-jobs.md
-      - name: Enlist a Target Server to a Master Server
-        href: agent/enlist-a-target-server-to-a-master-server.md
-      - name: Force a Target Server to Poll the Master Server
-        href: agent/force-a-target-server-to-poll-the-master-server.md
-      - name: Format Pager Addresses for Alerts
-        href: agent/format-pager-addresses-for-alerts.md
-      - name: Give Others Ownership of a Job
-        href: agent/give-others-ownership-of-a-job.md
-      - name: Handle Multiple Job Steps
-        href: agent/handle-multiple-job-steps.md
-      - name: List Job Category Information
-        href: agent/list-job-category-information.md
-      - name: Make a Master Server
-        href: agent/make-a-master-server.md
-      - name: Make a Target Server
-        href: agent/make-a-target-server.md
-      - name: Manage Events
-        href: agent/manage-events.md
-      - name: Manage Job Steps
-        href: agent/manage-job-steps.md
-      - name: Manage Jobs Across an Enterprise
-        href: agent/manage-jobs-across-an-enterprise.md
-      - name: Manage Schedules
-        href: agent/manage-schedules.md
-      - name: Modify a Job
-        href: agent/modify-a-job.md
-      - name: Modify a SQL Server Agent Master Job
-        href: agent/modify-a-sql-server-agent-master-job.md
-      - name: Modify a SQL Server Agent Proxy
-        href: agent/modify-a-sql-server-agent-proxy.md
-      - name: Modify Target Server(s) Associated with an Agent Master Job
-        href: agent/modify-the-target-server-s-associated-with-a-sql-server-agent-master-job.md
-      - name: Modify the Target Servers for a Job
-        href: agent/modify-the-target-servers-for-a-job.md
-      - name: Monitor Job Activity
-        href: agent/monitor-job-activity.md
-      - name: New Job Schedule - Job Schedule Properties
-        href: agent/new-job-schedule-job-schedule-properties.md
-      - name: Notify an Operator of Job Status
-        href: agent/notify-an-operator-of-job-status.md
-      - name: Operators
-        href: agent/operators.md
-      - name: Organize Jobs
-        href: agent/organize-jobs.md
-      - name: Pick Schedule for Job
-        href: agent/pick-schedule-for-job.md
-      - name: Poll Servers
-        href: agent/poll-servers.md
-      - name: Proxy Editor - Add Principal
-        href: agent/proxy-editor-add-principal.md
-      - name: Remove Steps from a SQL Server Agent Master Job
-        href: agent/remove-steps-from-a-sql-server-agent-master-job.md
-      - name: Resize the Job History Log
-        href: agent/resize-the-job-history-log.md
-      - name: Run Jobs
-        href: agent/run-jobs.md
-      - name: Schedule a Job
-        href: agent/schedule-a-job.md
-      - name: Select an Account for the SQL Server Agent Service
-        href: agent/select-an-account-for-the-sql-server-agent-service.md
-      - name: Send SQL Server Agent Error Messages
-        href: agent/send-sql-server-agent-error-messages.md
-      - name: Specify a Target Server's Location (SSMS)
-        href: agent/specify-a-target-server-s-location-sql-server-management-studio.md
-      - name: Specify Job Responses
-        href: agent/specify-job-responses.md
-      - name: SQL Server Agent Fixed Database Roles
-        href: agent/sql-server-agent-fixed-database-roles.md
-      - name: Synchronize Target Server Clocks (SSMS)
-        href: agent/synchronize-target-server-clocks-sql-server-management-studio.md
-      - name: Troubleshoot Multiserver Jobs That Use Proxies
-        href: agent/troubleshoot-multiserver-jobs-that-use-proxies.md
-      - name: Tune Automated Administration Across an Enterprise
-        href: agent/tune-automated-administration-across-an-enterprise.md
-      - name: Use Performance Objects
-        href: agent/use-performance-objects.md
-      - name: Use Tokens in Job Steps
-        href: agent/use-tokens-in-job-steps.md
-      - name: Write Job Status to Windows Application Log
-        href: agent/write-the-job-status-to-the-windows-application-log.md
-    - name: Create
-      items:
-      - name: a CmdExec Job Step
-        href: agent/create-a-cmdexec-job-step.md
-      - name: a Job Category
-        href: agent/create-a-job-category.md
-      - name: a Job
-        href: agent/create-a-job.md
-      - name: a Multiserver Environment
-        href: agent/create-a-multiserver-environment.md
-      - name: a PowerShell Script Job Step
-        href: agent/create-a-powershell-script-job-step.md
-      - name: a Schedule
-        href: agent/create-a-schedule.md
-      - name: a SQL Server Agent Master Job
-        href: agent/create-a-sql-server-agent-master-job.md
-      - name: a SQL Server Agent Proxy
-        href: agent/create-a-sql-server-agent-proxy.md
-      - name: a T-SQL Job Step
-        href: agent/create-a-transact-sql-job-step.md
-      - name: a User-Defined Event
-        href: agent/create-a-user-defined-event.md
-      - name: a WMI Event Alert
-        href: agent/create-a-wmi-event-alert.md
-      - name: an ActiveX Script Job Step
-        href: agent/create-an-activex-script-job-step.md
-      - name: an Alert Using an Error Number
-        href: agent/create-an-alert-using-an-error-number.md
-      - name: an Alert Using Severity Level
-        href: agent/create-an-alert-using-severity-level.md
-      - name: an Analysis Services Job Step
-        href: agent/create-an-analysis-services-job-step.md
-      - name: an Operator
-        href: agent/create-an-operator.md
-      - name: Create and Attach Schedules to Jobs
-        href: agent/create-and-attach-schedules-to-jobs.md
-      - name: Jobs
-        href: agent/create-jobs.md
-    - name: Defect
-      items:
-      - name: a Target Server from a Master Server
-        href: agent/defect-a-target-server-from-a-master-server.md
-      - name: Multiple Target Servers from a Master Server
-        href: agent/defect-multiple-target-servers-from-a-master-server.md
-    - name: Define
-      items:
-      - name: the Response to an Alert (SSMS)
-        href: agent/define-the-response-to-an-alert-sql-server-management-studio.md
-      - name: T-SQL Job Step Options
-        href: agent/define-transact-sql-job-step-options.md
-    - name: Delete
-      items:
-      - name: a Job Category
-        href: agent/delete-a-job-category.md
-      - name: a Job Step Log
-        href: agent/delete-a-job-step-log.md
-      - name: a SQL Server Agent Proxy
-        href: agent/delete-a-sql-server-agent-proxy.md
-      - name: an Alert
-        href: agent/delete-an-alert.md
-      - name: an Operator
-        href: agent/delete-an-operator.md
-      - name: Jobs
-        href: agent/delete-jobs.md
-      - name: One or More Jobs
-        href: agent/delete-one-or-more-jobs.md
-      - name: Operator
-        href: agent/delete-operator.md
-    - name: Designate
-      items:
-      - name: a Fail-Safe Operator
-        href: agent/designate-a-fail-safe-operator.md
-      - name: an Events Forwarding Server (SSMS)
-        href: agent/designate-an-events-forwarding-server-sql-server-management-studio.md
-    - name: Disable
-      items:
-      - name: Disable or Enable a Job
-        href: agent/disable-or-enable-a-job.md
-      - name: Disable or Reactivate an Alert
-        href: agent/disable-or-reactivate-an-alert.md
-    - name: Edit
-      items:
-      - name: Edit an Alert
-        href: agent/edit-an-alert.md
-      - name: Edit an Operator
-        href: agent/edit-an-operator.md
-    - name: Set
-      items:
-      - name: an Alias for SQL Server Agent Service
-        href: agent/set-sql-server-alias-for-sql-server-agent-service-ssms.md
-      - name: CPU Idle Time and Duration (SSMS)
-        href: agent/set-cpu-idle-time-and-duration-sql-server-management-studio.md
-      - name: Encryption Options on Target Servers
-        href: agent/set-encryption-options-on-target-servers.md
-      - name: Job Execution Shutdown (SSMS)
-        href: agent/set-job-execution-shutdown-sql-server-management-studio.md
-      - name: Job Step Success or Failure Flow
-        href: agent/set-job-step-success-or-failure-flow.md
-      - name: the Polling Interval for Target Servers
-        href: agent/set-the-polling-interval-for-target-servers.md
-      - name: the Service Startup Account for SQL Server Agent
-        href: agent/set-service-startup-account-sql-server-agent-sql-server-configuration-manager.md
-      - name: the SQL Server Connection for Agent Service
-        href: agent/set-sql-server-connection-for-sql-server-agent-service-ssms.md
-      - name: Up the Job History Log
-        href: agent/set-up-the-job-history-log.md
-    - name: Start and Stop
-      items:
-      - name: Start a Job
-        href: agent/start-a-job.md
-      - name: Start, Stop, or Pause the SQL Server Agent Service
-        href: agent/start-stop-or-pause-the-sql-server-agent-service.md
-      - name: Stop a Job
-        href: agent/stop-a-job.md
-    - name: View
-      items:
-      - name: a Job
-        href: agent/view-a-job.md
-      - name: Information About an Alert
-        href: agent/view-information-about-an-alert.md
-      - name: Information About an Operator
-        href: agent/view-information-about-an-operator.md
-      - name: Job Activity
-        href: agent/view-job-activity.md
-      - name: Job Step Information
-        href: agent/view-job-step-information.md
-      - name: View or Modify Jobs
-        href: agent/view-or-modify-jobs.md
-      - name: the Job History
-        href: agent/view-the-job-history.md
-    - name: Error Log
-      items:
-      - name: Error Log
-        href: agent/sql-server-agent-error-log.md
-      - name: View SQL Server Agent Error Log
-        href: agent/view-sql-server-agent-error-log-sql-server-management-studio.md
-      - name: Rename a SQL Server Agent Error Log (SSMS)
-        href: agent/rename-a-sql-server-agent-error-log-sql-server-management-studio.md
-      - name: Write Execution Trace Messages to the SQL Server Agent Error Log (SSMS)
-        href: agent/write-execution-trace-messages-to-sql-server-agent-log-ssms.md
-  - name: Register servers
-    items:
-    - name: Create a New Registered Server
-      href: register-servers/create-a-new-registered-server-sql-server-management-studio.md
-    - name: Register a Connected Server
-      href: register-servers/register-a-connected-server-sql-server-management-studio.md
-    - name: Create a Central Management Server and Server Group
-      href: register-servers/create-a-central-management-server-and-server-group.md
-    - name: Execute Statements Against Multiple Servers Simultaneously
-      href: register-servers/execute-statements-against-multiple-servers-simultaneously.md
-    - name: View Registered Servers in SQL Server Management Studio
-      href: register-servers/view-registered-servers-in-sql-server-management-studio.md
-    - name: Remove a Registered Server
-      href: register-servers/remove-a-registered-server-sql-server-management-studio.md
-    - name: Change a Server's Registration
-      href: register-servers/change-a-server-s-registration-sql-server-management-studio.md
-    - name: Connect to a Registered Server
-      href: register-servers/connect-to-a-registered-server-sql-server-management-studio.md
-    - name: Disconnect from a Registered Server
-      href: register-servers/disconnect-from-a-registered-server-sql-server-management-studio.md
-    - name: Move a Registered Server or Registered Server Group
-      href: register-servers/move-a-registered-server-or-registered-server-group.md
-    - name: Change the Name of a Registered Server or Registered Server Group
-      href: register-servers/change-the-name-of-registered-server-or-registered-server-group.md
-    - name: Create or Edit a Server Group
-      href: register-servers/create-or-edit-a-server-group-sql-server-management-studio.md
-    - name: Remove a Server Group
-      href: register-servers/remove-a-server-group-sql-server-management-studio.md
-    - name: Export Registered Server Information
-      href: register-servers/export-registered-server-information-sql-server-management-studio.md
-    - name: Import Registered Server Information
-      href: register-servers/import-registered-server-information-sql-server-management-studio.md
-  - name: Scripting of Database Engine
-    href: scripting/database-engine-scripting.md
-    items:
-    - name: Query and Text Editors
-      href: /previous-versions/sql/sql-server-2012/ms173477(v=sql.110)?redirectedfrom=MSDN
-    - name: XML Editor
-      href: scripting/xml-editor-sql-server-management-studio.md
-    - name: Configure Editors
-      href: scripting/configure-editors-sql-server-management-studio.md
-    - name: Associate File Extensions to a Code Editor
-      href: scripting/associate-file-extensions-to-a-code-editor.md
-    - name: Change Font Color, Size, and Style
-      href: scripting/change-font-color-size-and-style.md
-    - name: Use the Properties Window in Management Studio
-      href: scripting/use-the-properties-window-in-management-studio.md
-    - name: Open an Editor
-      href: scripting/open-an-editor-sql-server-management-studio.md
-    - name: Manage the Editor and View Mode
-      href: scripting/manage-the-editor-and-view-mode.md
-    - name: Manage Code Formatting
-      href: scripting/manage-code-formatting.md
-    - name: Navigate Code and Text
-      href: scripting/navigate-code-and-text.md
-    - name: Color Coding in Query Editors
-      href: scripting/color-coding-in-query-editors.md
-    - name: Configure Editors
-      href: scripting/configure-editors-sql-server-management-studio.md
-    - name: Associate File Extensions to a Code Editor
-      href: scripting/associate-file-extensions-to-a-code-editor.md
-    - name: Change Font Color, Size, and Style
-      href: scripting/change-font-color-size-and-style.md
-    - name: Use the Properties Window in Management Studio
-      href: scripting/use-the-properties-window-in-management-studio.md
-    - name: Open an Editor
-      href: scripting/open-an-editor-sql-server-management-studio.md
-    - name: Manage the Editor and View Mode
-      href: scripting/manage-the-editor-and-view-mode.md
-    - name: Manage Code Formatting
-      href: scripting/manage-code-formatting.md
-    - name: Navigate Code and Text
-      href: scripting/navigate-code-and-text.md
-- name: References
-  items:
-  - name: SQL Server Management Objects (SMO) >
-    href: /sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide
-  - name: SSMS environment
-    items:
-    - name: The SSMS environment
-      href: the-sql-server-management-studio-environment.md
-    - name: General user interface elements
-      href: general-user-interface-elements.md
-    - name: Presenter mode in SSMS
-      href: presenter-mode.md
-    - name: SSMS Web browser
-      href: sql-server-management-studio-web-browser.md
-    - name: Property pages in SSMS
-      href: property-pages-in-sql-server-management-studio.md
-    - name: Properties window in SSMS
-      href: properties-window-management-studio.md
-    - name: Use the toolbox
-      href: use-the-toolbox.md
-  - name: F1 help
-    items:
-    - name: F1 Help for Server Connections (SSMS)
-      href: f1-help/f1-help-for-server-connections-sql-server-management-studio.md
-    - name: Database Engine Query Editor
-      href: f1-help/database-engine-query-editor-sql-server-management-studio.md
-    - name: Connect to Microsoft Azure Storage
-      href: f1-help/connect-to-microsoft-azure-storage.md
-    - name: Connect to Any SQL Server Component from SQL Server Management Studio
-      href: f1-help/connect-to-any-sql-server-component-from-sql-server-management-studio.md
-    - name: Connect to Server (Login page) - Database Engine
-      href: f1-help/connect-to-server-login-page-database-engine.md
-    - name: Connect to Server (Connection Properties page) - Database Engine
-      href: f1-help/connect-to-server-connection-properties-page-database-engine.md
-    - name: Connect to Server (Always Encrypted page) - Database Engine
-      href: f1-help/connect-to-server-always-encrypted-page-database-engine.md
-    - name: Connect to Server (Additional Connection Parameters page) - Database Engine
-      href: f1-help/connect-to-server-additional-connection-parameters-page-database-engine.md
-    - name: Connect to SSAS >
-      href: /analysis-services/instances/connect-from-client-applications-analysis-services?viewFallbackFrom=sql-server-ver15
-    - name: Connect to SSRS Server >
-      href: /sql/reporting-services/tools/connect-to-a-report-server-in-management-studio
-    - name: Browse for Servers (Local Servers) >
-      href: /sql/tools/configuration-manager/sql-server-browser-service
-    - name: Connect to Server (Additional Connection Parameters) >
-      href: /sql/relational-databases/native-client/applications/using-connection-string-keywords-with-sql-server-native-client
-    - name: Browse for Servers (Network Servers) >
-      href: /sql/tools/configuration-manager/sql-server-browser-service
-    - name: Password Expired >
-      href: /sql/relational-databases/security/choose-an-authentication-mode
-    - name: Connect to SSIS Server >
-      href: /sql/integration-services/service/integration-services-service-ssis-service
-  - name: Menu help
-    items:
-    - name: SQL Server Management Studio Menu Help
-      href: menu-help/sql-server-management-studio-menu-help.md
-    - name: Properties Window F1 Help (Management Studio)
-      href: menu-help/properties-window-f1-help-management-studio.md
-    - name: Options (Environment - Help - General Page)
-      href: menu-help/options-environment-help-general-page.md
-    - name: Options (Environment - General Page)
-      href: menu-help/options-environment-general-page.md
-    - name: Options (Environment - Fonts and Colors Page)
-      href: menu-help/options-environment-fonts-and-colors-page.md
-    - name: Options (Environment - Keyboard Page)
-      href: menu-help/options-environment-keyboard-page.md
-    - name: Options (Environment - Startup Page)
-      href: menu-help/options-environment-startup-page.md
-    - name: Options (Query Execution options - Help - General Page)
-      href: menu-help/options-query-execution.md
-    - name: Options (Designers - Table and Database Designers Page)
-      href: menu-help/options-designers-table-and-database-designers-page.md
-    - name: Options (Designers - Analysis Services Designers - General)
-      href: menu-help/options-designers-analysis-services-designers-general.md
-    - name: Options (Azure Service - Help - General Page)
-      href: menu-help/options-azure-services.md
-    - name: Options (SQL Server Object Explorer Commands window)
-      href: menu-help/options-sql-server-object-explorer-commands.md
-    - name: Options (Output window)
-      href: menu-help/options-output-window-page.md
-    - name: Options (SQL Server Object Explorer - Scripting)
-      href: menu-help/options-sql-server-object-explorer-scripting.md
-    - name: External Tools
-      href: menu-help/external-tools.md
-    - name: Customize (Commands Page)
-      href: menu-help/customize-commands-page.md
-    - name: Choose Toolbox Items (Maintenance Tasks Page)
-      href: menu-help/choose-toolbox-items-maintenance-tasks-page.md
-    - name: About SQL Server Management Studio
-      href: menu-help/about-sql-server-management-studio.md
-    - name: Save Changes
-      href: menu-help/save-changes.md
-    - name: Open With (New File)
-      href: menu-help/open-with-new-file.md
-    - name: Advanced Save Options
-      href: menu-help/advanced-save-options.md
-    - name: Save As
-      href: menu-help/save-as.md
-    - name: Customize (Toolbars Page)
-      href: menu-help/customize-toolbars-page.md
-    - name: Options (Designers - Maintenance Plans Page)
-      href: menu-help/options-designers-maintenance-plans-page.md
-    - name: Options (Environment - Help - Online Page)
-      href: menu-help/options-environment-help-online-page.md
-    - name: Object Explorer
-      href: object/object-explorer.md
-    - name: Add Steps to a SQL Server Agent Master Job
-      href: object/add-steps-to-a-sql-server-agent-master-job.md
-  - name: Manage objects
-    items:
-    - name: Manage Objects by Using Object Explorer
-      href: object/manage-objects-by-using-object-explorer.md
-    - name: Use Custom Reports with Object Explorer Node Properties
-      href: object/use-custom-reports-with-object-explorer-node-properties.md
-    - name: Object Dependencies
-      href: object/object-dependencies.md
-    - name: Hide System Objects in Object Explorer
-      href: object/hide-system-objects-in-object-explorer.md
-    - name: Object Explorer Details Pane
-      href: object/object-explorer-details-pane.md
-    - name: Open and Configure Object Explorer
-      href: object/open-and-configure-object-explorer.md
-    - name: Connect to an Instance From Object Explorer
-      href: object/connect-to-an-instance-from-object-explorer.md
-    - name: Browse for Objects (Object Explorer)
-      href: object/browse-for-objects-object-explorer.md
-    - name: Select Object Types (Object Explorer)
-      href: object/select-object-types-object-explorer.md
-    - name: Select Objects (Object Explorer)
-      href: object/select-objects-object-explorer.md
-    - name: Delete Objects
-      href: object/delete-objects.md
-    - name: Add a Custom Report to Management Studio
-      href: object/add-a-custom-report-to-management-studio.md
-    - name: Custom Reports in Management Studio
-      href: object/custom-reports-in-management-studio.md
-    - name: Add Objects
-      href: object/add-objects.md
-    - name: Unsuppress Run Custom Report Warnings
-      href: object/unsuppress-run-custom-report-warnings.md
-  - name: Solution explorer
-    items:
-    - name: Solution Explorer
-      href: solution/solution-explorer.md
-    - name: Copy Items in a Solution
-      href: solution/copy-items-in-a-solution.md
-    - name: Files That Manage Solutions and Projects
-      href: solution/files-that-manage-solutions-and-projects.md
-    - name: Solutions
-      href: solution/solutions-sql-server-management-studio.md
-    - name: Associate a Query with a Connection in a Project
-      href: solution/associate-a-query-with-a-connection-in-a-project.md
-    - name: Projects
-      href: solution/projects-sql-server-management-studio.md
-    - name: Move Items in a Solution
-      href: solution/move-items-in-a-solution.md
-    - name: Manage Files with Encoding
-      href: solution/manage-files-with-encoding.md
-    - name: Change the Connection Associated with a Query
-      href: solution/change-the-connection-associated-with-a-query.md
-    - name: Add an Existing Project to a Solution
-      href: solution/add-an-existing-project-to-a-solution.md
-    - name: Create a Project
-      href: solution/create-a-project.md
-    - name: Add New Items to a Project
-      href: solution/add-new-items-to-a-project.md
-    - name: Delete a Solution
-      href: solution/delete-a-solution.md
-    - name: Open an Existing Solution
-      href: solution/open-an-existing-solution.md
-    - name: View Project Properties
-      href: solution/view-project-properties.md
-    - name: Remove or Delete an Item or Project
-      href: solution/remove-or-delete-an-item-or-project.md
-    - name: Miscellaneous Files
-      href: solution/miscellaneous-files.md
-    - name: Change the Default Location for Projects
-      href: solution/change-the-default-location-for-projects.md
-    - name: Rename Solutions and Project Items
-      href: solution/rename-solutions-and-project-items.md
-    - name: Close a Solution
-      href: solution/close-a-solution.md
-    - name: View or Change the Properties of a Connection in a Project
-      href: solution/view-or-change-the-properties-of-a-connection-in-a-project.md
-    - name: Add Existing Items to a Project
-      href: solution/add-existing-items-to-a-project.md
-    - name: Create a New Solution
-      href: solution/create-a-new-solution.md
-  - name: Template explorer
-    items:
-    - name: Template Explorer
-      href: template/template-explorer.md
-    - name: Open a Template
-      href: template/open-a-template.md
-    - name: Replace Template Parameters
-      href: template/replace-template-parameters.md
-  - name: Visual database tools
-    items:
-    - name: Visual Database Tools
-      href: visual-db-tools/visual-database-tools.md
-    - name: Reconcile Changes Made by Multiple Users
-      href: visual-db-tools/reconcile-changes-made-by-multiple-users-visual-database-tools.md
-    - name: Create Self-Joins Automatically
-      href: visual-db-tools/create-self-joins-automatically-visual-database-tools.md
-    - name: Object Already Exists
-      href: visual-db-tools/object-already-exists.md
-    - name: Summarize or Aggregate Values for All Rows in a Table
-      href: visual-db-tools/summarize-or-aggregate-values-for-all-rows-in-a-table-visual-database-tools.md
-    - name: Join Tables Automatically
-      href: visual-db-tools/join-tables-automatically-visual-database-tools.md
-    - name: Work with Tables in Database Diagram
-      href: visual-db-tools/work-with-tables-in-database-diagram-visual-database-tools.md
-    - name: Reconcile a Database Diagram with a Modified Database
-      href: visual-db-tools/reconcile-a-database-diagram-with-a-modified-database-visual-database-tools.md
-    - name: Autosize Selected Tables in Diagrams
-      href: visual-db-tools/autosize-selected-tables-in-diagrams-visual-database-tools.md
-    - name: Table-Valued Object Properties
-      href: visual-db-tools/table-valued-object-properties-visual-database-tools.md
-    - name: View Join Properties
-      href: visual-db-tools/view-join-properties-visual-database-tools.md
-    - name: Column Properties
-      href: visual-db-tools/column-properties-visual-database-tools.md
-    - name: Create Column Aliases
-      href: visual-db-tools/create-column-aliases-visual-database-tools.md
-    - name: Modify Queries
-      href: visual-db-tools/modify-queries-visual-database-tools.md
-    - name: Draw Reflexive Relationships
-      href: visual-db-tools/draw-reflexive-relationships-visual-database-tools.md
-    - name: Edit Rows in the Results Pane
-      href: visual-db-tools/edit-rows-in-the-results-pane-visual-database-tools.md
-    - name: Rules for Updating Results
-      href: visual-db-tools/rules-for-updating-results-visual-database-tools.md
-    - name: Count Rows in a Table
-      href: visual-db-tools/count-rows-in-a-table-visual-database-tools.md
-    - name: SQL Pane
-      href: visual-db-tools/sql-pane-visual-database-tools.md
-    - name: Sort in Ascending or Descending Order
-      href: visual-db-tools/sort-in-ascending-or-descending-order-visual-database-tools.md
-    - name: Conventions for Combining Search Conditions in the Criteria Pane
-      href: visual-db-tools/conventions-combine-search-conditions-in-criteria-pane-visual-db-tools.md
-    - name: Modify Join Operators
-      href: visual-db-tools/modify-join-operators-visual-database-tools.md
-    - name: Remove Joins
-      href: visual-db-tools/remove-joins-visual-database-tools.md
-    - name: Table Properties
-      href: visual-db-tools/table-properties-visual-database-tools.md
-    - name: Development, Test, and Production Databases
-      href: visual-db-tools/development-test-and-production-databases-visual-database-tools.md
-    - name: Summarize Query Results
-      href: visual-db-tools/summarize-query-results-visual-database-tools.md
-    - name: Upgrade Database Diagrams from Previous Editions
-      href: visual-db-tools/upgrade-database-diagrams-from-previous-editions-visual-database-tools.md
-    - name: Design Tables
-      href: visual-db-tools/design-tables-visual-database-tools.md
-    - name: Permissions and Visual Database Tools
-      href: visual-db-tools/permissions-and-visual-database-tools-visual-database-tools.md
-    - name: Add Related Tables to Diagrams
-      href: visual-db-tools/add-related-tables-to-diagrams-visual-database-tools.md
-    - name: Visual Database Tool Designers
-      href: visual-db-tools/visual-database-tool-designers.md
-    - name: Specify the TOP Clause in Queries
-      href: visual-db-tools/specify-the-top-clause-in-queries-visual-database-tools.md
-    - name: Include or Exclude Rows
-      href: visual-db-tools/include-or-exclude-rows-visual-database-tools.md
-    - name: Stop a Query
-      href: visual-db-tools/stop-a-query-visual-database-tools.md
-    - name: Show Column Names in the Diagram Pane
-      href: visual-db-tools/show-column-names-in-the-diagram-pane-visual-database-tools.md
-    - name: Create UNION Queries
-      href: visual-db-tools/create-union-queries-visual-database-tools.md
-    - name: Open the Query and View Designer
-      href: visual-db-tools/open-the-query-and-view-designer-visual-database-tools.md
-    - name: Combine Conditions When OR Has Precedence
-      href: visual-db-tools/combine-conditions-when-or-has-precedence-visual-database-tools.md
-    - name: Group Rows in Query Results
-      href: visual-db-tools/group-rows-in-query-results-visual-database-tools.md
-    - name: Sort and Group Query Results
-      href: visual-db-tools/sort-and-group-query-results-visual-database-tools.md
-    - name: Exclude Duplicate Rows
-      href: visual-db-tools/exclude-duplicate-rows-visual-database-tools.md
-    - name: Remove Columns from Query Results
-      href: visual-db-tools/remove-columns-from-query-results-visual-database-tools.md
-    - name: Rename Queries
-      href: visual-db-tools/rename-queries-visual-database-tools.md
-    - name: Delete Rows in the Results Pane
-      href: visual-db-tools/delete-rows-in-the-results-pane-visual-database-tools.md
-    - name: Join Tables Manually
-      href: visual-db-tools/join-tables-manually-visual-database-tools.md
-    - name: Open Database Diagram Designer
-      href: visual-db-tools/open-database-diagram-designer-visual-database-tools.md
-    - name: Set Up Database Diagram Designer
-      href: visual-db-tools/set-up-database-diagram-designer-visual-database-tools.md
-    - name: Create Self-Joins Manually
-      href: visual-db-tools/create-self-joins-manually-visual-database-tools.md
-    - name: Remove Tables from Queries
-      href: visual-db-tools/remove-tables-from-queries-visual-database-tools.md
-    - name: Query with Joins
-      href: visual-db-tools/query-with-joins-visual-database-tools.md
-    - name: Create Queries using Something Besides a Table
-      href: visual-db-tools/create-queries-using-something-besides-a-table-visual-database-tools.md
-    - name: Perform Basic Operations with Queries
-      href: visual-db-tools/perform-basic-operations-with-queries-visual-database-tools.md
-    - name: Create Insert Results Queries
-      href: visual-db-tools/create-insert-results-queries-visual-database-tools.md
-    - name: Save Selected Tables on a Diagram
-      href: visual-db-tools/save-selected-tables-on-a-diagram-visual-database-tools.md
-    - name: Show Diagram Properties
-      href: visual-db-tools/show-diagram-properties-visual-database-tools.md
-    - name: Create a New Database Diagram
-      href: visual-db-tools/create-a-new-database-diagram-visual-database-tools.md
-    - name: Add Columns to Queries
-      href: visual-db-tools/add-columns-to-queries-visual-database-tools.md
-    - name: Copy an Image of a Database Diagram to the Clipboard
-      href: visual-db-tools/copy-an-image-of-a-database-diagram-to-the-clipboard-visual-database-tools.md
-    - name: Discard Changes Made to Queries
-      href: visual-db-tools/discard-changes-made-to-queries-visual-database-tools.md
-    - name: Visual Database Tools F1 Help
-      href: visual-db-tools/visual-database-tools-f1-help.md
-    - name: Sort Rows
-      href: visual-db-tools/sort-rows-visual-database-tools.md
-    - name: Types of Queries
-      href: visual-db-tools/types-of-queries-visual-database-tools.md
-    - name: Reorder Output Columns
-      href: visual-db-tools/reorder-output-columns-visual-database-tools.md
-    - name: Save Database Diagrams
-      href: visual-db-tools/save-database-diagrams-visual-database-tools.md
-    - name: Collapse Groups of Rows
-      href: visual-db-tools/collapse-groups-of-rows-visual-database-tools.md
-    - name: Supported Query Types
-      href: visual-db-tools/supported-query-types-visual-database-tools.md
-    - name: Remove Columns from Queries
-      href: visual-db-tools/remove-columns-from-queries-visual-database-tools.md
-    - name: Open Queries
-      href: visual-db-tools/open-queries-visual-database-tools.md
-    - name: Design Database Diagrams
-      href: visual-db-tools/design-database-diagrams-visual-database-tools.md
-    - name: Run Queries
-      href: visual-db-tools/run-queries-visual-database-tools.md
-    - name: Create Queries
-      href: visual-db-tools/create-queries-visual-database-tools.md
-    - name: Copy Query Results
-      href: visual-db-tools/copy-query-results-visual-database-tools.md
-    - name: Add Tables to Queries
-      href: visual-db-tools/add-tables-to-queries-visual-database-tools.md
-    - name: Results Pane
-      href: visual-db-tools/results-pane-visual-database-tools.md
-    - name: Criteria Pane
-      href: visual-db-tools/criteria-pane-visual-database-tools.md
-    - name: Display Query and View Designer Panes
-      href: visual-db-tools/display-query-and-view-designer-panes-visual-database-tools.md
-    - name: Create Queries with Unnamed Parameters
-      href: visual-db-tools/create-queries-with-unnamed-parameters-visual-database-tools.md
-    - name: Work with Diagram Layout
-      href: visual-db-tools/work-with-diagram-layout-visual-database-tools.md
-    - name: Add New Rows in the Results Pane
-      href: visual-db-tools/add-new-rows-in-the-results-pane-visual-database-tools.md
-    - name: Join Tables on Multiple Columns
-      href: visual-db-tools/join-tables-on-multiple-columns-visual-database-tools.md
-    - name: Add Tables to Diagrams
-      href: visual-db-tools/add-tables-to-diagrams-visual-database-tools.md
-    - name: Create Full-Text Search Queries
-      href: visual-db-tools/create-full-text-search-queries-visual-database-tools.md
-    - name: Sort Multiple Columns in Queries
-      href: visual-db-tools/sort-multiple-columns-in-queries-visual-database-tools.md
-    - name: Navigate in Database Diagram Designer
-      href: visual-db-tools/navigate-in-database-diagram-designer-visual-database-tools.md
-    - name: Work with Data in the Results Pane
-      href: visual-db-tools/work-with-data-in-the-results-pane-visual-database-tools.md
-    - name: Clear Query Results
-      href: visual-db-tools/clear-query-results-visual-database-tools.md
-    - name: Use the Query and View Designer with International Data
-      href: visual-db-tools/use-the-query-and-view-designer-with-international-data-visual-database-tools.md
-    - name: Show Query Properties
-      href: visual-db-tools/show-query-properties-visual-database-tools.md
-    - name: Understand Database Diagram Ownership
-      href: visual-db-tools/understand-database-diagram-ownership-visual-database-tools.md
-    - name: Create Table Aliases
-      href: visual-db-tools/create-table-aliases-visual-database-tools.md
-    - name: Parameter Queries
-      href: visual-db-tools/parameter-queries-visual-database-tools.md
-    - name: Copy Queries
-      href: visual-db-tools/copy-queries-visual-database-tools.md
-    - name: Sort with ORDER BY
-      href: visual-db-tools/sort-with-order-by-visual-database-tools.md
-    - name: Combine Conditions When and Has Precedence
-      href: visual-db-tools/combine-conditions-when-and-has-precedence-visual-database-tools.md
-    - name: Create Make Table Queries
-      href: visual-db-tools/create-make-table-queries-visual-database-tools.md
-    - name: Rules for Entering Search Values
-      href: visual-db-tools/rules-for-entering-search-values-visual-database-tools.md
-    - name: Diagram Pane
-      href: visual-db-tools/diagram-pane-visual-database-tools.md
-    - name: Create Subqueries
-      href: visual-db-tools/create-subqueries-visual-database-tools.md
-    - name: Summarize or Aggregate Values Using Custom Expressions
-      href: visual-db-tools/summarize-or-aggregate-values-using-custom-expressions-visual-database-tools.md
-    - name: Multiuser Environments
-      href: visual-db-tools/multiuser-environments-visual-database-tools.md
-    - name: Customize the Amount of Information Displayed in Diagrams
-      href: visual-db-tools/customize-the-amount-of-information-displayed-in-diagrams-visual-database-tools.md
-    - name: Delete a Database Diagram
-      href: visual-db-tools/delete-a-database-diagram-visual-database-tools.md
-    - name: Query with Parameters
-      href: visual-db-tools/query-with-parameters-visual-database-tools.md
-    - name: Work with Database Diagrams
-      href: visual-db-tools/work-with-database-diagrams-visual-database-tools.md
-    - name: Create Insert Values Queries
-      href: visual-db-tools/create-insert-values-queries-visual-database-tools.md
-    - name: Specify Multiple Search Conditions for One Column
-      href: visual-db-tools/specify-multiple-search-conditions-for-one-column-visual-database-tools.md
-    - name: Map Many-to-Many Relationships
-      href: visual-db-tools/map-many-to-many-relationships-visual-database-tools.md
-    - name: Create Relationships Between Tables on a Diagram
-      href: visual-db-tools/create-relationships-between-tables-on-a-diagram-visual-database-tools.md
-    - name: Specify Conditions for Groups
-      href: visual-db-tools/specify-conditions-for-groups-visual-database-tools.md
-    - name: Specify Search Criteria
-      href: visual-db-tools/specify-search-criteria-visual-database-tools.md
-    - name: Arrange Tables in Diagrams
-      href: visual-db-tools/arrange-tables-in-diagrams-visual-database-tools.md
-    - name: Adding and Changing a Database Diagram
-      href: visual-db-tools/walkthrough-adding-and-changing-a-database-diagram.md
-    - name: Table-Valued Object (Column) Properties
-      href: visual-db-tools/table-valued-object-column-properties-visual-database-tools.md
-    - name: How the Query and View Designer Represents Joins
-      href: visual-db-tools/how-the-query-and-view-designer-represents-joins-visual-database-tools.md
-    - name: Design Queries and Views How-to Topics
-      href: visual-db-tools/design-queries-and-views-how-to-topics-visual-database-tools.md
-    - name: Use HAVING and WHERE Clauses in the Same Query
-      href: visual-db-tools/use-having-and-where-clauses-in-the-same-query-visual-database-tools.md
-    - name: Navigate in the Query and View Designer
-      href: visual-db-tools/navigate-in-the-query-and-view-designer-visual-database-tools.md
-    - name: Work with Columns in Aggregate Queries
-      href: visual-db-tools/work-with-columns-in-aggregate-queries-visual-database-tools.md
-    - name: Select Rows That Do Not Match a Value
-      href: visual-db-tools/select-rows-that-do-not-match-a-value-visual-database-tools.md
-    - name: Save Queries
-      href: visual-db-tools/save-queries-visual-database-tools.md
-    - name: Specify Search Conditions
-      href: visual-db-tools/specify-search-conditions-visual-database-tools.md
-    - name: Create Outer Joins
-      href: visual-db-tools/create-outer-joins-visual-database-tools.md
-    - name: Create Update Queries
-      href: visual-db-tools/create-update-queries-visual-database-tools.md
-    - name: Copy Tables from One Database Diagrams to Another
-      href: visual-db-tools/copy-tables-from-one-database-diagrams-to-another-visual-database-tools.md
-    - name: Change the Font Color, Size, and Style in Diagrams
-      href: visual-db-tools/change-the-font-color-size-and-style-in-diagrams-visual-database-tools.md
-    - name: Verify Queries
-      href: visual-db-tools/verify-queries-visual-database-tools.md
-    - name: Query and View Designer Tools
-      href: visual-db-tools/query-and-view-designer-tools-visual-database-tools.md
-    - name: Remove Tables from Database Diagrams
-      href: visual-db-tools/remove-tables-from-database-diagrams-visual-database-tools.md
-    - name: Add Text Annotations to Diagrams
-      href: visual-db-tools/add-text-annotations-to-diagrams-visual-database-tools.md
-    - name: Create Delete Queries
-      href: visual-db-tools/create-delete-queries-visual-database-tools.md
-    - name: Delete Queries
-      href: visual-db-tools/delete-queries-visual-database-tools.md
-    - name: Query Properties
-      href: visual-db-tools/query-properties-visual-database-tools.md
-    - name: Open Database Diagrams
-      href: visual-db-tools/open-database-diagrams-visual-database-tools.md
-    - name: Specify Multiple Search Conditions for Multiple Columns
-      href: visual-db-tools/specify-multiple-search-conditions-for-multiple-columns-visual-database-tools.md
-    - name: Add Derived Tables to Queries
-      href: visual-db-tools/add-derived-tables-to-queries-visual-database-tools.md
-    - name: SQL Editor
-      href: visual-db-tools/sql-editor-visual-database-tools.md
-    - name: Print Query Results
-      href: visual-db-tools/print-query-results-visual-database-tools.md
-- name: Resources
-  items:
   - name: Microsoft SQL documentation >
     href: /sql
-  - name: SSMS Support Policy
-    href: support-policy.md
-  - name: User Assistance in SSMS
-    href: user-assistance-in-sql-server-management-studio.md
-  - name: Anonymous Usage Data
-    href: sql-server-management-studio-telemetry-ssms.md
-  - name: Feedback >> 
-    href: https://aka.ms/ssms-feedback
+
+  - name: SQL Server Management Studio documentation
+    href: index.yml
+    expanded: true
+
+  - name: Overview
+    items:
+      - name: SQL Server Management Studio (SSMS)
+        href: sql-server-management-studio-ssms.md
+      - name: Frequently asked questions
+        href: faq.yml
+      - name: SSMS tips and tricks
+        href: tutorials/ssms-tricks.md
+      - name: SQL Server migration component
+        href: migrate-sql-server-component.md
+
+  - name: Installation and support
+    items:
+      - name: Release notes
+        href: release-notes-21.md
+      - name: Known issues
+        href: known-issues.md
+      - name: Product roadmap
+        href: roadmap.md
+      - name: System requirements
+        href: system-requirements.md
+      - name: Installation
+        items:
+          - name: Download and install
+            href: install/install.md
+          - name: Select installation location
+            href: install/select-install-location.md
+          - name: Install with command-line parameters
+            href: install/command-line-parameters.md
+          - name: Create an offline installation
+            href: install/create-offline.md
+          - name: Install versions side-by-side
+            href: install/side-by-side.md
+          - name: Install local help documentation
+            href: install/local-help-content.md
+          - name: Update
+            href: install/update.md
+          - name: Modify
+            href: install/modify.md
+          - name: Repair
+            href: install/repair.md
+          - name: Uninstall
+            href: install/uninstall.md
+          - name: Troubleshoot installation issues
+            href: install/troubleshoot.md
+      - name: Channels
+        href: install/channels-release.md
+      - name: Release history
+        href: release-history.md
+      - name: Previous releases
+        items:
+          - name: Release notes 20
+            href: release-notes-20.md
+          - name: Release notes 19 and earlier
+            href: release-notes-19.md
+      - name: SSMS support policy
+        href: support-policy.md
+      - name: Feedback survey policies
+        href: feedback-survey-policies.md
+      - name: User assistance in SSMS
+        href: user-assistance-in-sql-server-management-studio.md
+
+  - name: Copilot in SQL Server Management Studio (SSMS) (Preview)
+    items:
+      - name: Overview of Copilot in SSMS (Preview)
+        href: copilot/copilot-in-ssms-overview.md
+      - name: Install Copilot in SSMS (Preview)
+        href: copilot/copilot-in-ssms-install.md
+      - name: Azure OpenAI configuration
+        href: copilot/use-azure-openai-with-copilot-in-ssms.md
+      - name: Use the chat window
+        href: copilot/copilot-in-ssms-chat.md
+      - name: Use code assistance
+        href: copilot/copilot-in-ssms-code-assistance.md
+      - name: Scenarios
+        href: copilot/copilot-in-ssms-scenarios.md
+      - name: Best practices
+        href: copilot/copilot-in-ssms-best-practices.md
+      - name: Troubleshooting
+        href: copilot/copilot-in-ssms-troubleshooting.md
+
+  - name: Connect and query
+    items:
+      - name: Connect with SQL Server Management Studio
+        href: quickstarts/ssms-connect.md
+      - name: Connect and query SQL Server
+        href: quickstarts/ssms-connect-query-sql-server.md
+      - name: Connect and query SQL Server on Azure VM
+        href: quickstarts/ssms-connect-query-sql-server-azure-vm.md
+      - name: Connect and query Azure SQL Database
+        href: quickstarts/ssms-connect-query-azure-sql.md
+      - name: Connect and query a dedicated SQL pool in Azure Synapse Analytics
+        href: quickstarts/ssms-connect-query-azure-synapse-analytics.md
+      - name: Connection pooling in SSMS
+        href: connection-pooling-sql-server-management-studio.md
+      - name: Modern connection dialog
+        href: quickstarts/ssms-connect-query-sql-server.md?tabs=modern#connect-to-a-sql-server-instance
+      - name: Register servers
+        items:
+          - name: Overview
+            href: register-servers/register-servers.md
+          - name: View Registered Servers in SQL Server Management Studio
+            href: register-servers/view-registered-servers-in-sql-server-management-studio.md
+          - name: Create a New Registered Server
+            href: register-servers/create-a-new-registered-server-sql-server-management-studio.md
+          - name: Register a Connected Server
+            href: register-servers/register-a-connected-server-sql-server-management-studio.md
+          - name: Connect to a Registered Server
+            href: register-servers/connect-to-a-registered-server-sql-server-management-studio.md
+          - name: Disconnect from a Registered Server
+            href: register-servers/disconnect-from-a-registered-server-sql-server-management-studio.md
+          - name: Execute Statements Against Multiple Servers Simultaneously
+            href: register-servers/execute-statements-against-multiple-servers-simultaneously.md
+          - name: Change a Server's Registration
+            href: register-servers/change-a-server-s-registration-sql-server-management-studio.md
+          - name: Create a Central Management Server and Server Group
+            href: register-servers/create-a-central-management-server-and-server-group.md
+          - name: Create or Edit a Server Group
+            href: register-servers/create-or-edit-a-server-group-sql-server-management-studio.md
+          - name: Change the Name of a Registered Server or Registered Server Group
+            href: register-servers/change-the-name-of-registered-server-or-registered-server-group.md
+          - name: Move a Registered Server or Registered Server Group
+            href: register-servers/move-a-registered-server-or-registered-server-group.md
+          - name: Remove a Registered Server
+            href: register-servers/remove-a-registered-server-sql-server-management-studio.md
+          - name: Remove a Server Group
+            href: register-servers/remove-a-server-group-sql-server-management-studio.md
+          - name: Export Registered Server Information
+            href: register-servers/export-registered-server-information-sql-server-management-studio.md
+          - name: Import Registered Server Information
+            href: register-servers/import-registered-server-information-sql-server-management-studio.md
+          - name: Registered Servers F1 Help
+            href: register-servers/registered-servers-f1-help.md
+
+  - name: Server and database administration
+    items:
+      - name: Administer servers with SSMS
+        href: administer-servers-with-sql-server-management-studio.md
+      - name: Manage objects
+        items:
+          - name: Open and Configure Object Explorer
+            href: object/open-and-configure-object-explorer.md
+          - name: Connect to an Instance From Object Explorer
+            href: object/connect-to-an-instance-from-object-explorer.md
+          - name: Manage Objects by Using Object Explorer
+            href: object/manage-objects-by-using-object-explorer.md
+          - name: Object Explorer Details Pane
+            href: object/object-explorer-details-pane.md
+          - name: Object Dependencies
+            href: object/object-dependencies.md
+          - name: Add Objects
+            href: object/add-objects.md
+          - name: Delete Objects
+            href: object/delete-objects.md
+          - name: Browse for Objects (Object Explorer)
+            href: object/browse-for-objects-object-explorer.md
+          - name: Select Objects (Object Explorer)
+            href: object/select-objects-object-explorer.md
+          - name: Select Object Types (Object Explorer)
+            href: object/select-object-types-object-explorer.md
+          - name: Hide System Objects in Object Explorer
+            href: object/hide-system-objects-in-object-explorer.md
+          - name: Use Custom Reports with Object Explorer Node Properties
+            href: object/use-custom-reports-with-object-explorer-node-properties.md
+          - name: Custom Reports in Management Studio
+            href: object/custom-reports-in-management-studio.md
+          - name: Add a Custom Report to Management Studio
+            href: object/add-a-custom-report-to-management-studio.md
+          - name: Unsuppress Run Custom Report Warnings
+            href: object/unsuppress-run-custom-report-warnings.md
+      - name: SQL Server Agent
+        items:
+          - name: Overview
+            items:
+              - name: SQL Server Agent
+                href: agent/sql-server-agent.md
+              - name: Post Download Instructions
+                href: agent/post-download-instructions.md
+              - name: Job Activity Monitor
+                href: agent/job-activity-monitor.md
+              - name: Automated Administration Tasks
+                href: agent/automated-administration-tasks-sql-server-agent.md
+              - name: Implement Agent Security
+                href: agent/implement-sql-server-agent-security.md
+              - name: Implement Jobs
+                href: agent/implement-jobs.md
+              - name: Monitor and Respond to Events
+                href: agent/monitor-and-respond-to-events.md
+              - name: Automated Administration Across an Enterprise
+                href: agent/automated-administration-across-an-enterprise.md
+              - name: Change Steps of a SQL Server Agent Master Job
+                href: agent/change-steps-of-a-sql-server-agent-master-job.md
+              - name: Change Scheduling Details for Master Job
+                href: agent/change-the-scheduling-details-for-a-sql-server-agent-master-job.md
+          - name: Configure
+            items:
+              - name: Configure
+                href: agent/configure-sql-server-agent.md
+              - name: Assign a Job to a Job Category
+                href: agent/assign-a-job-to-a-job-category.md
+              - name: Assign Alerts to an Operator
+                href: agent/assign-alerts-to-an-operator.md
+              - name: Automatically Delete a Job
+                href: agent/automatically-delete-a-job.md
+              - name: Auto Restart SQL Server Agent
+                href: agent/autorestart-sql-server-agent-sql-server-management-studio.md
+              - name: Change an Operator's Availability
+                href: agent/change-an-operator-s-availability.md
+              - name: Change the Membership of a Job Category
+                href: agent/change-the-membership-of-a-job-category.md
+              - name: Choose the Right Agent Service Account for Multiserver Environments
+                href: agent/choose-the-right-sql-server-agent-service-account-for-multiserver-environments.md
+              - name: Clear the Job History Log
+                href: agent/clear-the-job-history-log.md
+              - name: Configure a User to Create and Manage SQL Server Agent Jobs
+                href: agent/configure-a-user-to-create-and-manage-sql-server-agent-jobs.md
+              - name: Enlist a Target Server to a Master Server
+                href: agent/enlist-a-target-server-to-a-master-server.md
+              - name: Force a Target Server to Poll the Master Server
+                href: agent/force-a-target-server-to-poll-the-master-server.md
+              - name: Format Pager Addresses for Alerts
+                href: agent/format-pager-addresses-for-alerts.md
+              - name: Give Others Ownership of a Job
+                href: agent/give-others-ownership-of-a-job.md
+              - name: Handle Multiple Job Steps
+                href: agent/handle-multiple-job-steps.md
+              - name: List Job Category Information
+                href: agent/list-job-category-information.md
+              - name: Make a Master Server
+                href: agent/make-a-master-server.md
+              - name: Make a Target Server
+                href: agent/make-a-target-server.md
+              - name: Manage Events
+                href: agent/manage-events.md
+              - name: Manage Job Steps
+                href: agent/manage-job-steps.md
+              - name: Manage Jobs Across an Enterprise
+                href: agent/manage-jobs-across-an-enterprise.md
+              - name: Manage Schedules
+                href: agent/manage-schedules.md
+              - name: Modify a Job
+                href: agent/modify-a-job.md
+              - name: Modify a SQL Server Agent Master Job
+                href: agent/modify-a-sql-server-agent-master-job.md
+              - name: Modify a SQL Server Agent Proxy
+                href: agent/modify-a-sql-server-agent-proxy.md
+              - name: Modify Target Server(s) Associated with an Agent Master Job
+                href: agent/modify-the-target-server-s-associated-with-a-sql-server-agent-master-job.md
+              - name: Modify the Target Servers for a Job
+                href: agent/modify-the-target-servers-for-a-job.md
+              - name: Monitor Job Activity
+                href: agent/monitor-job-activity.md
+              - name: New Job Schedule - Job Schedule Properties
+                href: agent/new-job-schedule-job-schedule-properties.md
+              - name: Notify an Operator of Job Status
+                href: agent/notify-an-operator-of-job-status.md
+              - name: Operators
+                href: agent/operators.md
+              - name: Organize Jobs
+                href: agent/organize-jobs.md
+              - name: Pick Schedule for Job
+                href: agent/pick-schedule-for-job.md
+              - name: Poll Servers
+                href: agent/poll-servers.md
+              - name: Proxy Editor - Add Principal
+                href: agent/proxy-editor-add-principal.md
+              - name: Remove Steps from a SQL Server Agent Master Job
+                href: agent/remove-steps-from-a-sql-server-agent-master-job.md
+              - name: Resize the Job History Log
+                href: agent/resize-the-job-history-log.md
+              - name: Run Jobs
+                href: agent/run-jobs.md
+              - name: Schedule a Job
+                href: agent/schedule-a-job.md
+              - name: Select an Account for the SQL Server Agent Service
+                href: agent/select-an-account-for-the-sql-server-agent-service.md
+              - name: Send SQL Server Agent Error Messages
+                href: agent/send-sql-server-agent-error-messages.md
+              - name: Specify a Target Server's Location (SSMS)
+                href: agent/specify-a-target-server-s-location-sql-server-management-studio.md
+              - name: Specify Job Responses
+                href: agent/specify-job-responses.md
+              - name: SQL Server Agent Fixed Database Roles
+                href: agent/sql-server-agent-fixed-database-roles.md
+              - name: Synchronize Target Server Clocks (SSMS)
+                href: agent/synchronize-target-server-clocks-sql-server-management-studio.md
+              - name: Troubleshoot Multiserver Jobs That Use Proxies
+                href: agent/troubleshoot-multiserver-jobs-that-use-proxies.md
+              - name: Tune Automated Administration Across an Enterprise
+                href: agent/tune-automated-administration-across-an-enterprise.md
+              - name: Use Performance Objects
+                href: agent/use-performance-objects.md
+              - name: Use Tokens in Job Steps
+                href: agent/use-tokens-in-job-steps.md
+              - name: Write Job Status to Windows Application Log
+                href: agent/write-the-job-status-to-the-windows-application-log.md
+          - name: Create
+            items:
+              - name: a CmdExec Job Step
+                href: agent/create-a-cmdexec-job-step.md
+              - name: a Job Category
+                href: agent/create-a-job-category.md
+              - name: a Job
+                href: agent/create-a-job.md
+              - name: a Multiserver Environment
+                href: agent/create-a-multiserver-environment.md
+              - name: a PowerShell Script Job Step
+                href: agent/create-a-powershell-script-job-step.md
+              - name: a Schedule
+                href: agent/create-a-schedule.md
+              - name: a SQL Server Agent Master Job
+                href: agent/create-a-sql-server-agent-master-job.md
+              - name: a SQL Server Agent Proxy
+                href: agent/create-a-sql-server-agent-proxy.md
+              - name: a T-SQL Job Step
+                href: agent/create-a-transact-sql-job-step.md
+              - name: a User-Defined Event
+                href: agent/create-a-user-defined-event.md
+              - name: a WMI Event Alert
+                href: agent/create-a-wmi-event-alert.md
+              - name: an ActiveX Script Job Step
+                href: agent/create-an-activex-script-job-step.md
+              - name: an Alert Using an Error Number
+                href: agent/create-an-alert-using-an-error-number.md
+              - name: an Alert Using Severity Level
+                href: agent/create-an-alert-using-severity-level.md
+              - name: an Analysis Services Job Step
+                href: agent/create-an-analysis-services-job-step.md
+              - name: an Operator
+                href: agent/create-an-operator.md
+              - name: Create and Attach Schedules to Jobs
+                href: agent/create-and-attach-schedules-to-jobs.md
+              - name: Jobs
+                href: agent/create-jobs.md
+          - name: Defect
+            items:
+              - name: a Target Server from a Master Server
+                href: agent/defect-a-target-server-from-a-master-server.md
+              - name: Multiple Target Servers from a Master Server
+                href: agent/defect-multiple-target-servers-from-a-master-server.md
+          - name: Define
+            items:
+              - name: the Response to an Alert (SSMS)
+                href: agent/define-the-response-to-an-alert-sql-server-management-studio.md
+              - name: T-SQL Job Step Options
+                href: agent/define-transact-sql-job-step-options.md
+          - name: Delete
+            items:
+              - name: a Job Category
+                href: agent/delete-a-job-category.md
+              - name: a Job Step Log
+                href: agent/delete-a-job-step-log.md
+              - name: a SQL Server Agent Proxy
+                href: agent/delete-a-sql-server-agent-proxy.md
+              - name: an Alert
+                href: agent/delete-an-alert.md
+              - name: an Operator
+                href: agent/delete-an-operator.md
+              - name: Jobs
+                href: agent/delete-jobs.md
+              - name: One or More Jobs
+                href: agent/delete-one-or-more-jobs.md
+              - name: Operator
+                href: agent/delete-operator.md
+          - name: Designate
+            items:
+              - name: a Fail-Safe Operator
+                href: agent/designate-a-fail-safe-operator.md
+              - name: an Events Forwarding Server (SSMS)
+                href: agent/designate-an-events-forwarding-server-sql-server-management-studio.md
+          - name: Disable
+            items:
+              - name: Disable or Enable a Job
+                href: agent/disable-or-enable-a-job.md
+              - name: Disable or Reactivate an Alert
+                href: agent/disable-or-reactivate-an-alert.md
+          - name: Edit
+            items:
+              - name: Edit an Alert
+                href: agent/edit-an-alert.md
+              - name: Edit an Operator
+                href: agent/edit-an-operator.md
+          - name: Set
+            items:
+              - name: an Alias for SQL Server Agent Service
+                href: agent/set-sql-server-alias-for-sql-server-agent-service-ssms.md
+              - name: CPU Idle Time and Duration (SSMS)
+                href: agent/set-cpu-idle-time-and-duration-sql-server-management-studio.md
+              - name: Encryption Options on Target Servers
+                href: agent/set-encryption-options-on-target-servers.md
+              - name: Job Execution Shutdown (SSMS)
+                href: agent/set-job-execution-shutdown-sql-server-management-studio.md
+              - name: Job Step Success or Failure Flow
+                href: agent/set-job-step-success-or-failure-flow.md
+              - name: the Polling Interval for Target Servers
+                href: agent/set-the-polling-interval-for-target-servers.md
+              - name: the Service Startup Account for SQL Server Agent
+                href: agent/set-service-startup-account-sql-server-agent-sql-server-configuration-manager.md
+              - name: the SQL Server Connection for Agent Service
+                href: agent/set-sql-server-connection-for-sql-server-agent-service-ssms.md
+              - name: Up the Job History Log
+                href: agent/set-up-the-job-history-log.md
+          - name: Start and Stop
+            items:
+              - name: Start a Job
+                href: agent/start-a-job.md
+              - name: Start, Stop, or Pause the SQL Server Agent Service
+                href: agent/start-stop-or-pause-the-sql-server-agent-service.md
+              - name: Stop a Job
+                href: agent/stop-a-job.md
+          - name: View
+            items:
+              - name: a Job
+                href: agent/view-a-job.md
+              - name: Information About an Alert
+                href: agent/view-information-about-an-alert.md
+              - name: Information About an Operator
+                href: agent/view-information-about-an-operator.md
+              - name: Job Activity
+                href: agent/view-job-activity.md
+              - name: Job Step Information
+                href: agent/view-job-step-information.md
+              - name: View or Modify Jobs
+                href: agent/view-or-modify-jobs.md
+              - name: the Job History
+                href: agent/view-the-job-history.md
+          - name: Error Log
+            items:
+              - name: Error Log
+                href: agent/sql-server-agent-error-log.md
+              - name: View SQL Server Agent Error Log
+                href: agent/view-sql-server-agent-error-log-sql-server-management-studio.md
+              - name: Rename a SQL Server Agent Error Log (SSMS)
+                href: agent/rename-a-sql-server-agent-error-log-sql-server-management-studio.md
+              - name: Write Execution Trace Messages to the SQL Server Agent Error Log (SSMS)
+                href: agent/write-execution-trace-messages-to-sql-server-agent-log-ssms.md
+          - name: F1 Help
+            href: agent/sql-server-agent-f1-help.md
+            items:
+              - name: Jobs Node
+                href: agent/jobs-node-sql-server-agent-f1-help.md
+              - name: Alerts Node (SQL Server Agent F1 Help)
+                href: agent/alerts-node-sql-server-agent-f1-help.md
+              - name: Proxies Node (SQL Server Agent F1 Help)
+                href: agent/proxies-node-sql-server-agent-f1-help.md
+              - name: Operators Node (SQL Server Agent F1 Help)
+                href: agent/operators-node-sql-server-agent-f1-help.md
+              - name: Configure SQL Server Agent Error Logs (General Page)
+                href: agent/configure-sql-server-agent-error-logs-general-page.md
+              - name: Recycle SQL Server Agent Error Logs
+                href: agent/recycle-sql-server-agent-error-logs.md
+          - name: Agent Properties
+            items:
+              - name: Advanced Page
+                href: agent/sql-server-agent-properties-advanced-page.md
+              - name: Alert System Page
+                href: agent/sql-server-agent-properties-alert-system-page.md
+              - name: Connection Page
+                href: agent/sql-server-agent-properties-connection-page.md
+              - name: General Page
+                href: agent/sql-server-agent-properties-general-page.md
+              - name: History Page
+                href: agent/sql-server-agent-properties-history-page.md
+              - name: Job System Page
+                href: agent/sql-server-agent-properties-job-system-page.md
+          - name: Target servers
+            items:
+              - name: Download Instructions Tab
+                href: agent/target-servers-download-instructions-tab.md
+              - name: Target Server Status Tab
+                href: agent/target-servers-target-server-status-tab.md
+          - name: Alerts Properties
+            href: agent/alerts.md
+            items:
+              - name: General Page
+                href: agent/alert-properties-new-alert-general-page.md
+              - name: Options Page
+                href: agent/alert-properties-new-alert-options-page.md
+              - name: New Alert Response Page
+                href: agent/alert-properties-new-alert-response-page.md
+              - name: History Page
+                href: agent/alert-properties-history-page.md
+          - name: Job Categories
+            items:
+              - name: Manage Job Categories
+                href: agent/job-categories-manage-job-categories.md
+              - name: New Job Category
+                href: agent/job-categories-properties-new-job-category.md
+          - name: Job Properties
+            items:
+              - name: Jobs That Reference a Schedule
+                href: agent/jobs-that-reference-a-schedule.md
+              - name: Alerts Page
+                href: agent/job-properties-new-job-alerts-page.md
+              - name: General Page
+                href: agent/job-properties-new-job-general-page.md
+              - name: Notifications Page
+                href: agent/job-properties-new-job-notifications-page.md
+              - name: Schedules Page
+                href: agent/job-properties-new-job-schedules-page.md
+              - name: Steps Page
+                href: agent/job-properties-new-job-steps-page.md
+              - name: Targets Page
+                href: agent/job-properties-new-job-targets-page.md
+          - name: New job step properties
+            items:
+              - name: Advanced Page
+                href: agent/job-step-properties-new-job-step-advanced-page.md
+              - name: General Page
+                href: agent/job-step-properties-new-job-step-general-page.md
+          - name: Operator Properties
+            items:
+              - name: Operator Properties History Page
+                href: agent/operator-properties-history-page.md
+              - name: New Operator (General Page)
+                href: agent/operator-properties-new-operator-general-page.md
+              - name: New Operator (Notifications Page)
+                href: agent/operator-properties-new-operator-notifications-page.md
+          - name: Proxy Account Properties
+            items:
+              - name: References Tab
+                href: agent/proxy-account-properties-references-tab.md
+              - name: New Proxy Account (General Page)
+                href: agent/proxy-account-properties-new-proxy-account-general-page.md
+              - name: New Proxy Account (Principals Tab)
+                href: agent/proxy-account-properties-new-proxy-account-principals-tab.md
+      - name: Configure login auditing
+        href: configure-login-auditing-sql-server-management-studio.md
+      - name: Configure Azure SQL Managed Instance link >>
+        href: /azure/azure-sql/managed-instance/managed-instance-link-configure-how-to-ssms?toc=/ssms/toc.json&bc=/ssms/breadcrumb/toc.json
+      - name: Configure WMI to show server status in SQL Server tools
+        href: configure-wmi-to-show-server-status-in-sql-server-tools.md
+
+  - name: Configure and customize
+    items:
+      - name: SSMS environment
+        items:
+          - name: The SSMS environment
+            href: the-sql-server-management-studio-environment.md
+          - name: General user interface elements
+            href: general-user-interface-elements.md
+          - name: Presenter mode in SSMS
+            href: presenter-mode.md
+          - name: SSMS Web browser
+            href: sql-server-management-studio-web-browser.md
+          - name: Property pages in SSMS
+            href: property-pages-in-sql-server-management-studio.md
+          - name: Properties window in SSMS
+            href: properties-window-management-studio.md
+          - name: Use the toolbox
+            href: use-the-toolbox.md
+      - name: SSMS utility
+        href: ssms-utility.md
+      - name: Solution explorer
+        items:
+          - name: Overview
+            href: solution/solution-explorer.md
+          - name: Copy Items in a Solution
+            href: solution/copy-items-in-a-solution.md
+          - name: Files That Manage Solutions and Projects
+            href: solution/files-that-manage-solutions-and-projects.md
+          - name: Solutions
+            href: solution/solutions-sql-server-management-studio.md
+          - name: Associate a Query with a Connection in a Project
+            href: solution/associate-a-query-with-a-connection-in-a-project.md
+          - name: Projects
+            href: solution/projects-sql-server-management-studio.md
+          - name: Move Items in a Solution
+            href: solution/move-items-in-a-solution.md
+          - name: Manage Files with Encoding
+            href: solution/manage-files-with-encoding.md
+          - name: Change the Connection Associated with a Query
+            href: solution/change-the-connection-associated-with-a-query.md
+          - name: Add an Existing Project to a Solution
+            href: solution/add-an-existing-project-to-a-solution.md
+          - name: Create a Project
+            href: solution/create-a-project.md
+          - name: Add New Items to a Project
+            href: solution/add-new-items-to-a-project.md
+          - name: Delete a Solution
+            href: solution/delete-a-solution.md
+          - name: Open an Existing Solution
+            href: solution/open-an-existing-solution.md
+          - name: View Project Properties
+            href: solution/view-project-properties.md
+          - name: Remove or Delete an Item or Project
+            href: solution/remove-or-delete-an-item-or-project.md
+          - name: Miscellaneous Files
+            href: solution/miscellaneous-files.md
+          - name: Change the Default Location for Projects
+            href: solution/change-the-default-location-for-projects.md
+          - name: Rename Solutions and Project Items
+            href: solution/rename-solutions-and-project-items.md
+          - name: Close a Solution
+            href: solution/close-a-solution.md
+          - name: View or Change the Properties of a Connection in a Project
+            href: solution/view-or-change-the-properties-of-a-connection-in-a-project.md
+          - name: Add Existing Items to a Project
+            href: solution/add-existing-items-to-a-project.md
+          - name: Create a New Solution
+            href: solution/create-a-new-solution.md
+      - name: Template explorer
+        items:
+          - name: Overview
+            href: template/template-explorer.md
+          - name: Open a Template
+            href: template/open-a-template.md
+          - name: Replace Template Parameters
+            href: template/replace-template-parameters.md
+      - name: SSMS configuration
+        href: tutorials/ssms-configuration.md
+      - name: Customize menus and shortcut keys
+        href: customize-menus-and-shortcut-keys.md
+      - name: SSMS keyboard shortcuts
+        href: sql-server-management-studio-keyboard-shortcuts.md
+      - name: Enable tabs to move
+      - name: Enable copying from find and replace window
+        href: troubleshoot/enable-copying-find-replace-window.md
+      - name: Tool windows in SSMS
+        href: tool-windows-in-sql-server-management-studio.md
+      - name: Understand SSMS windows management
+        href: understand-sql-server-management-studio-windows-management.md
+      - name: Import and export SSMS settings
+        href: tutorials/import-export-settings.md
+      - name: Arguments for external tools
+        href: use-of-sql-server-features-and-capabilities-wwi-oltp.md
+      - name: Add an external tool to the tools menu
+        href: add-an-external-tool-to-the-tools-menu-sql-server-management-studio.md
+      - name: Sign in or switch user accounts
+        href: sign-in.md
+      - name: Access multiple accounts
+        href: sign-in-access-multiple-accounts.md
+      - name: User permissions
+        href: user-permissions.md
+
+  - name: Develop and script
+    items:
+      - name: Script objects
+        href: tutorials/scripting-ssms.md
+      - name: Scripting of Database Engine
+        href: scripting/database-engine-scripting.md
+        items:
+          - name: Query and Text Editors
+            href: /previous-versions/sql/sql-server-2012/ms173477(v=sql.110)?redirectedfrom=MSDN
+          - name: XML Editor
+            href: scripting/xml-editor-sql-server-management-studio.md
+          - name: Configure Editors
+            href: scripting/configure-editors-sql-server-management-studio.md
+          - name: Associate File Extensions to a Code Editor
+            href: scripting/associate-file-extensions-to-a-code-editor.md
+          - name: Change Font Color, Size, and Style
+            href: scripting/change-font-color-size-and-style.md
+          - name: Use the Properties Window in Management Studio
+            href: scripting/use-the-properties-window-in-management-studio.md
+          - name: Open an Editor
+            href: scripting/open-an-editor-sql-server-management-studio.md
+          - name: Manage the Editor and View Mode
+            href: scripting/manage-the-editor-and-view-mode.md
+          - name: Manage Code Formatting
+            href: scripting/manage-code-formatting.md
+          - name: Navigate Code and Text
+            href: scripting/navigate-code-and-text.md
+          - name: Color Coding in Query Editors
+            href: scripting/color-coding-in-query-editors.md
+          - name: Configure Editors
+            href: scripting/configure-editors-sql-server-management-studio.md
+          - name: Associate File Extensions to a Code Editor
+            href: scripting/associate-file-extensions-to-a-code-editor.md
+          - name: Change Font Color, Size, and Style
+            href: scripting/change-font-color-size-and-style.md
+          - name: Use the Properties Window in Management Studio
+            href: scripting/use-the-properties-window-in-management-studio.md
+          - name: Open an Editor
+            href: scripting/open-an-editor-sql-server-management-studio.md
+          - name: Manage the Editor and View Mode
+            href: scripting/manage-the-editor-and-view-mode.md
+          - name: Manage Code Formatting
+            href: scripting/manage-code-formatting.md
+          - name: Navigate Code and Text
+            href: scripting/navigate-code-and-text.md
+      - name: Scripting with SSMS
+        items:
+          - name: Generate scripts
+            items:
+              - name: Overview
+                href: scripting/generate-scripts-sql-server-management-studio.md
+              - name: Generate Scripts Wizard
+                href: scripting/generate-and-publish-scripts-wizard.md
+              - name: Objects supported by the Generate Scripts Wizard
+                href: scripting/objects-supported-by-the-generate-scripts-wizard.md
+              - name: XML editor
+                href: scripting/xml-editor-sql-server-management-studio.md
+              - name: Color coding in query editors
+                href: scripting/color-coding-in-query-editors.md
+          - name: Code outlining
+            href: scripting/code-outlining.md
+          - name: Drag and Drop Text
+            href: scripting/drag-and-drop-text.md
+          - name: Search and Replace
+            href: scripting/search-and-replace.md
+            items:
+              - name: Search an Active Document Incrementally
+                href: scripting/search-an-active-document-incrementally.md
+              - name: Search Documents Interactively
+                href: scripting/search-documents-interactively.md
+              - name: Search Documents Using Results Lists
+                href: scripting/search-documents-using-results-lists.md
+              - name: Search Text with Regular Expressions
+                href: scripting/search-text-with-regular-expressions.md
+              - name: Find and Replace
+                href: scripting/find-and-replace.md
+              - name: Find in Files
+                href: scripting/find-in-files.md
+              - name: Find Results Windows
+                href: scripting/find-results-windows.md
+              - name: Replace in Files
+                href: scripting/replace-in-files.md
+          - name: Manage Bookmarks
+            href: scripting/manage-bookmarks.md
+            items:
+              - name: Bookmarks F1 Help
+                href: scripting/bookmarks-f1-help.md
+          - name: Print Code and Results
+            href: scripting/print-code-and-results.md
+          - name: IntelliSense
+            href: scripting/intellisense-sql-server-management-studio.md
+            items:
+              - name: Configure IntelliSense
+                href: scripting/configure-intellisense-sql-server-management-studio.md
+              - name: Parameter Info (IntelliSense)
+                href: scripting/parameter-info-intellisense.md
+              - name: Quick Info (IntelliSense)
+                href: scripting/quick-info-intellisense.md
+              - name: Complete Word (IntelliSense)
+                href: scripting/complete-word-intellisense.md
+              - name: Automatic Matching of Syntax Pairs
+                href: scripting/automatic-matching-of-syntax-pairs.md
+              - name: Troubleshooting IntelliSense (SSMS)
+                href: scripting/troubleshooting-intellisense.md
+              - name: T-SQL Syntax Supported by IntelliSense
+                href: scripting/transact-sql-syntax-supported-by-intellisense.md
+          - name: T-SQL Code Snippets
+            href: scripting/transact-sql-code-snippets.md
+            items:
+              - name: Insert T-SQL Snippets
+                href: scripting/insert-transact-sql-snippets.md
+              - name: Insert Surround-with T-SQL snippets
+                href: scripting/insert-surround-with-transact-sql-snippets.md
+              - name: Complete T-SQL Snippets
+                href: scripting/complete-transact-sql-snippets.md
+              - name: Add T-SQL Snippets
+                href: scripting/add-transact-sql-snippets.md
+              - name: Status Bar (Database Engine Query Editor)
+                href: scripting/status-bar-database-engine-query-editor.md
+              - name: View Spatial Data in Object Explorer
+                href: scripting/view-spatial-data-in-object-explorer.md
+                items:
+                  - name: Spatial Results Window
+                    href: scripting/spatial-results-window.md
+
+      - name: Use templates in SSMS
+        href: template/templates-ssms.md
+      - name: Import flat file >
+        href: /sql/relational-databases/import-export/import-flat-file-wizard
+      - name: SQL Server Management Objects (SMO) >
+        href: /sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide
+      - name: Use SSMS to build database projects
+        href: build-database-projects-by-using-sql-server-management-studio.md
+
+      - name: Visual database tools
+        items:
+          - name: Overview
+            href: visual-db-tools/visual-database-tools.md
+          - name: Reconcile Changes Made by Multiple Users
+            href: visual-db-tools/reconcile-changes-made-by-multiple-users-visual-database-tools.md
+          - name: Create Self-Joins Automatically
+            href: visual-db-tools/create-self-joins-automatically-visual-database-tools.md
+          - name: Object Already Exists
+            href: visual-db-tools/object-already-exists.md
+          - name: Summarize or Aggregate Values for All Rows in a Table
+            href: visual-db-tools/summarize-or-aggregate-values-for-all-rows-in-a-table-visual-database-tools.md
+          - name: Join Tables Automatically
+            href: visual-db-tools/join-tables-automatically-visual-database-tools.md
+          - name: Work with Tables in Database Diagram
+            href: visual-db-tools/work-with-tables-in-database-diagram-visual-database-tools.md
+          - name: Reconcile a Database Diagram with a Modified Database
+            href: visual-db-tools/reconcile-a-database-diagram-with-a-modified-database-visual-database-tools.md
+          - name: Autosize Selected Tables in Diagrams
+            href: visual-db-tools/autosize-selected-tables-in-diagrams-visual-database-tools.md
+          - name: Table-Valued Object Properties
+            href: visual-db-tools/table-valued-object-properties-visual-database-tools.md
+          - name: View Join Properties
+            href: visual-db-tools/view-join-properties-visual-database-tools.md
+          - name: Column Properties
+            href: visual-db-tools/column-properties-visual-database-tools.md
+          - name: Create Column Aliases
+            href: visual-db-tools/create-column-aliases-visual-database-tools.md
+          - name: Modify Queries
+            href: visual-db-tools/modify-queries-visual-database-tools.md
+          - name: Draw Reflexive Relationships
+            href: visual-db-tools/draw-reflexive-relationships-visual-database-tools.md
+          - name: Edit Rows in the Results Pane
+            href: visual-db-tools/edit-rows-in-the-results-pane-visual-database-tools.md
+          - name: Rules for Updating Results
+            href: visual-db-tools/rules-for-updating-results-visual-database-tools.md
+          - name: Count Rows in a Table
+            href: visual-db-tools/count-rows-in-a-table-visual-database-tools.md
+          - name: SQL Pane
+            href: visual-db-tools/sql-pane-visual-database-tools.md
+          - name: Sort in Ascending or Descending Order
+            href: visual-db-tools/sort-in-ascending-or-descending-order-visual-database-tools.md
+          - name: Conventions for Combining Search Conditions in the Criteria Pane
+            href: visual-db-tools/conventions-combine-search-conditions-in-criteria-pane-visual-db-tools.md
+          - name: Modify Join Operators
+            href: visual-db-tools/modify-join-operators-visual-database-tools.md
+          - name: Remove Joins
+            href: visual-db-tools/remove-joins-visual-database-tools.md
+          - name: Table Properties
+            href: visual-db-tools/table-properties-visual-database-tools.md
+          - name: Development, Test, and Production Databases
+            href: visual-db-tools/development-test-and-production-databases-visual-database-tools.md
+          - name: Summarize Query Results
+            href: visual-db-tools/summarize-query-results-visual-database-tools.md
+          - name: Upgrade Database Diagrams from Previous Editions
+            href: visual-db-tools/upgrade-database-diagrams-from-previous-editions-visual-database-tools.md
+          - name: Design Tables
+            href: visual-db-tools/design-tables-visual-database-tools.md
+          - name: Permissions and Visual Database Tools
+            href: visual-db-tools/permissions-and-visual-database-tools-visual-database-tools.md
+          - name: Add Related Tables to Diagrams
+            href: visual-db-tools/add-related-tables-to-diagrams-visual-database-tools.md
+          - name: Visual Database Tool Designers
+            href: visual-db-tools/visual-database-tool-designers.md
+          - name: Specify the TOP Clause in Queries
+            href: visual-db-tools/specify-the-top-clause-in-queries-visual-database-tools.md
+          - name: Include or Exclude Rows
+            href: visual-db-tools/include-or-exclude-rows-visual-database-tools.md
+          - name: Stop a Query
+            href: visual-db-tools/stop-a-query-visual-database-tools.md
+          - name: Show Column Names in the Diagram Pane
+            href: visual-db-tools/show-column-names-in-the-diagram-pane-visual-database-tools.md
+          - name: Create UNION Queries
+            href: visual-db-tools/create-union-queries-visual-database-tools.md
+          - name: Open the Query and View Designer
+            href: visual-db-tools/open-the-query-and-view-designer-visual-database-tools.md
+          - name: Combine Conditions When OR Has Precedence
+            href: visual-db-tools/combine-conditions-when-or-has-precedence-visual-database-tools.md
+          - name: Group Rows in Query Results
+            href: visual-db-tools/group-rows-in-query-results-visual-database-tools.md
+          - name: Sort and Group Query Results
+            href: visual-db-tools/sort-and-group-query-results-visual-database-tools.md
+          - name: Exclude Duplicate Rows
+            href: visual-db-tools/exclude-duplicate-rows-visual-database-tools.md
+          - name: Remove Columns from Query Results
+            href: visual-db-tools/remove-columns-from-query-results-visual-database-tools.md
+          - name: Rename Queries
+            href: visual-db-tools/rename-queries-visual-database-tools.md
+          - name: Delete Rows in the Results Pane
+            href: visual-db-tools/delete-rows-in-the-results-pane-visual-database-tools.md
+          - name: Join Tables Manually
+            href: visual-db-tools/join-tables-manually-visual-database-tools.md
+          - name: Open Database Diagram Designer
+            href: visual-db-tools/open-database-diagram-designer-visual-database-tools.md
+          - name: Set Up Database Diagram Designer
+            href: visual-db-tools/set-up-database-diagram-designer-visual-database-tools.md
+          - name: Create Self-Joins Manually
+            href: visual-db-tools/create-self-joins-manually-visual-database-tools.md
+          - name: Remove Tables from Queries
+            href: visual-db-tools/remove-tables-from-queries-visual-database-tools.md
+          - name: Query with Joins
+            href: visual-db-tools/query-with-joins-visual-database-tools.md
+          - name: Create Queries using Something Besides a Table
+            href: visual-db-tools/create-queries-using-something-besides-a-table-visual-database-tools.md
+          - name: Perform Basic Operations with Queries
+            href: visual-db-tools/perform-basic-operations-with-queries-visual-database-tools.md
+          - name: Create Insert Results Queries
+            href: visual-db-tools/create-insert-results-queries-visual-database-tools.md
+          - name: Save Selected Tables on a Diagram
+            href: visual-db-tools/save-selected-tables-on-a-diagram-visual-database-tools.md
+          - name: Show Diagram Properties
+            href: visual-db-tools/show-diagram-properties-visual-database-tools.md
+          - name: Create a New Database Diagram
+            href: visual-db-tools/create-a-new-database-diagram-visual-database-tools.md
+          - name: Add Columns to Queries
+            href: visual-db-tools/add-columns-to-queries-visual-database-tools.md
+          - name: Copy an Image of a Database Diagram to the Clipboard
+            href: visual-db-tools/copy-an-image-of-a-database-diagram-to-the-clipboard-visual-database-tools.md
+          - name: Discard Changes Made to Queries
+            href: visual-db-tools/discard-changes-made-to-queries-visual-database-tools.md
+          - name: Visual Database Tools F1 Help
+            href: visual-db-tools/visual-database-tools-f1-help.md
+          - name: Sort Rows
+            href: visual-db-tools/sort-rows-visual-database-tools.md
+          - name: Types of Queries
+            href: visual-db-tools/types-of-queries-visual-database-tools.md
+          - name: Reorder Output Columns
+            href: visual-db-tools/reorder-output-columns-visual-database-tools.md
+          - name: Save Database Diagrams
+            href: visual-db-tools/save-database-diagrams-visual-database-tools.md
+          - name: Collapse Groups of Rows
+            href: visual-db-tools/collapse-groups-of-rows-visual-database-tools.md
+          - name: Supported Query Types
+            href: visual-db-tools/supported-query-types-visual-database-tools.md
+          - name: Remove Columns from Queries
+            href: visual-db-tools/remove-columns-from-queries-visual-database-tools.md
+          - name: Open Queries
+            href: visual-db-tools/open-queries-visual-database-tools.md
+          - name: Design Database Diagrams
+            href: visual-db-tools/design-database-diagrams-visual-database-tools.md
+          - name: Run Queries
+            href: visual-db-tools/run-queries-visual-database-tools.md
+          - name: Create Queries
+            href: visual-db-tools/create-queries-visual-database-tools.md
+          - name: Copy Query Results
+            href: visual-db-tools/copy-query-results-visual-database-tools.md
+          - name: Add Tables to Queries
+            href: visual-db-tools/add-tables-to-queries-visual-database-tools.md
+          - name: Results Pane
+            href: visual-db-tools/results-pane-visual-database-tools.md
+          - name: Criteria Pane
+            href: visual-db-tools/criteria-pane-visual-database-tools.md
+          - name: Display Query and View Designer Panes
+            href: visual-db-tools/display-query-and-view-designer-panes-visual-database-tools.md
+          - name: Create Queries with Unnamed Parameters
+            href: visual-db-tools/create-queries-with-unnamed-parameters-visual-database-tools.md
+          - name: Work with Diagram Layout
+            href: visual-db-tools/work-with-diagram-layout-visual-database-tools.md
+          - name: Add New Rows in the Results Pane
+            href: visual-db-tools/add-new-rows-in-the-results-pane-visual-database-tools.md
+          - name: Join Tables on Multiple Columns
+            href: visual-db-tools/join-tables-on-multiple-columns-visual-database-tools.md
+          - name: Add Tables to Diagrams
+            href: visual-db-tools/add-tables-to-diagrams-visual-database-tools.md
+          - name: Create Full-Text Search Queries
+            href: visual-db-tools/create-full-text-search-queries-visual-database-tools.md
+          - name: Sort Multiple Columns in Queries
+            href: visual-db-tools/sort-multiple-columns-in-queries-visual-database-tools.md
+          - name: Navigate in Database Diagram Designer
+            href: visual-db-tools/navigate-in-database-diagram-designer-visual-database-tools.md
+          - name: Work with Data in the Results Pane
+            href: visual-db-tools/work-with-data-in-the-results-pane-visual-database-tools.md
+          - name: Clear Query Results
+            href: visual-db-tools/clear-query-results-visual-database-tools.md
+          - name: Use the Query and View Designer with International Data
+            href: visual-db-tools/use-the-query-and-view-designer-with-international-data-visual-database-tools.md
+          - name: Show Query Properties
+            href: visual-db-tools/show-query-properties-visual-database-tools.md
+          - name: Understand Database Diagram Ownership
+            href: visual-db-tools/understand-database-diagram-ownership-visual-database-tools.md
+          - name: Create Table Aliases
+            href: visual-db-tools/create-table-aliases-visual-database-tools.md
+          - name: Parameter Queries
+            href: visual-db-tools/parameter-queries-visual-database-tools.md
+          - name: Copy Queries
+            href: visual-db-tools/copy-queries-visual-database-tools.md
+          - name: Sort with ORDER BY
+            href: visual-db-tools/sort-with-order-by-visual-database-tools.md
+          - name: Combine Conditions When and Has Precedence
+            href: visual-db-tools/combine-conditions-when-and-has-precedence-visual-database-tools.md
+          - name: Create Make Table Queries
+            href: visual-db-tools/create-make-table-queries-visual-database-tools.md
+          - name: Rules for Entering Search Values
+            href: visual-db-tools/rules-for-entering-search-values-visual-database-tools.md
+          - name: Diagram Pane
+            href: visual-db-tools/diagram-pane-visual-database-tools.md
+          - name: Create Subqueries
+            href: visual-db-tools/create-subqueries-visual-database-tools.md
+          - name: Summarize or Aggregate Values Using Custom Expressions
+            href: visual-db-tools/summarize-or-aggregate-values-using-custom-expressions-visual-database-tools.md
+          - name: Multiuser Environments
+            href: visual-db-tools/multiuser-environments-visual-database-tools.md
+          - name: Customize the Amount of Information Displayed in Diagrams
+            href: visual-db-tools/customize-the-amount-of-information-displayed-in-diagrams-visual-database-tools.md
+          - name: Delete a Database Diagram
+            href: visual-db-tools/delete-a-database-diagram-visual-database-tools.md
+          - name: Query with Parameters
+            href: visual-db-tools/query-with-parameters-visual-database-tools.md
+          - name: Work with Database Diagrams
+            href: visual-db-tools/work-with-database-diagrams-visual-database-tools.md
+          - name: Create Insert Values Queries
+            href: visual-db-tools/create-insert-values-queries-visual-database-tools.md
+          - name: Specify Multiple Search Conditions for One Column
+            href: visual-db-tools/specify-multiple-search-conditions-for-one-column-visual-database-tools.md
+          - name: Map Many-to-Many Relationships
+            href: visual-db-tools/map-many-to-many-relationships-visual-database-tools.md
+          - name: Create Relationships Between Tables on a Diagram
+            href: visual-db-tools/create-relationships-between-tables-on-a-diagram-visual-database-tools.md
+          - name: Specify Conditions for Groups
+            href: visual-db-tools/specify-conditions-for-groups-visual-database-tools.md
+          - name: Specify Search Criteria
+            href: visual-db-tools/specify-search-criteria-visual-database-tools.md
+          - name: Arrange Tables in Diagrams
+            href: visual-db-tools/arrange-tables-in-diagrams-visual-database-tools.md
+          - name: Adding and Changing a Database Diagram
+            href: visual-db-tools/walkthrough-adding-and-changing-a-database-diagram.md
+          - name: Table-Valued Object (Column) Properties
+            href: visual-db-tools/table-valued-object-column-properties-visual-database-tools.md
+          - name: How the Query and View Designer Represents Joins
+            href: visual-db-tools/how-the-query-and-view-designer-represents-joins-visual-database-tools.md
+          - name: Design Queries and Views How-to Topics
+            href: visual-db-tools/design-queries-and-views-how-to-topics-visual-database-tools.md
+          - name: Use HAVING and WHERE Clauses in the Same Query
+            href: visual-db-tools/use-having-and-where-clauses-in-the-same-query-visual-database-tools.md
+          - name: Navigate in the Query and View Designer
+            href: visual-db-tools/navigate-in-the-query-and-view-designer-visual-database-tools.md
+          - name: Work with Columns in Aggregate Queries
+            href: visual-db-tools/work-with-columns-in-aggregate-queries-visual-database-tools.md
+          - name: Select Rows That Do Not Match a Value
+            href: visual-db-tools/select-rows-that-do-not-match-a-value-visual-database-tools.md
+          - name: Save Queries
+            href: visual-db-tools/save-queries-visual-database-tools.md
+          - name: Specify Search Conditions
+            href: visual-db-tools/specify-search-conditions-visual-database-tools.md
+          - name: Create Outer Joins
+            href: visual-db-tools/create-outer-joins-visual-database-tools.md
+          - name: Create Update Queries
+            href: visual-db-tools/create-update-queries-visual-database-tools.md
+          - name: Copy Tables from One Database Diagrams to Another
+            href: visual-db-tools/copy-tables-from-one-database-diagrams-to-another-visual-database-tools.md
+          - name: Change the Font Color, Size, and Style in Diagrams
+            href: visual-db-tools/change-the-font-color-size-and-style-in-diagrams-visual-database-tools.md
+          - name: Verify Queries
+            href: visual-db-tools/verify-queries-visual-database-tools.md
+          - name: Query and View Designer Tools
+            href: visual-db-tools/query-and-view-designer-tools-visual-database-tools.md
+          - name: Remove Tables from Database Diagrams
+            href: visual-db-tools/remove-tables-from-database-diagrams-visual-database-tools.md
+          - name: Add Text Annotations to Diagrams
+            href: visual-db-tools/add-text-annotations-to-diagrams-visual-database-tools.md
+          - name: Create Delete Queries
+            href: visual-db-tools/create-delete-queries-visual-database-tools.md
+          - name: Delete Queries
+            href: visual-db-tools/delete-queries-visual-database-tools.md
+          - name: Query Properties
+            href: visual-db-tools/query-properties-visual-database-tools.md
+          - name: Open Database Diagrams
+            href: visual-db-tools/open-database-diagrams-visual-database-tools.md
+          - name: Specify Multiple Search Conditions for Multiple Columns
+            href: visual-db-tools/specify-multiple-search-conditions-for-multiple-columns-visual-database-tools.md
+          - name: Add Derived Tables to Queries
+            href: visual-db-tools/add-derived-tables-to-queries-visual-database-tools.md
+          - name: SQL Editor
+            href: visual-db-tools/sql-editor-visual-database-tools.md
+          - name: Print Query Results
+            href: visual-db-tools/print-query-results-visual-database-tools.md
+
+  - name: Monitor and troubleshoot
+    items:
+      - name: Log file viewer >
+        href: /sql/relational-databases/logs/log-file-viewer
+        items:
+          - name: F1 help >
+            href: /sql/relational-databases/logs/log-file-viewer-f1-help
+          - name: Open >
+            href: /sql/relational-databases/logs/open-log-file-viewer
+          - name: View offline >
+            href: /sql/relational-databases/logs/view-offline-log-files
+      - name: Troubleshoot SSMS
+        items:
+          - name: Install failed or requires restart
+            href: troubleshoot/install-failed-requires-restart.md
+          - name: Get full memory dump
+            href: troubleshoot/get-full-memory-dump.md
+          - name: Advanced troubleshooting for SSMS
+            href: troubleshoot/ssms-troubleshoot.md
+      - name: Feedback and troubleshooting
+        items:
+          - name: Suggest a feature
+            href: feedback-and-troubleshooting/suggest-feature.md
+          - name: Report a problem
+            href: feedback-and-troubleshooting/report-problem.md
+          - name: Customer Experience Improvement Program
+            href: feedback-and-troubleshooting/customer-experience-improvement-program.md
+
+  - name: Reference documentation
+    items:
+      - name: F1 help
+        items:
+          - name: F1 Help for Server Connections (SSMS)
+            href: f1-help/f1-help-for-server-connections-sql-server-management-studio.md
+          - name: Database Engine Query Editor
+            href: f1-help/database-engine-query-editor-sql-server-management-studio.md
+          - name: Connect to Microsoft Azure Storage
+            href: f1-help/connect-to-microsoft-azure-storage.md
+          - name: Connect to Any SQL Server Component from SQL Server Management Studio
+            href: f1-help/connect-to-any-sql-server-component-from-sql-server-management-studio.md
+          - name: Connect to Server (Login page) - Database Engine
+            href: f1-help/connect-to-server-login-page-database-engine.md
+          - name: Connect to Server (Connection Properties page) - Database Engine
+            href: f1-help/connect-to-server-connection-properties-page-database-engine.md
+          - name: Connect to Server (Always Encrypted page) - Database Engine
+            href: f1-help/connect-to-server-always-encrypted-page-database-engine.md
+          - name: Connect to Server (Additional Connection Parameters page) - Database Engine
+            href: f1-help/connect-to-server-additional-connection-parameters-page-database-engine.md
+          - name: Connect to SSAS >
+            href: /analysis-services/instances/connect-from-client-applications-analysis-services?viewFallbackFrom=sql-server-ver15
+          - name: Connect to SSRS Server >
+            href: /sql/reporting-services/tools/connect-to-a-report-server-in-management-studio
+          - name: Browse for Servers (Local Servers) >
+            href: /sql/tools/configuration-manager/sql-server-browser-service
+          - name: Connect to Server (Additional Connection Parameters) >
+            href: /sql/relational-databases/native-client/applications/using-connection-string-keywords-with-sql-server-native-client
+          - name: Browse for Servers (Network Servers) >
+            href: /sql/tools/configuration-manager/sql-server-browser-service
+          - name: Password Expired >
+            href: /sql/relational-databases/security/choose-an-authentication-mode
+          - name: Connect to SSIS Server >
+            href: /sql/integration-services/service/integration-services-service-ssis-service
+      - name: Menu help
+        items:
+          - name: SQL Server Management Studio Menu Help
+            href: menu-help/sql-server-management-studio-menu-help.md
+          - name: Properties Window F1 Help (Management Studio)
+            href: menu-help/properties-window-f1-help-management-studio.md
+          - name: Options (Environment - Help - General Page)
+            href: menu-help/options-environment-help-general-page.md
+          - name: Options (Environment - General Page)
+            href: menu-help/options-environment-general-page.md
+          - name: Options (Environment - Fonts and Colors Page)
+            href: menu-help/options-environment-fonts-and-colors-page.md
+          - name: Options (Environment - Keyboard Page)
+            href: menu-help/options-environment-keyboard-page.md
+          - name: Options (Environment - Startup Page)
+            href: menu-help/options-environment-startup-page.md
+          - name: Options (Query Execution options - Help - General Page)
+            href: menu-help/options-query-execution.md
+          - name: Options (Designers - Table and Database Designers Page)
+            href: menu-help/options-designers-table-and-database-designers-page.md
+          - name: Options (Designers - Analysis Services Designers - General)
+            href: menu-help/options-designers-analysis-services-designers-general.md
+          - name: Options (Azure Service - Help - General Page)
+            href: menu-help/options-azure-services.md
+          - name: Options (SQL Server Object Explorer Commands window)
+            href: menu-help/options-sql-server-object-explorer-commands.md
+          - name: Options (Output window)
+            href: menu-help/options-output-window-page.md
+          - name: Options (SQL Server Object Explorer - Scripting)
+            href: menu-help/options-sql-server-object-explorer-scripting.md
+          - name: External Tools
+            href: menu-help/external-tools.md
+          - name: Customize (Commands Page)
+            href: menu-help/customize-commands-page.md
+          - name: Choose Toolbox Items (Maintenance Tasks Page)
+            href: menu-help/choose-toolbox-items-maintenance-tasks-page.md
+          - name: About SQL Server Management Studio
+            href: menu-help/about-sql-server-management-studio.md
+          - name: Save Changes
+            href: menu-help/save-changes.md
+          - name: Open With (New File)
+            href: menu-help/open-with-new-file.md
+          - name: Advanced Save Options
+            href: menu-help/advanced-save-options.md
+          - name: Save As
+            href: menu-help/save-as.md
+          - name: Customize (Toolbars Page)
+            href: menu-help/customize-toolbars-page.md
+          - name: Options (Designers - Maintenance Plans Page)
+            href: menu-help/options-designers-maintenance-plans-page.md
+          - name: Options (Environment - Help - Online Page)
+            href: menu-help/options-environment-help-online-page.md
+          - name: Object Explorer
+            href: object/object-explorer.md
+          - name: Add Steps to a SQL Server Agent Master Job
+            href: object/add-steps-to-a-sql-server-agent-master-job.md
+      - name: Anonymous usage data
+        href: sql-server-management-studio-telemetry-ssms.md
+      - name: Feedback >>
+        href: https://aka.ms/ssms-feedback

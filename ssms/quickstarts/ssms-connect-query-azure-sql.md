@@ -34,7 +34,7 @@ The article demonstrates the following steps:
 
 ## Prerequisites
 
-- [SQL Server Management Studio (SSMS)](../download-sql-server-management-studio-ssms.md)
+- [Install SQL Server Management Studio](../install/install.md)
 - [Azure SQL Database](https://azure.microsoft.com/free/sql-database/) or [Azure SQL Managed Instance](https://azure.microsoft.com/services/azure-sql/sql-managed-instance/)
 
 ## Connect to an Azure SQL Database or Azure SQL Managed Instance

@@ -1,16 +1,16 @@
 ---
-title: Install Local Help Documentation for SQL Server Management Studio 21 Preview
+title: Install Local Help Documentation for SQL Server Management Studio
 description: Install and manage local help documentation by using the Microsoft Help Viewer, and add, remove, update, and move Help content installed on your computer.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 11/12/2024
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
 ---
-# Install local help documentation for SQL Server Management Studio 21 Preview
+# Install local help documentation for SQL Server Management Studio
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -22,7 +22,7 @@ To manage content on your local computer, you must sign in with an account that 
 
 In order to manage content on your local computer, you must have the Help Viewer installed. The Help Viewer is a component available during installation.
 
-To modify your SSMS installation to install the Help Viewer, see [Modify SQL Server Management Studio 21 Preview components and language packs](modify.md).
+To modify your SSMS installation to install the Help Viewer, see [Modify SQL Server Management Studio workloads, components, and language packs](modify.md).
 
 ## Change installation source
 

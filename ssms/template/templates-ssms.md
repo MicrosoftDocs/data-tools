@@ -31,8 +31,7 @@ This tutorial introduces you to the prebuilt Transact-SQL (T-SQL) templates that
 
 To complete this tutorial, you need SQL Server Management Studio and access to a SQL Server.
 
-* Install [SQL Server Management Studio](../download-sql-server-management-studio-ssms.md).
-
+* [Install SQL Server Management Studio](../install/install.md).
 * Install [SQL Server 2017 Developer Edition](https://www.microsoft.com/sql-server/sql-server-downloads).
 
 ## Use Template Browser
