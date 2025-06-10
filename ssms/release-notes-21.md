@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest, mbarickman
-ms.date: 05/28/2025
+ms.date: 06/10/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -30,11 +30,34 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="21.2.5"></a>
+
+### 21.2.5
+
+**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
+
+- Release number: 21.2.5
+- Release date: June 10, 2025
+
+#### What's new in 21.2.5
+
+| Feature | Details |
+| --- | --- |
+| Connection dialog | Added a Browse tab to the Modern connection dialog (Preview) that allows browsing your local, network, or Azure resources. |
+| Maintenance plans | Reinstated maintenance plan capabilities, including creating and updating maintenance plans using the Maintenance Plan Wizard. |
+| SQL Server Integration Services (SSIS) (Preview) | Reinstated SQL Server Integration Services (SSIS) capabilities (in preview), including SSISDB catalog management, automated execution of SSIS packages, and the Import Export Wizard. |
+| Visual Studio | Updated to Visual Studio 17.14.5 |
+
+#### Bug fixes in 21.2.5
+
+| Feature | Details |
+| --- | --- |
+| Connection dialog | Fixed a bug that prevented creating new firewall rules for Azure resources from SSMS. See [Modern Connection dialog cannot add firewall exceptions](https://developercommunity.microsoft.com/t/Modern-Connection-dialog-cannot-add-fire/10899761?q=%22firewall+rules%22). |
+| Reliability | Addressed two scenarios related to Copilot in SSMS (Preview) and the results grid that led to potential SSMS crashes. |
+
 <a id="21.1.3"></a>
 
 ### 21.1.3
-
-**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
 
 - Release number: 21.1.3
 - Release date: May 28, 2025
