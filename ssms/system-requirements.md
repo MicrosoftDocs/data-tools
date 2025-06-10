@@ -4,7 +4,7 @@ description: Learn about the system requirements for SQL Server Management Studi
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 06/02/2025
+ms.date: 06/09/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -19,6 +19,14 @@ keywords:
 [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] is a powerful tool for managing SQL Server instances, Azure SQL databases, and Azure SQL managed instances. This document outlines the system requirements needed to install and run [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] effectively.
 
 Ensure your system meets these requirements to take full advantage of the features and capabilities of SQL Server Management Studio (SSMS). For more information about [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)], see [Release notes for SQL Server Management Studio (SSMS)](release-notes-21.md).
+
+## Supported SQL offerings
+
+This version of SSMS works with [!INCLUDE [sssql14-md](includes/sssql14-md.md)] and later versions. It provides the most significant support for working with the latest cloud features in Azure SQL Database, Azure Synapse Analytics, and Microsoft Fabric.
+
+Additionally, [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] can be installed alongside SSMS 20.x, SSMS 19.x, SSMS 18.x, SSMS 17.x, and SSMS 16.x.
+
+For SQL Server Integration Services (SSIS), SSMS 17.x and later versions don't support connecting to the legacy SQL Server Integration Services service. To connect to an earlier version of the legacy Integration Services, use the version of SSMS aligned with the version of SQL Server. For example, use SSMS 16.x to connect to the legacy [!INCLUDE [sssql16-md](includes/sssql16-md.md)] Integration Services service. SSMS 17.x and SSMS 16.x can be installed on the same computer. Since the release of [!INCLUDE [sssql11-md](includes/sssql11-md.md)], the SSIS Catalog database, SSISDB, is the recommended way to store, manage, run, and monitor Integration Services packages. See [SSIS Catalog](/sql/integration-services/catalog/ssis-catalog) for details.
 
 ## Download SQL Server Management Studio 21
 
