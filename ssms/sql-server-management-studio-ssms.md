@@ -3,8 +3,7 @@ title: "SQL Server Management Studio (SSMS)"
 description: Learn details about SQL Server Management Studio (SSMS) and what SSMS can do, including how to manage Analysis Services Solutions.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 08/19/2024
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: overview
 ms.collection:
@@ -38,7 +37,7 @@ SQL Server Management Studio (SSMS) is an integrated environment for managing an
 | Use **Template Explorer** to build and manage files of boilerplate text that you use to speed the development of queries and scripts. | [Template Explorer](template/template-explorer.md) |
 | Use the deprecated **Solution Explorer** to build projects to manage administration items such as scripts and queries. | [Solution Explorer](solution/solution-explorer.md) |
 | Use the visual design tools included in SSMS to build queries, tables, and diagram databases. | [Visual Database Tools](visual-db-tools/visual-database-tools.md) |
-| Use the SSMS language editors to interactively build and debug queries and scripts. | [Query and Text Editors](f1-help/database-engine-query-editor-sql-server-management-studio.md) |
+| Use the SSMS language editors to interactively build and debug queries and scripts. | [Query and text editors](f1-help/database-engine-query-editor-sql-server-management-studio.md) |
 
 ## SQL Server Management Studio for business intelligence
 
@@ -55,9 +54,8 @@ SSMS provides an Analysis Services Script project in which you can develop and s
 
 These scripts are used to perform management tasks or recreate objects such as databases and instances on Analysis Services cubes. For example, you can develop an XMLA script in an Analysis Services Script project to create new objects directly on an existing instance. These projects can be saved as part of a solution and integrated with source code control.
 
-> [!NOTE]
-> It is noted that while DAX was originally designed for tabular data models, it can also be used to query multidimensional models in SQL Server Analysis Services.
-> SSMS can do DAX and MDX, but there are some considerations to keep in mind regarding the model you are working with and the type of queries you intend to run.
+> [!NOTE]  
+> While DAX was originally designed for tabular data models, it can also be used to query multidimensional models in SQL Server Analysis Services. SSMS can do DAX and MDX, but there are some considerations to keep in mind regarding the model you're working with and the type of queries you intend to run.
 
 For more information about the Analysis Services Scripts Project in SSMS, see [Analysis Services Scripts Project](/analysis-services/instances/analysis-services-scripts-project-in-sql-server-management-studio).
 
@@ -75,22 +73,22 @@ SQL Server Management Studio (SSMS) enables Reporting Services features, adminis
 
 For more information on these tasks, you can refer to the articles on Reporting Services in SSMS, administering a Report Server database, and creating the **RSExecRole**:
 
-- [Reporting Services in SSMS](/sql/reporting-services/tools/reporting-services-in-sql-server-management-studio-ssrs)
-- [Administer a Report Server database](/sql/reporting-services/report-server/administer-a-report-server-database-ssrs-native-mode)
+- [Reporting Services in SQL Server Management Studio (SSRS)](/sql/reporting-services/tools/reporting-services-in-sql-server-management-studio-ssrs)
+- [Administer a report server database (SSRS native mode)](/sql/reporting-services/report-server/administer-a-report-server-database-ssrs-native-mode)
 - [Create the RSExecRole](/sql/reporting-services/security/create-the-rsexecrole)
 
-You also manage the server by enabling and configuring various features, setting server defaults, and managing roles and jobs. 
+You also manage the server by enabling and configuring various features, setting server defaults, and managing roles and jobs.
 
 For more information about these tasks, see the following articles:
 
-- [Set Report Server properties](/sql/reporting-services/tools/set-report-server-properties-management-studio)
-- [Create, delete, or modify a role](/sql/reporting-services/security/role-definitions-create-delete-or-modify)
-- [Enabling and disabling client-side printing for Reporting Services](/sql/reporting-services/report-server/enable-and-disable-client-side-printing-for-reporting-services)
+- [Set report server properties (Management Studio)](/sql/reporting-services/tools/set-report-server-properties-management-studio)
+- [Create, delete, or modify a role (Management Studio)](/sql/reporting-services/security/role-definitions-create-delete-or-modify)
+- [Enable and disable client-side printing for Reporting Services](/sql/reporting-services/report-server/enable-and-disable-client-side-printing-for-reporting-services)
 
-SSMS provides an integrated environment for managing any SQL infrastructure, including SSRS. In the web portal, you can enable features, set server defaults, manage running jobs, view custom reports, and create and manage shared schedules. 
+SSMS provides an integrated environment for managing any SQL infrastructure, including SSRS. In the web portal, you can enable features, set server defaults, manage running jobs, view custom reports, and create and manage shared schedules.
 
-> [!NOTE]
-> While SSMS offers various management capabilities for SSRS, it is not a replacement for Report Manager online or the Report Services Configuration Manager. It is recommended to stay updated with the latest versions and documentation to ensure effective management of SSRS within SSMS. If you have any specific questions or need further assistance, feel free to ask.
+> [!NOTE]  
+> While SSMS offers various management capabilities for SSRS, it's not a replacement for Report Manager online or the Report Services Configuration Manager. You should stay updated with the latest versions and documentation to ensure effective management of SSRS within SSMS. If you have any specific questions or need further assistance, feel free to ask.
 
 ## Non-English language versions
 
@@ -98,9 +96,9 @@ The Visual Studio Installer selects a default language pack for SSMS that matche
 
 ## Support policy
 
-Starting with SSMS 17.0, the SQL Tools team has adopted the [Microsoft Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).
+Starting with SSMS 17.0, the SQL Tools team has adopted the [Microsoft Modern Lifecycle Policy](/lifecycle/policies/modern).
 
-Read the original [Modern Lifecycle Policy announcement](https://support.microsoft.com/help/447912/announcing-microsoft-modern-lifecycle-policy). For more information, see [Modern Policy FAQs](https://support.microsoft.com/help/30882/modern-lifecycle-policy-faq).
+Read the original [Modern Lifecycle Policy announcement](/lifecycle/announcements/modern-policy). For more information, see [Modern Policy FAQs](/lifecycle/faq/modern-policy).
 
 For diagnostic data collection and feature usage information, see the [SQL Server privacy supplement](/sql/sql-server/sql-server-privacy) and [diagnostic data collection](sql-server-management-studio-telemetry-ssms.md).
 
@@ -113,6 +111,6 @@ For diagnostic data collection and feature usage information, see the [SQL Serve
 ## Related content
 
 - [Modify SQL Server Management Studio workloads, components, and language packs](install/modify.md)
-- [Connect to and query a SQL Server instance](quickstarts/ssms-connect-query-sql-server.md)
-- [Writing Transact-SQL Statements](/sql/t-sql/tutorial-writing-transact-sql-statements)
-- [Azure Data Studio](/azure-data-studio/what-is-azure-data-studio)
+- [Quickstart: Connect and query a SQL Server instance using SQL Server Management Studio (SSMS)](quickstarts/ssms-connect-query-sql-server.md)
+- [Tutorial: Write Transact-SQL statements](/sql/t-sql/tutorial-writing-transact-sql-statements)
+- [What is Azure Data Studio?](/azure-data-studio/what-is-azure-data-studio)
