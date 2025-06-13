@@ -5,7 +5,7 @@ description: Learn about configuring Azure OpenAI to use with Copilot in SQL Ser
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/23/2025
+ms.date: 06/13/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -131,9 +131,15 @@ The final step required is creating the deployment.
 
 1. Select **Create resource and deploy**.
 
-1. When deployment is complete, the details page appears. Don't use the endpoint settings in this window in Copilot in SSMS.
+1. When deployment is complete, the details page appears. Within the **Get Started** section, you can find the endpoint and deployment in the code for **Run a basic code sample**:
 
-1. If you need to edit any deployment settings, such as **Rate limit (Tokens per minute)**, access this page.
+   :::image type="content" source="media/use-azure-openai-with-copilot-in-ssms/copilot-ssms-deployment-endpoint.png" alt-text="Screenshot of code sample that includes the endpoint and deployment." lightbox="media/use-azure-openai-with-copilot-in-ssms/copilot-ssms-deployment-endpoint.png":::
+
+1. Use the following values and endpoint when configuring Copilot in SSMS:
+
+   :::image type="content" source="media/use-azure-openai-with-copilot-in-ssms/copilot-ssms-setup.png" alt-text="Screenshot of initial dialog for Copilot in SSMS configuration." lightbox="media/use-azure-openai-with-copilot-in-ssms/copilot-ssms-setup.png":::
+
+1. If you need to edit any deployment settings, such as **Rate limit (Tokens per minute)**, access the details page for the deployment.
 
 ## Monitor cost
 
@@ -141,6 +147,7 @@ The cost of Copilot in SSMS varies based on use and follows a pay-as-you-go bill
 
 ## Related content
 
+- [Troubleshooting issues with Copilot in SQL Server Management Studio](copilot-in-ssms-troubleshooting.md)
 - [What is Azure OpenAI Service?](/azure/ai-services/openai/overview)
 - [Use the chat window for Copilot in SQL Server Management Studio](copilot-in-ssms-chat.md)
 - [Code assistance for Copilot in SQL Server Management Studio](copilot-in-ssms-code-assistance.md)

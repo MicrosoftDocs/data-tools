@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest, mbarickman
-ms.date: 06/10/2025
+ms.date: 06/13/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -53,7 +53,8 @@ For previous versions of SSMS, see:
 | Feature | Details |
 | --- | --- |
 | Connection dialog | Fixed a bug that prevented creating new firewall rules for Azure resources from SSMS. See [Modern Connection dialog cannot add firewall exceptions](https://developercommunity.microsoft.com/t/Modern-Connection-dialog-cannot-add-fire/10899761?q=%22firewall+rules%22). |
-| Reliability | Addressed two scenarios related to Copilot in SSMS (Preview) and the results grid that led to potential SSMS crashes. |
+| Reliability | Addressed scenario related to Copilot in SSMS (Preview) that could lead to SSMS crashing. |
+| Reliability | Fixed error 'Parameter is not valid' that also caused the active dialog to become with red lines. This occurred in the results grid, database diagrams, and SQL Profiler. See [Unhandled Exception in SSMS 21 - "Parameter is not valid"](https://developercommunity.visualstudio.com/t/Unhandled-Exception-in-ssms-21---Parame/10897441) and [SQL Server Profiler Unhandeled exception after switching theme in SSMS](https://developercommunity.visualstudio.com/t/SQL-Server-Profiler-Unhandeled-exception/10911208).
 
 <a id="21.1.3"></a>
 
