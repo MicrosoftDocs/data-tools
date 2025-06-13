@@ -42,7 +42,7 @@ If you initially open Copilot in SSMS without a connected query editor window, C
 
 To query a specific database, get help with Natural Language to SQL (NL2SQL), or get other assistance, open a query editor window that is connected to that database. To change Copilot's context to that connection, enter the `@` symbol in the prompt box to display the available context list. The context includes the name of the query editor and connection information. Once a context is selected, the editor and connection are listed as the current context above the prompt box.
 
-:::image type="content" source="../media/copilot-in-ssms-chat/copilot-ssms-chat.png" alt-text="Screenshot of Copilot in SSMS chat window." lightbox="../media/copilot-in-ssms-chat/copilot-ssms-chat.png":::
+:::image type="content" source="media/copilot-in-ssms-chat/copilot-ssms-chat.png" alt-text="Screenshot of Copilot in SSMS chat window." lightbox="media/copilot-in-ssms-chat/copilot-ssms-chat.png":::
 
 | Key | Description |
 | --- | --- |
