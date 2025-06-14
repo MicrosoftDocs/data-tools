@@ -20,8 +20,7 @@ helpviewer_keywords:
 # Create and Attach Schedules to Jobs
 [!INCLUDE [SQL Server SQL MI](../includes/applies-to-version/sql-asdbmi.md)]
 
-> [!IMPORTANT]  
-> On [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance), most, but not all SQL Server Agent features are currently supported. See [Azure SQL Managed Instance T-SQL differences from SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent) for details.
+[!INCLUDE [sql-server-agent-azure-sql-managed-instance-support](../includes/sql-server-agent-azure-sql-managed-instance-support.md)]
 
 Scheduling [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent jobs means defining the condition or conditions that cause the job to begin running without user interaction. You can schedule a job to run automatically by creating a new schedule for the job, or by attaching an existing schedule to the job.  
   

@@ -20,8 +20,7 @@ helpviewer_keywords:
 
 This article describes how to configure a schedule for a job for the [SQL Server Agent](sql-server-agent.md) to run on SQL Server or Azure SQL Managed Instance. Configure a SQL Server Agent job schedule by using SQL Server Management Studio (SSMS), Transact-SQL, or SQL Server Management Objects (SMO). 
 
-> [!IMPORTANT]  
-> On [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance), most, but not all SQL Server Agent features are currently supported. See [Azure SQL Managed Instance T-SQL differences from SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent) for details.
+[!INCLUDE [sql-server-agent-azure-sql-managed-instance-support](../includes/sql-server-agent-azure-sql-managed-instance-support.md)]
 
 
 ## <a name="Security"></a>Security

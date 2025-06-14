@@ -16,8 +16,7 @@ helpviewer_keywords:
 # Pick Schedule for Job
 [!INCLUDE [SQL Server SQL MI](../includes/applies-to-version/sql-asdbmi.md)]
 
-> [!IMPORTANT]  
-> On [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance), most, but not all SQL Server Agent features are currently supported. See [Azure SQL Managed Instance differences from SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent) for details.
+[!INCLUDE [sql-server-agent-azure-sql-managed-instance-support](../includes/sql-server-agent-azure-sql-managed-instance-support.md)]
 
 Use this dialog to pick an existing schedule for the [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent job.  
   

@@ -18,8 +18,7 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server SQL MI](../includes/applies-to-version/sql-asdbmi.md)]
 
-> [!IMPORTANT]  
-> On [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview), most, but not all SQL Server Agent features are currently supported. See [Azure SQL Managed Instance from SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent) for details.
+[!INCLUDE [sql-server-agent-azure-sql-managed-instance-support](../includes/sql-server-agent-azure-sql-managed-instance-support.md)]
 
 This topic describes how to create and define [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent job steps in [!INCLUDE[ssnoversion](../includes/ssnoversion-md.md)] that execute [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Analysis Services commands and queries by using SQL Server Management Studio, [!INCLUDE[tsql](../includes/tsql-md.md)] or SQL Server Management Objects.  
   
