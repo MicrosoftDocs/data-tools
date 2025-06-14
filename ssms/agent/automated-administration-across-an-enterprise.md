@@ -22,8 +22,7 @@ helpviewer_keywords:
 # Automated Administration Across an Enterprise
 [!INCLUDE [SQL Server](../includes/applies-to-version/sqlserver.md)]
 
-> [!IMPORTANT]  
-> On [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance), most, but not all SQL Server Agent features are currently supported. See [Azure SQL Managed Instance T-SQL differences from SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent) for details.
+[!INCLUDE [sql-server-agent-azure-sql-managed-instance-support](../includes/sql-server-agent-azure-sql-managed-instance-support.md)]
 
 Automating administration across multiple instances of [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] is called *multiserver administration*. Use multiserver administration to do the following:  
   

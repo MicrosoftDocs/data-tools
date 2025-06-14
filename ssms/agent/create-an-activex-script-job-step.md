@@ -18,8 +18,7 @@ helpviewer_keywords:
 
 ActiveX subsystem is discontinued beginning with SQL Server 2016. Convert any existing job steps that use ActiveX Script to a [PowerShell script job step](create-a-powershell-script-job-step.md). Use PowerShell for any future development.
 
-> [!IMPORTANT]  
-> On [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview), most, but not all SQL Server Agent features are currently supported. See [Azure SQL Managed Instance from SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent) for details.
+[!INCLUDE [sql-server-agent-azure-sql-managed-instance-support](../includes/sql-server-agent-azure-sql-managed-instance-support.md)]
 
 This topic describes how to create and define a [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent job step in SQL Server 2014 and prior that executes an ActiveX script by using SQL Server Management Studio, [!INCLUDE[tsql](../includes/tsql-md.md)], or SQL Server Management Objects.  
 

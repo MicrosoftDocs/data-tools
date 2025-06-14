@@ -20,8 +20,7 @@ helpviewer_keywords:
 
 This article provides an overview of the SQL Server Agent, which is a Microsoft Windows service that executes scheduled administrative tasks (called *jobs*) in SQL Server and Azure SQL Managed Instance.
 
-> [!IMPORTANT]  
-> On [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance), most, but not all SQL Server Agent features are currently supported. See [Azure SQL Managed Instance T-SQL differences from SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent) for details.
+[!INCLUDE [sql-server-agent-azure-sql-managed-instance-support](../includes/sql-server-agent-azure-sql-managed-instance-support.md)]
 
 ## <a name="Benefits"></a>Benefits of SQL Server Agent
 
