@@ -19,8 +19,7 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server SQL MI](../includes/applies-to-version/sql-asdbmi.md)]
 
-> [!IMPORTANT]  
-> On [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance), most, but not all SQL Server Agent features are currently supported. Enabling and disabling SQL Server Agent is currently not supported in SQL Managed Instance. SQL Agent is always running. See [SQL Managed Instance T-SQL differences from SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent) for details.
+[!INCLUDE [sql-server-agent-azure-sql-managed-instance-support](../includes/sql-server-agent-azure-sql-managed-instance-support.md)] Enabling and disabling SQL Server Agent is currently not supported in SQL Managed Instance. SQL Agent is always running.
 
 This topic describes how to specify some configuration options for [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent during installation of [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. The full set of [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent configuration options is only available within SQL Server Management Studio, [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Management Objects (SMO), or the [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent stored procedures.
   
