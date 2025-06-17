@@ -3,8 +3,8 @@ title: "Release Notes for SQL Server Management Studio (SSMS)"
 description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest, mbarickman
-ms.date: 06/13/2025
+ms.reviewer: randolphwest, mbarickman
+ms.date: 06/17/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -30,11 +30,35 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="21.3.6"></a>
+
+### 21.3.6
+
+**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
+
+- Release number: 21.3.6
+- Release date: June 17, 2025
+
+#### What's new in 21.3.6
+
+| Feature | Details |
+| --- | --- |
+| Query Editor | Added the ability to rename unsaved query editor tabs via the **Rename tab** option on the query tab context menu |
+| Visual Studio | Updated to Visual Studio 17.14.6 |
+
+#### Bug fixes in 21.3.6
+
+| Feature | Details |
+| --- | --- |
+| Connection dialog | Fixed various Modern connection dialog (Preview) bugs, including [New Connection Dialog is leaking connections in SSMS 21](https://developercommunity.microsoft.com/t/New-Connection-Dialog-is-leaking-connect/10900958), [New connection dialog - Cancel should not close but allow changing to a different connection](https://developercommunity.microsoft.com/t/New-connection-dialog---Cancel-should-no/10900209), and [Importing earlier version of SSMS from SSMS 21](https://developercommunity.visualstudio.com/t/Importing-earlier-version-of-SSMS-from-S/10910984). |
+| Copilot in SSMS (Preview) | Addressed an issue that erroneously caused an Azure OpenAI jailbreak response, causing the Copilot to try less effective alternatives to assess the database schema and return a valid query. |
+| Files | Fixed a bug that caused multiple instances of SSMS to open when opening `.sql` files. See [SSMS: SQL files opening new instances of SSMS](https://developercommunity.visualstudio.com/t/SSMS:-SQL-files-opening-new-instances-of/10858946). |
+| Git | Addressed an error that incorrectly colored text in the diff tool and prevented the code selection from being copied. See [SSMS 21 Preview 7 Git Changes, Diff coloring](https://developercommunity.visualstudio.com/t/SSMS-21-Preview-7-Git-Changes-Diff-colo/10898088) and [SSMS 21 diff tool does not allow copy of code selection unlike Visual Studio](https://developercommunity.visualstudio.com/t/SSMS-21-Diff-tool-left-side-does-not-all/10898618). |
+| Object Explorer | Resolved Object Explorer performance regression by removing the "use current theme for selected node" setting, and fixed a bug that incorrectly displays database names that contain `&`. See [Performance regression: Object Explorer takes ~60 s to expand table nodes in large databases](https://developercommunity.visualstudio.com/t/Performance-regression:-Object-Explorer-/10913775) and [Object Explorer showing wrong database name](https://developercommunity.visualstudio.com/t/Object-Explorer-showing-wrong-database-n/10919352). |
+
 <a id="21.2.5"></a>
 
 ### 21.2.5
-
-**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
 
 - Release number: 21.2.5
 - Release date: June 10, 2025
@@ -52,9 +76,9 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Connection dialog | Fixed a bug that prevented creating new firewall rules for Azure resources from SSMS. See [Modern Connection dialog cannot add firewall exceptions](https://developercommunity.microsoft.com/t/Modern-Connection-dialog-cannot-add-fire/10899761?q=%22firewall+rules%22). |
+| Connection dialog | Fixed a bug that prevented creating new firewall rules for Azure resources from SSMS. See [Modern Connection dialog cannot add firewall exceptions](https://developercommunity.microsoft.com/t/Modern-Connection-dialog-cannot-add-fire/10899761). |
 | Reliability | Addressed scenario related to Copilot in SSMS (Preview) that could lead to SSMS crashing. |
-| Reliability | Fixed error 'Parameter is not valid' that also caused the active dialog to become with red lines. This occurred in the results grid, database diagrams, and SQL Profiler. See [Unhandled Exception in SSMS 21 - "Parameter is not valid"](https://developercommunity.visualstudio.com/t/Unhandled-Exception-in-ssms-21---Parame/10897441) and [SQL Server Profiler Unhandeled exception after switching theme in SSMS](https://developercommunity.visualstudio.com/t/SQL-Server-Profiler-Unhandeled-exception/10911208).
+| Reliability | Fixed error 'Parameter is not valid' that also caused the active dialog to become with red lines. This occurred in the results grid, database diagrams, and SQL Profiler. See [Unhandled Exception in SSMS 21 - "Parameter is not valid"](https://developercommunity.visualstudio.com/t/Unhandled-Exception-in-ssms-21---Parame/10897441) and [SQL Server Profiler Unhandeled exception after switching theme in SSMS](https://developercommunity.visualstudio.com/t/SQL-Server-Profiler-Unhandeled-exception/10911208). |
 
 <a id="21.1.3"></a>
 

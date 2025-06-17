@@ -3,8 +3,8 @@ title: Known Issues in SQL Server Management Studio
 description: Learn about known issues in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 06/13/2025
+ms.reviewer: randolphwest, mbarickman
+ms.date: 06/17/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -34,24 +34,8 @@ This page lists known issues for [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)]
 | Query Store | When you use any of the Query Store reports, the Replica dropdown list menu option might not populate with the correct replica name when the [Query Store for readable secondaries](/sql/relational-databases/performance/query-store-for-secondary-replicas) is enabled. | Use Transact-SQL to query the Query Store data for a readable secondary where the `replica_group_id` for a secondary can be mapped using the [sys.query_store_runtime_stats system](/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql) catalog view, which has a foreign key relationship with the [sys.query_store_replicas](/sql/relational-databases/system-catalog-views/sys-query-store-replicas) system catalog view. |
 | Results Pane | When switching themes, if the output is set to Results to Text, the Results pane doesn't switch themes. The original theme is still applied. | To apply any theme changes to the Results pane, restart SSMS. |
 | SQL Server Analysis Services (SSAS) | When connected to a MultiDimensional DW with Analysis Services, right-clicking on a cube and selecting **Browse** generates the error 'Object reference not set to an instance of an object.'. See [SSMS 21 Error browsing OLAP cubes](https://developercommunity.visualstudio.com/t/SSMS-21-Error-browsing-OLAP-cubes/10915226). | Use an earlier version of SSMS to browse a cube. |
-| SQL Server Integration Services (SSIS) | If a data source other than Microsoft OLEDB Provider for SQL Server is selected in the Import and Export Wizard, an error is generated. | For information on how to resolve this issue, see the [SSIS Import and Export Wizard](#ssis-import-and-export-wizard) section later in this article. |
-| SQL Server Integration Services (SSIS) | Use of the [Execute package utility (dtexecui)](/sql/integration-services/packages/execute-package-utility-dtexecui-ui-reference) isn't currently supported. | Use an earlier version of SSMS to access the Execute package utility. |
 | SQL Server Integration Services (SSIS) | Support for legacy [Integration Services service](/sql/integration-services/service/integration-services-service-ssis-service#manage-the-service) isn't available for SQL Server 2022. | To manage the legacy Integration Services Service for SQL Server 2022, use SSMS 20.2.1 or SSMS 19.3. |
-
-## SSIS Import and Export Wizard
-
-If a data source other than Microsoft OLEDB Provider for SQL Server is selected in the Import and Export Wizard, an error is generated.
-
-Add a `<dependentAssembly>` section inside the `<assemblyBinding>` section of the `C:\Program Files\Microsoft SQL Server Management Studio 21\Release\Common 7\IDE\CommonExtensions\Microsoft\SSIS\170\Binn\default.applocal.config` file as follows:
-
-```xml
-<dependentAssembly>
-    <assemblyIdentity name="Microsoft.SqlServer.BatchParser" publicKeyToken="89845dcd8080cc91"
-        culture="neutral" />
-    <bindingRedirect oldVersion="17.0.0.0" newVersion="17.100.0.0" />
-    <codeBase version="17.100.0.0" href="{0}\Microsoft.SqlServer.BatchParser.dll" />
-</dependentAssembly>
-```
+| SQL Server Integration Services (SSIS) | Installing SSMS 21.2.5 or any later version causes SQL Server Integration Services Projects 2022 features to break. | Don't install SSMS on the same machine where SQL Server Integration Projects 2022 is installed. For more information, see [SQL Server Integration Services Projects 2022](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices). |
 
 ## Related content
 

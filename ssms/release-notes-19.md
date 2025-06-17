@@ -30,6 +30,9 @@ This section contains release notes for SSMS 19 and earlier versions. For releas
 - [Release notes for SQL Server Management Studio 21](release-notes-21.md)
 - [Release notes for SQL Server Management Studio 20](release-notes-20.md)
 
+> [!IMPORTANT]  
+> When you uninstall SSMS 19, the SQL Server Native Client (SNAC) is also uninstalled.
+
 ### 19.3
 
 :::image type="icon" source="includes/media/download.svg" border="false"::: **[Download SSMS 19.3](https://go.microsoft.com/fwlink/?linkid=2257624&clcid=0x409)**
