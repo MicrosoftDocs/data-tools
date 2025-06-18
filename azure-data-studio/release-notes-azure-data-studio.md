@@ -3,8 +3,8 @@ title: Azure Data Studio Release Notes
 description: This article has release notes for Azure Data Studio.
 author: croblesm
 ms.author: roblescarlos
-ms.reviewer: randolphwest, maghan
-ms.date: 02/06/2025
+ms.reviewer: randolphwest
+ms.date: 06/18/2025
 ms.service: azure-data-studio
 ms.topic: concept-article
 ms.collection:
@@ -24,38 +24,21 @@ This article provides details about updates, improvements, and bug fixes for the
 
 :::image type="icon" source="includes/media/download.svg" border="false"::: **[Download and install Azure Data Studio](download-azure-data-studio.md)**
 
-### January 2025 (hotfix)
+### June 2025
 
-- Release number: 1.51.1
-- Release date: February 10, 2025
+Azure Data Studio 1.52 is the latest general availability (GA) release.
 
-#### Bug fixes in 1.51.1
+- Release number: 1.52
+- Release date: June 18, 2025
 
-| Category | Details |
-| --- | --- |
-| Core | Added banner with information about ADS retirement |
-| Core | Added notification about ADS retirement |
-| Documentation | Updated README with ADS retirement information |
-
-For details about ADS retirement, visit [aka.ms/ads-retirement](https://aka.ms/ads-retirement).
-
-### January 2025
-
-Azure Data Studio 1.51.0 is the latest general availability (GA) release.
-
-- Release number: 1.51.0
-- Release date: January 29, 2025
-
-#### Bug fixes in 1.51.0
+#### Bug fixes in 1.52
 
 | Category | Details |
 | --- | --- |
-| Core | Fixed dependency conflicts preventing Notebook kernels from starting. |
-| Core | Added a warning prompt before loading Jupyter configuration scripts from shared locations. |
-| Proxies | Fixed tunneling issues for HTTPS-over-HTTP proxies. |
-| Accessibility | Addressed minor accessibility bugs. |
+| Security | Resolved an issue related to permissions on a temporary folder on some platforms |
+| Extensibility | Updated the SQL Database Projects and Azure SQL migration extensions to improve security and performance |
 
-For details about the issues addressed in the January 2025 release, visit the [January 2025 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/115?closed=1).
+For details about the issues addressed in the June 2025 release, visit the [June 2025 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/118?closed=1).
 
 ## Azure Data Studio feedback
 
@@ -67,6 +50,7 @@ For a list of the current known issues, visit the [issues list on GitHub](https:
 
 | Azure Data Studio release | Build number | Release date | Hotfix |
 | --- | --- | --- | --- |
+| [January 2025](#january-2025) | 1.51.0 |  January 29, 2025 | [hotfix](#january-2025-hotfix) |
 | [November 2024](#november-2024) | 1.50.0 |  November 20, 2024 | N/A |
 | [August 2024](#august-2024) | 1.49.0 | August 1, 2024 | [hotfix](#august-2024-hotfix) |
 | [February 2024](#february-2024) | 1.48.0 | February 28, 2024 | [hotfix](#june-2024-hotfix) |
@@ -121,6 +105,39 @@ For a list of the current known issues, visit the [issues list on GitHub](https:
 
 > [!NOTE]  
 > All previous versions of Azure Data Studio aren't supported.
+
+### January 2025 (hotfix)
+
+- Release number: 1.51.1
+- Release date: February 10, 2025
+
+#### Bug fixes in 1.51.1
+
+| Category | Details |
+| --- | --- |
+| Core | Added banner with information about ADS retirement |
+| Core | Added notification about ADS retirement |
+| Documentation | Updated README with ADS retirement information |
+
+For details about ADS retirement, visit [aka.ms/ads-retirement](https://aka.ms/ads-retirement).
+
+### January 2025
+
+Azure Data Studio 1.51.0 is the latest general availability (GA) release.
+
+- Release number: 1.51.0
+- Release date: January 29, 2025
+
+#### Bug fixes in 1.51.0
+
+| Category | Details |
+| --- | --- |
+| Core | Fixed dependency conflicts preventing Notebook kernels from starting. |
+| Core | Added a warning prompt before loading Jupyter configuration scripts from shared locations. |
+| Proxies | Fixed tunneling issues for HTTPS-over-HTTP proxies. |
+| Accessibility | Addressed minor accessibility bugs. |
+
+For details about the issues addressed in the January 2025 release, visit the [January 2025 Release on GitHub](https://github.com/microsoft/azuredatastudio/milestone/115?closed=1).
 
 ### November 2024
 
@@ -1735,6 +1752,7 @@ January 09, 2019 / version: 1.3.8
 
 ## Related content
 
+- [MSSQL extension for Visual Studio Code](/sql/tools/visual-studio-code-extensions/mssql/mssql-extension-visual-studio-code)
 - [Download and install Azure Data Studio](download-azure-data-studio.md)
 - [Quickstart: Use Azure Data Studio to connect and query SQL Server](quickstart-sql-server.md)
 - [Quickstart: Use Azure Data Studio to connect and query Azure SQL Database](quickstart-sql-database.md)
