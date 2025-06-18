@@ -3,8 +3,8 @@ title: Download and Install Azure Data Studio
 description: Download and install Azure Data Studio for Windows, macOS, or Linux. This article provides release dates, version numbers, system requirements, and download links.
 author: croblesm
 ms.author: roblescarlos
-ms.reviewer: randolphwest, maghan
-ms.date: 02/06/2025
+ms.reviewer: randolphwest
+ms.date: 06/18/2025
 ms.service: azure-data-studio
 ms.topic: overview
 ms.collection:
@@ -27,20 +27,20 @@ For more information about Azure Data Studio, visit [What is Azure Data Studio?]
 
 ## Download Azure Data Studio
 
-Azure Data Studio 1.51.1 is the latest general availability (GA) version.
+Azure Data Studio 1.52 is the latest general availability (GA) version.
 
-- Release number: 1.51.1
-- Release date: February 10, 2025
+- Release number: 1.52
+- Release date: June 18, 2025
   
 | Platform | Type | Download |
 | --- | --- | --- |
-| Windows | User Installer | [x64](https://go.microsoft.com/fwlink/?linkid=2301924)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2301925) |
-| | System Installer | [x64](https://go.microsoft.com/fwlink/?linkid=2302007)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2301827) |
-| | .zip | [x64](https://go.microsoft.com/fwlink/?linkid=2302008)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2301828) |
-| macOS | .zip | [Universal](https://go.microsoft.com/fwlink/?linkid=2302009)&emsp;[Intel Chip](https://go.microsoft.com/fwlink/?linkid=2301829)&emsp;[Apple Silicon](https://go.microsoft.com/fwlink/?linkid=2302010) |
-| Linux | .tar.gz | [x64](https://go.microsoft.com/fwlink/?linkid=2301830) |
-| | .deb | [x64](https://go.microsoft.com/fwlink/?linkid=2302011) |
-| | .rpm | [x64](https://go.microsoft.com/fwlink/?linkid=2301926) |
+| Windows | User Installer | [x64](https://go.microsoft.com/fwlink/?linkid=2324624)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2324717) |
+| | System Installer | [x64](https://go.microsoft.com/fwlink/?linkid=2324716)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2324523) |
+| | .zip | [x64](https://go.microsoft.com/fwlink/?linkid=2324522)&emsp;[ARM64](https://go.microsoft.com/fwlink/?linkid=2324718) |
+| macOS | .zip | [Universal](https://go.microsoft.com/fwlink/?linkid=2324524)&emsp;[Intel Chip](https://go.microsoft.com/fwlink/?linkid=2324525)&emsp;[Apple Silicon](https://go.microsoft.com/fwlink/?linkid=2324719) |
+| Linux | .tar.gz | [x64](https://go.microsoft.com/fwlink/?linkid=2324526) |
+| | .deb | [x64](https://go.microsoft.com/fwlink/?linkid=2324720) |
+| | .rpm | [x64](https://go.microsoft.com/fwlink/?linkid=2324527) |
 
 If you have comments or suggestions or want to report a problem with downloading Azure Data Studio, submit an issue to our team on the [Azure Data Studio feedback page](https://github.com/microsoft/azuredatastudio/issues/).
 
@@ -138,11 +138,10 @@ To uninstall apps you've downloaded from the App Store, use Launchpad.
 
 To learn more about Azure Data Studio, see the following resources:
 
+- [MSSQL extension for Visual Studio Code](/sql/tools/visual-studio-code-extensions/mssql/mssql-extension-visual-studio-code)
 - [Azure Data Studio release notes](release-notes-azure-data-studio.md)
 - [What is Azure Data Studio?](what-is-azure-data-studio.md)
 - [SQL tools](/sql/tools/overview-sql-tools)
-- [SSMS](/sql/ssms/download-sql-server-management-studio-ssms)
-- [Azure Data Architecture Guide](/azure/architecture/data-guide/)
 
 [!INCLUDE [contribute-to-content](includes/contribute-to-content.md)]
 
