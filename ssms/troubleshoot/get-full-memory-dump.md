@@ -6,7 +6,7 @@ ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
 ms.date: 05/10/2024
 ms.service: sql-server-management-studio
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.collection:
   - data-tools
 ---

@@ -6,7 +6,7 @@ ms.author: chgagnon
 ms.reviewer: randolphwest
 ms.date: 03/11/2025
 ms.service: sql-server-management-studio
-ms.topic: conceptual
+ms.topic: article
 ms.collection:
   - data-tools
 helpviewer_keywords:

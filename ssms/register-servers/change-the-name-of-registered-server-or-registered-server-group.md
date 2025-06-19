@@ -5,7 +5,7 @@ author: rwestMSFT
 ms.author: randolphwest
 ms.date: 08/02/2016
 ms.service: sql-server-management-studio
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection:
   - data-tools
 ---
