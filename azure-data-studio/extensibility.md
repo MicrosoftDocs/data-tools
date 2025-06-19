@@ -6,7 +6,7 @@ ms.author: roblescarlos
 ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection:
   - data-tools
 ms.custom:

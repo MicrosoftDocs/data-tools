@@ -6,7 +6,7 @@ ms.author: randolphwest
 ms.reviewer: randolphwest
 ms.date: 09/04/2024
 ms.service: sql-server-management-studio
-ms.topic: conceptual
+ms.topic: article
 ms.collection:
   - data-tools
 f1_keywords:

@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 06/17/2025
+ms.date: 06/19/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -55,6 +55,8 @@ For previous versions of SSMS, see:
 | Files | Fixed a bug that caused multiple instances of SSMS to open when opening `.sql` files. See [SSMS: SQL files opening new instances of SSMS](https://developercommunity.visualstudio.com/t/SSMS:-SQL-files-opening-new-instances-of/10858946). |
 | Git | Addressed an error that incorrectly colored text in the diff tool and prevented the code selection from being copied. See [SSMS 21 Preview 7 Git Changes, Diff coloring](https://developercommunity.visualstudio.com/t/SSMS-21-Preview-7-Git-Changes-Diff-colo/10898088) and [SSMS 21 diff tool does not allow copy of code selection unlike Visual Studio](https://developercommunity.visualstudio.com/t/SSMS-21-Diff-tool-left-side-does-not-all/10898618). |
 | Object Explorer | Resolved Object Explorer performance regression by removing the "use current theme for selected node" setting, and fixed a bug that incorrectly displays database names that contain `&`. See [Performance regression: Object Explorer takes ~60 s to expand table nodes in large databases](https://developercommunity.visualstudio.com/t/Performance-regression:-Object-Explorer-/10913775) and [Object Explorer showing wrong database name](https://developercommunity.visualstudio.com/t/Object-Explorer-showing-wrong-database-n/10919352). |
+| SQL Server Analysis Services (SSAS) | Fixed a bug that led to a crash when editing connection properties and credentials with a SAS key. | 
+| SQL Server Integration Services (SSIS) | Resolved errors that were generated when a data source other than Microsoft OLEDB Provider for SQL Server was selected in the Import and Export Wizard, and added support for the [Execute package utility (dtexecui)](/sql/integration-services/packages/execute-package-utility-dtexecui-ui-reference). |
 
 <a id="21.2.5"></a>
 
