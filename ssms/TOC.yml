@@ -621,7 +621,10 @@ items:
         href: customize-menus-and-shortcut-keys.md
       - name: SSMS keyboard shortcuts
         href: sql-server-management-studio-keyboard-shortcuts.md
+      - name: Rename tabs
+        href: rename-tabs.md
       - name: Enable tabs to move
+        href: troubleshoot/workaround-move-tabs.md
       - name: Enable copying from find and replace window
         href: troubleshoot/enable-copying-find-replace-window.md
       - name: Tool windows in SSMS
