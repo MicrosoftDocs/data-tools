@@ -7,7 +7,7 @@ ms.reviewer: randolphwest, maghan
 ms.date: 04/21/2025
 ms.service: azure-data-studio
 ms.subservice: migration-extension
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection:
   - sql-migration-content
   - data-tools

@@ -6,7 +6,7 @@ ms.author: erinstellato
 ms.reviewer: maghan, randolphwest, mbarickman
 ms.date: 04/18/2025
 ms.service: sql-server-management-studio
-ms.topic: conceptual
+ms.topic: release-notes
 ms.collection:
   - data-tools
 ---

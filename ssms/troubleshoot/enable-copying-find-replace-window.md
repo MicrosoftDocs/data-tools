@@ -6,7 +6,7 @@ ms.author: drskwier
 ms.reviewer: maghan
 ms.date: 11/03/2020
 ms.service: sql-server-management-studio
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection:
   - data-tools
 ---
