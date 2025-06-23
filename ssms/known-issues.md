@@ -35,7 +35,6 @@ This page lists known issues for [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)]
 | Results Pane | When switching themes, if the output is set to Results to Text, the Results pane doesn't switch themes. The original theme is still applied. | To apply any theme changes to the Results pane, restart SSMS. |
 | SQL Server Analysis Services (SSAS) | When connected to a MultiDimensional DW with Analysis Services, right-clicking on a cube and selecting **Browse** generates the error 'Object reference not set to an instance of an object.'. See [SSMS 21 Error browsing OLAP cubes](https://developercommunity.visualstudio.com/t/SSMS-21-Error-browsing-OLAP-cubes/10915226). | Use an earlier version of SSMS to browse a cube. |
 | SQL Server Integration Services (SSIS) | Support for legacy [Integration Services service](/sql/integration-services/service/integration-services-service-ssis-service#manage-the-service) isn't available for SQL Server 2022. | To manage the legacy Integration Services Service for SQL Server 2022, use SSMS 20.2.1 or SSMS 19.3. |
-| SQL Server Integration Services (SSIS) | Installing SSMS 21.2.5 or any later version causes SQL Server Integration Services Projects 2022 features to break. | Don't install SSMS on the same machine where SQL Server Integration Projects 2022 is installed. For more information, see [SQL Server Integration Services Projects 2022](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices). |
 
 ## Related content
 
