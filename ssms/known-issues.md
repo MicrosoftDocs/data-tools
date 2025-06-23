@@ -4,7 +4,7 @@ description: Learn about known issues in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 06/17/2025
+ms.date: 06/23/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
