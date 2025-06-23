@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 06/19/2025
+ms.date: 06/23/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -30,11 +30,30 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="21.3.7"></a>
+
+### 21.3.7
+
+**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
+
+- Release number: 21.3.7
+- Release date: June 23, 2025
+
+#### What's new in 21.3.7
+
+| Feature | Details |
+| --- | --- |
+| Visual Studio | Updated to Visual Studio 17.14.7 |
+
+#### Bug fixes in 21.3.7
+
+| Feature | Details |
+| --- | --- |
+| SQL Server Integration Services (SSIS) | Resolved a bug that caused SQL Services Integration Services Projects 2022 to break when SSMS with SQL Server Integration Services (SSIS) was installed on the same machine. |
+
 <a id="21.3.6"></a>
 
 ### 21.3.6
-
-**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
 
 - Release number: 21.3.6
 - Release date: June 17, 2025
