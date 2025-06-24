@@ -4,7 +4,7 @@ description: Create an offline installation package to install SQL Server Manage
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 05/19/2025
+ms.date: 06/25/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -39,7 +39,7 @@ You can install a language other than English by changing `en-US` to a locale fr
 To create a complete local layout for SQL Server Management Studio, run:
 
 ```cmd
-vs_SSMS.exe --layout c:\localSSMSlayout --add Microsoft.Component.HelpViewer
+vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.Component.HelpViewer
 ```
 
 After the bootstrapper has finished downloading the layout files, the local layout folder can be moved to any other machine or environment you want to install SQL Server Management Studio on without requiring an internet connection.
@@ -54,13 +54,35 @@ When you install SSMS from a local layout, the Visual Studio Installer uses the 
 For example, if you created a local installation layout using the command from step 2, then use the following command to run the installation and prevent the client machine from accessing the internet:
 
 ```cmd
-c:\localSSMSlayout\vs_SSMS.exe --noWeb --add Microsoft.Component.HelpViewer
+C:\SSMS_Layout\vs_SSMS.exe --noWeb --add Microsoft.Component.HelpViewer
 ```
+
+## Validate a certificate for offline installations
+
+Installing SSMS on an offline machine can require a valid certificate. If you try to install SSMS on an offline machine using a layout, and the installer exits with no exception, it might be due to an invalid certificate. Go to the `%TEMP%` directory and open the most recent bootstrapper file named `dd_bootstrapper_yyyyMMddHHmmss.log`. The following messages indicate the installation is failing because of an invalid certificate:
+
+```output
+Certificate is invalid: <YourSSMSFolder>\vs_installer.opc
+Error: Unable to verify the certificate: InvalidCertificate
+Error 0x80131509: Signature verification failed. Error: Unable to verify the integrity of the installation files: the certificate could not be verified.
+```
+
+To ensure the installation completes successfully, follow these steps:
+
+1. On a machine with internet connection, download the [Microsoft Windows Code Signing PCA 2024 certificate](https://www.microsoft.com/pkiops/certs/Microsoft%20Windows%20Code%20Signing%20PCA%202024.crt).
+1. Move the .crt file to the offline machine.
+1. From the offline machine, right-click the .crt file and select **Install Certificate**.
+1. Select **Local Machine** as Store Location and then **Next**.
+1. Keep **Automatically select the certificate store based on the type of certificate**, then select **Next**.
+1. Select **Finish**.
+1. You see the prompt, **The import was successful**.
+1. Install SSMS using the local layout.
 
 [!INCLUDE [support](../includes/support.md)]
 
 ## Related content
 
 - [Use command-line parameters to install SQL Server Management Studio](command-line-parameters.md)
+- [Workload and component IDs for SQL Server Management Studio](workload-component-ids.md)
 - [Install SQL Server Management Studio](install.md)
 - [Modify SQL Server Management Studio workloads, components, and language packs](modify.md)
