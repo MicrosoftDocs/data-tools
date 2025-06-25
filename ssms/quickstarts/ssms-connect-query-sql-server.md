@@ -5,6 +5,7 @@ author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: mikeray, randolphwest, mbarickman
 ms.date: 04/16/2025
+ms.update-cycle: 1825-days
 ms.service: sql-server-management-studio
 ms.topic: quickstart
 ms.collection:
