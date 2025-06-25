@@ -6,6 +6,7 @@ author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
 ms.date: 06/13/2025
+ms.update-cycle: 180-days
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
