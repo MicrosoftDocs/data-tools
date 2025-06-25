@@ -3,7 +3,7 @@ title: "Use Tokens in Job Steps"
 description: "Use Tokens in Job Steps"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/25/2023
+ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "escape macros [SQL Server Agent]"
 ---
 
-# Use Tokens in Job Steps
+# Use tokens in job steps
 
 [!INCLUDE [SQL Server SQL MI](../includes/applies-to-version/sql-asdbmi.md)]
 
@@ -24,91 +24,99 @@ helpviewer_keywords:
 
 [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent allows you to use tokens in [!INCLUDE [tsql](../includes/tsql-md.md)] job step scripts. Using tokens when you write your job steps gives you the same flexibility that variables provide when you write software programs. After you insert a token in a job step script, [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent replaces the token at run time, before the job step is executed by the [!INCLUDE [tsql](../includes/tsql-md.md)] subsystem.
 
-## Understand Using Tokens
+## Understand using tokens
+
+Any Windows user with write permissions on the Windows Event Log can access job steps that are activated by [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent alerts or WMI alerts. To avoid this security risk, [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent tokens that can be used in jobs activated by alerts are disabled by default. These tokens are: `A-DBN`, `A-SVR`, `A-ERR`, `A-SEV`, `A-MSG`, and `WMI(<property>)`. In this release, use of tokens is extended to all alerting.
 
 > [!IMPORTANT]  
-> Any Windows user with write permissions on the Windows Event Log can access job steps that are activated by [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent alerts or WMI alerts. To avoid this security risk, [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent tokens that can be used in jobs activated by alerts are disabled by default. These tokens are: **A-DBN**, **A-SVR**, **A-ERR**, **A-SEV**, **A-MSG**, and **WMI(**_property_**)**. In this release, use of tokens is extended to all alerting.  
->  
 > If you need to use these tokens, first ensure that only members of trusted Windows security groups, such as the Administrators group, have write permissions on the Event Log of the computer where [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] resides. Then, right-click **SQL Server Agent** in Object Explorer, select **Properties**, and on the **Alert System** page, select **Replace tokens for all job responses to alerts** to enable these tokens.
 
 [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent token replacement is simple and efficient: [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent replaces an exact literal string value for the token. All tokens are case-sensitive. Your job steps must take this into account and correctly quote the tokens you use or convert the replacement string to the correct data type.
 
 For example, you might use the following statement to print the name of the database in a job step:
 
-`PRINT N'Current database name is $(ESCAPE_SQUOTE(A-DBN))' ;`
+```sql
+PRINT N'Current database name is $(ESCAPE_SQUOTE(A-DBN))';
+```
 
-In this example, the **ESCAPE_SQUOTE** macro is inserted with the **A-DBN** token. At run time, the **A-DBN** token is replaced with the appropriate database name. The escape macro escapes any single quotation marks that may be inadvertently passed in the token replacement string. [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent replaces one single quotation mark with two single quotation marks in the final string.
+In this example, the `ESCAPE_SQUOTE` macro is inserted with the `A-DBN` token. At run time, the `A-DBN` token is replaced with the appropriate database name. The escape macro escapes any single quotation marks that might be inadvertently passed in the token replacement string. [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent replaces one single quotation mark with two single quotation marks in the final string.
 
-For example, if the string passed to replace the token is `AdventureWorks2022'SELECT @@VERSION --`, the command executed by the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent job step will be:
+For example, if the string passed to replace the token is `AdventureWorks2022'SELECT @@VERSION --`, the command executed by the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent job step is:
 
-`PRINT N'Current database name is AdventureWorks2022''SELECT @@VERSION --' ;`
+```sql
+PRINT N'Current database name is AdventureWorks2022''SELECT @@VERSION --';
+```
 
 In this case, the inserted statement, `SELECT @@VERSION`, doesn't execute. Instead, the extra single quotation mark causes the server to parse the inserted statement as a string. If the token replacement string doesn't contain a single quotation mark, no characters are escaped and the job step containing the token executes as intended.
 
 To debug token usage in your job steps, use print statements such as `PRINT N'$(ESCAPE_SQUOTE(SQLDIR))'` and save job step output to a file or table. Use the **Advanced** page of the **Job Step Properties** dialog box to specify a job step output file or table.
 
-## SQL Server Agent Tokens and Macros
+## SQL Server Agent tokens and macros
 
 The following tables list and describe the tokens and macros that [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent supports.
 
-### SQL Server Agent Tokens
+### SQL Server Agent tokens
 
 | Token | Description |
 | --- | --- |
-| **(A-DBN)** | Database name. If the job is run by an alert, the database name value automatically replaces this token in the job step. |
-| **(A-SVR)** | Server name. If the job is run by an alert, the server name value automatically replaces this token in the job step. |
-| **(A-ERR)** | Error number. If the job is run by an alert, the error number value automatically replaces this token in the job step. |
-| **(A-SEV)** | Error severity. If the job is run by an alert, the error severity value automatically replaces this token in the job step. |
-| **(A-MSG)** | Message text. If the job is run by an alert, the message text value automatically replaces this token in the job step. |
-| **(JOBNAME)** | The name of the job. This token is only available on SQL Server 2016 and above. |
-| **(STEPNAME)** | The name of the step. This token is only available on SQL Server 2016 and above. |
-| **(DATE)** | Current date (in YYYYMMDD format). |
-| **(INST)** | Instance name. For a default instance, this token has the default instance name: MSSQLSERVER. |
-| **(JOBID)** | Job ID. |
-| **(MACH)** | Computer name. |
-| **(MSSA)** | Master SQLServerAgent service name. |
-| **(OSCMD)** | Prefix for the program used to run **CmdExec** job steps. |
-| **(SQLDIR)** | The directory in which [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] is installed. By default, this value is C:\Program Files\Microsoft SQL Server\MSSQL. |
-| **(SQLLOGDIR)** | Replacement token for the SQL Server error log folder path - for example, $(ESCAPE_SQUOTE(SQLLOGDIR)). This token is only available on SQL Server 2014 and above. |
-| **(STEPCT)** | A count of the number of times this step has executed (excluding retries). Can be used by the step command to force termination of a multistep loop. |
-| **(STEPID)** | Step ID. |
-| **(SRVR)** | Name of the computer running [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)]. If the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance is a named instance, this includes the instance name. |
-| **(TIME)** | Current time (in HHMMSS format). |
-| **(STRTTM)** | The time (in HHMMSS format) that the job began executing. |
-| **(STRTDT)** | The date (in YYYYMMDD format) that the job began executing. |
-| **(WMI(**_property_**))** | For jobs that run in response to WMI alerts, the value of the property specified by *property*. For example, `$(WMI(DatabaseName))` provides the value of the **DatabaseName** property for the WMI event that caused the alert to run. |
+| `(A-DBN)` | Database name. If the job is run by an alert, the database name value automatically replaces this token in the job step. |
+| `(A-SVR)` | Server name. If the job is run by an alert, the server name value automatically replaces this token in the job step. |
+| `(A-ERR)` | Error number. If the job is run by an alert, the error number value automatically replaces this token in the job step. |
+| `(A-SEV)` | Error severity. If the job is run by an alert, the error severity value automatically replaces this token in the job step. |
+| `(A-MSG)` | Message text. If the job is run by an alert, the message text value automatically replaces this token in the job step. |
+| `(JOBNAME)` | The name of the job. This token is only available on SQL Server 2016 and above. |
+| `(STEPNAME)` | The name of the step. This token is only available on SQL Server 2016 and above. |
+| `(DATE)` | Current date (in `yyyyMMdd` format). |
+| `(INST)` | Instance name. For a default instance, this token has the default instance name: `MSSQLSERVER`. |
+| `(JOBID)` | Job ID. |
+| `(MACH)` | Computer name. |
+| `(MSSA)` | Master SQL Server Agent service name. |
+| `(OSCMD)` | Prefix for the program used to run **CmdExec** job steps. |
+| `(SQLDIR)` | The directory in which [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] is installed. By default, this value is `C:\Program Files\Microsoft SQL Server\MSSQL`. |
+| `(SQLLOGDIR)` | Replacement token for the SQL Server error log folder path - for example, `$(ESCAPE_SQUOTE(SQLLOGDIR))`. **Applies to**: [!INCLUDE [sssql14-md](../includes/sssql14-md.md)] and later versions. |
+| `(STEPCT)` | A count of the number of times this step has executed (excluding retries). Can be used by the step command to force termination of a multistep loop. |
+| `(STEPID)` | Step ID. |
+| `(SRVR)` | Name of the computer running [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)]. If the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance is a named instance, this includes the instance name. |
+| `(TIME)` | Current time (in `HHmmss` format). |
+| `(STRTTM)` | The time (in `HHmmss` format) that the job began executing. |
+| `(STRTDT)` | The date (in `yyyyMMdd` format) that the job began executing. |
+| `(WMI(<property>))` | For jobs that run in response to WMI alerts, the value of the property specified by `<property>`. For example, `$(WMI(DatabaseName))` provides the value of the `DatabaseName` property for the WMI event that caused the alert to run. |
 
-### SQL Server Agent Escape Macros
+### SQL Server Agent escape macros
 
 | Escape Macros | Description |
 | --- | --- |
-| **$(ESCAPE_SQUOTE(**_token\_name_**))** | Escapes single quotation marks (') in the token replacement string. Replaces one single quotation mark with two single quotation marks. |
-| **$(ESCAPE_DQUOTE(**_token\_name_**))** | Escapes double quotation marks (") in the token replacement string. Replaces one double quotation mark with two double quotation marks. |
-| **$(ESCAPE_RBRACKET(**_token\_name_**))** | Escapes right brackets (]) in the token replacement string. Replaces one right bracket with two right brackets. |
-| **$(ESCAPE_NONE(**_token\_name_**))** | Replaces token without escaping any characters in the string. This macro is provided to support backward compatibility in environments where token replacement strings are only expected from trusted users. For more information, see "Updating Job Steps to Use Macros," later in this topic. |
+| `$(ESCAPE_SQUOTE(<token_name>))` | Escapes single quotation marks (`'`) in the token replacement string. Replaces one single quotation mark with two single quotation marks. |
+| `$(ESCAPE_DQUOTE(<token_name>))` | Escapes double quotation marks (`"`) in the token replacement string. Replaces one double quotation mark with two double quotation marks. |
+| `$(ESCAPE_RBRACKET(<token_name>))` | Escapes right brackets (`]`) in the token replacement string. Replaces one right bracket with two right brackets. |
+| `$(ESCAPE_NONE(<token_name>))` | Replaces token without escaping any characters in the string. This macro is provided to support backward compatibility in environments where token replacement strings are only expected from trusted users. For more information, see the next section, [Update job steps to use macros](#update-job-steps-to-use-macros). |
 
-## Update Job Steps to Use Macros
+## Update job steps to use macros
 
 The following table describes how token replacement is handled by [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent. To turn alert token replacement on or off, right-click **SQL Server Agent** in Object Explorer, select **Properties**, and on the **Alert System** page, select or clear the **Replace tokens for all job responses to alerts** check box.
 
 | Token syntax | Alert token replacement on | Alert token replacement off |
 | --- | --- | --- |
-| ESCAPE macro used | All tokens in jobs are successfully replaced. | Tokens activated by alerts aren't replaced. These tokens are **A-DBN**, **A-SVR**, **A-ERR**, **A-SEV**, **A-MSG**, and **WMI(**_property_**)**. Other static tokens are replaced successfully. |
+| `ESCAPE` macro used | All tokens in jobs are successfully replaced. | Tokens activated by alerts aren't replaced. These tokens are `A-DBN`, `A-SVR`, `A-ERR`, `A-SEV`, `A-MSG`, and `WMI(<property>)`. Other static tokens are replaced successfully. |
 | No ESCAPE macro used | Any jobs containing tokens fail. | Any jobs containing tokens fail. |
 
-## Token Syntax Update Examples
+## Token syntax update examples
 
-Below are token syntax examples to help illustrate how to use these commands.
+Following are token syntax examples to help illustrate how to use these commands.
 
 ### A. Use tokens in non-nested strings
 
-The following example shows how to update a simple non-nested script with the appropriate escape macro. Before running the update script, the following job step script uses a job step token to print the appropriate database name:
+The following example shows how to update a basic non-nested script with the appropriate escape macro. Before running the update script, the following job step script uses a job step token to print the appropriate database name:
 
-`PRINT N'Current database name is $(A-DBN)' ;`
+```sql
+PRINT N'Current database name is $(A-DBN)';
+```
 
 After running the update script, an `ESCAPE_NONE` macro is inserted before the `A-DBN` token. Because single quotation marks are used to delimit the print string, you must update the job step by inserting the `ESCAPE_SQUOTE` macro as follows:
 
-`PRINT N'Current database name is $(ESCAPE_SQUOTE(A-DBN))' ;`
+```sql
+PRINT N'Current database name is $(ESCAPE_SQUOTE(A-DBN))';
+```
 
 ### B. Use tokens in nested strings
 
@@ -116,35 +124,36 @@ In job step scripts where tokens are used in nested strings or statements, the n
 
 For example, consider the following job step, which uses the `A-MSG` token and hasn't been updated with an escape macro:
 
-`PRINT N'Print ''$(A-MSG)''' ;`
+```sql
+PRINT N'Print ''$(A-MSG)''';
+```
 
-After running the update script, an `ESCAPE_NONE` macro is inserted with the token. However, in this case, you would have to rewrite the script without using nesting as follows and insert the `ESCAPE_SQUOTE` macro to properly escape delimiters that may be passed in the token replacement string:
+After running the update script, an `ESCAPE_NONE` macro is inserted with the token. However, in this case, you would have to rewrite the script without using nesting as follows and insert the `ESCAPE_SQUOTE` macro to properly escape delimiters that might be passed in the token replacement string:
 
 ```sql
-DECLARE @msgString nvarchar(max);
+DECLARE @msgString AS NVARCHAR (MAX);
 SET @msgString = '$(ESCAPE_SQUOTE(A-MSG))';
-SET @msgString = QUOTENAME(@msgString,'''');
+SET @msgString = QUOTENAME(@msgString, '''');
 PRINT N'Print ' + @msgString;
 ```
 
->[!Note]
-> In this example the QUOTENAME function sets the quote character.
+In this example, the `QUOTENAME` function sets the quote character.
 
 ### C. Use tokens with the ESCAPE_NONE macro
 
-The following example is part of a script that retrieves the job_id from the sysjobs table and uses the JOBID token to populate the @JobID variable, which was declared earlier in the script as a binary data type.
+The following example is part of a script that retrieves the job_id from the sysjobs table and uses the `JOBID` token to populate the @JobID variable, which was declared earlier in the script as a binary data type.
 
-> [!NOTE]
-> Because no delimiters are required for binary data types, the ESCAPE_NONE macro is used with the JOBID token. You wouldn't need to update this job step after running the update script.
+> [!NOTE]  
+> Because no delimiters are required for binary data types, the `ESCAPE_NONE` macro is used with the `JOBID` token. You wouldn't need to update this job step after running the update script.
 
 ```sql
-DECLARE @JobID uniqueidentifier
-SET @JobID = $(ESCAPE_NONE(JOBID))
+DECLARE @JobID UNIQUEIDENTIFIER;
+SET @JobID = $(ESCAPE_NONE(JOBID));
 ```
 
-This directly assigns the value from the JOBID token to @JobID, eliminating unnecessary database queries and implicit conversions, addressing the concerns raised in section C.
+This directly assigns the value from the `JOBID` token to `@JobID`, eliminating unnecessary database queries and implicit conversions, addressing the concerns raised in section C.
 
-## See also
+## Related content
 
 - [Implement Jobs](implement-jobs.md)
-- [Manage Job Steps](manage-job-steps.md)
+- [Manage job steps](manage-job-steps.md)
