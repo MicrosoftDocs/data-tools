@@ -4,7 +4,7 @@ description: Use command-line parameters to install SQL Server Management Studio
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 05/19/2025
+ms.date: 06/25/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -26,19 +26,19 @@ When you install SQL Server Management Studio (SSMS) programmatically or from a 
 
 The following command-line verbs and parameters can be used with the following executables or programs:
 
-- The setup bootstrapper, which is the small (~1 MB) file (for example, `vs_SSMS.exe`) that initiates the download process and the initial installation.
+- The setup bootstrapper, which is the small (~5 MB) file (for example, `vs_SSMS.exe`) that initiates the download process and the initial installation.
 - The Visual Studio installer that might already be installed on the machine and is located in the folder `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe`. You must initiate the installer programmatically from a *different* directory that the installer resides in. The installer is typically used for update or modify commands.
 
 Not all commands or parameters work in each of these situations, and any special caveats or exceptions are documented. Furthermore, in some scenarios you might not have access to all of these executables described previously. For example, client machines might only have the installer available for programmatic execution if SSMS was installed via a layout.
 
-To get the latest bootstrappers for [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] that always install the latest version of the selected channel, download one of the files in the following table. Alternatively, to install a specific version or a specific channel of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], see [Release history for SQL Server Management Studio](../release-history.md). This page has links to the fixed version bootstrappers for each servicing release.
+To get the latest bootstrappers for [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] that always install the latest version of the selected channel, download one of the files in the following table. Alternatively, to install a specific version or a specific channel of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], see [Release history for SQL Server Management Studio](../release-history.md). This article has links to the fixed version bootstrappers for each servicing release.
 
 | Channel | Version | Bootstrapper |
 | --- | --- | --- | --- |
 | Release | 21.0.0 | [SQL Server Management Studio](https://aka.ms/ssms/21/release/vs_SSMS.exe) |
 
 > [!TIP]  
-> If you previously downloaded a bootstrapper file and want to verify what version it installs, here's how. In Windows, open File Explorer, right-click the bootstrapper file, choose **Properties** and then choose the **Details** tab. The **Product version** field describes the [channel and version](channels-release.md) that the bootstrapper installs. The version number should always be read as "latest servicing version of what is specified", and the channel is Release unless explicitly specified. A bootstrapper with a product version that says [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] installs the latest version of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] from the Release channel.
+> If you previously downloaded a bootstrapper file, you can verify the version it installs before you try to install. Open File Explorer, right-click the bootstrapper file, select **Properties**, and then select the **Details** tab. The **Product version** field describes the [channel and version](channels-release.md) that the bootstrapper installs. The version number should always be read as "latest servicing version of what is specified", and the channel is Release unless explicitly specified. A bootstrapper with a product version that says [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] installs the latest version of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] from the Release channel.
 
 ## Install, update, modify, repair, uninstall, and export commands and command-line parameters
 
@@ -77,7 +77,7 @@ Syntax example: `vs_SSMS.exe [command] <optional parameters>...`
 | `--includeOptional` | **Optional**: During an install or modify command, this parameter includes the optional components for any workloads that are installed. It doesn't include the recommended components. The workloads are specified either with `--allWorkloads` or `--add`. |
 | `--addProductLang <language-locale>` | **Optional**: During an install or modify command, this repeatable parameter specifies the UI language packs that should be installed with the product. If not present, the installation uses the language pack that corresponds to the machine locale. For more information, see the [List of language locales] |
 | `--remove <one or more workload or component IDs>` | **Optional**: During a modify command, this repeatable parameter specifies one or more workload or component IDs to remove. It complements and behaves similarly to the `--add` parameter. |
-| `--addProductLang <language-locale>` | **Optional**: During an install or modify command, this repeatable parameter specifies the UI language packs that should be installed with the product. If not present, the installation uses the language pack that corresponds to the machine locale. For more information, see the [List of language locales](#list-of-language-locales) section on this page. |
+| `--addProductLang <language-locale>` | **Optional**: During an install or modify command, this repeatable parameter specifies the UI language packs that should be installed with the product. If not present, the installation uses the language pack that corresponds to the machine locale. For more information, see the [List of language locales](#list-of-language-locales) section on this article. |
 | `--removeProductLang <language-locale>` | **Optional**: During an install or modify command, this repeatable parameter determines the UI language packs that should be removed from the product. It complements and behaves similarly to the `--addProductLang` parameter. |
 | `--in <path>` | **Optional**: The URI or path to a response file, which can contain configuration settings. |
 | `--quiet` | **Optional**: Used with any command, this parameter prevents any user interface from being displayed while the command is being executed. Not available to use programmatically by standard users regardless of how the [AllowStandardUserControl policy](https://aka.ms/vs/setup/policies) is set. |
@@ -91,7 +91,7 @@ Syntax example: `vs_SSMS.exe [command] <optional parameters>...`
 | `--config <path to *.vsconfig file>` | **Optional**: During an install or modify operation, you can pass in a configuration file using the `--config` parameter to specify the workloads, components, or extensions to add based on a previously saved installation configuration file. This operation is additive only; it doesn't remove anything not specified in the file. Also, items specified in the config file that don't apply to the product aren't added. Highly recommend you specify the fully qualified path to the config file. During an export operation, this parameter determines the location to save the installation configuration file. |
 | `--allowUnsignedExtensions` | **Optional**: During an install or modify operation run in a `--passive` or `--quiet` context using a `--config` file, if extensions are specified in the config file, then this parameter is necessary in order to load extensions without a digital signature. |
 | `--installerOnly` | **Optional**: During an install or update operation, this parameter tells the Visual Studio Installer to install just itself (the installer) and not the SSMS product. Its functionality is equivalent to the `--update` parameter, but more intuitive. Meant to be used when prepping and preconfiguring client machines. |
-| `--help, --?, -h, -?` | Displays an offline version of this page. |
+| `--help, --?, -h, -?` | Displays an offline version of this article. |
 
 ## Layout command and command-line parameters
 
@@ -100,7 +100,7 @@ All layout management operations, such as creating or updating a layout, are run
 | Layout parameters | Description |
 | --- | --- |
 | `--layout <dir>` | Specifies a directory to create or update an offline install cache. |
-| `--lang <one or more language-locales>` | **Optional**: Used with `--layout` to prepare an offline install cache with resource packages with the specified one or more specified languages. For more information, see the [List of language locales](#list-of-language-locales) section on this page. |
+| `--lang <one or more language-locales>` | **Optional**: Used with `--layout` to prepare an offline install cache with resource packages with the specified one or more specified languages. For more information, see the [List of language locales](#list-of-language-locales) section on this article. |
 | `--add <one or more workload or component IDs>` | **Optional**: One or more workload or component IDs to add. The required components of the artifact are installed, but not the recommended or optional components. You can control more components globally using `--includeRecommended` and/or `--includeOptional`. For finer-grained control, you can append `;includeRecommended` or `;includeOptional` to the ID (for example, `--add Workload1;includeRecommended` or `--add Workload2;includeOptional`).<br /><br />**Note**: If `--add` is used, only the specified workloads and components and their dependencies are downloaded. If `--add` isn't specified, all workloads and components are downloaded to the layout. |
 | `--includeRecommended` | **Optional**: Includes the recommended components for any workloads that are installed, but not the optional components. The workloads are specified either with `--allWorkloads` or `--add`. |
 | `--includeOptional` | **Optional**: Includes the recommended *and* optional components for any workloads being included in the layout. The workloads are specified with `--add`. |
@@ -119,7 +119,7 @@ All layout management operations, such as creating or updating a layout, are run
 | `--installCatalogUri <uri>` | **Optional**: The URI of the catalog manifest to use for the installation. If specified, the channel manager attempts to download the catalog manifest from this URI before using the URI in the install channel manifest. This parameter is used to support offline install, where the layout cache is created with the product catalog already downloaded. This parameter can be used for the install command; other commands ignore it. |
 | `--productId <id>` | **Optional**: The ID of the product for the instance that is installed. This parameter is prepopulated in normal installation conditions. The `productId` is `Microsoft.VisualStudio.Product.SSMS`. |
 | `--keepLayoutVersion` | **Optional**: Apply changes to the layout without updating the product version that's included in the layout. |
-| `--locale <language-locale>` | **Optional**: Change the display language of the user interface for the installer itself. The setting is persisted. For more information, see the [List of language locales](#list-of-language-locales) section on this page. |
+| `--locale <language-locale>` | **Optional**: Change the display language of the user interface for the installer itself. The setting is persisted. For more information, see the [List of language locales](#list-of-language-locales) section on this article. |
 | `--cache` | **Optional**: If present, packages will be kept after being installed for subsequent repairs. This overrides the global policy setting to be used for subsequent installs, repairs, or modifications. The default policy is to cache packages. This is ignored for the uninstall command. |
 | `--nocache` | **Optional**: If present, packages will be deleted after being installed or repaired. They'll be downloaded again only if needed and deleted again after use. This overrides the global policy setting to be used for subsequent installs, repairs, or modifications. The default policy is to cache packages. This is ignored for the uninstall command. |
 | `--noUpdateInstaller` | **Optional**: If present, prevents the installer from updating itself when `quiet` is specified. The installer fails the command and returns a non-zero exit code if `--noUpdateInstaller` is specified with `quiet` when an installer update is required. |
@@ -175,6 +175,24 @@ Syntax example:
   ```cmd
   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" removeChannel --channelUri "\\\\server\\share\\layoutdirectory\\ChannelManifest.json"
   ```
+
+## Use winget to install or modify SSMS
+
+You can use the [Windows Package Manager](/windows/package-manager/winget/) (**winget**) tool to programmatically install, modify, or update SSMS on your machine along with other packages managed by **winget**.
+
+By default, **winget** just installs the SSMS core workload.
+
+Syntax example:
+
+  ```cmd
+  winget install Microsoft.SQLServerManagementStudio.21
+  ```
+
+Visual Studio Installer operations currently require administrator privileges, so **winget** will prompt you to elevate your privileges if necessary to complete the command. Also, SSMS must be closed if you're going to upgrade it to the latest version.
+
+## List of workload IDs and component IDs
+
+For a list of workload and component IDs sorted by SSMS product, see [Visual Studio workload and component IDs](/visualstudio/install/workload-and-component-ids).
 
 ## List of language locales
 
@@ -233,3 +251,4 @@ Each operation generates several log files in the `%TEMP%` directory that indica
 ## Related content
 
 - [Create an offline installation of SQL Server Management Studio](create-offline.md)
+- [Workload and component IDs for SQL Server Management Studio](workload-component-ids.md)

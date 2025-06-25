@@ -35,6 +35,10 @@ items:
             href: install/select-install-location.md
           - name: Install with command-line parameters
             href: install/command-line-parameters.md
+          - name: Command-line parameter examples
+            href: install/command-line-examples.md
+          - name: Workload and component IDs
+            href: install/workload-component-ids.md
           - name: Create an offline installation
             href: install/create-offline.md
           - name: Install versions side-by-side
