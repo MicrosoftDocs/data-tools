@@ -1078,7 +1078,7 @@ items:
             href: troubleshoot/get-full-memory-dump.md
           - name: Advanced troubleshooting for SSMS
             href: troubleshoot/ssms-troubleshoot.md
-      - name: Feedback and troubleshooting
+      - name: Feedback
         items:
           - name: Suggest a feature
             href: feedback-and-troubleshooting/suggest-feature.md

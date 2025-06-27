@@ -4,31 +4,40 @@ description: Learn how to report a problem with SQL Server Management Studio (SS
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 12/10/2024
+ms.date: 06/26/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
   - data-tools
 ---
 
-# Report a problem with SQL Server Management Studio 21
+# Report a problem with SQL Server Management Studio
 
-You can report a problem from SQL Server Management Studio (SSMS) using the **Help** > **Send feedback** menu or by using the [SSMS user feedback site](https://aka.ms/ssms-feedback). When reporting an issue, it's recommended that you search the site first to see if a similar issue exists. Expand the **Groups** menu on the feedback site and select **Tooling**. Enter relevant text or keywords in the Search dialog to find existing items for the problem.
+You can report a problem from SQL Server Management Studio (SSMS) using the **Help** > **Send Feedback** > **Report a Problem...** menu or by using the [SSMS user feedback site](https://aka.ms/ssms-feedback). When reporting an issue, search the site first to see if a similar issue exists. On the **Enter your problem** page, enter a title that concisely describes the issue, and include a description of the problem. Select **Search** to find similar issues.
 
-Include as much detail as possible when describing the problem, including step-by-step instructions and information such as the version of SSMS (available in **Help** > **About**), the version of SQL, and the Operating System version and language. For any error message, include the entire text and use the **Show Details** button in the error dialog to capture complete details about the error to add to the item description.
+A list of similar feedback tickets is displayed on the **Recommended solution** page. Review the existing feedback tickets to determine if there's one that describes the same problem you're experiencing. If an existing feedback ticket exists, select **This is exactly my problem** to upvote the feedback item. Select **Go to details and discussion** to add a comment that describes your scenario, or provides additional information about the problem.
 
-## Idea status
+If you can't find a similar problem, select **Can't find the solution**. On the **Submit a ticket** page, include step-by-step detailed instructions in the **Description** that explicitly describe how to recreate the problem. For any error message, include the entire text and use the **Show Details** button in the error dialog to capture complete details about the error to add to the item description. Select **Submit** when finished.
 
-After you report a problem, the Stage indicates where the issue is in its lifecycle. As we review the issue and move it along the workflow, we tag it with the corresponding stage. The various stages associated with reported ideas are listed here, along with a description of their meaning.
+## Ticket status
 
-| Stage | Description |
+After you report an issue, the status button indicates where the issue is in its lifecycle. As we review the issue and move it along the workflow, we update the status. The various statuses are listed here, along with a description of their meaning.
+
+| Status | Description |
 | --- | --- |
-| **Archived** | A status of **Archived** means the problem is no longer applicable or insufficient information was provided to recreate the problem. |
-| **Completed** | **Completed** indicates that the latest product update fixes the problem. |
-| **Needs More Information** | Any problem marked **Needs More Information** means we need more details to recreate the problem internally. Check the company response, where we ask for additional information about the problem. |
-| **New** | **New** means the problem is newly reported by you or someone else. Action still needs to be taken. |
-| **Planned** | A status of **Planned** means that we recreated the problem, logged a tracking item internally, and planned to fix the problem in a future release. |
+| **New** | The suggestion is newly reported, and no action has been taken yet. |
+| **Triaged** | Your ticket is assigned to the appropriate engineering team for review. |
+| **Under Investigation** | Engineers are actively investigating your problem to find a resolution. |
+| **Needs More Info** | We need more diagnostic information from you so that we move go forward with the investigation. |
+| **Under Consideration** | We review the problem for community impact and prioritize it accordingly. If the community impact isn't clear or significant, we continue to monitor the feedback item. |
+| **Fixed - Pending Release** | We have a fix for the problem and it's available in an upcoming release. When the fix is available, the status updates to **Closed - Fixed**. |
+| **Closed - Fixed** | We released a fix for the problem. |
+| **Closed - Duplicate** | Your issue was reported in another feedback item. A link is provided for you to track the original problem report. |
+| **Closed - Lower Priority** | To focus on bringing everyone in the community the best value, we prioritize issues with the highest customer impact. Although we're unable to address the issue at this time, all feedback is valuable and helps improve SSMS. |
+| **Closed - Not a Bug** | The reported functionality isn't a problem in the current release, or exists by design. |
+| **Closed - Not Enough Info** | We don't have enough information to investigate the issue. We reconsider feedback when the requested information is made available. |
+| **Closed - Other Product** | The issue applies to another product. See the comment that includes the product and any related links. |
 
 ## Related content
 
-- [Suggest a feature or improvement for SQL Server Management Studio 21](suggest-feature.md)
+- [Suggest a feature or improvement for SQL Server Management Studio](suggest-feature.md)
