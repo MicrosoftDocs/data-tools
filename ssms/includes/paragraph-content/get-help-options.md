@@ -1,3 +1,11 @@
+---
+author: rwestMSFT
+ms.author: randolphwest
+ms.date: 07/02/2025
+ms.service: sql-server-management-studio
+ms.topic: include
+---
+
 ## :::image type="icon" source="../media/info-tip.svg" border="false"::: Get help
 
 - [Ideas for SQL: Have suggestions for improving SQL Server?](https://feedback.azure.com/forums/908035-sql-server)

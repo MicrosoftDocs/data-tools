@@ -26,8 +26,6 @@ This topic describes how to create and define a [!INCLUDE[ssNoVersion](../includ
 ### <a name="Security"></a>Security  
 For detailed information, see [Implement SQL Server Agent Security](implement-sql-server-agent-security.md).  
 
-[!INCLUDE[Freshness](../includes/paragraph-content/fresh-note-steps-feedback.md)]
-
 ## <a name="SSMS"></a>Using SQL Server Management Studio  
   
 #### To create a PowerShell Script job step  

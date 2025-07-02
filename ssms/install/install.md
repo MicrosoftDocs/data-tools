@@ -12,7 +12,7 @@ ms.collection:
 ---
 # Install SQL Server Management Studio
 
-[!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
+[!INCLUDE [sql-asdb-asdbmi-asa-fabricsqldb](../includes/applies-to-version/sql-asdb-asdbmi-asa-fabricsqldb.md)]
 
 Welcome to [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)]. In this version, it's easy to choose and install only the features you need, using the Visual Studio Installer.
 

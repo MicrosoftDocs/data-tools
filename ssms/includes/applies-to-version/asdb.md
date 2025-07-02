@@ -1,7 +1,8 @@
 ---
 author: VanMSFT
 ms.author: vanto
-ms.date: 09/24/2020
+ms.reviewer: randolphwest
+ms.date: 07/02/2025
 ms.service: sql-server-management-studio
 ms.topic: include
 ---
