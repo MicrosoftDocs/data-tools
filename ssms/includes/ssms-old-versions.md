@@ -1,7 +1,7 @@
 ---
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 11/12/2019
+ms.date: 07/02/2025
 ms.service: sql-server-management-studio
 ms.topic: include
 ---

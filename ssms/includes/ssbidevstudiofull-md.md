@@ -1,8 +1,8 @@
 ---
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 01/29/2024
+ms.date: 07/02/2025
 ms.service: sql-server-management-studio
 ms.topic: include
 ---
- SQL Server Data Tools (SSDT) 
+SQL Server Data Tools (SSDT)
