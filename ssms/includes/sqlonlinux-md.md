@@ -1,10 +1,12 @@
 ---
 author: TDzakhov
 ms.author: v-tdzakhov
-ms.date: 3/10/2021
+ms.reviewer: randolphwest
+ms.date: 07/02/2025
 ms.service: sql-server-management-studio
-ms.custom: linux-related-content
 ms.topic: include
+ms.custom:
+  - linux-related-content
 ---
 
 SQL Server on Linux

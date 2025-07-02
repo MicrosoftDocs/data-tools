@@ -2,7 +2,7 @@
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2025
+ms.date: 07/02/2025
 ms.service: sql-server-management-studio
 ms.topic: include
 ---

@@ -4,11 +4,11 @@ description: Message to explain starting December 2021, you can only use Microso
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: drskwier
-ms.date: 05/19/2025
+ms.date: 07/02/2025
 ms.topic: include
 ---
 
 > [!NOTE]  
-> Releases of SSMS prior to 18.6 don't authenticate to Database Engines through Microsoft Entra multifactor authentication (MFA). To continue using MFA, you need [SSMS 18.6 or later](../install/install.md).
+> Releases of SSMS prior to 18.6 don't authenticate to Database Engines through Microsoft Entra multifactor authentication (MFA). To continue using MFA, you need [SSMS 18.6](../install/install.md) or a later version.
 >
-> Connectivity to Azure Analysis Services through Microsoft Entra multifactor authentication requires [SSMS 18.5.1 or later](../install/install.md).
+> Connectivity to Azure Analysis Services through Microsoft Entra multifactor authentication requires [SSMS 18.5.1](../install/install.md) or a later version.
