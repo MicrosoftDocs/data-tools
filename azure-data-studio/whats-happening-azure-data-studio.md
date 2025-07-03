@@ -4,7 +4,7 @@ description: Azure Data Studio is being deprecated.
 author: croblesm
 ms.author: roblescarlos
 ms.reviewer: randolphwest, maghan
-ms.date: 03/31/2025
+ms.date: 07/02/2025
 ms.service: azure-data-studio
 ms.topic: concept-article
 ms.collection:
@@ -109,13 +109,12 @@ For users who relied on Azure Data Studio for non-SQL Server-related tasks (for 
 
 1. Explore the recommended replacements:
 
-| Azure Data Studio extension | Description | Replacement |
-| --- | --- | --- |
-| **PostgreSQL** | Manage PostgreSQL databases. | Pending announcement |
-| **MySQL** | Manage MySQL databases. | Pending announcement |
-| **Azure Cosmos DB** | Manage Azure Cosmos DB API for MongoDB. | Azure Databases for Visual Studio Code |
-| **Azure Cosmos DB Migration for MongoDB** | Migrate MongoDB to Azure Cosmos DB. | Pending announcement |
-
+   | Azure Data Studio extension | Description | Replacement |
+   | --- | --- | --- |
+   | **PostgreSQL** | Manage PostgreSQL databases. | [PostgreSQL extension for Visual Studio Code preview](/azure/postgresql/extensions/vs-code-extension/overview) |
+   | **MySQL** | Manage MySQL databases. | Pending announcement |
+   | **Azure Cosmos DB** | Manage Azure Cosmos DB API for MongoDB. | [Azure Databases for Visual Studio Code](/azure/cosmos-db/visual-studio-code-extension) |
+   | **Azure Cosmos DB Migration for MongoDB** | Migrate MongoDB to Azure Cosmos DB. | Pending announcement |
 
 ### Available resources
 
@@ -164,6 +163,6 @@ A modern, extensible environment with enhanced community support and DevOps inte
 
 ## Related content
 
-- [What is the MSSQL extension for Visual Studio Code](/sql/tools/visual-studio-code-extensions/mssql/mssql-extension-visual-studio-code)
+- [What is the MSSQL extension for Visual Studio Code?](/sql/tools/visual-studio-code-extensions/mssql/mssql-extension-visual-studio-code)
 - [Download Visual Studio Code](https://code.visualstudio.com/download)
 - [Visual Studio Code extensions](https://marketplace.visualstudio.com/VSCode)
