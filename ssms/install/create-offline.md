@@ -4,7 +4,7 @@ description: Create an offline installation package to install SQL Server Manage
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 06/25/2025
+ms.date: 07/15/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -15,14 +15,6 @@ ms.collection:
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
 [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is designed to work well in various computer configurations. In this article, you learn how to create an offline installation package of files for installation on the *local machine*.
-
-## Use the "Download all, then install" feature
-
-Sometimes online access is problematic. For example, you might have an unreliable internet connection or your internet connection might have low bandwidth. For situations like these, you have other methods available for acquiring SQL Server Management Studio (SSMS). You can use the **Download all, then install** feature from the Visual Studio Installer to download an installation package on the local machine *before* you install it locally, or you can use the command line to create a local installation package to install locally later.
-
-After you [download the bootstrapper](#step-1---download-the-ssms-bootstrapper), run it to install SSMS. It first installs and then launches the latest version of the Visual Studio Installer, which you can use to customize and configure your installation, download installation packages, and install the product.
-
-To complete downloading the product before installation starts, select the **Download all, then install** option in the dropdown list at the bottom of the default **Workloads** tab of the Visual Studio Installer. The purpose of this feature is to download the SSMS packages in advance on the computer where SSMS is eventually installed. By downloading the packages locally first, you can then safely disconnect from the internet before you install SSMS.
 
 ## Use the command line to create a local layout
 
@@ -77,6 +69,14 @@ To ensure the installation completes successfully, follow these steps:
 1. Select **Finish**.
 1. You see the prompt, **The import was successful**.
 1. Install SSMS using the local layout.
+
+## Use the "Download all, then install" feature
+
+Sometimes online access is problematic. For example, you might have an unreliable internet connection or your internet connection might have low bandwidth. For situations like these, you can use the **Download all, then install** feature from the Visual Studio Installer to download an installation package on the local machine *before* you install it locally. Alternatively, you can use the command line to create a local installation package to install locally later.
+
+After you [download the bootstrapper](#step-1---download-the-ssms-bootstrapper), run it to install SSMS. It first installs and then launches the latest version of the Visual Studio Installer. Within the Visual Studio Installer, customize your installation of SSMS by selecting the workloads or components you want to install, as well as the installation location and language packs.
+
+Once you have completed your selection, select the **Download all, then install** option in the dropdown list next to the **Install** button of the Visual Studio Installer. Selecting this option will download the SSMS packages needed for installation on the local machine. By downloading the packages locally first, you can then safely disconnect from the internet before you install SSMS.
 
 [!INCLUDE [support](../includes/support.md)]
 
