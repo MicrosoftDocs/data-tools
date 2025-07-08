@@ -1,9 +1,9 @@
 ---
 title: Disconnect from a Registered Server
-description: "Disconnect from a Registered Server (SQL Server Management Studio)"
+description: "Disconnect from a registered server (SQL Server Management Studio)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 03/01/2017
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -15,14 +15,16 @@ helpviewer_keywords:
   - "disconnecting registered servers [SQL Server]"
 ---
 
-# Disconnect from a Registered Server (SQL Server Management Studio)
+# Disconnect from a registered server in SQL Server Management Studio
 
-[!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-This topic describes how to  disconnect Object Explorer from a server at any time in [!INCLUDE[ssnoversion](../includes/ssnoversion-md.md)]. Disconnecting Object Explorer does not disconnect other SQL Server Management Studio components such as SQL Editor.  
+This article describes how to disconnect from a server at any time in Object Explorer. Disconnecting in Object Explorer doesn't disconnect other SQL Server Management Studio (SSMS) components such as the Query Editor.
 
-## <a name="SSMSProcedure"></a>
+## Disconnect from a registered server
 
-### To disconnect from a registered server
+In Object Explorer, right-click a server and select **Disconnect** or, on the Object Explorer toolbar, select the **Disconnect** icon.
 
-- In Object Explorer, right-click a server and click **Disconnect** or, on the Object Explorer toolbar, click the **Disconnect** icon.
+## Related content
+
+- [Connect to a registered server in SQL Server Management Studio](connect-to-a-registered-server-sql-server-management-studio.md)

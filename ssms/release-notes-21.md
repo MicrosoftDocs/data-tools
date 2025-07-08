@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 06/23/2025
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -30,11 +30,41 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="21.4.8"></a>
+
+### 21.4.8
+
+**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
+
+- Release number: 21.4.8
+- Release date: July 8, 2025
+
+#### What's new in 21.4.8
+
+| Feature | Details |
+| --- | --- |
+| Central Management Servers (CMS) | Updated the Central Management Servers registration dialog and removed unnecessary fields. |
+| Files | Updated the default location for File Save to `%USERPROFILE%\Documents\SQL Server Management Studio 21`. See [File Open and File Save are using a different location to SSMS 20](https://developercommunity.visualstudio.com/t/File-Open-and-File-Save-are-using-as-dif/10856099). |
+| IntelliSense | Added support for Query Store secondary replicas syntax `FOR SECONDARY SET` and `OPERATION_MODE`. |
+| Query Data Store (QDS) | Added seconds and milliseconds to the data picker for Overall Resource Consumption: [SSMS - Query Store graphs configure options adding seconds and milliseconds to defined time interval](https://developercommunity.visualstudio.com/t/SSMS---Query-Store-graphs-configure-opti/10877985). |
+| Visual Studio | Updated to Visual Studio 17.14.8. |
+
+#### Bug fixes in 21.4.8
+
+| Feature | Details |
+| --- | --- |
+| Always Encrypted | Fixed several issues including an issue in the Create a New Column Master Key wizard where **Sort by Create Date** was incorrectly sorting by String, an issue that prevented Always Encrypted set up to be completed [when using SSMS with Russian localization](https://developercommunity.visualstudio.com/t/Can-not-set-up-Always-Encrypted-with-Azu/10856776), and an issue in the Create a New Column Master Key wizard that improperly sized the subscription and tenant dropdown boxes. |
+| Central Management Servers (CMS) | Addressed a bug that didn't add the server connection information to the recently used connections in the Connection Dialog. | 
+| Connection Dialog | Fixed a bug that caused the Modern connection dialog (Preview) to clear its recent and pinned connections when multiple instances of SSMS were open. See [Connections dialog forgets connections](https://developercommunity.visualstudio.com/t/Connections-Dialog-forgets-connections/10908219). | 
+| Migration Assistant | Fixed an error in the Migration Assistant Assessment Wizard that caused UI elements to incorrectly display when the display resolution was set to 250%. |
+| Query Data Store (QDS) | Addressed an issue where **Overall Resource Consumption** was incorrectly aggregating data when the display time was set to **Local**. See [QDS - Overall Resource Consumption graphs return incorrect information when choosing "Time format: Local" with aggregation per day](https://developercommunity.visualstudio.com/t/QDS---Overall-Resource-Consumption-graph/10873252). |
+| Results Window | Addressed an issue where scrolling multiple datasets in the results grid didn't behave as expected. See [SSMS 21.0 - scrolling issue in results window](https://developercommunity.visualstudio.com/t/SSMS-210---scrolling-issue-in-results-w/10859401). |
+| Scripting | Resolved the error `given key was not present in the dictionary` when running queries or scripting a table as select. See [SSMS 21 Preview .NET Framework error - the given key was not present in the dictionary](https://developercommunity.visualstudio.com/t/SSMS-21-Preview-NET-Framework-error---t/10896557). |
+| View Designer | Fixed an issue that generated an error message when using `CONVERT` or `CAST` with several data types. See [SSMS returns error on valid query in view designer](https://developercommunity.visualstudio.com/t/SSMS-returns-error-on-valid-query-in-vie/10897549). |
+
 <a id="21.3.7"></a>
 
 ### 21.3.7
-
-**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
 
 - Release number: 21.3.7
 - Release date: June 23, 2025

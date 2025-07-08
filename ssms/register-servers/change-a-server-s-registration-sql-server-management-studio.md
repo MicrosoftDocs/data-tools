@@ -1,29 +1,37 @@
 ---
 title: "Change a Server's Registration"
-description: "Change a Server's Registration (SQL Server Management Studio)"
+description: Overview of changing a server's registration in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 03/01/2017
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
 ---
 
-# Change a Server's Registration (SQL Server Management Studio)
+# Change a server's registration in SQL Server Management Studio
 
-[!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-This topic describes how to change a server's registration in [!INCLUDE[ssnoversion](../includes/ssnoversion-md.md)] by using SQL Server Management Studio. You can change the connection information for a registered server at any time.
+This article describes how to change a server's registration in SQL Server Management Studio (SSMS). You can change the connection information for a registered server at any time. If the Registered Servers tool window isn't visible in SSMS, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
 
-## <a name="SSMSProcedure"></a>
+## Change a server's registration (local server groups)
 
-### To change a server's registration
+1. Within the Local Server Groups, find the registered server to modify.
 
-1. In Registered Servers, right-click a server, and then click **Properties**.
+1. Right-click on the registered server and select **Properties...**.
 
-2. In the **Edit Server Registration Properties** dialog box, modify the server, login information, or connection properties, and then click **Save**.
+1. In the **Edit Server Registration Properties** dialog box, modify the server, login information, connection properties, or registered server name, and select **Save**.
 
-## See Also
+## Change a server's registration (Central Management Servers)
 
-[Register Servers](register-servers.md)
+1. Within Central Management Servers, find the registered server to modify.
+
+1. Right-click on the registered server and select **Properties...**.
+
+1. In the **Server Registration** dialog box, modify the server, registered server name, or description, and select **Save**.
+
+## Related content
+
+- [Registered Servers in SQL Server Management Studio](register-servers.md)

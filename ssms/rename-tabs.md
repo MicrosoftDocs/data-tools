@@ -4,11 +4,13 @@ description: Learn how to customize tab names in SQL Server Management Studio (S
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: randolphwest
-ms.date: 06/24/2025
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
+f1_keywords:
+  - "sql13.swb.renametabs.f1"
 ---
 # Rename tabs
 

@@ -4,7 +4,7 @@ description: Learn about the release history for SQL Server Management Studio (S
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 05/19/2025
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -34,15 +34,15 @@ If you need to install or update to a specific release of SSMS, you can find the
 
 ## Uninstall SSMS to go back to an earlier release
 
-If you need to install an earlier release of SQL Server Management Studio 21, you must uninstall your current installation and use one of the links later in this article to reinstall the version that you prefer.
+If you need to install an earlier release of SQL Server Management Studio 21, you must uninstall your current installation, and use one of the links later in this article to reinstall the version that you prefer.
 
 1. On Windows, open the Visual Studio Installer.
 1. Uninstall all instances of SQL Server Management Studio 21 listed in the Visual Studio Installer.
 1. From Programs and Features in the Control Panel, find **SQL Server Management Studio 21**, and uninstall it.
 
-If you need to install an earlier release of SQL Server Management Studio 20.x and earlier for a major version (for example, to downgrade from SSMS 20.2 to SSMS 19.3), then you must uninstall your current installation and use one of the links later in this article to reinstall the version that you prefer.
+If you need to install an earlier release of SQL Server Management Studio 20.x and earlier for a major version (for example, to downgrade from SSMS 20.2 to SSMS 19.3), then you must uninstall your current installation, and use one of the links later in this article to reinstall the version that you prefer.
 
-1. On Windows, from Programs and Features in the Control Panel, find your version of **Microsoft SQL Server Management Studio** and uninstall it.
+- On Windows, from Programs and Features in the Control Panel, find your version of **Microsoft SQL Server Management Studio** and uninstall it.
 
 Before attempting to install a previous version of SQL Server Management Studio, refer to our [support policy](support-policy.md). Microsoft doesn't guarantee support outside of this policy.
 
@@ -63,7 +63,12 @@ The bootstrapper in the following table always installs the latest release of SS
 | Channel | Version | Bootstrapper | End of Support date |
 | --- | --- | --- | --- |
 | Preview | 21.0 | [SQL Server Management Studio 21 Preview](https://aka.ms/ssms/21/preview/vs_SSMS.exe) | May 19, 2025 |
-| Release | 21.0.0 | [SQL Server Management Studio 21](https://aka.ms/ssms/21/release/vs_SSMS.exe) | |
+| Release | 21.0.0 | [SQL Server Management Studio 21.0.0](https://download.visualstudio.microsoft.com/download/pr/f50ab15d-99d5-43aa-b0b4-496b6cb1e574/4f15f0c3434b0e68ef9041f7e951d87da771e1af00f78dda01bae020c2fc5b26/vs_SSMS.exe) | May 28, 2025 |
+| Release | 21.1.3 | [SQL Server Management Studio 21.1.3](https://download.visualstudio.microsoft.com/download/pr/d2fa077f-a814-4fb2-b903-1fca7658d17e/25e7aadbb210cddfda34d886727aa5d3d3ba822ccdfd7c5e5ca0b0b30da6daf8/vs_SSMS.exe) | June 10, 2025 |
+| Release | 21.2.5 | [SQL Server Management Studio 21.2.5](https://download.visualstudio.microsoft.com/download/pr/e98d75fa-91b1-47a1-9cb7-b6556de592c5/b9a12c1311597fff8ea7a692ee50c4756b4b59f81afa2d8f2bd7df423b5c4916/vs_SSMS.exe) | June 17, 2025 |
+| Release | 21.3.6 | [SQL Server Management Studio 21.3.6](https://download.visualstudio.microsoft.com/download/pr/4652b1eb-63f7-432d-84ab-06108c5d7cd7/f3e8b639888cf4e1f5d376ed5ef1b09f8162ed08647f29a74ef0b792fec1c3db/vs_SSMS.exe) | June 23. 2025 |
+| Release | 21.3.7 | [SQL Server Management Studio 21.3.7](https://download.visualstudio.microsoft.com/download/pr/13907dbe-8bb3-4cfe-b0ae-147e70f8b2f3/3d053fb9682894e3a96a8b78e629dad1067cc945b9ccfbabd5bee63cb274834f/vs_SSMS.exe) | July 8, 2025 |
+| Release | 21.4.8 | [SQL Server Management Studio 21.4.8]() | |
 
 ### Fixed version installers
 

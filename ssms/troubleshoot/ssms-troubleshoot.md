@@ -1,19 +1,31 @@
 ---
-title: Advanced Troubleshooting for SQL Server Management Studio (SSMS)
-description: "Get diagnostic data after a SQL Server Management Studio (SSMS) crash"
+title: Advanced Troubleshooting for SQL Server Management Studio
+description: Capture diagnostic data for a SQL Server Management Studio (SSMS) problem or crash
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 06/26/2025
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
   - data-tools
 ---
 
-# Advanced troubleshooting for SQL Server Management Studio (SSMS)
+# Advanced troubleshooting for SQL Server Management Studio
 
 This article provides information on how to troubleshoot SQL Server Management Studio (SSMS).
+
+## Capture logs
+
+There are multiple logs that can be captured within SSMS using the Output window.
+
+1. Go to **Tools** > **Options** > **Output Window**.
+1. Enable the relevant channels. For a description of the channels, see [Options (Output Window - General)](../menu-help/options-output-window-page.md).
+1. Select **OK**.
+1. If necessary, restart SSMS.
+1. Select **View** > **Output** to display the Output window.
+1. Complete the steps or task for which you want to capture logs.
+1. Save the output from each channel to its own `.txt` file.
 
 ## Enable verbose logging
 

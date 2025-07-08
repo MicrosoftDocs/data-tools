@@ -1,25 +1,28 @@
 ---
 title: View Registered Servers
-description: "View Registered Servers in SQL Server Management Studio"
+description: View registered servers in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 03/01/2017
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
 ---
 
-# View Registered Servers in SQL Server Management Studio
+# View registered servers in SQL Server Management Studio
 
-[!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-This topic describes how to view registered servers in [!INCLUDE[ssnoversion](../includes/ssnoversion-md.md)].
+This article describes how to view registered servers in SQL Server Management Studio (SSMS).
 
-## <a name="SSMSProcedure"></a>
+## View registered servers
 
-### To view Registered Servers in SQL Server Management Studio  
+1. In SSMS, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
 
-1. In SQL Server Management Studio, on the **View** menu, click **Registered Servers**.
+1. By default, the Registered Servers tool window appears above Object Explorer in the main window. To customize its display, see [SQL Server Management Studio components and configuration](../tutorials/ssms-configuration.md#change-the-environment-layout).
 
-    By default, Registered Servers appears above Object Explorer in the main window.
+## Related content
+
+- [Create a new registered server in SQL Server Management Studio](create-a-new-registered-server-sql-server-management-studio.md)
+- [Create a Central Management Server and server group in SQL Server Management Studio](create-a-central-management-server-and-server-group.md)
