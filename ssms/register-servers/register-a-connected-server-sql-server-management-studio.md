@@ -1,9 +1,9 @@
 ---
 title: Register a Connected Server
-description: "Register a Connected Server (SQL Server Management Studio)"
+description: Register a connected server in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 07/28/2016
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -15,66 +15,45 @@ helpviewer_keywords:
   - "connected server registrations [SQL Server]"
 ---
 
-# Register a Connected Server (SQL Server Management Studio)
+# Register a connected server in SQL Server Management Studio
 
-[!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-This topic describes how to register a connected server in [!INCLUDE[ssnoversion](../includes/ssnoversion-md.md)] by using SQL Server Management Studio (SSMS). By registering the server, you can save the connection information for servers that you access frequently. A server can be registered before connecting, or at the time of connection from Object Explorer.  You can view your registered servers in SSMS by navigating to **View**\\**Registered Servers** from the menu.
-  
- **In This Topic**  
-  
--   **To register a server, using:**  
-  
-     [SQL Server Management Studio](#SSMSProcedure)  
-  
-##  <a name="SSMSProcedure"></a> Using SQL Server Management Studio  
-  
-#### To register a connected server  
-  
-In Object Explorer, right-click a server to which you already are connected, and then click **Register**.
-  
-**Server name**  
-This field defaults to the server name you connected to.  Optionally, you can type a server name or choose one from the drop-down list.
+This article describes how to register a connected server in SQL Server Management Studio (SSMS). By registering the server, you can save the connection information for servers that you access frequently. A server can be registered before connecting, or at the time of connection from Object Explorer. To view your registered servers in SSMS, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
 
-**Authentication**  
-Two authentication modes are available when connecting to an instance of [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. 
+## Register a connected server
 
--    **Windows Authentication**  
-Windows Authentication mode allows a user to connect through a [!INCLUDE[msCoName](../includes/msconame-md.md)] Windows user account. 
+1. In Object Explorer, right-click a server to which you already are connected, and then select **Register**.
 
--    **SQL Server Authentication**   
-When a user connects with a specified login name and password from a nontrusted connection, [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] performs the authentication itself by checking whether a [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] login account has been set up and whether the specified password matches the one previously recorded. If [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] does not have a login account set, authentication fails, and the user receives an error message.
+1. The **New Server Registration** dialog box appears. Enter the information for the server on the **General** page.
 
-     > [!IMPORTANT]  
-     > [!INCLUDE[ssNoteWinAuthentication](../includes/ssnotewinauthentication-md.md)] For more information, see [Choose an Authentication Mode](/sql/relational-databases/security/choose-an-authentication-mode).  
+   | Setting | Description |
+   | --- | --- |
+   | **Server type** | When a connected server is registered, the **Server type** box is read-only, and matches the type of server displayed in the Registered Servers pane. |
+   | **Server name** | For **Server name**, enter the fully qualified name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you're NOT using the default instance - ***MSSQLSERVER*** - you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Find SQL Server instance name](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
+   | **Authentication** | Windows Authentication is set as default.<br /><br />You can also use **SQL Server Authentication** to connect. However, if you select **SQL Server Authentication**, a username and password are required.<br /><br />**Microsoft Entra authentication** is available for [!INCLUDE [sssql22-md](../includes/sssql22-md.md)] and later versions. For step-by-step configuration instructions, see [Tutorial: Set up Microsoft Entra authentication for SQL Server](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-setup-tutorial)<br /><br />For more information about authentication types, see [Connect to Server (Login page) - Database Engine](../f1-help/connect-to-server-login-page-database-engine.md). |
+   | **Login** | The user ID from the server account used to sign in to the server. A login is required when using **SQL Server Authentication**. |
+   | **Password** | The password from the server account used to sign in to the server. A password is required when using **SQL Server Authentication**. |
+   | **Remember password** | Select to have [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] encrypt and store the password you entered. This option is displayed only if you have selected to connect using [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Authentication. |
+   | **Encryption** <sup>1</sup> | Select the encryption level for the connection. The default value is *Mandatory*. |
+   | **Trust server certificate** | Check this option to bypass server certificate validation. The default value is *False* (unchecked), which promotes better security using trusted certificates. |
+   | **Host Name in Certificate** | The value provided in this option is used to specify a different, but expected, CN or SAN in the server certificate. |
+   | **Registered server name** | The name you want to appear in Registered Servers. This name doesn't have to match the **Server name** box. |
+   | **Registered server description** | Enter an optional description of the server. |
 
-     -    **User name**  
-Shows the current user name you are connecting with. This read-only option is only available if you have selected to connect using Windows Authentication. To change **User names**, log in to the computer as a different user. 
+   <sup>1</sup> [!INCLUDE [ssms-encryption](../includes/ssms-encryption.md)]
 
-     -    **Login**  
-Enter the login to connect with. This option is available only if you have selected to connect using [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Authentication.  
+   You can modify extra connection options by selecting **Options**. Examples of connection options include the connection timeout value, [application intent](/sql/database-engine/availability-groups/windows/listeners-client-connectivity-application-failover#ConnectToSecondary), and the [network protocol](/sql/sql-server/connect-to-database-engine#network-protocol-considerations). This article uses default values for these fields.
 
-     -    **Password**  
-Enter the password for the login. This option can be edited only if you have selected to connect by using [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Authentication. 
+   > [!NOTE]  
+   > If you stored the password and want to stop storing it, clear this check box, and then select **Save**.
 
-     -    **Remember password**  
-Select to have [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] encrypt and store the password you have entered. This option is displayed only if you have selected to connect using [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Authentication.  
+1. After you complete all the fields, select **Test** to test the connection to the server.
 
-          > [!NOTE]  
-          > If you have stored the password and want to stop storing it, clear this check box, and then click **Save**.  
+1. Select **Save** to save the registered server settings.
 
-**Registered server name**  
-The name you want to appear in Registered Servers. This name does not have to match the **Server name** box.  
-  
-**Registered server description**  
-Enter an optional description of the server.  
-  
-**Test**  
-Click to test the connection to the server selected in **Server name**.  
-  
-**Save**  
-Click to save the registered server settings. 
+By default, the connected server is added to the Local Server Groups folder. To move the registered server to another server group, see [Move a registered server or registered server group in SQL Server Management Studio](move-a-registered-server-or-registered-server-group.md).
 
-## See Also
+## Related content
 
-[Create a New Registered Server (SQL Server Management Studio)](create-a-new-registered-server-sql-server-management-studio.md)
+- [Create a new registered server in SQL Server Management Studio](create-a-new-registered-server-sql-server-management-studio.md)

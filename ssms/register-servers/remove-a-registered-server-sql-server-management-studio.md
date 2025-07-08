@@ -1,10 +1,10 @@
 ---
 title: Remove a Registered Server
-description: "Remove a Registered Server (SQL Server Management Studio)"
+description: Remove a registered server in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mikeray
-ms.date: 12/16/2024
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -15,16 +15,19 @@ helpviewer_keywords:
   - "Registered Servers [SQL Server], removing servers"
 ---
 
-# Remove a Registered Server (SQL Server Management Studio)
+# Remove a registered server in SQL Server Management Studio
 
 [!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-This article describes how to remove a server from Registered Servers in [!INCLUDE [ssnoversion](../includes/ssnoversion-md.md)] by using SQL Server Management Studio.
+This article describes how to remove a server from Registered Servers in SQL Server Management Studio (SSMS).
 
-## To remove a registered server
+If the Registered Servers tool window isn't visible in SSMS, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
 
-1. Select **View** > **Registered Servers**.
+## Remove a registered server
 
-1. In the Registered Servers Object Explorer pane, right-click a server, and then select **Delete**.
-
+1. In the Registered Servers pane, find the server you want to remove, right-click, and select **Delete**.
 1. In the **Delete Confirmation** dialog box, select **Yes**.
+
+## Related content
+
+- [Move a registered server or registered server group in SQL Server Management Studio](move-a-registered-server-or-registered-server-group.md)

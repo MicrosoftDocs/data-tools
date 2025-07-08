@@ -113,35 +113,35 @@ items:
             href: register-servers/register-servers.md
           - name: View Registered Servers in SQL Server Management Studio
             href: register-servers/view-registered-servers-in-sql-server-management-studio.md
-          - name: Create a New Registered Server
+          - name: Create a new registered server
             href: register-servers/create-a-new-registered-server-sql-server-management-studio.md
-          - name: Register a Connected Server
+          - name: Register a connected server
             href: register-servers/register-a-connected-server-sql-server-management-studio.md
-          - name: Connect to a Registered Server
+          - name: Connect to a registered server
             href: register-servers/connect-to-a-registered-server-sql-server-management-studio.md
-          - name: Disconnect from a Registered Server
+          - name: Disconnect from a registered server
             href: register-servers/disconnect-from-a-registered-server-sql-server-management-studio.md
-          - name: Execute Statements Against Multiple Servers Simultaneously
+          - name: Execute statements against multiple servers simultaneously
             href: register-servers/execute-statements-against-multiple-servers-simultaneously.md
-          - name: Change a Server's Registration
+          - name: Change a server's registration
             href: register-servers/change-a-server-s-registration-sql-server-management-studio.md
-          - name: Create a Central Management Server and Server Group
+          - name: Create a Central Management Server and server group
             href: register-servers/create-a-central-management-server-and-server-group.md
-          - name: Create or Edit a Server Group
+          - name: Create or edit a server group
             href: register-servers/create-or-edit-a-server-group-sql-server-management-studio.md
-          - name: Change the Name of a Registered Server or Registered Server Group
+          - name: Change the name of a registered server or registered server group
             href: register-servers/change-the-name-of-registered-server-or-registered-server-group.md
-          - name: Move a Registered Server or Registered Server Group
+          - name: Move a registered server or registered server group
             href: register-servers/move-a-registered-server-or-registered-server-group.md
-          - name: Remove a Registered Server
+          - name: Remove a registered server
             href: register-servers/remove-a-registered-server-sql-server-management-studio.md
-          - name: Remove a Server Group
+          - name: Remove a server group
             href: register-servers/remove-a-server-group-sql-server-management-studio.md
-          - name: Export Registered Server Information
+          - name: Export Registered Server information
             href: register-servers/export-registered-server-information-sql-server-management-studio.md
-          - name: Import Registered Server Information
+          - name: Import Registered Server information
             href: register-servers/import-registered-server-information-sql-server-management-studio.md
-          - name: Registered Servers F1 Help
+          - name: Registered Servers F1 help
             href: register-servers/registered-servers-f1-help.md
 
   - name: Server and database administration

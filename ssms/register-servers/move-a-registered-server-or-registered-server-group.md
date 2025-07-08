@@ -1,9 +1,9 @@
 ---
 title: Move a Registered Server or Server Group
-description: "Move a Registered Server or Registered Server Group"
+description: Overview of how to move a registered server or registered server group in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 07/11/2024
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -16,21 +16,23 @@ helpviewer_keywords:
   - "groups [SQL Server], server"
 ---
 
-# Move a Registered Server or Registered Server Group
+# Move a registered server or registered server group in SQL Server Management Studio
 
 [!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-This article describes how to organize the servers in Registered Servers by moving a registered server or server groups in [!INCLUDE [ssnoversion](../includes/ssnoversion-md.md)]. Server groups can contain registered servers, or other server groups. Both servers and server groups can be moved from one server group to another.
+This article describes how to organize the servers in Registered Servers by moving a registered server or server group. A server group can contain registered servers, or other server groups. Both servers and server groups can be moved from one server group to another.
 
-## <a id="SSMSProcedure"></a>
+If the Registered Servers tool window isn't visible in SQL Server Management Studio (SSMS), select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
 
-### To move a registered server or server group
+## Move a registered server or server group
 
-1. In Registered Servers, right-click a server or server group, and then select **Tasks** > **Move To**.
+1. Within Local Server Groups or Central Management Servers, find the registered server or server group to move.
 
-1. In the **Move Server Registration** dialog box, expand the list of server groups, select the node where you want the server or server group to appear, and then select **OK**.
+1. Right-click on the server or server group, and then select **Tasks** > **Move To...**.
+
+1. In the **Move Server Registration** dialog box, expand the list of server groups, select the node where you want the server or server group to exist, and then select **OK**.
 
 ## Related content
 
-- [Register Servers](register-servers.md)
-- [Create or Edit a Server Group (SQL Server Management Studio)](create-or-edit-a-server-group-sql-server-management-studio.md)
+- [Registered Servers in SQL Server Management Studio](register-servers.md)
+- [Create or edit a server group (SQL Server Management Studio)](create-or-edit-a-server-group-sql-server-management-studio.md)

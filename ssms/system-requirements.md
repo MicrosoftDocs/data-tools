@@ -4,7 +4,7 @@ description: Learn about the system requirements for SQL Server Management Studi
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 06/09/2025
+ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -26,7 +26,17 @@ This version of SSMS works with [!INCLUDE [sssql14-md](includes/sssql14-md.md)] 
 
 Additionally, [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] can be installed alongside SSMS 20.x, SSMS 19.x, SSMS 18.x, SSMS 17.x, and SSMS 16.x.
 
-For SQL Server Integration Services (SSIS), SSMS 17.x and later versions don't support connecting to the legacy SQL Server Integration Services service. To connect to an earlier version of the legacy Integration Services, use the version of SSMS aligned with the version of SQL Server. For example, use SSMS 16.x to connect to the legacy [!INCLUDE [sssql16-md](includes/sssql16-md.md)] Integration Services service. SSMS 17.x and SSMS 16.x can be installed on the same computer. Since the release of [!INCLUDE [sssql11-md](includes/sssql11-md.md)], the SSIS Catalog database, SSISDB, is the recommended way to store, manage, run, and monitor Integration Services packages. See [SSIS Catalog](/sql/integration-services/catalog/ssis-catalog) for details.
+For SQL Server Integration Services (SSIS), SSMS 17.x and later versions don't support connecting to the legacy SQL Server Integration Services service. To connect to an earlier version of the legacy Integration Services, use the version of SSMS aligned with the version of SQL Server.
+
+| SSMS version | Supported legacy SSIS service |
+| --- | --- |
+| 16.x | [!INCLUDE [sssql16-md](includes/sssql16-md.md)] |
+| 17.x | [!INCLUDE [sssql17-md](includes/sssql17-md.md)] |
+| 18.x | [!INCLUDE [sssql19-md](includes/sssql19-md.md)] |
+| 19.x, 20.x | [!INCLUDE [sssql22-md](includes/sssql22-md.md)] |
+| 21.x | [!INCLUDE [sssql25-md](includes/sssql25-md.md)] |
+
+For example, use SSMS 19.x or 20.x to connect to the legacy [!INCLUDE [sssql16-md](includes/sssql22-md.md)] Integration Services service. SSMS 21 and SSMS 20.x (or earlier) can be installed on the same computer. Since the release of [!INCLUDE [sssql11-md](includes/sssql11-md.md)], the SSIS Catalog database, SSISDB, is the recommended way to store, manage, run, and monitor Integration Services packages. See [SSIS Catalog](/sql/integration-services/catalog/ssis-catalog) for details.
 
 ## Download SQL Server Management Studio 21
 
@@ -50,21 +60,35 @@ To download the latest version of [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)
 The following operating systems aren't supported:
 
 - 32-bit, Arm32, and Arm64 operating systems.
+
 - [Windows 11 Home in S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85#WindowsVersion=Windows_11), [Windows Enterprise IoT](/windows/iot/product-family/windows-iot), [Windows 10 IoT Core](/windows/iot-core/windows-iot), [Windows 10 Enterprise LTSC edition](/windows/deployment/update/waas-overview), [Windows 10 S](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85), and [Windows 10 Team Edition](/surface-hub).
+
 - Server IoT and Minimal Server Interface options for Windows Server.
+
 - Windows containers.
-- Running in virtual machine environment without a full Windows operating system.
+
+- Running in virtual machine environment without a full Windows operating system.<sup>1</sup>
+
 - Application virtualization solutions such as Microsoft App-V or MSIX for Windows, or third-party app virtualization technologies.
-- Multiple simultaneous users using the software on the same machine, including shared virtual desktop infrastructure machines or a pooled Windows Virtual Desktop hostpool.
+
+- Multiple simultaneous users using the software on the same machine, including shared virtual desktop infrastructure machines or a pooled Windows Virtual Desktop host pool.
+
+<sup>1</sup> Running SQL Server Management Studio (SSMS) in a virtual machine environment requires a full Windows operating system. SSMS doesn't support multiple simultaneous users using the software on the same machine, including shared virtual desktop infrastructure machines or a pooled Windows Virtual Desktop host pool.
 
 ### Hardware
 
 - x64 processor; Quad-core or better recommended.
+
   - Arm64 processors aren't supported.
+
   - Arm32 processors aren't supported.
-- Minimum of 4-GB of RAM. Many factors impact resources used; we recommend 16-GB RAM for typical professional solutions.
-- Hard disk space: Minimum of 4-GB up to 50-GB of available space, depending on features installed; typical installations require 20-50 GB of free space. We recommend installing Windows and SSMS on a solid-state drive (SSD) to increase performance.
+
+- Minimum of 4 GB of RAM. Many factors affect resources used; we recommend 16-GB RAM for typical professional solutions.
+
+- Hard disk space: Minimum of 4 GB up to 50 GB of available space, depending on features installed; typical installations require 20 to 50 GB of free space. We recommend installing Windows and SSMS on a solid-state drive (SSD) to increase performance.
+
 - Video card that supports a minimum display resolution of WXGA (1366 by 768); SSMS works best at a resolution of 1920 by 1080 or higher.
+
   - Minimum resolution assumes zoom, DPI settings, and text scaling are set at 100%. If not set to 100%, minimum resolution should be scaled accordingly. For example, if you set the Windows display **Scale and layout** setting on your Surface Book, which has a 3000x2000 physical display, to 200%, then SSMS would see a logical screen resolution of 1500x1000, meeting the minimum 1366x768 requirement.
 
 ### Supported languages
@@ -74,10 +98,14 @@ The following operating systems aren't supported:
 ### Additional requirements and guidance
 
 - Administrator rights are required to install or update [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)].
+
 - Refer to [Create an offline installation of SQL Server Management Studio](install/create-offline.md) for guidance on how to install, deploy, update, and configure SQL Server Management Studio in an offline scenario.
+
 - .NET Framework 4.7.2 or above is required to *install* [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)]. [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] requires .NET Framework 4.8 to run. If .NET Framework 4.8 isn't already installed, it's installed during setup.
+
 - Team Foundation Server 2019 Office Integration requires Office 2016, Office 2013, or Office 2010.
-- Smart App Control, which is a Windows feature, isn't recommended to be enabled on machines. Any setting other than "off" might negatively impact SQL Server Management Studio performance.
+
+- Smart App Control, which is a Windows feature, shouldn't be enabled on machines. Any setting other than "off" might negatively affect SQL Server Management Studio performance.
 
 ## Related content
 
