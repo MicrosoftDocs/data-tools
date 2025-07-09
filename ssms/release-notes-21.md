@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 07/08/2025
+ms.date: 07/09/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -44,6 +44,7 @@ For previous versions of SSMS, see:
 | Feature | Details |
 | --- | --- |
 | Central Management Servers (CMS) | Updated the Central Management Servers registration dialog and removed unnecessary fields. |
+| Copilot in SSMS (Preview) | Implemented automatic syncronization to the active query editor for the chat window using the **Sync Active Editor** option. |
 | Files | Updated the default location for File Save to `%USERPROFILE%\Documents\SQL Server Management Studio 21`. See [File Open and File Save are using a different location to SSMS 20](https://developercommunity.visualstudio.com/t/File-Open-and-File-Save-are-using-as-dif/10856099). |
 | IntelliSense | Added support for Query Store secondary replicas syntax `FOR SECONDARY SET` and `OPERATION_MODE`. |
 | Query Data Store (QDS) | Added seconds and milliseconds to the data picker for Overall Resource Consumption: [SSMS - Query Store graphs configure options adding seconds and milliseconds to defined time interval](https://developercommunity.visualstudio.com/t/SSMS---Query-Store-graphs-configure-opti/10877985). |
@@ -55,6 +56,8 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Always Encrypted | Fixed several issues including an issue in the Create a New Column Master Key wizard where **Sort by Create Date** was incorrectly sorting by String, an issue that prevented Always Encrypted set up to be completed [when using SSMS with Russian localization](https://developercommunity.visualstudio.com/t/Can-not-set-up-Always-Encrypted-with-Azu/10856776), and an issue in the Create a New Column Master Key wizard that improperly sized the subscription and tenant dropdown boxes. |
 | Central Management Servers (CMS) | Addressed a bug that didn't add the server connection information to the recently used connections in the Connection Dialog. | 
+| Copilot in SSMS (Preview) | Improved initial chat experience if Entra authentication to Azure OpenAI doesn't occur. |
+| Copilot in SSMS (Preview) | Fixed issue where the current contex entry was not updating if a tab was renamed. |
 | Connection Dialog | Fixed a bug that caused the Modern connection dialog (Preview) to clear its recent and pinned connections when multiple instances of SSMS were open. See [Connections dialog forgets connections](https://developercommunity.visualstudio.com/t/Connections-Dialog-forgets-connections/10908219). | 
 | Migration Assistant | Fixed an error in the Migration Assistant Assessment Wizard that caused UI elements to incorrectly display when the display resolution was set to 250%. |
 | Query Data Store (QDS) | Addressed an issue where **Overall Resource Consumption** was incorrectly aggregating data when the display time was set to **Local**. See [QDS - Overall Resource Consumption graphs return incorrect information when choosing "Time format: Local" with aggregation per day](https://developercommunity.visualstudio.com/t/QDS---Overall-Resource-Consumption-graph/10873252). |
@@ -192,7 +195,7 @@ For previous versions of SSMS, see:
 | Connection Dialog | Updated strict encryption label to **Strict (Minimum SQL 2022 or Azure SQL)** in the **Encryption** dropdown list on the connection dialog. |
 | Connection Dialog | Introduced a Modern connection dialog experience for SQL Server database engines. You can enable or disable this experience within **Tools > Options > Environment > Connection Dialog**. |
 | Connection Dialog | Added dark mode support for Modern connection dialog (Preview). See [New connection dialog does not support dark mode](https://developercommunity.microsoft.com/t/New-connection-dialog-does-not-support-d/10893407?q=%22dark%22). |
-| Copilot in SSMS | Added [Copilot in SSMS (preview)](copilot/copilot-in-ssms-overview.md) available from the AI Assistance workload in the Visual Studio Installer. |
+| Copilot in SSMS (Preview) | Added [Copilot in SSMS (Preview)](copilot/copilot-in-ssms-overview.md) available from the AI Assistance workload in the Visual Studio Installer. |
 | Database Properties | Added a page to list Database Scoped Configuration values on the **Database Properties** dialog. |
 | Database Properties | Added support for [!INCLUDE [sssql25-md](includes/sssql25-md.md)] FULLTEXT_INDEX_VERSION configuration options in the database properties dialog. |
 | Drivers | Updated Microsoft.Data.SqlClient (MDS) to version 5.1.6. |
