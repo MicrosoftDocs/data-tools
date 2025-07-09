@@ -5,7 +5,7 @@ description: Learn how to use the chat window for Copilot in SQL Server Manageme
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/28/2025
+ms.date: 07/09/2025
 ms.update-cycle: 180-days
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -41,7 +41,11 @@ Use **Ctrl** + mousewheel to increase or decrease the size of the text within th
 
 If you initially open Copilot in SSMS without a connected query editor window, Copilot isn't connected to any database, but you can still ask general questions about SQL or SSMS. In this scenario, the current context is Copilot in SSMS.
 
-To query a specific database, get help with Natural Language to SQL (NL2SQL), or get other assistance, open a query editor window that is connected to that database. To change Copilot's context to that connection, enter the `@` symbol in the prompt box to display the available context list. The context includes the name of the query editor and connection information. Once a context is selected, the editor and connection are listed as the current context above the prompt box.
+To query a specific database, get help with Natural Language to SQL (NL2SQL), or get other assistance, open a query editor window that is connected to that database. The chat window automatically changes to the context of the new query editor. The context includes the name of the query editor and connection information. 
+
+To change Copilot's context, enter the `@` symbol in the prompt box to display the available context list. When context changes, the editor and connection are listed as the current context above the prompt box, and the **Sync Active Editor** option is not selected.
+
+To resynchronize with the active editor at any time, enable the **Sync Active Editor** option.
 
 :::image type="content" source="media/copilot-in-ssms-chat/copilot-ssms-chat.png" alt-text="Screenshot of Copilot in SSMS chat window." lightbox="media/copilot-in-ssms-chat/copilot-ssms-chat.png":::
 
@@ -55,10 +59,11 @@ To query a specific database, get help with Natural Language to SQL (NL2SQL), or
 | 6 | Feedback icons |
 | 7 | Copilot response, including queries |
 | 8 | Current context |
-| 9 | Current mode |
-| 10 | Prompt box |
-| 11 | Status information |
-| 12 | Prompt options, to view prompt history and submit a prompt |
+| 9 | Sync Active Editor option |
+| 10 | Current mode |
+| 11 | Prompt box |
+| 12 | Status information |
+| 13 | Prompt options, to view prompt history and submit a prompt |
 
 ## Submit a prompt
 
