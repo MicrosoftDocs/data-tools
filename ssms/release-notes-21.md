@@ -56,7 +56,7 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Always Encrypted | Fixed several issues including an issue in the Create a New Column Master Key wizard where **Sort by Create Date** was incorrectly sorting by String, an issue that prevented Always Encrypted set up to be completed [when using SSMS with Russian localization](https://developercommunity.visualstudio.com/t/Can-not-set-up-Always-Encrypted-with-Azu/10856776), and an issue in the Create a New Column Master Key wizard that improperly sized the subscription and tenant dropdown boxes. |
 | Central Management Servers (CMS) | Addressed a bug that didn't add the server connection information to the recently used connections in the Connection Dialog. | 
-| Copilot in SSMS (Preview) | Improved initial chat experience if Entra authentication to Azure OpenAI doesn't occur. |
+| Copilot in SSMS (Preview) | Improved initial chat experience if Microsoft Entra authentication to Azure OpenAI doesn't occur. |
 | Copilot in SSMS (Preview) | Fixed issue where the current context entry was not updating if a tab was renamed. |
 | Connection Dialog | Fixed a bug that caused the Modern connection dialog (Preview) to clear its recent and pinned connections when multiple instances of SSMS were open. See [Connections dialog forgets connections](https://developercommunity.visualstudio.com/t/Connections-Dialog-forgets-connections/10908219). | 
 | Migration Assistant | Fixed an error in the Migration Assistant Assessment Wizard that caused UI elements to incorrectly display when the display resolution was set to 250%. |
