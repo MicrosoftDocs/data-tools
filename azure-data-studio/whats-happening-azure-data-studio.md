@@ -4,7 +4,7 @@ description: Azure Data Studio is being deprecated.
 author: croblesm
 ms.author: roblescarlos
 ms.reviewer: randolphwest, maghan
-ms.date: 07/02/2025
+ms.date: 07/09/2025
 ms.service: azure-data-studio
 ms.topic: concept-article
 ms.collection:
@@ -15,11 +15,48 @@ ms.custom:
 
 # What's happening to Azure Data Studio?
 
-[!INCLUDE [azure-data-studio-deprecation](includes/azure-data-studio-deprecation.md)]
-
 Azure Data Studio officially retires on February 28, 2026. You should migrate to [Visual Studio Code](https://code.visualstudio.com/download). This change aims to consolidate SQL development tools and provide a more robust and feature-rich environment for the developer community.
 
 This article provides recommendations and resources to help you transition from Azure Data Studio to Visual Studio Code or alternative tools. During this period, all local files and Database Projects in Azure Data Studio remain available.
+
+## Replacement options
+
+The following replacement options are available for Azure Data Studio.
+
+### [SQL developer](#tab/dev)
+
+Move your daily work to Visual Studio Code and install the [MSSQL extension for Visual Studio Code](/sql/tools/visual-studio-code-extensions/mssql/mssql-extension-visual-studio-code). Queries, scripts, and SQL database projects work without requiring conversion. Take advantage of Visual Studio Code features, including modern schema design tools, IntelliSense, built-in Git, and CI/CD workflows.
+
+- Continue storing SQL database projects in source control. Open them directly in Visual Studio Code with the MSSQL extension, or in Visual Studio (SSDT).
+
+- Schema Compare (Preview) is available in the MSSQL extension for Visual Studio Code. For more information, see [Schema Compare (Preview)](/sql/tools/visual-studio-code-extensions/mssql/mssql-schema-compare).
+
+### [Database administrator (DBA)](#tab/dba)
+
+Keep job scheduling, profiling, and classic administration tasks in [SQL Server Management Studio (SSMS)](/ssms), which remains the supported home for SQL Server Agent, Profiler, and general administration.
+
+For import, export, and assessment work:
+
+- Use SqlPackage (DACPAC tasks), or bulk insert / PowerShell (flat-file import).
+- Run the [SQL Server migration assessment](/sql/sql-server/azure-arc/migration-assessment) for migration readiness checks.
+
+### [Data analyst](#tab/analyst)
+
+Install the [Polyglot Notebooks extension in Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) to continue working with interactive SQL + Markdown notebooks.
+
+### [Cross-database developer](#tab/xplat)
+
+Replace Azure Data Studio extensions with their Visual Studio Code equivalents:
+
+- **PostgreSQL**: [PostgreSQL extension for Visual Studio Code preview](/azure/postgresql/extensions/vs-code-extension/overview)
+- **Azure Cosmos DB**: [Azure Databases for Visual Studio Code](/azure/cosmos-db/visual-studio-code-extension) (Mongo API)
+- **MySQL**: Watch the Azure Marketplace for a forthcoming MySQL extension
+
+---
+
+### Migration options
+
+Use the dedicated migration tooling for your target: Azure SQL Managed Instance, SQL Server on Azure VMs, or Azure SQL Database. These replace the Azure SQL migration extension in Azure Data Studio.
 
 ## Why retire Azure Data Studio?
 
@@ -66,38 +103,37 @@ Migrating to Visual Studio Code offers a modern, versatile, and developer-friend
 Azure Data Studio users have diverse needs, from connecting to Azure SQL databases, to using extensions for non-SQL Server-related capabilities.
 
 > [!NOTE]  
-> For users primarily using Azure SQL, Azure SQL Database, or SQL server in Fabric, migrating to Visual Studio Code with the MSSQL extension is straightforward.
-> The extension provides comprehensive support for these scenarios, ensuring no loss of functionality.
+> For users primarily using Azure SQL, Azure SQL Database, or SQL server in Fabric, migrating to Visual Studio Code with the MSSQL extension is straightforward. The extension provides comprehensive support for these scenarios, ensuring no loss of functionality.
 
-1. **Install Visual Studio Code and the MSSQL extension**
+1. **Install Visual Studio Code and the MSSQL extension**:
 
-    - Download and install Visual Studio Code from the official website.
-    - Install the MSSQL extension from the Visual Studio Code marketplace.
+   - Download and install Visual Studio Code from the official website.
+   - Install the MSSQL extension from the Visual Studio Code marketplace.
 
 1. **Migrate Database Projects and queries**:
 
-    - Open SQL database projects directly in Visual Studio Code without migration steps.
-    - Queries and scripts from Azure Data Studio are fully compatible with Visual Studio Code.
+   - Open SQL database projects directly in Visual Studio Code without migration steps.
+   - Queries and scripts from Azure Data Studio are fully compatible with Visual Studio Code.
 
 1. **Explore additional features in Visual Studio Code**:
 
-    - Use advanced schema management tools.
-    - Use DevOps workflows, including CI/CD integration.
+   - Use advanced schema management tools.
+   - Use DevOps workflows, including CI/CD integration.
 
 ### Recommended alternatives for SQL Server capabilities in Azure Data Studio
 
 | Azure Data Studio extension | Description | Replacement |
 | --- | --- | --- |
-| SQL Server Agent | Manage and automate SQL Server Agent jobs. | [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) |
-| SQL Server Profiler | Trace and monitor SQL Server activity. | [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) |
-| Database administration | Tools for managing databases on Windows. | [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) |
-| Schema | Compare and synchronize database schemas. | Visual Studio SQL Server Data Tools (SSDT). In development for MSSQL extension for VS Code. |
+| SQL Server Agent | Manage and automate SQL Server Agent jobs. | [SQL Server Management Studio (SSMS)](/sql/ssms/) |
+| SQL Server Profiler | Trace and monitor SQL Server activity. | [SQL Server Management Studio (SSMS)](/sql/ssms/) |
+| Database administration | Tools for managing databases on Windows. | [SQL Server Management Studio (SSMS)](/sql/ssms/) |
+| Schema | Compare and synchronize database schemas. | Visual Studio SQL Server Data Tools (SSDT). In development for MSSQL extension for Visual Studio Code. |
 | Flat-file import | Import `.txt` and `.csv` files into databases. | Bulk insert / PowerShell. In development for MSSQL extension for Visual Studio Code. |
 | DACPAC import/export | Deploy and extract DACPAC files. | SqlPackage / MSSQL extension for Visual Studio Code. |
 | SQL Server assessment | Assess an existing SQL Server data estate to prepare for migration. | [Assess migration readiness with SQL Server enabled by Azure Arc](/sql/sql-server/azure-arc/migration-assessment). |
 | Azure SQL migration | Migrate SQL Server to Azure SQL. | Alternative migration tools for [Azure SQL Managed Instance](/data-migration/sql-server/managed-instance/overview#migration-tools), [SQL Serve on Azure VMs](/data-migration/sql-server/virtual-machines/overview#migrate), and [Azure SQL Database](/data-migration/sql-server/database/overview#migration-tools). |
 | Notebooks | SQL + Markdown interactive documents. | Polyglot Notebooks in Visual Studio Code. |
-| SQL Database Projects | Create, manage, and deploy SQL database projects. | Fully supported in the MSSQL extension for VS Code and Visual Studio. |
+| SQL Database Projects | Create, manage, and deploy SQL database projects. | Fully supported in the MSSQL extension for Visual Studio Code and Visual Studio. |
 
 ### Alternative Azure Data Studio capabilities
 
@@ -151,7 +187,7 @@ Refer to the Migration Plan for alternatives.
 
 ### Are there plans for missing features like SQL Server Agent?
 
-Features under development include Schema Compare and Dacpac support. Use [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) for others.
+Features under development include Dacpac support. Use the [MSSQL extension for Visual Studio Code](/sql/tools/visual-studio-code-extensions/mssql/mssql-extension-visual-studio-code) or [SQL Server Management Studio (SSMS)](/sql/ssms/) for others.
 
 ### How do I install the MSSQL extension for Visual Studio Code?
 
