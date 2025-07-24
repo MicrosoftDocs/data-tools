@@ -4,7 +4,7 @@ description: Learn about the system requirements for SQL Server Management Studi
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 07/08/2025
+ms.date: 07/24/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -28,13 +28,13 @@ Additionally, [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] can be installed a
 
 For SQL Server Integration Services (SSIS), SSMS 17.x and later versions don't support connecting to the legacy SQL Server Integration Services service. To connect to an earlier version of the legacy Integration Services, use the version of SSMS aligned with the version of SQL Server.
 
-| SSMS version | Supported legacy SSIS service |
-| --- | --- |
-| 16.x | [!INCLUDE [sssql16-md](includes/sssql16-md.md)] |
-| 17.x | [!INCLUDE [sssql17-md](includes/sssql17-md.md)] |
-| 18.x | [!INCLUDE [sssql19-md](includes/sssql19-md.md)] |
-| 19.x, 20.x | [!INCLUDE [sssql22-md](includes/sssql22-md.md)] |
-| 21.x | [!INCLUDE [sssql25-md](includes/sssql25-md.md)] |
+| SSMS version | Highest level of SQL Server supported | Supported legacy SSIS service |
+| --- | --- | --- |
+| 16.x | [!INCLUDE [sssql16-md](includes/sssql16-md.md)] | [!INCLUDE [sssql16-md](includes/sssql16-md.md)] |
+| 17.x | [!INCLUDE [sssql17-md](includes/sssql17-md.md)] | [!INCLUDE [sssql17-md](includes/sssql17-md.md)] |
+| 18.x | [!INCLUDE [sssql19-md](includes/sssql19-md.md)] | [!INCLUDE [sssql19-md](includes/sssql19-md.md)] |
+| 19.x, 20.x | [!INCLUDE [sssql22-md](includes/sssql22-md.md)] | [!INCLUDE [sssql22-md](includes/sssql22-md.md)] |
+| 21.x | [!INCLUDE [sssql25-md](includes/sssql25-md.md)] | [!INCLUDE [sssql25-md](includes/sssql25-md.md)] |
 
 For example, use SSMS 19.x or 20.x to connect to the legacy [!INCLUDE [sssql16-md](includes/sssql22-md.md)] Integration Services service. SSMS 21 and SSMS 20.x (or earlier) can be installed on the same computer. Since the release of [!INCLUDE [sssql11-md](includes/sssql11-md.md)], the SSIS Catalog database, SSISDB, is the recommended way to store, manage, run, and monitor Integration Services packages. See [SSIS Catalog](/sql/integration-services/catalog/ssis-catalog) for details.
 
