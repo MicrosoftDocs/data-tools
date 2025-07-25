@@ -2,7 +2,7 @@
 author: croblesm
 ms.author: roblescarlos
 ms.reviewer: randolphwest, maghan
-ms.date: 02/06/2025
+ms.date: 07/25/2025
 ms.service: azure-data-studio
 ms.topic: include
 ---
@@ -21,7 +21,7 @@ The user installer also provides a smoother background update experience. For mo
 
 **User installer** (recommended)
 
-1. Download and run the [Azure Data Studio user installer for Windows](https://azuredatastudio-update.azurewebsites.net/latest/win32-x64-user/stable).
+1. Download and run the [x64](https://go.microsoft.com/fwlink/?linkid=2324624) or [Arm64](https://go.microsoft.com/fwlink/?linkid=2324717) user installer for Windows.
 
 1. Start the Azure Data Studio app.
 
@@ -29,7 +29,7 @@ The user installer also provides a smoother background update experience. For mo
 
 **System installer**
 
-1. Download and run the [Azure Data Studio system installer for Windows](https://azuredatastudio-update.azurewebsites.net/latest/win32-x64/stable).
+1. Download and run the [x64](https://go.microsoft.com/fwlink/?linkid=2324716) or [Arm64](https://go.microsoft.com/fwlink/?linkid=2324523) system installer for Windows.
 
 1. Start the Azure Data Studio app.
 
@@ -37,7 +37,7 @@ The user installer also provides a smoother background update experience. For mo
 
 **.zip file**
 
-1. Download the [Azure Data Studio .zip file for Windows](https://azuredatastudio-update.azurewebsites.net/latest/win32-x64-archive/stable).
+1. Download the latest [x64](https://go.microsoft.com/fwlink/?linkid=2324522) or [Arm64](https://go.microsoft.com/fwlink/?linkid=2324718) `.zip` file for Windows.
 
 1. Go to the downloaded file and extract it.
 
