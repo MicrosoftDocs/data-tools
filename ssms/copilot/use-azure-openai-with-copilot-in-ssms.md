@@ -5,7 +5,7 @@ description: Learn about configuring Azure OpenAI to use with Copilot in SQL Ser
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 06/13/2025
+ms.date: 07/28/2025
 ms.update-cycle: 180-days
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -44,7 +44,9 @@ Endpoint creation is done in the Azure portal.
 
 1. Select **Next**.
 
-1. On the **Network** page, select **All Networks** unless you're setting up a VPN. SQL Server Management Studio (SSMS) must able to reach the endpoint in order for Copilot in SSMS to work.
+1. On the **Network** page, select **All Networks** unless you're using a Virtual Private Network (VPN). SQL Server Management Studio (SSMS) must be able to reach the endpoint for Copilot in SSMS to work.
+    1. If you are using a VPN, under **Type**, check the **Selected networks, configure network security for your Azure AI services resource** option and then choose the appropriate Virtual network and subnets.
+    1. Add the appropriate IP ranges for a firewall rule.
 
 1. Select **Next**.
 
