@@ -5,7 +5,7 @@ description: Learn how to install Copilot in SQL Server Management Studio.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 06/13/2025
+ms.date: 07/28/2025
 ms.update-cycle: 180-days
 ms.service: sql-server-management-studio
 ms.topic: concept-article
@@ -52,6 +52,8 @@ To set up Copilot in SSMS, you must configure the Azure OpenAI resource. This re
 1. When complete, select **Launch Copilot**.
 
 1. If Copilot doesn't use an API key, you're prompted to authenticate to Azure. If Copilot appears to be waiting for a response, check your browser to confirm it isn't waiting for Azure authentication to complete.
+
+If you need to update any Copilot settings for your installation, go to **Tools** > **Options** > **Copilot** and apply the changes.
 
 ## Uninstall Copilot in SSMS using the Visual Studio Installer
 
