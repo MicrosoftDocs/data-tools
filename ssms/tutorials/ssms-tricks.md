@@ -4,7 +4,7 @@ description: Learn to comment & uncomment code, indent text, filter objects, acc
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest, mathoma
-ms.date: 09/27/2024
+ms.date: 07/28/2025
 ms.service: sql-server-management-studio
 ms.topic: tutorial
 ms.collection:
@@ -33,7 +33,7 @@ This article includes some tips and tricks for using SQL Server Management Studi
 
 ## Prerequisites
 
-To test the steps provided in this article, you need SQL Server Management Studio, access to an instance of  SQL Server and an AdventureWorks database.
+To test the steps provided in this article, you need SQL Server Management Studio, access to an instance of SQL Server and the AdventureWorks database.
 
 - [Install SQL Server Management Studio](../install/install.md).
 - Install [SQL Server Developer edition](https://www.microsoft.com/sql-server/sql-server-downloads).
@@ -118,27 +118,33 @@ You can use the indentation buttons on the toolbar to increase or decrease the i
     GO
     ```
 
-1. Highlight the **Alter Database** portion of the text, and then select the **Increase Indent** button on the toolbar to move the highlighted text forward:
+1. Highlight the **Alter Database** portion of the text, and then select the **Increase Indent** button on the toolbar to move the highlighted text to the right:
 
     :::image type="content" source="media/ssms-tricks/increase-indent.png" alt-text="Screenshot of Increase the indent." lightbox="media/ssms-tricks/increase-indent.png":::
 
-1. Highlight the **Alter Database** portion of the text again, and then select the **Decrease Indent** button to move the highlighted text back.
+    > [!NOTE]  
+    > The keyboard shortcut to increase the indent is **Tab**.
+
+1. Highlight the **Alter Database** portion of the text again, and then select the **Decrease Indent** button to move the highlighted to the left:
 
     :::image type="content" source="media/ssms-tricks/decrease-indent.png" alt-text="Screenshot of Decrease the indent." lightbox="media/ssms-tricks/decrease-indent.png":::
 
+    > [!NOTE]  
+    > The keyboard shortcut to decrease the indent is **SHIFT+Tab**.
+
 ## Filter objects in Object Explorer
 
-In databases that have many objects, you can use filtering to search for specific tables, views, etc. This section describes how to filter tables, but you can use the following steps in any other nodes in Object Explorer:
+In databases that have many objects, you can use filtering to reduce the list of objects to display specific tables, views, etc. This section describes how to filter tables, but you can use the following steps in any other nodes in Object Explorer:
 
 1. Connect to your SQL Server instance.
 
-1. Expand **Databases** > **AdventureWorks** > **Tables**. All the tables in the database appear.
+1. Expand **Databases > AdventureWorks > Tables**. All the tables in the database appear.
 
-1. Right-click **Tables**, and then select **Filter** > **Filter Settings**:
+1. Right-click **Tables**, and then select **Filter > Filter Settings**:
 
     :::image type="content" source="media/ssms-tricks/filter-settings.png" alt-text="Screenshot of Filter settings." lightbox="media/ssms-tricks/filter-settings.png":::
 
-1. In the **Filter Settings** window, you can modify some of the following filter settings:
+1. In the **Filter Settings** window, you can enter a value for a selected setting:
 1. 
     * Filter by name:
 
@@ -148,29 +154,29 @@ In databases that have many objects, you can use filtering to search for specifi
 
       :::image type="content" source="media/ssms-tricks/filter-by-schema.png" alt-text="Screenshot of Filter by schema." lightbox="media/ssms-tricks/filter-by-schema.png":::
 
-1. To clear the filter, right-click **Tables**, and then select **Remove Filter**.
+1. To clear the filter, right-click **Tables** and select **Remove Filter**.
 
     :::image type="content" source="media/ssms-tricks/remove-filter.png" alt-text="Screenshot of Remove filter." lightbox="media/ssms-tricks/remove-filter.png":::
 
 ## Access your SQL Server error log
 
-The error log is a file that contains details about things that occur in your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance. You can browse and query the error login SSMS. The error log is a .log file that exists in your file system.
+The error log is a file that contains details about notable events that occur in your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance. You can browse and query the error log in SSMS. The error log is a .log file that exists in your file system.
 
 ### Open the error log in SSMS
 
 1. Connect to your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance.
 
-1. Expand **Management** > **SQL Server Logs**.
+1. Expand **Management > SQL Server Logs**.
 
-1. Right-click the **Current** error log, and then select **View SQL Server Log**:
+1. Right-click the **Current** error log and select **View SQL Server Log**:
 
     :::image type="content" source="media/ssms-tricks/view-error-log-in-ssms.png" alt-text="Screenshot of View the error log in SSMS." lightbox="media/ssms-tricks/view-error-log-in-ssms.png":::
 
 ### Query the error log in SSMS
 
-1. Connect to your SQL Server instance.
+1. Connect to your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance in **Object Explorer**.
 
-1. Open a **New Query** window.
+1. Open a query editor window using **File** > **New** > **Query with Current Connection**.
 
 1. Paste the following [!INCLUDE [tsql](../includes/tsql-md.md)] code in your query window:
 
@@ -178,7 +184,7 @@ The error log is a file that contains details about things that occur in your [!
      EXECUTE sp_readerrorlog 0, 1,'Server process ID'
      ```
 
-1. Modify the text in the single quotes to text you want to search for.
+1. Modify the text in the single quotes to include the text you want to search for.
 
 1. Execute the query, and then review the results:
 
@@ -186,9 +192,9 @@ The error log is a file that contains details about things that occur in your [!
 
 ### Find the error log location if you're connected to SQL Server
 
-1. Connect to your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance.
+1. Connect to your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance in **Object Explorer**.
 
-1. Open a **New Query** window.
+1. Open a query editor window using **File** > **New** > **Query with Current Connection**.
 
 1. Paste the following [!INCLUDE [tsql](../includes/tsql-md.md)] code in your query window, and then select **Execute**:
 
@@ -232,7 +238,7 @@ You have a few options to find the name of your SQL Server instance before and a
 
 1. Follow the steps to locate the [SQL Server error log on disk](#find-the-error-log-location-if-you-cant-connect-to-sql-server). 
 
-1. Open the errorlog.log file in Notepad.
+1. Open the errorlog.log file in your preferred text editor.
 
 1. Search for the text *Server name is*.
 
@@ -250,7 +256,7 @@ When you're connected to [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)]
 
     :::image type="content" source="media/ssms-tricks/name-in-object-explorer.png" alt-text="Screenshot of SQL Server instance name in Object Explorer." lightbox="media/ssms-tricks/name-in-object-explorer.png":::
 
-- The name of the server is listed in the Query window:
+- The name of the server is listed in the query editor window:
 
     :::image type="content" source="media/ssms-tricks/name-in-query-window.png" alt-text="Screenshot of SQL Server instance name in the Query window." lightbox="media/ssms-tricks/name-in-query-window.png":::
 
@@ -263,9 +269,9 @@ When you're connected to [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)]
 
 If you're connected to an alias or to an availability group listener, that information appears in **Object Explorer** and Properties. In this case, the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance name might not be readily apparent, and must be queried:
 
-1. Connect to your SQL Server instance.
+1. Connect to your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance in **Object Explorer**.
 
-1. Open a **New Query** window.
+1. Open a query editor window using **File** > **New** > **Query with Current Connection**.
 
 1. Paste the following [!INCLUDE [tsql](../includes/tsql-md.md)] code in the window:
 
@@ -273,7 +279,7 @@ If you're connected to an alias or to an availability group listener, that infor
       SELECT @@Servername;
       ```
 
-1. View the results of the query to identify the name of the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance you're connected to:
+1. View the results of the query to identify the name of the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance to which you're connected:
 
     :::image type="content" source="media/ssms-tricks/query-server-name.png" alt-text="Screenshot of Query the SQL Server name." lightbox="media/ssms-tricks/query-server-name.png":::
 
