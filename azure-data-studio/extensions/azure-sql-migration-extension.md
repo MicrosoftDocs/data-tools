@@ -140,9 +140,11 @@ The Azure SQL migration extension supports assessment and generates Azure recomm
 - Azure SQL Managed Instance
 - Azure SQL Database
 
-#### Track migration and view Arc assessments
+#### View precomputed Arc assessments and track migration
 
-The SQL migration extension in Azure Data Studio enhances SQL migration tracking, by displaying precomputed Arc assessments and SKU recommendations for SQL Server instances enabled by Azure Arc. For non-Arc enabled SQL Server instances, you can track the migration process in the Azure portal at no additional cost.  
+If your SQL Server instance is Arc enabled and the migration assessment is already computed, the SQL migration extension in Azure Data Studio fetches the precomputed assessment and SKU recommendation from Arc and populates it in the Assessments wizard. The extension also updates the latest migration status in the Arc resource of the SQL Server instance. You can track the progress in the built-in [Database migration](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance) experience. 
+
+If your SQL Server instance is not enabled by Azure Arc, the SQL migration extension creates a free and optional SQL Server instance Azure resource to track migration process at no additional cost. Select the *Subscription*, *Resource Group* and *Location* where you want to create the tracking Azure resource. Registering your subscription to the `Microsoft.AzureArcData` resource provider is a prerequisite to creating the Azure resource. If your subscription is not already registered, an attempt is made to register the subscription with the resource provider on your behalf. If you do not have permission to register the resource provider, creating the resource in Azure is skipped. 
 
 ### Migration modes
 
