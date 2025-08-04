@@ -1,9 +1,9 @@
 ---
 title: Sort and Group Query Results
-description: "Sort and Group Query Results (Visual Database Tools)"
+description: "Sort and group query results (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 01/19/2017
+ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -21,44 +21,29 @@ helpviewer_keywords:
   - "Results pane"
   - "sorting query results [SQL Server]"
 ---
-# Sort and Group Query Results (Visual Database Tools)
-[!INCLUDE[SQL Server](../includes/applies-to-version/sqlserver.md)]
-You can create a query result in which each result row corresponds to an entire group of rows from the original data.  
-  
-To learn the details about creating such queries, see the topics listed in the following table.  
-  
-## In This Section  
-[Sort Rows &#40;Visual Database Tools&#41;](sort-rows-visual-database-tools.md)  
-Describes the various ways in which you can sort rows and why you would use them.  
-  
-[Collapse Groups of Rows &#40;Visual Database Tools&#41;](collapse-groups-of-rows-visual-database-tools.md)  
-Describes the various ways to collapse rows, such as calculating or eliminating duplicates.  
-  
-[Sort with ORDER BY &#40;Visual Database Tools&#41;](sort-with-order-by-visual-database-tools.md)  
-Provides steps for returning results in a specified order.  
-  
-[Sort in Ascending or Descending Order &#40;Visual Database Tools&#41;](sort-in-ascending-or-descending-order-visual-database-tools.md)  
-Provides steps for changing or setting sort direction.  
-  
-[Sort Multiple Columns in Queries &#40;Visual Database Tools&#41;](sort-multiple-columns-in-queries-visual-database-tools.md)  
-Provides steps for setting the order of results sets for multiple columns.  
-  
-[Group Rows in Query Results &#40;Visual Database Tools&#41;](group-rows-in-query-results-visual-database-tools.md)  
-Provides steps for creating subsets of summary information by organizing data into groups.  
-  
-[Specify Conditions for Groups &#40;Visual Database Tools&#41;](specify-conditions-for-groups-visual-database-tools.md)  
-Provides steps for creating search conditions that apply to groups of rows.  
-  
-[Reorder Output Columns &#40;Visual Database Tools&#41;](reorder-output-columns-visual-database-tools.md)  
-Provides steps for changing current sorting settings.  
-  
-## Related Sections  
-[Summarize Query Results &#40;Visual Database Tools&#41;](summarize-query-results-visual-database-tools.md)  
-Provides links to topics on summarizing query results.  
-  
-[Perform Basic Operations with Queries &#40;Visual Database Tools&#41;](perform-basic-operations-with-queries-visual-database-tools.md)  
-Provides links to topics covering the most common query tasks.  
-  
-[Design Queries and Views How-to Topics &#40;Visual Database Tools&#41;](design-queries-and-views-how-to-topics-visual-database-tools.md)  
-Provides links to topics covering how to use the Query and View Designer.  
-  
+# Sort and group query results (Visual Database Tools)
+
+[!INCLUDE [SQL Server](../includes/applies-to-version/sqlserver.md)]
+
+You can create a query result in which each result row corresponds to an entire group of rows from the original data.
+
+To learn the details about creating such queries, see the topics listed in the following table.
+
+## In this section
+
+| Article | Description |
+| --- | --- |
+| [Sort rows](sort-rows-visual-database-tools.md) | Describes the various ways in which you can sort rows and why you would use them. |
+| [Collapse Groups of Rows](collapse-groups-of-rows-visual-database-tools.md) | Describes the various ways to collapse rows, such as calculating or eliminating duplicates. |
+| [Sort with ORDER BY](sort-with-order-by-visual-database-tools.md) | Provides steps for returning results in a specified order. |
+| [Sort in ascending or descending order](sort-in-ascending-or-descending-order-visual-database-tools.md) | Provides steps for changing or setting sort direction. |
+| [Sort multiple columns in queries](sort-multiple-columns-in-queries-visual-database-tools.md) | Provides steps for setting the order of results sets for multiple columns. |
+| [Group Rows in Query Results](group-rows-in-query-results-visual-database-tools.md) | Provides steps for creating subsets of summary information by organizing data into groups. |
+| [Specify conditions for groups](specify-conditions-for-groups-visual-database-tools.md) | Provides steps for creating search conditions that apply to groups of rows. |
+| [Reorder output columns](reorder-output-columns-visual-database-tools.md) | Provides steps for changing current sorting settings. |
+
+## Related content
+
+- [Summarize query results (Visual Database Tools)](summarize-query-results-visual-database-tools.md)
+- [Perform Basic Operations with Queries (Visual Database Tools)](perform-basic-operations-with-queries-visual-database-tools.md)
+- [Design queries and views how-to articles (Visual Database Tools)](design-queries-and-views-how-to-topics-visual-database-tools.md)
