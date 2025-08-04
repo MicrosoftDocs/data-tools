@@ -19,7 +19,7 @@ helpviewer_keywords:
 
 When you add two (or more) tables to a query, the [Query and View Designer Tools (Visual Database Tools)](query-and-view-designer-tools-visual-database-tools.md) attempts to join them based on common data or on information stored in the database about how tables are related. For details, see [Join tables automatically (Visual Database Tools)](join-tables-automatically-visual-database-tools.md). However, if the Query and View Designer hasn't joined the tables automatically, or if you want to create additional join conditions between tables, you can join tables manually.
 
-You can create joins based on comparisons between any two columns, not just columns that contain the same information. For example, if your database contains two tables, `titles` and `roysched`, you can compare values in the `ytd_sales` column of the `titles` table against the `lorange` and `hirange` columns in the `roysched` table. Creating this join would allow you to find titles for which the year-to-date sales falls between the low and high ranges for the royalty payments.
+You can create joins based on comparisons between any two columns, not just columns that contain the same information. For example, if your database contains two tables, `titles` and `roysched`, you can compare values in the `ytd_sales` column of the `titles` table against the `lorange` and `hirange` columns in the `roysched` table. Creating this join would allow you to find titles for which the year-to-date sales fall between the low and high ranges for the royalty payments.
 
 > [!TIP]  
 > Joins work fastest if the columns in the join condition have been indexed. In some cases, joining on unindexed columns can result in a slow query.

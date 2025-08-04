@@ -49,7 +49,7 @@ For example, lets say you and a colleague each run a query to show all the data 
 
 - Select **No** to have your result set updated to what's currently in the database.
 
-  This option overrides your changes with those of your colleague's.
+  This option overrides your changes with those of your colleague.
 
 - Select **Cancel** to continue to edit without resolving the conflict.
 

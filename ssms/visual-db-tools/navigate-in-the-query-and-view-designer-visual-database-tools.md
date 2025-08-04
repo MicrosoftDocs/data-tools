@@ -33,7 +33,7 @@ You can work in the Query and View Designer using the keyboard or the mouse. Ref
 
 | To | Press | Select |
 | --- | --- | --- |
-| Move among tables, other table-structured objects, (and to join lines, if available) | TAB, or SHIFT+TAB | The table, table-structured object, or join line to move to |
+| Move among tables, other table-structured objects (and to join lines, if available) | TAB, or SHIFT+TAB | The table, table-structured object, or join line to move to |
 | Move between columns in a table or table-structured object | Arrow keys | The column to go to |
 | Choose the selected data column for output | SPACEBAR or PLUS key | The check box next to the name of the column |
 | Remove the selected data column from the query output | SPACEBAR or MINUS key | The check box next to the name of the column |
