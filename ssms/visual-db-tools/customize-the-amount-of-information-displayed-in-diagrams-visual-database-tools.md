@@ -1,9 +1,9 @@
 ---
 title: Customize the Amount of Information Displayed in Diagrams
-description: "Customize the Amount of Information Displayed in Diagrams (Visual Database Tools)"
+description: "Customize the amount of information displayed in diagrams (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 01/19/2017
+ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,40 +14,35 @@ helpviewer_keywords:
   - "customizing database diagram information [SQL Server]"
   - "custom table views [SQL Server]"
 ---
-# Customize the Amount of Information Displayed in Diagrams (Visual Database Tools)
+# Customize the amount of information displayed in diagrams (Visual Database Tools)
 
-[!INCLUDE[SQL Server Azure SQL Database PDW](../includes/applies-to-version/sql-asdb-asdbmi-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database PDW](../includes/applies-to-version/sql-asdb-asdbmi-pdw.md)]
 
-When you add a table to a database diagram it appears with a set number of properties showing. You can choose from a menu of variations on how much information shows or you can create a custom set of properties.  
-  
-The choices are:  
-  
--   Standard  
-  
--   Column Names  
-  
--   Keys  
-  
--   Name Only  
-  
--   Custom  
-  
--   Modify Custom  
-  
-### To choose a table view  
-  
-1.  Right-click a table in the Database Diagram Designer.  
-  
-2.  From the shortcut menu, point to Table View and then click the view you want.  
-  
-### To create a custom table view  
-  
-1.  Right-click a table in Database Diagram Designer.  
-  
-2.  From the shortcut menu, point to **Table View** and then click **Modify Custom**.  
-  
-3.  In the **Column Selection** dialog box, choose which properties you want to show when **Custom** in chosen from the **Table View** menu.  
-  
-## See Also  
-[Work with Database Diagrams &#40;Visual Database Tools&#41;](work-with-database-diagrams-visual-database-tools.md)  
-  
+When you add a table to a database diagram it appears with a set number of properties showing. You can choose from a menu of variations on how much information shows or you can create a custom set of properties.
+
+The options are:
+
+- Standard
+- Column Names
+- Keys
+- Name Only
+- Custom
+- Modify Custom
+
+## Choose a table view
+
+1. Right-click a table in the Database Diagram Designer.
+
+1. From the shortcut menu, point to Table View and then select the view you want.
+
+## Create a custom table view
+
+1. Right-click a table in Database Diagram Designer.
+
+1. From the shortcut menu, point to **Table View** and then select **Modify Custom**.
+
+1. In the **Column Selection** dialog box, choose which properties you want to show when **Custom** in chosen from the **Table View** menu.
+
+## Related content
+
+- [Work with database diagrams (Visual Database Tools)](work-with-database-diagrams-visual-database-tools.md)
