@@ -29,7 +29,7 @@ Before you create a relationship, you must first define a primary key or unique 
 
 1. Release the mouse button. The **Tables and Columns** dialog box appears.
 
-1. Select the foreign key column and the primary key table and column with which you want form a relationship.
+1. Select the foreign key column and the primary key table and column with which you want to form a relationship.
 
 1. Choose **OK** twice to create the relationship.
 
