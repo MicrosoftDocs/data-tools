@@ -3,8 +3,7 @@ title: Work with Database Diagrams
 description: "Work with Database Diagrams (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 09/04/2024
+ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -26,14 +25,14 @@ You can create a visual diagram of your database using the Database Designer. Th
 
 ## In this section
 
-- [Create a New Database Diagram (Visual Database Tools)](create-a-new-database-diagram-visual-database-tools.md)
-- [Save Database Diagrams (Visual Database Tools)](save-database-diagrams-visual-database-tools.md)
-- [Open Database Diagrams (Visual Database Tools)](open-database-diagrams-visual-database-tools.md)
-- [Delete a Database Diagram (Visual Database Tools)](delete-a-database-diagram-visual-database-tools.md)
-- [Reconcile a Database Diagram with a Modified Database (Visual Database Tools)](reconcile-a-database-diagram-with-a-modified-database-visual-database-tools.md)
-- [Show Diagram Properties (Visual Database Tools)](show-diagram-properties-visual-database-tools.md)
+- [Create a new database diagram](create-a-new-database-diagram-visual-database-tools.md)
+- [Save database diagrams](save-database-diagrams-visual-database-tools.md)
+- [Open database diagrams](open-database-diagrams-visual-database-tools.md)
+- [Delete a database diagram](delete-a-database-diagram-visual-database-tools.md)
+- [Reconcile a database diagram with a modified database](reconcile-a-database-diagram-with-a-modified-database-visual-database-tools.md)
+- [Show diagram properties](show-diagram-properties-visual-database-tools.md)
 
 ## Related content
 
-- [Work with Tables in Database Diagram (Visual Database Tools)](work-with-tables-in-database-diagram-visual-database-tools.md)
-- [Work with Diagram Layout (Visual Database Tools)](work-with-diagram-layout-visual-database-tools.md)
+- [Work with tables in database diagrams (Visual Database Tools)](work-with-tables-in-database-diagram-visual-database-tools.md)
+- [Work with diagram layout (Visual Database Tools)](work-with-diagram-layout-visual-database-tools.md)
