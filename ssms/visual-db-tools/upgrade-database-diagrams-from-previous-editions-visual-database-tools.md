@@ -31,7 +31,7 @@ Database diagrams created on previous editions of [!INCLUDE [ssNoVersion](../inc
 
 1. Select **Yes** when prompted if you want to set up database diagramming.
 
-   This option upgrade diagrams stored on the database.
+   This option upgrades diagrams stored on the database.
 
 ## Related content
 

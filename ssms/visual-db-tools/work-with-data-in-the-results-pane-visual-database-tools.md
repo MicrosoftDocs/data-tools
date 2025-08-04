@@ -93,13 +93,13 @@ You can tell if this happens--an alert icon and the text "Query Changed" appears
 
 ## Reconcile changes made by multiple users
 
-While you're working on the results of a query or view it's possible fore the records to be changed by a different user who is also working with the database.
+While you're working on the results of a query or view it's possible for the records to be changed by a different user who is also working with the database.
 
 If this happens, you receive a notice as soon as you move off of the cell with the conflict. You can then override the other user's change, update your results pane with the other user's change, or keep editing your results pane without reconciling the differences. If you choose not to reconcile the differences, your changes aren't committed to the database.
 
 ## Limitations in the Results pane
 
-### What can not be updated
+### What cannot be updated
 
 These tips might help you work successfully with data in the Results pane.
 
@@ -117,13 +117,13 @@ These tips might help you work successfully with data in the Results pane.
 
 - Data that was not successfully translated by the provider.
 
-### What can not be represented fully
+### What cannot be represented fully
 
 What is returned to the Results pane from the database is greatly controlled by the provider for the data source you're using. The Results pane can't always translate the data from all database management systems. Here are come cases where this is so.
 
 - Binary data types are often not useful for people working in the Results pane and they can take a very long time to download. So they are represented by *\<Binary data\>* or *Null*.
 
-- Precision and scale can not always be preserved. For example, the Results pane supports a precision of 27. If data is of a data type with a greater precision, the data might be truncated or might be represented by *\<Unable to read data\>*.
+- Precision and scale cannot always be preserved. For example, the Results pane supports a precision of 27. If data is of a data type with a greater precision, the data might be truncated or might be represented by *\<Unable to read data\>*.
 
 ## Related content
 

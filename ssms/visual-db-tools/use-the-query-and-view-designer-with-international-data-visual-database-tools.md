@@ -29,7 +29,7 @@ You can use the [Query and View Designer Tools (Visual Database Tools)](query-an
 
 ## Localized information in the Criteria and SQL panes
 
-If you're using the Criteria pane to create your query, you can enter information in the format that corresponds to the Windows Regional Settings for you computer. For example, if you're searching for data, you can enter the data in the Criteria columns using whatever format you're accustomed to using, with these exceptions:
+If you're using the Criteria pane to create your query, you can enter information in the format that corresponds to the Windows Regional Settings for your computer. For example, if you're searching for data, you can enter the data in the Criteria columns using whatever format you're accustomed to using, with these exceptions:
 
 - Long data formats aren't supported.
 

@@ -38,11 +38,11 @@ You can edit the current query directly in the SQL pane. When you move to anothe
 
 If your statement can't be represented in the Diagram and Criteria panes, and if those panes are visible, Query and View Designer displays an error and then offers you two choices:
 
-- Ignore that the statement can not be represented in the Diagram and Criteria panes.
+- Ignore that the statement cannot be represented in the Diagram and Criteria panes.
 
-- Undo the change that can not be represented and revert to the most recent version of the SQL statement.
+- Undo the change that cannot be represented and revert to the most recent version of the SQL statement.
 
-If you choose to ignore that the statement can not be represented in the Diagram and Criteria panes, the Query and View Designer dims the other panes to indicate that they no longer reflect the contents of the SQL pane.
+If you choose to ignore that the statement cannot be represented in the Diagram and Criteria panes, the Query and View Designer dims the other panes to indicate that they no longer reflect the contents of the SQL pane.
 
 You can continue to edit the statement and execute it as you would any SQL statement.
 
