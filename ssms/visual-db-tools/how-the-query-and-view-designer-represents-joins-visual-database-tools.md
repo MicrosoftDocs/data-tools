@@ -55,7 +55,7 @@ A join can be expressed in a number of ways in a SQL statement. The exact syntax
 
 Syntax options for joining tables include:
 
-- `JOIN` qualifier for the `FROM` clause**.   The keywords INNER and `OUTER` specify the join type. This syntax is standard for ANSI 92 SQL.
+- `JOIN` qualifier for the `FROM` clause.   The keywords INNER and `OUTER` specify the join type. This syntax is standard for ANSI 92 SQL.
 
   For example, if you join the `publishers` and `pub_info` tables based on the `pub_id` column in each table, the resulting SQL statement might look like this:
 
@@ -66,7 +66,7 @@ Syntax options for joining tables include:
 
   If you create an outer join, the words `LEFT OUTER` or `RIGHT OUTER` appear in place of the word INNER.
 
-- `WHERE` clause compares columns in both tables**. A `WHERE` clause appears if the database doesn't support the `JOIN` syntax (or if you entered it yourself). If the join is created in the `WHERE` clause, both table names appear in the `FROM` clause.
+- `WHERE` clause compares columns in both tables. A `WHERE` clause appears if the database doesn't support the `JOIN` syntax (or if you entered it yourself). If the join is created in the `WHERE` clause, both table names appear in the `FROM` clause.
 
   For example, the following statement joins the `publishers` and `pub_info` tables.
 
