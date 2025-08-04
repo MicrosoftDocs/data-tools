@@ -1,9 +1,9 @@
 ---
 title: Stop a Query
-description: "Stop a Query (Visual Database Tools)"
+description: "Stop a query (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 01/19/2017
+ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -13,16 +13,18 @@ helpviewer_keywords:
   - "stopping queries"
   - "queries [SQL Server], stopping"
 ---
-# Stop a Query (Visual Database Tools)
-[!INCLUDE[SQL Server](../includes/applies-to-version/sqlserver.md)]
-If you see that the query is taking too long or is not returning the results you expect, you can stop the query if it has not already finished.  
-  
-### To stop a query  
-  
--   Right-click anywhere in the [Results pane](results-pane-visual-database-tools.md), on the shortcut menu point to **Pane**, and then click **Clear Results**.  
-  
-## See Also  
-[Clear Query Results &#40;Visual Database Tools&#41;](clear-query-results-visual-database-tools.md)  
-[Run Queries &#40;Visual Database Tools&#41;](run-queries-visual-database-tools.md)  
-[Perform Basic Operations with Queries &#40;Visual Database Tools&#41;](perform-basic-operations-with-queries-visual-database-tools.md)  
-  
+# Stop a query (Visual Database Tools)
+
+[!INCLUDE [SQL Server](../includes/applies-to-version/sqlserver.md)]
+
+If you see that the query is taking too long or isn't returning the results you expect, you can stop the query if it hasn't already finished.
+
+## Stop a query
+
+- Right-click anywhere in the [Results pane (Visual Database Tools)](results-pane-visual-database-tools.md), on the shortcut menu point to **Pane**, and then select **Clear Results**.
+
+## Related content
+
+- [Clear query results (Visual Database Tools)](clear-query-results-visual-database-tools.md)
+- [Run queries (Visual Database Tools)](run-queries-visual-database-tools.md)
+- [Perform Basic Operations with Queries (Visual Database Tools)](perform-basic-operations-with-queries-visual-database-tools.md)
