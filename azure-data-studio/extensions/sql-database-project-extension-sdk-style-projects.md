@@ -11,6 +11,7 @@ ms.collection:
   - data-tools
 ms.custom:
   - intro-get-started
+  - sfi-ropc-nochange
 ---
 
 # Use SDK-style SQL projects with the SQL Database Projects extension (Preview)

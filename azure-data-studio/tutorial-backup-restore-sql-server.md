@@ -12,6 +12,7 @@ ms.collection:
   - data-tools
 ms.custom:
   - updatefrequency5
+  - sfi-image-nochange
 ---
 
 # Tutorial: Back up and restore databases using Azure Data Studio

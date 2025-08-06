@@ -12,6 +12,7 @@ ms.collection:
   - data-tools
 ms.custom:
   - updatefrequency5
+  - sfi-image-nochange
 ---
 
 # Create and use code snippets to quickly create Transact-SQL (T-SQL) scripts in Azure Data Studio

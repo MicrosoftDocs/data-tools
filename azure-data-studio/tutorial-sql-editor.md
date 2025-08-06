@@ -12,6 +12,7 @@ ms.collection:
   - data-tools
 ms.custom:
   - updatefrequency5
+  - sfi-image-nochange
 ---
 
 # Tutorial: Use the Transact-SQL editor to create database objects - Azure Data Studio
