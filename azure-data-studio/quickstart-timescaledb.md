@@ -9,6 +9,7 @@ ms.service: azure-data-studio
 ms.topic: quickstart
 ms.collection:
   - data-tools
+ms.custom: sfi-image-nochange
 ---
 
 # Quickstart: Use Azure Data Studio to connect and query Managed Service for TimescaleDB on Azure

@@ -12,6 +12,7 @@ ms.collection:
   - data-tools
 ms.custom:
   - updatefrequency5
+  - sfi-image-nochange
 ---
 
 # Tutorial: Build a custom insight widget

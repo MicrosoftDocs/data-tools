@@ -13,6 +13,7 @@ ms.collection:
   - data-tools
 ms.custom:
   - ignite-2023
+  - sfi-image-nochange
 # CustomerIntent: As a database developer, I want to use the migration extension, so that I can evaluate and then eventually migrate my existing data to vCore-based Azure Cosmos DB for MongoDB.
 ---
 

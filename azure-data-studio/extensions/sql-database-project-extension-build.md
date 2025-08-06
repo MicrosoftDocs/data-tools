@@ -9,6 +9,7 @@ ms.service: azure-data-studio
 ms.topic: article
 ms.collection:
   - data-tools
+ms.custom: sfi-image-nochange
 ---
 
 # Build and Publish a project

@@ -9,6 +9,7 @@ ms.service: azure-data-studio
 ms.topic: "how-to"
 ms.collection:
   - data-tools
+ms.custom: sfi-image-nochange
 ---
 
 # Connect with Azure Data Studio

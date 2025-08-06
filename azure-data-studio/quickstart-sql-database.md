@@ -13,6 +13,7 @@ ms.collection:
 ms.custom:
   - intro-quickstart
   - updatefrequency5
+  - sfi-image-nochange
 ---
 
 # Quickstart: Use Azure Data Studio to connect and query Azure SQL Database

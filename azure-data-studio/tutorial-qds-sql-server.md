@@ -12,6 +12,7 @@ ms.collection:
   - data-tools
 ms.custom:
   - updatefrequency5
+  - sfi-image-nochange
 ---
 
 # Tutorial: Add the *five slowest queries* sample widget to the database dashboard
