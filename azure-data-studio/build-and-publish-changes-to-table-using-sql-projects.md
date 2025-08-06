@@ -9,6 +9,7 @@ ms.service: azure-data-studio
 ms.topic: tutorial
 ms.collection:
   - data-tools
+ms.custom: sfi-image-nochange
 ---
 
 # Building and Deploying Changes to tables using the SQL Database Projects extension

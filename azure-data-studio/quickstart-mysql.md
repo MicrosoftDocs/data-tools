@@ -11,6 +11,7 @@ ms.collection:
   - data-tools
 ms.custom:
   - intro-quickstart
+  - sfi-image-nochange
 ---
 
 # Quickstart: Use Azure Data Studio to connect and query MySQL
