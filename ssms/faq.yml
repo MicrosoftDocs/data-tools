@@ -5,7 +5,7 @@ metadata:
   author: erinstellato-ms
   ms.author: erinstellato
   ms.reviewer: maghan, randolphwest
-  ms.date: 05/19/2025
+  ms.date: 08/07/2025
   ms.service: sql-server-management-studio
   ms.topic: faq
 title: SQL Server Management Studio 21 FAQ
@@ -101,6 +101,12 @@ sections:
         answer: |
           No.
 
+      - question: "Are extensions supported in SSMS 21?"
+        answer: |
+          Bringing extensions to SSMS is a multi-step process. It starts with supporting Microsoft internal extensions, such as the new migration extension, SSIS and SSAS, and eventually Copilot in SSMS. These first-party extensions appear in the Visual Studio Installer as individual components.
+          While SSMS 21 currently doesn't have full support for third-party extensions, we don't block third-party extensions. That means that existing extensions can be updated to work with SSMS 21 without any restrictions. However, we still don't officially support them, and any items requesting help on the [feedback site](https://aka.ms/ssms-feedback) will be closed.
+          We are investigating official support, which includes VSIX support, extension management, and a marketplace presence, but there are no timelines to share currently. We will announce updates as we make progress.
+         
       - question: "When should I use SSMS 21?"
         answer: |
           Use SQL Server Management Studio 21 if you:

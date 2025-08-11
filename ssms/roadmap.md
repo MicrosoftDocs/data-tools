@@ -4,7 +4,7 @@ description: Roadmap for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest, mbarickman
-ms.date: 07/24/2025
+ms.date: 08/07/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -22,7 +22,7 @@ When planning future SSMS updates, we focus on two primary inputs:
 
 - **Platform requirements**: These include updates required to stay aligned with the latest drivers, libraries, and Visual Studio platform dependencies. This ensures that SSMS continues to support modern security, compatibility, and performance standards.
 
-- **User feedback**: We actively monitor suggestions and issues [submitted by our community](https://aka.ms/ssms-feedback), which help shape feature priorities and usability improvements.
+- **User feedback**: We actively monitor suggestions and issues [submitted by our community](https://aka.ms/ssms-feedback), which help shape feature priorities and usability improvements. You're encouraged to vote on feedback items that affect your workflow, which helps us understand impact across the community. We also look at votes and comments on suggestions, to determine which features are most important to users and why.
 
 ## SSMS roadmap
 
