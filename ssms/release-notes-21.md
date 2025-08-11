@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 07/09/2025
+ms.date: 08/12/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -30,11 +30,24 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="21.4.12"></a>
+
+### 21.4.12
+
+**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
+
+- Release number: 21.4.12
+- Release date: August 12, 2025
+
+#### What's new in 21.4.12
+
+| Feature | Details |
+| --- | --- |
+| Visual Studio | Updated to Visual Studio 17.14.12. |
+
 <a id="21.4.8"></a>
 
 ### 21.4.8
-
-**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
 
 - Release number: 21.4.8
 - Release date: July 8, 2025
