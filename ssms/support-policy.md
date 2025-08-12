@@ -4,7 +4,7 @@ description: "SQL Server Management Studio (SSMS) support policy"
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 05/19/2025
+ms.date: 08/12/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -42,7 +42,7 @@ Refer to the following table for SQL Server Management Studio servicing support.
 | 18.12.1 | | Full support | Upgrade | Upgrade | Upgrade |
 | 19.3 | | | Full support | Upgrade | Upgrade |
 | 20.2.1 | | | | Full support | Upgrade |
-| 21.0.0 | | | | | Full support |
+| 21.4.12 | | | | | Full support |
 
 > [!NOTE]  
 > The latest current branch version is always in the **Full support** servicing phase. This support statement means that if you encounter a code defect that warrants a critical update, you must have the latest current branch version installed in order to receive a fix.
