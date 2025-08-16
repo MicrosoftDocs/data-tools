@@ -3,8 +3,7 @@ title: Administer Servers with SQL Server Management Studio
 description: Administer servers with SQL Server Management Studio.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 05/23/2024
+ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -26,7 +25,7 @@ The tool components of SSMS include Registered Servers, Object Explorer, Solutio
 
 ## Encrypt your connection
 
-In [!INCLUDE [sssql19-md](includes/sssql19-md.md)] and earlier versions, network traffic between SSMS and [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] is unencrypted by default. Don't work with sensitive data (including passwords) in SSMS unless you establish an encrypted connection. For more information, see [How to: Enable Encrypted Connections to the Database Engine (SQL Server Configuration Manager)](/sql/database-engine/configure-windows/configure-sql-server-encryption).
+In [!INCLUDE [sssql19-md](includes/sssql19-md.md)] and earlier versions, network traffic between SSMS and [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] is unencrypted by default. Don't work with sensitive data (including passwords) in SSMS unless you establish an encrypted connection. For more information, see [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption).
 
 For more information about encryption in [!INCLUDE [ssmanstudiofull-md](includes/ssmanstudiofull-md.md)], see:
 
@@ -56,5 +55,5 @@ To start and stop [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] or [!INCL
 ## Related content
 
 - [Install SQL Server Management Studio](install/install.md)
-- [Use SQL Server Management Studio](sql-server-management-studio-ssms.md)
-- [How to: View server properties (SQL Server Management Studio)](/sql/database-engine/configure-windows/view-or-change-server-properties-sql-server)
+- [What is SQL Server Management Studio (SSMS)?](sql-server-management-studio-ssms.md)
+- [View or change server properties (SQL Server)](/sql/database-engine/configure-windows/view-or-change-server-properties-sql-server)
