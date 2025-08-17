@@ -3,8 +3,7 @@ title: "Code Outlining"
 description: Learn how to use the code outlining feature in the SQL Server Management Studio query editors to selectively hide code.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 04/11/2024
+ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -37,23 +36,13 @@ The MDX and DMX code editors create outline regions for each multiline statement
 
 The [!INCLUDE [ssASnoversion](../includes/ssasnoversion-md.md)] XMLA Query Editor generates an outline region for each multiline XML attribute. The editor nests the outline regions for nested tags. For example, the XMLA Editor creates three outline regions for the following document.
 
-:::image type="content" source="media/editoutlinexmlfull.gif" alt-text="Screenshot of XML code showing outlining.":::
-
 When you select the minus sign on the `<InnerTag>` line, just the `InnerTag` is collapsed, as shown in the following illustration.
-
-:::image type="content" source="media/editoutlinexmlinnercol.gif" alt-text="Screenshot of XML code with inner node hidden.":::
 
 When you move the pointer over the box that has the three periods (`...`), the code in the collapsed region appears in a tooltip, as shown in the following illustration.
 
-:::image type="content" source="media/editoutlinexmlmouse.gif" alt-text="Screenshot of XML code with tooltip showing hidden code.":::
-
 When you select the minus sign on the `<MiddleTag>` line, both the `MiddleTag` and `InnerTag` are collapsed, as shown in the following illustration.
 
-:::image type="content" source="media/editoutlinexmlmiddlecol.gif" alt-text="Screenshot of XML code with inner and middle tags hidden.":::
-
 When you select the minus sign on the `<OuterTag>` line, all three lines are collapsed, as shown in the following illustration.
-
-:::image type="content" source="media/editoutlinexmloutercol.gif" alt-text="Screenshot of XML code showing all three tags hidden.":::
 
 ### Database Engine query editor regions
 
@@ -81,8 +70,8 @@ BEGIN --Outline region 2
     FROM sys.transmission_queue;
 
     SELECT @@VERSION;
-END;
+END
 GO
 ```
 
-You can select the minus sign on the `SELECT *` line to collapse just that `SELECT` statement. To collapse the whole `BEGIN - END` block, select the minus sign on the `BEGIN` line. To collapse the whole batch to the `GO` command, select the minus sign on the `CREATE PROCEDURE` line. You can't collapse the `SELECT GETDATE()` or `SELECT @@VERSION` lines individually because they are single line statements and don't get outlining regions.
+You can select the minus sign on the `SELECT *` line to collapse just that `SELECT` statement. To collapse the whole `BEGIN - END` block, select the minus sign on the `BEGIN` line. To collapse the whole batch to the `GO` command, select the minus sign on the `CREATE PROCEDURE` line. You can't collapse the `SELECT GETDATE()` or `SELECT @@VERSION` lines individually because they're single line statements and don't get outlining regions.

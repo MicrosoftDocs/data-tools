@@ -3,8 +3,7 @@ title: SSMS Query Editor
 description: SQL Server Management Studio (SSMS) Query Editor
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 11/16/2023
+ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -43,16 +42,14 @@ dev_langs:
   - TSQL
 ---
 
-# SQL Server Management Studio (SSMS) Query Editor
+# Query Editor (SQL Server Management Studio)
 
 [!INCLUDE [SQL Server ASDB, ASDBMI, ASDW](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
 This article explains the query editor's features and functions in SQL Server Management Studio (SSMS).
 
 > [!NOTE]  
-> If you want to learn how to use Transact-SQL (T-SQL) F1 Help, please view the [Transact-SQL F1 Help](#transact-sql-f1-help) section.
->  
-> If you want to learn about tasks that you can do with the editor, please visit the [Editor tasks](#editor-tasks) section.
+> If you want to learn how to use Transact-SQL (T-SQL) F1 Help, see the [Transact-SQL F1 Help](#transact-sql-f1-help) section. If you want to learn about tasks that you can do with the editor, see the [Editor tasks](#editor-tasks) section.
 
 The editors in SSMS share a typical architecture. The text editor implements the base level of functionality and can be used as a basic editor for text files. The other editors, or query editors, extend this functionality base by including a language service that defines the syntax of one of the languages supported in SQL Server. The query editors also implement varying levels of support for editor features such as IntelliSense and debugging. The query editors include the Database Engine Query Editor for use in building scripts containing T-SQL and XQuery statements, the MDX editor for the MDX language, the DMX editor for the DMX language, and the XML/A editor for the XML for Analysis language.
 You can use the Query Editor to create and run scripts containing Transact-SQL statements.
@@ -65,7 +62,7 @@ When the Query Editor is open, the SQL Editor toolbar appears with the following
 
 You can also add the SQL Editor toolbar by selecting the **View** menu, selecting **Toolbars**, and then selecting **SQL Editor**. If you add the SQL Editor toolbar when no Query Editor windows are open, all the buttons are unavailable.
 
-:::image type="content" source="media/database-engine-query-editor-sql-server-management-studio/editor-toolbar.png" alt-text="Screenshot of Editor toolbar.":::
+:::image type="content" source="media/database-engine-query-editor-sql-server-management-studio/editor-toolbar.png" alt-text="Screenshot of Editor toolbar." lightbox="media/database-engine-query-editor-sql-server-management-studio/editor-toolbar.png":::
 
 ### Connect using the editor toolbar
 
@@ -99,13 +96,13 @@ You can also cancel an executing query by selecting Alt + Break.
 
 Checks the syntax of the selected code. If no code is selected, it checks all the code's syntax in the Query Editor window.
 
-You can also check the code in the Query Editor by selecting Ctrl + F5.
+You can also check the code in the Query Editor by selecting **Ctrl**+**F5**.
 
 ### Display estimated execution plan using the editor toolbar
 
 Requests a query execution plan from the query processor without executing the query, and displays the plan in the **Execution plan** window. This plan uses index statistics to estimate the number of rows expected to return during each part of the query execution. The actual query plan that is used can be different from the estimated execution plan. If the number of returned rows is different from the estimate, and the query processor changes the plan to be more efficient, this can occur.
 
-You can also display an estimated execution plan by selecting Ctrl + L or from the [context menu](#display-estimated-execution-plan-using-the-context-menu).
+You can also display an estimated execution plan by selecting **Ctrl**+**L** or from the [context menu](#display-estimated-execution-plan-using-the-context-menu).
 
 ### Query options using the editor toolbar
 
@@ -117,13 +114,13 @@ You can also select **Query Options** from the [context menu](#query-options-usi
 
 Specifies whether [IntelliSense](../scripting/configure-intellisense-sql-server-management-studio.md) functionality is available in the Database Engine Query Editor. This option is set by default.
 
-You can also select **IntelliSense Enabled** by selecting Ctrl + B then Ctrl + I, or from the [context menu](#intellisense-enabled-using-the-context-menu).
+You can also select **IntelliSense Enabled** by selecting **Ctrl**+**B** then **Ctrl**+**I**, or from the [context menu](#intellisense-enabled-using-the-context-menu).
 
 ### Include actual execution plan using the editor toolbar
 
 Executes the query, returns the query results, and uses the execution plan for the query. The queries appear as a graphical query plan in the **Execution plan** window.
 
-You can also select the **Include Actual Execution Plan** by selecting Ctrl + M or from the [context menu](#include-actual-execution-plan-using-the-context-menu).
+You can also select the **Include Actual Execution Plan** by selecting **Ctrl**+**M** or from the [context menu](#include-actual-execution-plan-using-the-context-menu).
 
 ### Include live query statistics using the editor toolbar
 
@@ -141,31 +138,31 @@ You can also select the **Include Live Query Statistics** by selecting Shift + A
 
 Returns the query results as text in the **Results** window.
 
-You can also return results to text by selecting Ctrl + T or from the [context menu](#results-using-the-context-menu).
+You can also return results to text by selecting **Ctrl**+**T** or from the [context menu](#results-using-the-context-menu).
 
 ### Results to grid using the editor toolbar
 
 Returns the query results as one or more grids in the **Results** window. This option is enabled by default.
 
-You can also return results to text by selecting Ctrl + D or from the [context menu](#results-using-the-context-menu).
+You can also return results to text by selecting **Ctrl**+**D** or from the [context menu](#results-using-the-context-menu).
 
 ### Results to file using the editor toolbar
 
 When the query executes, the **Save Results** dialog box opens. In **Save In**, select the folder in which you want to save the file. In **Filename**, type the name of the file, and then select **Save** to save the query results as a **Report** file that has the .rpt extension. For advanced options, select the down-arrow on the **Save** button, and then select **Save with Encoding**.
 
-You can also return results to text by selecting Ctrl + Shift + F or from the [context menu](#results-using-the-context-menu).
+You can also return results to text by selecting **Ctrl**+**Shift**+**F** or from the [context menu](#results-using-the-context-menu).
 
 ### Comment out the selected lines using the editor toolbar
 
-Makes the current line a comment by adding a comment operator (--) at the beginning of the line.
+Makes the current line a comment by adding a comment operator (`--`) at the beginning of the line.
 
-You can also comment out a line by selecting Ctrl + K, then Ctrl + C.
+You can also comment out a line by selecting **Ctrl**+**K**, then **Ctrl**+**C**.
 
 ### Uncomment the selected lines using the editor toolbar
 
 Makes the current line an active source statement by removing any comment operator (--) at the beginning of the line.
 
-You can also uncomment a line by selecting Ctrl + K, then Ctrl + U.
+You can also uncomment a line by selecting **Ctrl**+**K**, then **Ctrl**+**U**.
 
 ### Decrease indent using the editor toolbar
 
@@ -191,11 +188,11 @@ You can access the context menu by *right-clicking* anywhere in the query editor
 
 ### Surround-with using the context menu
 
-A surround-with snippet is a template you can use as a starting point when enclosing a set of Transact-SQL statements in a BEGIN, IF, or WHILE block.
+A surround-with snippet is a template you can use as a starting point when enclosing a set of Transact-SQL statements in a `BEGIN`, `IF`, or `WHILE` block.
 
 ### Connection using the context menu
 
-:::image type="content" source="media/database-engine-query-editor-sql-server-management-studio/context-menu-connections.png" alt-text="Screenshot of Connections available.":::
+:::image type="content" source="media/database-engine-query-editor-sql-server-management-studio/context-menu-connections.png" alt-text="Screenshot of Connections available." lightbox="media/database-engine-query-editor-sql-server-management-studio/context-menu-connections.png":::
 
 There are more **Connection** options in the context menu compared to the toolbar options in SSMS.
 
@@ -249,7 +246,7 @@ Includes a **Client Statistics** window that contains statistics about the query
 
 ### Results using the context menu
 
-:::image type="content" source="media/database-engine-query-editor-sql-server-management-studio/context-menu-results.png" alt-text="Screenshot of Results options.":::
+:::image type="content" source="media/database-engine-query-editor-sql-server-management-studio/context-menu-results.png" alt-text="Screenshot of Results options." lightbox="media/database-engine-query-editor-sql-server-management-studio/context-menu-results.png":::
 
 You can select any of the *Result* options you want from the context menu.
 
@@ -275,7 +272,7 @@ The Query Editor supports linking you to the reference article for a specific Tr
 
 If the help search engine doesn't find an article with an F1 help keyword that exactly matches the string you highlighted, then this article is displayed. In that case, there are two approaches to finding the help you're looking for:
 
-- Copy and paste the editor string you highlighted into the search tab of SQL Server Books Online and do a search.
+- Copy and paste the editor string you highlighted into the search tab of SQL Server Documentation and do a search.
 
 - Highlight only the part of the Transact-SQL statement likely to match an F1 help keyword applied to an article and select F1 again. The search engine requires an exact match between the string you highlighted and an F1 help keyword assigned to an article. If the string you highlighted contains elements unique to your environment, such as column or parameter names, the search engine doesn't get a match. Examples of the strings to highlight include:
 
@@ -291,18 +288,18 @@ If the help search engine doesn't find an article with an F1 help keyword that e
 | --- | --- |
 | Describes the various ways you can open the editors in SSMS. | [Open an Editor (SQL Server Management Studio)](../scripting/open-an-editor-sql-server-management-studio.md) |
 | Configure options for the various editors, such as line numbering and IntelliSense options. | [Configure Editors (SQL Server Management Studio)](../scripting/configure-editors-sql-server-management-studio.md) |
-| How to manage the view mode, such as word wrap, splitting a window, or tabs. | [Manage the Editor and View Mode](../scripting/manage-the-editor-and-view-mode.md) |
-| Set formatting options, such as hidden text or indentation. | [Manage Code Formatting](../scripting/manage-code-formatting.md) |
+| How to manage the view mode, such as word wrap, splitting a window, or tabs. | [Manage the Editor and view mode](../scripting/manage-the-editor-and-view-mode.md) |
+| Set formatting options, such as hidden text or indentation. | [Manage code formatting](../scripting/manage-code-formatting.md) |
 | Navigate through the text in an editor window by using features such as incremental search or go to. | [Navigate Code and Text](../scripting/navigate-code-and-text.md) |
-| Set color coding options for various classes of syntax, which makes it easier to read complex statements. | [Color Coding in Query Editors](../scripting/color-coding-in-query-editors.md) |
+| Set color coding options for various classes of syntax, which makes it easier to read complex statements. | [Color coding in query editors](../scripting/color-coding-in-query-editors.md) |
 | Drag text from one location in a script and drop it in a new location. | [Drag and Drop Text](../scripting/drag-and-drop-text.md) |
 | How to set bookmarks in order to more easily find important pieces of code. | [Manage Bookmarks](../scripting/manage-bookmarks.md) |
 | How to print scripts or the results in a window or grid. | [Print Code and Results](../scripting/print-code-and-results.md) |
 | View and use the basic features in the MDX Query Editor. | [Create Analysis Services Scripts](/analysis-services/instances/create-analysis-services-scripts-in-management-studio) |
 | View and use the basic features in the DMX Query Editor. | [Create a DMX Query](/analysis-services/data-mining/create-a-dmx-query-in-sql-server-management-studio) |
-| View and use the basic features in the XML/A Editor. | [XML Editor (SQL Server Management Studio)](../scripting/xml-editor-sql-server-management-studio.md) |
+| View and use the basic features in the XML/A Editor. | [XML editor (SQL Server Management Studio)](../scripting/xml-editor-sql-server-management-studio.md) |
 | How to use the sqlcmd features in the Database Engine Query Editor. | [Edit SQLCMD Scripts with Query Editor](/sql/tools/sqlcmd/edit-sqlcmd-scripts-query-editor) |
-| How to use code snippets in the Database Engine Query Editor. Snippets are templates for commonly used statements or blocks, and can be customized or extended to include site-specific snippets. | [Add Transact-SQL Snippets](../scripting/add-transact-sql-snippets.md) |
+| How to use code snippets in the Database Engine Query Editor. Snippets are templates for commonly used statements or blocks, and can be customized or extended to include site-specific snippets. | [Add Transact-SQL snippets](../scripting/add-transact-sql-snippets.md) |
 | How to use the Transact-SQL debugger to step through code and view debugging information such as the values in variables and parameters. | [Transact-SQL debugger](/sql/ssdt/debugger/transact-sql-debugger) |
 
 ## Related content

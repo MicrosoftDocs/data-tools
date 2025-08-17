@@ -3,8 +3,8 @@ title: Generate Scripts Wizard
 description: Learn how to use the Generate Scripts Wizard to create scripts to transfer a database between database instances. The instances can be instances of the SQL Server Database Engine or Azure SQL Database.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest, mathoma
-ms.date: 09/27/2024
+ms.reviewer: mathoma
+ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -41,7 +41,7 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-This article teaches you to use the **Generate Scripts Wizard** to create scripts to transfer a database between instances of SQL Server, [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)], or [!INCLUDE [ssazuremi-md](../includes/ssazuremi-md.md)]. 
+This article teaches you to use the **Generate Scripts Wizard** to create scripts to transfer a database between instances of SQL Server, [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)], or [!INCLUDE [ssazuremi-md](../includes/ssazuremi-md.md)].
 
 You can generate scripts for a SQL Server database in your local network, or from Azure SQL. The generated scripts can be run on another instance of SQL Server or on Azure SQL. You can create scripts for an entire database, or limit it to specific objects.
 
@@ -86,7 +86,7 @@ Use this page to choose which objects you want to include in the scripts generat
 
 **Script Entire Database Option** - Select to generate scripts for all objects in the database and to include a script for the database itself.
 
-  :::image type="content" source="media/generate-and-publish-scripts-wizard/script-all.png" alt-text="Screenshot of script entire database." lightbox="media/generate-and-publish-scripts-wizard/script-all.png":::
+:::image type="content" source="media/generate-and-publish-scripts-wizard/script-all.png" alt-text="Screenshot of script entire database." lightbox="media/generate-and-publish-scripts-wizard/script-all.png":::
 
 **Select specific database objects** - Select to limit the wizard to generate scripts for only the specific objects in the database that you choose:
 
@@ -106,7 +106,7 @@ Use this page to specify if you want the wizard to save scripts to the location 
 
 **Save Scripts to a Specific Location** - save one or more Transact-SQL script files to a location you specify.
 
-  :::image type="content" source="media/generate-and-publish-scripts-wizard/save.png" alt-text="Screenshot of Save as notebook." lightbox="media/generate-and-publish-scripts-wizard/save.png":::
+:::image type="content" source="media/generate-and-publish-scripts-wizard/save.png" alt-text="Screenshot of Save as notebook." lightbox="media/generate-and-publish-scripts-wizard/save.png":::
 
 - **[Save as notebook](/azure-data-studio/notebooks/notebooks-guidance)** - Save the script to one or more .sql files. Select the browse button (**...**) to specify a name and location for the file.
 
@@ -190,7 +190,7 @@ Use this page to specify how you want this wizard to generate scripts. Many diff
 
 - **Script primary keys** - Scripts the creation of primary keys on tables. The default is **True**. Primary keys uniquely identify each row of a table.
 
-- **Script triggers** - Scripts the creation of DML triggers on tables. The default is **False**. A DML trigger is an action programmed to execute when a data manipulation language (DML) event occurs in the database server. For more information, see [DML Triggers](/sql/relational-databases/triggers/dml-triggers).
+- **Script triggers** - Scripts the creation of DML triggers on tables. The default is **False**. A DML trigger is an action programmed to execute when a data manipulation language (DML) event occurs in the database server. For more information, see [DML triggers](/sql/relational-databases/triggers/dml-triggers).
 
 - **Script unique keys** - Scripts the creation of unique keys on tables. Unique keys prevent duplicate data from being entered. The default is **True**. For more information, see [Unique constraints and check constraints](/sql/relational-databases/tables/unique-constraints-and-check-constraints).
 
@@ -231,8 +231,8 @@ In order to script objects with [!INCLUDE [ssazuresynapse-md](../includes/ssazur
 1. Select **Tools** then **Options**.
 1. Select **SQL Server Object Explorer**, and **Scripting**.
 1. Under **Version options**, set **Match script settings to source** to **False**.
-    1. Set **Script for database engine type** to **Microsoft Azure SQL Database Edition**.
-    1. For dedicated SQL pools in Azure Synapse Analytics, set **Script for the database engine edition** to **Microsoft Azure SQL Data Warehouse Edition**.
+   1. Set **Script for database engine type** to **Microsoft Azure SQL Database Edition**.
+   1. For dedicated SQL pools in Azure Synapse Analytics, set **Script for the database engine edition** to **Microsoft Azure SQL Data Warehouse Edition**.
 1. Select **OK**.
 
 ### How to generate scripts for SQL Data Warehouse when it's not the default scripting option
@@ -243,8 +243,8 @@ If you set [!INCLUDE [ssazuresynapse-md](../includes/ssazuresynapse-md.md)] as y
 1. Select **Generate Scripts**.
 1. **Choose Objects** you wish to script.
 1. In **Scripting Options**, select **Advanced**. Under **General** set:
-    1. Script for the database engine type: **Microsoft Azure SQL Database**.
-    1. Script for the database engine edition: **Microsoft Azure SQL Data Warehouse Edition**.
+   1. Script for the database engine type: **Microsoft Azure SQL Database**.
+   1. Script for the database engine edition: **Microsoft Azure SQL Data Warehouse Edition**.
 1. Select **Save Scripts** then **Finish**.
 
 The options set in Step 4 aren't remembered. If you prefer for these options to be remembered, follow the instructions in [How to set default scripting options to SQL Data Warehouse](#how-to-set-default-scripting-options-to-sql-data-warehouse).
