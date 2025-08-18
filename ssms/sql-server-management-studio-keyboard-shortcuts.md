@@ -27,10 +27,7 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-SQL Server Management Studio (SSMS) offers keyboard shortcuts. By default, it uses the SQL Server scheme, with keyboard shortcuts based on Visual Studio. To change the keyboard scheme or add more keyboard shortcuts, from the **Tools** menu, select **Options**. Select the desired keyboard scheme on the **Environment</kbd>, <kbd>Keyboard** page.
-
-> [!NOTE]  
-> To show only the headings, select **Collapse All** at the top of this page.
+SQL Server Management Studio (SSMS) offers keyboard shortcuts. By default, it uses the SQL Server scheme, with keyboard shortcuts based on Visual Studio. To change the keyboard scheme or add more keyboard shortcuts, from the **Tools** menu, select **Options**. Select the desired keyboard scheme on the **Environment > Keyboard** page.
 
 ## Menu Activation keyboard shortcuts
 
@@ -46,8 +43,6 @@ SQL Server Management Studio (SSMS) offers keyboard shortcuts. By default, it us
 | Display the **Add New Item** dialog box to add a new file to the current project | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd> |
 | Display the **Add Existing Item** dialog box to add an existing file to the current project | <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>A</kbd> |
 | Close a menu or dialog box, canceling the action | <kbd>Esc</kbd> |
-
-<kbd>F1</kbd>
 
 ## Windows Management and Toolbar keyboard shortcuts
 
@@ -187,8 +182,8 @@ All shortcuts aren't implemented in all types of code editors.
 | Run the `sp_lock` system stored procedure | <kbd>Ctrl</kbd>+<kbd>2</kbd> |
 | Print | <kbd>Ctrl</kbd>+<kbd>P</kbd> |
 
-   > [!NOTE]  
-   > Additional keyboard shortcuts can be configured to execute stored procedures in **Tools** > **Options** > **Keyboard** > **Query Shortcuts**.
+> [!NOTE]  
+> Additional keyboard shortcuts can be configured to execute stored procedures in **Tools** > **Options** > **Keyboard** > **Query Shortcuts**.
 
 ## Text Manipulation in Code Editor keyboard shortcuts
 
