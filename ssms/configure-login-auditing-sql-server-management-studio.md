@@ -1,10 +1,9 @@
 ---
 title: Configure Login Auditing
-description: Configure login auditing for SQL Server on Windows, using SSMS.
+description: Configure login auditing for SQL Server on Windows, using SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 07/12/2024
+ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -19,17 +18,15 @@ helpviewer_keywords:
 
 [!INCLUDE [sql-windows-only](includes/applies-to-version/sql-windows-only.md)]
 
-This article describes how to configure login auditing in [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] on Windows, to monitor [!INCLUDE [ssDEnoversion](includes/ssdenoversion-md.md)] login activity. Login auditing can be configured to write to the error log on the following events. 
+This article describes how to configure login auditing in [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] on Windows, to monitor [!INCLUDE [ssDEnoversion](includes/ssdenoversion-md.md)] login activity. Login auditing can be configured to write to the error log on the following events.
 
 - Failed logins
 - Successful logins
 - Both failed and successful logins
 
-You must restart [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] before this option will take effect.
+You must restart [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] before this option takes effect.
 
-## <a id="SSMSProcedure"></a> Use SQL Server Management Studio
-
-### Configure login auditing
+## Configure login auditing
 
 1. In SQL Server Management Studio, connect to an instance of the [!INCLUDE [ssDEnoversion](includes/ssdenoversion-md.md)] with Object Explorer.
 
@@ -39,7 +36,7 @@ You must restart [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] before 
 
 1. In Object Explorer, right-click the server name, and then select **Restart**.
 
-    :::image type="content" source="media/configure-login-auditing-sql-server-management-studio/configure-login-auditing-window.png" alt-text="Screenshot of the configure login audit window.":::
+   :::image type="content" source="media/configure-login-auditing-sql-server-management-studio/configure-login-auditing-window.png" alt-text="Screenshot of the configure login audit window." lightbox="media/configure-login-auditing-sql-server-management-studio/configure-login-auditing-window.png":::
 
 ## Related content
 

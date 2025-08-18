@@ -3,7 +3,7 @@ title: Types of Queries
 description: "Types of queries (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/03/2025
+ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -19,7 +19,7 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server](../includes/applies-to-version/sqlserver.md)]
 
-The Query and View Designer provides built-in features for some query types--Select, Insert Results, Insert Values, Update, Delete, and Make Table--and also supports `UNION`, Full-text search, and `CASE` expression queries.
+The Query and View Designer provides built-in features for some query types (Select, Insert Results, Insert Values, Update, Delete, and Make Table) and also supports `UNION`, Full-text search, and `CASE` expression queries.
 
 ## In this section
 
