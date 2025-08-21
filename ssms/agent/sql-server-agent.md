@@ -4,7 +4,7 @@ description: "SQL Server Agent"
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mathoma
-ms.date: 09/27/2024
+ms.date: 08/05/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -189,6 +189,10 @@ Use the following tasks to get started with SQL Server Agent:
 ## NOSQLPS
 
 [!INCLUDE [sql-server-powershell-no-sqlps](../includes/sql-server-powershell-no-sqlps.md)]
+
+## TDS 8.0 and strict encryption support
+
+[!INCLUDE [sssql25-md](../includes/sssql25-md.md)] introduces TDS 8.0 support for the SQL Server Agent, and enforces strict encryption by default using TLS 1.3 for agent-based tasks (for example, job scheduling).
 
 ## Related content
 
