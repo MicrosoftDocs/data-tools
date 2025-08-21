@@ -62,7 +62,7 @@ The bootstrapper in the following table always installs the latest release of SS
 
 | Channel | Version | Bootstrapper |
 | --- | --- | --- |
-| Release | 21.4.8 | [SQL Server Management Studio 21.4.8](https://aka.ms/ssms/21/release/vs_SSMS.exe) |
+| Release | [!INCLUDE [latest-build](includes/latest-build.md)] | [SQL Server Management Studio](https://aka.ms/ssms/21/release/vs_SSMS.exe) |
 
 ### Fixed version installers
 
@@ -70,6 +70,7 @@ This table lists latest build numbers of publicly released versions of SQL Serve
 
 | SSMS version | Build number | Release date |
 | --- | --- | --- |
+| [21.4.8](https://download.visualstudio.microsoft.com/download/pr/f55fba7b-3f02-49b7-9aca-a075049a807d/68223c53272acced87437bde86eff72237492d2ec25fb7a826bc2372fd17f3fc/vs_SSMS.exe) | 21.4.8 | July 8, 2025 |
 | [21.3.7](https://download.visualstudio.microsoft.com/download/pr/13907dbe-8bb3-4cfe-b0ae-147e70f8b2f3/3d053fb9682894e3a96a8b78e629dad1067cc945b9ccfbabd5bee63cb274834f/vs_SSMS.exe) | 21.3.7 | June 23, 2025 |
 | [21.3.6](https://download.visualstudio.microsoft.com/download/pr/4652b1eb-63f7-432d-84ab-06108c5d7cd7/f3e8b639888cf4e1f5d376ed5ef1b09f8162ed08647f29a74ef0b792fec1c3db/vs_SSMS.exe) | 21.3.6 | June 17, 2025 |
 | [21.2.5](https://download.visualstudio.microsoft.com/download/pr/e98d75fa-91b1-47a1-9cb7-b6556de592c5/b9a12c1311597fff8ea7a692ee50c4756b4b59f81afa2d8f2bd7df423b5c4916/vs_SSMS.exe) | 21.2.5 | June 10, 2025 |

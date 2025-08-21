@@ -35,7 +35,7 @@ To get the latest bootstrappers for [!INCLUDE [ssms-21-md](../includes/ssms-21-m
 
 | Channel | Version | Bootstrapper |
 | --- | --- | --- | --- |
-| Release | 21.0.0 | [SQL Server Management Studio](https://aka.ms/ssms/21/release/vs_SSMS.exe) |
+| Release | [!INCLUDE [latest-build](../includes/latest-build.md)] | [SQL Server Management Studio](https://aka.ms/ssms/21/release/vs_SSMS.exe) |
 
 > [!TIP]  
 > If you previously downloaded a bootstrapper file, you can verify the version it installs before you try to install. Open File Explorer, right-click the bootstrapper file, select **Properties**, and then select the **Details** tab. The **Product version** field describes the [channel and version](channels-release.md) that the bootstrapper installs. The version number should always be read as "latest servicing version of what is specified", and the channel is Release unless explicitly specified. A bootstrapper with a product version that says [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] installs the latest version of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] from the Release channel.
