@@ -42,7 +42,7 @@ Most [!INCLUDE [msCoName](../includes/msconame-md.md)] IntelliSense options are 
 
 1. Clear the check boxes for the IntelliSense options that you don't want.
 
-1. To change the script size at which IntelliSense features are disabled, select a size from the **Maximum script size** list.
+1. To change the script size at which IntelliSense features are displayed, select a size from the **Maximum script size** list.
 
 1. To change the casing applied to function names in completion lists, select a casing specification from the **Casing for built-in function names** list.
 
