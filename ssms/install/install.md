@@ -3,8 +3,8 @@ title: Install SQL Server Management Studio
 description: Learn how to use the Visual Studio installer to install SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
-ms.date: 05/19/2025
+ms.reviewer: randolphwest
+ms.date: 08/21/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,14 +14,23 @@ ms.collection:
 
 [!INCLUDE [sql-asdb-asdbmi-asa-fabricsqldb](../includes/applies-to-version/sql-asdb-asdbmi-asa-fabricsqldb.md)]
 
-Welcome to [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)]. In this version, it's easy to choose and install only the features you need, using the Visual Studio Installer.
+This article describes how to install SQL Server Management Studio (SSMS).
 
-> [!NOTE]  
-> If you need to programmatically install SQL Server Management Studio, see [Use command-line parameters](/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
+| Key information | Action required |
+| --- | --- |
+| **SSMS 21 is installed with the Visual Studio Installer** | The **Download SSMS 21** link downloads a stub installer (`vs_SSMS.exe`) that opens **Visual Studio Installer** to install SSMS. There's no standalone MSI. |
+| **How&nbsp;to&nbsp;install&nbsp;SSMS** | [Download SSMS 21](https://aka.ms/ssms/21/release/vs_SSMS.exe), run `vs_SSMS.exe`, pick any optional workloads/components, then select **Install**. |
+| **Use the Visual Studio Installer to update SSMS 21** | To update SSMS 21, follow the instructions in [Update SQL Server Management Studio](update.md). |
+| **Offline or enterprise deployment** | To create an offline layout for disconnected or managed installs, see [Create an offline installation of SQL Server Management Studio](create-offline.md). |
+| **Database&nbsp;Engine&nbsp;compatibility** | SSMS 21 works with [!INCLUDE [sssql14-md](../includes/sssql14-md.md)] and later versions. If you need to manage older versions, see the [Release history](../release-history.md). SSMS 21 also works with [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)], [!INCLUDE [ssazuremi-md](../../azure-data-studio/includes/ssazuremi-md.md)], [!INCLUDE [ssazuresynapse-md](../includes/ssazuresynapse-md.md)], and [!INCLUDE [fabric-sqldb](../includes/fabric-sqldb.md)]. |
 
-Want to know more about what else is new in this version? See the [release notes](../release-notes-21.md).
+For more information, see [SQL Server Management Studio 21 Frequently Asked Questions (FAQ)](../faq.yml).
 
-You can download and install a specific version from the [release history](../release-history.md) page.
+Find out what's new in this version in the [release notes](../release-notes-21.md).
+
+Download and install a specific version from the [release history](../release-history.md) page.
+
+Programmatically install SQL Server Management Studio with [command-line parameters](/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
 
 Ready to install? This article walks you through it, step-by-step.
 
@@ -45,13 +54,13 @@ You can install [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] side-by-side 
 
 Decide which version of SSMS to install. The most common options are:
 
-- The latest release of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] that is hosted on Microsoft servers. To install this version, select the following link. The installer downloads a small *bootstrapper* to your *Downloads* folder.
+- The latest release of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] that is hosted on Microsoft servers. To install this version, select the following link, which downloads a stub installer, or *bootstrapper*, to your *Downloads* folder.
 
-[Download SSMS 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)
+  **[Download SSMS 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
 
 - If you already have SQL Server Management Studio 21 installed, you can [install another version alongside it](side-by-side.md).
 
-- You can download a bootstrapper or installer for a specific version from the [Release history](../release-history.md) page and use it to install another version of SSMS.
+You can download a bootstrapper or installer for a specific version from the [Release history](../release-history.md) page and use it to install another version of SSMS.
 
 ## Step 3 - Initiate the installation
 
@@ -69,6 +78,8 @@ After you install the Visual Studio Installer, you can use it to customize your 
 
 1. Select the workload that you want in the **Visual Studio Installer**.
 
+   :::image type="content" source="media/install/ssms-installation-1.png" alt-text="Screenshot of the Visual Studio Installer window, showing workload selection." lightbox="media/install/ssms-installation-1.png":::
+
 1. Review the workload summaries to decide which workload supports the features you need. For example, choose the Hybrid and Migration workload to assess your upgrade readiness and migrate your data.
 
 1. After you choose the workloads that you want, select **Install**. Status screens appear that show the progress of your SSMS installation.
@@ -76,6 +87,8 @@ After you install the Visual Studio Installer, you can use it to customize your 
 ## Step 5 - Choose individual components (optional)
 
 If you don't want to use the workloads feature to customize your SSMS installation, or you want to add more components, you can install or add individual components from the **Individual components** tab. Choose the components that you want, and then follow the prompts.
+
+:::image type="content" source="media/install/ssms-installation-2.png" alt-text="Screenshot of the Visual Studio Installer window, showing component selection." lightbox="media/install/ssms-installation-2.png":::
 
 ## Step 6 - Install language packs (optional)
 
@@ -85,7 +98,7 @@ By default, the installer program tries to match the language of the operating s
 
 Another way that you can change the default language is by running the installer from the command line. For example, you can force the installer to run in English by using the following command:
 
-```cmd
+```console
 vs_SSMS.exe --locale en-US
 ```
 
