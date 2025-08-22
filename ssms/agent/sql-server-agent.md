@@ -4,7 +4,7 @@ description: "SQL Server Agent"
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mathoma
-ms.date: 08/05/2025
+ms.date: 08/22/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -192,7 +192,7 @@ Use the following tasks to get started with SQL Server Agent:
 
 ## TDS 8.0 and strict encryption support
 
-[!INCLUDE [sssql25-md](../includes/sssql25-md.md)] introduces TDS 8.0 support for the SQL Server Agent, and enforces strict encryption by default using TLS 1.3 for agent-based tasks (for example, job scheduling).
+[!INCLUDE [sssql25-md](../includes/sssql25-md.md)] introduces TDS 8.0 and TLS 1.3 support for the SQL Server Agent, which can utilize strict encryption for agent-based tasks (for example, job scheduling).
 
 ## Related content
 
