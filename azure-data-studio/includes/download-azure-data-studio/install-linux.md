@@ -18,7 +18,7 @@ You can install Azure Data Studio on Red Hat Enterprise Linux (RHEL), SUSE Linux
 
 #### Install using .rpm file
 
-1. Download Azure Data Studio for Red Hat Enterprise Linux by using the [.rpm](https://azuredatastudio-update.azurewebsites.net/latest/linux-rpm-x64/stable) file.
+1. Download Azure Data Studio for Red Hat Enterprise Linux by using the [.rpm](https://go.microsoft.com/fwlink/?linkid=2324527) file.
 
 1. To extract the file, open a new terminal window, and then run the following commands:
 
@@ -41,7 +41,7 @@ yum install libXScrnSaver
 
 #### Install using .tar.gz file
 
-1. Download Azure Data Studio for Red Hat Enterprise Linux by using the [.tar.gz](https://azuredatastudio-update.azurewebsites.net/latest/linux-x64/stable) file.
+1. Download Azure Data Studio for Red Hat Enterprise Linux by using the [.tar.gz](https://go.microsoft.com/fwlink/?linkid=2324527) file.
 
 1. To extract the file, open a new terminal window, and then run the following commands:
 
@@ -69,7 +69,7 @@ yum install libxss1 libgconf-2-4 libunwind8
 
 #### Install using .rpm file
 
-1. Download Azure Data Studio for SUSE Linux Enterprise Server by using the [.rpm](https://azuredatastudio-update.azurewebsites.net/latest/linux-rpm-x64/stable) file.
+1. Download Azure Data Studio for SUSE Linux Enterprise Server by using the [.rpm](https://go.microsoft.com/fwlink/?linkid=2324527) file.
 
 1. To extract the file, open a new terminal window, and then run the following commands:
 
@@ -92,7 +92,7 @@ sudo zypper install libXScrnSaver
 
 #### Install using .tar.gz file
 
-1. Download Azure Data Studio for SUSE Linux Enterprise Server by using the [.tar.gz](https://azuredatastudio-update.azurewebsites.net/latest/linux-x64/stable) file.
+1. Download Azure Data Studio for SUSE Linux Enterprise Server by using the [.tar.gz](https://go.microsoft.com/fwlink/?linkid=2324526) file.
 
 1. To extract the file, open a new terminal window, and then run the following commands:
 
@@ -120,7 +120,7 @@ sudo zypper install libxss1 libgconf-2-4 libunwind8
 
 #### Install using .deb file
 
-1. Download Azure Data Studio for Ubuntu or Debian by using the [.deb](https://azuredatastudio-update.azurewebsites.net/latest/linux-deb-x64/stable) file.
+1. Download Azure Data Studio for Ubuntu or Debian by using the [.deb](https://go.microsoft.com/fwlink/?linkid=2324720) file.
 
 1. To extract the .deb file, open a new terminal window, and then run the following commands:
 
@@ -143,7 +143,7 @@ sudo apt-get install libunwind8
 
 #### Install using .tar.gz file
 
-1. Download Azure Data Studio for Ubuntu or Debian by using the [.tar.gz](https://azuredatastudio-update.azurewebsites.net/latest/linux-x64/stable) file.
+1. Download Azure Data Studio for Ubuntu or Debian by using the [.tar.gz](https://go.microsoft.com/fwlink/?linkid=2324526) file.
 
 1. To extract the file, open a new terminal window, and then run the following commands:
 

@@ -54,7 +54,7 @@ If you have comments or suggestions or want to report a problem with downloading
 
 ### macOS installation
 
-1. Download [Azure Data Studio for macOS](https://azuredatastudio-update.azurewebsites.net/latest/darwin-universal/stable).
+1. Download [Azure Data Studio for macOS](https://go.microsoft.com/fwlink/?linkid=2324524).
 
 1. To expand the contents of the .zip file, double-click it.
 
