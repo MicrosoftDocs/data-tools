@@ -60,6 +60,13 @@
         "/visual-db-tools/**/*.md": "Visual Database Tools"
       },
 
+      "ms.update-cycle": {
+        "ssms/agent/**/*.md": "1825-days",
+        "ssms/quickstarts/**/*.md": "1825-days",
+        "ssms/register-servers/**/*.md": "1825-days",
+        "ssms/tutorials/**/*.md": "1825-days",
+        "ssms/visual-db-tools/**/*.md": "1825-days"
+      },
       "sensitive-language-ma": {
       "exclude": [
         "agent/**/*.md"

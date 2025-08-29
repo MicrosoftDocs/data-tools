@@ -10,8 +10,6 @@ ms.service: sql-server-management-studio
 ms.topic: quickstart
 ms.collection:
   - data-tools
-ms.custom:
-  - UpdateFrequency5
 f1_keywords:
   - "sql13.swb.connection.modern.default.f1"
   - "sql13.swb.connection.modern.advanced.f1"
