@@ -4,7 +4,7 @@ description: "This article is an overview of managing objects using Object Explo
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mikeray
-ms.date: 07/15/2025
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -68,7 +68,7 @@ You can start a PowerShell session by right-clicking most folders and objects in
 ## Related content
 
 - [Object Explorer](object-explorer.md)
-- [Open and Configure Object Explorer](open-and-configure-object-explorer.md)
+- [Open and configure Object Explorer](open-and-configure-object-explorer.md)
 - [Connect to a SQL Server or Azure SQL Database](connect-to-an-instance-from-object-explorer.md)
-- [Object Explorer Details Pane](object-explorer-details-pane.md)
-- [Custom Reports in Management Studio](custom-reports-in-management-studio.md)
+- [Object Explorer Details pane](object-explorer-details-pane.md)
+- [Custom reports in SQL Server Management Studio](custom-reports-in-management-studio.md)

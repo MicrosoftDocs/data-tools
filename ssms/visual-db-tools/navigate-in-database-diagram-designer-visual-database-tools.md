@@ -3,7 +3,7 @@ title: Navigate in Database Diagram Designer
 description: "Navigate in Database Diagram Designer (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/03/2025
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -21,16 +21,16 @@ You can work in Database Diagram Designer using the keyboard as well as the mous
 
 | To | Press |
 | --- | --- |
-| Access the Database Diagram menu | ALT+M |
-| Move among tables and relationships if available | TAB, or SHIFT+TAB |
-| Move between columns in a table | Arrow keys |
-| Remove the selected table from the diagram | `DELETE` |
-| Drop a table or relationship from the database | SHIFT+`DELETE` |
-| Move tables across the diagram surface | CTRL+ UP ARROW or CTRL+DOWN ARROW |
-| Scroll right/left and up/down | `PAGE` UP/DOWN for vertical, CTL+`PAGE` UP/DOWN for horizontal |
-| Resize tables and annotations | SHIFT+ Arrow keys |
-| Change the amount of information shown on a table | CTRL+T |
-| Zoom | **Ctrl**+**\<n\>** where \<n\> is plus (`+`) or minus (`-`) |
+| Access the Database Diagram menu | <kbd>Alt</kbd>+<kbd>M</kbd> |
+| Move among tables and relationships if available | <kbd>Tab</kbd>, or <kbd>Shift</kbd>+<kbd>Tab</kbd> |
+| Move between columns in a table | <kbd>Arrow keys</kbd> |
+| Remove the selected table from the diagram | <kbd>Del</kbd> |
+| Drop a table or relationship from the database | <kbd>Shift</kbd>+<kbd>Del</kbd> |
+| Move tables across the diagram surface | <kbd>Ctrl</kbd>+<kbd>Up Arrow</kbd> or <kbd>Ctrl</kbd>+<kbd>Down Arrow</kbd> |
+| Scroll right/left and up/down | <kbd>Page Up</kbd> or <kbd>Page Down</kbd> for vertical, <kbd>Ctrl</kbd>+<kbd>Page Up</kbd> or <kbd>Ctrl</kbd>+<kbd>Page Down</kbd> for horizontal |
+| Resize tables and annotations | <kbd>Shift</kbd> + <kbd>Arrow keys</kbd> |
+| Change the amount of information shown on a table | <kbd>Ctrl</kbd>+<kbd>T</kbd> |
+| Zoom | <kbd>Ctrl</kbd>+<kbd>+</kbd> or <kbd>Ctrl</kbd>+<kbd>-</kbd> |
 
 ## Related content
 

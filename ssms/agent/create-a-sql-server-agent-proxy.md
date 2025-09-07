@@ -3,8 +3,7 @@ title: "Create a SQL Server Agent Proxy"
 description: Create a SQL Server Agent Proxy using SQL Server Management Studio, or in Transact-SQL.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 11/21/2024
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -26,7 +25,7 @@ A [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent proxy account de
 
 You must create a credential before you create a proxy if one isn't already available.
 
-[!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent proxies use credentials to store information about Windows user accounts. The user specified in the credential must have "Access this computer from the network" permission (`SeNetworkLogonRight`) on the computer on which [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] is running.
+[!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent proxies use credentials to store information about Windows user accounts. The user specified in the credential must have **Access this computer from the network** permission (`SeNetworkLogonRight`) on the computer on which [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] is running.
 
 [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent checks subsystem access for a proxy and gives access to the proxy each time the job step runs. If the proxy no longer has access to the subsystem, the job step fails. Otherwise, [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent impersonates the user that is specified in the proxy and runs the job step. For a list of proxy subsystems, see [sp_grant_proxy_to_subsystem](/sql/relational-databases/system-stored-procedures/sp-grant-proxy-to-subsystem-transact-sql).
 
@@ -36,7 +35,11 @@ If the login for the user has access to the proxy, or the user belongs to any ro
 
 ## Permissions
 
-Only members of the **sysadmin** fixed server role have permission to create, modify, or delete proxy accounts. Users who aren't members of the **sysadmin** fixed server role must be added to one of the following [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent fixed database roles in the `msdb` database to use proxies: **SQLAgentUserRole**, **SQLAgentReaderRole**, or **SQLAgentOperatorRole**.
+Only members of the **sysadmin** fixed server role have permission to create, modify, or delete proxy accounts. Users who aren't members of the **sysadmin** fixed server role must be added to one of the following [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent fixed database roles in the `msdb` database to use proxies:
+
+**SQLAgentUserRole**
+**SQLAgentReaderRole**
+**SQLAgentOperatorRole**
 
 Requires `ALTER ANY CREDENTIAL` permission if creating a credential in addition to the proxy.
 
@@ -88,6 +91,7 @@ The following script creates a credential called `CatalogApplicationCredential`,
        @description = 'Maintenance tasks on catalog application.',
        @credential_name = 'CatalogApplicationCredential';
    GO
+   ```
 
 1. Grant the proxy `Catalog application proxy` access to the ActiveX Scripting subsystem.
 

@@ -3,8 +3,7 @@ title: SQL Server Agent Fixed Database Roles
 description: "Learn about the fixed database roles in SQL Server's msdb database, which give administrators finer control over access to SQL Server Agent."
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 09/16/2024
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -103,15 +102,13 @@ The following table summarizes **SQLAgentOperatorRole** permissions on [!INCLUDE
 | Delete job history | Not applicable | Not applicable | Yes | No | Not applicable | Not applicable |
 | Attach/detach | Not applicable | Not applicable | Not applicable | Not applicable | Yes (owned schedules only) | Not applicable |
 
-<a id="assigning-users-multiple-roles"></a>
-
 ## Assign multiple roles to users
 
 Members of the **sysadmin** fixed server role have access to all [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent functionality. If a user isn't a member of the **sysadmin** role, but is a member of more than one [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent fixed database role, it's important to remember the concentric permissions model of these roles. Because more privileged roles always contain all the permissions of less privileged roles, a user who is a member of more than one role automatically has the permissions associated with the most privileged role that the user is a member of.
 
 ## Related content
 
-- [Implement SQL Server Agent Security](implement-sql-server-agent-security.md)
+- [Implement SQL Server Agent security](implement-sql-server-agent-security.md)
 - [sp_update_job (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-job-transact-sql)
 - [sp_update_schedule (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-schedule-transact-sql)
 - [sp_notify_operator (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-notify-operator-transact-sql)
