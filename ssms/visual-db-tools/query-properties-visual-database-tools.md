@@ -3,7 +3,7 @@ title: Query Properties
 description: "Query Properties (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/03/2025
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -91,7 +91,7 @@ Specify that the query returns only the first *n* percent of rows in the result 
 
 #### With Ties
 
-Specify that the view includes a `WITH` TIES clause. `WITH` TIES is useful if a view includes an `ORDER BY` clause and a `TOP` clause based on percentage. If this option is set, and if the percentage cutoff falls in the middle of a set of rows with identical values in the `ORDER BY` clause, the view is extended to include all such rows. (Applies only to [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] version 7.0 or later.)
+Specify that the view includes a `WITH TIES` clause. `WITH TIES` is useful if a view includes an `ORDER BY` clause and a `TOP` clause based on percentage. If this option is set, and if the percentage cutoff falls in the middle of a set of rows with identical values in the `ORDER BY` clause, the view is extended to include all such rows. (Applies only to [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] version 7.0 or later.)
 
 ## Related content
 

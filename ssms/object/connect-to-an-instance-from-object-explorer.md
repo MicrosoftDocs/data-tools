@@ -3,7 +3,7 @@ title: "Connect to a SQL Server or Azure SQL Database"
 description: "Connect to a SQL Server or Azure SQL Database"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: "01/28/2019"
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -11,41 +11,42 @@ ms.collection:
 ---
 # Connect to a SQL Server or Azure SQL Database
 
-[!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+
 To work with servers and databases, you must first connect to the server. You can connect to multiple servers at the same time.
 
 [SQL Server Management Studio (SSMS)](../sql-server-management-studio-ssms.md) supports several types of connections. This article provides details for connecting to SQL Server and Azure SQL Database (connecting to an Azure SQL single database or elastic pool). For information on the other connection options, see the [Related content](#related-content) at the end of this page.
-  
-## Connecting to a Server  
 
-1. On **Object Explorer**, click **Connect > Database Engine...**.
+## Connect to a server
 
-   ![connect](../media/connect-to-server/connect-db-engine.png)
+1. On **Object Explorer**, select **Connect > Database Engine...**.
 
-1. Fill out the **Connect to Server** form and click **Connect**:
+   :::image type="content" source="../media/connect-to-server/connect-db-engine.png" alt-text="Screenshot of Connect to Database Engine dialog.":::
 
-   ![connect to server](../media/connect-to-server/connect.png)
+1. Fill out the **Connect to Server** form and select **Connect**.
 
-1. If you're connecting to an Azure SQL Server, you might get prompted to sign in to create a firewall rule. Click **Sign In...** (if not, skip to step 6 below)
+   :::image type="content" source="../media/connect-to-server/connect.png" alt-text="Screenshot of Connect dialog.":::
 
-   ![Screenshot of the New Firewall Rule dialog box with the Sign in option called out.](../media/connect-to-server/firewall-rule-sign-in.png)
+1. If you're connecting to an Azure SQL Server, you might get prompted to sign in to create a firewall rule. Select **Sign In...** (if not, skip to step 6).
 
-1. After successfully signing in, the form is pre-populated with your specific IP address. If your IP address changes often, it might be easier to grant access to a range, so select the option that's best for your environment. 
+   :::image type="content" source="../media/connect-to-server/firewall-rule-sign-in.png" alt-text="Screenshot of the New Firewall Rule dialog box with the Sign in option called out.":::
 
-   ![Screenshot of the New Firewall Rule dialog box with the Add my client IP address option selected and the OK option called out.](../media/connect-to-server/new-firewall-rule.png)
+1. After you successfully sign in, the form is prepopulated with your specific IP address. If your IP address changes often, it might be easier to grant access to a range, so select the option that's best for your environment.
 
-1. To create the firewall rule and connect to the server, click **OK**.
+   :::image type="content" source="../media/connect-to-server/new-firewall-rule.png" alt-text="Screenshot of the New Firewall Rule dialog box with the Add my client IP address option selected and the OK option called out.":::
 
-1. The server appears in **Object Explorer** after successfully connecting:
+1. To create the firewall rule and connect to the server, select **OK**.
 
-   ![Screenshot of the Object Explorer showing that the server is successfully connected.](../media/connect-to-server/connected.png)
+1. The server appears in **Object Explorer** after successfully connecting.
+
+   :::image type="content" source="../media/connect-to-server/connected.png" alt-text="Screenshot of the Object Explorer showing that the server is successfully connected.":::
 
 ## Related content
 
-- [Design, Create, and Update Tables](../visual-db-tools/design-tables-visual-database-tools.md)
+- [Create and update database tables (Visual Database Tools)](../visual-db-tools/design-tables-visual-database-tools.md)
 - [What is SQL Server Management Studio (SSMS)?](../sql-server-management-studio-ssms.md)
 - [Install SQL Server Management Studio](../install/install.md)
 - [Analysis Services](/analysis-services/instances/connect-from-client-applications-analysis-services)
 - [Integration Services](/sql/integration-services/sql-server-integration-services)
-- [Reporting Services](/sql/reporting-services/tools/connect-to-a-report-server-in-management-studio)
-- [Azure Storage](../f1-help/connect-to-microsoft-azure-storage.md)
+- [Connect to a report server in Management Studio](/sql/reporting-services/tools/connect-to-a-report-server-in-management-studio)
+- [Connect to Microsoft Azure Storage](../f1-help/connect-to-microsoft-azure-storage.md)
