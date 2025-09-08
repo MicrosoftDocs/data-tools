@@ -3,7 +3,7 @@ title: Conventions for Combining Search Conditions in the Criteria Pane
 description: "Conventions for combining search conditions in the Criteria pane (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/03/2025
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -161,7 +161,7 @@ The Query and View Designer represents this `WHERE` clause in the Criteria pane 
 
 :::image type="content" source="media/conventions-combine-search-conditions-in-criteria-pane-visual-db-tools/criteria-pane-3.png" alt-text="Screenshot of linked OR clauses defined in the Criteria pane.":::
 
-If you make a change to the query (such as changing one of the values in the Criteria pane), the Query and View Designer recreates the SQL statement in the SQL pane. The recreated SQL statement resembles the Criteria pane display rather than your original statement. For example, if the Criteria pane contains distributed `AND` clauses, the resulting statement in the SQL pane is recreated with explicit distributed `AND` clauses. For details, see "How `AND` Works with Multiple `OR` Clauses" earlier in this article.
+If you make a change to the query (such as changing one of the values in the Criteria pane), the Query and View Designer recreates the SQL statement in the SQL pane. The recreated SQL statement resembles the Criteria pane display rather than your original statement. For example, if the Criteria pane contains distributed `AND` clauses, the resulting statement in the SQL pane is recreated with explicit distributed `AND` clauses. For details, see [How AND works with multiple OR clauses](#how-and-works-with-multiple-or-clauses) earlier in this article.
 
 ## Related content
 

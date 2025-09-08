@@ -3,7 +3,7 @@ title: Use the Query and View Designer with International Data
 description: "Use the Query and View Designer with International Data (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/03/2025
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -44,7 +44,7 @@ If you're using the Criteria pane to create your query, you can enter informatio
 
 In contrast, data and keywords in the SQL pane must always be in ANSI (U.S.) format. For example, as the Query and View Designer builds a query, it inserts the ANSI form of all SQL keywords such as `SELECT` and `FROM`. If you add elements to the statement in the SQL pane, be sure to use the ANSI standard form for the elements.
 
-When you enter data using local-specific format in the Criteria pane, the Query and View Designer automatically translates it to ANSI format in the SQL pane. For example, if your Regional Settings are set to Standard German, you can enter data in the Criteria pane in a format such as "31.12.96." However, the date appears in the SQL pane in ANSI datetime format as `{ ts '1996-12-31 00:00:00' }.` If you enter data directly in the SQL pane, you must enter it in ANSI format.
+When you enter data using local-specific format in the Criteria pane, the Query and View Designer automatically translates it to ANSI format in the SQL pane. For example, if your Regional Settings are set to Standard German, you can enter data in the Criteria pane in a format such as "31.12.96." However, the date appears in the SQL pane in ANSI datetime format as `{ ts '1996-12-31 00:00:00' }`. If you enter data directly in the SQL pane, you must enter it in ANSI format.
 
 ## Sort order
 

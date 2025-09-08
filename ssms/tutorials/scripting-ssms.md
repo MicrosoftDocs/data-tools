@@ -3,7 +3,7 @@ title: SSMS Script Objects
 description: Generate Transact-SQL (T-SQL) scripts for various objects found within SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/15/2025
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: tutorial
 ms.collection:
@@ -175,7 +175,7 @@ This section covers how to script out tables from your database. Use this option
 
 1. Expand your **Tables** node.
 
-1. Right-click **dbo.ErrorLog** > **Script Table as** > `DROP` And `CREATE` To** > **New Query Editor Window**:
+1. Right-click **dbo.ErrorLog** > **Script Table as** > **DROP And CREATE To** > **New Query Editor Window**:
 
    :::image type="content" source="media/scripting-ssms/scripttable.png" alt-text="Screenshot of Script table.":::
 
@@ -196,7 +196,7 @@ In this section, you learn how to drop and create a stored procedure.
 
 1. Expand your **Stored Procedure** node.
 
-1. Right-click the stored procedure **dbo.uspGetBillOfMaterials** > **Script Stored Procedure As** > `DROP` and `CREATE` To** > **New Query Editor Window**:
+1. Right-click the stored procedure **dbo.uspGetBillOfMaterials** > **Script Stored Procedure As** > **DROP And CREATE To** > **New Query Editor Window**:
 
    :::image type="content" source="media/scripting-ssms/script-stored-procedure.png" alt-text="Screenshot of Script stored procedures." lightbox="media/scripting-ssms/script-stored-procedure.png":::
 
@@ -212,7 +212,7 @@ This section covers how to script out [extended events](/sql/relational-database
 
 1. Expand your **Sessions** node.
 
-1. Right-click the extended session you're interested in > **Script Session As** > `CREATE` To** > **New Query Editor Window**:
+1. Right-click the extended session you're interested in > **Script Session As** > **CREATE To** > **New Query Editor Window**:
 
    :::image type="content" source="media/scripting-ssms/scriptxevents.png" alt-text="Screenshot of Extended New Query Editor Window session.":::
 

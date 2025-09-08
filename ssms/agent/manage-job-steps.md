@@ -3,7 +3,7 @@ title: "Manage Job Steps"
 description: Learn how to manage job steps, or actions that a SQL Server Agent job takes on a database or a server.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 04/17/2025
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -44,13 +44,17 @@ Because job steps run in the context of a specific Windows user, that user must 
 
 ## Job step logs
 
-[!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent can write output from some job steps either to an operating system file or to the sysjobstepslogs table in the `msdb` database. The following job step types can write output to both destinations:
+[!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent can write output from some job steps either to an operating system file or to the `sysjobstepslogs` table in the `msdb` database. The following job step types can write output to both destinations:
 
 - Executable programs and operating system commands.
 - [!INCLUDE [tsql](../includes/tsql-md.md)] statements.
 - [!INCLUDE [ssASnoversion](../includes/ssasnoversion-md.md)] tasks.
 
-Only job steps that are executed by users who are members of the **sysadmin** fixed server role can write job step output to operating system files. If job steps are executed by users who are members of the SQLAgentUserRole, SQLAgentReaderRole, or the SQLAgentOperatorRole fixed database roles in the `msdb` database, then the output from these job steps can be written only to the sysjobstepslogs table.
+Only job steps that are executed by users who are members of the **sysadmin** fixed server role can write job step output to operating system files. If job steps are executed by users who are members of the following fixed database roles in the `msdb` database, then the output from these job steps can be written only to the `sysjobstepslogs` table:
+
+- **SQLAgentUserRole**
+- **SQLAgentReaderRole**
+- **SQLAgentOperatorRole**
 
 Job step logs are automatically deleted when jobs or job steps are deleted.
 
@@ -59,7 +63,7 @@ Job step logs are automatically deleted when jobs or job steps are deleted.
 
 ## Executable programs and operating system commands as job steps
 
-Executable programs and operating-system commands can be used as job steps. These files might have .bat, .cmd, .com, or .exe file extensions.
+Executable programs and operating-system commands can be used as job steps. These files might have `.bat`, `.cmd`, `.com`, or `.exe` file extensions.
 
 When you use an executable program or an operating-system command as a job step, you must specify:
 
@@ -89,7 +93,7 @@ Optionally, you can open an existing [!INCLUDE [tsql](../includes/tsql-md.md)] f
 [!INCLUDE [tsql](../includes/tsql-md.md)] job steps don't use [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent proxies. Instead, the job step runs as the owner of the job step, or as the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent service account if the owner of the job step is a member of the sysadmin fixed server role. Members of the sysadmin fixed server role can also specify that [!INCLUDE [tsql](../includes/tsql-md.md)] job steps run under the context of another user by using the *database_user_name* parameter of the `sp_add_jobstep` stored procedure. For more information, see [sp_add_jobstep](/sql/relational-databases/system-stored-procedures/sp-add-jobstep-transact-sql).
 
 > [!NOTE]  
-> A single [!INCLUDE [tsql](../includes/tsql-md.md)] job step can contain multiple batches. [!INCLUDE [tsql](../includes/tsql-md.md)] job steps can contain embedded GO commands.
+> A single [!INCLUDE [tsql](../includes/tsql-md.md)] job step can contain multiple batches. [!INCLUDE [tsql](../includes/tsql-md.md)] job steps can contain embedded `GO` commands.
 
 ## PowerShell scripting job steps
 
@@ -124,14 +128,13 @@ When you create an [!INCLUDE [ssASnoversion](../includes/ssasnoversion-md.md)] c
 
 1. Identify the database OLAP server in which to run the job step.
 
-1. Type the statement to execute. The statement must be an XML for [!INCLUDE [ssASnoversion](../includes/ssasnoversion-md.md)] **Execute** method. The statement might not contain a complete SOAP envelope or an XML for [!INCLUDE [ssASnoversion](../includes/ssasnoversion-md.md)] **Discover** method. Notice that, while SQL Server Management Studio supports complete SOAP envelopes and the **Discover** method, [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent job steps don't.
+1. Type the statement to execute. The statement must be an XML for [!INCLUDE [ssASnoversion](../includes/ssasnoversion-md.md)] **Execute** method. The statement might not contain a complete SOAP envelope or an XML for [!INCLUDE [ssASnoversion](../includes/ssasnoversion-md.md)] **Discover** method. While SQL Server Management Studio supports complete SOAP envelopes and the **Discover** method, [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent job steps don't.
 
 ### Analysis Services query job steps
 
 When you create an [!INCLUDE [ssASnoversion](../includes/ssasnoversion-md.md)] query job step, you must:
 
 1. Identify the database OLAP server in which to run the job step.
-
 1. Type the statement to execute. The statement must be a multidimensional expressions (MDX) query.
 
 For more information on MDX, see [MDX Statement Fundamentals (MDX)](/analysis-services/multidimensional-models/mdx/mdx-query-fundamentals-analysis-services?viewFallbackFrom=sql-server-ver15).
@@ -169,7 +172,7 @@ For more information about creating job steps that run [!INCLUDE [ssISnoversion]
 | Description | Article |
 | --- | --- |
 | Describes how to create a job step with an executable program. | [Create a CmdExec Job Step](create-a-cmdexec-job-step.md) |
-| Describes how to reset [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent permissions. | [Configure a User to Create and Manage SQL Server Agent Jobs](configure-a-user-to-create-and-manage-sql-server-agent-jobs.md) |
+| Describes how to reset [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent permissions. | [Configure a user to create and manage SQL Server Agent jobs](configure-a-user-to-create-and-manage-sql-server-agent-jobs.md) |
 | Describes how to create a [!INCLUDE [tsql](../includes/tsql-md.md)] job step. | [Create a Transact-SQL Job Step](create-a-transact-sql-job-step.md) |
 | Describes how to define options for Microsoft [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent Transact-SQL job steps. | [Define Transact-SQL Job Step Options](define-transact-sql-job-step-options.md) |
 | Describes how to create an ActiveX script job step. | [Create an ActiveX script job step](create-an-activex-script-job-step.md) |

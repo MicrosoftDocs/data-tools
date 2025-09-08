@@ -21,7 +21,7 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server](../includes/applies-to-version/sqlserver.md)]
 
-The Table Designer is a visual tool where you design and visualize [database tables](/sql/relational-databases/tables/tables). To create, edit, or delete tables, columns, keys, indexes, relationships, and constraints, use the Table Designer in [What is SQL Server Management Studio (SSMS)?](../sql-server-management-studio-ssms.md) or [Download and install Azure Data Studio](/azure-data-studio/download-azure-data-studio).
+The Table Designer is a visual tool where you design and visualize [database tables](/sql/relational-databases/tables/tables). To create, edit, or delete tables, columns, keys, indexes, relationships, and constraints, use the Table Designer in [SQL Server Management Studio (SSMS)](../sql-server-management-studio-ssms.md) or [Azure Data Studio](/azure-data-studio/download-azure-data-studio).
 
 ## Create a table
 

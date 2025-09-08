@@ -3,8 +3,7 @@ title: Usage and Diagnostic Data
 description: "Local audit for SSMS usage and diagnostic data collection"
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 09/12/2024
+ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -21,7 +20,7 @@ SSMS might collect standard computer usage and performance information, which co
 
 However, SSMS doesn't collect your name, address, or other data that could identify you as an individual.
 
-For more information, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [SQL Server privacy supplement](/sql/sql-server/sql-server-privacy).
+For more information, see the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement) and the [SQL Server privacy supplement](/sql/sql-server/sql-server-privacy).
 
 ## Audit feature usage and diagnostic data
 
