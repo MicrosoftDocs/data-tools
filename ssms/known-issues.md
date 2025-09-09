@@ -4,7 +4,7 @@ description: Learn about known issues in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 06/25/2025
+ms.date: 09/09/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -23,8 +23,6 @@ This page lists known issues for [!INCLUDE [ssms-21-md](includes/ssms-21-md.md)]
 | Designers | The JSON data type isn't available for columns when creating or editing a table in Table Designer. See [SSMS 21.0 Preview 2.0 - Table Designer missing the "json" datatype](https://feedback.azure.com/d365community/idea/d2e6f106-9fb8-ef11-95f5-6045bdbfaf80). | Use T-SQL to add columns with the JSON data type, this functionality is planned for a later release. |
 | Designers | Unable to use SSMS after closing the **New View** pane when the **Add Table** dialog is left open. See [SSMS 21 Preview 1: New View window "Add Table" not aware I closed out of New View](https://feedback.azure.com/d365community/idea/8790c2c0-22a8-ef11-95f6-000d3a01397d). | Close the **Add Table** dialog before closing the view pane. |
 | Extended Events | The Specify Data Storage page is truncated in the Extended Events Wizard. See [Extended Events Wizard is cut off on Specify Data Storage page](https://feedback.azure.com/d365community/idea/e7de428c-76ab-ef11-95f6-000d3a01397d). | Use the **New Session...** option to create an Extended Events session. |
-| Intellisense | Intellisense connection doesn't update after executing `USE DATABASE` command in the editor and then deleting the command. See [SSMS 21: IntelliSense think the current database is another one](https://developercommunity.visualstudio.com/t/SSMS-21-:-IntelliSense-think-the-current/10909716). | Leave the `USE DATABASE` command in the editor, or use the database dropdown list to change database context. |
-| Logins | Unable to map a credential for a login. See [SSMS v21 Preview 1 - Bug in Login Properties for Credentials](https://feedback.azure.com/d365community/idea/e0687671-dca3-ef11-95f6-000d3a059eeb). | Use T-SQL to map a login to a credential. |
 | Menu | Opening a folder from **File** > **Recent Projects and Solutions** generates one of the following errors: "System.InvalidOperationException: Can't enqueue project dependencies calculation before starting solution load" or "An exception of type NullReferenceException has been encountered." if opening the folder also opens one or more files that were open in the editor when the folder was last closed. | Closing the error allows work to continue. Alternatively, close all files in the editor before closing a folder. |
 | Modern Connection Dialog (Preview) | Trying to change the password for a newly created SQL login with the `MUST_CHANGE` property enabled generates the error "Login failed for user. Reason: The password of the account must be changed. (Microsoft SQL Server, Error: 18488)". See [Instead of Change password dialog an error pops up](https://developercommunity.visualstudio.com/t/Instead-of-Chage-password-dialog-an-erro/10899416). | Use the Classic connection dialog to change the password. |
 | Modern Connection Dialog (Preview) | Importing connection history for the new connection dialog generates the error "An error occurred while importing the connection history from the classic connection dialog. The given key was not present in the dictionary." | The error occurs when there are corrupted connections in your history, and they aren't imported into the new dialog. The error can be safely ignored. |
