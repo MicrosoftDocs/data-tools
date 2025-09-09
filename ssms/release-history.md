@@ -4,7 +4,7 @@ description: Learn about the release history for SQL Server Management Studio (S
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 07/24/2025
+ms.date: 09/09/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -70,6 +70,7 @@ This table lists latest build numbers of publicly released versions of SQL Serve
 
 | SSMS version | Build number | Release date |
 | --- | --- | --- |
+| [21.4.12](https://download.visualstudio.microsoft.com/download/pr/df8b8a1d-60a9-4872-99a4-7b1bcd00b219/5c202483678778f63df9511799b7c7d1da90a8d1b7915e16b5fbc691b08af965/vs_SSMS.exe) | 21.4.12 | August 12, 2025 |
 | [21.4.8](https://download.visualstudio.microsoft.com/download/pr/f55fba7b-3f02-49b7-9aca-a075049a807d/68223c53272acced87437bde86eff72237492d2ec25fb7a826bc2372fd17f3fc/vs_SSMS.exe) | 21.4.8 | July 8, 2025 |
 | [21.3.7](https://download.visualstudio.microsoft.com/download/pr/13907dbe-8bb3-4cfe-b0ae-147e70f8b2f3/3d053fb9682894e3a96a8b78e629dad1067cc945b9ccfbabd5bee63cb274834f/vs_SSMS.exe) | 21.3.7 | June 23, 2025 |
 | [21.3.6](https://download.visualstudio.microsoft.com/download/pr/4652b1eb-63f7-432d-84ab-06108c5d7cd7/f3e8b639888cf4e1f5d376ed5ef1b09f8162ed08647f29a74ef0b792fec1c3db/vs_SSMS.exe) | 21.3.6 | June 17, 2025 |

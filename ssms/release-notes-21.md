@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 08/12/2025
+ms.date: 09/09/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -30,11 +30,48 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="21.5.14"></a>
+
+### 21.5.14
+
+**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
+
+- Release number: 21.5.14
+- Release date: September 9, 2025
+
+#### What's new in 21.5.14
+
+| Feature | Details |
+| --- | --- |
+| Connection dialog | Added an option to give connections a custom Name in the Custom Properties section. See [Add an option to give names to connection in Connection Properties](https://developercommunity.visualstudio.com/t/Add-an-option-to-give-names-to-connectio/10891990). |
+| Connection dialog | Updated the Advanced Properties dialog UI to include an Always Encrypted section and added dark theme support. |
+| Connection dialog | Introduced connection string copy/paste support. See [The New "Connect" button (Preview) is missing an important feature](https://developercommunity.microsoft.com/t/The-New-Connect-button-Preview-is-mi/10954313). |
+| Connection dialog | Added Registered Servers browsing to the Browse tab. See [SSMS 21.1.3: Not possible to connect to registered servers via Connect (Preview) dialog](https://developercommunity.microsoft.com/t/SSMS-2113:-Not-possible-to-connect-to/10914915). |
+| Visual Studio | Updated to Visual Studio 17.14.14. |
+
+#### Bug fixes in 21.5.14
+
+| Feature | Details |
+| --- | --- |
+| Analysis Services | Addressed a regression that generated an error when browsing Online Analytical Processing (OLAP) cubes. See [SSMS 21 Error browsing OLAP cubes](https://developercommunity.microsoft.com/t/SSMS-21-Error-browsing-OLAP-cubes/10915226). |
+| Authentication | Fixed a bug that incorrectly populated the subscription list when attempting to restore from an Azure Storage account. See [Subscription List does NOT populate correctly when restoring a SQL DB from a Storage account](https://developercommunity.visualstudio.com/t/Subscription-List-does-NOT-populate-corr/10946164). |
+| Central Management Server | Resolved an issue that caused the "New Query" option from the Central Management Server Actions menu to open all registered servers instead of the CMS server itself. See [Central Management Server Actions open all registered servers instead of the server hosting the CMS](https://developercommunity.visualstudio.com/t/Central-Management-Server-Actions-open-a/10936024). |
+| Connection dialog | Fixed a bug that removed connections from the Recent connections list when pinning them to the Favorites list. |
+| Database properties | Addressed an issue that caused Azure SQL Databases with a maximum size of 1,000 GB (1 TB) to generate the error "DbSize string does not contain a valid numeric integer portion." See [DbSize string does not contain a valid numeric integer portion](https://developercommunity.visualstudio.com/t/DbSize-string-does-not-contain-a-valid-n/10908376). |
+| Execution plans | Updated the background color of Execution plans to match other tabs in the results pane. |
+| Export bacpac | Addressed an issue that prevented the ability to create bacpac exports for Mirrored Fabric resources. See [Implementing a connection from Azure SQL for Fabric database mirroring breaks the export bacpac function in SSMS](https://developercommunity.visualstudio.com/t/Implementing-a-connection-from-Azure-SQL/10915279). |
+| IntelliSense | Fixed a bug that prevented IntelliSense from changing context when using the T-SQL statement `USE`. See [SSMS 21 : IntelliSense think the current database is another one](https://developercommunity.visualstudio.com/t/SSMS-21-:-IntelliSense-think-the-current/10909716). |
+| Login properties | Fixed a regression that didn't display credentials underneath Mapped Credentials in the Login Properties window. See [SSMS v21 Preview 1 - Bug in Login Properties for Credentials](https://feedback.azure.com/d365community/idea/e0687671-dca3-ef11-95f6-000d3a059eeb). |
+| Object Explorer details | Reinstated the sort indicator when sorting columns in the Object Explorer details view. See [Sort Indicator Missing When Sorting Columns in Object Explorer Details](https://developercommunity.visualstudio.com/t/Sort-Indicator-Missing-When-Sorting-Colu/10925917). |
+| Object Explorer details | Fixed a bug that threw an error when trying to generate scripts when multiple objects were selected. See [Generate multiple object script in Object Explorer](https://developercommunity.visualstudio.com/t/Generate-multiple-object-script-in-Objec/10911401). |
+| Performance and reliability | Addressed an error that caused SSMS 21 to crash. See [SSMS v21.4 - Configure for General - Environment - Startup crashes](https://developercommunity.visualstudio.com/t/SSMS-v214---Configure-for-General---Env/10948873). |
+| Query Store | Fixed a bug that incorrectly displayed Query Store data timestamps in UTC instead of local time when the "Local" option was selected in the Configure Overall Resource Consumption chart. See [Query Store viewer in SSMS 21 is reporting data with incorrect time offset when using local time](https://developercommunity.visualstudio.com/t/Query-Store-viewer-in-SSMS-21-is-reporti/10941754). |
+| Results grid | Resolved a regression that included the header when copying values to the clipboard. See [Copy value copies with header](https://developercommunity.visualstudio.com/t/Copy-value-copies-with-header/10914881). |
+| Tabify | Reinstated the Tabify/Untabify functionality in the **Edit > Advanced** menu. See [Impossible to untabify selection](https://developercommunity.visualstudio.com/t/Impossible-to-untabify-selection/10915182). |
+
 <a id="21.4.12"></a>
 
 ### 21.4.12
-
-**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
 
 - Release number: 21.4.12
 - Release date: August 12, 2025
@@ -67,11 +104,11 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Always Encrypted | Fixed several issues including an issue in the Create a New Column Master Key wizard where **Sort by Create Date** was incorrectly sorting by String, an issue that prevented Always Encrypted set up to be completed [when using SSMS with Russian localization](https://developercommunity.visualstudio.com/t/Can-not-set-up-Always-Encrypted-with-Azu/10856776), and an issue in the Create a New Column Master Key wizard that improperly sized the subscription and tenant dropdown boxes. |
-| Central Management Servers (CMS) | Addressed a bug that didn't add the server connection information to the recently used connections in the Connection Dialog. | 
+| Always Encrypted | Fixed several issues including an issue in the Create a New Column Master Key wizard where **Sort by Create Date** was incorrectly sorting by String, an issue that prevented Always Encrypted set up to be completed [when using SSMS with Russian localization](https://developercommunity.visualstudio.com/t/Can-not-set-up-Always-Encrypted-with-Azu/10856776), and an issue in the Create a New Column Master Key wizard that improperly sized the subscription and tenant dropdown lists. |
+| Central Management Servers (CMS) | Addressed a bug that didn't add the server connection information to the recently used connections in the Connection Dialog. |
 | Copilot in SSMS (Preview) | Improved initial chat experience if Microsoft Entra authentication to Azure OpenAI doesn't occur. |
-| Copilot in SSMS (Preview) | Fixed issue where the current context entry was not updating if a tab was renamed. |
-| Connection Dialog | Fixed a bug that caused the Modern connection dialog (Preview) to clear its recent and pinned connections when multiple instances of SSMS were open. See [Connections dialog forgets connections](https://developercommunity.visualstudio.com/t/Connections-Dialog-forgets-connections/10908219). | 
+| Copilot in SSMS (Preview) | Fixed issue where the current context entry wasn't updating if a tab was renamed. |
+| Connection Dialog | Fixed a bug that caused the Modern connection dialog (Preview) to clear its recent and pinned connections when multiple instances of SSMS were open. See [Connections dialog forgets connections](https://developercommunity.visualstudio.com/t/Connections-Dialog-forgets-connections/10908219). |
 | Migration Assistant | Fixed an error in the Migration Assistant Assessment Wizard that caused UI elements to incorrectly display when the display resolution was set to 250%. |
 | Query Data Store (QDS) | Addressed an issue where **Overall Resource Consumption** was incorrectly aggregating data when the display time was set to **Local**. See [QDS - Overall Resource Consumption graphs return incorrect information when choosing "Time format: Local" with aggregation per day](https://developercommunity.visualstudio.com/t/QDS---Overall-Resource-Consumption-graph/10873252). |
 | Results Window | Addressed an issue where scrolling multiple datasets in the results grid didn't behave as expected. See [SSMS 21.0 - scrolling issue in results window](https://developercommunity.visualstudio.com/t/SSMS-210---scrolling-issue-in-results-w/10859401). |
@@ -120,7 +157,7 @@ For previous versions of SSMS, see:
 | Files | Fixed a bug that caused multiple instances of SSMS to open when opening `.sql` files. See [SSMS: SQL files opening new instances of SSMS](https://developercommunity.visualstudio.com/t/SSMS:-SQL-files-opening-new-instances-of/10858946). |
 | Git | Addressed an error that incorrectly colored text in the diff tool and prevented the code selection from being copied. See [SSMS 21 Preview 7 Git Changes, Diff coloring](https://developercommunity.visualstudio.com/t/SSMS-21-Preview-7-Git-Changes-Diff-colo/10898088) and [SSMS 21 diff tool does not allow copy of code selection unlike Visual Studio](https://developercommunity.visualstudio.com/t/SSMS-21-Diff-tool-left-side-does-not-all/10898618). |
 | Object Explorer | Resolved Object Explorer performance regression by removing the "use current theme for selected node" setting, and fixed a bug that incorrectly displays database names that contain `&`. See [Performance regression: Object Explorer takes ~60 s to expand table nodes in large databases](https://developercommunity.visualstudio.com/t/Performance-regression:-Object-Explorer-/10913775) and [Object Explorer showing wrong database name](https://developercommunity.visualstudio.com/t/Object-Explorer-showing-wrong-database-n/10919352). |
-| SQL Server Analysis Services (SSAS) | Fixed a bug that led to a crash when editing connection properties and credentials with a SAS key. | 
+| SQL Server Analysis Services (SSAS) | Fixed a bug that led to a crash when editing connection properties and credentials with a SAS key. |
 | SQL Server Integration Services (SSIS) | Resolved errors that were generated when a data source other than Microsoft OLEDB Provider for SQL Server was selected in the Import and Export Wizard, and added support for the [Execute package utility (dtexecui)](/sql/integration-services/packages/execute-package-utility-dtexecui-ui-reference). |
 
 <a id="21.2.5"></a>
@@ -145,7 +182,7 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Connection dialog | Fixed a bug that prevented creating new firewall rules for Azure resources from SSMS. See [Modern Connection dialog cannot add firewall exceptions](https://developercommunity.microsoft.com/t/Modern-Connection-dialog-cannot-add-fire/10899761). |
 | Reliability | Addressed scenario related to Copilot in SSMS (Preview) that could lead to SSMS crashing. |
-| Reliability | Fixed error 'Parameter is not valid' that also caused the active dialog to become with red lines. This occurred in the results grid, database diagrams, and SQL Profiler. See [Unhandled Exception in SSMS 21 - "Parameter is not valid"](https://developercommunity.visualstudio.com/t/Unhandled-Exception-in-ssms-21---Parame/10897441) and [SQL Server Profiler Unhandled exception after switching theme in SSMS](https://developercommunity.visualstudio.com/t/SQL-Server-Profiler-Unhandeled-exception/10911208). |
+| Reliability | Fixed error 'Parameter is not valid' that also caused the active dialog to become with red lines. This error occurred in the results grid, database diagrams, and SQL Profiler. See [Unhandled Exception in SSMS 21 - "Parameter is not valid"](https://developercommunity.visualstudio.com/t/Unhandled-Exception-in-ssms-21---Parame/10897441) and [SQL Server Profiler Unhandled exception after switching theme in SSMS](https://developercommunity.visualstudio.com/t/SQL-Server-Profiler-Unhandeled-exception/10911208). |
 
 <a id="21.1.3"></a>
 
@@ -166,7 +203,7 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Extended Events | Fixed a bug where the context menu for Extended Events while Dark theme was enabled didn't have enough contrast to be readable. See [Filter context menu ExtEvents not readable](https://developercommunity.visualstudio.com/t/Filter-context-menu-ExtEvents-not-readab/10900655). |
 | Localization | Addressed an issue where reports weren't honoring the selected language in **Tools > Options > International Settings**. See [Wrong language located in elements in SSMS 21 and Profiler 21](https://developercommunity.visualstudio.com/t/Wrong-language-located-elements-in-SSMS-/10898516). |
-| Object Explorer Details | Fixed an issue where adding additional columns to the Object Explorer details pane generated an error. See [Invalid object reference in Object Explorer Details pane](https://developercommunity.visualstudio.com/t/Invalid-object-reference-in-Object-Explo/10898449). |
+| Object Explorer Details | Fixed an issue where adding columns to the Object Explorer details pane generated an error. See [Invalid object reference in Object Explorer Details pane](https://developercommunity.visualstudio.com/t/Invalid-object-reference-in-Object-Explo/10898449). |
 
 <a id="21.0.1"></a>
 
@@ -208,7 +245,7 @@ For previous versions of SSMS, see:
 | Connection Dialog | Updated strict encryption label to **Strict (Minimum SQL 2022 or Azure SQL)** in the **Encryption** dropdown list on the connection dialog. |
 | Connection Dialog | Introduced a Modern connection dialog experience for SQL Server database engines. You can enable or disable this experience within **Tools > Options > Environment > Connection Dialog**. |
 | Connection Dialog | Added dark mode support for Modern connection dialog (Preview). See [New connection dialog does not support dark mode](https://developercommunity.microsoft.com/t/New-connection-dialog-does-not-support-d/10893407?q=%22dark%22). |
-| Copilot in SSMS (Preview) | Added [Copilot in SSMS (Preview)](copilot/copilot-in-ssms-overview.md) available from the AI Assistance workload in the Visual Studio Installer. |
+| Copilot in SSMS (Preview) | Added [Copilot in SQL Server Management Studio (Preview)](copilot/copilot-in-ssms-overview.md) available from the AI Assistance workload in the Visual Studio Installer. |
 | Database Properties | Added a page to list Database Scoped Configuration values on the **Database Properties** dialog. |
 | Database Properties | Added support for [!INCLUDE [sssql25-md](includes/sssql25-md.md)] FULLTEXT_INDEX_VERSION configuration options in the database properties dialog. |
 | Drivers | Updated Microsoft.Data.SqlClient (MDS) to version 5.1.6. |

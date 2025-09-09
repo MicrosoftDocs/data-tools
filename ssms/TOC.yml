@@ -21,8 +21,12 @@ items:
     items:
       - name: Release notes
         href: release-notes-21.md
+      - name: Release notes SSMS 22 Preview
+        href: release-notes-22-preview.md
       - name: Known issues
         href: known-issues.md
+      - name: Known issues SSMS 22 Preview
+        href: known-issues-preview.md
       - name: Product roadmap
         href: roadmap.md
       - name: System requirements
@@ -31,6 +35,8 @@ items:
         items:
           - name: Download and install
             href: install/install.md
+          - name: Download and install SSMS 22 Preview
+            href: install/install-preview.md
           - name: Select installation location
             href: install/select-install-location.md
           - name: Install with command-line parameters

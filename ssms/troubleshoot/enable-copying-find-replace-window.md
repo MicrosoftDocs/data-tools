@@ -4,7 +4,7 @@ description: Use a workaround to enable copying from the Find and Replace window
 author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan, randolphwest
-ms.date: 07/03/2025
+ms.date: 09/09/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -15,7 +15,7 @@ ms.collection:
 
 [!INCLUDE [Applies to](../includes/appliesto-ss-asdb-asdw-xxx-md.md)]
 
-A workaround is required to enable copying from the Find and Replace window. If you can't copy from the Find and Replace window in SQL Server Management Studio, follow the [workaround](#workaround).
+For SQL Server Management Studio (SSMS) 21 and earlier versions, a workaround is required to enable copying from the Find and Replace window. If you can't copy from the Find and Replace window in SSMS, follow the [workaround](#workaround). This problem does not exist in SSMS 22 Preview and later versions.
 
 ## Error message
 
