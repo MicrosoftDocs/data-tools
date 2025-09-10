@@ -4,7 +4,7 @@ description: Learn about known issues in SQL Server Management Studio (SSMS) 22 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 09/09/2025
+ms.date: 09/10/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -19,6 +19,7 @@ This page lists known issues for [!INCLUDE [ssms-22-md](includes/ssms-22-md.md)]
 
 | Feature | Details | Workaround |
 | --- | --- | --- |
+| AI assistance | The original Copilot in SSMS component is not available in SSMS 22. GitHub Copilot in SSMS will be available in a future preview of SSMS 22. See [What's next for Copilot in SSMS](https://techcommunity.microsoft.com/blog/sqlserver/what%E2%80%99s-next-for-copilot-in-ssms/4451066). | For AI assistance, use Copilot in SSMS 21. |
 | Arm64 | SSMS 22 Preview isn't currently supported on Arm64. | Run SSMS on a device that isn't Arm64. |
 | Connection | There's no ability to import connections from a previous version. This issue will be resolved in a later preview. | There's no workaround. |
 | Designers | The JSON data type isn't available for columns when creating or editing a table in Table Designer. See [SSMS 21.0 Preview 2.0 - Table Designer missing the "json" datatype](https://feedback.azure.com/d365community/idea/d2e6f106-9fb8-ef11-95f5-6045bdbfaf80). | Use T-SQL to add columns with the JSON data type, this functionality is planned for a later release. |
