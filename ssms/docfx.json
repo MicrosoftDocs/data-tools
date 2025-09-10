@@ -57,15 +57,15 @@
       "titleSuffix": {
         "**/*.md": "SQL Server Management Studio (SSMS)",
         "agent/**/*.md": "SQL Server Agent",
-        "/visual-db-tools/**/*.md": "Visual Database Tools"
+        "visual-db-tools/**/*.md": "Visual Database Tools"
       },
 
       "ms.update-cycle": {
-        "ssms/agent/**/*.md": "1825-days",
-        "ssms/quickstarts/**/*.md": "1825-days",
-        "ssms/register-servers/**/*.md": "1825-days",
-        "ssms/tutorials/**/*.md": "1825-days",
-        "ssms/visual-db-tools/**/*.md": "1825-days"
+        "agent/**/*.md": "1825-days",
+        "quickstarts/**/*.md": "1825-days",
+        "register-servers/**/*.md": "1825-days",
+        "tutorials/**/*.md": "1825-days",
+        "visual-db-tools/**/*.md": "1825-days"
       },
       "sensitive-language-ma": {
       "exclude": [
