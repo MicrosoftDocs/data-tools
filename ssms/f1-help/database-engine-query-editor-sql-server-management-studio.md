@@ -44,7 +44,7 @@ dev_langs:
 
 # Query Editor (SQL Server Management Studio)
 
-[!INCLUDE [SQL Server ASDB, ASDBMI, ASDW](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 This article explains the query editor's features and functions in SQL Server Management Studio (SSMS).
 
@@ -148,7 +148,7 @@ You can also return results to text by selecting **Ctrl**+**D** or from the [con
 
 ### Results to file using the editor toolbar
 
-When the query executes, the **Save Results** dialog box opens. In **Save In**, select the folder in which you want to save the file. In **Filename**, type the name of the file, and then select **Save** to save the query results as a **Report** file that has the .rpt extension. For advanced options, select the down-arrow on the **Save** button, and then select **Save with Encoding**.
+When the query executes, the **Save Results** dialog box opens. In **Save In**, select the folder in which you want to save the file. In **Filename**, type the name of the file, and then select **Save** to save the query results as a **Report** file that has the `.rpt` extension. For advanced options, select the down-arrow on the **Save** button, and then select **Save with Encoding**.
 
 You can also return results to text by selecting **Ctrl**+**Shift**+**F** or from the [context menu](#results-using-the-context-menu).
 
@@ -254,7 +254,7 @@ You can select any of the *Result* options you want from the context menu.
 
 - **Results to Grid** - Returns the query results as one or more grids in the **Results** window.
 
-- **Results to File** - When the query executes, the **Save Results** dialog box opens. In **Save In**, select the folder in which you want to save the file. In **File name**, type the file's name, and then select **Save** to save the query results as a **Report** file with the .rpt extension. For advanced options, select the down-arrow on the **Save** button, and then select **Save with Encoding**.
+- **Results to File** - When the query executes, the **Save Results** dialog box opens. In **Save In**, select the folder in which you want to save the file. In **File name**, type the file's name, and then select **Save** to save the query results as a **Report** file with the `.rpt` extension. For advanced options, select the down-arrow on the **Save** button, and then select **Save with Encoding**.
 
 ### Properties window using the context menu
 

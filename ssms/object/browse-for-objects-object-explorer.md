@@ -14,7 +14,7 @@ f1_keywords:
 ---
 # Browse for Objects (Object Explorer)
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 Displays a list of objects of the selected type. Select one of more of the objects from this list by selecting the corresponding check box. The **Browse for Objects** box only displays items appropriate for the action, and only displays items that you have permission to view.
 

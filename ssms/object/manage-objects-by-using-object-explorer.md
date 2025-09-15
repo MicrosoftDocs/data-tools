@@ -19,7 +19,7 @@ helpviewer_keywords:
 
 # Manage objects using Object Explorer
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 You can use Object Explorer in SQL Server Management Studio (SSMS) to manage objects such as databases, tables, views, stored procedures, functions, and more.
 
@@ -69,6 +69,5 @@ You can start a PowerShell session by right-clicking most folders and objects in
 
 - [Object Explorer](object-explorer.md)
 - [Open and configure Object Explorer](open-and-configure-object-explorer.md)
-- [Connect to a SQL Server or Azure SQL Database](connect-to-an-instance-from-object-explorer.md)
 - [Object Explorer Details pane](object-explorer-details-pane.md)
 - [Custom reports in SQL Server Management Studio](custom-reports-in-management-studio.md)

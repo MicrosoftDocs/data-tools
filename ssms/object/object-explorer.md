@@ -27,7 +27,7 @@ helpviewer_keywords:
 
 # Object Explorer
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 [!INCLUDE [ssManStudioFull](../includes/ssmanstudiofull-md.md)] provides features for managing objects in instances of the [!INCLUDE [ssDE](../includes/ssde-md.md)], [!INCLUDE [ssASnoversion](../includes/ssasnoversion-md.md)], [!INCLUDE [ssISnoversion](../includes/ssisnoversion-md.md)], and [!INCLUDE [ssRSnoversion](../includes/ssrsnoversion-md.md)].
 
@@ -40,7 +40,7 @@ Object Explorer provides a hierarchical user interface to view and manage the ob
 | Description | Article |
 | --- | --- |
 | Describes how to open the Object Explorer and configure the options that define the behavior of the explorer. | [Open and configure Object Explorer](open-and-configure-object-explorer.md) |
-| Describes how to connect Object Explorer to an instance of the [!INCLUDE [ssDE](../includes/ssde-md.md)], [!INCLUDE [ssASnoversion](../includes/ssasnoversion-md.md)], [!INCLUDE [ssRSnoversion](../includes/ssrsnoversion-md.md)], and [!INCLUDE [ssISnoversion](../includes/ssisnoversion-md.md)]. | [Connect to a SQL Server or Azure SQL Database](connect-to-an-instance-from-object-explorer.md) |
+| Describes how to connect to a database. | [Connect with SQL Server Management Studio](../quickstarts/ssms-connect.md) |
 | Describes how to manage objects represented as nodes in the Object Explorer hierarchy. | [Manage objects using Object Explorer](manage-objects-by-using-object-explorer.md) |
-| Describes the Object Explorer Details Pane, a tabular view of all of the objects in the server with a user interface to manage them. | [Object Explorer Details Pane](object-explorer-details-pane.md) |
-| Describes ways to run custom reports in SQL Server Management Studio. | [Custom Reports in Management Studio](custom-reports-in-management-studio.md) |
+| Describes the Object Explorer Details Pane, a tabular view of all of the objects in the server with a user interface to manage them. | [Object Explorer Details pane](object-explorer-details-pane.md) |
+| Describes ways to run custom reports in SQL Server Management Studio. | [Custom reports in SQL Server Management Studio](custom-reports-in-management-studio.md) |

@@ -12,7 +12,7 @@ ms.collection:
 ---
 # Install SQL Server Management Studio
 
-[!INCLUDE [sql-asdb-asdbmi-asa-fabricsqldb](../includes/applies-to-version/sql-asdb-asdbmi-asa-fabricsqldb.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 This article describes how to install SQL Server Management Studio (SSMS).
 

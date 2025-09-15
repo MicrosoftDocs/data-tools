@@ -4,7 +4,7 @@ description: Learn how to use the connect to the server (Connection Properties p
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 07/12/2024
+ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -16,7 +16,7 @@ f1_keywords:
 
 # Connect to server (Connection Properties page) - Database Engine
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 Use this tab to view or specify options when you connect to an instance of [!INCLUDE [msCoName](../includes/msconame-md.md)] [!INCLUDE [ssDEnoversion](../includes/ssdenoversion-md.md)] or when you register a [!INCLUDE [ssDE](../includes/ssde-md.md)] in **Registered Servers**. **Connect** and **Options>>** only appear in this dialog box when you connect to an instance of the [!INCLUDE [ssDE](../includes/ssde-md.md)]. **Test** and **Save** only appear in this dialog box when registering [!INCLUDE [ssDE](../includes/ssde-md.md)]. Access this tab by selecting **Options>>** on the **Login** tab.
 
@@ -92,6 +92,8 @@ Saves the settings in **Registered Servers**.
 
 - [Quickstart: Connect and query a SQL Server instance using SQL Server Management Studio (SSMS)](../quickstarts/ssms-connect-query-sql-server.md)
 - [Quickstart: Connect and query a SQL Server instance on an Azure Virtual Machine using SQL Server Management Studio (SSMS)](../quickstarts/ssms-connect-query-sql-server-azure-vm.md)
-- [Quickstart: Connect and query an Azure SQL Database or an Azure SQL Managed Instance using SQL Server Management Studio (SSMS)](../quickstarts/ssms-connect-query-azure-sql.md)
+- [Quickstart: Connect and query an Azure SQL Database using SQL Server Management Studio (SSMS)](../quickstarts/ssms-connect-query-azure-sql-database.md)
+- [Quickstart: Connect and query an Azure SQL Managed Instance using SQL Server Management Studio (SSMS)](../quickstarts/ssms-connect-query-azure-sql-managed-instance.md)
+- [Quickstart: Connect and query a SQL database in Fabric using SQL Server Management Studio (SSMS)](../quickstarts/ssms-connect-query-sql-database-fabric.md)
 - [Quickstart: Connect and query a dedicated SQL pool (formerly SQL DW) in Azure Synapse Analytics with SQL Server Management Studio (SSMS)](../quickstarts/ssms-connect-query-azure-synapse-analytics.md)
 - [Quickstart: Use the Azure portal query editor to query Azure SQL Database](/azure/azure-sql/database/connect-query-portal)

@@ -64,6 +64,26 @@
       "source_path": "ssms/install-extensions-in-sql-server-management-studio-ssms.md",
       "redirect_url": "/ssms/install/install",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/quickstarts/ssms-connect-query-azure-sql.md",
+      "redirect_url": "/ssms/quickstarts/ssms-connect-query-azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/object/connect-to-an-instance-from-object-explorer.md",
+      "redirect_url": "/ssms/quickstarts/ssms-connect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/menu-help/options-environment-help-general-page.md",
+      "redirect_url": "/ssms/menu-help/options-environment-general-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/menu-help/options-environment-help-online-page.md",
+      "redirect_url": "/ssms/menu-help/options-environment-general-page",
+      "redirect_document_id": false
     }
   ]
 }

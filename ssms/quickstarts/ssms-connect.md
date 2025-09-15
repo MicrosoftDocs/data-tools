@@ -4,7 +4,7 @@ description: Explains the connection parameters to connect to an instance of SQL
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 04/16/2025
+ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -17,6 +17,9 @@ This article describes how to connect to the [!INCLUDE [ssdenoversion-md](../inc
 - [!INCLUDE [ssnoversion-md](../includes/ssnoversion-md.md)]
 - [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)]
 - [!INCLUDE [ssazuremi-md](../includes/ssazuremi-md.md)]
+- [!INCLUDE [fabric-sqldb](../includes/fabric-sqldb.md)]
+- [!INCLUDE [fabric-dw](../includes/fabric-dw.md)]
+- [!INCLUDE [fabric-se](../includes/fabric-se.md)]
 - [!INCLUDE [ssazuresynapse-md](../includes/ssazuresynapse-md.md)]
 
 ## Encryption changes
@@ -33,13 +36,13 @@ In addition, the **Encryption** and **Trust server certificate** properties have
 
 To encrypt connections, the [!INCLUDE [ssdenoversion-md](../includes/ssdenoversion-md.md)] must be configured with a TLS certificate signed by a trusted root certificate authority.
 
-For users connecting to Azure SQL Database and Azure SQL Managed Instance, existing connections in the most recently used (MRU) list should be updated to use *Strict (SQL Server 2022 and Azure SQL)* encryption.  Any new connection to Azure SQL Database and Azure SQL Managed Instance should use *Strict (SQL Server 2022 and Azure SQL)* encryption. Azure SQL Database and Azure SQL Managed Instance support encrypted connections and are configured with trusted certificates.
+For users connecting to Azure SQL Database and Azure SQL Managed Instance, existing connections in the most recently used (MRU) list should be updated to use *Strict (SQL Server 2022 and Azure SQL)* encryption. Any new connection to Azure SQL Database and Azure SQL Managed Instance should use *Strict (SQL Server 2022 and Azure SQL)* encryption. Azure SQL Database and Azure SQL Managed Instance support encrypted connections and are configured with trusted certificates.
 
 With *Strict (SQL Server 2022 and Azure SQL)* encryption selected, the **Trust server certificate** option is unavailable.
 
 With *Mandatory* encryption selected, and **Trust server certificate** enabled (checked), the **Host name in certificate** option is unavailable.
 
-For users connecting to an on-premises SQL Server or SQL Server in a Virtual Machine, the [!INCLUDE [ssde-md](../includes/ssde-md.md)] must be configured to support encrypted connections. For complete instructions, see [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption).
+For users connecting to an on-premises SQL Server or SQL Server in a Virtual Machine, the [!INCLUDE [ssde-md](../includes/ssde-md.md)] must be configured to support encrypted connections. For complete instructions, see [Encrypt connections to SQL Server by importing a certificate](/sql/database-engine/configure-windows/configure-sql-server-encryption).
 
 If the [!INCLUDE [ssde-md](../includes/ssde-md.md)] has either **Force Encryption** or **Force Strict Encryption** enabled, ensure that you have a certificate from a trusted certificate authority. For more information, see [Certificate requirements for SQL Server](/sql/database-engine/configure-windows/certificate-requirements). If you don't have a certificate from a trusted certificate authority and you try to connect, you see the error:
 
@@ -47,14 +50,16 @@ If the [!INCLUDE [ssde-md](../includes/ssde-md.md)] has either **Force Encryptio
 
 The text from the screenshot shows an error similar to the following example:
 
-> **Cannot connect to MyServer**
->  
-> A connection was successfully established with the server, but then an error occurred during the login process.
-> (provider: SSL Provider, error: 0 - > The certificate chain was issued by an authority that is not trusted.)
-> (Microsoft SQL Server, Error: -2146893019)
-> For help, click: `https://docs.microsoft.com/sql/relational-databases/errors-events/mssqlserver--2146893019-database-engine-error`
->  
-> The certificate chain was issued by an authority that is not trusted
+```output
+Cannot connect to MyServer
+
+A connection was successfully established with the server, but then an error occurred during the login process.
+(provider: SSL Provider, error: 0 - > The certificate chain was issued by an authority that is not trusted.)
+(Microsoft SQL Server, Error: -2146893019)
+For help, click: https://docs.microsoft.com/sql/relational-databases/errors-events/mssqlserver--2146893019-database-engine-error
+
+The certificate chain was issued by an authority that is not trusted
+```
 
 For more information, see ["The certificate received from the remote server was issued by an untrusted certificate authority" error when you connect to SQL Server](/troubleshoot/sql/database-engine/connect/error-message-when-you-connect).
 
@@ -99,7 +104,7 @@ For workstations that imported settings from SSMS 18 or SSMS 19:
 1. If you select yes, **Trust Server Certificate** is enabled for the connection. You can also enable **Trust Server Certificate** for all connections imported from older versions of SSMS.
 1. If you select no, **Trust Server Certificate** isn't enabled, and you aren't able to connect. Review the configuration to verify that a valid server certificate is installed.
 
-For more information, see [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption).
+For more information, see [Encrypt connections to SQL Server by importing a certificate](/sql/database-engine/configure-windows/configure-sql-server-encryption).
 
 ## Remarks
 
@@ -109,5 +114,7 @@ These changes are the result of updates at the driver level in Microsoft.Data.Sq
 
 - [Quickstart: Connect and query a SQL Server instance using SQL Server Management Studio (SSMS)](ssms-connect-query-sql-server.md)
 - [Quickstart: Connect and query a SQL Server instance on an Azure Virtual Machine using SQL Server Management Studio (SSMS)](ssms-connect-query-sql-server-azure-vm.md)
-- [Quickstart: Connect and query an Azure SQL Database or an Azure SQL Managed Instance using SQL Server Management Studio (SSMS)](ssms-connect-query-azure-sql.md)
+- [Quickstart: Connect and query an Azure SQL Database using SQL Server Management Studio (SSMS)](ssms-connect-query-azure-sql-database.md)
+- [Quickstart: Connect and query an Azure SQL Managed Instance using SQL Server Management Studio (SSMS)](ssms-connect-query-azure-sql-managed-instance.md)
+- [Quickstart: Connect and query a SQL database in Fabric using SQL Server Management Studio (SSMS)](ssms-connect-query-sql-database-fabric.md)
 - [Quickstart: Connect and query a dedicated SQL pool (formerly SQL DW) in Azure Synapse Analytics with SQL Server Management Studio (SSMS)](ssms-connect-query-azure-synapse-analytics.md)

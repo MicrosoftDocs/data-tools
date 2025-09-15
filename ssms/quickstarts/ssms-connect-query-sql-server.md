@@ -205,7 +205,7 @@ You can also modify the way results are presented by selecting one of the follow
 
 - The first button displays the results in **Text View**, as shown in the image in the next section.
 - The middle button displays the results in **Grid View**, which is the default option.
-- The third button lets you save the results to a file whose extension is .rpt by default.
+- The third button lets you save the results to a file whose extension is `.rpt` by default.
 
 ## Troubleshoot connectivity issues
 

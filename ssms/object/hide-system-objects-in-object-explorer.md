@@ -16,7 +16,7 @@ helpviewer_keywords:
 ---
 # Hide system objects in Object Explorer
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 This article describes how to hide system objects in Object Explorer in [!INCLUDE [ssnoversion](../includes/ssnoversion-md.md)] by using [!INCLUDE [ssManStudioFull](../includes/ssmanstudiofull-md.md)]. The **Databases** node of Object Explorer contains system objects such as the system databases. Use the **Tools**/**Options** pages to hide the system objects. Some system objects, such as system functions and system data types, aren't affected by this setting.
 
