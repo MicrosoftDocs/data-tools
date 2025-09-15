@@ -3,8 +3,7 @@ title: Connect to Any SQL Server Component
 description: Connect to Any SQL Server Component from SQL Server Management Studio.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
-ms.date: 11/16/2023
+ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -17,7 +16,7 @@ helpviewer_keywords:
 ---
 # Connect to any SQL Server component from SQL Server Management Studio
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server](../includes/applies-to-version/sqlserver.md)]
 
 SQL Server Management Studio provides functionality for managing every component of [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)]. Use Management Studio to connect to:
 

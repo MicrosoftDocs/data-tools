@@ -13,7 +13,7 @@ helpviewer_keywords:
 ---
 # Use custom reports with Object Explorer node properties
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 Custom reports can execute in the context of a selected Object Explorer node if the custom reports reference the report parameters of that node. This context enables a custom report to use the current context, for example the current database, or a database or server object.
 

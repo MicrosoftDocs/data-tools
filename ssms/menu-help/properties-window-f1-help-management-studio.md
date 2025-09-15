@@ -3,7 +3,7 @@ title: "Properties Window F1 Help (Management Studio)"
 description: "Properties Window F1 Help (Management Studio)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 01/19/2017
+ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -25,29 +25,34 @@ helpviewer_keywords:
 
 # Properties Window F1 Help (Management Studio)
 
-[!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
-Use the **Properties** window to view properties of selected elements. You can also use the **Properties** window to view file, project, and solution properties. The **Properties** window is available by clicking **Properties Window** on the **View** menu.  
-  
-The **Properties** window displays different types of editing fields, depending on the needs of a particular property. Properties shown in gray are read-only.  
-  
+Use the **Properties** window to view properties of selected elements. You can also use the **Properties** window to view file, project, and solution properties. The **Properties** window is available by selecting **Properties Window** on the **View** menu.
+
+The **Properties** window displays different types of editing fields, depending on the needs of a particular property. Properties shown in gray are read-only.
+
 ## Options
 
-**Object name**  
-Lists the currently selected object or objects. Only objects from the active editor or designer are visible.  
-  
-**Categorized**  
-Lists all properties and property values for the selected object, by category. You can collapse a category to reduce the number of visible properties. When you expand or collapse a category, you see a plus (**+**) or minus (**-**) to the left of the category name. Categories are listed alphabetically.  
-  
-**Alphabetic**  
-Alphabetically sorts all design-time properties and events for selected objects.  
-  
-**Properties**  
-Displays the properties for an object.  
-  
-**Description pane**  
-The description pane appears at the bottom of the **Properties** window and shows the property type and a short description of the property. You can turn the description of the property off and on using the **Description** command on the shortcut menu.  
-  
-## See Also
+#### Object name
 
-- [Properties Window in SQL Server Management Studio](../scripting/use-the-properties-window-in-management-studio.md)
+Lists the currently selected object or objects. Only objects from the active editor or designer are visible.
+
+#### Categorized
+
+Lists all properties and property values for the selected object, by category. You can collapse a category to reduce the number of visible properties. When you expand or collapse a category, you see a plus (**+**) or minus (**-**) to the left of the category name. Categories are listed alphabetically.
+
+#### Alphabetic
+
+Alphabetically sorts all design-time properties and events for selected objects.
+
+#### Properties
+
+Displays the properties for an object.
+
+#### Description pane
+
+The description pane appears at the bottom of the **Properties** window and shows the property type and a short description of the property. You can turn the description of the property off and on using the **Description** command on the shortcut menu.
+
+## Related content
+
+- [Use the Properties Window in Management Studio](../scripting/use-the-properties-window-in-management-studio.md)

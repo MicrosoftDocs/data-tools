@@ -11,7 +11,7 @@ ms.collection:
 ---
 # Open and configure Object Explorer
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 Open Object Explorer by using the **View** menu in [!INCLUDE [ssManStudioFull](../includes/ssmanstudiofull-md.md)]. Configure Object Explorer options by using **Options** on the **Tools** menu.
 
@@ -26,7 +26,7 @@ To configure the Object Explorer settings, on the **Tools** menu, select **Optio
 ## Related content
 
 - [Object Explorer](object-explorer.md)
-- [Connect to a SQL Server or Azure SQL Database](connect-to-an-instance-from-object-explorer.md)
+- [Connect with SQL Server Management Studio](../quickstarts/ssms-connect.md)
 - [Manage objects using Object Explorer](manage-objects-by-using-object-explorer.md)
-- [Object Explorer Details Pane](object-explorer-details-pane.md)
-- [Custom Reports in Management Studio](custom-reports-in-management-studio.md)
+- [Object Explorer Details pane](object-explorer-details-pane.md)
+- [Custom reports in SQL Server Management Studio](custom-reports-in-management-studio.md)

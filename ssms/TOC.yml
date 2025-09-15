@@ -106,7 +106,11 @@ items:
       - name: Connect and query SQL Server on Azure VM
         href: quickstarts/ssms-connect-query-sql-server-azure-vm.md
       - name: Connect and query Azure SQL Database
-        href: quickstarts/ssms-connect-query-azure-sql.md
+        href: quickstarts/ssms-connect-query-azure-sql-database.md
+      - name: Connect and query Azure SQL Managed Instance
+        href: quickstarts/ssms-connect-query-azure-sql-managed-instance.md
+      - name: Connect and query SQL database in Microsoft Fabric
+        href: quickstarts/ssms-connect-query-sql-database-fabric.md
       - name: Connect and query a dedicated SQL pool in Azure Synapse Analytics
         href: quickstarts/ssms-connect-query-azure-synapse-analytics.md
       - name: Connection pooling in SSMS
@@ -158,8 +162,6 @@ items:
         items:
           - name: Open and Configure Object Explorer
             href: object/open-and-configure-object-explorer.md
-          - name: Connect to an Instance From Object Explorer
-            href: object/connect-to-an-instance-from-object-explorer.md
           - name: Manage Objects by Using Object Explorer
             href: object/manage-objects-by-using-object-explorer.md
           - name: Object Explorer Details Pane
@@ -1133,8 +1135,6 @@ items:
             href: menu-help/sql-server-management-studio-menu-help.md
           - name: Properties Window F1 Help (Management Studio)
             href: menu-help/properties-window-f1-help-management-studio.md
-          - name: Options (Environment - Help - General Page)
-            href: menu-help/options-environment-help-general-page.md
           - name: Options (Environment - General Page)
             href: menu-help/options-environment-general-page.md
           - name: Options (Environment - Fonts and Colors Page)
@@ -1177,8 +1177,6 @@ items:
             href: menu-help/customize-toolbars-page.md
           - name: Options (Designers - Maintenance Plans Page)
             href: menu-help/options-designers-maintenance-plans-page.md
-          - name: Options (Environment - Help - Online Page)
-            href: menu-help/options-environment-help-online-page.md
           - name: Object Explorer
             href: object/object-explorer.md
           - name: Add Steps to a SQL Server Agent Master Job

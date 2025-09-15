@@ -15,7 +15,7 @@ helpviewer_keywords:
 
 # Administer servers with SQL Server Management Studio
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 [!INCLUDE [ssmanstudiofull-md](includes/ssmanstudiofull-md.md)] (SSMS) is a rich, integrated administrative client designed to meet the [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] and Azure SQL Database administrator's server management requirements. In SSMS, administrative tasks are accomplished using Object Explorer, which allows you to connect to any server in the [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] family and graphically browse its contents. A server can be an instance of the [!INCLUDE [ssDE](includes/ssde-md.md)], [!INCLUDE [ssASnoversion](includes/ssasnoversion-md.md)] (SSAS), [!INCLUDE [ssRSnoversion](includes/ssrsnoversion-md.md)] (SSRS), [!INCLUDE [ssISnoversion](includes/ssisnoversion-md.md)] (SSIS), [!INCLUDE [ssazuremi-md](includes/ssazuremi-md.md)], or [!INCLUDE [ssazure-sqldb](includes/ssazure-sqldb.md)].
 
@@ -25,7 +25,7 @@ The tool components of SSMS include Registered Servers, Object Explorer, Solutio
 
 ## Encrypt your connection
 
-In [!INCLUDE [sssql19-md](includes/sssql19-md.md)] and earlier versions, network traffic between SSMS and [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] is unencrypted by default. Don't work with sensitive data (including passwords) in SSMS unless you establish an encrypted connection. For more information, see [Configure SQL Server Database Engine for encrypting connections](/sql/database-engine/configure-windows/configure-sql-server-encryption).
+In [!INCLUDE [sssql19-md](includes/sssql19-md.md)] and earlier versions, network traffic between SSMS and [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] is unencrypted by default. Don't work with sensitive data (including passwords) in SSMS unless you establish an encrypted connection. For more information, see [Encrypt connections to SQL Server by importing a certificate](/sql/database-engine/configure-windows/configure-sql-server-encryption).
 
 For more information about encryption in [!INCLUDE [ssmanstudiofull-md](includes/ssmanstudiofull-md.md)], see:
 

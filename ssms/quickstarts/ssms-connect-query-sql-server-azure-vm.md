@@ -195,26 +195,24 @@ GO
 
 ## Query the table and view the results
 
-The results of a query are visible beneath the query text window. To query the `Customers` table and view the rows that were inserted, follow these steps:
+The results of a query are visible beneath the query text window. To query the `Customers` table and view the rows that were inserted, paste the following T-SQL code snippet into the query window, and then select **Execute**:
 
-1. Paste the following T-SQL code snippet into the query window, and then select **Execute**:
+```sql
+-- Select rows from table 'Customers'
+SELECT * FROM dbo.Customers;
+```
 
-   ```sql
-   -- Select rows from table 'Customers'
-   SELECT * FROM dbo.Customers;
-   ```
+The query results are displayed under the area where the text was entered.
 
-   The query results are displayed under the area where the text was entered.
+:::image type="content" source="media/ssms-connect-query-sql-server-azure-vm/query-results.png" alt-text="Screenshot of the results list.":::
 
-   :::image type="content" source="media/ssms-connect-query-sql-server-azure-vm/query-results.png" alt-text="Screenshot of the results list.":::
+You can also modify the way results are presented by selecting one of the following options:
 
-   You can also modify the way results are presented by selecting one of the following options:
+:::image type="content" source="media/ssms-connect-query-sql-server-azure-vm/results.png" alt-text="Screenshot of three options for displaying query results.":::
 
-   :::image type="content" source="media/ssms-connect-query-sql-server-azure-vm/results.png" alt-text="Screenshot of three options for displaying query results.":::
-
-   - The first button displays the results in **Text View**, as shown in the image in the next section.
-   - The middle button displays the results in **Grid View**, which is the default option.
-   - The third button lets you save the results to a file whose extension is .rpt by default.
+- The first button displays the results in **Text View**, as shown in the image in the next section.
+- The middle button displays the results in **Grid View**, which is the default option.
+- The third button lets you save the results to a file whose extension is `.rpt` by default.
 
 ## Verify your connection properties by using the query window table
 
