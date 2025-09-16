@@ -3,8 +3,8 @@ title: Connect and Query a Dedicated SQL Pool in Azure Synapse Analytics
 description: Connect to and query a dedicated SQL pool in Azure Synapse Analytics using SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: mikeray, randolphwest
-ms.date: 02/29/2024
+ms.reviewer: mikeray
+ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: quickstart
 ms.collection:
@@ -64,9 +64,6 @@ To complete this article, you need SQL Server Management Studio (SSMS) and acces
 
    If your firewall isn't set up, a prompt appears to configure the firewall. Once you sign in, fill in your Azure account sign in information and continue to set the firewall rule. Then select **OK**. This prompt is a one time action. Once you configure the firewall, the firewall prompt shouldn't appear.
 
-   :::image type="content" source="media/ssms-connect-query-azure-sql/azure-sql-firewall-sign-in-3.png" alt-text="Screenshot of Azure SQL New Firewall Rule." lightbox="media/ssms-connect-query-azure-sql/azure-sql-firewall-sign-in-3.png":::
-   :::image type="content" source="media/ssms-connect-query-azure-sql/azure-sql-firewall-sign-in-3.png" alt-text="Screenshot of Azure SQL New Firewall Rule." lightbox="media/ssms-connect-query-azure-sql/azure-sql-firewall-sign-in-3.png":::
-
 1. To verify that your dedicated SQL pool (formerly SQL DW) connection succeeded, expand and explore the objects within **Object Explorer** where the server name, the SQL Server version, and the username are displayed. These objects are different depending on the server type.
 
    :::image type="content" source="media/ssms-connect-query-azure-synapse-analytics/connect-azure-synapse-analytics.png" alt-text="Screenshot of Connecting to an Azure Synapse Analytics database.":::
@@ -74,7 +71,7 @@ To complete this article, you need SQL Server Management Studio (SSMS) and acces
 
 ## Troubleshoot connectivity issues
 
-You can experience connection problems with dedicated SQL pool (formerly SQL DW). For more information on troubleshooting connection problems, visit [Troubleshooting connectivity issues](/azure/azure-sql/database/troubleshoot-common-errors-issues).
+You can experience connection problems with dedicated SQL pool (formerly SQL DW). For more information on troubleshooting connection problems, visit [Troubleshoot connectivity issues and other errors](/azure/azure-sql/database/troubleshoot-common-errors-issues).
 
 ## Create a table
 
@@ -88,15 +85,16 @@ In this section, you create a table in your dedicated SQL pool (formerly SQL DW)
    -- Create a new table called 'Customers' in schema 'dbo'
    -- Drop the table if it already exists
    IF OBJECT_ID('dbo.Customers', 'U') IS NOT NULL
-       DROP TABLE dbo.Customers
+       DROP TABLE dbo.Customers;
    GO
 
    -- Create the table in the specified schema
-   CREATE TABLE dbo.Customers (
+   CREATE TABLE dbo.Customers
+   (
        CustomerId INT NOT NULL,
-       Name NVARCHAR(50) NOT NULL,
-       Location NVARCHAR(50) NOT NULL,
-       Email NVARCHAR(50) NOT NULL
+       Name NVARCHAR (50) NOT NULL,
+       Location NVARCHAR (50) NOT NULL,
+       Email NVARCHAR (50) NOT NULL
    );
    GO
    ```
@@ -113,8 +111,8 @@ Now let's insert some rows into the Customers table that you created. Paste the 
 
 ```sql
 -- Insert rows into table 'Customers'
-INSERT INTO dbo.Customers VALUES ( 1, N'Orlando', N'Australia', N'');
-INSERT INTO dbo.Customers VALUES ( 2, N'Keith', N'India', N'keith0@adventure-works.com');
+INSERT INTO dbo.Customers VALUES (1, N'Orlando', N'Australia', N'');
+INSERT INTO dbo.Customers VALUES (2, N'Keith', N'India', N'keith0@adventure-works.com');
 INSERT INTO dbo.Customers VALUES (3, N'Donna', N'Germany', N'donna0@adventure-works.com');
 INSERT INTO dbo.Customers VALUES (4, N'Janet', N'United States', N'janet1@adventure-works.com');
 ```
@@ -149,13 +147,9 @@ You can find information about the connection properties under the results of yo
 
   :::image type="content" source="media/ssms-connect-query-azure-synapse-analytics/connection-properties.png" alt-text="Screenshot of the connection properties." lightbox="media/ssms-connect-query-azure-synapse-analytics/connection-properties.png":::
 
-## Additional tools
-
-You can also use [Azure Data Studio](/azure-data-studio/download-azure-data-studio) to connect and query [SQL Server](/azure-data-studio/quickstart-sql-server), an [Azure SQL Database](/azure-data-studio/quickstart-sql-database), and [Azure Synapse Analytics](/azure-data-studio/quickstart-sql-dw).
-
 ## Related content
 
-- [SQL Server Management Studio (SSMS) Query Editor](../f1-help/database-engine-query-editor-sql-server-management-studio.md)
+- [Query Editor (SQL Server Management Studio)](../f1-help/database-engine-query-editor-sql-server-management-studio.md)
 - [Script objects in SQL Server Management Studio](../tutorials/scripting-ssms.md)
 - [Use templates in SQL Server Management Studio](../template/templates-ssms.md)
 - [SQL Server Management Studio components and configuration](../tutorials/ssms-configuration.md)

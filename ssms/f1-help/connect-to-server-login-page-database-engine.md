@@ -4,7 +4,7 @@ description: This article shows how to use the Connect to Server (Login page) Da
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 04/18/2024
+ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -17,7 +17,7 @@ f1_keywords:
 
 # Connect to Server (Login page) - Database Engine
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 Use this tab to configure the connection properties when you connect to [!INCLUDE [msCoName](../includes/msconame-md.md)] [!INCLUDE [ssDEnoversion](../includes/ssdenoversion-md.md)]. In most cases, you can connect by entering the computer name of the database server in the **Server name** box and then selecting **Connect**. If you're connecting to a named instance, use the computer name followed by a backslash and then the instance name. For example, `mycomputer\myinstance`. See [Connect to the Database Engine](/sql/sql-server/connect-to-database-engine) for more examples.
 
@@ -65,11 +65,11 @@ The current version of SQL Server Management Studio (SSMS) offers eight authenti
 
 - **Microsoft Entra MFA**: This interactive workflow supports Microsoft Entra multifactor authentication (MFA). MFA helps safeguard access to data and applications while meeting user demand for a simple sign-in process. It delivers strong authentication with various easy verification options like phone calls, text messages, smart cards with pins, and mobile app notifications. When the user account is configured for MFA, the interactive authentication workflow requires more user interaction through pop-up dialog boxes and smart card use. If the user account doesn't require MFA, you can still use the other Microsoft Entra authentication options. For more information, see [Using Microsoft Entra multifactor authentication](/azure/azure-sql/database/authentication-mfa-ssms-overview).
 
-- **Microsoft Entra Password**: This method for connecting to [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)] uses identities and their passwords in Microsoft Entra ID. It's useful when your Windows login credentials aren't in an Azure federated domain, or the initial or client domain is using Microsoft Entra authentication. For more information, see [Use Microsoft Entra authentication](/azure/azure-sql/database/authentication-aad-overview).
+- **Microsoft Entra Password**: This method for connecting to [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)] uses identities and their passwords in Microsoft Entra ID. It's useful when your Windows login credentials aren't in an Azure federated domain, or the initial or client domain is using Microsoft Entra authentication. For more information, see [Microsoft Entra authentication for Azure SQL](/azure/azure-sql/database/authentication-aad-overview).
 
-- **Microsoft Entra Integrated**: This mechanism for connecting to [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)] uses Windows identities federated with Microsoft Entra ID. Use this method for connecting to [!INCLUDE [ssSDS](../includes/sssds-md.md)] if you're logged in to Windows and using your credentials from a federated domain, or a managed domain configured for seamless single sign-on for pass-through and password hash authentication. For more information, see [Use Microsoft Entra authentication](/azure/azure-sql/database/authentication-aad-overview) and [Microsoft Entra seamless single sign-on](/entra/identity/hybrid/connect/how-to-connect-sso).
+- **Microsoft Entra Integrated**: This mechanism for connecting to [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)] uses Windows identities federated with Microsoft Entra ID. Use this method for connecting to [!INCLUDE [ssSDS](../includes/sssds-md.md)] if you're logged in to Windows and using your credentials from a federated domain, or a managed domain configured for seamless single sign-on for pass-through and password hash authentication. For more information, see [Microsoft Entra authentication for Azure SQL](/azure/azure-sql/database/authentication-aad-overview) and [Microsoft Entra seamless single sign-on](/entra/identity/hybrid/connect/how-to-connect-sso).
 
-- **Microsoft Entra Service Principal**: A service principal is a Microsoft Entra identity that you can create for use with automated tools, jobs, and applications. With Service Principal authentication, you can connect to your SQL instance by using the client ID and secret of a service principal identity. In SSMS, enter the client ID in the **User name** field and the secret in the **Password** field. For more information, see [Microsoft Entra server principals](/azure/azure-sql/database/authentication-azure-ad-logins) and [Microsoft Entra service principal with Azure SQL](/azure/azure-sql/database/authentication-aad-service-principal).
+- **Microsoft Entra Service Principal**: A service principal is a Microsoft Entra identity that you can create for use with automated tools, jobs, and applications. With Service Principal authentication, you can connect to your SQL instance by using the client ID and secret of a service principal identity. In SSMS, enter the client ID in the **User name** field and the secret in the **Password** field. For more information, see [Microsoft Entra server principals](/azure/azure-sql/database/authentication-azure-ad-logins) and [Microsoft Entra service principals with Azure SQL](/azure/azure-sql/database/authentication-aad-service-principal).
 
 - **Microsoft Entra Managed Identity**: Managed identities are special forms of service principals. There are two types of managed identities: system-assigned and user-assigned. System-assigned managed identities are enabled directly on an Azure resource. User-assigned managed identities are a standalone resource you can assign to one or more Azure resources.
 
@@ -105,7 +105,7 @@ Select the level of encryption for the connection. The options for [!INCLUDE [ss
 
 [!INCLUDE [ssms-encryption](../includes/ssms-encryption.md)]
 
-*Mandatory* encryption can be used for [!INCLUDE [ssnoversion-md](../includes/ssnoversion-md.md)] when the instance has **Force Encryption** enabled. It can also be used when no encryption is configured for the instance, if **Trust server certificate** is enabled.  While this method is less secure than installing a trusted certificate, it does support an encrypted connection.
+*Mandatory* encryption can be used for [!INCLUDE [ssnoversion-md](../includes/ssnoversion-md.md)] when the instance has **Force Encryption** enabled. It can also be used when no encryption is configured for the instance, if **Trust server certificate** is enabled. While this method is less secure than installing a trusted certificate, it does support an encrypted connection.
 
 The **Encryption** property appears on the Login page for SSMS 20.x and later versions.
 

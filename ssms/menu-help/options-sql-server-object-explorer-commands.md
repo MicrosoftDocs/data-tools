@@ -4,7 +4,7 @@ description: Description of options within the SQL Server Object Explorer - Comm
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 02/29/2024
+ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -12,6 +12,8 @@ ms.collection:
 ---
 
 # Options (SQL Server Object Explorer - Commands)
+
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 Use this page to specify options related to commands available from Object Explorer. To access this dialog box, go to **Tools > Options > SQL Server Object Explorer > Commands** from the top menu bar.
 
@@ -59,8 +61,8 @@ Use this page to specify options related to commands available from Object Explo
 
 | Option | Information | Description |
 | --- | --- | --- |
-| Value for Edit Top \<n> Rows command | 200 | Specifies the number of returned rows using the TOP clause for the Edit command. Specifying a value of zero (0) returns all rows (not recommended). |
-| Value for Select Top \<n> Rows command | 1000 | Specifies the number of returned rows using the TOP clause for the Select command. Specifying a value of zero (0) returns all rows (not recommended). |
+| Value for Edit Top \<n> Rows command | 200 | Specifies the number of returned rows using the `TOP` clause for the Edit command. Specifying a value of zero (0) returns all rows (not recommended). |
+| Value for Select Top \<n> Rows command | 1000 | Specifies the number of returned rows using the `TOP` clause for the Select command. Specifying a value of zero (0) returns all rows (not recommended). |
 
 ## Task dialogs
 

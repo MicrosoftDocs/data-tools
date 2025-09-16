@@ -4,7 +4,7 @@ description: Connect to Server (Additional Connection Parameters page) Database 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: maghan, randolphwest
-ms.date: 11/16/2023
+ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -15,7 +15,7 @@ f1_keywords:
 
 # Connect to Server (Additional Connection Parameters page) - Database Engine
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 Use this tab to enter advanced parameters when connecting to an instance of [!INCLUDE [msCoName](../includes/msconame-md.md)] [!INCLUDE [ssDEnoversion](../includes/ssdenoversion-md.md)] or registering [!INCLUDE [ssDE](../includes/ssde-md.md)] in **Registered Servers**. **Connect** and **Options** only appear in this dialog box when connecting to an instance of the [!INCLUDE [ssDE](../includes/ssde-md.md)]. **Test** and **Save** only appear in this dialog box when registering [!INCLUDE [ssDE](../includes/ssde-md.md)]. Access this tab by selecting **Options >>** on the login tab.
 
@@ -42,4 +42,4 @@ For a complete list of parameters, see [Properties](/../../dotnet/api/microsoft.
 ## Related content
 
 - [Connect to Server (Login page) - Database Engine](connect-to-server-login-page-database-engine.md)
-- [Connect to Server (Connection Properties page) - Database Engine](connect-to-server-connection-properties-page-database-engine.md)
+- [Connect to server (Connection Properties page) - Database Engine](connect-to-server-connection-properties-page-database-engine.md)

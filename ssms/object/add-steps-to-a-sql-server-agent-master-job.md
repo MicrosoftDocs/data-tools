@@ -11,7 +11,7 @@ ms.collection:
 ---
 # Add steps to a SQL Server Agent master job
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Managed Instance](../includes/applies-to-version/sql-asdbmi.md)]
 
 This article describes how to add steps to a SQL Server Agent master job in [!INCLUDE [ssnoversion](../includes/ssnoversion-md.md)] with [!INCLUDE [ssManStudioFull](../includes/ssmanstudiofull-md.md)] or [!INCLUDE [tsql](../includes/tsql-md.md)].
 

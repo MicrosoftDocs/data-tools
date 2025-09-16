@@ -35,11 +35,25 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.0.0-pre.1.1"></a>
+
+### 22.0 Preview 1.1
+
+**[Download SQL Server Management Studio (SSMS) 22 Preview](https://aka.ms/ssms/22/preview/vs_SSMS.exe)**
+
+- Release number: 22.0 Preview 1.1
+- Release date: September 16, 2025
+
+#### What's new in 22.0 Preview 1.1
+
+| Feature | Details | 
+| --- | --- |
+| Connection dialog | Added Fabric browsing to the Browse tab. |
+| Visual Studio | Updated to Visual Studio 2026 Preview 1.2. |
+
 <a id="22.0.0-pre.1.0"></a>
 
 ### 22.0 Preview 1
-
-**[Download SQL Server Management Studio (SSMS) 22 Preview](https://aka.ms/ssms/22/preview/vs_SSMS.exe)**
 
 - Release number: 22.0 Preview 1
 - Release date: September 9, 2025

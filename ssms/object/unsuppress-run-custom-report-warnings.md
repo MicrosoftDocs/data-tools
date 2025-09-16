@@ -13,7 +13,7 @@ helpviewer_keywords:
 ---
 # Unsuppress run custom report warnings
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 There are two warning dialog boxes for custom reports. This article describes how to unsuppress the display of these boxes in [!INCLUDE [ssnoversion](../includes/ssnoversion-md.md)] by using [!INCLUDE [ssManStudioFull](../includes/ssmanstudiofull-md.md)].
 

@@ -17,7 +17,7 @@ helpviewer_keywords:
 
 # Custom reports in SQL Server Management Studio
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
 In [!INCLUDE [ssManStudioFull](../includes/ssmanstudiofull-md.md)], many Object Explorer nodes display a set of standard reports that are created by [!INCLUDE [msCoName](../includes/msconame-md.md)]. These reports summarize typically requested server information. Administrators can run custom reports that were created in [!INCLUDE [ssBIDevStudioFull](../includes/ssbidevstudiofull-md.md)] from [!INCLUDE [ssManStudio](../includes/ssmanstudio-md.md)].
 
