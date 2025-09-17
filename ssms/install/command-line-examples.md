@@ -98,7 +98,7 @@ vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.Component.HelpViewer
 Once a layout is created, it can be copied to an offline machine for installation. Components identified will need to be lincluded in the offline layout already (see 'complete local layout' mentioned in a prior example):
 
 ```cmd
-vs_SSMS.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SSMS.Component.IS --includeRecommended
+vs_SSMS.exe --lang en-US --add Microsoft.SSMS.Component.IS --includeRecommended
 ```
 
 To install SSMS with Integration Services support from the layout, run:
