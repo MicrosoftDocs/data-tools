@@ -62,10 +62,10 @@ Update an SSMS installation via the command line with progress displayed and no 
 
 ## Use --layout to create a network layout or local cache
 
-Create a layout that includes SSMS and Copilot in SSMS, and the English language pack:
+Create a layout that includes SSMS and Integration Services in SSMS, and the English language pack:
 
 ```cmd
-vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SSMS.Component.Copilot --includeRecommended
+vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SSMS.Component.IS --includeRecommended
 ```
 
 Create a layout with two workloads and one optional component in three languages:
@@ -95,29 +95,27 @@ vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.Component.HelpViewer
 
 ## Install a layout
 
-Once a layout is created, it can be copied to an offline machine for installation. If the layout was created using:
+Once a layout is created, it can be copied to an offline machine for installation. Components identified will need to be lincluded in the offline layout already (see 'complete local layout' mentioned in a prior example):
 
 ```cmd
-vs_SSMS.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SSMS.Component.Copilot --includeRecommended
+vs_SSMS.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SSMS.Component.IS --includeRecommended
 ```
 
-Install SSMS with Copilot from the layout using:
+To install SSMS with Integration Services support from the layout, run:
 
 ```cmd
-vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SSMS.Component.Copilot --includeRecommended --passive
+vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SSMS.Component.IS --includeRecommended --passive
 ```
 
-Install SSMS with Integration Services, Reporting Services, and Copilot from the layout using:
+To install SSMS with Integration Services and Reporting Services support, run:
 
 ```cmd
-vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SSMS.Component.Copilot --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS --includeRecommended --passive
+vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS --includeRecommended --passive
 ```
 
 ## Modifying an existing installation
 
-Once SQL Server Management Studio is installed, modifications to the components installed can be modified using `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe` (default location).
-
-To update SSMS using an offline layout to ensure desired components are included in the installation, and then modify SSMS to add Analysis Services, Integration Services, Reporting Services, and Copilot components, run:
+To update SSMS using an offline layout to ensure desired components are included in the installation, and then modify SSMS to add Analysis Services, Integration Services, and Reporting Services components, run:
 
 ```cmd
 cd C:\SSMSLayout
