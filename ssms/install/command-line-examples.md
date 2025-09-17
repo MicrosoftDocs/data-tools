@@ -29,13 +29,13 @@ For lists of the workloads and components that you can install by using the comm
 Install a minimal instance of SSMS, with no interactive prompts, but progress displayed:
 
 ```cmd
-vs_ssms.exe --installPath C:\SSMSLayout --passive --norestart
+vs_SSMS.exe --passive --norestart
 ```
 
 Install SSMS silently, with the Italian language pack, returning only when the product is installed:
 
 ```cmd
-vs_ssms.exe --installPath C:\SSMSLayout --addProductLang it-it --quiet --wait
+vs_SSMS.exe --addProductLang it-it --quiet --wait
 ```
 
 ## Install workloads
@@ -43,21 +43,21 @@ vs_ssms.exe --installPath C:\SSMSLayout --addProductLang it-it --quiet --wait
 Install SSMS with Git integration, with the user interface displayed in a non-interactive manner:
 
 ```cmd
-vs_ssms.exe --add Microsoft.SqlServer.Workload.SSMS.CodeTools --includeRecommended --passive
+vs_SSMS.exe --add Microsoft.SqlServer.Workload.SSMS.CodeTools --includeRecommended --passive
 ```
 
 Install SSMS with all components in the Business Intelligence workload, with the user interface displayed in a non-interactive manner:
 
 ```cmd
-vs_ssms.exe --add Microsoft.SqlServer.Workload.SSMS.BI --includeRecommended --passive --norestart
+vs_SSMS.exe --add Microsoft.SqlServer.Workload.SSMS.BI --includeRecommended --passive --norestart
 ```
 
 ## Update
 
-Update an SSMS installation via the command line with progress displayed and no interactive prompts. You can't initiate the installer programmatically from the same directory that the installer resides in.
+Update an SSMS installation via the command line quietly
 
 ```cmd
-"C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" update --passive --norestart --installPath "C:\SSMSLayout"
+vs_SSMS.exe update --noWeb --quiet --wait --norestart
 ```
 
 ## Use --layout to create a network layout or local cache
@@ -65,13 +65,13 @@ Update an SSMS installation via the command line with progress displayed and no 
 Create a layout that includes SSMS and Integration Services in SSMS, and the English language pack:
 
 ```cmd
-vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SSMS.Component.IS --includeRecommended
+vs_SSMS.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SSMS.Component.IS --includeRecommended
 ```
 
 Create a layout with two workloads and one optional component in three languages:
 
 ```cmd
-vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SqlServer.Workload.SSMS.HybridAndMigration --add Microsoft.SqlServer.Workload.SSMS.CodeTools --add Microsoft.Component.HelpViewer --lang en-US de-DE ja-JP
+vs_SSMS.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SqlServer.Workload.SSMS.HybridAndMigration --add Microsoft.SqlServer.Workload.SSMS.CodeTools --add Microsoft.Component.HelpViewer --lang en-US de-DE ja-JP
 ```
 
 To create a complete local layout for SQL Server Management Studio and all languages, run:
