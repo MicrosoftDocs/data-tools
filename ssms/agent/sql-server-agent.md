@@ -4,7 +4,7 @@ description: Learn about the SQL Server Agent, used to schedule administrative t
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mathoma
-ms.date: 09/07/2025
+ms.date: 09/17/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -101,12 +101,10 @@ For more information, see [Alerts](alerts.md).
 
 An *operator* defines contact information for an individual responsible for the maintenance of one or more instances of SQL Server. In some enterprises, operator responsibilities are assigned to one individual. In enterprises with multiple servers, many individuals can share operator responsibilities. An operator doesn't contain security information, and doesn't define a security principal.
 
-SQL Server can notify operators of alerts through...
+SQL Server can notify operators of alerts through:
 
 - E-mail
-
 - Pager (through e-mail)
-
 - **net send**
 
 > [!NOTE]  
@@ -202,6 +200,18 @@ Use the following tasks to get started with SQL Server Agent:
 ## TDS 8.0 and strict encryption support
 
 [!INCLUDE [sssql25-md](../includes/sssql25-md.md)] introduces TDS 8.0 and TLS 1.3 support for the SQL Server Agent, which can use strict encryption. SQL Server Agent discovers the level of encryption configured in the **SQL Server Configuration Manager** (`Force Strict Encryption`, `Force Encryption`, or none) and uses the corresponding option to connect to SQL Server (`strict`, `mandatory`, or `optional`). SQL Agent T-SQL jobs connecting to the local instance use the SQL Server Agent encryption settings. This means that if SQL Server Agent connects with `strict` encryption, then a local T-SQL job also connects with the same level of encryption.
+
+| TLS version enabled | SQL Config Manager<br />Configuration setting | Expected SQL Server Agent outcome | Descrption |
+| --- | --- | --- | --- |
+| TLS 1.3 | Force Strict Encryption | Successful connection and start | TDS 8.0 uses `strict` encryption |
+| TLS 1.3 | Force Encryption | Failure to connect and start | TLS 1.3 requires `strict` |
+| TLS 1.3 | None | Failure to connect and start | TLS 1.3 requires `strict` encryption |
+| TLS 1.2 | Force Strict Encryption | Successful connection and start | TDS 8.0 can use TLS 1.2 |
+| TLS 1.2 | Force Encryption | Successful connection and start | TDS 7.x is used for `mandatory` connection |
+| TLS 1.2 | None | Successful connection and start | TDS 7.x is used for `optional` connection |
+| TLS 1.3 and TLS 1.2 | Force Strict Encryption | Successful connection and start | TDS 8.0 used `strict` encryption |
+| TLS 1.3 and TLS 1.2 | Force Encryption | Successful connection and start | TDS 7.x used for `mandatory` connection |
+| TLS 1.3 and TLS 1.2 | None | Successful connection and start | TDS 7.x is used for `optional` connection |
 
 ## Related content
 
