@@ -4,7 +4,7 @@ description: Create an offline installation package to install SQL Server Manage
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 07/15/2025
+ms.date: 09/25/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -20,17 +20,29 @@ ms.collection:
 
 ### Step 1 - Download the SSMS bootstrapper
 
-[Download the correct bootstrapper](install.md) for the version of SSMS you want, and copy it into the directory you want to use as the source location for your local layout. The bootstrapper is the executable you use to create, update, or modify your local layout. You must have an internet connection to complete this step.
+[Download the correct bootstrapper](install.md) for the version of SSMS you want, and copy it into the folder you want to use as the source location for your local layout. The bootstrapper is the executable you use to create, update, or modify your local layout. You must have an internet connection to complete this step.
 
 ### Step 2 - Create a local layout
 
-Open a command prompt with administrator privileges, navigate to the directory where you downloaded the bootstrapper, and use the [bootstrapper's parameters](command-line-parameters.md#layout-command-and-command-line-parameters) to create your local layout. You must have an internet connection to complete this step.
+Open a command prompt with administrator privileges, navigate to the folder where you downloaded the bootstrapper, and use the [bootstrapper's parameters](command-line-parameters.md#layout-command-and-command-line-parameters) to create your local layout. You must have an internet connection to complete this step.
 
 You can install a language other than English by changing `en-US` to a locale from the [list of language locales](command-line-parameters.md#list-of-language-locales), and you can use the [list of component IDs](workload-component-ids.md) to further customize your local layout.
 
-To create a complete local layout for SQL Server Management Studio, run:
+To create a complete local layout for SQL Server Management Studio and all languages, run:
 
-```cmd
+```console
+vs_SSMS.exe --layout C:\SSMS_Layout --all
+```
+
+To create a local layout for SQL Server Management Studio that limits the components to only the Integration Services and Reporting Services component, run:
+
+```console
+vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS
+```
+
+To create a local layout for SQL Server Management Studio that limits the components to only the offline help content, run:
+
+```console
 vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.Component.HelpViewer
 ```
 
@@ -45,13 +57,13 @@ When you install SSMS from a local layout, the Visual Studio Installer uses the 
 
 For example, if you created a local installation layout using the command from step 2, then use the following command to run the installation and prevent the client machine from accessing the internet:
 
-```cmd
+```console
 C:\SSMS_Layout\vs_SSMS.exe --noWeb --add Microsoft.Component.HelpViewer
 ```
 
 ## Validate a certificate for offline installations
 
-Installing SSMS on an offline machine can require a valid certificate. If you try to install SSMS on an offline machine using a layout, and the installer exits with no exception, it might be due to an invalid certificate. Go to the `%TEMP%` directory and open the most recent bootstrapper file named `dd_bootstrapper_yyyyMMddHHmmss.log`. The following messages indicate the installation is failing because of an invalid certificate:
+Installing SSMS on an offline machine can require a valid certificate. If you try to install SSMS on an offline machine using a layout, and the installer exits with no exception, it might be due to an invalid certificate. Go to the `%TEMP%` folder and open the most recent bootstrapper file named `dd_bootstrapper_yyyyMMddHHmmss.log`. The following messages indicate the installation is failing because of an invalid certificate:
 
 ```output
 Certificate is invalid: <YourSSMSFolder>\vs_installer.opc
