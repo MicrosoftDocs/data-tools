@@ -115,7 +115,7 @@ vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SSMS.Component.IS --add 
 
 ## Modifying an existing installation
 
-To update SSMS using an offline layout to ensure desired components are included in the installation, and then modify SSMS to add Analysis Services, Integration Services, and Reporting Services components, run:
+To update SSMS to include additional components, create a layout using the examples above that include your desired components. To modify SSMS to add Analysis Services, Integration Services, and Reporting Services components by using the offline layout that includes the components, run:
 
 ```cmd
 cd C:\SSMS_Layout
