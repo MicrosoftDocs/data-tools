@@ -28,7 +28,19 @@ Open a command prompt with administrator privileges, navigate to the directory w
 
 You can install a language other than English by changing `en-US` to a locale from the [list of language locales](command-line-parameters.md#list-of-language-locales), and you can use the [list of component IDs](workload-component-ids.md) to further customize your local layout.
 
-To create a complete local layout for SQL Server Management Studio, run:
+To create a complete local layout for SQL Server Management Studio and all languages, run:
+
+```cmd
+vs_SSMS.exe --layout C:\SSMS_Layout --all
+```
+
+To create a local layout for SQL Server Management Studio that limits the components to only the Integration Services and Reporting Services component, run:
+
+```cmd
+vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS
+```
+
+To create a local layout for SQL Server Management Studio that limits the components to only the offline help content, run:
 
 ```cmd
 vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.Component.HelpViewer

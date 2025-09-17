@@ -29,13 +29,13 @@ For lists of the workloads and components that you can install by using the comm
 Install a minimal instance of SSMS, with no interactive prompts, but progress displayed:
 
 ```cmd
-vs_ssms.exe --installPath C:\SSMS21 --passive --norestart
+vs_ssms.exe --installPath C:\SSMSLayout --passive --norestart
 ```
 
 Install SSMS silently, with the Italian language pack, returning only when the product is installed:
 
 ```cmd
-vs_ssms.exe --installPath C:\SSMS21 --addProductLang it-it --quiet --wait
+vs_ssms.exe --installPath C:\SSMSLayout --addProductLang it-it --quiet --wait
 ```
 
 ## Install workloads
@@ -57,7 +57,7 @@ vs_ssms.exe --add Microsoft.SqlServer.Workload.SSMS.BI --includeRecommended --pa
 Update an SSMS installation via the command line with progress displayed and no interactive prompts. You can't initiate the installer programmatically from the same directory that the installer resides in.
 
 ```cmd
-"C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" update --passive --norestart --installPath "C:\SSMS21"
+"C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" update --passive --norestart --installPath "C:\SSMSLayout"
 ```
 
 ## Use --layout to create a network layout or local cache
@@ -65,7 +65,7 @@ Update an SSMS installation via the command line with progress displayed and no 
 Create a layout that includes SSMS and Copilot in SSMS, and the English language pack:
 
 ```cmd
-vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SqlServer.Workload.SSMS.AI --includeRecommended
+vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SSMS.Component.Copilot --includeRecommended
 ```
 
 Create a layout with two workloads and one optional component in three languages:
@@ -74,19 +74,57 @@ Create a layout with two workloads and one optional component in three languages
 vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SqlServer.Workload.SSMS.HybridAndMigration --add Microsoft.SqlServer.Workload.SSMS.CodeTools --add Microsoft.Component.HelpViewer --lang en-US de-DE ja-JP
 ```
 
+To create a complete local layout for SQL Server Management Studio and all languages, run:
+
+```cmd
+vs_SSMS.exe --layout C:\SSMS_Layout --all
+```
+
+To create a local layout for SQL Server Management Studio that limits the components to only the Integration Services and Reporting Services component, run:
+
+```cmd
+vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS
+```
+
+To create a local layout for SQL Server Management Studio that limits the components to only the offline help content, run:
+
+```cmd
+vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.Component.HelpViewer
+```
+
+
 ## Install a layout
 
 Once a layout is created, it can be copied to an offline machine for installation. If the layout was created using:
 
 ```cmd
-vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SqlServer.Workload.SSMS.AI --includeRecommended
+vs_SSMS.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SSMS.Component.Copilot --includeRecommended
 ```
 
-Install SSMS from the layout using:
+Install SSMS with Copilot from the layout using:
 
 ```cmd
-C:\SSMS_Layout\vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SqlServer.Workload.SSMS.AI --includeRecommended --passive
+vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SSMS.Component.Copilot --includeRecommended --passive
 ```
+
+Install SSMS with Integration Services, Reporting Services, and Copilot from the layout using:
+
+```cmd
+vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SSMS.Component.Copilot --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS --includeRecommended --passive
+```
+
+## Modifying an existing installation
+
+Once SQL Server Management Studio is installed, modifications to the components installed can be modified using `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe` (default location).
+
+To update SSMS using an offline layout to ensure desired components are included in the installation, and then modify SSMS to add Analysis Services, Integration Services, Reporting Services, and Copilot components, run:
+
+```cmd
+cd C:\SSMSLayout
+vs_SSMS.exe update --noWeb --quiet --wait --norestart
+vs_SSMS.exe modify --noWeb --productID Microsoft.VisualStudio.Product.SSMS --channelID SSMS.21.SSMS.Release --add Microsoft.SSMS.Component.AS --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS --quiet --norestart
+```
+
 
 ## Related content
 

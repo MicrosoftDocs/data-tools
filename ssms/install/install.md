@@ -104,6 +104,8 @@ vs_SSMS.exe --locale en-US
 
 The installer remembers this setting when you run it again. The installer supports these language locales: `zh-cn`, `zh-tw`, `cs-cz`, `en-us`, `es-es`, `fr-fr`, `de-de`, `it-it`, `ja-jp`, `ko-kr`, `pl-pl`, `pt-br`, `ru-ru`, and `tr-tr`.
 
+For more command-line examples, see [Command-line parameter examples](command-line-examples.md).
+
 ## Step 7 - Select the installation location (optional)
 
 You can reduce the installation footprint of SSMS on your system drive. For more information, see [Select installation locations for SQL Server Management Studio](select-install-location.md).
