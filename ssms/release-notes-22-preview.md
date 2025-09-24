@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS) 22 Preview.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 09/09/2025
+ms.date: 09/24/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -35,11 +35,24 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.0.0-pre.2.0"></a>
+
+### 22.0 Preview 2
+
+**[Download SQL Server Management Studio (SSMS) 22 Preview](https://aka.ms/ssms/22/preview/vs_SSMS.exe)**
+
+- Release number: 22.0 Preview 2
+- Release date: September 23, 2025
+
+#### What's new in 22.0 Preview 2
+
+| Feature | Details | 
+| --- | --- |
+| Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11018.127]. |
+
 <a id="22.0.0-pre.1.1"></a>
 
 ### 22.0 Preview 1.1
-
-**[Download SQL Server Management Studio (SSMS) 22 Preview](https://aka.ms/ssms/22/preview/vs_SSMS.exe)**
 
 - Release number: 22.0 Preview 1.1
 - Release date: September 16, 2025
@@ -49,7 +62,7 @@ For previous versions of SSMS, see:
 | Feature | Details | 
 | --- | --- |
 | Connection dialog | Added Fabric browsing to the Browse tab. |
-| Visual Studio | Updated to Visual Studio 2026 Preview 1.2. |
+| Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11012.119]. |
 
 <a id="22.0.0-pre.1.0"></a>
 
@@ -79,7 +92,7 @@ For more new features and bug fixes that are available in SSMS 22 Preview 1, see
 | Results Grid | Introduced Zoom support for grid results, see [Zoom the results area independently](https://developercommunity.visualstudio.com/t/Zoom-the-results-area-independently/10860281). |
 | Startup commands | Removed `-G` and `-E` options (replaced by `-A)`. |
 | Themes | Introduced new themes and removed the Blue (SSMS) theme. |
-| Visual Studio | Updated to Visual Studio 18.0 Preview 1. |
+| Visual Studio | Updated to Visual Studio 18.0.0 Insiders. |
 
 #### Bug fixes in 22.0 Preview 1
 
