@@ -4,7 +4,7 @@ description: Learn how to use the Visual Studio installer to install SQL Server 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 08/21/2025
+ms.date: 09/25/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -103,6 +103,8 @@ vs_SSMS.exe --locale en-US
 ```
 
 The installer remembers this setting when you run it again. The installer supports these language locales: `zh-cn`, `zh-tw`, `cs-cz`, `en-us`, `es-es`, `fr-fr`, `de-de`, `it-it`, `ja-jp`, `ko-kr`, `pl-pl`, `pt-br`, `ru-ru`, and `tr-tr`.
+
+For more command-line examples, see [Command-line parameter examples](command-line-examples.md).
 
 ## Step 7 - Select the installation location (optional)
 
