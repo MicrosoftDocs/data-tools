@@ -4,13 +4,13 @@ description: Examples of using command-line parameters to install SQL Server Man
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 06/25/2025
+ms.date: 09/25/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
   - data-tools
 ---
-# Command-Line parameter examples for SQL Server Management Studio installation
+# Command-line parameter examples for SQL Server Management Studio installation
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -24,69 +24,129 @@ To execute commands in a non-interactive manner, you can use `--passive` or `--q
 
 For lists of the workloads and components that you can install by using the command line, see [Workload and component IDs for SQL Server Management Studio](workload-component-ids.md).
 
-## Install using --installPath and --add alongside the bootstrapper
+## Install using `--installPath` and `--add` alongside the bootstrapper
 
 Install a minimal instance of SSMS, with no interactive prompts, but progress displayed:
 
-```cmd
-vs_ssms.exe --installPath C:\SSMS21 --passive --norestart
+```console
+vs_SSMS.exe --installPath C:\SSMS21 --passive --norestart
 ```
 
 Install SSMS silently, with the Italian language pack, returning only when the product is installed:
 
-```cmd
-vs_ssms.exe --installPath C:\SSMS21 --addProductLang it-it --quiet --wait
+```console
+vs_SSMS.exe --installPath C:\SSMS21 --addProductLang it-it --quiet --wait
 ```
 
 ## Install workloads
 
 Install SSMS with Git integration, with the user interface displayed in a non-interactive manner:
 
-```cmd
-vs_ssms.exe --add Microsoft.SqlServer.Workload.SSMS.CodeTools --includeRecommended --passive
+```console
+vs_SSMS.exe --add Microsoft.SqlServer.Workload.SSMS.CodeTools --includeRecommended --passive
 ```
 
 Install SSMS with all components in the Business Intelligence workload, with the user interface displayed in a non-interactive manner:
 
-```cmd
-vs_ssms.exe --add Microsoft.SqlServer.Workload.SSMS.BI --includeRecommended --passive --norestart
+```console
+vs_SSMS.exe --add Microsoft.SqlServer.Workload.SSMS.BI --includeRecommended --passive --norestart
 ```
 
 ## Update
 
-Update an SSMS installation via the command line with progress displayed and no interactive prompts. You can't initiate the installer programmatically from the same directory that the installer resides in.
+Update an SSMS installation via the command line with progress displayed and no interactive prompts. You can't initiate the installer programmatically from the same folder that the installer resides in.
 
-```cmd
-"C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" update --passive --norestart --installPath "C:\SSMS21"
+```console
+vs_SSMS.exe update --passive --norestart --installPath "C:\SSMS21"
 ```
 
-## Use --layout to create a network layout or local cache
+Update an SSMS installation via the command line quietly:
+
+```console
+vs_SSMS.exe update --noWeb --quiet --wait --norestart
+```
+
+## Use `--layout` to create a network layout or local cache
 
 Create a layout that includes SSMS and Copilot in SSMS, and the English language pack:
 
-```cmd
-vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SqlServer.Workload.SSMS.AI --includeRecommended
+```console
+vs_SSMS.exe --layout C:\SSMS_Layout --lang en-US --add Microsoft.SqlServer.Workload.SSMS.AI --includeRecommended
+```
+
+Create a layout that includes SSMS and Integration Services in SSMS, and the English language pack:
+
+```console
+vs_SSMS.exe --layout C:\SSMS_Layout --lang en-US --add Microsoft.SSMS.Component.IS --includeRecommended
 ```
 
 Create a layout with two workloads and one optional component in three languages:
 
-```cmd
-vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SqlServer.Workload.SSMS.HybridAndMigration --add Microsoft.SqlServer.Workload.SSMS.CodeTools --add Microsoft.Component.HelpViewer --lang en-US de-DE ja-JP
+```console
+vs_SSMS.exe --layout C:\SSMS_Layout --lang en-US --add Microsoft.SqlServer.Workload.SSMS.HybridAndMigration --add Microsoft.SqlServer.Workload.SSMS.CodeTools --add Microsoft.Component.HelpViewer --lang en-US de-DE ja-JP
+```
+
+To create a complete local layout for SQL Server Management Studio and all languages, run:
+
+```console
+vs_SSMS.exe --layout C:\SSMS_Layout --all
+```
+
+To create a local layout for SQL Server Management Studio that limits the components to only the Integration Services and Reporting Services component, run:
+
+```console
+vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS
+```
+
+To create a local layout for SQL Server Management Studio that limits the components to only the offline help content, run:
+
+```console
+vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.Component.HelpViewer
 ```
 
 ## Install a layout
 
-Once a layout is created, it can be copied to an offline machine for installation. If the layout was created using:
+Once a layout is created, it can be copied to an offline machine for installation. To install specific components, those components must be included in the offline layout already. For more information, see the [complete local layout](#use---layout-to-create-a-network-layout-or-local-cache) example.
 
-```cmd
-vs_ssms.exe --layout "C:\SSMS_Layout" --lang en-US --add Microsoft.SqlServer.Workload.SSMS.AI --includeRecommended
+Make sure you are in the folder where the layout was saved. In these examples, it's `C:\SSMS_Layout`.
+
+```console
+C:\SSMS_Layout\vs_SSMS.exe --lang en-US --add Microsoft.SqlServer.Workload.SSMS.AI --includeRecommended
 ```
 
-Install SSMS from the layout using:
+To install SSMS with Integration Services support from the layout, run:
 
-```cmd
-C:\SSMS_Layout\vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SqlServer.Workload.SSMS.AI --includeRecommended --passive
+```console
+C:\SSMS_Layout\vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SSMS.Component.IS --includeRecommended --passive
 ```
+
+To install SSMS with Integration Services and Reporting Services support, run:
+
+```console
+C:\SSMS_Layout\vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS --includeRecommended --passive
+```
+
+## Modify an existing installation
+
+To update SSMS to include other components, create a layout with your desired components, using the previous examples.
+
+1. Change to the layout folder.
+
+   ```console
+   cd C:\SSMS_Layout
+   ```
+
+1. Update to the latest released version.
+
+   ```console
+   vs_SSMS.exe update --noWeb --quiet --wait --norestart
+   ```
+
+1. Modify SSMS to add Analysis Services, Integration Services, and Reporting Services components, using the offline layout that includes these components, run:
+
+   ```console
+   vs_SSMS.exe modify --noWeb --productID Microsoft.VisualStudio.Product.SSMS --channelID SSMS.21.SSMS.Release --add Microsoft.SSMS.Component.AS --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS --quiet --norestart
+   ```
 
 ## Related content
 
