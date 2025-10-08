@@ -1,18 +1,18 @@
 ---
-title: SQL Server migration component
-description: "Learn about the SQL Server migration component in SQL Server Management Studio (SSMS)."
+title: SQL Server Migration Component
+description: Learn about the SQL Server migration component in SQL Server Management Studio (SSMS).
 author: nilabjaball
 ms.author: niball
 ms.reviewer: randolphwest
-ms.date: 04/16/2025
+ms.date: 10/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
   - sql-migration-content
 f1_keywords:
-  - sql13.swb.migrationassistant.migration.f1
-  - sql13.swb.migrationassistant.assessment.f1 
+  - "sql13.swb.migrationassistant.migration.f1"
+  - "sql13.swb.migrationassistant.assessment.f1"
 helpviewer_keywords:
   - "migrate [SQL Server], SQL Server Management Studio"
   - "migration [SQL Server Management Studio], extensions"
@@ -66,7 +66,7 @@ You can also physically migrate your database using the migration component. It 
 
      - **Compatibility Type**: Identify breaking changes, behavior changes, and deprecated features
 
-     - **Feature Parity**: Discover partially supported features which might require re-engineering
+     - **Feature Parity**: Discover partially supported features that might require re-engineering
 
        > [!NOTE]  
        > This option is enabled for when target is SQL Server on Linux.
@@ -82,6 +82,18 @@ You can change the compatibility to identify issue for a particular database com
 :::image type="content" source="media/migrate-sql-server-component/assessment-report.png" alt-text="Screenshot of the SQL migration report, featuring a filter on the database compatibility level." lightbox="media/migrate-sql-server-component/assessment-report.png":::
 
 If you already saved an assessment report, you can open the assessment by navigating to **View Assessment Report** > **Open Assessment**, and choosing the `assessment_<name>.json` file.
+
+## Prepare for migration
+
+- Ensure you the assessment report is reviewed and all issues are resolved.
+
+- If any of the databases are protected by [Transparent data encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption), ensure the corresponding certificate or asymmetric key is transferred to the target SQL Server instance before initiating migration.
+
+- There are two options for the shared folders used to back up databases from the source and restore them on the target:
+
+  1. Use a single shared folder that both the source and target SQL Server instances have [permissions](/sql/t-sql/statements/backup-transact-sql#permissions) to perform backup and restore respectively.
+
+  1. If you prefer separate shared folders, ensure that the Windows user performing the migration has permissions to copy the backup files from the source shared folder to the target shared folder.
 
 ## Migrate your database
 
@@ -112,7 +124,7 @@ If you already saved an assessment report, you can open the assessment by naviga
 
    Choose logins that are eligible for migration.
 
-1. Once you review selection and select **Finish**.
+1. Once you review selection, select **Finish**.
 
 The migration wizard shows the migration of each database. Once complete, you can connect to the target SQL Server and verify that databases and logins are migrated successfully.
 
