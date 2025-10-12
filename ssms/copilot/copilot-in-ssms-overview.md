@@ -1,19 +1,19 @@
 ---
-title: "Overview"
+title: "What is Copilot in SSMS"
 titleSuffix: Copilot in SQL Server Management Studio
 description: Learn about Copilot in SQL Server Management Studio.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/28/2025
+ms.date: 10/13/2025
 ms.update-cycle: 180-days
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
   - ce-skilling-ai-copilot
-# CustomerIntent: As a database administrator or database developer, I want to understand how to use Copilot in SQL Server Management Studio.
+# CustomerIntent: As a database administrator or database developer, I want to understand the Copilot in SQL Server Management Studio feature.
 ---
-# Copilot in SQL Server Management Studio (Preview)
+# What is Copilot in SQL Server Management Studio (Preview)?
 
 Use Copilot in SQL Server Management Studio (SSMS) to ask questions about your database and environment, and get help writing Transact-SQL (T-SQL) with AI.
 
@@ -21,9 +21,46 @@ Copilot in SSMS doesn't retain any of your information (prompts, responses, syst
 
 Copilot in SSMS can answer questions for databases in SQL Server, Azure SQL Database, Azure SQL Managed Instance, and SQL Database in Fabric. Copilot executes queries based on the permissions for your login. For example, if you don't have permission to select from the table `Sales.Orders` and you ask Copilot to write and execute a select query such as `SELECT TOP 100 * FROM Sales.Orders`, the query execution can't occur.
 
-Copilot in SSMS uses [Azure OpenAI resources](use-azure-openai-with-copilot-in-ssms.md), requiring an endpoint and deployment in your Azure subscription. Copilot in SSMS adheres to [Responsible AI practices for Azure OpenAI models](/legal/cognitive-services/openai/overview), and you can learn more about the AI principles for Copilot in SSMS in the [Transparency Note for Copilot in SQL Server Management Studio](/legal/sql/ssms/transparency-note-copilot).
+## How Copilot in SSMS works
 
-## Related tasks
+Copilot in SSMS uses [Azure OpenAI resources](use-azure-openai-with-copilot-in-ssms.md), requiring an endpoint and deployment in your Azure subscription. The model selected when configuring your deployment is the model to which Copilot in SSMS sends your prompts, and that model then generates the response. Copilot in SSMS may send additional information about the version of SQL to which you're connected, or information about your database, to help improve the response.
+
+## Features of Copilot in SSMS
+
+The primary feature of Copilot in SSMS is the [chat window](copilot-in-ssms-chat.md), in which you use natural language to ask questions about your database, or get help writing T-SQL. Copilot in SSMS also includes [code assistance](copilot-in-ssms-code-assistance.md) on the right-click menu in the query editor, where you can get help documenting, explaining, fixing, or refactoring your T-SQL qeueries. To enable Copilot in SSMS, see [Install Copilot in SQL Server Management Studio](copilot-in-ssms-install.md).
+
+## Best practices for using Copilot in SSMS
+
+To maximize your productive with Copilot in SSMS, open a query editor that is connection to your database, and then open the chat window. By default, the chat window has an understanding of the database you're connected to based on the active query editor. When writing prompts, be specific in your request as vague questions will lead to vague responses. For more best practices, see [Best practices for Copilot in SQL Server Management Studio](copilot-in-ssms-best-practices.md).
+
+## Example prompts
+
+The following example prompts are clear, specific, and tailored to the properties of your schema and database, making it easier for Copilot in SSMS to generate accurate replies.
+
+  ```copilot-prompt
+    - What are the top-selling products by quantity?
+    - How do I change the compability mode for this database?
+    - Is there blocking in my database right now?
+  ```
+
+Additional examples can be found in [Best practices for Copilot in SQL Server Management Studio](copilot-in-ssms-best-practices.md#prompt-writing). 
+
+## Responsible AI use of Copilot in SSMS
+
+Copilot in SSMS adheres to [Responsible AI practices for Azure OpenAI models](/legal/cognitive-services/openai/overview). Microsoft is committed to ensuring that our AI systems are guided by our [AI principles](https://www.microsoft.com/ai/principles-and-approach/), and you can learn more about the AI principles for Copilot in SSMS in the [Transparency Note for Copilot in SQL Server Management Studio](/legal/sql/ssms/transparency-note-copilot). These principles include empowering our customers to use these systems effectively and in line with their intended uses. Our approach to responsible AI is continually evolving to proactively address emerging issues.
+
+## Limitations
+
+Here are the current limitations of Copilot in SSMS:
+
+- Copilot can't change existing T-SQL queries in the query editor. For example, if you ask Copilot chat window to edit a specific part of an existing query, it doesn't work. However, Copilot understands previous inputs in the chat window, allowing users to iterate queries previously generated by Copilot before they're inserted.
+- Copilot might produce inaccurate results when the intent is to evaluate data.
+- Copilot responses can include inaccurate or low-quality content, so review outputs before using them in your work.
+- People who can meaningfully evaluate the content's accuracy and appropriateness should review the outputs.
+- When using Entra Authentication for the Azure OpenAI endpoint, Copilot in SSMS is not accessible if you open SSMS as a different user than the user that's logged into the machine. For example, if you login to the machine as `contoso\jwilson` and you open SSMS as `contoso\admin`, Copilot in SSMS isn't accessible.
+- When using Managed Identity to authenticate to an Azure Virtual Machine running SSMS, Copilot in SSMS is not accessible if the Azure OpenAI endpoint is using Entra Authentication and the user opens SSMS as a different user.
+
+## Related content
 
 - [Use Azure OpenAI with Copilot in SSMS](use-azure-openai-with-copilot-in-ssms.md)
 - [Install Copilot in SQL Server Management Studio](copilot-in-ssms-install.md)

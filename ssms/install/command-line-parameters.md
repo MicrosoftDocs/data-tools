@@ -4,7 +4,7 @@ description: Use command-line parameters to install SQL Server Management Studio
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 06/25/2025
+ms.date: 10/22/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -192,7 +192,7 @@ Visual Studio Installer operations currently require administrator privileges, s
 
 ## List of workload IDs and component IDs
 
-For a list of workload and component IDs sorted by SSMS product, see [Visual Studio workload and component IDs](/visualstudio/install/workload-and-component-ids).
+For a list of workload and component IDs sorted by SSMS product, see [Workload and component IDs for SQL Server Management Studio](workload-component-ids.md).
 
 ## List of language locales
 
