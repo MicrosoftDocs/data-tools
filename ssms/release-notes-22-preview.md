@@ -56,13 +56,8 @@ For previous versions of SSMS, see:
 | GitHub Copilot in SSMS (Preview) | Added [GitHub Copilot in SQL Server Management Studio](/ssms/github-copilot/overview), available from the **AI Assistance** workload in the Visual Studio Installer. |
 | Query Hint Recommendation Tool (Preview) | Added the [Query Hint Recommendation Tool (Preview)](/ssms/query-hint-tool/hinttool-in-ssms-overview) component under **Individual Components > Code Tools** in the Visual Studio Installer. |
 | Scripting | Added scripting support for tables with Vector columns. |
-<<<<<<< HEAD
 | SQL Server Integration Services (SSIS) | Reinstated SQL Server Integration Services (SSIS) capabilities, including SSISDB catalog management, automated execution of SSIS packages, and the Import Export Wizard. |
 | Table Designer | Added support for Vector datatype to Table Designer. |
-=======
-| SQL Server Integration Services (SSIS) | Reinstated SQL Server Integration Services (SSIS) capabilities (in preview), including SSISDB catalog management, automated execution of SSIS packages, and the Import Export Wizard. |
-| Table Designer | Added support for Vector data type to Table Designer. |
->>>>>>> 8b2f0479f15de13d673afdc1c13b66eab081dca2
 | Theming | Expanded dark theme support to include the Connect to Azure Storage dialog, and the Registered Servers Export, Import, and Move Registered Server dialogs. |
 | Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11111.16]. |
 
