@@ -3,7 +3,7 @@ title: "Release Notes for SQL Server Management Studio (SSMS) 22 Preview"
 description: Release notes for SQL Server Management Studio (SSMS) 22 Preview.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, mbarickman
+ms.reviewer: randolphwest, mbarickman, maghan
 ms.date: 10/14/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
@@ -46,10 +46,10 @@ For previous versions of SSMS, see:
 
 #### What's new in 22.0 Preview 3
 
-| Feature | Details | 
+| Feature | Details |
 | --- | --- |
 | Arm64 Support | Added initial Windows Arm64 support for core SSMS 22 Preview scenarios, including connecting and querying. See **Known Issues** for a list of scenarios that are still unsupported. |
-| Edit Data | Added support for Vector datatype to Edit Data. |
+| Edit Data | Added support for Vector data type to Edit Data. |
 | Execution Plans | Added the ability to open an execution plan in a new tab. When viewing an Execution Plan, right-click to bring up the menu and select **Show Execution Plan in New Tab.** See [SSMS Right Click To Open Execution Plan In A New Tab](https://feedback.azure.com/d365community/idea/8c1f1930-35cc-ee11-92bc-6045bd83e1af). |
 | IntelliSense | Added IntelliSense support for `VECTOR_SEARCH`, `CREATE VECTOR INDEX`, `AUTOSEEDING_SYSTEM_DATABASES`, `REUSE_SYSTEM_DATABASES`, AND `CREATE JSON INDEX`. |
 | JSON Viewer | Added the ability to view JSON data from the results grid. See [JSON column view like in azure data studio](https://developercommunity.microsoft.com/t/JSON-column-view-like-in-azure-data-stud/10881763). |
@@ -57,7 +57,7 @@ For previous versions of SSMS, see:
 | Query Hint Recommendation Tool (Preview) | Added the [Query Hint Recommendation Tool (Preview)](/ssms/query-hint-tool/hinttool-in-ssms-overview) component under **Individual Components > Code Tools** in the Visual Studio Installer. |
 | Scripting | Added scripting support for tables with Vector columns. |
 | SQL Server Integration Services (SSIS) | Reinstated SQL Server Integration Services (SSIS) capabilities (in preview), including SSISDB catalog management, automated execution of SSIS packages, and the Import Export Wizard. |
-| Table Designer | Added support for Vector datatype to Table Designer. |
+| Table Designer | Added support for Vector data type to Table Designer. |
 | Theming | Expanded dark theme support to include the Connect to Azure Storage dialog, and the Registered Servers Export, Import, and Move Registered Server dialogs. |
 | Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11111.16]. |
 
@@ -73,7 +73,7 @@ For previous versions of SSMS, see:
 | Results Grid | Resolved and issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-click does not work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
 | Solution Explorer | Resolved an error that was generated when opening a folder that was closed but had files that were open. See [SSMS 21 Preview - error while opening a folder in Windows 11](https://developercommunity.visualstudio.com/t/SSMS-21-Preview---error-while-opening-a-/10855845). |
 | Status Bar | Reinstated line and column numbers in the status bar. See [In SSMS21 I can't find column number after clicking cell in grid results](https://developercommunity.visualstudio.com/t/In-SSMS21-I-cant-find-column-number-aft/10928369). |
-| T-SQL Language Settings | Fixed a bug that caused some T-SQL language settings from persisting between SSMS sessions. |
+| T-SQL Language Settings | Fixed a bug that caused some T-SQL language settings to persist between SSMS sessions. |
 
 <a id="22.0.0-pre.2.0"></a>
 
@@ -84,7 +84,7 @@ For previous versions of SSMS, see:
 
 #### What's new in 22.0 Preview 2
 
-| Feature | Details | 
+| Feature | Details |
 | --- | --- |
 | Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11018.127]. |
 
@@ -97,7 +97,7 @@ For previous versions of SSMS, see:
 
 #### What's new in 22.0 Preview 1.1
 
-| Feature | Details | 
+| Feature | Details |
 | --- | --- |
 | Connection dialog | Added Fabric browsing to the Browse tab. |
 | Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11012.119]. |
@@ -119,7 +119,7 @@ For more new features and bug fixes that are available in SSMS 22 Preview 1, see
 | Connection Dialog | The modern dialog is the default connection dialog. |
 | Database Tuning Advisor (DTA) | Improved DTA functionality including better tuning coverage for queries with temp table, tuning coverage to queries with temp tables, table variables, triggers, as well as improved index tuning quality, and general scalability and concurrency. |
 | IntelliSense | Added support for CURRENT_TIMEZONE_ID syntax, see [SSMS 21 does not recognize CURRENT_TIMEZONE_ID function](https://developercommunity.microsoft.com/t/SSMS-21-does-not-recognize-CURRENT_TIMEZ/10879862). |
-| IntelliSense | Added support for ANSI concatenation using the `||=` operator. |
+| IntelliSense | Added support for ANSI concatenation using the ` | | =` operator. |
 | IntelliSense | Added support for `AI_GENERATE_EMBEDDINGS` syntax. |
 | IntelliSense | Added support for regular expression functions `REGEXP_MATCHES` and `REGEXP_SPLIT_TO_TABLE`. |
 | Libraries | Updated Server Management Objects (SMO) to version 17.100.73. |
