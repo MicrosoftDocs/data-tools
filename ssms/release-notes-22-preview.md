@@ -50,9 +50,9 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Arm64 Support | Added initial Windows Arm64 support for core SSMS 22 Preview scenarios, including connecting and querying. See **Known Issues** for a list of scenarios that are still unsupported. |
 | Edit Data | Added support for Vector data type to Edit Data. |
-| Execution Plans | Added the ability to open an execution plan in a new tab. When viewing an Execution Plan, right-click to bring up the menu and select **Show Execution Plan in New Tab.** See [SSMS Right select To Open Execution Plan In A New Tab](https://feedback.azure.com/d365community/idea/8c1f1930-35cc-ee11-92bc-6045bd83e1af). |
+| Execution Plans | Added the ability to open an execution plan in a new tab. When viewing an Execution Plan, right-click to bring up the menu and select **Show Execution Plan in New Tab.** See [SSMS Right Click To Open Execution Plans In A New Tab](https://feedback.azure.com/d365community/idea/8c1f1930-35cc-ee11-92bc-6045bd83e1af). |
 | IntelliSense | Added IntelliSense support for `VECTOR_SEARCH`, `CREATE VECTOR INDEX`, `AUTOSEEDING_SYSTEM_DATABASES`, `REUSE_SYSTEM_DATABASES`, AND `CREATE JSON INDEX`. |
-| JSON Viewer | Added the ability to view JSON data from the results grid. See [JSON column view like in Azure data studio](https://developercommunity.microsoft.com/t/JSON-column-view-like-in-azure-data-stud/10881763). |
+| JSON Viewer | Added the ability to view JSON data from the results grid. See [JSON column view like in Azure Data Studio](https://developercommunity.microsoft.com/t/JSON-column-view-like-in-azure-data-stud/10881763). |
 | GitHub Copilot in SSMS (Preview) | Added [GitHub Copilot in SQL Server Management Studio](/ssms/github-copilot/overview), available from the **AI Assistance** workload in the Visual Studio Installer. |
 | Query Hint Recommendation Tool (Preview) | Added the [Query Hint Recommendation Tool (Preview)](/ssms/query-hint-tool/hinttool-in-ssms-overview) component under **Individual Components > Code Tools** in the Visual Studio Installer. |
 | Scripting | Added scripting support for tables with Vector columns. |
@@ -67,7 +67,7 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Database Properties | Fixed an issue that blocked the ability to change compatibility level for users with ALTER permissions. See [Database compatibility level drop down disabled but query works](https://developercommunity.visualstudio.com/t/Database-compatibility-level--drop-down-/10927466). |
 | Object Explorer | Resolved an error that was generated when dragging table objects from the Object Explorer to the Query Editor. |
-| Object Explorer | Resolved an issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-select doesn't work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
+| Object Explorer | Resolved an issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-click doesn't work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
 | PowerShell | Fixed a bug that generated an error when attempting to start PowerShell from the Object Explorer context menu. |
 | Query Editor | Resolved an issue where the "Include column headers" option wasn't properly applied in new query windows. See [Copying query results doesn't include headers, even when the "Include column headers" option is enabled](https://developercommunity.visualstudio.com/t/Copying-query-results-does-not-include-h/10969136). |
 | Results Grid | Resolved and issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-select doesn't work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
