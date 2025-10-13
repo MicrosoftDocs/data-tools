@@ -4,12 +4,13 @@ description: Use command-line parameters to install SQL Server Management Studio
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 10/22/2025
+ms.date: 10/13/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
   - data-tools
 ---
+
 # Use command-line parameters to install SQL Server Management Studio
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
@@ -84,7 +85,7 @@ Syntax example: `vs_SSMS.exe [command] <optional parameters>...`
 | `--passive, -p` | **Optional**: This parameter causes the user interface to be displayed in a non-interactive manner. This parameter is mutually exclusive from (and in fact overrides) the `--quiet` parameter. Also not available to use programmatically by standard users regardless of how the [AllowStandardUserControl policy](https://aka.ms/vs/setup/policies) is set. |
 | `--norestart` | **Optional**: This parameter must be paired with either the `--passive` or `--quiet` parameters. During an install, update, or modify command, adding the `--norestart` parameter delays any necessary reboot. |
 | `--force` | **Optional**: This parameter forces SSMS to close even if any SSMS process is in use. Forcing SSMS to close might cause loss of work, so use it with caution. |
-| `--installWhileDownloading` | **Optional**: During an install, update, or modify command, this parameter allows SSMS to both download and install the product in parallel. It's the default experience. |
+| `--installWhileDownloading` | **Optional**: During an install, update, or modify command. This parameter allows SSMS to both download and install the product in parallel. It's the default experience. |
 | `--downloadThenInstall` | **Optional**: During an install, update, or modify command, this parameter forces SSMS to download all files before installing them. It's mutually exclusive from the `--installWhileDownloading` parameter. |
 | `--nickname <name>` | **Optional**: During an install command, this parameter defines the nickname to assign to an installed product. The nickname can't be longer than 10 characters. |
 | `--removeOos true` | **Optional**: During an install, update, or modify command, this parameter, followed by `true` or `false`, tells the Visual Studio Installer whether to remove all installed components transitioned to an out-of-support state. This behavior is applicable for a single event. If you want to make this behavior persistent, apply this parameter to the `modifySettings` command, described later, or configure the `removeOOS` global policy. Useful for helping to keep the machine secure. |
@@ -130,7 +131,7 @@ All layout management operations, such as creating or updating a layout, are run
 
 ## ModifySettings command and command-line parameters
 
-You can modify the update settings and programmatically configure the source location of updates for a given instance of SSMS. This modifying can be done using the installer or the bootstrapper on the client machine, and passing in the modifySettings command and the desired update channel.
+You can modify the update settings and programmatically configure the source location of updates for a given instance of SSMS. This change can be done using the installer or the bootstrapper on the client machine, and passing in the modifySettings command and the desired update channel.
 
 | **Command** | **Description** |
 | --- | --- |
@@ -158,7 +159,7 @@ Syntax examples:
 
 ## Remove channel command and command-line parameters
 
-Channels that are available to update from, are cached on the client, and over time they can generate clutter. You can manually remove [update channels](update.md#configure-source-location-of-updates) by bringing up the Visual Studio Installer, switching to the **Available** tab, and selecting on the **X** in the top right corner of the product card. You can programmatically remove channels (for example, older layout locations) using the `removeChannel` command. You can run `vswhere` programmatically on the client machine to determine which channels are cached on the client machine.
+Channels that are available to update from, are cached on the client, and over time they can generate clutter. You can manually remove [update channels](update.md#configure-source-location-of-updates) by bringing up the Visual Studio Installer, switching to the **Available** tab, and selecting the **X** in the top right corner of the product card. You can programmatically remove channels (for example, older layout locations) using the `removeChannel` command. You can run `vswhere` programmatically on the client machine to determine which channels are cached on the client machine.
 
 | **Command** | **Description** |
 | --- | --- |
