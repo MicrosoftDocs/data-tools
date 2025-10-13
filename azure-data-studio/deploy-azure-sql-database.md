@@ -24,7 +24,7 @@ You can create an Azure SQL Database using Azure Data Studio through the deploym
 ## Prerequisites
 
 - [Azure Data Studio](download-azure-data-studio.md) is installed
-- An active Azure account and subscription. If you don't have one, [create a free account](https://azure.microsoft.com/free/).
+- An active Azure account and subscription. If you don't have one, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Use the deployment wizard
 
