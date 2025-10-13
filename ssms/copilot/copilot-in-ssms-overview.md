@@ -1,5 +1,5 @@
 ---
-title: "What is Copilot in SSMS"
+title: "What Is Copilot in SSMS"
 titleSuffix: Copilot in SQL Server Management Studio
 description: Learn about Copilot in SQL Server Management Studio.
 author: erinstellato-ms
