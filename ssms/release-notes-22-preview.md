@@ -56,7 +56,7 @@ For previous versions of SSMS, see:
 | GitHub Copilot in SSMS (Preview) | Added [GitHub Copilot in SQL Server Management Studio](/ssms/github-copilot/overview), available from the **AI Assistance** workload in the Visual Studio Installer. |
 | Query Hint Recommendation Tool (Preview) | Added the [Query Hint Recommendation Tool (Preview)](/ssms/query-hint-tool/hinttool-in-ssms-overview) component under **Individual Components > Code Tools** in the Visual Studio Installer. |
 | Scripting | Added scripting support for tables with Vector columns. |
-| SQL Server Integration Services (SSIS) | Reinstated SQL Server Integration Services (SSIS) capabilities (in preview), including SSISDB catalog management, automated execution of SSIS packages, and the Import Export Wizard. |
+| SQL Server Integration Services (SSIS) | Reinstated SQL Server Integration Services (SSIS) capabilities, including SSISDB catalog management, automated execution of SSIS packages, and the Import Export Wizard. |
 | Table Designer | Added support for Vector datatype to Table Designer. |
 | Theming | Expanded dark theme support to include the Connect to Azure Storage dialog, and the Registered Servers Export, Import, and Move Registered Server dialogs. |
 | Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11111.16]. |
@@ -70,7 +70,8 @@ For previous versions of SSMS, see:
 | Object Explorer | Resolved an issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-click does not work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
 | PowerShell | Fixed a bug that generated an error when attempting to start PowerShell from the Object Explorer context menu. |
 | Query Editor | Resolved an issue where the "Include column headers" option wasn't properly applied in new query windows. See [Copying query results does not include headers, even when the "Include column headers" option is enabled](https://developercommunity.visualstudio.com/t/Copying-query-results-does-not-include-h/10969136). |
-| Results Grid | Resolved and issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-click does not work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
+| Reports | Addressed a bug that caused an arithmetic overflow error in the Object Execution Statistics and Batch Execution Statistics reports when execution_count exceeded the int data type limit. |
+| Results Grid | Resolved an issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-click does not work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
 | Solution Explorer | Resolved an error that was generated when opening a folder that was closed but had files that were open. See [SSMS 21 Preview - error while opening a folder in Windows 11](https://developercommunity.visualstudio.com/t/SSMS-21-Preview---error-while-opening-a-/10855845). |
 | Status Bar | Reinstated line and column numbers in the status bar. See [In SSMS21 I can't find column number after clicking cell in grid results](https://developercommunity.visualstudio.com/t/In-SSMS21-I-cant-find-column-number-aft/10928369). |
 | T-SQL Language Settings | Fixed a bug that caused some T-SQL language settings from persisting between SSMS sessions. |
