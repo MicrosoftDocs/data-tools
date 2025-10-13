@@ -24,7 +24,7 @@ This feature is currently in preview.
 
 ## Prerequisites
 
-If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/free/) before you begin.
+If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 - [An Azure Data Explorer cluster with a database that you can connect to](/azure/data-explorer/create-cluster-database-portal).
 - [Azure Data Studio](../download-azure-data-studio.md).
