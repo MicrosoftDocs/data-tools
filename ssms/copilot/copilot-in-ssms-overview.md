@@ -39,7 +39,7 @@ The following example prompts are clear, specific, and tailored to the propertie
 
   ```copilot-prompt
     - What are the top-selling products by quantity?
-    - How do I change the compability mode for this database?
+    - How do I change the compatibility mode for this database?
     - Is there blocking in my database right now?
   ```
 
