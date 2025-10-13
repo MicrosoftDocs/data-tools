@@ -50,9 +50,9 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Arm64 Support | Added initial Windows Arm64 support for core SSMS 22 Preview scenarios, including connecting and querying. See **Known Issues** for a list of scenarios that are still unsupported. |
 | Edit Data | Added support for Vector data type to Edit Data. |
-| Execution Plans | Added the ability to open an execution plan in a new tab. When viewing an Execution Plan, right-click to bring up the menu and select **Show Execution Plan in New Tab.** See [SSMS Right Click To Open Execution Plan In A New Tab](https://feedback.azure.com/d365community/idea/8c1f1930-35cc-ee11-92bc-6045bd83e1af). |
+| Execution Plans | Added the ability to open an execution plan in a new tab. When viewing an Execution Plan, right-click to bring up the menu and select **Show Execution Plan in New Tab.** See [SSMS Right select To Open Execution Plan In A New Tab](https://feedback.azure.com/d365community/idea/8c1f1930-35cc-ee11-92bc-6045bd83e1af). |
 | IntelliSense | Added IntelliSense support for `VECTOR_SEARCH`, `CREATE VECTOR INDEX`, `AUTOSEEDING_SYSTEM_DATABASES`, `REUSE_SYSTEM_DATABASES`, AND `CREATE JSON INDEX`. |
-| JSON Viewer | Added the ability to view JSON data from the results grid. See [JSON column view like in azure data studio](https://developercommunity.microsoft.com/t/JSON-column-view-like-in-azure-data-stud/10881763). |
+| JSON Viewer | Added the ability to view JSON data from the results grid. See [JSON column view like in Azure data studio](https://developercommunity.microsoft.com/t/JSON-column-view-like-in-azure-data-stud/10881763). |
 | GitHub Copilot in SSMS (Preview) | Added [GitHub Copilot in SQL Server Management Studio](/ssms/github-copilot/overview), available from the **AI Assistance** workload in the Visual Studio Installer. |
 | Query Hint Recommendation Tool (Preview) | Added the [Query Hint Recommendation Tool (Preview)](/ssms/query-hint-tool/hinttool-in-ssms-overview) component under **Individual Components > Code Tools** in the Visual Studio Installer. |
 | Scripting | Added scripting support for tables with Vector columns. |
@@ -67,10 +67,10 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Database Properties | Fixed an issue that blocked the ability to change compatibility level for users with ALTER permissions. See [Database compatibility level drop down disabled but query works](https://developercommunity.visualstudio.com/t/Database-compatibility-level--drop-down-/10927466). |
 | Object Explorer | Resolved an error that was generated when dragging table objects from the Object Explorer to the Query Editor. |
-| Object Explorer | Resolved an issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-click does not work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
+| Object Explorer | Resolved an issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-select doesn't work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
 | PowerShell | Fixed a bug that generated an error when attempting to start PowerShell from the Object Explorer context menu. |
-| Query Editor | Resolved an issue where the "Include column headers" option wasn't properly applied in new query windows. See [Copying query results does not include headers, even when the "Include column headers" option is enabled](https://developercommunity.visualstudio.com/t/Copying-query-results-does-not-include-h/10969136). |
-| Results Grid | Resolved and issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-click does not work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
+| Query Editor | Resolved an issue where the "Include column headers" option wasn't properly applied in new query windows. See [Copying query results doesn't include headers, even when the "Include column headers" option is enabled](https://developercommunity.visualstudio.com/t/Copying-query-results-does-not-include-h/10969136). |
+| Results Grid | Resolved and issue that prevented direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-select doesn't work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
 | Solution Explorer | Resolved an error that was generated when opening a folder that was closed but had files that were open. See [SSMS 21 Preview - error while opening a folder in Windows 11](https://developercommunity.visualstudio.com/t/SSMS-21-Preview---error-while-opening-a-/10855845). |
 | Status Bar | Reinstated line and column numbers in the status bar. See [In SSMS21 I can't find column number after clicking cell in grid results](https://developercommunity.visualstudio.com/t/In-SSMS21-I-cant-find-column-number-aft/10928369). |
 | T-SQL Language Settings | Fixed a bug that caused some T-SQL language settings to persist between SSMS sessions. |
@@ -117,8 +117,8 @@ For more new features and bug fixes that are available in SSMS 22 Preview 1, see
 | --- | --- |
 | Always Encrypted | Added support for sovereign cloud solutions Bleu and Delos. |
 | Connection Dialog | The modern dialog is the default connection dialog. |
-| Database Tuning Advisor (DTA) | Improved DTA functionality including better tuning coverage for queries with temp table, tuning coverage to queries with temp tables, table variables, triggers, as well as improved index tuning quality, and general scalability and concurrency. |
-| IntelliSense | Added support for CURRENT_TIMEZONE_ID syntax, see [SSMS 21 does not recognize CURRENT_TIMEZONE_ID function](https://developercommunity.microsoft.com/t/SSMS-21-does-not-recognize-CURRENT_TIMEZ/10879862). |
+| Database Tuning Advisor (DTA) | Improved DTA functionality including better tuning coverage for queries with temp table, tuning coverage to queries with temp tables, table variables, triggers, and improved index tuning quality, and general scalability and concurrency. |
+| IntelliSense | Added support for CURRENT_TIMEZONE_ID syntax, see [SSMS 21 doesn't recognize CURRENT_TIMEZONE_ID function](https://developercommunity.microsoft.com/t/SSMS-21-does-not-recognize-CURRENT_TIMEZ/10879862). |
 | IntelliSense | Added support for ANSI concatenation using the ` | | =` operator. |
 | IntelliSense | Added support for `AI_GENERATE_EMBEDDINGS` syntax. |
 | IntelliSense | Added support for regular expression functions `REGEXP_MATCHES` and `REGEXP_SPLIT_TO_TABLE`. |
@@ -139,7 +139,7 @@ For more new features and bug fixes that are available in SSMS 22 Preview 1, see
 | Analysis Services | Resolved error `Object reference not set to an instance of an object. (Microsoft.VisualStudio.Design)` when browsing OLAP cubes. See [SSMS 21 Error browsing OLAP cubes](https://developercommunity.visualstudio.com/t/SSMS-21-Error-browsing-OLAP-cubes/10915226). |
 | Analysis Services | Resolved error `Could not load file or assembly 'Microsoft.Data.ConnectionUI.Dialog, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The system cannot find the file specified.` See [Browse MDM models generates an error](https://developercommunity.visualstudio.com/t/Browse-MDM-models-generates-an-error/10920140). |
 | Database Properties | Fixed validation for `MAXDOP` and `LEDGER_DIGEST_STORAGE_ENDPOINT` in Database Scoped Configurations tab. |
-| Find/Replace | Restored ability to use **Ctrl**+**C** in the Find/Replace dialog after opening a saved `.sql` file. See [Copy (Ctrl+C) does not work in Find/Replace dialog](https://developercommunity.visualstudio.com/t/Copy-CtrlC-does-not-work-in-FindRepl/10909707). |
+| Find/Replace | Restored ability to use **Ctrl**+**C** in the Find/Replace dialog after opening a saved `.sql` file. See [Copy (Ctrl+C) doesn't work in Find/Replace dialog](https://developercommunity.visualstudio.com/t/Copy-CtrlC-does-not-work-in-FindRepl/10909707). |
 | General UI | Resolved behavior for selected dialogs that would appear behind the main windows when opened. |
 | General UI | Fixed issue that generated the error `Unsaved documents cannot be cut or copied to the clipboard from the Miscellaneous Files project. You must save the unsaved document(s) before cutting or copying them.` when using **Ctrl**+**C** in the Quick Find dialog (Ctrl+F). |
 | Query Store | Addressed incorrect sizing with Configure Regressed Queries dialog. See ["Configure regressed queries" dialog goes off the screen vertically on 1920x1080 monitor](https://developercommunity.visualstudio.com/t/Confgure-regressed-queries-dialog-goes/10929863). |
