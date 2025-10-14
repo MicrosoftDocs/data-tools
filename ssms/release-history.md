@@ -3,18 +3,19 @@ title: Release History for SQL Server Management Studio
 description: Learn about the release history for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
-ms.date: 09/09/2025
+ms.reviewer: randolphwest, maghan, mbarickman
+ms.date: 10/14/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
   - data-tools
 ---
+
 # Release history for SQL Server Management Studio
 
-SQL Server Management Studio is updated regularly to provide new features, performance and reliability improvements, security updates, and bug fixes.
+SQL Server Management Studio is regularly updated to provide new features, performance and reliability improvements, security updates, and bug fixes.
 
-[!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] introduces Preview and Release channels to provide customers the flexibility and control to determine when they adopt feature updates. The latest release on each channel is always, by definition, the most secure, so we highly encourage customers to stay up to date regardless of what channel they choose to get updates from.
+[!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] introduces Preview and Release channels to give you the flexibility and control to decide when to adopt feature updates. The latest release on each channel is always the most secure version, so we encourage you to stay up to date regardless of the channel you choose.
 
 For more information, see:
 
@@ -34,15 +35,15 @@ If you need to install or update to a specific release of SSMS, you can find the
 
 ## Uninstall SSMS to go back to an earlier release
 
-If you need to install an earlier release of SQL Server Management Studio 21, you must uninstall your current installation, and use one of the links later in this article to reinstall the version that you prefer.
+To install an earlier release of SQL Server Management Studio 21, uninstall your current installation. Then, use one of the links later in this article to reinstall the version that you want.
 
 1. On Windows, open the Visual Studio Installer.
 1. Uninstall all instances of SQL Server Management Studio 21 listed in the Visual Studio Installer.
 1. From Programs and Features in the Control Panel, find **SQL Server Management Studio 21**, and uninstall it.
 
-If you need to install an earlier release of SQL Server Management Studio 20.x and earlier for a major version (for example, to downgrade from SSMS 20.2 to SSMS 19.3), then you must uninstall your current installation, and use one of the links later in this article to reinstall the version that you prefer.
+To install an earlier release of SQL Server Management Studio 20.x or earlier for a major version (for example, to downgrade from SSMS 20.2 to SSMS 19.3), uninstall your current installation. Then, use one of the links later in this article to reinstall the version that you want.
 
-- On Windows, from Programs and Features in the Control Panel, find your version of **Microsoft SQL Server Management Studio** and uninstall it.
+- On Windows, from **Programs and Features** in the Control Panel, find your version of **SSMS** and uninstall it.
 
 Before attempting to install a previous version of SQL Server Management Studio, refer to our [support policy](support-policy.md). Microsoft doesn't guarantee support outside of this policy.
 
@@ -54,7 +55,7 @@ Uninstalling SSMS doesn't remove standalone products and components such as .NET
 
 This section provides links to the publicly released bootstrappers for SQL Server Management Studio. The bootstrappers initiate Visual Studio's installation process. Only the latest release is supported.
 
-To verify what version a given bootstrapper installs, right-click on the bootstrapper `vs_SSMS.exe`, choose **Properties** > **Details**, and look at the Product Version information. The version number should always be read as *latest of that version*. A bootstrapper with a Product Version of 21.0 would install the latest 21.0.x servicing release that is available.
+To verify what version a given bootstrapper installs, right-click on the bootstrapper `vs_SSMS.exe`, choose **Properties** > **Details**, and look at the Product Version information. The version number should always be read as *latest of that version*. A bootstrapper with a Product Version of 21.0 would install the latest 21.0.x servicing release that's available.
 
 ### Evergreen bootstrapper
 
@@ -70,6 +71,7 @@ This table lists latest build numbers of publicly released versions of SQL Serve
 
 | SSMS version | Build number | Release date |
 | --- | --- | --- |
+| [21.5.14](https://download.visualstudio.microsoft.com/download/pr/c2e2845d-bdff-44fc-ac00-3d488e9f5675/9c65ae0a3cf651fda7feb726431b2737eb45a15023687caa047033cba0f86c09/vs_SSMS.exe) | 21.5.14 | September 9, 2025 |
 | [21.4.12](https://download.visualstudio.microsoft.com/download/pr/df8b8a1d-60a9-4872-99a4-7b1bcd00b219/5c202483678778f63df9511799b7c7d1da90a8d1b7915e16b5fbc691b08af965/vs_SSMS.exe) | 21.4.12 | August 12, 2025 |
 | [21.4.8](https://download.visualstudio.microsoft.com/download/pr/f55fba7b-3f02-49b7-9aca-a075049a807d/68223c53272acced87437bde86eff72237492d2ec25fb7a826bc2372fd17f3fc/vs_SSMS.exe) | 21.4.8 | July 8, 2025 |
 | [21.3.7](https://download.visualstudio.microsoft.com/download/pr/13907dbe-8bb3-4cfe-b0ae-147e70f8b2f3/3d053fb9682894e3a96a8b78e629dad1067cc945b9ccfbabd5bee63cb274834f/vs_SSMS.exe) | 21.3.7 | June 23, 2025 |
