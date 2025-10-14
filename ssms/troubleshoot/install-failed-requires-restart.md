@@ -1,10 +1,10 @@
 ---
 title: SSMS Setup Failed or Requires Restart
-description: "Troubleshooting SSMS installation problems"
+description: Troubleshooting SSMS installation problems
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
-ms.date: 05/10/2024
+ms.reviewer: randolphwest
+ms.date: 10/14/2025
 ms.service: sql-server-management-studio
 ms.topic: install-set-up-deploy
 ms.collection:
@@ -12,7 +12,6 @@ ms.collection:
 ms.custom:
   - intro-installation
 ---
-
 
 # SQL Server Management Studio (SSMS) setup failed or requires restarting the machine
 
@@ -28,10 +27,10 @@ Following these steps to uninstall the "Microsoft ODBC Driver 17 for SQL Server"
 
 1. Close any related applications, including SSMS, Visual Studio, or SQL Server Profiler.
 1. Go to Control Panel > Add/Remove Programs.
-1. Locate the entry for "Microsoft ODBC Driver 17 for SQL Server" and uninstall. This step may require a restart.
+1. Locate the entry for "Microsoft ODBC Driver 17 for SQL Server" and uninstall. This step might require a restart.
 1. Begin the SSMS installation of the [latest version](../install/install.md).
 
-[!INCLUDE[get-help-sql-tools](../includes/paragraph-content/get-help-sql-tools.md)]
+[!INCLUDE [get-help-sql-tools](../includes/paragraph-content/get-help-sql-tools.md)]
 
 ## Related content
 
