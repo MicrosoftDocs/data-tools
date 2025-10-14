@@ -20,6 +20,7 @@ This article lists known issues for [!INCLUDE [ssms-22-md](includes/ssms-22-md.m
 | Feature | Details | Workaround |
 | --- | --- | --- |
 | Arm64 | There isn't support for SSAS, SSRS, and SSIS on Arm64 devices. | Run SSAS, SSRS, or SSIS on a device that isn't Arm64. |
+| Arm64 - Data Classification | A LoadLibrary failure error message is displayed if you try to set Microsoft Information Protection Policy. | There's no workaround. |
 | Arm64 - Profiler | Trying to run Profiler results in an exception. | Run Profiler on a device that isn't Arm64. |
 | Arm64 - Replication | Trying to bring up the "Distributor Properties" form results in an exception. | Run SSMS on a device that isn't Arm64. |
 | Connection | You can't import connections from a previous version. This issue is scheduled to be resolved in a later preview. | There's no workaround. |
@@ -36,6 +37,7 @@ This article lists known issues for [!INCLUDE [ssms-22-md](includes/ssms-22-md.m
 | Results Pane | When switching themes, if the output is set to Results to Text, the Results pane doesn't switch themes. The original theme is still applied. | To apply any theme changes to the Results pane, restart SSMS. |
 | SQL Server Integration Services (SSIS) | Maintenance Tasks (including Back Up Database Task, Check Database Integrity Task, Execute SQL Server Agent Job Task, Execute T-SQL Statement Task, History Cleanup Task, and Maintenance Cleanup Task) aren't supported by [Execute Package Utility (dtexecui)](/sql/integration-services/packages/execute-package-utility-dtexecui-ui-reference). | Use [dtexec Utility](/sql/integration-services/packages/dtexec-utility) to run packages including these Maintenance Tasks or use [Execute Package Utility (dtexecui)](/sql/integration-services/packages/execute-package-utility-dtexecui-ui-reference) in SSMS 20. |
 | SQL Server Integration Services (SSIS) | SSIS Integration Runtime creation wizard isn't supported. | Use Azure Data Factory portal to [Create an Azure-SSIS integration runtime](/azure/data-factory/create-azure-ssis-integration-runtime-portal?tabs=data-factory). |
+| SQL Server Integration Services (SSIS) | Using the Execute Package Utility (dtexecui) to run Integration Packages with Script Task fails. | Manually download and install [Microsoft Visual Studio for Applications 2022](https://www.microsoft.com/download/details.aspx?id=105123) first, before running package execution. |
 
 ## Related content
 
