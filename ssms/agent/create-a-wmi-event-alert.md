@@ -3,7 +3,6 @@ title: "Create a WMI Event Alert"
 description: "Create a WMI Event Alert"
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
 ms.date: 09/20/2022
 ms.service: sql-server-management-studio
 ms.topic: how-to

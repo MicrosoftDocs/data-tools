@@ -3,7 +3,7 @@ title: Get Full Memory Dump to Troubleshoot SSMS
 description: "Get full memory dump"
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
+ms.reviewer: randolphwest
 ms.date: 06/26/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general

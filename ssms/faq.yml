@@ -4,7 +4,7 @@ metadata:
   description: Get answers to frequently asked questions about SSMS.
   author: erinstellato-ms
   ms.author: erinstellato
-  ms.reviewer: maghan, randolphwest
+  ms.reviewer: randolphwest
   ms.date: 08/07/2025
   ms.service: sql-server-management-studio
   ms.topic: faq

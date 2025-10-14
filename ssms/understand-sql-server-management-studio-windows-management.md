@@ -3,7 +3,6 @@ title: "Understand SQL Server Management Studio Windows Management"
 description: Understand how to manage the windows for SQL Server Management Studio tools.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
 ms.date: 06/03/2024
 ms.service: sql-server-management-studio
 ms.topic: concept-article

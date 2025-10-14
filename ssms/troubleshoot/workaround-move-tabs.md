@@ -3,7 +3,7 @@ title: Enable Tabs to Move Without Crashing SSMS
 description: Workaround to move tabs in SQL Server Management Studio (SSMS).
 author: dzsquared
 ms.author: drskwier
-ms.reviewer: maghan, randolphwest
+ms.reviewer: randolphwest
 ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

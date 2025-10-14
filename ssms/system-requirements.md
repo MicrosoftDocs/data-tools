@@ -3,7 +3,7 @@ title: System Requirements for SQL Server Management Studio
 description: Learn about the system requirements for SQL Server Management Studio (SSMS) on Windows.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan, mbarickman
+ms.reviewer: randolphwest, mbarickman
 ms.date: 07/24/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

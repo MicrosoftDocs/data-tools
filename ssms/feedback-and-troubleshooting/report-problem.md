@@ -3,7 +3,7 @@ title: Report a Problem with SQL Server Management Studio
 description: Learn how to report a problem with SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
+ms.reviewer: randolphwest
 ms.date: 06/26/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general

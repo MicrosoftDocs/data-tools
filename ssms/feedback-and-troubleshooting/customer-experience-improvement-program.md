@@ -3,7 +3,7 @@ title: Customer Experience Improvement Program in SQL Server Management Studio
 description: Learn about the Customer Experience Improvement Program in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
+ms.reviewer: randolphwest
 ms.date: 12/10/2024
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general

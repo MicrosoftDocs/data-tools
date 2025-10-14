@@ -3,7 +3,6 @@ title: "Modify a Job"
 description: Learn how to modify a SQL Server Agent job.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: mikeray
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
