@@ -3,7 +3,7 @@ title: Web Browser
 description: "SQL Server Management Studio Web Browser"
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan
+ms.reviewer: randolphwest
 ms.date: 12/21/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

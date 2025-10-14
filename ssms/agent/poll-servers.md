@@ -3,7 +3,6 @@ title: "Poll Servers"
 description: "Poll servers control how frequently the target server connects to the master server to download instructions and upload the results of job execution."
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: randolphwest
 ms.date: 04/18/2022
 ms.service: sql-server-management-studio
 ms.topic: how-to

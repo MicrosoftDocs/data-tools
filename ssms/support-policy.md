@@ -3,7 +3,7 @@ title: "SQL Server Management Studio (SSMS) Support Policy"
 description: "SQL Server Management Studio (SSMS) support policy"
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest
+ms.reviewer: randolphwest
 ms.date: 08/12/2025
 ms.service: sql-server-management-studio
 ms.topic: article

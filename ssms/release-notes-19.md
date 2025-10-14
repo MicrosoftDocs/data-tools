@@ -3,7 +3,7 @@ title: "Release Notes For SQL Server Management Studio (SSMS) 19 and earlier ver
 description: Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: maghan, randolphwest, mbarickman
+ms.reviewer: randolphwest, mbarickman
 ms.date: 04/18/2025
 ms.service: sql-server-management-studio
 ms.topic: release-notes

@@ -3,7 +3,7 @@ title: Modify SQL Server Management Studio
 description: Learn how to modify the SQL Server Management Studio (SSMS) installation.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
+ms.reviewer: randolphwest
 ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

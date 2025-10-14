@@ -3,7 +3,6 @@ title: Remove a Registered Server
 description: Remove a registered server in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: mikeray
 ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

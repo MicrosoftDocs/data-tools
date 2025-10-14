@@ -3,7 +3,7 @@ title: Release History for SQL Server Management Studio
 description: Learn about the release history for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan, mbarickman
+ms.reviewer: randolphwest, mbarickman
 ms.date: 10/14/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

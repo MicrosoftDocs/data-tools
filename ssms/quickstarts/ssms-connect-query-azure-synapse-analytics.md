@@ -3,7 +3,6 @@ title: Connect and Query a Dedicated SQL Pool in Azure Synapse Analytics
 description: Connect to and query a dedicated SQL pool in Azure Synapse Analytics using SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: mikeray
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: quickstart

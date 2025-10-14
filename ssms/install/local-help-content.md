@@ -3,7 +3,7 @@ title: Install Local Help Documentation for SQL Server Management Studio
 description: Install and manage local help documentation by using the Microsoft Help Viewer, and add, remove, update, and move Help content installed on your computer.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan
+ms.reviewer: randolphwest
 ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

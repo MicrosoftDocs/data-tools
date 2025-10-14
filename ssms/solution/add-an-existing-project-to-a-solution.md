@@ -3,7 +3,6 @@ title: "Add an Existing Project to a Solution"
 description: "Add an Existing Project to a Solution"
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: maghan
 ms.date: 02/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
