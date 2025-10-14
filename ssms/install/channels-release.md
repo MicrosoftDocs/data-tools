@@ -3,8 +3,8 @@ title: Channels for SQL Server Management Studio
 description: Channels for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest, maghan, mbarickman
-ms.date: 05/19/2025
+ms.reviewer: randolphwest, mbarickman
+ms.date: 10/14/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -12,9 +12,9 @@ ms.collection:
 ---
 # Channels for SQL Server Management Studio
 
-SQL Server Management Studio (SSMS) follows a regular release cadence to ensure users have access to the latest features and improvements. This document outlines the different channels available for SSMS, expected release cadence, and how you can provide feedback on new features and updates.
-
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
+
+SQL Server Management Studio (SSMS) follows a regular release cadence to ensure users have access to the latest features and improvements. This document outlines the different channels available for SSMS, expected release cadence, and how you can provide feedback on new features and updates.
 
 We continually enhance the capabilities of SQL Server Management Studio with regular minor version updates, and we introduce new features according to our [roadmap of upcoming features](../roadmap.md). New features appear first on the **Preview channel** so that you can provide early feedback. When these new features are ready for widespread use, we release them on the **Release channel**. We might sometimes include **Preview Features** in the **Release channel**, to give you an opportunity to try out new features and share your feedback without doing another install.
 
@@ -27,7 +27,7 @@ You can control when to adopt feature updates by selecting a channel. There are 
 
 ## Determine your product version and channel
 
-You can determine which channel and version of SSMS you're using by opening **Help** -> **About**. The version number indicates the major version of SSMS by using the first number ("`21`"), the minor update version by using the second number ("21.`0`"), and the servicing version by using the third number ("21.0.**1**"). If you're using the Preview channel, the preview release is also indicated after the version number ("21.0 **Preview**"), and within SSMS, **PREVIEW** appears near the top right of the SSMS window.
+You can determine which channel and version of SSMS you're using by opening **Help** -> **About**. The version number indicates the major version of SSMS by using the first number ("`21`"), the minor update version by using the second number ("21.`0`"), and the servicing version by using the third number ("21.0.`1`"). If you're using the Preview channel, the preview release is also indicated after the version number ("21.0 **Preview**"), and within SSMS, **PREVIEW** appears near the top right of the SSMS window.
 
 ## Installing, updating, and switching channels
 
