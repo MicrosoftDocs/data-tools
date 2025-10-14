@@ -78,6 +78,31 @@ items:
       - name: User assistance in SSMS
         href: user-assistance-in-sql-server-management-studio.md
 
+  - name: GitHub Copilot in SQL Server Management Studio (SSMS) (Preview)
+    items:
+      - name: What is GitHub Copilot in SSMS (Preview)?
+        href: github-copilot/overview.md
+      - name: Get started with GitHub Copilot in SSMS (Preview)
+        href: github-copilot/get-started.md
+      - name: Chat
+        items:
+          - name: Ask mode
+            href: github-copilot/chat.md
+          - name: Chat context
+            href: github-copilot/chat-context.md
+      - name: Account
+        items:
+          - name: Install GitHub Copilot in SSMS
+            href: github-copilot/installation-state.md
+          - name: Use GitHub Copilot for free
+            href: github-copilot/free-plan.md
+      - name: Scenarios
+        href: github-copilot/scenarios.md
+      - name: Best practices
+        href: github-copilot/best-practices.md
+      - name: Troubleshoot GitHub Copilot in SSMS
+        href: github-copilot/troubleshoot.md
+
   - name: Copilot in SQL Server Management Studio (SSMS) (Preview)
     items:
       - name: Overview of Copilot in SSMS (Preview)
@@ -96,6 +121,15 @@ items:
         href: copilot/copilot-in-ssms-best-practices.md
       - name: Troubleshooting
         href: copilot/copilot-in-ssms-troubleshooting.md
+
+  - name: Query Hint Recommendation tool (Preview)
+    items:
+      - name: Overview of the Query Hint Recommendation tool (Preview)
+        href: query-hint-tool/hint-tool-overview.md
+      - name: Install the Query Hint Recommendation tool (Preview)
+        href: query-hint-tool/hint-tool-install.md
+      - name: Use the Query Hint Recommendation tool (Preview)
+        href: query-hint-tool/hint-tool-use.md
 
   - name: Connect and query
     items:

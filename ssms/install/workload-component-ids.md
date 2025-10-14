@@ -4,7 +4,7 @@ description: List the workload and component IDs that can be used when creating 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, maghan
-ms.date: 06/25/2025
+ms.date: 10/07/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -28,7 +28,7 @@ For more information about how to use these IDs, see [Use command-line parameter
 
 **ID:** Microsoft.VisualStudio.Component.CoreEditor
 
-**Description:** The SQL Server Management Studio (SSMS) core experience, including the Query Editor, Object Explorer, and database management, troubleshooting, and high availability and disaster recovery configuration.
+**Description:** The SQL Server Management Studio (SSMS) core experience. This includes the Query Editor and Object Explorer, as well as database management, troubleshooting, and high availability and disaster recovery configuration.
 
 ### Components included by this workload
 
@@ -47,9 +47,10 @@ For more information about how to use these IDs, see [Use command-line parameter
 
 ### Components included by this workload
 
-| Component ID | Name | Dependency type |
-| --- | --- | --- |
-| Microsoft.SSMS.Component.Copilot | Copilot in SQL Server Management Studio (SSMS) | Required |
+| Component ID | Name | Dependency type | Available version |
+| --- | --- | --- | --- |
+| Microsoft.SSMS.Component.Copilot | Copilot in SQL Server Management Studio (SSMS) | Recommended | SSMS 21 |
+| Microsoft.SSMS.ComponentGroup.Copilot | GitHub Copilot in SQL Server Management Studio (SSMS) | Recommended | SSMS 22 (Preview) |
 
 ## Business Intelligence
 
@@ -61,22 +62,23 @@ For more information about how to use these IDs, see [Use command-line parameter
 
 | Component ID | Name | Dependency type |
 | --- | --- | --- |
-| Microsoft.SSMS.Component.AS | Analysis Services management capabilities | Required |
-| Microsoft.SSMS.Component.IS | Integration Services management capabilities | Required |
-| Microsoft.SSMS.Component.RS | Reporting Services management capabilities | Required |
+| Microsoft.SSMS.Component.AS | Analysis Services management capabilities | Recommended |
+| Microsoft.SSMS.Component.IS | Integration Services management capabilities | Recommended |
+| Microsoft.SSMS.Component.RS | Reporting Services management capabilities | Recommended |
 
 ## Code tools
 
 **ID:** Microsoft.SqlServer.Workload.SSMS.CodeTools
 
-**Description:** Tools to fit when and where you work while improving collaboration.
+**Description:** Tools to fit when and where you work while improving code.
 
 ### Components included by this workload
 
 | Component ID | Name | Dependency type |
 | --- | --- | --- |
 | Microsoft.Component.HelpViewer | Microsoft documentation available as offline content | Optional |
-| Microsoft.VisualStudio.Component.TeamExplorer.MinGit | Git integration | Required |
+| Microsoft.VisualStudio.Component.TeamExplorer.MinGit | Git integration | Recommended |
+| Microsoft.SSMS.Component.QueryHintTool | Query Hint Recommendations Tool | Recommended |
 
 ## Hybrid and Migration
 
@@ -88,7 +90,7 @@ For more information about how to use these IDs, see [Use command-line parameter
 
 | Component ID | Name | Dependency type |
 | --- | --- | --- |
-| Microsoft.SSMS.Component.MigrationAssistant | Assessment and Migration Assistant | Required |
+| Microsoft.SSMS.Component.MigrationAssistant | Assessment and Migration Assistant | Recommended |
 
 For more information about how to use this list, see [Create an offline installation of SQL Server Management Studio](create-offline.md).
 

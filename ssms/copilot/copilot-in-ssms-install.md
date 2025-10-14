@@ -5,12 +5,13 @@ description: Learn how to install Copilot in SQL Server Management Studio.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 07/28/2025
-ms.update-cycle: 180-days
+ms.date: 10/07/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
+  - data-tools
   - ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to install Copilot in SQL Server Management Studio.
 ---
 
@@ -23,7 +24,7 @@ Copilot in SQL Server Management Studio (SSMS) is your AI assistant that can ans
 To use Copilot in SSMS, you need:
 
 - [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)]
-- An endpoint and deployment in [Azure OpenAI Service](/azure/ai-services/openai/overview)
+- An endpoint and deployment in [Azure OpenAI in Azure AI Foundry](/azure/ai-services/openai/overview)
 
 [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is the GA version of SQL Server Management Studio (SSMS). For information related to SSMS 21 installation, see [Install SQL Server Management Studio](../install/install.md).
 
@@ -63,12 +64,11 @@ You can remove Copilot in SSMS from your SSMS installation using the Visual Stud
 1. Select the installation of SSMS from you want to remove Copilot in SSMS, then select **Modify**.
 1. Uncheck **AI Assistance** on the Workloads tab.
 1. Select **Modify** to uninstall the extension.
-1. Restart SSMS.
 
 ## Related content
 
 - [Troubleshooting issues with Copilot in SQL Server Management Studio](copilot-in-ssms-troubleshooting.md)
-- [What is Azure OpenAI Service?](/azure/ai-services/openai/overview)
+- [What is Azure OpenAI in Azure AI Foundry Models?](/azure/ai-services/openai/overview)
 - [Use Azure OpenAI with Copilot in SSMS](use-azure-openai-with-copilot-in-ssms.md)
 - [Use the chat window for Copilot in SQL Server Management Studio](copilot-in-ssms-chat.md)
 - [Code assistance for Copilot in SQL Server Management Studio](copilot-in-ssms-code-assistance.md)

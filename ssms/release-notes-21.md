@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 09/09/2025
+ms.date: 10/14/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -30,11 +30,43 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="21.6.17"></a>
+
+### 21.6.17
+
+**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
+
+- Release number: 21.6.17
+- Release date: October 14, 2025
+
+#### What's new in 21.6.17
+
+| Feature | Details |
+| --- | --- |
+| Connection dialog | Added the ability to sort the Recent Connections list in the Modern connection dialog. To sort connections, select **Sort By > Date Added** or **Name** from the right-click menu. See [Permit sorting of the "Recent connections" box by name](https://developercommunity.visualstudio.com/t/Permit-sorting-of-the-Recent-connection/10971468). |
+| Visual Studio | Updated to Visual Studio 17.14.17. |
+
+#### Bug fixes in 21.6.17
+
+| Feature | Details |
+| --- | --- |
+| Connection dialog | Resolved a bug that generated an error when using the `MUST_CHANGE` property and trying to change the password. See [Instead of Change password dialog an error pops up](https://developercommunity.visualstudio.com/t/Instead-of-Chage-password-dialog-an-erro/10899416). |
+| Connection dialog | Fixed an issue that caused the server name to be blank in the Editor Tab name when Custom Name property was left blank. See [New Custom Properties in SSMS 21.5.14 breaks what's on the tab strip](https://developercommunity.visualstudio.com/t/New-Custom-Properties-in-SSMS-21514-br/10962982). |
+| Connection dialog | Reinstated the execution timeout default value to 0. See [Execution Timeout Expired](https://developercommunity.visualstudio.com/t/Execution-Timeout-Expired/10963347). **Note**: this change doesn't update the execution timeout value for existing connections. To resolve this issue, delete all previously created connections or manually update the execution timeout to 0. |
+| Connection dialog | Resolved an issue where the Modern connection dialog saved passwords when the **Remember Password** option wasn't checked. See [Connection Dialog SSMS 21](https://developercommunity.visualstudio.com/t/Connection-Dialog-SSMS-21/10966681). |
+| Connection dialog | Added new icons to differentiate between on-prem/local connections and cloud connections. |
+| Dark theme | Resolved a bug that made keywords in the query editor difficult to read for non-English languages. See [SSMS 21 preview dark mode text is not readable](https://developercommunity.visualstudio.com/t/SSMS-21-preview-dark-mode-text-is-not-re/10851866). |
+| Managed Instance Link | Updated the setup process for Managed Instance Link to dynamically retrieve and install the current set of Azure-trusted root certificates. |
+| Object Explorer | Updated the script generated when selecting **Script Table as > CREATE** from the right-click menu to include clustered columnstore indexes. See [Slow and incorrect 'Script Table as CREATE To'](https://developercommunity.visualstudio.com/t/Slow-and-incorrect-Script-Table-as-CREA/10930733). |
+| Query Store | Fixed an issue that removed tooltips from Query Store report buttons. See [Query Store Regressed report - buttons missing tooltips](https://developercommunity.visualstudio.com/t/Query-Store-Regressed-report---buttons-m/10868722). |
+| Query Store | Resolved a bug that caused resize issues with the Query Store reports window. See [Window Resizing Redraw Issue](https://developercommunity.visualstudio.com/t/Window-Resizing-Redraw-Issue/10917264). |
+| SQL Profiler | Resolved an issue that generated an Assembly error when trying to connect to a Power BI Premium workspace. See [SQL Profiler 21.4.8 can't connect to Power BI Premium workspace any longer after update](https://developercommunity.visualstudio.com/t/SQL-Profiler-2148-cant-connect-to-Pow/10939290). |
+| View Designer | Fixed an issue that caused the Add Table dialog to open on a different monitor or below other windows, sometimes causing SSMS to become unresponsive. See [SSMS 21 Preview 1: New View window "Add Table" not ware I closed out of New View](https://feedback.azure.com/d365community/idea/8790c2c0-22a8-ef11-95f6-000d3a01397d). |
+| View Designer | Fixed an issue that caused the SQL Syntax Error Encountered dialog to open on a different monitor or behind other windows, sometimes causing SSMS to be unresponsive. See [SQL Syntax Errors Encountered Dialog Box](https://developercommunity.visualstudio.com/t/SQL-Syntax-Errors-Encountered-Dialog-Box/10935148). |
+
 <a id="21.5.14"></a>
 
 ### 21.5.14
-
-**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
 
 - Release number: 21.5.14
 - Release date: September 9, 2025
