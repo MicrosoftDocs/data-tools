@@ -264,6 +264,31 @@
       "source_path": "azure-data-studio/quickstart-oracle.md",
       "redirect_url": "/sql/ssma/oracle",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/sql-database-project-extension-build-from-command-line.md",
+      "redirect_url": "/sql/tools/visual-studio-code-extensions/sql-database-projects/build-database-project-from-command-line",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/sql-database-project-extension-build.md",
+      "redirect_url": "/sql/tools/visual-studio-code-extensions/sql-database-projects/sql-database-projects-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/sql-database-project-extension-getting-started.md",
+      "redirect_url": "/sql/tools/visual-studio-code-extensions/sql-database-projects/getting-started-sql-database-projects-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/sql-database-project-extension-sdk-style-projects.md",
+      "redirect_url": "/sql/tools/sql-database-projects/sql-database-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/sql-database-project-extension.md",
+      "redirect_url": "/sql/tools/visual-studio-code-extensions/sql-database-projects/sql-database-projects-extension",
+      "redirect_document_id": false
     }
   ]
 }
