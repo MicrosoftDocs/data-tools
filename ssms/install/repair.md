@@ -48,7 +48,7 @@ To repair your installation, follow these steps.
 
    You might be prompted to update the Visual Studio Installer before you continue. If so, follow the prompts.
 
-1. In the Visual Studio Installer, look for the installation of SQL Server Management Studio (SSMS) that you want to repair. Then choose **Repair** from the More dropdown list menu.
+1. In the Visual Studio Installer, look for the installation of SQL Server Management Studio (SSMS) that you want to repair. Then choose **Repair** from the More dropdown menu.
 
    The **Repair** option appears only for installed instances of SSMS. If you don't see the **Repair** option, check whether you selected **More** in a version that appears in the Visual Studio Installer as **Available** rather than **Installed**.
 

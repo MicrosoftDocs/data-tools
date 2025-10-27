@@ -28,7 +28,7 @@ To view the feature usage data collected by SSMS, follow these steps:
 
 1. Launch SSMS.
 1. Select **View** from the main menu, then select **Output** to display the **Output** window.
-1. In the **Output** window, choose **Telemetry** from the **Show output from:** dropdown list menu.
+1. In the **Output** window, choose **Telemetry** from the **Show output from:** dropdown menu.
 
 As you interact with SSMS, the **Output** window displays the collected data.
 

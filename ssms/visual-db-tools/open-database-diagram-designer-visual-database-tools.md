@@ -26,7 +26,7 @@ You can open Database Diagram Designer by opening a new or existing diagram.
 
 1. Right-click the Database Diagrams node of your database in Object Explorer.
 
-1. From the dropdown list menu, select **New Database Diagram**.
+1. From the dropdown menu, select **New Database Diagram**.
 
 1. In the **Add Table** dialog box, choose tables to work with in the diagram.
 
@@ -39,7 +39,7 @@ You can open Database Diagram Designer by opening a new or existing diagram.
 
 1. Right-click the diagram under the Database Diagrams node of your database in Object Explorer.
 
-1. From the dropdown list menu, select **Design Database Diagram**.
+1. From the dropdown menu, select **Design Database Diagram**.
 
 1. The **Database Diagram** menu is added to the main menu, and the diagram opens in the designer pane.
 
