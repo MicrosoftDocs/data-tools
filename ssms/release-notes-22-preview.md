@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS) 22 Preview.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 10/14/2025
+ms.date: 10/27/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -35,11 +35,43 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.0.0-pre.4.0"></a>
+
+### 22.0 Preview 4
+
+**[Download SQL Server Management Studio (SSMS) 22 Preview](https://aka.ms/ssms/22/preview/vs_SSMS.exe)**
+
+- Release number: 22.0 Preview 4
+- Release date: October 27, 2025
+
+#### What's new in 22.0 Preview 4
+
+| Feature | Details |
+| --- | --- |
+| Connection Dialog | Added a **Reset** button to clear the fields in the **Connection Properties** section. |
+| GitHub Copilot in SSMS (Preview) | Introduced support for the SSMS responder when using **Ask Copilot** within **Feature Search**. |
+| Indexes | Added options to create Vector and JSON indexes. Right-click **Indexes > New Index > JSON Index...** or **Vector Index...** |
+| Object Explorer | Introduce display information for dimension and base type parameters for Vector data types in Object Explorer. |
+| Query Plans | Added support for JSON and Vector index operations. |
+| Snippets | Added numerous new snippet files, including snippets for creating various index types, creating and altering external models for AI embeddings, and managing security and schema objects. |
+| Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11122.92]. |
+
+#### Bug fixes in 22.0 Preview 4
+
+| Feature | Description |
+| --- | --- |
+| Activity Monitor | Resolved various context menu issues for **Recent Expensive Queries** and **Active Expensive Queries**. See [Activity Monitor Failed to retrieve Execution Plan data](https://developercommunity.visualstudio.com/t/Activity-Monitor-Failed-to-retrieve-Exec/10983180). |
+| Authentication | Introduced a new menu option in **Help > Clear Entra ID Token Cache** to fix an issue that prevented users were were recently added to an Entra ID group from being able to login. See [Unable to login when recently been added to an EntraID group](https://developercommunity.microsoft.com/t/Unable-to-login-when-recently-been-added/10946664). |
+| Available Databases | Resolved an issue that generated the error `Parse error at line: 1, column: 5: Incorrect syntax near 'NOEXEC'.` when switching between a SQL database and a Data Warehouse on the same server. See [Issue switching between DW and SQL database in SSMS21](https://developercommunity.visualstudio.com/t/-Issue-switching-between-DW-and-SQL-data/10972386). |
+| Connection Dialog | Fixed an issue where the **Application Name** field in **Advanced Properties** was not being inherited. See [New Query from Object Explorer Does Not Inherit App Name from Highlighted Database](https://developercommunity.visualstudio.com/t/New-Query-from-Object-Explorer-Does-Not-/10977858). |
+| Generate Scripts Wizard | Resolved an `Object reference not set to an instance of an object` error thrown when trying to select options on the **Set Scripting Option** menu. See [Advance option on generate script button click throwing error in SSMS 2022 Preview 3](https://developercommunity.visualstudio.com/t/Advance-option-on-generate-script-button/10984224). |
+| GitHub Copilot in SSMS (Preview) | Fixed an issue with an empty chat window that hangs. See [SSMS 22 Preview hangs at Modern Connection Dialog after installing GitHub Copilot](https://developercommunity.visualstudio.com/t/SSMS-22-Preview-hangs-at-Modern-Connecti/10984949). | 
+| Query Editor | Resolved a behavior that prevented scrolling of the query editor pane when the results pane was in focus. See [Query window pane does not mouse wheel scroll up if results window pane is selected](https://developercommunity.visualstudio.com/t/Query-window-pane-does-not-mouse-wheel-s/10851382). |
+| Status Bar | Fixed an issue that caused color contrast issues when certain colors were selected. See [Query Summary Row, Text Illegible, Accessibility Issue](https://developercommunity.visualstudio.com/t/Query-Summary-Row-Text-Illegible-Acces/10958981). |
+
 <a id="22.0.0-pre.3.0"></a>
 
 ### 22.0 Preview 3
-
-**[Download SQL Server Management Studio (SSMS) 22 Preview](https://aka.ms/ssms/22/preview/vs_SSMS.exe)**
 
 - Release number: 22.0 Preview 3
 - Release date: October 14, 2025

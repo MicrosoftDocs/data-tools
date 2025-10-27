@@ -23,7 +23,7 @@ Used to save an instance of the current item at a specified location in a specif
 
 #### Save in
 
-Locate the existing project folder from this dropdown list menu. Selecting a folder from this list displays the contents of the folder in the primary pane below.
+Locate the existing project folder from this dropdown menu. Selecting a folder from this list displays the contents of the folder in the primary pane below.
 
 #### File name
 

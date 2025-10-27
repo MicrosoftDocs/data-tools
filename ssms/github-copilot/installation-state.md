@@ -38,11 +38,11 @@ To use GitHub Copilot in SSMS, you need:
 
 ## Manage your GitHub Copilot state
 
-With SSMS 22 Preview 3 and later versions, there's a GitHub Copilot status icon in the upper-right corner of SSMS that indicates if GitHub Copilot is active, inactive, unavailable, or not installed. Using the dropdown list menu from the status icon, you can easily access options that help manage or troubleshoot your Copilot state. Some options are available or grayed out depending on your Copilot state.
+With SSMS 22 Preview 3 and later versions, there's a GitHub Copilot status icon in the upper-right corner of SSMS that indicates if GitHub Copilot is active, inactive, unavailable, or not installed. Using the dropdown menu from the status icon, you can easily access options that help manage or troubleshoot your Copilot state. Some options are available or grayed out depending on your Copilot state.
 
 ### GitHub Copilot is active
 
-Copilot is in an active state and fully functional if you signed into a GitHub account with [Copilot access](https://docs.github.com/copilot/get-started/what-is-github-copilot#getting-access-to-copilot). Using the dropdown list menu, you can open the Chat window, access Copilot settings, and manage your Copilot subscription.
+Copilot is in an active state and fully functional if you signed into a GitHub account with [Copilot access](https://docs.github.com/copilot/get-started/what-is-github-copilot#getting-access-to-copilot). Using the dropdown menu, you can open the Chat window, access Copilot settings, and manage your Copilot subscription.
 
 ### GitHub Copilot is inactive
 

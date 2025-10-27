@@ -47,6 +47,8 @@ items:
             href: install/workload-component-ids.md
           - name: Create an offline installation
             href: install/create-offline.md
+          - name: Install certificates
+            href: install/install-certificates.md
           - name: Install versions side-by-side
             href: install/side-by-side.md
           - name: Install local help documentation

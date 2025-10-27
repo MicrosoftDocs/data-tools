@@ -33,7 +33,7 @@ The properties window isn't specific to Visual Database Tools, but it's where ma
 
 Database Diagram Designer provides a window where you can visually create, edit, and show the tables and relationships in a database.
 
-To display Database Diagram Designer, open an existing diagram or right-click the Database node in Object Explorer and choose **New Database Diagram** from the dropdown list menu.
+To display Database Diagram Designer, open an existing diagram or right-click the Database node in Object Explorer and choose **New Database Diagram** from the dropdown menu.
 
 Once the designer is open, the **Database Diagram** menu appears in the main menu. This menu is the access point to the designer's special features.
 
@@ -52,7 +52,7 @@ The lower area of Table Designer, the Column Properties tab, shows additional at
 
 From Table Designer, you can also right-click in the grid section to access dialog boxes through which you can create and modify relationships, constraints, indexes, and keys for the table.
 
-To display Table Designer, open an existing table, or right-click the **Tables** node in Object Explorer, and choose **Add New Table** from the dropdown list menu.
+To display Table Designer, open an existing table, or right-click the **Tables** node in Object Explorer, and choose **Add New Table** from the dropdown menu.
 
 Once the designer is open, the Table Designer menu appears in the main menu. This menu is the access point to the designer's special features.
 
@@ -77,7 +77,7 @@ View Designer allows you to design and visualize an existing view or create a ne
 
 View Designer has four panes: the Diagram pane, the Criteria pane, the SQL pane, and the Results pane. For more detailed information on each of these panes, see [Query and View Designer Tools (Visual Database Tools)](query-and-view-designer-tools-visual-database-tools.md).
 
-To display View Designer, open an existing view or right-click the **View** node in Object Explorer and choose **Add New View** from the dropdown list menu.
+To display View Designer, open an existing view or right-click the **View** node in Object Explorer and choose **Add New View** from the dropdown menu.
 
 Once the designer is open, the **Query Designer** menu appears in the main menu. This menu is the access point to the designer's special features.
 
