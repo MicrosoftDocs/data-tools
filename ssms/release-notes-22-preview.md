@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS) 22 Preview.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 10/27/2025
+ms.date: 10/29/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -51,10 +51,11 @@ For previous versions of SSMS, see:
 | Connection Dialog | Added a **Reset** button to clear the fields in the **Connection Properties** section. |
 | GitHub Copilot in SSMS (Preview) | Introduced support for the SSMS responder when using **Ask Copilot** within **Feature Search**. |
 | Indexes | Added options to create Vector and JSON indexes. Right-click **Indexes > New Index > JSON Index...** or **Vector Index...** |
-| Object Explorer | Introduce display information for dimension and base type parameters for Vector data types in Object Explorer. |
+| Linked Server Wizard | Introduced a streamlined creation wizard for linked servers, including new encryption model options. |
+| Object Explorer | Introduced display information for dimension and base type parameters for **vector** data types in Object Explorer. |
 | Query Plans | Added support for JSON and Vector index operations. |
 | Snippets | Added numerous new snippet files, including snippets for creating various index types, creating and altering external models for AI embeddings, and managing security and schema objects. |
-| Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11122.92]. |
+| Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11123.170]. |
 
 #### Bug fixes in 22.0 Preview 4
 
