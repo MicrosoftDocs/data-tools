@@ -1,10 +1,10 @@
 ---
-title: Known Issues in SQL Server Management Studio (SSMS) 22 Preview
+title: "Known Issues in SQL Server Management Studio (SSMS) 22 Preview"
 description: Learn about known issues in SQL Server Management Studio (SSMS) 22 Preview.
-author: erinstellato-ms  
+author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 10/27/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -26,6 +26,7 @@ This article lists known issues for [!INCLUDE [ssms-22-md](includes/ssms-22-md.m
 | Arm64 - Replication | Trying to bring up the "Distributor Properties" form results in an exception. | Run SSMS on a device that isn't Arm64. |
 | Available Databases Menu | A transient issue can cause the Available Databases dropdown menu to render incorrectly. | Change context to a different database with `USE <DatabaseName>` in the query editor. |
 | Connection | You can't import connections from a previous version. This issue will be resolved in a later preview. | There's no workaround. |
+| Connection | Trying to connect to a SQL Server instance using Strict encryption through shared memory generates the error `Request is not supported`. See ["Shared Memory Provider, error: 15 - Function not supported" with Encrypt=Strict](https://github.com/dotnet/SqlClient/issues/1956). | Retry the connection. This error will be addressed in a future release of SSMS 22. |
 | Designers | The JSON data type isn't available for columns when creating or editing a table in Table Designer. See [SSMS 21.0 Preview 2.0 - Table Designer missing the "json" datatype](https://feedback.azure.com/d365community/idea/d2e6f106-9fb8-ef11-95f5-6045bdbfaf80). | Use T-SQL to add columns with the JSON data type, this functionality is planned for a later release. |
 | Designers | Unable to use SSMS after closing the **New View** pane when the **Add Table** dialog is left open. See [SSMS 21 Preview 1: New View window "Add Table" not aware I closed out of New View](https://feedback.azure.com/d365community/idea/8790c2c0-22a8-ef11-95f6-000d3a01397d). | Close the **Add Table** dialog before closing the view pane. |
 | Extended Events | The Specify Data Storage page is truncated in the Extended Events Wizard. See [Extended Events Wizard is cut off on Specify Data Storage page](https://feedback.azure.com/d365community/idea/e7de428c-76ab-ef11-95f6-000d3a01397d). | Use the **New Session...** option to create an Extended Events session. |
