@@ -4,7 +4,7 @@ description: Examples of using command-line parameters to install SQL Server Man
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 09/25/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -108,7 +108,7 @@ vs_SSMS.exe --layout C:\SSMS_Layout --add Microsoft.Component.HelpViewer
 
 Once a layout is created, it can be copied to an offline machine for installation. To install specific components, those components must be included in the offline layout already. For more information, see the [complete local layout](#use---layout-to-create-a-network-layout-or-local-cache) example.
 
-Make sure you are in the folder where the layout was saved. In these examples, it's `C:\SSMS_Layout`.
+Make sure you're in the folder where the layout was saved. In these examples, it's `C:\SSMS_Layout`.
 
 ```console
 C:\SSMS_Layout\vs_SSMS.exe --lang en-US --add Microsoft.SqlServer.Workload.SSMS.AI --includeRecommended
@@ -126,17 +126,33 @@ To install SSMS with Integration Services and Reporting Services support, run:
 C:\SSMS_Layout\vs_SSMS.exe --noWeb --noUpdateInstaller --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS --includeRecommended --passive
 ```
 
-## Modify an existing installation
+## Update an existing installation using a layout
 
-To update SSMS to include other components, create a layout with your desired components, using the previous examples.
+To update SSMS to the latest release, create a layout with the same components as the original installation.
 
-1. Change to the layout folder.
+1. Change to the layout folder:
 
    ```console
    cd C:\SSMS_Layout
    ```
 
-1. Update to the latest released version.
+1. Update to the latest released version:
+
+   ```console
+   vs_SSMS.exe update --noWeb
+   ```
+
+## Modify an existing installation using a layout
+
+To update SSMS to include other components, create a layout with your desired components, using the previous examples.
+
+1. Change to the layout folder:
+
+   ```console
+   cd C:\SSMS_Layout
+   ```
+
+1. Update to the latest released version:
 
    ```console
    vs_SSMS.exe update --noWeb --quiet --wait --norestart
@@ -146,6 +162,22 @@ To update SSMS to include other components, create a layout with your desired co
 
    ```console
    vs_SSMS.exe modify --noWeb --productID Microsoft.VisualStudio.Product.SSMS --channelID SSMS.21.SSMS.Release --add Microsoft.SSMS.Component.AS --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS --quiet --norestart
+   ```
+
+## Uninstall an existing installation
+
+To uninstall the SSMS 21 GA release from a workstation, use the following example.
+
+1. Change to the Visual Studio Installer folder:
+
+   ```console
+   cd "C:\Program Files (x86)\Microsoft Visual Studio\Installer"
+   ```
+
+1. Remove the SSMS 21 GA (Release) version:
+
+   ```console
+    setup.exe uninstall --passive --productId Microsoft.VisualStudio.Product.Ssms --channelId SSMS.21.SSMS.Release --noweb
    ```
 
 ## Related content

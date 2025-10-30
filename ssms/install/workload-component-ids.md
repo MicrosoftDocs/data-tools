@@ -4,7 +4,7 @@ description: List the workload and component IDs that can be used when creating 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/07/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -12,9 +12,11 @@ ms.collection:
 ---
 # Workload and component IDs for SQL Server Management Studio
 
-This table lists the available workload and component IDs for you can use when installing [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] by using a command line.
+Installing SQL Server Management Studio (SSMS) using a command line requires workload and component IDs. These IDs allow you to select what to install, modify, or uninstall. Uninstalling SSMS entirely requires channel IDs.
 
 This article is laid out as follows:
+
+- The first section includes the channel ID for each release of SSMS.
 
 - Each workload has its own section, followed by the workload ID and a table of the components that are available for the workload.
 
@@ -24,7 +26,17 @@ This article is laid out as follows:
 
 For more information about how to use these IDs, see [Use command-line parameters to install SQL Server Management Studio](command-line-parameters.md).
 
-## SQL Server Management Studio core editor (included with SSMS 21)
+## SQL Server Management Studio channel ID
+
+In SSMS 21 and later versions, every Preview and GA release has its own unique channel ID.
+
+| Channel and version | ID | Status |
+| --- | --- | --- |
+| SSMS 21 Preview | SSMS.21.SSMS.Preview | No longer available. |
+| SSMS 21 GA | SSMS.21.SSMS.Release | Current generally available release. |
+| SSMS 22 Preview | SSMS.22.SSMS.Preview | Current preview release. |
+
+## SQL Server Management Studio core editor (included with SSMS)
 
 **ID:** Microsoft.VisualStudio.Component.CoreEditor
 
@@ -92,7 +104,7 @@ For more information about how to use these IDs, see [Use command-line parameter
 | --- | --- | --- |
 | Microsoft.SSMS.Component.MigrationAssistant | Assessment and Migration Assistant | Recommended |
 
-For more information about how to use this list, see [Create an offline installation of SQL Server Management Studio](create-offline.md).
+For more information about how to use this information, see [Create an offline installation of SQL Server Management Studio](create-offline.md).
 
 ## Support or troubleshooting
 
