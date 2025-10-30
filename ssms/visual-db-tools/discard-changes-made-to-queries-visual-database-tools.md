@@ -20,7 +20,7 @@ helpviewer_keywords:
 You can discard changes made to a query definition prior to saving them. Once they have been saved, they can't be returned to a previous state.
 
 > [!NOTE]  
-> To undo a change you've made to values in the Results pane, press the ESC key before you move off of the record. If you move off of a record and receive a notice that the changes aren't committed to the database, you can also press the ESC key to revert to the previous value.
+> To undo a change you've made to values in the Results pane, press the **Esc** key before you move off of the record. If you move off of a record and receive a notice that the changes aren't committed to the database, you can also press the **Esc** key to revert to the previous value.
 
 ## Discard changes made to a query definition
 

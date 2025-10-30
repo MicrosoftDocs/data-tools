@@ -1,5 +1,5 @@
 ---
-title: "Install Copilot in SSMS"
+title: Install Copilot in SSMS
 titleSuffix: Copilot in SQL Server Management Studio
 description: Learn how to install Copilot in SQL Server Management Studio.
 author: erinstellato-ms
@@ -41,7 +41,7 @@ To set up Copilot in SSMS, you must configure the Azure OpenAI resource. This re
 
 1. Open SQL Server Management Studio.
 
-1. Select the **Copilot** button on the SQL Editor toolbar, go to **View** > **Copilot**, or type **Ctrl** + **Alt** + **C** to open the dialog to initially configure Copilot in SSMS.
+1. Select the **Copilot** button on the SQL Editor toolbar, go to **View** > **Copilot**, or type **Ctrl**+**Alt**+**C** to open the dialog to initially configure Copilot in SSMS.
 
 1. Within the **Welcome to Copilot in SQL Server Management Studio** dialog, enter the values for **Azure OpenAI Endpoint**, **Azure OpenAI Deployment**, and **Azure OpenAI API Key** that were configured during [setup of the Azure OpenAI resources](use-azure-openai-with-copilot-in-ssms.md). It might be necessary to obtain these values from an individual who can configure Azure OpenAI resources within your Azure subscription.
 

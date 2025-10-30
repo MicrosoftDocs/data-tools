@@ -5,7 +5,7 @@ description: Learn how to add context for GitHub Copilot in SQL Server Managemen
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/14/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -46,11 +46,11 @@ To start over with a new chat session and discard the current context, start a n
 
 ### New chat thread
 
-Select **Create new thread** or **Ctrl** + **N** in the chat window to start a new thread.
+Select **Create new thread** or **Ctrl**+**N** in the chat window to start a new thread.
 
 ### Switch chat thread
 
-You can toggle between multiple ongoing threads to provide the right historical context for your question. Use **Ctrl** + **PgDown** for previous thread or **Ctrl** + **PgUp** for next thread in the chat window. **Ctrl** + **Shift** + **T** expands the thread dropdown list.
+You can toggle between multiple ongoing threads to provide the right historical context for your question. Use **Ctrl**+**Page Down** for previous thread or **Ctrl**+**Page Up** for next thread in the chat window. **Ctrl**+**Shift**+**T** expands the thread dropdown list.
 
 ### Preserve the inline chat
 

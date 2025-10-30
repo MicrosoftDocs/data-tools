@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 10/14/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -43,7 +43,7 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Connection dialog | Added the ability to sort the Recent Connections list in the Modern connection dialog. To sort connections, select **Sort By > Date Added** or **Name** from the right-click menu. See [Permit sorting of the "Recent connections" box by name](https://developercommunity.visualstudio.com/t/Permit-sorting-of-the-Recent-connection/10971468). |
+| Connection dialog | Added the ability to sort the Recent Connections list in the Modern connection dialog. To sort connections, select **Sort By** > **Date Added** or **Name** from the right-click menu. See [Permit sorting of the "Recent connections" box by name](https://developercommunity.visualstudio.com/t/Permit-sorting-of-the-Recent-connection/10971468). |
 | Visual Studio | Updated to Visual Studio 17.14.17. |
 
 #### Bug fixes in 21.6.17
@@ -57,7 +57,7 @@ For previous versions of SSMS, see:
 | Connection dialog | Added new icons to differentiate between on-prem/local connections and cloud connections. |
 | Dark theme | Resolved a bug that made keywords in the query editor difficult to read for non-English languages. See [SSMS 21 preview dark mode text is not readable](https://developercommunity.visualstudio.com/t/SSMS-21-preview-dark-mode-text-is-not-re/10851866). |
 | Managed Instance Link | Updated the setup process for Managed Instance Link to dynamically retrieve and install the current set of Azure-trusted root certificates. |
-| Object Explorer | Updated the script generated when selecting **Script Table as > CREATE** from the right-click menu to include clustered columnstore indexes. See [Slow and incorrect 'Script Table as CREATE To'](https://developercommunity.visualstudio.com/t/Slow-and-incorrect-Script-Table-as-CREA/10930733). |
+| Object Explorer | Updated the script generated when selecting **Script Table as** > **CREATE** from the right-click menu to include clustered columnstore indexes. See [Slow and incorrect 'Script Table as CREATE To'](https://developercommunity.visualstudio.com/t/Slow-and-incorrect-Script-Table-as-CREA/10930733). |
 | Query Store | Fixed an issue that removed tooltips from Query Store report buttons. See [Query Store Regressed report - buttons missing tooltips](https://developercommunity.visualstudio.com/t/Query-Store-Regressed-report---buttons-m/10868722). |
 | Query Store | Resolved a bug that caused resize issues with the Query Store reports window. See [Window Resizing Redraw Issue](https://developercommunity.visualstudio.com/t/Window-Resizing-Redraw-Issue/10917264). |
 | SQL Profiler | Resolved an issue that generated an Assembly error when trying to connect to a Power BI Premium workspace. See [SQL Profiler 21.4.8 can't connect to Power BI Premium workspace any longer after update](https://developercommunity.visualstudio.com/t/SQL-Profiler-2148-cant-connect-to-Pow/10939290). |
@@ -99,7 +99,7 @@ For previous versions of SSMS, see:
 | Performance and reliability | Addressed an error that caused SSMS 21 to crash. See [SSMS v21.4 - Configure for General - Environment - Startup crashes](https://developercommunity.visualstudio.com/t/SSMS-v214---Configure-for-General---Env/10948873). |
 | Query Store | Fixed a bug that incorrectly displayed Query Store data timestamps in UTC instead of local time when the "Local" option was selected in the Configure Overall Resource Consumption chart. See [Query Store viewer in SSMS 21 is reporting data with incorrect time offset when using local time](https://developercommunity.visualstudio.com/t/Query-Store-viewer-in-SSMS-21-is-reporti/10941754). |
 | Results grid | Resolved a regression that included the header when copying values to the clipboard. See [Copy value copies with header](https://developercommunity.visualstudio.com/t/Copy-value-copies-with-header/10914881). |
-| Tabify | Reinstated the Tabify/Untabify functionality in the **Edit > Advanced** menu. See [Impossible to untabify selection](https://developercommunity.visualstudio.com/t/Impossible-to-untabify-selection/10915182). |
+| Tabify | Reinstated the Tabify/Untabify functionality in the **Edit** > **Advanced** menu. See [Impossible to untabify selection](https://developercommunity.visualstudio.com/t/Impossible-to-untabify-selection/10915182). |
 
 <a id="21.4.12"></a>
 
@@ -234,7 +234,7 @@ For previous versions of SSMS, see:
 | Feature | Details |
 | --- | --- |
 | Extended Events | Fixed a bug where the context menu for Extended Events while Dark theme was enabled didn't have enough contrast to be readable. See [Filter context menu ExtEvents not readable](https://developercommunity.visualstudio.com/t/Filter-context-menu-ExtEvents-not-readab/10900655). |
-| Localization | Addressed an issue where reports weren't honoring the selected language in **Tools > Options > International Settings**. See [Wrong language located in elements in SSMS 21 and Profiler 21](https://developercommunity.visualstudio.com/t/Wrong-language-located-elements-in-SSMS-/10898516). |
+| Localization | Addressed an issue where reports weren't honoring the selected language in **Tools** > **Options** > **International Settings**. See [Wrong language located in elements in SSMS 21 and Profiler 21](https://developercommunity.visualstudio.com/t/Wrong-language-located-elements-in-SSMS-/10898516). |
 | Object Explorer Details | Fixed an issue where adding columns to the Object Explorer details pane generated an error. See [Invalid object reference in Object Explorer Details pane](https://developercommunity.visualstudio.com/t/Invalid-object-reference-in-Object-Explo/10898449). |
 
 <a id="21.0.1"></a>
@@ -275,16 +275,16 @@ For previous versions of SSMS, see:
 | Connection | When you connect to a server from command line parameters, SSMS displays a prompt to confirm the connection and parameters. |
 | Connection | Added **Close Idle SQL Connections** command under the Help menu. For more information, see [Connection Pooling in SQL Server Management Studio](https://aka.ms/ssms-close-idle-connections). |
 | Connection Dialog | Updated strict encryption label to **Strict (Minimum SQL 2022 or Azure SQL)** in the **Encryption** dropdown list on the connection dialog. |
-| Connection Dialog | Introduced a Modern connection dialog experience for SQL Server database engines. You can enable or disable this experience within **Tools > Options > Environment > Connection Dialog**. |
+| Connection Dialog | Introduced a Modern connection dialog experience for SQL Server database engines. You can enable or disable this experience within **Tools** > **Options** > **Environment** > **Connection Dialog**. |
 | Connection Dialog | Added dark mode support for Modern connection dialog (Preview). See [New connection dialog does not support dark mode](https://developercommunity.microsoft.com/t/New-connection-dialog-does-not-support-d/10893407?q=%22dark%22). |
 | Copilot in SSMS (Preview) | Added [Copilot in SQL Server Management Studio (Preview)](copilot/copilot-in-ssms-overview.md) available from the AI Assistance workload in the Visual Studio Installer. |
 | Database Properties | Added a page to list Database Scoped Configuration values on the **Database Properties** dialog. |
 | Database Properties | Added support for [!INCLUDE [sssql25-md](includes/sssql25-md.md)] FULLTEXT_INDEX_VERSION configuration options in the database properties dialog. |
 | Drivers | Updated Microsoft.Data.SqlClient (MDS) to version 5.1.6. |
-| File | Reinstated the ability to create projects (**File > New > Project or Solution...**) and view recent projects (**File > Open > Project/Solution...**). |
-| Find | Reinstated the **Quick Find** option, accessed through **Edit** > **Find and Replace** > **Quick Find**, or with **CTRL + F**. See [SSMS 21.0 Preview 1.0 - "Quick Find" missing, instead "Find in files" pops up](https://feedback.azure.com/d365community/idea/76326fd1-57b6-ef11-95f6-000d3ae2b698). |
+| File | Reinstated the ability to create projects (**File** > **New** > **Project or Solution...**) and view recent projects (**File** > **Open** > **Project/Solution...**). |
+| Find | Reinstated the **Quick Find** option, accessed through **Edit** > **Find and Replace** > **Quick Find**, or with **Ctrl**+**F**. See [SSMS 21.0 Preview 1.0 - "Quick Find" missing, instead "Find in files" pops up](https://feedback.azure.com/d365community/idea/76326fd1-57b6-ef11-95f6-000d3ae2b698). |
 | Git | Support for Git integration returns in SSMS 21 to support the growing emphasis on CI/CD, which can be found in the **Git** menu. Select **Settings** to configure options specific to Git. The Git integration allows developers and database administrators to track, manage, and collaborate on SQL scripts seamlessly within the SSMS environment, including support for creating and cloning repositories and creating and managing branches. |
-| Help | Enabled support for Developer Community feedback, accessed from **Help > Send Feedback > Report a Problem/Suggest a Feature/My Feedback**. |
+| Help | Enabled support for Developer Community feedback, accessed from **Help** > **Send Feedback** > **Report a Problem/Suggest a Feature/My Feedback**. |
 | Individual Components (Visual Studio Installer) | Reinstated Analysis Services and Reporting Services as Business Intelligence components in the Visual Studio Installer. |
 | Installation | Updated the default Code Snippets folder location to be major-version specific (`%USERPROFILE%\Documents\SQL Server Management Studio 21\Code Snippets\SQL\My Code Snippets`). |
 | Installation | SSMS 21 is installed using the Visual Studio Installer. For more information, see [Install SQL Server Management Studio](install/install.md). |
@@ -296,8 +296,8 @@ For previous versions of SSMS, see:
 | Libraries | Updated Azure.Core to version 1.41.0. |
 | Libraries | Updated DacFx to version 170.0.94. |
 | Libraries | Updated System.Text.Json to version 8.0.4. |
-| Migration Component | Added the [SQL Server migration component](migrate-sql-server-component.md) under **Individual Components > Hybrid and Migration** in the Visual Studio Installer. |
-| Presenter Mode | Reinstated [Presenter mode](presenter-mode.md) as an option under **View > Presenter Mode**. |
+| Migration Component | Added the [SQL Server migration component](migrate-sql-server-component.md) under **Individual Components** > **Hybrid and Migration** in the Visual Studio Installer. |
+| Presenter Mode | Reinstated [Presenter mode](presenter-mode.md) as an option under **View** > **Presenter Mode**. |
 | Query Editor | Intellisense errors are updated to map to the IntelliSense dropdown list in the Error List pane. The Error List pane is available from the **View** > **Error List** menu or by selecting the error icon in the file health indicator, located in the bottom left of the Query Editor toolbar. |
 | Query Editor | The scroll bar for the query editor in SSMS 21 defaults to **map mode**. To change the option, right-click the scroll bar and select **Scroll Bar Options...**. Within the **Options** dialog, you can change the display to **Use bar mode for vertical scroll bar**. |
 | Query Plans | Added JSON index and Implicit Broadcast support to Query Plans. |
@@ -339,7 +339,7 @@ For previous versions of SSMS, see:
 | Connection | Updated the database Connection Properties dialog to show the correct authentication method. |
 | Import/Export Data-Tier Application | Updated the file and log location to use default instead of `master` database location during a bacpac import. |
 | IntelliSense | Corrected default IntelliSense toolbar icon state to be disabled when IntelliSense is disabled globally. |
-| Options | Removed localization of `ISOLATION LEVEL` option within **Tools > Options > Query Execution > SQL Server > Advanced**. |
+| Options | Removed localization of `ISOLATION LEVEL` option within **Tools** > **Options** > **Query Execution** > **SQL Server** > **Advanced**. |
 | Query Plans | Addressed an issue where canceling a query while running a live query plan caused SSMS to crash. See [Live query statistics hangs waiting for plan and canceling query kills SSMS](https://feedback.azure.com/d365community/idea/9e4420f1-afac-ee11-92bc-000d3ae54955). |
 | Query Plans | Updated operator Property dialog to correctly display Columns With Stale Statistics warning. |
 | Security | Added the ability to assign a new user to a database login from the user properties dialog. |

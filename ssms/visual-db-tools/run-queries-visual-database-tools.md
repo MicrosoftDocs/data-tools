@@ -26,7 +26,7 @@ When you have finished designing your query, you can run it.
 
    -or-
 
-   Press CTRL+R.
+   Press **Ctrl**+**R**.
 
 If you're creating a Select query, the results of the query appear in the Results pane.
 

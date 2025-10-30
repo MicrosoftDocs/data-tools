@@ -3,7 +3,7 @@ title: "Change a Server's Registration"
 description: Overview of changing a server's registration in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 07/08/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,7 +14,7 @@ ms.collection:
 
 [!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-This article describes how to change a server's registration in SQL Server Management Studio (SSMS). You can change the connection information for a registered server at any time. If the Registered Servers tool window isn't visible in SSMS, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
+This article describes how to change a server's registration in SQL Server Management Studio (SSMS). You can change the connection information for a registered server at any time. If the Registered Servers tool window isn't visible in SSMS, select **View** > **Registered Servers**, or type **Ctrl**+**Alt**+**G**.
 
 ## Change a server's registration (local server groups)
 

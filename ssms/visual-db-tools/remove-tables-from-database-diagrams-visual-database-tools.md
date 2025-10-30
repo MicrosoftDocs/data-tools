@@ -27,7 +27,7 @@ You can remove a table from your database diagram. Removing a table doesn't alte
 
    -or-
 
-   Press the ESC key.
+   Press the **Esc** key.
 
    If the table has unsaved changes as a result of edits you made in the database diagram, a message prompts you to save the table before removing it.
 

@@ -1,10 +1,10 @@
 ---
 title: Get Full Memory Dump to Troubleshoot SSMS
-description: "Get full memory dump"
+description: Get full memory dump
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 06/26/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -25,11 +25,11 @@ To capture diagnostic information to troubleshoot a crash or an unresponsive SSM
 1. Unzip the download into a folder.
 1. Open a Command Prompt (such as `cmd.exe`), and run the following command.
 
-    ```console
-    <PathToProcDumpFolder>\procdump.exe -e -h -ma -w ssms.exe
-    ```
+   ```console
+   <PathToProcDumpFolder>\procdump.exe -e -h -ma -w ssms.exe
+   ```
 
-    It should prompt you to accept a license agreement, select **Agree**.
+   To accept the license agreement, select **Agree**.
 
 1. Start SQL Server Management Studio (SSMS) if not started already.
 1. Reproduce your issue.
@@ -37,9 +37,9 @@ To capture diagnostic information to troubleshoot a crash or an unresponsive SSM
 1. Create a new folder and copy the *.dmp file that is written out to that folder.
 1. Copy the following files into the same folder.
 
-    * "C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscordacwks.dll"
-    * "C:\Windows\Microsoft.NET\Framework\v4.0.30319\SOS.dll"
-    * "C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll"
+   - `C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscordacwks.dll`
+   - `C:\Windows\Microsoft.NET\Framework\v4.0.30319\SOS.dll`
+   - `C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll`
 
 1. Zip up the folder.
 
@@ -54,7 +54,7 @@ To capture a diagnostic information with Visual Studio to troubleshoot a crash o
 1. Open Visual Studio.
 1. Select **Continue without code** to open an empty window.
 1. Start SSMS, if it's not already open.
-1. Select **Debug > Attach to Process...**.
+1. Select **Debug** > **Attach to Process...**.
 1. In the **Attach to Process** dialog, within the **Filter processes** box, enter SSMS.
 1. In the list of processes select SSMS.exe and then **Attach**.
 1. An Output window appears, with **Debug** selected for **Show output from:**.
@@ -73,11 +73,11 @@ To capture diagnostic information to troubleshoot an OutOfMemoryException from S
 1. Unzip the download into a folder.
 1. Open Command Prompt and run the following command.
 
-    ```cmd
-    <PathToProcDumpFolder>\procdump.exe -e 1 -f System.OutOfMemoryException -ma -w ssms.exe
-    ```
+   ```console
+   <PathToProcDumpFolder>\procdump.exe -e 1 -f System.OutOfMemoryException -ma -w ssms.exe
+   ```
 
-    It should prompt you to accept a license agreement, select **Agree**.
+   To accept the license agreement, select **Agree**.
 
 1. Start SQL Server Management Studio if not started already.
 1. Repro the issue.
@@ -85,22 +85,22 @@ To capture diagnostic information to troubleshoot an OutOfMemoryException from S
 1. Create a new folder and copy the *.dmp file that is written out to that folder.
 1. Copy the following files into the same folder.
 
-    * "C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscordacwks.dll"
-    * "C:\Windows\Microsoft.NET\Framework\v4.0.30319\SOS.dll"
-    * "C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll"
+   - `C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscordacwks.dll`
+   - `C:\Windows\Microsoft.NET\Framework\v4.0.30319\SOS.dll`
+   - `C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll`
 
 1. Zip up the folder.
 
 ## Share the information
 
 1. To share information with the SSMS Team, create a feedback item on the [SSMS user feedback site](https://aka.ms/ssms-feedback).
-1. Attach the memory dump to the feedback item. The dump file can be submitted using a private message so they are not publicly available.
- 
-    > [!Important]
-    > Memory dump files may contain sensitive information.
+1. Attach the memory dump to the feedback item. The dump file can be submitted using a private message so they aren't publicly available.
+
+   > [!IMPORTANT]  
+   > Memory dump files might contain sensitive information.
 
 ## Related content
 
-- [Advanced troubleshooting for SQL Server Management Studio (SSMS)](ssms-troubleshoot.md)
+- [Advanced troubleshooting for SQL Server Management Studio](ssms-troubleshoot.md)
 - [SQL Server Management Studio (SSMS) setup failed or requires restarting the machine](install-failed-requires-restart.md)
-- [SQL Server Management Studio](../sql-server-management-studio-ssms.md)
+- [What is SQL Server Management Studio (SSMS)?](../sql-server-management-studio-ssms.md)

@@ -29,7 +29,7 @@ You can copy the result set as tab-separated text from the **Results** pane. You
 
    - Select multiple contiguous rows by selecting one row and then dragging the mouse to select more rows.
 
-   - Select non-contiguous rows by selecting one row, then holding down the CTRL key and selecting more rows.
+   - Select non-contiguous rows by selecting one row, then holding down the **Ctrl** key and selecting more rows.
 
    The selected rows are highlighted.
 
@@ -39,7 +39,7 @@ You can copy the result set as tab-separated text from the **Results** pane. You
 
    - Select multiple cells by dragging the mouse to adjacent cells.
 
-   - Select non-contiguous cells by selecting a single cell, then holding down the CTRL key and selecting more cells.
+   - Select non-contiguous cells by selecting a single cell, then holding down the **Ctrl** key and selecting more cells.
 
    The selected cells are highlighted.
 
