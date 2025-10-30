@@ -88,6 +88,10 @@ The article demonstrates the following steps:
 - You can experience connection problems with Azure SQL Managed Instance. For more information on troubleshooting connection problems, visit [Troubleshoot connectivity issues and other errors](/azure/azure-sql/database/troubleshoot-common-errors-issues).
 
 - You can prevent, troubleshoot, diagnose, and mitigate connection and transient errors that you encounter when interacting with Azure SQL Managed Instance. For more information, visit [Troubleshoot transient connection errors](/azure/azure-sql/database/troubleshoot-common-connectivity-issues).
+ 
+### Clear Microsoft Entra ID token cache
+
+[!INCLUDE [refresh-entra-id-cache](../includes/refresh-entra-id-cache.md)]
 
 ## Create a database
 

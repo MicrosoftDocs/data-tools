@@ -93,6 +93,10 @@ The article demonstrates the following steps:
 
 - You can prevent, troubleshoot, diagnose, and mitigate connection and transient errors that you encounter when interacting with Azure SQL Database. For more information, visit [Troubleshoot transient connection errors](/azure/azure-sql/database/troubleshoot-common-connectivity-issues).
 
+### Clear Microsoft Entra ID token cache
+
+[!INCLUDE [refresh-entra-id-cache](../includes/refresh-entra-id-cache.md)] 
+
 ## Create a database
 
 Now let's create a database named `TutorialDB` by following these steps:
