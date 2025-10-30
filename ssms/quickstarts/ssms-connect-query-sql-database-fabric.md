@@ -82,7 +82,11 @@ The article demonstrates the following steps:
 
 - If your browser fails to connect to SQL Database when using **Microsoft Entra with MFA**, you can navigate to **Tools** > **Options** > **Azure Services** > **Azure Cloud**, and change the value for either **Use system default web browser** or **Use Web Account Manager**. For more information, see [Options (Azure Services)](../menu-help/options-azure-services.md).
 
-- If you experience connection problems with SQL database in Fabric, see [Understand network security in Microsoft Fabric](/fabric/security/security-overview#understand-network-security)
+- If you experience connection problems with SQL database in Fabric, see [Understand network security in Microsoft Fabric](/fabric/security/security-overview#understand-network-security).
+
+### Clear Microsoft Entra ID token cache
+
+[!INCLUDE [refresh-entra-id-cache](../includes/refresh-entra-id-cache.md)]
 
 ## Create a table in the new database
 

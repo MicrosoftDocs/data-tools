@@ -108,6 +108,10 @@ The following table lists the requirements to connect to SQL Server on Azure VM.
 > [!TIP]  
 > The steps in the preceding table are done for you when you configure connectivity in the portal. Use these steps only to confirm your configuration or to set up connectivity manually for SQL Server.
 
+### Clear Microsoft Entra ID credential cache
+
+[!INCLUDE [refresh-entra-id-cache](../includes/refresh-entra-id-cache.md)]
+
 ## Create a database
 
 Create a database named `TutorialDB` by following the below steps:

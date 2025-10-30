@@ -72,6 +72,10 @@ To complete this article, you need SQL Server Management Studio (SSMS) and acces
 
 You can experience connection problems with dedicated SQL pool (formerly SQL DW). For more information on troubleshooting connection problems, visit [Troubleshoot connectivity issues and other errors](/azure/azure-sql/database/troubleshoot-common-errors-issues).
 
+### Clear Microsoft Entra ID token cache
+
+[!INCLUDE [refresh-entra-id-cache](../includes/refresh-entra-id-cache.md)]
+
 ## Create a table
 
 In this section, you create a table in your dedicated SQL pool (formerly SQL DW).

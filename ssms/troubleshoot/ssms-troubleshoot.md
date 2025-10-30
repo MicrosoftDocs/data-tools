@@ -61,6 +61,10 @@ Data stored in cache files might unexpectedly interfere with SSMS behavior. To r
 
 1. Start SSMS and observe if removing the cache files resolved the issue.
 
+## Clear Microsoft Entra ID token cache
+
+[!INCLUDE [refresh-entra-id-cache](../includes/refresh-entra-id-cache.md)]
+
 ## Share the information
 
 1. To share log information with the SSMS Team, create a feedback item on the [SSMS user feedback site](https://aka.ms/ssms-feedback).
