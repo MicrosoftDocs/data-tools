@@ -47,7 +47,7 @@ If an error occurs when you save the row the Query and View Designer displays a 
 
 - Resolve the error by making further edits in the row.
 
-- Cancel the edit by pressing ESC. If you press ESC while in a cell that you changed, the changes for that cell are canceled. If you press ESC while in a cell you haven't changed, the changes for the entire row are canceled.
+- Cancel the edit by pressing **Esc**. If you press **Esc** while in a cell that you changed, the changes for that cell are canceled. If you press **Esc** while in a cell you haven't changed, the changes for the entire row are canceled.
 
 ## Related content
 

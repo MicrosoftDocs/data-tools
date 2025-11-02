@@ -3,7 +3,7 @@ title: SQL Server Management Studio Keyboard Shortcuts
 description: SQL Server Management Studio keyboard shortcuts
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/15/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -27,7 +27,7 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-SQL Server Management Studio (SSMS) offers keyboard shortcuts. By default, it uses the SQL Server scheme, with keyboard shortcuts based on Visual Studio. To change the keyboard scheme or add more keyboard shortcuts, from the **Tools** menu, select **Options**. Select the desired keyboard scheme on the **Environment > Keyboard** page.
+SQL Server Management Studio (SSMS) offers keyboard shortcuts. By default, it uses the SQL Server scheme, with keyboard shortcuts based on Visual Studio. To change the keyboard scheme or add more keyboard shortcuts, from the **Tools** menu, select **Options**. Select the desired keyboard scheme on the **Environment** > **Keyboard** page.
 
 ## Menu Activation keyboard shortcuts
 
@@ -338,4 +338,4 @@ All shortcuts aren't implemented in all types of code editors.
 
 ## Related content
 
-- [Customize Menus and Shortcut Keys](customize-menus-and-shortcut-keys.md)
+- [Customize menus and shortcut keys](customize-menus-and-shortcut-keys.md)

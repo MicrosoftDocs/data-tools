@@ -1,16 +1,16 @@
 ---
-title: "Use the Chat Window"
+title: Use the Chat Window
 titleSuffix: Copilot in SQL Server Management Studio
 description: Learn how to use the chat window for Copilot in SQL Server Management Studio.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 07/09/2025
-ms.update-cycle: 180-days
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 f1_keywords:
   - "sql13.swb.copilot.chat.f1"
 # CustomerIntent: As a database administrator or database developer, I want to understand how to use the chat for Copilot in SQL Server Management Studio.
@@ -30,7 +30,7 @@ Within the chat window, you determine the context for the prompt you submit. The
 Once Copilot is configured, open the chat window using:
 
 - **View** > **Copilot**
-- **Ctrl** + **Alt** + **C**
+- **Ctrl**+**Alt**+**C**
 - The **Copilot** button on the toolbar
 
 The chat window is a tool window, like Object Explorer, that you can dock to any location within SSMS. To move the Copilot in tool window, select the title bar and drag it to another location.
@@ -41,9 +41,9 @@ Use **Ctrl** + mousewheel to increase or decrease the size of the text within th
 
 If you initially open Copilot in SSMS without a connected query editor window, Copilot isn't connected to any database, but you can still ask general questions about SQL or SSMS. In this scenario, the current context is Copilot in SSMS.
 
-To query a specific database, get help with Natural Language to SQL (NL2SQL), or get other assistance, open a query editor window that is connected to that database. The chat window automatically changes to the context of the new query editor. The context includes the name of the query editor and connection information. 
+To query a specific database, get help with Natural Language to SQL (NL2SQL), or get other assistance, open a query editor window that is connected to that database. The chat window automatically changes to the context of the new query editor. The context includes the name of the query editor and connection information.
 
-To change Copilot's context, enter the `@` symbol in the prompt box to display the available context list. When context changes, the editor and connection are listed as the current context above the prompt box, and the **Sync Active Editor** option is not selected.
+To change Copilot's context, enter the `@` symbol in the prompt box to display the available context list. When context changes, the editor and connection are listed as the current context above the prompt box, and the **Sync Active Editor** option isn't selected.
 
 To resynchronize with the active editor at any time, enable the **Sync Active Editor** option.
 
@@ -89,7 +89,7 @@ To reset or clear the chat history, use the broom icon (**Clear chat history**).
 
 You can save chat history with the export icon (**Export**). Within the **Save As** dialog, browse to the location where you want to save the file. Edit the **File name** if necessary, then select **Save** to save the chat as a Markdown file.
 
-Markdown files can be opened in SSMS 21, and rendered in Markdown format using the Markdown viewer. To invoke the viewer, use the Preview button or **Shift** + **F7**.
+Markdown files can be opened in SSMS 21, and rendered in Markdown format using the Markdown viewer. To invoke the viewer, use the Preview button or **Shift**+**F7**.
 
 ## Change database context
 
@@ -122,7 +122,7 @@ Copilot offers commands to customize your experience, capture information, and a
 
 Commands with a colon (`:`) require more information. For example, submitting the prompt `/style respond in the style of a super friendly assistant and use emojis` doesn't change the style.
 
-For more information about Azure OpenAI token limits, see [Azure OpenAI Service quotas and limits](/azure/ai-services/openai/quotas-limits).
+For more information about Azure OpenAI token limits, see [Azure OpenAI in Azure AI Foundry Models quotas and limits](/azure/ai-services/openai/quotas-limits).
 
 ## Provide feedback
 

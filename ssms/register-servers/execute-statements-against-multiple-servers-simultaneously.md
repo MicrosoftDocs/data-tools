@@ -3,7 +3,7 @@ title: Execute Statements Against Multiple Servers Simultaneously
 description: Overview of how to execute statements against multiple servers at the same time in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 07/08/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -29,7 +29,7 @@ When queries are executed in a Query Editor, they execute against all servers in
 
 ## Execute statements against multiple configuration targets simultaneously
 
-If the Registered Servers tool window isn't visible in SQL Server Management Studio, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
+If the Registered Servers tool window isn't visible in SQL Server Management Studio, select **View** > **Registered Servers**, or type **Ctrl**+**Alt**+**G**.
 
 1. Expand **Database Engine**, then **Central Management Servers** and find the server group that contains the servers you want to query.
 

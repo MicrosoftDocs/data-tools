@@ -4,7 +4,7 @@ description: Install and manage local help documentation by using the Microsoft 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -30,7 +30,7 @@ By default, Help Viewer installs content by using a Microsoft online service as 
 
 ### Change the content installation source
 
-To open the Help Viewer, open SSMS and then select **Help > Add and Remove Help Content**.
+To open the Help Viewer, open SSMS and then select **Help** > **Add and Remove Help Content**.
 
 1. On the **Manage Content** tab, choose the **Disk** option button.
 

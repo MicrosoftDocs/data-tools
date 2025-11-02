@@ -3,7 +3,7 @@ title: View Registered Servers
 description: View registered servers in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 07/08/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -18,7 +18,7 @@ This article describes how to view registered servers in SQL Server Management S
 
 ## View registered servers
 
-1. In SSMS, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
+1. In SSMS, select **View** > **Registered Servers**, or type **Ctrl**+**Alt**+**G**.
 
 1. By default, the Registered Servers tool window appears above Object Explorer in the main window. To customize its display, see [SQL Server Management Studio components and configuration](../tutorials/ssms-configuration.md#change-the-environment-layout).
 

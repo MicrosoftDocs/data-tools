@@ -3,7 +3,7 @@ title: Export Registered Server Information
 description: How to export registered server information in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 07/08/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -29,7 +29,7 @@ Exporting and then importing registered server information lets you easily confi
 
 ## Export registered server information
 
-If the Registered Servers tool window isn't visible in SSMS, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
+If the Registered Servers tool window isn't visible in SSMS, select **View** > **Registered Servers**, or type **Ctrl**+**Alt**+**G**.
 
 1. In Registered Servers, right-click a server group, and then select **Tasks** > **Export...**.
 

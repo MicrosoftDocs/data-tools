@@ -50,7 +50,7 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Connection Dialog | Added a **Reset** button to clear the fields in the **Connection Properties** section. |
 | GitHub Copilot in SSMS (Preview) | Introduced support for the SSMS responder when using **Ask Copilot** within **Feature Search**. |
-| Indexes | Added options to create Vector and JSON indexes. Right-click **Indexes > New Index > JSON Index...** or **Vector Index...** |
+| Indexes | Added options to create Vector and JSON indexes. Right-click **Indexes** > **New Index** > **JSON Index...** or **Vector Index...** |
 | Linked Server Wizard | Introduced a streamlined creation wizard for linked servers, including new encryption model options. |
 | Object Explorer | Introduced display information for dimension and base type parameters for **vector** data types in Object Explorer. |
 | Query Plans | Added support for JSON and Vector index operations. |
@@ -62,7 +62,7 @@ For previous versions of SSMS, see:
 | Feature | Description |
 | --- | --- |
 | Activity Monitor | Resolved various context menu issues for **Recent Expensive Queries** and **Active Expensive Queries**. See [Activity Monitor Failed to retrieve Execution Plan data](https://developercommunity.visualstudio.com/t/Activity-Monitor-Failed-to-retrieve-Exec/10983180). |
-| Authentication | Introduced a new menu option in **Help > Clear Entra ID Token Cache** to fix an issue that prevented users were recently added to an Entra ID group from being able to login. See [Unable to login when recently been added to an EntraID group](https://developercommunity.microsoft.com/t/Unable-to-login-when-recently-been-added/10946664). |
+| Authentication | Introduced a new menu option in **Help** > **Clear Entra ID Token Cache** to fix an issue that prevented users were recently added to an Entra ID group from being able to login. See [Unable to login when recently been added to an EntraID group](https://developercommunity.microsoft.com/t/Unable-to-login-when-recently-been-added/10946664). |
 | Available Databases | Resolved an issue that generated the error `Parse error at line: 1, column: 5: Incorrect syntax near 'NOEXEC'.` when switching between a SQL database and a Data Warehouse on the same server. See [Issue switching between DW and SQL database in SSMS21](https://developercommunity.visualstudio.com/t/-Issue-switching-between-DW-and-SQL-data/10972386). |
 | Connection Dialog | Fixed an issue where the **Application Name** field in **Advanced Properties** was not being inherited. See [New Query from Object Explorer Does Not Inherit App Name from Highlighted Database](https://developercommunity.visualstudio.com/t/New-Query-from-Object-Explorer-Does-Not-/10977858). |
 | Generate Scripts Wizard | Resolved an `Object reference not set to an instance of an object` error thrown when trying to select options on the **Set Scripting Option** menu. See [Advance option on generate script button click throwing error in SSMS 2022 Preview 3](https://developercommunity.visualstudio.com/t/Advance-option-on-generate-script-button/10984224). |
@@ -86,8 +86,8 @@ For previous versions of SSMS, see:
 | Execution Plans | Added the ability to open an execution plan in a new tab. When viewing an Execution Plan, right-click to bring up the menu and select **Show Execution Plan in New Tab.** See [SSMS Right Click To Open Execution Plans In A New Tab](https://feedback.azure.com/d365community/idea/8c1f1930-35cc-ee11-92bc-6045bd83e1af). |
 | IntelliSense | Added IntelliSense support for `VECTOR_SEARCH`, `CREATE VECTOR INDEX`, `AUTOSEEDING_SYSTEM_DATABASES`, `REUSE_SYSTEM_DATABASES`, AND `CREATE JSON INDEX`. |
 | JSON Viewer | Added the ability to view JSON data from the results grid. See [JSON column view like in Azure Data Studio](https://developercommunity.microsoft.com/t/JSON-column-view-like-in-azure-data-stud/10881763). |
-| GitHub Copilot in SSMS (Preview) | Added [GitHub Copilot in SQL Server Management Studio](github-copilot/get-started.md), available from the **AI Assistance** workload in the Visual Studio Installer. |
-| Query Hint Recommendation Tool (Preview) | Added the [Query Hint Recommendation Tool (Preview)](query-hint-tool/hint-tool-overview.md) component under **Individual Components > Code Tools** in the Visual Studio Installer. |
+| GitHub Copilot in SSMS (Preview) | Added [GitHub Copilot in SQL Server Management Studio (Preview)](github-copilot/get-started.md), available from the **AI Assistance** workload in the Visual Studio Installer. |
+| Query Hint Recommendation Tool (Preview) | Added the [Query Hint Recommendation tool (Preview)](query-hint-tool/hint-tool-overview.md) component under **Individual Components** > **Code Tools** in the Visual Studio Installer. |
 | Scripting | Added scripting support for tables with Vector columns. |
 | SQL Server Integration Services (SSIS) | Reinstated SQL Server Integration Services (SSIS) capabilities, including SSISDB catalog management, automated execution of SSIS packages, and the Import Export Wizard. |
 | Table Designer | Added support for Vector data type to Table Designer. |
@@ -175,7 +175,7 @@ For more new features and bug fixes that are available in SSMS 22 Preview 1, see
 | Database Properties | Fixed validation for `MAXDOP` and `LEDGER_DIGEST_STORAGE_ENDPOINT` in Database Scoped Configurations tab. |
 | Find/Replace | Restored ability to use **Ctrl**+**C** in the Find/Replace dialog after opening a saved `.sql` file. See [Copy (Ctrl+C) does not work in Find/Replace dialog](https://developercommunity.visualstudio.com/t/Copy-CtrlC-does-not-work-in-FindRepl/10909707). |
 | General UI | Resolved behavior for selected dialogs that would appear behind the main windows when opened. |
-| General UI | Fixed issue that generated the error `Unsaved documents cannot be cut or copied to the clipboard from the Miscellaneous Files project. You must save the unsaved document(s) before cutting or copying them.` when using **Ctrl**+**C** in the Quick Find dialog (Ctrl+F). |
+| General UI | Fixed issue that generated the error `Unsaved documents cannot be cut or copied to the clipboard from the Miscellaneous Files project. You must save the unsaved document(s) before cutting or copying them.` when using **Ctrl**+**C** in the Quick Find dialog (**Ctrl**+**F**). |
 | Query Store | Addressed incorrect sizing with Configure Regressed Queries dialog. See ["Configure regressed queries" dialog goes off the screen vertically on 1920x1080 monitor](https://developercommunity.visualstudio.com/t/Confgure-regressed-queries-dialog-goes/10929863). |
 
 ## Known issues

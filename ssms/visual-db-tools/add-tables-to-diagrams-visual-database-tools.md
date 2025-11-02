@@ -33,7 +33,7 @@ You can add a table to your database diagram to edit its structure or relate it 
 
    A new table appears in the diagram in Standard view.
 
-1. In the first cell of the new table, type a column name. Then press the TAB key to move to the next cell.
+1. In the first cell of the new table, type a column name. Then press the **Tab** key to move to the next cell.
 
 1. Under **Data Type**, select a data type for the column. Each column must have a name and data type.
 

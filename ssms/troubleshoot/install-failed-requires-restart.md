@@ -4,7 +4,7 @@ description: Troubleshooting SSMS installation problems
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/14/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: install-set-up-deploy
 ms.collection:
@@ -17,16 +17,16 @@ ms.custom:
 
 Infrequently, users encounter SSMS installation problems, and common error messages include:
 
-- "Failed to install MSI package"
-- "Microsoft ODBC Driver 17 for SQL Server: A previous installation required a reboot of the machine for changes to take effect"
-- "Fatal error during installation (0x80070643)"
+- `Failed to install MSI package`
+- `Microsoft ODBC Driver 17 for SQL Server: A previous installation required a reboot of the machine for changes to take effect`
+- `Fatal error during installation (0x80070643)`
 
 ## Suggested resolution
 
-Following these steps to uninstall the "Microsoft ODBC Driver 17 for SQL Server" before beginning the SSMS installation commonly allows the setup to succeed if it fails with one of the aforementioned or similar error messages.
+Following these steps to uninstall **Microsoft ODBC Driver 17 for SQL Server** before beginning the SSMS installation commonly allows the setup to succeed if it fails with one of the previous or similar error messages.
 
 1. Close any related applications, including SSMS, Visual Studio, or SQL Server Profiler.
-1. Go to Control Panel > Add/Remove Programs.
+1. Go to **Control Panel** > **Programs and Features**.
 1. Locate the entry for "Microsoft ODBC Driver 17 for SQL Server" and uninstall. This step might require a restart.
 1. Begin the SSMS installation of the [latest version](../install/install.md).
 

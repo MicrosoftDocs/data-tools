@@ -1,9 +1,9 @@
 ---
-title: "Manage Code Formatting"
+title: Manage Code Formatting
 description: Learn about the three styles of text indenting and how to use them, and learn how to create clickable URLs.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/15/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -71,25 +71,19 @@ You can choose three different styles of text indenting. You can also specify ho
 ### Indent code
 
 1. Select the text you want to indent.
-
-1. Press TAB, or select the **Indent** button on the Standard toolbar.
+1. Press **Tab**, or select the **Indent** button on the Standard toolbar.
 
 ### Unindent code
 
 1. Select the text you want to unindent.
-
 1. Press **Shift**+**Tab**, or select the **Unindent** button on the Standard toolbar.
 
 ### Automatically indent all of your code
 
 1. On the **Tools** menu, select **Options**.
-
 1. Select **Text Editor**.
-
 1. Select **All Languages**.
-
 1. Select **Tabs**.
-
 1. Select **Smart**.
 
 > [!NOTE]  
@@ -116,9 +110,7 @@ You can use commands to convert text to all uppercase or lower case.
 ### Switch text to upper or lower case
 
 1. Select the text you want to convert.
-
 1. To convert text to uppercase, press **Ctrl**+**Shift**+**U**, or select **Make Uppercase** on the **Advanced** submenu of the **Edit** menu.
-
 1. To convert text to lowercase, press **Ctrl**+**Shift**+**L**, or select **Make Lowercase** on the **Advanced** submenu of the **Edit** menu.
 
 > [!NOTE]  
@@ -129,9 +121,7 @@ You can use commands to convert text to all uppercase or lower case.
 You can create and display selectable URLs in your code. By default, the URLs:
 
 - Are underlined.
-
 - Change the mouse pointer to a hand when you move over them.
-
 - Open the URL when selected, if the URL is valid.
 
 ### Display a selectable URL

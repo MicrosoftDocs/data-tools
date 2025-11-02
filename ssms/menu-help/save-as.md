@@ -1,9 +1,9 @@
 ---
-title: "Save As"
-description: "Save As"
+title: Save As
+description: Learn how to save an instance of the current item at a specified location in a specified file format.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/15/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -17,7 +17,7 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
-Used to save an instance of the current item at a specified location in a specified file format. Select **Save** *\<file\>* **As** on the **File** menu (where *\<file\>* is the name of the current item), or press ALT+F, A in the Code Editor.
+Used to save an instance of the current item at a specified location in a specified file format. Select **Save** *\<file\>* **As** on the **File** menu (where *\<file\>* is the name of the current item), or press **Alt**+**F**, **A** in the Code Editor.
 
 ## Central panel
 

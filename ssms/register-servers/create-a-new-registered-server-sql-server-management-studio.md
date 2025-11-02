@@ -3,7 +3,7 @@ title: Create a New Registered Server
 description: An overview of how to create a new registered server in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 07/08/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -43,7 +43,7 @@ There are two kinds of registered servers:
 
 ## Create a new registered server (local server groups)
 
-If the Registered Servers tool window isn't visible in SQL Server Management Studio, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
+If the Registered Servers tool window isn't visible in SQL Server Management Studio, select **View** > **Registered Servers**, or type **Ctrl**+**Alt**+**G**.
 
 1. In **Local Server Groups**, right-click on a server group select **New Server Registration...**.
 
@@ -52,8 +52,8 @@ If the Registered Servers tool window isn't visible in SQL Server Management Stu
    | Setting | Description |
    | --- | --- |
    | **Server type** | When a server is registered from Registered Servers, the **Server type** box is read-only, and matches the type of server displayed in the Registered Servers pane. To register a different type of server, select **Database Engine**, **Analysis Server**, **Reporting Services**, or **Integration Services** on the **Registered Servers** toolbar before starting to register a new server. |
-   | **Server name** | For **Server name**, enter the fully qualified name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you're NOT using the default instance - ***MSSQLSERVER*** - you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Find SQL Server instance name](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
-   | **Authentication** | Windows Authentication is set as default.<br /><br />You can also use **SQL Server Authentication** to connect. However, if you select **SQL Server Authentication**, a username and password are required.<br /><br />**Microsoft Entra authentication** is available for [!INCLUDE [sssql22-md](../includes/sssql22-md.md)] and later versions. For step-by-step configuration instructions, see [Tutorial: Set up Microsoft Entra authentication for SQL Server](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-setup-tutorial)<br /><br />For more information about authentication types, see [Connect to Server (Login page) - Database Engine](../f1-help/connect-to-server-login-page-database-engine.md). |
+   | **Server name** | For **Server name**, enter the fully qualified name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you *aren't* using the default instance (`MSSQLSERVER`), you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Find SQL Server instance name](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
+   | **Authentication** | Windows Authentication is set as default.<br /><br />You can also use **SQL Server Authentication** to connect. However, if you select **SQL Server Authentication**, a username and password are required.<br /><br />**Microsoft Entra authentication** is available for [!INCLUDE [sssql22-md](../includes/sssql22-md.md)] and later versions. For step-by-step configuration instructions, see [Tutorial: Set up Microsoft Entra authentication for SQL Server with app registration](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-setup-tutorial)<br /><br />For more information about authentication types, see [Connect to Server (Login page) - Database Engine](../f1-help/connect-to-server-login-page-database-engine.md). |
    | **Login** | The user ID from the server account used to sign in to the server. A login is required when using **SQL Server Authentication**. |
    | **Password** | The password from the server account used to sign in to the server. A password is required when using **SQL Server Authentication**. |
    | **Remember password** | Select to have [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] encrypt and store the password you entered. This option is displayed only if you have selected to connect using [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Authentication. |
@@ -74,7 +74,7 @@ If the Registered Servers tool window isn't visible in SQL Server Management Stu
 
 ## Create a new registered server (Central Management Servers)
 
-If the Registered Servers pane isn't visible in SQL Server Management Studio, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
+If the Registered Servers pane isn't visible in SQL Server Management Studio, select **View** > **Registered Servers**, or type **Ctrl**+**Alt**+**G**.
 
 1. Within **Central Management Servers**, right-click on a CMS, or a server group, and select **New Server Registration...**.
 
@@ -82,7 +82,7 @@ If the Registered Servers pane isn't visible in SQL Server Management Studio, se
 
    | Setting | Description |
    | --- | --- |
-   | **Server name** | Enter the name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you're NOT using the default instance (`MSSQLSERVER`), you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Find SQL Server instance name](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
+   | **Server name** | Enter the name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you *aren't* using the default instance (`MSSQLSERVER`), you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Find SQL Server instance name](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
    | **Registered server name** | The default value is the same as the **Server name**. Change this to a more friendly or readable name if appropriate. |
    | **Registered server description** | Description of the registered server. |
 

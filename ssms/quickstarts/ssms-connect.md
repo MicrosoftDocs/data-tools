@@ -1,10 +1,10 @@
 ---
-title: "Connect with SQL Server Management Studio"
+title: Connect with SQL Server Management Studio
 description: Explains the connection parameters to connect to an instance of SQL Server with SQL Server Management Studio. Includes details about how to secure and encrypt connections.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 09/15/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -26,13 +26,13 @@ This article describes how to connect to the [!INCLUDE [ssdenoversion-md](../inc
 
 SQL Server Management Studio (SSMS) 20 includes an important security improvement related to connection encryption, and it includes many changes.
 
-- The **Encrypt connection** property has been renamed to **Encryption**.
+- The **Encrypt connection** property was renamed to **Encryption**.
 - The value of *True* (**Encrypt connection** option checked, or enabled) now maps to *Mandatory* for **Encryption**.
 - The value of *False* (**Encrypt connection** option unchecked, or disabled) now maps to *Optional* for **Encryption**.
 - The **Encryption** property is now set to *Mandatory* by default.
 - The **Encryption** property includes a new option, *Strict (SQL Server 2022 and Azure SQL)*, which isn't available in previous versions of SSMS.
 
-In addition, the **Encryption** and **Trust server certificate** properties have moved to the **Login** page under **Connection Security**. A new option, **Host name in certificate**, has also been added. The [best practice](/sql/relational-databases/security/securing-sql-server) is to support a trusted, encrypted connection to the server.
+In addition, the **Encryption** and **Trust server certificate** properties are located in the **Login** page under **Connection Security**. The **Host name in certificate** option was added. The [best practice](/sql/relational-databases/security/securing-sql-server) is to support a trusted, encrypted connection to the server.
 
 To encrypt connections, the [!INCLUDE [ssdenoversion-md](../includes/ssdenoversion-md.md)] must be configured with a TLS certificate signed by a trusted root certificate authority.
 
@@ -67,7 +67,7 @@ For more information, see ["The certificate received from the remote server was 
 
 For workstations with a new installation of SSMS, or when adding a new connection:
 
-1. Select **Connect** in **Object Explorer**, or **File > New > Query with Current Connection**.
+1. Select **Connect** in **Object Explorer**, or **File** > **New** > **Query with Current Connection**.
 1. Within the **Connect to Server** dialog, set the connection details for your server.
 
 ## Connection detail description
@@ -80,7 +80,7 @@ The following table describes the connection details.
 | **Authentication** | Select the type of authentication to use. |
 | **User name** | Enter the user name with which to authenticate. The user name is automatically populated if *Windows Authentication* is selected for the **Authentication** type. When you use Microsoft Entra MFA, the user name can be left blank. |
 | **Password** | Enter the password for the user (if available). The password field is unavailable for specific **Authentication** types. |
-| ***Encryption** <sup>1</sup> | Select the encryption level for the connection. The default value is *Mandatory*. |
+| **Encryption** <sup>1</sup> | Select the encryption level for the connection. The default value is *Mandatory*. |
 | **Trust server certificate** | Check this option to bypass server certificate validation. The default value is *False* (unchecked), which promotes better security using trusted certificates. |
 | **Host name in the certificate** | The value provided in this option is used to specify a different, but expected, CN or SAN in the server certificate for the server to which SSMS is connecting. This option can be left blank, so that certificate validation ensures that the Common Name (CN) or Subject Alternative Name (SAN) in the certificate matches the server name to which you're connecting. This parameter can be populated when the server name doesn't match the CN or SAN, for example, when using DNS aliases. For more information, see [Encryption and certificate validation in Microsoft.Data.SqlClient](/sql/connect/ado-net/encryption-and-certificate-validation). |
 
@@ -94,7 +94,7 @@ During the initial launch of SQL Server Management Studio 20, you're prompted to
 
 For workstations that imported settings from SSMS 18 or SSMS 19:
 
-1. Select **Connect** in **Object Explorer**, or **File > New > Query with Current Connection**.
+1. Select **Connect** in **Object Explorer**, or **File** > **New** > **Query with Current Connection**.
 1. Within the **Connect to Server** dialog, select the server to which you want to connect.
 1. Review the options selected for **Encryption** and **Trust server certificate** for the existing connection. In some scenarios, it might be necessary to configure a signed certificate or change the value for one or both properties.
 1. If you previously connected with **Encryption** set to *Mandatory*, and the SQL Server doesn't have encrypted connections enabled or doesn't have a signed certificate, you're prompted to enable the **Trust server certificate** option:

@@ -25,7 +25,7 @@ There are four ways to invoke the Complete Word feature:
   
 - On the **Edit** menu, point to **IntelliSense**, and then select **Complete Word**.  
   
-- Press ALT+RIGHT ARROW.  
+- Press **Alt**+**Right Arrow**.  
   
 - Right-click the text editor, and select **Complete Word**.  
   

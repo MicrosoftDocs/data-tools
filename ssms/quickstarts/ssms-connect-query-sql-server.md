@@ -4,12 +4,12 @@ description: Connect to a SQL Server instance in SSMS. Create and query a SQL Se
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 04/16/2025
-ms.update-cycle: 1825-days
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: quickstart
 ms.collection:
   - data-tools
+ms.update-cycle: 1825-days
 f1_keywords:
   - "sql13.swb.connection.modern.default.f1"
   - "sql13.swb.connection.modern.advanced.f1"
@@ -34,9 +34,7 @@ The article demonstrates how to follow the below steps:
 > - Query the new table and view the results
 > - Use the query window table to verify your connection properties
 
-This article covers connecting and querying an instance of SQL Server. For Azure SQL, see [Connect and query Azure SQL Database & SQL Managed Instance](/azure/azure-sql/database/connect-query-ssms).
-
-To use [Azure Data Studio](/azure-data-studio/download-azure-data-studio), see connect and query [SQL Server](/azure-data-studio/quickstart-sql-server), [Azure SQL Database](/azure-data-studio/quickstart-sql-database), and [Azure Synapse Analytics](/azure-data-studio/quickstart-sql-dw).
+This article covers connecting and querying an instance of SQL Server. For Azure SQL, see [Quickstart: Use SSMS to connect to and query Azure SQL Database or Azure SQL Managed Instance](/azure/azure-sql/database/connect-query-ssms).
 
 To learn more about SQL Server Management Studio, see [Tips and tricks for using SQL Server Management Studio (SSMS)](../tutorials/ssms-tricks.md).
 
@@ -55,7 +53,7 @@ To connect to your SQL Server instance, follow these steps:
 
    :::image type="content" source="media/ssms-connect-query-sql-server/connect-object-explorer.png" alt-text="Screenshot of the connect link in Object Explorer.":::
 
-2. The **Connect to Server** dialog box appears. In SSMS 21, you can customize your connection dialog experience in **Tools > Options > Environment > Connection Dialog**. Use the Modern connection dialog for a modern format when connecting to the Database Engine. Use the Classic connection dialog experience when connecting to the Database Engine, and SQL Server Analysis Services (SSAS), SQL Server Reporting Services (SSRS), and SQL Server Integration Services (SSIS).
+2. The **Connect to Server** dialog box appears. In SSMS 21, you can customize your connection dialog experience in **Tools** > **Options** > **Environment** > **Connection Dialog**. Use the Modern connection dialog for a modern format when connecting to the Database Engine. Use the Classic connection dialog experience when connecting to the Database Engine, and SQL Server Analysis Services (SSAS), SQL Server Reporting Services (SSRS), and SQL Server Integration Services (SSIS).
 
    ### [Modern connection dialog](#tab/modern)
 
@@ -65,8 +63,8 @@ To connect to your SQL Server instance, follow these steps:
 
    | Setting | Suggested values | Description |
    | --- | --- | --- |
-   | **Server Name** | The fully qualified server name | For **Server name**, enter the name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you're NOT using the default instance - ***MSSQLSERVER*** - you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Additional tips and tricks for using SSMS](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
-   | **Authentication** | Windows Authentication<br /><br />SQL Server Authentication<br /><br />Microsoft Entra authentication | Windows Authentication is set as default.<br /><br />You can also use **SQL Server Authentication** to connect. However, if you select **SQL Server Authentication**, a username and password are required.<br /><br />**Microsoft Entra authentication** is available for [!INCLUDE [sssql22-md](../includes/sssql22-md.md)] and later versions. For step-by-step configuration instructions, see [Tutorial: Set up Microsoft Entra authentication for SQL Server](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-setup-tutorial)<br /><br />For more information about authentication types, see [Connect to the server (database engine)](../f1-help/connect-to-server-login-page-database-engine.md). |
+   | **Server Name** | The fully qualified server name | For **Server name**, enter the name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you *aren't* using the default instance (`MSSQLSERVER`), you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Additional tips and tricks for using SSMS](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
+   | **Authentication** | Windows Authentication<br /><br />SQL Server Authentication<br /><br />Microsoft Entra authentication | Windows Authentication is set as default.<br /><br />You can also use **SQL Server Authentication** to connect. However, if you select **SQL Server Authentication**, a username and password are required.<br /><br />**Microsoft Entra authentication** is available for [!INCLUDE [sssql22-md](../includes/sssql22-md.md)] and later versions. For step-by-step configuration instructions, see [Tutorial: Set up Microsoft Entra authentication for SQL Server with app registration](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-setup-tutorial)<br /><br />For more information about authentication types, see [Connect to Server (Login page) - Database Engine](../f1-help/connect-to-server-login-page-database-engine.md). |
    | **User Name** | Server account user ID | The user ID from the server account used to sign in to the server. A login is required when using **SQL Server Authentication**. |
    | **Password** | Server account password | The password from the server account used to sign in to the server. A password is required when using **SQL Server Authentication**. |
    | **Database Name** (optional) | Name of the database | For **Database name**, enter the name of the database you want to connect to. The default value *\<default>* is typically set to `master`. |
@@ -87,8 +85,8 @@ To connect to your SQL Server instance, follow these steps:
    | Setting | Suggested values | Description |
    | --- | --- | --- |
    | **Server type** | Database Engine | For **Server type**, select **Database Engine** (usually the default option). |
-   | **Server name** | The fully qualified server name | For **Server name**, enter the name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you're NOT using the default instance - ***MSSQLSERVER*** - you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Additional tips and tricks for using SSMS](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
-   | **Authentication** | Windows Authentication<br /><br />SQL Server Authentication<br /><br />Microsoft Entra authentication | Windows Authentication is set as default.<br /><br />You can also use **SQL Server Authentication** to connect. However, if you select **SQL Server Authentication**, a username and password are required.<br /><br />**Microsoft Entra authentication** is available for [!INCLUDE [sssql22-md](../includes/sssql22-md.md)] and later versions. For step-by-step configuration instructions, see [Tutorial: Set up Microsoft Entra authentication for SQL Server](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-setup-tutorial)<br /><br />For more information about authentication types, see [Connect to the server (database engine)](../f1-help/connect-to-server-login-page-database-engine.md). |
+   | **Server name** | The fully qualified server name | For **Server name**, enter the name of your SQL Server (you can also use *localhost* as the server name if you're connecting locally). If you *aren't* using the default instance (`MSSQLSERVER`), you must enter in the server name and the instance name.<br /><br />If you're unsure how to determine your SQL Server instance name, see [Additional tips and tricks for using SSMS](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
+   | **Authentication** | Windows Authentication<br /><br />SQL Server Authentication<br /><br />Microsoft Entra authentication | Windows Authentication is set as default.<br /><br />You can also use **SQL Server Authentication** to connect. However, if you select **SQL Server Authentication**, a username and password are required.<br /><br />**Microsoft Entra authentication** is available for [!INCLUDE [sssql22-md](../includes/sssql22-md.md)] and later versions. For step-by-step configuration instructions, see [Tutorial: Set up Microsoft Entra authentication for SQL Server with app registration](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-setup-tutorial)<br /><br />For more information about authentication types, see [Connect to Server (Login page) - Database Engine](../f1-help/connect-to-server-login-page-database-engine.md). |
    | **Login** | Server account user ID | The user ID from the server account used to sign in to the server. A login is required when using **SQL Server Authentication**. |
    | **Password** | Server account password | The password from the server account used to sign in to the server. A password is required when using **SQL Server Authentication**. |
    | **Encryption** <sup>1</sup> | Encryption method | Select the encryption level for the connection. The default value is *Mandatory*. |
@@ -117,16 +115,17 @@ Now let's create a database named `TutorialDB` by following the below steps:
 
 1. Paste the following T-SQL code snippet into the query window:
 
-    ```sql
-    USE master
-    GO
-    IF NOT EXISTS (
-       SELECT name
-       FROM sys.databases
-       WHERE name = N'TutorialDB'
-    )
-    CREATE DATABASE [TutorialDB]
-    GO
+   ```sql
+   USE master;
+   GO
+
+   IF NOT EXISTS (
+      SELECT [name]
+      FROM sys.databases
+      WHERE [name] = N'TutorialDB'
+   )
+   CREATE DATABASE [TutorialDB];
+   GO
    ```
 
 1. Execute the query by selecting **Execute** or selecting F5 on your keyboard.
@@ -146,20 +145,21 @@ In this section, you create a table in the newly created TutorialDB database. Be
 1. Paste the following T-SQL code snippet into the query window:
 
    ```sql
-   USE [TutorialDB]
+   USE [TutorialDB];
+   GO
 
    -- Create a new table called 'Customers' in schema 'dbo'
    -- Drop the table if it already exists
    IF OBJECT_ID('dbo.Customers', 'U') IS NOT NULL
-       DROP TABLE dbo.Customers
+       DROP TABLE [dbo].[Customers]
    GO
 
    -- Create the table in the specified schema
    CREATE TABLE dbo.Customers (
-       CustomerId INT NOT NULL PRIMARY KEY, -- primary key column
-       Name NVARCHAR(50) NOT NULL,
-       Location NVARCHAR(50) NOT NULL,
-       Email NVARCHAR(50) NOT NULL
+       [CustomerId] INT NOT NULL PRIMARY KEY, -- primary key column
+       [Name] NVARCHAR (50) NOT NULL,
+       [Location] NVARCHAR (50) NOT NULL,
+       [Email] NVARCHAR (50) NOT NULL
    );
    GO
    ```
@@ -176,13 +176,13 @@ Now let's insert some rows into the Customers table that you created. Paste the 
 
    ```sql
    -- Insert rows into table 'Customers'
-   INSERT INTO dbo.Customers
-      ([CustomerId],[Name],[Location],[Email])
-   VALUES
-      ( 1, N'Orlando', N'Australia', N''),
-      ( 2, N'Keith', N'India', N'keith0@adventure-works.com'),
-      ( 3, N'Donna', N'Germany', N'donna0@adventure-works.com'),
-      ( 4, N'Janet', N'United States', N'janet1@adventure-works.com')
+   INSERT INTO dbo.Customers (
+       [CustomerId], [Name], [Location], [Email]
+   )
+   VALUES (1, N'Orlando', N'Australia', N''),
+          (2, N'Keith', N'India', N'keith0@adventure-works.com'),
+          (3, N'Donna', N'Germany', N'donna0@adventure-works.com'),
+          (4, N'Janet', N'United States', N'janet1@adventure-works.com')
    GO
    ```
 
@@ -191,8 +191,8 @@ Now let's insert some rows into the Customers table that you created. Paste the 
 The results of a query are visible below the query text window. To query the Customers table and view the rows that were inserted, paste the following T-SQL code snippet into the query window, and then select **Execute**:
 
 ```sql
--- Select rows from table 'Customers'
-SELECT * FROM dbo.Customers;
+SELECT *
+FROM dbo.Customers;
 ```
 
 The query results are displayed under the area where the text was entered.
@@ -213,7 +213,7 @@ To review troubleshooting techniques to use when you can't connect to an instanc
 
 ## Related content
 
-- [SQL Server Management Studio (SSMS) Query Editor](../f1-help/database-engine-query-editor-sql-server-management-studio.md)
+- [Query Editor (SQL Server Management Studio)](../f1-help/database-engine-query-editor-sql-server-management-studio.md)
 - [Script objects in SQL Server Management Studio](../tutorials/scripting-ssms.md)
 - [Use templates in SQL Server Management Studio](../template/templates-ssms.md)
 - [SQL Server Management Studio components and configuration](../tutorials/ssms-configuration.md)

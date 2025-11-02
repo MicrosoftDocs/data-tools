@@ -31,9 +31,9 @@ If Object Explorer is connected to a server, custom reports can execute in the c
 
 You can run a custom report in [!INCLUDE [ssManStudio](../includes/ssmanstudio-md.md)] in the following ways:
 
-- Right-click a node in Object Explorer, point to **Reports** and left-select **Custom Reports**. In the **Open File** dialog box, locate a folder that contains `.rdl` files, and then open the appropriate report file.
+- Right-click a node in Object Explorer, go to **Reports** > **Custom Reports**. In the **Open File** dialog box, locate a folder that contains `.rdl` files, and then open the appropriate report file.
 
-- Right-click a node in Object Explorer, point to **Reports**, point to **Custom Reports**, and then select a custom report from the most recently used file list.
+- Right-click a node in Object Explorer, go to **Reports** > **Custom Reports**, and then select a custom report from the most recently used file list.
 
 ## Limitations
 

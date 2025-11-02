@@ -4,7 +4,7 @@ description: Description of options within the SQL Server Object Explorer - Comm
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 09/15/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -15,7 +15,7 @@ ms.collection:
 
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
-Use this page to specify options related to commands available from Object Explorer. To access this dialog box, go to **Tools > Options > SQL Server Object Explorer > Commands** from the top menu bar.
+Use this page to specify options related to commands available from Object Explorer. To access this dialog box, go to **Tools** > **Options** > **SQL Server Object Explorer** > **Commands** from the top menu bar.
 
 ## Audit Log Viewer options
 
@@ -27,13 +27,13 @@ Use this page to specify options related to commands available from Object Explo
 
 | Option | Information | Description |
 | --- | --- | --- |
-| Full path the Azure Data Studio instance to invoke | | When specified, SSMS uses it to launch a new instance of Azure Data Studio (for example, C:\Program Files\Azure Data Studio\bin\azuredatastudio.com). Leave blank to let SSMS use its heuristic. |
+| Full path the Azure Data Studio instance to invoke | | When specified, SQL Server Management Studio (SSMS) uses it to launch a new instance of Azure Data Studio (for example, `C:\Program Files\Azure Data Studio\bin\azuredatastudio.com`). Leave blank to let SSMS use its heuristic. |
 
 ## Connection security
 
 | Option | Information | Description |
 | --- | --- | --- |
-| Trust server certificate for imported connections | **Always**<br />**Prompt**<br />**Never** | When set to **Always**, existing connections in the Most Recently Used (MRU) list that were imported after upgrading from SSMS 19.x or earlier will have **Trust Server Certificate** enabled. The default value is **Prompt**. |
+| Trust server certificate for imported connections | **Always**<br />**Prompt**<br />**Never** | When set to **Always**, existing connections in the Most Recently Used (MRU) list, which were imported after upgrading from SSMS 19.x or earlier, have **Trust Server Certificate** enabled. The default value is **Prompt**. |
 
 ## Drag/drop
 

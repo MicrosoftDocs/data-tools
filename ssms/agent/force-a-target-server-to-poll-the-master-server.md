@@ -1,9 +1,9 @@
 ---
-title: "Force a Target Server to Poll the Master Server"
-description: "Force a Target Server to Poll the Master Server"
+title: Force a Target Server to Poll the Master Server
+description: Force a target server to poll the master server
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 12/05/2023
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "target servers [SQL Server], polling the master server"
 ---
 
-# Force a Target Server to Poll the Master Server
+# Force a target server to poll the master server
 
 [!INCLUDE [SQL Server](../includes/applies-to-version/sqlserver.md)]
 
@@ -28,26 +28,21 @@ A job is a specified series of actions that [!INCLUDE [ssNoVersion](../includes/
 > [!NOTE]  
 > If the master server is inaccessible when the target server tries to upload job status, the job status is spooled until the master server can be accessed.
 
-- **Before you begin:**  [Limitations and Restrictions](#Restrictions), [Security](#Security)
+## Limitations
 
-- **To force a target server to poll the master server, using:** [SQL Server Management Studio](#SSMS)
+The target server must be a registered server on the master server. You must run the instructions in this article from the master server.
 
-## <a id="BeforeYouBegin"></a> Before You Begin
+## Security
 
-### <a id="Restrictions"></a> Limitations and Restrictions
+For detailed information, see:
 
-The target server must be a registered server on the master server. You must run the instructions given in this topic from the master server.
+- [Implement SQL Server Agent security](implement-sql-server-agent-security.md)
+- [Choose the Right SQL Server Agent Service Account for Multiserver Environments](choose-the-right-sql-server-agent-service-account-for-multiserver-environments.md)
 
-### <a id="Security"></a> Security
+## Use SQL Server Management Studio
 
-For detailed information, see [Implement SQL Server Agent Security](implement-sql-server-agent-security.md) and [Choose the Right SQL Server Agent Service Account for Multiserver Environments](choose-the-right-sql-server-agent-service-account-for-multiserver-environments.md).
-
-## <a id="SSMS"></a> Use SQL Server Management Studio
-
-**To force a target server to poll the master server**
+To force a target server to poll the master server:
 
 1. In **Object Explorer**, expand the master server.
-
-1. Right-click **SQL Server Agent**, point to **Multi Server Administration**, and then select **Manage Target Servers**.
-
+1. Right-click **SQL Server Agent**, and navigate to **Multi Server Administration** > **Manage Target Servers**.
 1. Select a target server, and then select **Force Poll**.

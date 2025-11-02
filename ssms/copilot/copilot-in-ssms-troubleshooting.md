@@ -1,16 +1,16 @@
 ---
-title: "Troubleshooting"
+title: Troubleshooting
 titleSuffix: Copilot in SQL Server Management Studio
 description: Learn how to troubleshoot issues with Copilot in SQL Server Management Studio.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 06/13/2025
-ms.update-cycle: 180-days
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
   - ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to troubleshoot issues with Copilot in SQL Server Management Studio.
 ---
 
@@ -28,9 +28,9 @@ If you enter the endpoint and deployment values in the first-run experience (ini
 
 If you get an error after entering the endpoint and deployment values in the first-run experience (initial dialog when you first launch Copilot), use the list of error messages to troubleshoot further, or capture logs in the output window.
 
-1. Go to **Tools > Options > Copilot** to enter the endpoint and deployment values, then select **OK**.
+1. Go to **Tools** > **Options** > **Copilot** to enter the endpoint and deployment values, then select **OK**.
 1. No validation occurs in this dialog.
-1. Before you open Copilot, go to **View > Output** to open the output viewer.
+1. Before you open Copilot, go to **View** > **Output** to open the output viewer.
 1. Select the **Copilot** button on the toolbar to launch Copilot in SSMS.
 1. Upon launch, you're prompted to authenticate to Azure, unless you're using an API Key.
 1. If you don't see the prompt to authenticate, check your browser for a Microsoft Entra authentication dialog.
@@ -39,7 +39,7 @@ If you get an error after entering the endpoint and deployment values in the fir
 
 ## Test access
 
-Use the Azure Command-Line Interfact (CLI) to verify you have access to the Azure OpenAI resources. The Azure CLI must be installed on the same machine as SQL Server Management Studio (SSMS). If the Azure OpenAI resources use Microsoft Entra authentication, you must use `az login` to [log in to Azure](/cli/azure/reference-index) before you run the PowerShell script. The script requires the name of the resource group in which the Azure OpenAI resources are hosted, and the name of the endpoint resource. If the script completes successfully, the available Azure OpenAI models are listed as the output.
+Use the Azure Command-Line Interfact (CLI) to verify you have access to the Azure OpenAI resources. The Azure CLI must be installed on the same machine as SQL Server Management Studio (SSMS). If the Azure OpenAI resources use Microsoft Entra authentication, you must use `az login` to [sign in to Azure](/cli/azure/reference-index) before you run the PowerShell script. The script requires the name of the resource group in which the Azure OpenAI resources are hosted, and the name of the endpoint resource. If the script completes successfully, the available Azure OpenAI models are listed as the output.
 
 ```powershell
 # Set your Azure OpenAI resource values
