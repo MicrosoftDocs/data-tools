@@ -1,9 +1,9 @@
 ---
 title: Work with Data in the Results Pane
-description: "Work with data in the Results pane (Visual Database Tools)"
+description: Work with data in the Results pane (Visual Database Tools)
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/03/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -42,7 +42,7 @@ You can quickly navigate through the records using the navigation bar at the bot
 
 There are buttons for going to the first and last records, the next and previous records, and for going to a particular record.
 
-To go to a particular record, type the number of the row in the text box in the navigation bar and then press ENTER.
+To go to a particular record, type the number of the row in the text box in the navigation bar and then press **Enter**.
 
 For information about using keyboard shortcuts in the Query and View Designer see [Navigate in the Query and View Designer (Visual Database Tools)](navigate-in-the-query-and-view-designer-visual-database-tools.md).
 
@@ -50,13 +50,13 @@ For information about using keyboard shortcuts in the Query and View Designer se
 
 The Results pane uses optimistic concurrency control so the grid shows a copy of the data in the database rather than an entirely live view. This way changes are only committed to the database after you move off of a row. This allows more than one user to work with the database at the same time. If there are conflicts (for example if another user changed the same row you changed and committed it to the database before you did) you receive a message telling you of the conflict and offering resolutions.
 
-## Undo changes using ESC
+## Undo changes using the Esc key
 
-You can only undo a change if it hasn't yet been committed to the database. The data isn't committed if you haven't moved off of the record or if once you do move off the record you get an error message indicating the change isn't committed. If it hasn't been committed you can undo the change by using the ESC key.
+You can only undo a change if it hasn't yet been committed to the database. The data isn't committed if you haven't moved off of the record or if once you do move off the record you get an error message indicating the change isn't committed. If it hasn't been committed you can undo the change by using the **Esc** key.
 
-To undo all changes in a row, move to a cell in that row that you haven't edited and press the ESC key.
+To undo all changes in a row, move to a cell in that row that you haven't edited and press the **Esc** key.
 
-To undo changes to a particular cell that you have edited, move to that cell press the ESC key.
+To undo changes to a particular cell that you have edited, move to that cell press the **Esc** key.
 
 ## Add or delete data in the database
 
@@ -99,7 +99,7 @@ If this happens, you receive a notice as soon as you move off of the cell with t
 
 ## Limitations in the Results pane
 
-### What cannot be updated
+### What can't be updated
 
 These tips might help you work successfully with data in the Results pane.
 
@@ -117,13 +117,13 @@ These tips might help you work successfully with data in the Results pane.
 
 - Data that was not successfully translated by the provider.
 
-### What cannot be represented fully
+### What can't be represented fully
 
 What is returned to the Results pane from the database is greatly controlled by the provider for the data source you're using. The Results pane can't always translate the data from all database management systems. Here are come cases where this is so.
 
 - Binary data types are often not useful for people working in the Results pane and they can take a very long time to download. So they are represented by *\<Binary data\>* or *Null*.
 
-- Precision and scale cannot always be preserved. For example, the Results pane supports a precision of 27. If data is of a data type with a greater precision, the data might be truncated or might be represented by *\<Unable to read data\>*.
+- Precision and scale can't always be preserved. For example, the Results pane supports a precision of 27. If data is of a data type with a greater precision, the data might be truncated or might be represented by *\<Unable to read data\>*.
 
 ## Related content
 

@@ -1,9 +1,9 @@
 ---
-title: "Customize Menus and Shortcut Keys"
-description: "Customize Menus and Shortcut Keys"
+title: Customize Menus and Shortcut Keys
+description: Customize menus and shortcut keys with keyboard accelerators.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/15/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -24,7 +24,7 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
-A keyboard accelerator allows you to select a menu command or button by pressing **ALT**+*\<single letter>*. For example, to open the **Edit** menu, press **ALT**+**E**. You can rearrange and modify toolbar buttons, menus, and menu commands by using the **Customize** dialog box. Instructions are provided for changing the settings using the mouse and using only the keyboard.
+A keyboard accelerator allows you to select a menu command or button by pressing **Alt**+*\<single letter>*. For example, to open the **Edit** menu, press **Alt**+**E**. You can rearrange and modify toolbar buttons, menus, and menu commands by using the **Customize** dialog box. Instructions are provided for changing the settings using the mouse and using only the keyboard.
 
 Keyboard accelerators for stored procedures using the Ctrl key can be created from the **Keyboard** page of the **Tools**/**Options** dialog box.
 
@@ -51,7 +51,7 @@ Keyboard accelerators for stored procedures using the Ctrl key can be created fr
 
 1. In the **Name** box on the shortcut menu, type a name for the toolbar button with an ampersand (&) before the letter that you want as the keyboard accelerator.
 
-1. Press **ENTER**.
+1. Press **Enter**.
 
 1. In the **Customize** dialog box, select **Close**.
 
@@ -65,53 +65,53 @@ Keyboard accelerators for stored procedures using the Ctrl key can be created fr
 
 1. In the **Name** box on the shortcut menu, type a name for the menu command with an ampersand (&) before the letter that you want as the keyboard accelerator.
 
-1. Press **ENTER**.
+1. Press **Enter**.
 
 1. In the **Customize** dialog box, select **Close**.
 
 ## Open the keyboard accelerator dialog box using the keyboard
 
-1. Press **ALT**+**T**, and then type **C**, to open the **Customize** dialog box.
+1. Press **Alt**+**T**, and then type **C**, to open the **Customize** dialog box.
 
 1. Make sure the toolbar you want to change is visible.
 
-   1. In the **Customize** dialog box, press **ALT**+**B** to show the **Toolbars** tab.
+   1. In the **Customize** dialog box, press **Alt**+**B** to show the **Toolbars** tab.
 
-   1. Use the arrow keys to select the toolbar you want to display, then **SPACE** to select the check box.
+   1. Use the arrow keys to select the toolbar you want to display, then **Space** to select the check box.
 
-1. In the **Customize** dialog box, press **ALT**+**C** to display the **Commands** tab.
+1. In the **Customize** dialog box, press **Alt**+**C** to display the **Commands** tab.
 
 ## Change a toolbar buttons accelerator key using the keyboard
 
-1. Press **ALT**+**R** to display the **Rearrange Commands** dialog box.
+1. Press **Alt**+**R** to display the **Rearrange Commands** dialog box.
 
 1. In the **Rearrange Commands** dialog box, use the arrow keys to select **Toolbar**.
 
-1. Tab to the **Toolbar** list, and use the arrow keys to select the toolbar that contains the button you want to change, and then press **ENTER**.
+1. Tab to the **Toolbar** list, and use the arrow keys to select the toolbar that contains the button you want to change, and then press **Enter**.
 
 1. Tab to the **Controls** list, and use the arrow keys to select the button you want to change.
 
-1. Press **ALT**+**M**, to select **Modify Selection**.
+1. Press **Alt**+**M**, to select **Modify Selection**.
 
 1. Tab to the **Name** box on the shortcut menu, type a name for the toolbar button with an ampersand (&) before the letter that you want as the keyboard accelerator.
 
-1. Press **ENTER**.
+1. Press **Enter**.
 
-1. Tab to the **Close** button, and then press **ENTER**.
+1. Tab to the **Close** button, and then press **Enter**.
 
 ## Change a menu commands accelerator key using the keyboard
 
-1. Press **ALT**+**R** to display the **Rearrange Commands** dialog box.
+1. Press **Alt**+**R** to display the **Rearrange Commands** dialog box.
 
-1. Tab to **Menu Bar** and then use the arrow keys to select the menu you want in the **Menu Bar** list, and then press **ENTER**.
+1. Tab to **Menu Bar** and then use the arrow keys to select the menu you want in the **Menu Bar** list, and then press **Enter**.
 
 1. Tab to the **Controls** list, and use the arrow keys to select the button you want to change.
 
-1. Press **ALT**+**M**, to select **Modify Selection**.
+1. Press **Alt**+**M**, to select **Modify Selection**.
 
 1. Tab to the **Name** box on the shortcut menu, and type a name for the toolbar button with an ampersand (&) before the letter that you want as the keyboard accelerator.
 
-1. Press **ENTER**.
+1. Press **Enter**.
 
 1. In the **Customize** dialog box, select **Close**.
 

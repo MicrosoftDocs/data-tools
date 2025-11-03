@@ -3,7 +3,7 @@ title: Import Registered Server Information
 description: Learn how to import saved registered server information in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 07/08/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -25,7 +25,7 @@ This article describes how to import saved registered server information in SQL 
 > [!NOTE]  
 > You can't import registered server information from earlier versions of [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] than the version you're currently using.
 
-If the Registered Servers tool window isn't visible in SSMS, select **View** > **Registered Servers**, or type **Ctrl** + **Alt** + **G**.
+If the Registered Servers tool window isn't visible in SSMS, select **View** > **Registered Servers**, or type **Ctrl**+**Alt**+**G**.
 
 1. In Registered Servers, select the server type on the Registered Servers toolbar. The server type must be the same as the registered server export file type. For example, if you exported [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] registered server information, you must select **SQL Server** on the Registered Servers toolbar.
 

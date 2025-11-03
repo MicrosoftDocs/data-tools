@@ -5,7 +5,7 @@ description: Learn how to use the GitHub Copilot Chat experience in SQL Server M
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/14/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -63,15 +63,15 @@ The chat window of Copilot Chat in SSMS enables you to ask your questions and se
 1. Use the example starter prompts in the chat window to start exploring Copilot Chat, or type in a prompt and select **Enter** or **Send** to submit your question.
 1. If Copilot Chat offers a T-SQL suggestion you want to use, select **Apply** to apply the code to the active query editor, **Copy code block** to copy the suggestion, or **Add to new file** to insert the code suggestion in a new file.
    - If you ask for help with understanding your code, the **Insert in new file** option isn't available.
-1. If you select **Apply**, the code suggestion is applied to the active editor in the diff view pattern. You can review and refine what is being proposed and apply it using **Tab**, or discard it using **Alt** + **Delete**.
+1. If you select **Apply**, the code suggestion is applied to the active editor in the diff view pattern. You can review and refine what is being proposed and apply it using **Tab**, or discard it using **Alt**+**Delete**.
 
 ### Ask questions in the inline chat view
 
 The inline chat view of Copilot Chat in SSMS enables you to ask your questions and see answers inline with the code directly in the editor window. With inline chat, you don't have to go back and forth to the chat window. You might find it easier to work with Copilot on questions that add to or update a currently open SQL file using inline chat.
 
-1. In SSMS, select **Alt** + **/** to bring up the inline chat view of Copilot Chat in the editor.
+1. In SSMS, select **Alt**+**/** to bring up the inline chat view of Copilot Chat in the editor.
 1. Type your T-SQL related question in the Ask Copilot text box, and then select **Enter** or **Send** to ask your question.
-1. Code suggestions from Copilot Chat appear in the diff view. You can review and refine what is being proposed and apply the change to your code using **Tab**, or discard it using **Alt** + **Delete**.
+1. Code suggestions from Copilot Chat appear in the diff view. You can review and refine what is being proposed and apply the change to your code using **Tab**, or discard it using **Alt**+**Delete**.
 1. You can promote your inline chat thread to the chat window by selecting **View in chat window**. This preserves the record and context of your conversation, and you can continue in the chat window.
 1. Select **Esc** to close the inline chat view.
 

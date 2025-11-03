@@ -1,9 +1,9 @@
 ---
-title: "Manage Objects Using Object Explorer"
-description: "This article is an overview of managing objects using Object Explorer in SQL Server Management Studio."
+title: Manage Objects Using Object Explorer
+description: This article is an overview of managing objects using Object Explorer in SQL Server Management Studio.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/07/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -38,7 +38,7 @@ When a folder contains a large number of objects, it might be difficult to find 
 
 ## Multi-select
 
-Only one object can be selected at a time in Object Explorer. To select multiple items, select **F7** or **View > Object Explorer Details** to open the **Object Explorer Details Page**. The **Object Explorer Details Page** supports multi-select.
+Only one object can be selected at a time in Object Explorer. To select multiple items, select **F7** or **View** > **Object Explorer Details** to open the **Object Explorer Details Page**. The **Object Explorer Details Page** supports multi-select.
 
 ## Register a server from Object Explorer
 

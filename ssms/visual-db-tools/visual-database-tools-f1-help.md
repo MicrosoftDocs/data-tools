@@ -20,7 +20,7 @@ helpviewer_keywords:
 
 These articles discuss the commands and options in the dialog boxes and properties windows for Visual Database Tools elements such as the Table Properties window, and the Column Properties tab.
 
-To access dialog box articles, press F1 when you have a dialog box open and it has focus. To access properties window articles, select in the Properties window and press F1.
+To access dialog box articles, press **F1** when you have a dialog box open and it has focus. To access properties window articles, select in the Properties window and press **F1**.
 
 ## Related content
 

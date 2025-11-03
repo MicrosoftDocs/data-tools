@@ -4,7 +4,7 @@ description: Learn to comment & uncomment code, indent text, filter objects, acc
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mathoma
-ms.date: 07/28/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: tutorial
 ms.collection:
@@ -37,7 +37,7 @@ To test the steps provided in this article, you need SQL Server Management Studi
 
 - [Install SQL Server Management Studio](../install/install.md).
 - Install [SQL Server Developer edition](https://www.microsoft.com/sql-server/sql-server-downloads).
-- Download an [AdventureWorks sample database](https://github.com/Microsoft/sql-server-samples/releases). To learn how to restore a database in SSMS, see [Restoring a database](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
+- Download an [AdventureWorks sample database](https://github.com/Microsoft/sql-server-samples/releases). To learn how to restore a database in SSMS, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
 
 ## Comment/uncomment your T-SQL code
 
@@ -51,44 +51,44 @@ You can comment and uncomment portions of your text by using the **Comment** but
 
 1. Paste the following [!INCLUDE [tsql](../includes/tsql-md.md)] code in your text window.
 
-    ```sql
-    USE master;
-    GO
+   ```sql
+   USE master;
+   GO
 
-    --Drop the database if it already exists
-    IF EXISTS (SELECT name
-               FROM sys.databases
-               WHERE name = N'TutorialDB')
-        DROP DATABASE TutorialDB;
-    GO
+   --Drop the database if it already exists
+   IF EXISTS (SELECT name
+              FROM sys.databases
+              WHERE name = N'TutorialDB')
+       DROP DATABASE TutorialDB;
+   GO
 
-    CREATE DATABASE TutorialDB;
-    GO
+   CREATE DATABASE TutorialDB;
+   GO
 
-    ALTER DATABASE [TutorialDB]
-        SET QUERY_STORE = ON;
-    GO
-    ```
+   ALTER DATABASE [TutorialDB]
+       SET QUERY_STORE = ON;
+   GO
+   ```
 
 1. Highlight the **Alter Database** portion of the text, and then select the **Comment** button on the toolbar:
 
-    :::image type="content" source="media/ssms-tricks/comment.png" alt-text="Screenshot of The Comment button." lightbox="media/ssms-tricks/comment.png":::
+   :::image type="content" source="media/ssms-tricks/comment.png" alt-text="Screenshot of The Comment button." lightbox="media/ssms-tricks/comment.png":::
 
 1. Select **Execute** to run the uncommented portion of the text.
 
 1. Highlight everything except for the **Alter Database** command, and then select the **Comment** button:
 
-    :::image type="content" source="media/ssms-tricks/comment-everything.png" alt-text="Screenshot of Comment everything." lightbox="media/ssms-tricks/comment-everything.png":::
+   :::image type="content" source="media/ssms-tricks/comment-everything.png" alt-text="Screenshot of Comment everything.":::
 
-    > [!NOTE]  
-    > The keyboard shortcut to comment text is **CTRL + K, CTRL + C**.
+   > [!NOTE]  
+   > The keyboard shortcut to comment text is **Ctrl**+**K**, **Ctrl**+**C**.
 
 1. Highlight the **Alter Database** portion of the text, and then select the **Uncomment** button to uncomment it:
 
-    :::image type="content" source="media/ssms-tricks/uncomment.png" alt-text="Screenshot of Uncomment text." lightbox="media/ssms-tricks/uncomment.png":::
+   :::image type="content" source="media/ssms-tricks/uncomment.png" alt-text="Screenshot of Uncomment text.":::
 
-    > [!NOTE]  
-    > The keyboard shortcut to uncomment text is **CTRL + K, CTRL + U**.
+   > [!NOTE]  
+   > The keyboard shortcut to uncomment text is **Ctrl**+**K**, **Ctrl**+**U**.
 
 1. Select **Execute** to run the uncommented portion of the text.
 
@@ -100,37 +100,37 @@ You can use the indentation buttons on the toolbar to increase or decrease the i
 
 1. Paste the following [!INCLUDE [tsql](../includes/tsql-md.md)] code in your text window:
 
-    ```sql
-    USE master;
-    GO
-    --Drop the database if it already exists
-    IF EXISTS (SELECT name
-               FROM sys.databases
-               WHERE name = N'TutorialDB')
-        DROP DATABASE TutorialDB;
-    GO
+   ```sql
+   USE master;
+   GO
+   --Drop the database if it already exists
+   IF EXISTS (SELECT name
+              FROM sys.databases
+              WHERE name = N'TutorialDB')
+       DROP DATABASE TutorialDB;
+   GO
 
-    CREATE DATABASE TutorialDB;
-    GO
+   CREATE DATABASE TutorialDB;
+   GO
 
-    ALTER DATABASE [TutorialDB]
-        SET QUERY_STORE = ON;
-    GO
-    ```
+   ALTER DATABASE [TutorialDB]
+       SET QUERY_STORE = ON;
+   GO
+   ```
 
 1. Highlight the **Alter Database** portion of the text, and then select the **Increase Indent** button on the toolbar to move the highlighted text to the right:
 
-    :::image type="content" source="media/ssms-tricks/increase-indent.png" alt-text="Screenshot of Increase the indent." lightbox="media/ssms-tricks/increase-indent.png":::
+   :::image type="content" source="media/ssms-tricks/increase-indent.png" alt-text="Screenshot of Increase the indent." lightbox="media/ssms-tricks/increase-indent.png":::
 
-    > [!NOTE]  
-    > The keyboard shortcut to increase the indent is **Tab**.
+   > [!NOTE]  
+   > The keyboard shortcut to increase the indent is **Tab**.
 
 1. Highlight the **Alter Database** portion of the text again, and then select the **Decrease Indent** button to move the highlighted to the left:
 
-    :::image type="content" source="media/ssms-tricks/decrease-indent.png" alt-text="Screenshot of Decrease the indent." lightbox="media/ssms-tricks/decrease-indent.png":::
+   :::image type="content" source="media/ssms-tricks/decrease-indent.png" alt-text="Screenshot of Decrease the indent." lightbox="media/ssms-tricks/decrease-indent.png":::
 
-    > [!NOTE]  
-    > The keyboard shortcut to decrease the indent is **SHIFT+Tab**.
+   > [!NOTE]  
+   > The keyboard shortcut to decrease the indent is **Shift**+**Tab**.
 
 ## Filter objects in Object Explorer
 
@@ -138,25 +138,25 @@ In databases that have many objects, you can use filtering to reduce the list of
 
 1. Connect to your SQL Server instance.
 
-1. Expand **Databases > AdventureWorks > Tables**. All the tables in the database appear.
+1. Expand **Databases** > **AdventureWorks** > **Tables**. All the tables in the database appear.
 
-1. Right-click **Tables**, and then select **Filter > Filter Settings**:
+1. Right-click **Tables**, and then select **Filter** > **Filter Settings**:
 
-    :::image type="content" source="media/ssms-tricks/filter-settings.png" alt-text="Screenshot of Filter settings." lightbox="media/ssms-tricks/filter-settings.png":::
+   :::image type="content" source="media/ssms-tricks/filter-settings.png" alt-text="Screenshot of Filter settings.":::
 
 1. In the **Filter Settings** window, you can enter a value for a selected setting:
-1. 
-    * Filter by name:
 
-      :::image type="content" source="media/ssms-tricks/filter-by-name.png" alt-text="Screenshot of Filter by name." lightbox="media/ssms-tricks/filter-by-name.png":::
+   - Filter by name:
 
-    * Filter by schema:
+     :::image type="content" source="media/ssms-tricks/filter-by-name.png" alt-text="Screenshot of Filter by name." lightbox="media/ssms-tricks/filter-by-name.png":::
 
-      :::image type="content" source="media/ssms-tricks/filter-by-schema.png" alt-text="Screenshot of Filter by schema." lightbox="media/ssms-tricks/filter-by-schema.png":::
+   - Filter by schema:
+
+     :::image type="content" source="media/ssms-tricks/filter-by-schema.png" alt-text="Screenshot of Filter by schema." lightbox="media/ssms-tricks/filter-by-schema.png":::
 
 1. To clear the filter, right-click **Tables** and select **Remove Filter**.
 
-    :::image type="content" source="media/ssms-tricks/remove-filter.png" alt-text="Screenshot of Remove filter." lightbox="media/ssms-tricks/remove-filter.png":::
+   :::image type="content" source="media/ssms-tricks/remove-filter.png" alt-text="Screenshot of Remove filter.":::
 
 ## Access your SQL Server error log
 
@@ -166,11 +166,11 @@ The error log is a file that contains details about notable events that occur in
 
 1. Connect to your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance.
 
-1. Expand **Management > SQL Server Logs**.
+1. Expand **Management** > **SQL Server Logs**.
 
 1. Right-click the **Current** error log and select **View SQL Server Log**:
 
-    :::image type="content" source="media/ssms-tricks/view-error-log-in-ssms.png" alt-text="Screenshot of View the error log in SSMS." lightbox="media/ssms-tricks/view-error-log-in-ssms.png":::
+   :::image type="content" source="media/ssms-tricks/view-error-log-in-ssms.png" alt-text="Screenshot of View the error log in SSMS." lightbox="media/ssms-tricks/view-error-log-in-ssms.png":::
 
 ### Query the error log in SSMS
 
@@ -180,15 +180,15 @@ The error log is a file that contains details about notable events that occur in
 
 1. Paste the following [!INCLUDE [tsql](../includes/tsql-md.md)] code in your query window:
 
-     ```sql
-     EXECUTE sp_readerrorlog 0, 1,'Server process ID'
-     ```
+   ```sql
+   EXECUTE sp_readerrorlog 0, 1, 'Server process ID';
+   ```
 
 1. Modify the text in the single quotes to include the text you want to search for.
 
 1. Execute the query, and then review the results:
 
-    :::image type="content" source="media/ssms-tricks/query-error-log.png" alt-text="Screenshot of Query the error log." lightbox="media/ssms-tricks/query-error-log.png":::
+   :::image type="content" source="media/ssms-tricks/query-error-log.png" alt-text="Screenshot of Query the error log." lightbox="media/ssms-tricks/query-error-log.png":::
 
 ### Find the error log location if you're connected to SQL Server
 
@@ -198,17 +198,17 @@ The error log is a file that contains details about notable events that occur in
 
 1. Paste the following [!INCLUDE [tsql](../includes/tsql-md.md)] code in your query window, and then select **Execute**:
 
-     ```sql
-     SELECT SERVERPROPERTY('ErrorLogFileName') AS 'Error log file location';
-     ```
+   ```sql
+   SELECT SERVERPROPERTY('ErrorLogFileName') AS 'Error log file location';
+   ```
 
 1. The results show the location of the error log in the file system:
 
-    :::image type="content" source="media/ssms-tricks/find-error-log-query.png" alt-text="Screenshot of Find the error log by query." lightbox="media/ssms-tricks/find-error-log-query.png":::
+   :::image type="content" source="media/ssms-tricks/find-error-log-query.png" alt-text="Screenshot of Find the error log by query." lightbox="media/ssms-tricks/find-error-log-query.png":::
 
 ### Find the error log location if you can't connect to SQL Server
 
-The path for your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] error log can vary depending on your configuration settings. The path for the error log location can be found in the SQL Server startup parameters within the SQL Server Configuration Manager. 
+The path for your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] error log can vary depending on your configuration settings. The path for the error log location can be found in the SQL Server startup parameters within the SQL Server Configuration Manager.
 
 Follow these steps to locate the relevant startup parameter that identifies the location of your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] error log. *Your path might vary from the path indicated in the example*.
 
@@ -218,15 +218,15 @@ Follow these steps to locate the relevant startup parameter that identifies the 
 
 1. Right-click your [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance, and then select **Properties**:
 
-    :::image type="content" source="media/ssms-tricks/server-properties.png" alt-text="Screenshot of Configuration Manager server properties." lightbox="media/ssms-tricks/server-properties.png":::
+   :::image type="content" source="media/ssms-tricks/server-properties.png" alt-text="Screenshot of Configuration Manager server properties.":::
 
 1. Select the **Startup Parameters** tab.
 
 1. In the **Existing Parameters** area, the path after `-e` is the location of the error log:
 
-    :::image type="content" source="media/ssms-tricks/error-log.png" alt-text="Screenshot of Error log." lightbox="media/ssms-tricks/error-log.png":::
+   :::image type="content" source="media/ssms-tricks/error-log.png" alt-text="Screenshot of Error log." lightbox="media/ssms-tricks/error-log.png":::
 
-    There are several error log files in this location. The file name that ends with *log is the current error log file. File names that end with numbers are previous log files. A new log is created every time the SQL Server restarts.
+   There are several error log files in this location. The file name that ends with `*log` is the current error log file. File names that end with numbers are previous log files. A new log is created every time the SQL Server restarts.
 
 1. Open the errorlog.log file in your preferred text editor.
 
@@ -236,17 +236,17 @@ You have a few options to find the name of your SQL Server instance before and a
 
 ### Before you connect to SQL Server
 
-1. Follow the steps to locate the [SQL Server error log on disk](#find-the-error-log-location-if-you-cant-connect-to-sql-server). 
+1. Follow the steps to locate the [SQL Server error log on disk](#find-the-error-log-location-if-you-cant-connect-to-sql-server).
 
 1. Open the errorlog.log file in your preferred text editor.
 
 1. Search for the text *Server name is*.
 
-    The text listed in the single quotes is the name of the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance to use in the connection:
+   The text listed in the single quotes is the name of the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance to use in the connection:
 
-    :::image type="content" source="media/ssms-tricks/server-name-in-log.png" alt-text="Screenshot of Find the server name in the error log." lightbox="media/ssms-tricks/server-name-in-log.png":::
+   :::image type="content" source="media/ssms-tricks/server-name-in-log.png" alt-text="Screenshot of Find the server name in the error log." lightbox="media/ssms-tricks/server-name-in-log.png":::
 
-    The format of the name is `HOSTNAME\INSTANCENAME`. If you see only the host name, then you've installed the default instance and your instance name is `MSSQLSERVER`. When you connect to a default instance, the host name is all you need to enter to connect to your SQL Server. Your path might vary from the path in the sample image.
+   The format of the name is `HOSTNAME\INSTANCENAME`. If you see only the host name, then you've installed the default instance and your instance name is `MSSQLSERVER`. When you connect to a default instance, the host name is all you need to enter to connect to your SQL Server. Your path might vary from the path in the sample image.
 
 ### When you're connected to SQL Server
 
@@ -254,16 +254,16 @@ When you're connected to [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)]
 
 - The name of the server is listed in Object Explorer:
 
-    :::image type="content" source="media/ssms-tricks/name-in-object-explorer.png" alt-text="Screenshot of SQL Server instance name in Object Explorer." lightbox="media/ssms-tricks/name-in-object-explorer.png":::
+  :::image type="content" source="media/ssms-tricks/name-in-object-explorer.png" alt-text="Screenshot of SQL Server instance name in Object Explorer.":::
 
 - The name of the server is listed in the query editor window:
 
-    :::image type="content" source="media/ssms-tricks/name-in-query-window.png" alt-text="Screenshot of SQL Server instance name in the Query window." lightbox="media/ssms-tricks/name-in-query-window.png":::
+  :::image type="content" source="media/ssms-tricks/name-in-query-window.png" alt-text="Screenshot of SQL Server instance name in the Query window." lightbox="media/ssms-tricks/name-in-query-window.png":::
 
 - The name of the server is listed in **Properties**.
-    * In the **View** menu, select **Properties Window**:
+  - In the **View** menu, select **Properties Window**:
 
-      :::image type="content" source="media/ssms-tricks/name-in-properties.png" alt-text="Screenshot of SQL Server instance name in the Properties window." lightbox="media/ssms-tricks/name-in-properties.png":::
+    :::image type="content" source="media/ssms-tricks/name-in-properties.png" alt-text="Screenshot of SQL Server instance name in the Properties window.":::
 
 ### If you're connected to an alias or availability group listener
 
@@ -275,13 +275,13 @@ If you're connected to an alias or to an availability group listener, that infor
 
 1. Paste the following [!INCLUDE [tsql](../includes/tsql-md.md)] code in the window:
 
-      ```sql
-      SELECT @@Servername;
-      ```
+   ```sql
+   SELECT @@SERVERNAME;
+   ```
 
 1. View the results of the query to identify the name of the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] instance to which you're connected:
 
-    :::image type="content" source="media/ssms-tricks/query-server-name.png" alt-text="Screenshot of Query the SQL Server name." lightbox="media/ssms-tricks/query-server-name.png":::
+   :::image type="content" source="media/ssms-tricks/query-server-name.png" alt-text="Screenshot of Query the SQL Server name." lightbox="media/ssms-tricks/query-server-name.png":::
 
 ## Related content
 

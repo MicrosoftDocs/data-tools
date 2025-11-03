@@ -63,7 +63,7 @@ Even though previews aren't intended for use in production, they are at a suffic
 
 Although the Preview channel is recommended for trying out new features, we also encourage users in the Release channel to try out new features via **Preview Features**. Preview Features differ from the Preview channel in that each specific feature can be turned on or off. The Preview Features dialog includes description for each feature to help you determine if the feature is relevant to you. Additionally, we hope that you provide feedback on these features so that we can improve them before they're implemented for all customers.
 
-You can turn Preview Features on or off by going to **Tools > Options > Environment > Preview Features**. We sometimes also run experiments with Preview Features, turning them on for a portion of customers to compare the impact against a control group.
+You can turn Preview Features on or off by going to **Tools** > **Options** > **Environment** > **Preview Features**. We sometimes also run experiments with Preview Features, turning them on for a portion of customers to compare the impact against a control group.
 
 ## Update notifications
 
@@ -71,10 +71,10 @@ You'll receive notification of updates to the currently running SSMS through the
 
 ## How to provide feedback
 
-You can report a problem or suggest a feature from **Help > Send Feedback**.
+You can report a problem or suggest a feature from **Help** > **Send Feedback**.
 
 1. Open SQL Server Management Studio.
-1. Select **Help > Send Feedback**.
+1. Select **Help** > **Send Feedback**.
 1. Select **Report a Problem...** to report an issue with SSMS, or select **Suggest a Feature...** to suggest a feature or improvement in SSMS.
 
 [!INCLUDE [support](../includes/support.md)]

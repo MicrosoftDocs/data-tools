@@ -1,10 +1,10 @@
 ---
 title: SSMS Options Page - Output Window
-description: "Output Window in SQL Server Management Studio"
+description: Output Window in SQL Server Management Studio
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 09/15/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -27,7 +27,7 @@ Use this page to set the default behavior of the output window.
 
 [!INCLUDE [entra-id](../includes/entra-id-hard-coded.md)]
 
-The Output Window can be opened from the View menu. To access the settings, on the **Tools** menu, select **Options**, and expand the **Output Window** folder or use the key combination Ctrl+Alt+O.
+The Output Window can be opened from the View menu. To access the settings, on the **Tools** menu, select **Options**, and expand the **Output Window** folder or use the key combination **Ctrl**+**Alt**+**O**.
 
 There are multiple logging channels available to provide more information when using SQL Server Management Studio.
 

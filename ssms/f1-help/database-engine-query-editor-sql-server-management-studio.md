@@ -3,7 +3,7 @@ title: SSMS Query Editor
 description: SQL Server Management Studio (SSMS) Query Editor
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/15/2025
+ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -90,7 +90,7 @@ You can also **Execute** a query by selecting F5 or from the [context menu](#exe
 
 Sends a cancellation request to the server. Some queries can't be canceled immediately but must wait for a suitable cancellation condition. When transactions are canceled, delays might occur while transactions are rolled back.
 
-You can also cancel an executing query by selecting Alt + Break.
+You can also cancel an executing query by selecting **Alt**+**Break**.
 
 ### Parse using the editor toolbar
 
@@ -132,7 +132,7 @@ You can also select the **Include Live Query Statistics** from the [context menu
 
 Includes a **Client Statistics** window that contains statistics about the query and about the network packets, and the elapsed time of the query.
 
-You can also select the **Include Live Query Statistics** by selecting Shift + Alt + S or from the [context menu](#include-client-statistics-using-the-context-menu).
+You can also select the **Include Live Query Statistics** by selecting **Shift**+**Alt**+**S** or from the [context menu](#include-client-statistics-using-the-context-menu).
 
 ### Results to text using the editor toolbar
 
@@ -184,7 +184,7 @@ You can access the context menu by *right-clicking* anywhere in the query editor
 
 ### Insert snippet using the context menu
 
-[Transact-SQL Snippets](../scripting/add-transact-sql-snippets.md) are templates you can use as a starting point when writing new Transact-SQL statements in the Query Editor.
+[Transact-SQL snippets](../scripting/add-transact-sql-snippets.md) are templates you can use as a starting point when writing new Transact-SQL statements in the Query Editor.
 
 ### Surround-with using the context menu
 
@@ -304,5 +304,5 @@ If the help search engine doesn't find an article with an F1 help keyword that e
 
 ## Related content
 
-- [Customize Menus and Shortcut Keys](../customize-menus-and-shortcut-keys.md)
+- [Customize menus and shortcut keys](../customize-menus-and-shortcut-keys.md)
 - [SQL Server Management Studio keyboard shortcuts](../sql-server-management-studio-keyboard-shortcuts.md)

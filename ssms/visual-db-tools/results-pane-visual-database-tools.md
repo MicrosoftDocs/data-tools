@@ -49,7 +49,7 @@ You can quickly navigate through the records using the navigation bar at the bot
 
 There are buttons for going to the first and last records, the next and previous records, and for going to a particular record.
 
-To go to a particular record, type the number of the row in the text box in the navigation bar and then press ENTER.
+To go to a particular record, type the number of the row in the text box in the navigation bar and then press **Enter**.
 
 For information about using keyboard shortcuts in the Query and View Designer see [Navigate in the Query and View Designer (Visual Database Tools)](navigate-in-the-query-and-view-designer-visual-database-tools.md).
 
