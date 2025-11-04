@@ -4,7 +4,7 @@ description: Learn about known issues in SQL Server Management Studio (SSMS) 22 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 10/30/2025
+ms.date: 11/04/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -31,7 +31,7 @@ This article lists known issues for [!INCLUDE [ssms-22-md](includes/ssms-22-md.m
 | Designers | Unable to use SSMS after closing the **New View** pane when the **Add Table** dialog is left open. See [SSMS 21 Preview 1: New View window "Add Table" not aware I closed out of New View](https://feedback.azure.com/d365community/idea/8790c2c0-22a8-ef11-95f6-000d3a01397d). | Close the **Add Table** dialog before closing the view pane. |
 | Extended Events | The Specify Data Storage page is truncated in the Extended Events Wizard. See [Extended Events Wizard is cut off on Specify Data Storage page](https://feedback.azure.com/d365community/idea/e7de428c-76ab-ef11-95f6-000d3a01397d). | Use the **New Session...** option to create an Extended Events session. |
 | Generate Scripts Wizard | When using the **Generate Scripts** wizard, the **Set Scripting Options** section generates the error `Object reference not set to an instance of an object`. | Use an earlier version of SSMS. |
-| GitHub Copilot in SSMS (Preview) | The chat window or SSMS hangs unexpectedly. See [SSMS 22 Preview hangs at Modern Connection Dialog after installing GitHub Copilot](https://developercommunity.visualstudio.com/t/SSMS-22-Preview-hangs-at-Modern-Connecti/10984949). | Close SSMS, delete the files in `%localappdata%\Microsoft\SSMS\22.0_{id}\SSMSGitHubCopilot\copilot-chat{anotherid}`, then restart SSMS. |
+| GitHub Copilot in SSMS (Preview) | Model picker only has Auto available. | Additional models will be available in a future release. For more information on auto model selection, see [About Copilot auto model selection](https://docs.github.com/copilot/concepts/auto-model-selection). |
 | Menu | Opening a folder from **File** > **Recent Projects and Solutions** generates one of the following errors: `System.InvalidOperationException: Can't enqueue project dependencies calculation before starting solution load` or `An exception of type NullReferenceException has been encountered.` if opening the folder also opens one or more files that were open in the editor when the folder was last closed. | Closing the error allows work to continue. Alternatively, close all files in the editor before closing a folder. |
 | Migration Assistant | No databases are loaded on the **Assessment Type** page of the Migration Assessment wizard when authenticating with Windows or SQL authentication. | Use the Migration Assessment wizard in SSMS 21 if authenticating with Windows or SQL authentication. |
 | Modern Connection Dialog (Preview) | Trying to change the password for a newly created SQL login with the `MUST_CHANGE` property enabled generates the error "Login failed for user. Reason: The password of the account must be changed. (Microsoft SQL Server, Error: 18488)". See [Instead of Change password dialog an error pops up](https://developercommunity.visualstudio.com/t/Instead-of-Chage-password-dialog-an-erro/10899416). | Use the Classic connection dialog to change the password. |
