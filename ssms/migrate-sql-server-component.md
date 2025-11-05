@@ -85,7 +85,9 @@ If you already saved an assessment report, you can open the assessment by naviga
 
 ## Prepare for migration
 
-- Ensure you the assessment report is reviewed and all issues are resolved.
+- Make sure that the assessment report is reviewed and all issues are resolved.
+
+- Validate that source databases are in a known good state before beginning migration. The databases are migrated as-is, with no change to the data or internal structures. We recommend using [DBCC CHECKDB](/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql) to ensure logical and physical integrity of the source databases.  
 
 - If any of the databases are protected by [Transparent data encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption), ensure the corresponding certificate or asymmetric key is transferred to the target SQL Server instance before initiating migration.
 
