@@ -22,9 +22,7 @@ The Query Hint Recommendation tool allows you to identify an appropriate query h
 
 To use the Query Hint Recommendation tool in SSMS, you need:
 
-- [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)]
-
-[!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] is the Preview version of SQL Server Management Studio (SSMS). For information related to SSMS 22 Preview installation, see [Install SQL Server Management Studio Preview](../install/install-preview.md).
+- [SQL Server Management Studio (SSMS)](../install/install.md)
 
 ## Install the Query Hint Recommendation tool using the Visual Studio Installer
 

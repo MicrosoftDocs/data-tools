@@ -20,13 +20,9 @@ items:
   - name: Installation and support
     items:
       - name: Release notes
-        href: release-notes-21.md
-      - name: Release notes SSMS 22 Preview
-        href: release-notes-22-preview.md
+        href: release-notes-22.md
       - name: Known issues
         href: known-issues.md
-      - name: Known issues SSMS 22 Preview
-        href: known-issues-preview.md
       - name: Product roadmap
         href: roadmap.md
       - name: System requirements
@@ -35,8 +31,6 @@ items:
         items:
           - name: Download and install
             href: install/install.md
-          - name: Download and install SSMS 22 Preview
-            href: install/install-preview.md
           - name: Select installation location
             href: install/select-install-location.md
           - name: Install with command-line parameters
@@ -69,6 +63,8 @@ items:
         href: release-history.md
       - name: Previous releases
         items:
+          - name: Release notes 21
+            href: release-notes-21.md
           - name: Release notes 20
             href: release-notes-20.md
           - name: Release notes 19 and earlier
@@ -92,12 +88,16 @@ items:
             href: github-copilot/chat.md
           - name: Chat context
             href: github-copilot/chat-context.md
+          - name: AI models
+            href: github-copilot/ai-models.md
       - name: Account
         items:
           - name: Install GitHub Copilot in SSMS
             href: github-copilot/installation-state.md
           - name: Use GitHub Copilot for free
             href: github-copilot/free-plan.md
+          - name: Manage usage and models
+            href: github-copilot/usage-models.md
       - name: Scenarios
         href: github-copilot/scenarios.md
       - name: Best practices

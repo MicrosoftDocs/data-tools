@@ -21,20 +21,19 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server](../includes/applies-to-version/sqlserver.md)]
 
-The Table Designer is a visual tool where you design and visualize [database tables](/sql/relational-databases/tables/tables). To create, edit, or delete tables, columns, keys, indexes, relationships, and constraints, use the Table Designer in [SQL Server Management Studio (SSMS)](../sql-server-management-studio-ssms.md) or [Azure Data Studio](/azure-data-studio/download-azure-data-studio).
+The Table Designer is a visual tool where you design and visualize [database tables](/sql/relational-databases/tables/tables). To create, edit, or delete tables, columns, keys, indexes, relationships, and constraints, use the Table Designer in [SQL Server Management Studio (SSMS)](../sql-server-management-studio-ssms.md).
 
 ## Create a table
 
 1. Right-click the **Tables** node in your database and select **New** > **Table** in SSMS, or **New Table** in ADS.
 1. Add [columns](column-properties-visual-database-tools.md) to your table, specifying name, data type, and whether `NULL` values are allowed for each column.
-1. Other table properties can be configured in Azure Data Studio including keys, constraints, and indexes. For more information, see [Table Designer in Azure Data Studio](/azure-data-studio/overview-of-the-table-designer-in-azure-data-studio).
-1. In SSMS, close the designer and specify a table name to save your changes. In Azure Data Studio, ensure the table name is updated in the **Table name** field, then select the **Publish Changes** icon, or close the designer and save the changes to create the table.
+1. In SSMS, close the designer and specify a table name to save your changes.
 
 ## Update a table
 
 1. Right-click the table under the **Tables** node of your database and select **Design**.
 1. Update the desired table settings.
-1. Close the designer and save your changes, or use the **Publish Changes** icon in Azure Data Studio.
+1. Close the designer and save your changes.
 
 ## Permissions
 

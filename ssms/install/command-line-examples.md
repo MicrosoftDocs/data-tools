@@ -4,7 +4,7 @@ description: Examples of using command-line parameters to install SQL Server Man
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 10/30/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -29,13 +29,13 @@ For lists of the workloads and components that you can install by using the comm
 Install a minimal instance of SSMS, with no interactive prompts, but progress displayed:
 
 ```console
-vs_SSMS.exe --installPath C:\SSMS21 --passive --norestart
+vs_SSMS.exe --installPath C:\SSMS22 --passive --norestart
 ```
 
 Install SSMS silently, with the Italian language pack, returning only when the product is installed:
 
 ```console
-vs_SSMS.exe --installPath C:\SSMS21 --addProductLang it-it --quiet --wait
+vs_SSMS.exe --installPath C:\SSMS22 --addProductLang it-it --quiet --wait
 ```
 
 ## Install workloads
@@ -57,7 +57,7 @@ vs_SSMS.exe --add Microsoft.SqlServer.Workload.SSMS.BI --includeRecommended --pa
 Update an SSMS installation via the command line with progress displayed and no interactive prompts. You can't initiate the installer programmatically from the same folder that the installer resides in.
 
 ```console
-vs_SSMS.exe update --passive --norestart --installPath "C:\SSMS21"
+vs_SSMS.exe update --passive --norestart --installPath "C:\SSMS22"
 ```
 
 Update an SSMS installation via the command line quietly:
@@ -161,12 +161,12 @@ To update SSMS to include other components, create a layout with your desired co
 1. Modify SSMS to add Analysis Services, Integration Services, and Reporting Services components, using the offline layout that includes these components, run:
 
    ```console
-   vs_SSMS.exe modify --noWeb --productID Microsoft.VisualStudio.Product.SSMS --channelID SSMS.21.SSMS.Release --add Microsoft.SSMS.Component.AS --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS --quiet --norestart
+   vs_SSMS.exe modify --noWeb --productID Microsoft.VisualStudio.Product.SSMS --channelID SSMS.22.SSMS.Release --add Microsoft.SSMS.Component.AS --add Microsoft.SSMS.Component.IS --add Microsoft.SSMS.Component.RS --quiet --norestart
    ```
 
 ## Uninstall an existing installation
 
-To uninstall the SSMS 21 GA release from a workstation, use the following example.
+To uninstall the SSMS 22 GA release from a workstation, use the following example.
 
 1. Change to the Visual Studio Installer folder:
 
@@ -174,10 +174,10 @@ To uninstall the SSMS 21 GA release from a workstation, use the following exampl
    cd "C:\Program Files (x86)\Microsoft Visual Studio\Installer"
    ```
 
-1. Remove the SSMS 21 GA (Release) version:
+1. Remove the SSMS 22 GA (Release) version:
 
    ```console
-    setup.exe uninstall --passive --productId Microsoft.VisualStudio.Product.Ssms --channelId SSMS.21.SSMS.Release --noweb
+    setup.exe uninstall --passive --productId Microsoft.VisualStudio.Product.Ssms --channelId SSMS.22.SSMS.Release --noweb
    ```
 
 ## Related content

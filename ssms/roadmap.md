@@ -4,7 +4,7 @@ description: Roadmap for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 08/07/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # SQL Server Management Studio product roadmap
 
-Following the GA release of SSMS 21, we continue our commitment to delivering a modern, consistent, and capable management tool for SQL Server and SQL databases across the Microsoft data platform. We're focused on enabling support for SQL Server 2025, deepening integration with Fabric SQL experiences, and expanding platform capability with an initial focus enabling Arm64 support. We're also continuing our investment in AI-powered tooling enhancements to improve productivity and make intelligent recommendations more accessible throughout the management workflow.
+This calendar year, SSMS had an unprecedented number of releases - 22 in total (including previews, major releases, and minor releases). After the GA release of SSMS 22, we're taking time to continue our commitment to evolving SSMS into a modern, consistent, and complete management tool for SQL Server and SQL databases across the Microsoft data platform. We're focused on extending support for [!INCLUDE [sssql25-md](includes/sssql25-md.md)], continuing to integrate with Fabric SQL experiences, and expanding our efforts related to theming and Arm64 support. We're also continuing our investment in AI-powered tooling enhancements to improve productivity and make intelligent recommendations more accessible throughout the management workflow.
 
 ## How we build our roadmap
 
@@ -28,18 +28,22 @@ When planning future SSMS updates, we focus on two primary inputs:
 
 The following areas represent key investments we plan to make in future releases of SSMS. This roadmap is intended to provide a general sense of direction, and is subject to change.
 
-### Support for SQL Server 2025
+### Customer feedback
 
-Following the [!INCLUDE [sssql25-md](includes/sssql25-md.md)] announcement, we're working to bring full support for [!INCLUDE [sssql25-md](includes/sssql25-md.md)] to SSMS, with enhancements to ensure compatibility with new engine capabilities and management features.
+Customer feedback continues to be an important part of our focus. Key improvements we're actively investigating include [adding more export options to the results grid](https://developercommunity.microsoft.com/t/Quick-Export-Options-in-SSMS-Query-Resul/10853468) and expanding our support of [group by schema in Object Explorer](https://developercommunity.microsoft.com/t/Group-objects-by-schema-in-Object-Explor/10874158).
 
-### Integration with SQL experiences in Microsoft Fabric
+### Continued support for SQL Server 2025
 
-We're continuing to enhance the SSMS experience for Microsoft Fabric. We're building on early integration work to provide a more cohesive and productive environment for managing Fabric SQL workloads, aligning the SSMS experience with the Fabric web editor.
-
-### Continued investment in AI experiences
-
-With Copilot in SSMS in preview, expect further efforts to bring intelligent, context-aware experiences to your development workflow. This includes enhancements to code assistance, diagnostics, and recommendations powered by AI.
+SSMS 22 introduced significant support for [!INCLUDE [sssql25-md](includes/sssql25-md.md)]. We maintain close collaboration with [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] teams to continue to provide rich end-to-end experience in SSMS for new features as they become available.
 
 ### Arm64 support
 
-A highly requested item from the community, we're taking an important step toward Arm64 compatibility by exploring options to ensure SSMS can function effectively on Arm64 devices.
+SSMS 22 introduced initial support for Arm64 operating systems. We're continuing to expand that support to other experiences, including replication, SQL Server Reporting Services (SSRS), SQL Server Analysis Services (SSAS), and more.
+
+### Performance and stability improvements
+
+We know from customer feedback how critical performance and stability are to your day-to-day workflow. We're spending time to deeply investigate, plan, and improve performance and stability of SSMS, and our efforts are informed by data and customer feedback reports.
+
+### Evolution of AI experiences
+
+With the GitHub Copilot in SSMS in preview, expect further efforts to bring intelligent, context-aware experiences to your daily workflow. This includes enhancements to code completion, administrative tasks, query optimization, and troubleshooting.

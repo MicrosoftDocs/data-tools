@@ -3,8 +3,8 @@ title: Install SQL Server Management Studio
 description: Learn how to use the Visual Studio installer to install SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 09/25/2025
+ms.reviewer: randolphwest, mbarickman
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -18,15 +18,15 @@ This article describes how to install SQL Server Management Studio (SSMS).
 
 | Key information | Action required |
 | --- | --- |
-| **SSMS 21 is installed with the Visual Studio Installer** | The **Download SSMS 21** link downloads a stub installer (`vs_SSMS.exe`) that opens **Visual Studio Installer** to install SSMS. There's no standalone MSI. |
-| **How&nbsp;to&nbsp;install&nbsp;SSMS** | [Download SSMS 21](https://aka.ms/ssms/21/release/vs_SSMS.exe), run `vs_SSMS.exe`, pick any optional workloads/components, then select **Install**. |
-| **Use the Visual Studio Installer to update SSMS 21** | To update SSMS 21, follow the instructions in [Update SQL Server Management Studio](update.md). |
+| **SSMS 22 is installed with the Visual Studio Installer** | The **Download SSMS 22** link downloads a stub installer (`vs_SSMS.exe`) that opens **Visual Studio Installer** to install SSMS. There's no standalone MSI. |
+| **How&nbsp;to&nbsp;install&nbsp;SSMS** | [Download SSMS 22](https://aka.ms/ssms/22/release/vs_SSMS.exe), run `vs_SSMS.exe`, pick any optional workloads/components, then select **Install**. |
+| **Use the Visual Studio Installer to update SSMS 22** | To update SSMS 22, follow the instructions in [Update SQL Server Management Studio](update.md). |
 | **Offline or enterprise deployment** | To create an offline layout for disconnected or managed installs, see [Create an offline installation of SQL Server Management Studio](create-offline.md). |
-| **Database&nbsp;Engine&nbsp;compatibility** | SSMS 21 works with [!INCLUDE [sssql14-md](../includes/sssql14-md.md)] and later versions. If you need to manage older versions, see the [Release history](../release-history.md). SSMS 21 also works with [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)], [!INCLUDE [ssazuremi-md](../../azure-data-studio/includes/ssazuremi-md.md)], [!INCLUDE [ssazuresynapse-md](../includes/ssazuresynapse-md.md)], and [!INCLUDE [fabric-sqldb](../includes/fabric-sqldb.md)]. |
+| **Database&nbsp;Engine&nbsp;compatibility** | SSMS 22 works with [!INCLUDE [sssql14-md](../includes/sssql14-md.md)] and later versions. If you need to manage older versions, see the [Release history](../release-history.md). SSMS 22 also works with [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)], [!INCLUDE [ssazuremi-md](../../azure-data-studio/includes/ssazuremi-md.md)], [!INCLUDE [ssazuresynapse-md](../includes/ssazuresynapse-md.md)], and [!INCLUDE [fabric-sqldb](../includes/fabric-sqldb.md)]. |
 
-For more information, see [SQL Server Management Studio 21 Frequently Asked Questions (FAQ)](../faq.yml).
+For more information, see [SQL Server Management Studio 22 Frequently Asked Questions (FAQ)](../faq.yml).
 
-Find out what's new in this version in the [release notes](../release-notes-21.md).
+Find out what's new in this version in the [release notes](../release-notes-22.md).
 
 Download and install a specific version from the [release history](../release-history.md) page.
 
@@ -38,7 +38,7 @@ Ready to install? This article walks you through it, step-by-step.
 
 Before you begin installing SQL Server Management Studio (SSMS):
 
-- Check the [system requirements](../system-requirements.md). These requirements help you determine whether your computer supports [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)].
+- Check the [system requirements](../system-requirements.md). These requirements help you determine whether your computer supports [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)].
 
 - Make sure that the user who performs the initial installation has administrator permissions on the machine. For more information, see [User permissions and Visual Studio](/visualstudio/ide/user-permissions-and-visual-studio).
 
@@ -48,17 +48,17 @@ Before you begin installing SQL Server Management Studio (SSMS):
 
 - Free up space. Remove unneeded files and applications from your system drive by, for example, running the Disk Cleanup application.
 
-You can install [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] side-by-side with other versions. For more information, see [Install SQL Server Management Studio versions side-by-side](side-by-side.md).
+You can install [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] side-by-side with other versions. For more information, see [Install SQL Server Management Studio versions side-by-side](side-by-side.md).
 
 ## Step 2 - Determine which version of SQL Server Management Studio to install
 
 Decide which version of SSMS to install. The most common options are:
 
-- The latest release of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] that is hosted on Microsoft servers. To install this version, select the following link, which downloads a stub installer, or *bootstrapper*, to your *Downloads* folder.
+- The latest release of [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] that is hosted on Microsoft servers. To install this version, select the following link, which downloads a stub installer, or *bootstrapper*, to your *Downloads* folder.
 
-  **[Download SSMS 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
+  **[Download SSMS 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
-- If you already have SQL Server Management Studio 21 installed, you can [install another version alongside it](side-by-side.md).
+- If you already have SQL Server Management Studio 22 installed, you can [install another version alongside it](side-by-side.md).
 
 You can download a bootstrapper or installer for a specific version from the [Release history](../release-history.md) page and use it to install another version of SSMS.
 
@@ -104,7 +104,7 @@ vs_SSMS.exe --locale en-US
 
 The installer remembers this setting when you run it again. The installer supports these language locales: `zh-cn`, `zh-tw`, `cs-cz`, `en-us`, `es-es`, `fr-fr`, `de-de`, `it-it`, `ja-jp`, `ko-kr`, `pl-pl`, `pt-br`, `ru-ru`, and `tr-tr`.
 
-For more command-line examples, see [Command-line parameter examples](command-line-examples.md).
+For more command-line examples, see [Command-line parameter examples for SQL Server Management Studio installation](command-line-examples.md).
 
 ## Step 7 - Select the installation location (optional)
 

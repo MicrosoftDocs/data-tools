@@ -1,10 +1,10 @@
 ---
-title: "Release Notes For SQL Server Management Studio (SSMS) 19 and earlier versions"
+title: "Release Notes for SQL Server Management Studio (SSMS) 19 and Earlier Versions"
 description: Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 04/18/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: release-notes
 ms.collection:
@@ -159,7 +159,7 @@ SQL Server utility is no longer available in versions 17.x and newer.
 - Fixed issue in the "Import Data-tier Application" wizard, which could result in an error when connected to an Azure SQL Database.
 
 > [!NOTE]  
-> Non-English localized releases of SSMS 17.x require the [KB 2862966 security update package](https://support.microsoft.com/kb/2862966) if installed on: Windows 8, Windows 7, Windows Server 2012, and Windows Server 2008 R2.
+> Non-English localized releases of SSMS 17.x require the [KB 2862966 security update package](https://support.microsoft.com/help/2862966) if installed on: Windows 8, Windows 7, Windows Server 2012, and Windows Server 2008 R2.
 
 #### Uninstall and reinstall SSMS 17.x
 
@@ -169,7 +169,7 @@ If your SSMS installation is having problems, and a standard uninstall and reins
 
 1. Uninstall Visual Studio 2015 IsoShell **from an elevated cmd prompt**:
 
-   ```cmd
+   ```console
    PUSHD "C:\ProgramData\Package Cache\FE948F0DAB52EB8CB5A740A77D8934B9E1A8E301\redist"
    vs_isoshell.exe /Uninstall /Force /PromptRestart
    ```
@@ -178,7 +178,7 @@ If your SSMS installation is having problems, and a standard uninstall and reins
 
 1. Reinstall Visual Studio 2015 IsoShell **from an elevated cmd prompt**:
 
-   ```cmd
+   ```console
    PUSHD "C:\ProgramData\Package Cache\FE948F0DAB52EB8CB5A740A77D8934B9E1A8E301\redist"
    vs_isoshell.exe /PromptRestart
    ```
@@ -244,5 +244,3 @@ For the latest release of SQL Server Management Studio, see [Install SQL Server 
 ## Related content
 
 - [Install SQL Server Management Studio](install/install.md)
-- [Download Azure Data Studio](/azure-data-studio/download-azure-data-studio)
-- [Azure Data Studio release notes](/azure-data-studio/release-notes-azure-data-studio)

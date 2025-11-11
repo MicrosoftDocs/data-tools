@@ -23,12 +23,6 @@ Use this page to specify options related to commands available from Object Explo
 | --- | --- | --- |
 | Value for Select Top \<n> Audit records command | 1000 | Specifies the number of returned rows from a server audit on the log viewer. Specifying a value of zero (0) returns all rows (not recommended). |
 
-## Azure Data Studio options
-
-| Option | Information | Description |
-| --- | --- | --- |
-| Full path the Azure Data Studio instance to invoke | | When specified, SQL Server Management Studio (SSMS) uses it to launch a new instance of Azure Data Studio (for example, `C:\Program Files\Azure Data Studio\bin\azuredatastudio.com`). Leave blank to let SSMS use its heuristic. |
-
 ## Connection security
 
 | Option | Information | Description |

@@ -4,7 +4,7 @@ description: Learn how to install SQL Server Management Studio (SSMS) on a compu
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 09/09/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,7 +14,7 @@ ms.collection:
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
-You can install [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] and higher on a computer that has an earlier [major version](channels-release.md#determine-your-product-version-and-channel) of SQL Server Management Studio (SSMS) already installed.
+You can install [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] and higher on a computer that has an earlier [major version](channels-release.md#determine-your-product-version-and-channel) of SQL Server Management Studio (SSMS) already installed.
 
 Before you install versions side-by-side, review the following conditions:
 
@@ -26,9 +26,9 @@ Before you install versions side-by-side, review the following conditions:
 
 ## Install different channels of the same major SSMS version side-by-side
 
-Each installation of SQL Server Management Studio 21 and higher must have a unique combination of major version and [channel](channels-release.md). For example, you can install SSMS 21 Preview alongside the generally available (GA) SQL Server Management Studio 21 Release.
+Each installation of SQL Server Management Studio 21 and higher must have a unique combination of major version and [channel](channels-release.md). For example, you can install SSMS 22 Preview alongside the generally available (GA) SQL Server Management Studio 22 Release.
 
-With [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] and later versions, when you upgrade from one minor version of SSMS to the next, by default, the Visual Studio Installer updates your current installation to the latest version in that channel. For example, if Microsoft releases version 21.5.14 to the [release channel](channels-release.md), the installer tries to replace your current installation of SSMS with this latest version on the same channel.
+With [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] and later versions, when you upgrade from one minor version of SSMS to the next, by default, the Visual Studio Installer updates your current installation to the latest version in that channel. For example, if Microsoft releases version 22.1 to the [release channel](channels-release.md), the installer tries to replace your current installation of SSMS with this latest version on the same channel.
 
 ### Manual installation
 

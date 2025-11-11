@@ -4,7 +4,7 @@ description: Use command-line parameters to install SQL Server Management Studio
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 10/13/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -15,7 +15,7 @@ ms.collection:
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
-[!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is a powerful tool for managing SQL Server instances, Azure SQL databases, and Azure SQL managed instances. This article provides detailed instructions on how to use command-line parameters to install [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], allowing for a more customized and automated installation process. Whether you're installing [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] for the first time or updating an existing installation, these instructions provide the necessary steps to achieve your goals.
+[!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] is a powerful tool for managing SQL Server instances, Azure SQL databases, and Azure SQL managed instances. This article provides detailed instructions on how to use command-line parameters to install [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)], allowing for a more customized and automated installation process. Whether you're installing [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] for the first time or updating an existing installation, these instructions provide the necessary steps to achieve your goals.
 
 ## Command-line parameters
 
@@ -32,14 +32,14 @@ The following command-line verbs and parameters can be used with the following e
 
 Not all commands or parameters work in each of these situations, and any special caveats or exceptions are documented. Furthermore, in some scenarios you might not have access to all of these executables described previously. For example, client machines might only have the installer available for programmatic execution if SSMS was installed via a layout.
 
-To get the latest bootstrappers for [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] that always install the latest version of the selected channel, download one of the files in the following table. Alternatively, to install a specific version or a specific channel of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], see [Release history for SQL Server Management Studio](../release-history.md). This article has links to the fixed version bootstrappers for each servicing release.
+To get the latest bootstrappers for [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] that always install the latest version of the selected channel, download one of the files in the following table. Alternatively, to install a specific version or a specific channel of [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)], see [Release history for SQL Server Management Studio](../release-history.md). This article has links to the fixed version bootstrappers for each servicing release.
 
 | Channel | Version | Bootstrapper |
 | --- | --- | --- | --- |
-| Release | [!INCLUDE [latest-build](../includes/latest-build.md)] | [SQL Server Management Studio](https://aka.ms/ssms/21/release/vs_SSMS.exe) |
+| Release | [!INCLUDE [latest-build](../includes/latest-build.md)] | [SQL Server Management Studio](https://aka.ms/ssms/22/release/vs_SSMS.exe) |
 
 > [!TIP]  
-> If you previously downloaded a bootstrapper file, you can verify the version before you try to install. Open File Explorer, right-click the bootstrapper file, select **Properties**, and then select the **Details** tab. The **Product version** field describes the [channel and version](channels-release.md) that the bootstrapper installs. The version number should always be read as "latest servicing version of what is specified," and the channel is Release unless explicitly specified. A bootstrapper with a product version that says [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] installs the latest version of [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] from the Release channel.
+> If you previously downloaded a bootstrapper file, you can verify the version before you try to install. Open File Explorer, right-click the bootstrapper file, select **Properties**, and then select the **Details** tab. The **Product version** field describes the [channel and version](channels-release.md) that the bootstrapper installs. The version number should always be read as "latest servicing version of what is specified," and the channel is Release unless explicitly specified. A bootstrapper with a product version that says [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] installs the latest version of [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] from the Release channel.
 
 ## Install, update, modify, repair, uninstall, and export commands and command-line parameters
 
@@ -70,7 +70,7 @@ Syntax example: `vs_SSMS.exe [command] <optional parameters>...`
 | `--installPath <dir>` | For the default install command, this parameter is **Optional** and describes where the instance is installed on the client machine. For other commands like update or modify, this parameter is **Required** and denotes the installation directory for the instance to act upon. |
 | `--productId <id>` | **Optional**: The ID of the product instance that is modified, and used with `--channelId`. The `productId` is `Microsoft.VisualStudio.Product.SSMS`. |
 | `--channelUri` | **Optional**: During an update command, you can pass in a new `--channelUri` to change the update settings location. Recommend to pair with `--installPath` parameter so that it's explicit which instance of SSMS you're configuring. See [syntax examples of `--channelUri`](/visualstudio/install/command-line-parameter-examples#using---channeluri) |
-| `--channelId <id>` | The ID of the channel, for example, `SSMS.21.SSMS.Preview`. `channelId` is required for modify operations, alongside either `--productId` or `--installPath`. |
+| `--channelId <id>` | The ID of the channel, for example, `SSMS.22.SSMS.Release`. `channelId` is required for modify operations, alongside either `--productId` or `--installPath`. |
 | `--add <one or more workload or component IDs>` | **Optional**: During an install or modify command, this repeatable parameter specifies one or more workload or component IDs to add. The required components of the artifact are installed, but not the recommended or optional components. You can control other components globally using `--includeRecommended` and/or `--includeOptional` parameters. To include multiple workloads or components, repeat the `--add` command (for example, `--add Workload1 --add Workload2`). For finer-grained control, you can append `;includeRecommended` or `;includeOptional` to the ID (for example, `--add Workload1;includeRecommended` or `--add Workload2;includeRecommended;includeOptional`). |
 | `--all` | **Optional**: During an install or modify command, this parameter causes all workloads and components for the product to be installed. |
 | `--allWorkloads` | **Optional**: During an install or modify command, this parameter installs all workloads and components, but no recommended or optional components. |
@@ -114,7 +114,7 @@ All layout management operations, such as creating or updating a layout, are run
 
 | **Advanced layout parameters** | **Description** |
 | --- | --- |
-| `--channelId <id>` | **Optional**: The ID of the channel for the instance to be installed, represented like `SSMS.21.SSMS.Preview`. `channelId` is required for the install command, and ignored for other commands if `--installPath` is specified. For more information, see [syntax examples](/visualstudio/install/command-line-parameter-examples#using---channeluri) of `--channelId`. |
+| `--channelId <id>` | **Optional**: The ID of the channel for the instance to be installed, represented like `SSMS.22.SSMS.Release`. `channelId` is required for the install command, and ignored for other commands if `--installPath` is specified. For more information, see [syntax examples](/visualstudio/install/command-line-parameter-examples#using---channeluri) of `--channelId`. |
 | `--channelUri <uri>` | **Optional**: The URI of the channel manifest. This value governs the [source location of updates](update.md#configure-source-location-of-updates) and the initial value is configured in the layout's `response.json` file. If updates aren't wanted, `--channelUri` can point to a nonexistent file (for example, `--channelUri C:\doesntExist.chman`). This parameter can be used for the install command; other commands ignore it. |
 | `--installChannelUri <uri>` | **Optional**: The URI of the channel manifest to use for the installation. The URI specified by `--channelUri` (which must be specified when `--installChannelUri` is specified) is used to detect updates. This parameter can be used for the install command; other commands ignore it. |
 | `--installCatalogUri <uri>` | **Optional**: The URI of the catalog manifest to use for the installation. If specified, the channel manager attempts to download the catalog manifest from this URI before using the URI in the install channel manifest. This parameter is used to support offline install, where the layout cache is created with the product catalog already downloaded. This parameter can be used for the install command; other commands ignore it. |
@@ -149,12 +149,12 @@ You can modify the update settings and programmatically configure the source loc
 
 Syntax examples:
 
-  ```cmd
-  C:\>"C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" modifySettings --installPath "C:\Program Files\Microsoft SQL Server Management Studio 21\Release" --newChannelUri https://aka.ms/ssms/21/release/channel --removeOos true
+  ```console
+  C:\>"C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" modifySettings --installPath "C:\Program Files\Microsoft SQL Server Management Studio 22\Release" --newChannelUri https://aka.ms/ssms/22/release/channel --removeOos true
   ```
 
-  ```cmd
-   C:\>"C:\Program Files\Microsoft SQL Server Management Studio 21\Release\vs_SSMS.exe" modifySettings --channelUri https://aka.ms/ssms/21/release/channel --productId Microsoft.VisualStudio.Product.Ssms --newChannelUri \\layoutserver\share\path\channelmanifest.json --removeOos true --quiet
+  ```console
+   C:\>"C:\Program Files\Microsoft SQL Server Management Studio 22\Release\vs_SSMS.exe" modifySettings --channelUri https://aka.ms/ssms/22/release/channel --productId Microsoft.VisualStudio.Product.Ssms --newChannelUri \\layoutserver\share\path\channelmanifest.json --removeOos true --quiet
   ```
 
 ## Remove channel command and command-line parameters
@@ -173,7 +173,7 @@ Channels that are available to update from, are cached on the client, and over t
 
 Syntax example:
 
-  ```cmd
+  ```console
   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" removeChannel --channelUri "\\\\server\\share\\layoutdirectory\\ChannelManifest.json"
   ```
 
@@ -185,8 +185,8 @@ By default, **winget** just installs the SSMS core workload.
 
 Syntax example:
 
-  ```cmd
-  winget install Microsoft.SQLServerManagementStudio.21
+  ```console
+  winget install Microsoft.SQLServerManagementStudio.22
   ```
 
 Visual Studio Installer operations currently require administrator privileges, so **winget** prompts you to elevate your privileges if necessary to complete the command. Also, SSMS must be closed if you're going to upgrade it to the latest version.

@@ -5,7 +5,7 @@ description: Learn how to install GitHub Copilot in SQL Server Management Studio
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/14/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -23,8 +23,7 @@ To use GitHub Copilot in SSMS, you need:
 
 - [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)]
 - A GitHub account with [Copilot access](https://docs.github.com/copilot/get-started/what-is-github-copilot#getting-access-to-copilot)
-
-[!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] is the preview version of SQL Server Management Studio (SSMS). For information related to SSMS 22 installation, see [Install SQL Server Management Studio Preview](../install/install-preview.md).
+- For information related to SSMS 22 installation, see [Install SQL Server Management Studio](../install/install.md).
 
 ## Install GitHub Copilot in SSMS using the Visual Studio Installer
 
@@ -38,7 +37,7 @@ To use GitHub Copilot in SSMS, you need:
 
 ## Manage your GitHub Copilot state
 
-With SSMS 22 Preview 3 and later versions, there's a GitHub Copilot status icon in the upper-right corner of SSMS that indicates if GitHub Copilot is active, inactive, unavailable, or not installed. Using the dropdown menu from the status icon, you can easily access options that help manage or troubleshoot your Copilot state. Some options are available or grayed out depending on your Copilot state.
+In [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] and later versions, a GitHub Copilot status icon in the upper-right corner of SSMS indicates whether GitHub Copilot is active, inactive, unavailable, or not installed. Using the dropdown menu from the status icon, you can easily access options that help manage or troubleshoot your Copilot state. Some options are available or grayed out depending on your Copilot state.
 
 ### GitHub Copilot is active
 

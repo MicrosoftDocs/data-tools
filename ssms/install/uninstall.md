@@ -4,7 +4,7 @@ description: Learn how to repair an installation of SQL Server Management Studio
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,7 +14,7 @@ ms.collection:
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
-This article walks you through uninstalling [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)].
+This article walks you through uninstalling [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)].
 
 > [!TIP]  
 > If you're having trouble with your instance of SQL Server Management Studio (SSMS), try the [repair](repair.md) option.
@@ -31,7 +31,7 @@ You can use the Visual Studio Installer can uninstall versions of SSMS.
 
    > [!NOTE]  
    > You can also find the Visual Studio Installer in the following location:
-   > 
+   >
    > `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe`
 
    You might have to update the installer before you continue. If so, follow the prompts.
@@ -71,7 +71,7 @@ Here's how to run the `InstallCleanup.exe` tool:
 
 1. Enter the full path of the `InstallCleanup.exe` tool and add the command-line parameters that you prefer. By default, the path of the tool is as follows. The double quotes enclose a command that contains spaces:
 
-   ```cmd
+   ```console
    "C:\Program Files (x86)\Microsoft Visual Studio\Installer\InstallCleanup.exe"
    ```
 
@@ -82,7 +82,7 @@ Here's how to run the `InstallCleanup.exe` tool:
 
    | Parameter | Behavior |
    | --- | --- |
-   | `-i [version]` | If you don't specify a value, uses the default version. Removes only the main installation directory and product information. Use this parameter if you intend to reinstall the same version of SSMS. If you specify a `[version]` value, the tool removes only products with a version that start with this string value. For example, use the value `-i 21` with to remove all products of version 21. |
+   | `-i [version]` | If you don't specify a value, uses the default version. Removes only the main installation directory and product information. Use this parameter if you intend to reinstall the same version of SSMS. If you specify a `[version]` value, the tool removes only products with a version that start with this string value. For example, use the value `-i 22` to remove all version 22 products. |
    | `-f` | Removes the main installation directory, product information, and most other features installed outside the installation directory that might also be shared with other Visual Studio installations or other products. Use this parameter if you intend to remove SSMS and Visual Studio without reinstalling it later. |
 
 [!INCLUDE [support](../includes/support.md)]

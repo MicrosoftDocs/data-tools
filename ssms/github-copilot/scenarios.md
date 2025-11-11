@@ -5,7 +5,7 @@ description: Learn about example scenarios for GitHub Copilot in SQL Server Mana
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/14/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -80,43 +80,9 @@ In addition to asking Copilot for help with writing a query, you can ask for ass
 - `Take the inner query and change it to select customer ID, customer name, and total spent and order it by total spent descending`
 - `I forgot I want to include the state where the company is located in the output, please update the query to add that`
 
-## Approve queries for Copilot to execute
-
-By default, Copilot runs in a read-only mode. Copilot only executes queries that read data. However, you can change the mode to **Read/Write with Approval** using the `/rwa` command in the chat.
-
-1. Change the mode:
-
-   ```copilot-prompt
-   /rwa
-   ```
-
-1. Ask Copilot to update statistics that are out of date:
-
-   ```copilot-prompt
-   Update statistics that are out of date
-   ```
-
-1. Provide more details to Copilot so it can perform the correct analysis:
-
-   ```copilot-prompt
-   List the name of statistics that haven't been updated in over a week that have more than 10% data changed for all tables in the database
-   ```
-
-1. Copilot lists the statistics, and asks if you want to update them. If it doesn't ask, you can tell it to update the statistics.
-
-1. Copilot provides the T-SQL for the update, and gives the option to select **Run** or **Cancel**.
-
-1. Select **Run** to have Copilot update statistics.
-
 ## Use Copilot for database development
 
-Copilot can help you quickly develop objects in your database in the **Read/Write** mode. To enable **Read/Write** mode, use the `/rw` command.
-
-1. Change the mode:
-
-   ```copilot-prompt
-   /rw
-   ```
+Copilot can help you quickly develop objects in your database.
 
 1. Ask Copilot to create a set of tables for the database:
 

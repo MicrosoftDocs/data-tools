@@ -102,10 +102,6 @@ Read the original [Modern Lifecycle Policy announcement](/lifecycle/announcement
 
 For diagnostic data collection and feature usage information, see the [SQL Server privacy supplement](/sql/sql-server/sql-server-privacy) and [diagnostic data collection](sql-server-management-studio-telemetry-ssms.md).
 
-## Cross-platform tool
-
-[!INCLUDE [ssms-azure-data-studio-mention](includes/ssms-azure-data-studio-mention.md)]
-
 [!INCLUDE [get-help-options](includes/paragraph-content/get-help-options.md)]
 
 ## Related content
@@ -113,4 +109,3 @@ For diagnostic data collection and feature usage information, see the [SQL Serve
 - [Modify SQL Server Management Studio workloads, components, and language packs](install/modify.md)
 - [Quickstart: Connect and query a SQL Server instance using SQL Server Management Studio (SSMS)](quickstarts/ssms-connect-query-sql-server.md)
 - [Tutorial: Write Transact-SQL statements](/sql/t-sql/tutorial-writing-transact-sql-statements)
-- [What is Azure Data Studio?](/azure-data-studio/what-is-azure-data-studio)

@@ -1,10 +1,10 @@
 ---
 title: "SQL Server Management Studio (SSMS) Support Policy"
-description: "SQL Server Management Studio (SSMS) support policy"
+description: SQL Server Management Studio (SSMS) support policy
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 08/12/2025
+ms.reviewer: randolphwest, mbarickman
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -36,13 +36,14 @@ The SSMS team doesn't actively back-port fixes to an earlier release.
 
 Refer to the following table for SQL Server Management Studio servicing support.
 
-| Version | November 2018 | June 2022 | January 2024 | April 2025 | May 2025 |
-| ---: | :---: | :---: | :---: | :---: |
-| 17.9.1 | Full support | Upgrade | Upgrade | Upgrade | Upgrade |
-| 18.12.1 | | Full support | Upgrade | Upgrade | Upgrade |
-| 19.3 | | | Full support | Upgrade | Upgrade |
-| 20.2.1 | | | | Full support | Upgrade |
-| [!INCLUDE [latest-build](includes/latest-build.md)] | | | | | Full support |
+| Version | November 2018 | June 2022 | January 2024 | April 2025 | May 2025 | November 2025 |
+| ---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [!INCLUDE [latest-build](includes/latest-build.md)] | | | | | | Full support |
+| 21.6.17 | | | | | Full support | Upgrade |
+| 20.2.1 | | | | Full support | Upgrade | Upgrade |
+| 19.3 | | | Full support | Upgrade | Upgrade | Upgrade |
+| 18.12.1 | | Full support | Upgrade | Upgrade | Upgrade | Upgrade |
+| 17.9.1 | Full support | Upgrade | Upgrade | Upgrade | Upgrade | Upgrade |
 
 > [!NOTE]  
 > The latest current branch version is always in the **Full support** servicing phase. This support statement means that if you encounter a code defect that warrants a critical update, you must have the latest current branch version installed in order to receive a fix.

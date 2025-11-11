@@ -4,7 +4,7 @@ description: Channels for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 10/30/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -22,12 +22,12 @@ This article describes our channels for releasing previews, preview features, ge
 
 You can control when to adopt feature updates by selecting a channel. There are two options for installing and updating SSMS. You might have both channels installed on a single machine:
 
-- [Preview channel](https://aka.ms/ssms/22/preview/vs_SSMS.exe)
-- [Release channel](https://aka.ms/ssms/21/release/vs_SSMS.exe)
+- Preview channel
+- [Release channel](https://aka.ms/ssms/22/release/vs_SSMS.exe)
 
 ## Determine your product version and channel
 
-You can determine which channel and version of SSMS you're using by opening **Help** > **About**. The version number indicates the major version of SSMS by using the first number ("**21**"), the minor update version by using the second number ("21.**0**"), and the servicing version by using the third number ("21.0.**1**"). If you're using the Preview channel, the preview release is also indicated after the version number ("22.0 **Preview**"), and within SSMS, **PREVIEW** appears near the top right of the SSMS window.
+You can determine which channel and version of SSMS you're using by opening **Help** > **About**. The version number indicates the major version of SSMS by using the first number ("**22**"), the minor update version by using the second number ("22.**0**"), and the servicing version by using the third number ("22.0.**1**"). If you're using the Preview channel, the preview release is also indicated after the version number ("22.0 **Preview**"), and within SSMS, **PREVIEW** appears near the top right of the SSMS window.
 
 ## Installing, updating, and switching channels
 
@@ -47,7 +47,7 @@ Updates are delivered independently to each channel, and you'll receive a [separ
 
 We stop servicing a minor version update on the Release channel when the next minor version update is released. For example, we won't provide additional servicing updates to version 21.5 once 21.6 has released.
 
-We announce minor updates through the [SQL Server blog](https://techcommunity.microsoft.com/category/sql-server/blog/sqlserver). All minor and servicing updates are accompanied by [release notes](../release-notes-21.md). SSMS also alerts you that a new update is available from the [notification icon](/visualstudio/ide/visual-studio-notifications) in the bottom right corner of the application, by an entry in the notification hub, and by text in the Visual Studio Installer.
+We announce minor updates through the [SQL Server blog](https://techcommunity.microsoft.com/category/sql-server/blog/sqlserver). All minor and servicing updates are accompanied by [release notes](../release-notes-22.md). SSMS also alerts you that a new update is available from the [notification icon](/visualstudio/ide/visual-studio-notifications) in the bottom right corner of the application, by an entry in the notification hub, and by text in the Visual Studio Installer.
 
 When you update your install of SSMS on the Release channel, you receive the latest servicing update for the latest available minor update.
 

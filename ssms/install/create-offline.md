@@ -4,7 +4,7 @@ description: Create an offline installation package to install SQL Server Manage
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 10/27/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -14,7 +14,7 @@ ms.collection:
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
-[!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is designed to work well in various computer configurations. In this article, you learn how to create an offline installation package of files for installation on the *local machine*.
+[!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] is designed to work well in various computer configurations. In this article, you learn how to create an offline installation package of files for installation on the *local machine*.
 
 ## Use the command line to create a local layout
 

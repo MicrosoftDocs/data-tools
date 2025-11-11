@@ -4,7 +4,7 @@ description: Capture diagnostic data for a SQL Server Management Studio (SSMS) p
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 07/08/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -35,7 +35,7 @@ The information logged from SSMS doesn't always provide enough detail for troubl
 
 1. Open a command prompt and run the following two commands, using the `ssms.exe` location in the previous step for the second line.
 
-   ```cmd
+   ```console
    SET VsLogActivity=1
    "C:\Program Files\Microsoft SQL Server Management Studio 21\Release\Common7\IDE\ssms.exe"
    ```

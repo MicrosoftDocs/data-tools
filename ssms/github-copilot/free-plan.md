@@ -5,7 +5,7 @@ description: Learn how to use GitHub Copilot for free in SQL Server Management S
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/14/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -24,7 +24,7 @@ To get started with Copilot Free in SSMS, you need:
 - [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)]
 - [GitHub Copilot in SQL Server Management Studio (Preview)](installation-state.md)
 
-[!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] is the preview version of SQL Server Management Studio (SSMS). For information related to SSMS 22 installation, see [Install SQL Server Management Studio Preview](../install/install-preview.md).
+For information related to SSMS 22 installation, see [Install SQL Server Management Studio](../install/install.md).
 
 ## Get started with Copilot Free in SSMS
 

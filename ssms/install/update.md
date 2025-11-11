@@ -3,8 +3,8 @@ title: Update SQL Server Management Studio
 description: Update your SQL Server Management Studio (SSMS) installation to the most recent release to access the latest feature changes and fixes for known issues.
 author: erinstellato-ms
 ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 05/19/2025
+ms.reviewer: randolphwest, mbarickman
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,7 +14,7 @@ ms.collection:
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
-[!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] must be [installed on the machine](install.md) in order to update it.
+[!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] must be [installed on the machine](install.md) in order to update it.
 
 ## Before you update
 
@@ -22,7 +22,7 @@ By default, in order to install, update, or modify SSMS, the account performing 
 
 SQL Server Management Studio (SSMS) must be closed before performing an update. We highly recommend saving your work before performing an update.
 
-We encourage you to update to the most [recent release](../release-notes-21.md) of SQL Server Management Studio (SSMS) so that you always get the latest features, security fixes, and improvements.
+We encourage you to update to the most [recent release](../release-notes-22.md) of SQL Server Management Studio (SSMS) so that you always get the latest features, security fixes, and improvements.
 
 There are many different ways to update an installation of SSMS:
 
@@ -47,7 +47,7 @@ Here's how to update SQL Server Management Studio (SSMS) using these various met
 
 1. In the Visual Studio Installer, look for the installation of SSMS that you want to update.
 
-   For example, if you previously installed [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] and there's an update for it, then an **Update available** message appears in the Visual Studio Installer.
+   For example, if you previously installed [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] and there's an update for it, then an **Update available** message appears in the Visual Studio Installer.
 
 1. Choose **Update** to install the update.
 
@@ -96,7 +96,7 @@ On the menu bar, select **Tools** > **Options** > **Environment** > **Product Up
 
 ### Configure source location of updates
 
-With [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)], you can now configure the location from where your clients get their updates. These update source locations are called *channels*, and you can find more information about channel purpose and availability in the [Channels for SQL Server Management Studio](channels-release.md) documentation. Microsoft makes both the Release and the Preview channels available to everyone.
+With [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)], you can now configure the location from where your clients get their updates. These update source locations are called *channels*, and you can find more information about channel purpose and availability in the [Channels for SQL Server Management Studio](channels-release.md) documentation. Microsoft makes both the Release and the Preview channels available to everyone.
 
 There are two ways to bring up the Update Settings dialog, which allows you to manually change the channel from which your SSMS installation should get its updates.
 
@@ -126,7 +126,7 @@ The most current release of the installer in the latest version of SSMS typicall
 
 - In a command window, use the bootstrapper to update the installer:
 
-  ```cmd
+  ```console
   vs_SSMS.exe --update --quiet
   ```
 
