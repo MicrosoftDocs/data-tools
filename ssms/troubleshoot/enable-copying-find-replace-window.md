@@ -15,7 +15,7 @@ ms.collection:
 
 [!INCLUDE [Applies to](../includes/appliesto-ss-asdb-asdw-xxx-md.md)]
 
-For SQL Server Management Studio (SSMS) 21 and earlier versions, a workaround is required to enable copying from the Find and Replace window. If you can't copy from the Find and Replace window in SSMS, follow the [workaround](#workaround). This problem does not exist in SSMS 22 Preview and later versions.
+For SQL Server Management Studio (SSMS) 21 and earlier versions, a workaround is required to enable copying from the Find and Replace window. If you can't copy from the Find and Replace window in SSMS, follow the [workaround](#workaround). This problem doesn't exist in SSMS 22 and later versions.
 
 ## Error message
 

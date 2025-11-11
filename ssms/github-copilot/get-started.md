@@ -5,7 +5,7 @@ description: Learn how to get started using GitHub Copilot in SQL Server Managem
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/14/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -23,9 +23,9 @@ In this article, you learn how to use GitHub Copilot and make the most of its fe
 
 ## Open GitHub Copilot
 
-Use of GitHub Copilot requires SSMS 22 Preview 3 or a later version. You should update to the latest version of SSMS to access the latest updates and features.
+Use of GitHub Copilot requires [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] or a later version. You should update to the latest version of SSMS to access the latest updates and features.
 
-1. Open SSMS 22 and connect to a server or database in the query editor window.
+1. Open SSMS and connect to a server or database in the query editor window.
 
 1. Select the **GitHub Copilot** badge in the upper right corner of SSMS, and select **Open Chat Window to Sign In**.
 

@@ -137,10 +137,10 @@ Available languages:
 | Connection | Fixed incorrect length of dropdown lists after changing the engine type. |
 | Integration Services | Resolved error "The certificate chain was issued by an authority that is not trusted" when creating or modifying an Integration Services job step in SQL Agent. See [SSMS 20 - certificate error when viewing or editing Agent jobs that run SSIS packages](https://feedback.azure.com/d365community/idea/235c6a29-0bf8-ee11-a1fe-6045bdfe7c85). |
 | Link feature for Azure SQL Managed Instance | Resolved a problem where SQL Server endpoint certificates weren't loaded for the Managed Instance. |
-| Object Explorer | Updated the script generated for external file formats to include the FIRST ROW property. |
+| Object Explorer | Updated the script generated for external file formats to include the `FIRST ROW` property. |
 | Object Explorer | Added Table-Valued Functions node within the **Programmability** > **Functions** node for Synapse. |
 | Query Editor | Updated lock icons in the query editor toolbar to be color-aware. |
-| Query Editor | Addressed error "Unable to query transaction count. The SQL text editor window will close without committing any open transactions" when closing an unsaved editor with either SHOWPLAN_ALL or SHOWPLAN_XML enabled, and the option **Check for open transactions before closing T-SQL query windows** enabled. |
+| Query Editor | Addressed error "Unable to query transaction count. The SQL text editor window will close without committing any open transactions" when closing an unsaved editor with either `SHOWPLAN_ALL` or `SHOWPLAN_XML` enabled, and the option **Check for open transactions before closing T-SQL query windows** enabled. |
 | Query Plans | Reduced the number of characters in the Description of an execution plan to 1000. The full query is available using the ellipses. |
 | Query Store | Addressed an issue where the **Queries With Forced Plans** report generated the error "Couldn't connect to database", see [Query Store report 'Queries with Forced Plans' fails trying to sort by last execution time](https://feedback.azure.com/d365community/idea/6e0360ee-f5f7-ee11-a73c-6045bd77de95). |
 | Query Store | Fixed Tracked Queries report to correctly display the metric selected in the Configure dialog. |
@@ -206,8 +206,8 @@ Available languages:
 | Feature | Details |
 | --- | --- |
 | Maintenance Plans | Resolved issue where Backup Database Task dialog closed after selecting the **Files and Filegroups** radio button in the dialog. |
-| SqlParser | Added support for DEFAULT_DATABASE option to CREATE LOGIN T-SQL syntax when using EXTERNAL PROVIDER. |
-| SqlParser | Added support for NATIVE_COMPILATION and SCHEMABINDING options to CREATE TRIGGER T-SQL syntax. |
+| SqlParser | Added support for `DEFAULT_DATABASE` option to `CREATE LOGIN` T-SQL syntax when using `EXTERNAL PROVIDER`. |
+| SqlParser | Added support for `NATIVE_COMPILATION` and `SCHEMABINDING` options to `CREATE TRIGGER` T-SQL syntax. |
 
 #### Known issues 20.1
 

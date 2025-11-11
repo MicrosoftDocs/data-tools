@@ -5,7 +5,7 @@ description: Learn how to use the GitHub Copilot Chat experience in SQL Server M
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/30/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -44,7 +44,7 @@ GitHub Copilot Chat provides AI assistance to help you make informed decisions a
 
 ## Prerequisites
 
-To use GitHub Copilot Chat in SSMS, you need SSMS 22 (Preview) or higher, and a GitHub account with [Copilot access](https://docs.github.com/copilot/get-started/what-is-github-copilot#getting-access-to-copilot). Otherwise, you can use [Use GitHub Copilot for free in SQL Server Management Studio (Preview)](free-plan.md).
+To use GitHub Copilot Chat in SSMS, you need SSMS 22 or a later version, and a GitHub account with [Copilot access](https://docs.github.com/copilot/get-started/what-is-github-copilot#getting-access-to-copilot). Otherwise, you can use [Use GitHub Copilot for free in SQL Server Management Studio (Preview)](free-plan.md).
 
 ## Use Copilot Chat in SSMS
 

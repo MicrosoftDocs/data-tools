@@ -4,7 +4,7 @@ description: Learn how to modify the SQL Server Management Studio (SSMS) install
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,7 +14,7 @@ ms.collection:
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
-It's easy to modify [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] so that it includes only what you want. To do so, open the Visual Studio Installer, and then add or remove workloads, components, and language packs. This article walks you through the process.
+It's easy to modify [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] so that it includes only what you want. To do so, open the Visual Studio Installer, and then add or remove workloads, components, and language packs. This article walks you through the process.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ It's easy to modify [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] so that i
   - [Update a network-based installation of SSMS](/visualstudio/install/update-a-network-installation-of-visual-studio)
   - [Control updates to network-based SSMS deployments](/visualstudio/install/controlling-updates-to-visual-studio-deployments)
 
-## Open the Visual Studio Installer to modify your installation
+## Modify your SSMS installation with the Visual Studio Installer
 
 To modify your SSMS installation, you need to open the Visual Studio Installer, and then select an SSMS installation to modify.
 
@@ -35,7 +35,7 @@ To modify your SSMS installation, you need to open the Visual Studio Installer, 
 
    - Run the **Visual Studio Installer** executable file, which is located at `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe`.
 
-   You might be prompted to update the Visual Studio Installer before continuing. If you are, follow the prompts.
+   If you're prompted to update the Visual Studio Installer, follow the on-screen instructions before continuing.
 
 In the Visual Studio Installer, look for the installation of SSMS that you want to modify and then select **Modify**.
 

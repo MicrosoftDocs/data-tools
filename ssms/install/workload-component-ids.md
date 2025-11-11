@@ -4,7 +4,7 @@ description: List the workload and component IDs that can be used when creating 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/30/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -33,14 +33,15 @@ In SSMS 21 and later versions, every Preview and GA release has its own unique c
 | Channel and version | ID | Status |
 | --- | --- | --- |
 | SSMS 21 Preview | SSMS.21.SSMS.Preview | No longer available. |
-| SSMS 21 GA | SSMS.21.SSMS.Release | Current generally available release. |
-| SSMS 22 Preview | SSMS.22.SSMS.Preview | Current preview release. |
+| SSMS 21 GA | SSMS.21.SSMS.Release | Prior generally available release. |
+| SSMS 22 Preview | SSMS.22.SSMS.Preview | Prior preview release. |
+| SSMS 22 GA | SSMS.22.SSMS.Release | Current generally available release. |
 
 ## SQL Server Management Studio core editor (included with SSMS)
 
 **ID:** Microsoft.VisualStudio.Component.CoreEditor
 
-**Description:** The SQL Server Management Studio (SSMS) core experience. This includes the Query Editor and Object Explorer, as well as database management, troubleshooting, and high availability and disaster recovery configuration.
+**Description:** The SQL Server Management Studio (SSMS) core experience. This component includes the Query Editor and Object Explorer, as well as database management, troubleshooting, and high availability and disaster recovery configuration.
 
 ### Components included by this workload
 

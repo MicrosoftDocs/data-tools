@@ -1,8 +1,8 @@
 ---
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 10/14/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: include
 ---
-21.6.17
+22.0.0

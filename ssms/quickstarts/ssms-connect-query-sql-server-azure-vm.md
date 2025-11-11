@@ -227,10 +227,6 @@ You can find information about the connection properties under the results of yo
 
   :::image type="content" source="media/ssms-connect-query-sql-server-azure-vm/connection-properties.png" alt-text="Screenshot of connection properties." lightbox="media/ssms-connect-query-sql-server-azure-vm/connection-properties.png":::
 
-## Additional tools
-
-You can also use [Azure Data Studio](/azure-data-studio/download-azure-data-studio) to connect and query [SQL Server](/azure-data-studio/quickstart-sql-server), an [Azure SQL Database](/azure-data-studio/quickstart-sql-database), and [Azure Synapse Analytics](/azure-data-studio/quickstart-sql-dw).
-
 ## Related content
 
 - [SQL Server Management Studio (SSMS) Query Editor](../f1-help/database-engine-query-editor-sql-server-management-studio.md)

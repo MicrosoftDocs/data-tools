@@ -5,7 +5,7 @@ description: Overview of GitHub Copilot in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/14/2025
+ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -23,7 +23,7 @@ GitHub Copilot in SSMS can answer questions for databases in SQL Server, Azure S
 
 ## How GitHub Copilot works in SSMS
 
-GitHub Copilot in SSMS uses your GitHub account with [Copilot access](https://docs.github.com/copilot/get-started/what-is-github-copilot#getting-access-to-copilot). The integration currently uses GPT-4.1, and GitHub Copilot in SSMS sends your prompts to the model. The model generates the response and sends it back to SSMS. GitHub Copilot in SSMS might send additional information about the version of SQL to which you're connected, or information about your database, along with your prompt to help improve the response.
+GitHub Copilot in SSMS uses your GitHub account with [Copilot access](https://docs.github.com/copilot/get-started/what-is-github-copilot#getting-access-to-copilot). The integration allows you to select a model, and GitHub Copilot in SSMS sends your prompts to the model. The model generates the response and sends it back to SSMS. GitHub Copilot in SSMS might send additional information about the version of SQL to which you're connected, or information about your database, along with your prompt to help improve the response.
 
 ## Features of GitHub Copilot in SSMS
 
@@ -57,7 +57,6 @@ Here are the current limitations of GitHub Copilot in SSMS:
 - GitHub Copilot might produce inaccurate results when the intent is to evaluate data.
 - GitHub Copilot responses can include inaccurate or low-quality content, so review outputs before using them in your work.
 - People who can meaningfully evaluate the content's accuracy and appropriateness should review the outputs.
-- GitHub Copilot in SSMS doesn't currently support selecting a different model.
 - GitHub Copilot doesn't currently support exporting the chat.
 - GitHub Copilot doesn't currently support Agent mode.
 
