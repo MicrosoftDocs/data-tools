@@ -87,17 +87,17 @@
     },
     {
       "source_path": "ssms/release-notes-22-preview.md",
-      "redirect_url": "/ssms/release-notes.md",
+      "redirect_url": "/ssms/release-notes",
       "redirect_document_id": false
     },
     {
       "source_path": "ssms/known-issues-preview.md",
-      "redirect_url": "/ssms/known-issues.md",
+      "redirect_url": "/ssms/known-issues",
       "redirect_document_id": false
     },
     {
       "source_path": "ssms/install/install-preview.md",
-      "redirect_url": "/ssms/install/install.md",
+      "redirect_url": "/ssms/install/install",
       "redirect_document_id": false
     }
   ]
