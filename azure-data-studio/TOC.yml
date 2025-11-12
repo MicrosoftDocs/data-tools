@@ -25,7 +25,7 @@
     href: quickstart-sql-database.md
   - name: Connect & query Azure Synapse Analytics
     href: quickstart-sql-dw.md
-  - name: Connect & query Azure Cosmos DB API for MongoDB
+  - name: Connect & query Azure Cosmos DB for MongoDB
     href: quickstart-azure-cosmos-db-mongodb.md
   - name: Connect & query MySQL
     href: quickstart-mysql.md
@@ -129,12 +129,8 @@
     href: extensions/azure-sql-migration-extension.md
   - name: Azure Cosmos DB for MongoDB
     items:
-    - name: API for MongoDB RU extension
+    - name: Azure Cosmos DB for MongoDB extension
       href: extensions/azure-cosmos-db-mongodb.md
-    - name: API for MongoDB vCore migration extension
-      href: extensions/azure-cosmos-db-mongodb-migration.md
-    - name: API for MongoDB vCore migration extension FAQ
-      href: extensions/azure-cosmos-db-mongodb-migration-faq.yml
   - name: Azure Monitor Logs
     href: extensions/azure-monitor-logs-extension.md
   - name: Data Virtualization
