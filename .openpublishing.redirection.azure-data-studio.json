@@ -289,6 +289,16 @@
       "source_path": "azure-data-studio/extensions/sql-database-project-extension.md",
       "redirect_url": "/sql/tools/visual-studio-code-extensions/sql-database-projects/sql-database-projects-extension",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/azure-cosmos-db-mongodb-migration.md",
+      "redirect_url": "/azure/cosmos-db/mongodb/vcore/migration-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/extensions/azure-cosmos-db-mongodb-migration-faq.yml",
+      "redirect_url": "/azure/cosmos-db/mongodb/vcore/migration-options",
+      "redirect_document_id": false
     }
   ]
 }
