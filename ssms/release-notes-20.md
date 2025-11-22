@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS) 20.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 10/30/2025
+ms.date: 11/21/2025
 ms.service: sql-server-management-studio
 ms.topic: release-notes
 ms.collection:
@@ -25,10 +25,11 @@ For information about the latest version of SQL Server Management Studio (SSMS),
 
 ## Release notes
 
-This section contains release notes for SSMS 19 and earlier versions. For release notes for different versions of SSMS, see:
+This section contains release notes for SSMS 20. For release notes for different versions of SSMS, see:
 
+- [Release notes for SQL Server Management Studio](release-notes-22.md)
 - [Release notes for SQL Server Management Studio 21](release-notes-21.md)
-- [Release notes for SQL Server Management Studio 20](release-notes-20.md)
+- [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
 ### 20.2.1
 
