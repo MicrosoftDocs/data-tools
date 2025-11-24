@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS) 21.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 11/11/2025
+ms.date: 11/21/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -19,14 +19,15 @@ This article details updates, improvements, and bug fixes for [!INCLUDE [ssms-21
 
 [!INCLUDE [ssms-connect-aazure-ad](includes/ssms-connect-azure-ad.md)]
 
-## Current SQL Server Management Studio release
+## Current SSMS release
 
-**[Download SQL Server Management Studio (SSMS) 21](https://aka.ms/ssms/21/release/vs_SSMS.exe)**
+For information about the latest version of SQL Server Management Studio (SSMS), see [Install SQL Server Management Studio](install/install.md).
 
-[!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] is the latest general availability (GA) release of SSMS.
+## Release notes
 
-For previous versions of SSMS, see:
+This section contains release notes for SSMS 21. For release notes for different versions of SSMS, see:
 
+- [Release notes for SQL Server Management Studio](release-notes-22.md)
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
