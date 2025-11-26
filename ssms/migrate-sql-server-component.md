@@ -4,7 +4,7 @@ description: Learn about the SQL Server migration component in SQL Server Manage
 author: nilabjaball
 ms.author: niball
 ms.reviewer: randolphwest
-ms.date: 10/07/2025
+ms.date: 11/26/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -46,7 +46,7 @@ You can also physically migrate your database using the migration component. It 
 
 ## Installation and configuration
 
-1. Make sure that SQL Server Management Studio (SSMS) 21 is installed. Once the installation is complete, select **Modify** > **Individual Components**.
+1. Install the latest version of [SQL Server Management Studio](install/install.md) (SSMS). Once the installation is complete, select **Modify** > **Individual Components**.
 
 1. Select the **Migration** component, choose **Install while downloading** from the dropdown list, and select **Modify** to complete the installation.
 
@@ -87,7 +87,7 @@ If you already saved an assessment report, you can open the assessment by naviga
 
 - Make sure that the assessment report is reviewed and all issues are resolved.
 
-- Validate that source databases are in a known good state before beginning migration. The databases are migrated as-is, with no change to the data or internal structures. We recommend using [DBCC CHECKDB](/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql) to ensure logical and physical integrity of the source databases.  
+- Validate that source databases are in a known good state before beginning migration. The databases are migrated as-is, with no change to the data or internal structures. We recommend using [DBCC CHECKDB](/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql) to ensure logical and physical integrity of the source databases.
 
 - If any of the databases are protected by [Transparent data encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption), ensure the corresponding certificate or asymmetric key is transferred to the target SQL Server instance before initiating migration.
 
