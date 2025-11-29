@@ -4,7 +4,7 @@ description: Learn how to use the Visual Studio installer to install SQL Server 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 11/11/2025
+ms.date: 11/29/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -16,10 +16,13 @@ ms.collection:
 
 This article describes how to install SQL Server Management Studio (SSMS).
 
+> [!div class="nextstepaction"]
+> [Download SQL Server Management Studio (SSMS) 22 installer](https://aka.ms/ssms/22/release/vs_SSMS.exe)
+
 | Key information | Action required |
 | --- | --- |
-| **SSMS 22 is installed with the Visual Studio Installer** | The **Download SSMS 22** link downloads a stub installer (`vs_SSMS.exe`) that opens **Visual Studio Installer** to install SSMS. There's no standalone MSI. |
-| **How&nbsp;to&nbsp;install&nbsp;SSMS** | [Download SSMS 22](https://aka.ms/ssms/22/release/vs_SSMS.exe), run `vs_SSMS.exe`, pick any optional workloads/components, then select **Install**. |
+| **SSMS 22 is installed with the Visual Studio Installer** | The **SSMS 22 installer** link downloads a stub installer (`vs_SSMS.exe`) that opens **Visual Studio Installer** to install SSMS. There's no standalone MSI. |
+| **How&nbsp;to&nbsp;install&nbsp;SSMS** | Download the [SSMS 22 installer](https://aka.ms/ssms/22/release/vs_SSMS.exe), run `vs_SSMS.exe`, pick any optional workloads/components, then select **Install**. |
 | **Use the Visual Studio Installer to update SSMS 22** | To update SSMS 22, follow the instructions in [Update SQL Server Management Studio](update.md). |
 | **Offline or enterprise deployment** | To create an offline layout for disconnected or managed installs, see [Create an offline installation of SQL Server Management Studio](create-offline.md). |
 | **Database&nbsp;Engine&nbsp;compatibility** | SSMS 22 works with [!INCLUDE [sssql14-md](../includes/sssql14-md.md)] and later versions. If you need to manage older versions, see the [Release history](../release-history.md). SSMS 22 also works with [!INCLUDE [ssazure-sqldb](../includes/ssazure-sqldb.md)], [!INCLUDE [ssazuremi-md](../../azure-data-studio/includes/ssazuremi-md.md)], [!INCLUDE [ssazuresynapse-md](../includes/ssazuresynapse-md.md)], and [!INCLUDE [fabric-sqldb](../includes/fabric-sqldb.md)]. |
@@ -56,7 +59,7 @@ Decide which version of SSMS to install. The most common options are:
 
 - The latest release of [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] that is hosted on Microsoft servers. To install this version, select the following link, which downloads a stub installer, or *bootstrapper*, to your *Downloads* folder.
 
-  **[Download SSMS 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+  :::image type="icon" source="../includes/media/download.svg" border="false"::: **[Download the SQL Server Management Studio SSMS 22 installer](https://aka.ms/ssms/22/release/vs_SSMS.exe)** (`vs_SSMS.exe`)
 
 - If you already have SQL Server Management Studio 22 installed, you can [install another version alongside it](side-by-side.md).
 
