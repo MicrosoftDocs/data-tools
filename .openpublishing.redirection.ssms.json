@@ -87,7 +87,12 @@
     },
     {
       "source_path": "ssms/release-notes-22-preview.md",
-      "redirect_url": "/ssms/release-notes",
+      "redirect_url": "/ssms/release-notes-22",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/release-notes.md",
+      "redirect_url": "/ssms/release-notes-22",
       "redirect_document_id": false
     },
     {
