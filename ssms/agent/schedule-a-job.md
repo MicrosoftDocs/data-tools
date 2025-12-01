@@ -1,10 +1,10 @@
 ---
 title: "Configure Schedule for SQL Server Agent Job"
-description: Learn how to create a schedule for a job for the SQL Server Agent to run with SQL Server or Azure SQL Managed Instance by using SQL Server Management Studio (SSMS), Transact-SQL, or SQL Server Management Objects (SMO).
+description: Create a SQL Server Agent job schedule to run on SQL Server or Azure SQL Managed Instance, using SQL Server Management Studio, Transact-SQL, or SQL Server Management Objects.
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mathoma
-ms.date: 09/27/2024
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,32 +14,31 @@ helpviewer_keywords:
   - "SQL Server Agent jobs, scheduling"
   - "jobs [SQL Server Agent], scheduling"
 ---
-# Configure schedule for SQL Server Agent job
+# Configure a SQL Server Agent job schedule
 
 [!INCLUDE [SQL Server SQL MI](../includes/applies-to-version/sql-asdbmi.md)]
 
-This article describes how to configure a schedule for a job for the [SQL Server Agent](sql-server-agent.md) to run on SQL Server or Azure SQL Managed Instance. Configure a SQL Server Agent job schedule by using SQL Server Management Studio (SSMS), Transact-SQL, or SQL Server Management Objects (SMO). 
+This article describes how to configure a schedule for a job for the [SQL Server Agent](sql-server-agent.md) to run on SQL Server or Azure SQL Managed Instance. Configure a SQL Server Agent job schedule by using SQL Server Management Studio (SSMS), Transact-SQL, or SQL Server Management Objects (SMO).
 
 [!INCLUDE [sql-server-agent-azure-sql-managed-instance-support](../includes/sql-server-agent-azure-sql-managed-instance-support.md)]
 
+## Security
 
-## <a name="Security"></a>Security
-
-For detailed information, see [Implement SQL Server Agent Security](implement-sql-server-agent-security.md).
+For detailed information, see [Implement SQL Server Agent security](implement-sql-server-agent-security.md).
 
 ## Prerequisites
 
-To configure a schedule for a job, you should have already created a job. If you need to create a job, see [Create a Job](create-a-job.md).
+To configure a schedule for a job, you should have already created a job. If you need to create a job, see [Create a SQL Server Agent job](create-a-job.md).
 
 ## Configure schedule for a job
 
-You can configure a schedule for a SQL Agent job by using SQL Server Management Studio (SSMS), Transact-SQL, or SQL Server Management Objects (SMO).
+You can configure a schedule for a SQL Agent job by using SSMS, Transact-SQL, or SQL Server Management Objects (SMO).
 
 ### [SQL Server Management Studio (SSMS)](#tab/ssms)
 
 To create a schedule in SQL Server Management Studio, follow these steps:
 
-1. Open SQL Server Management Studio (SSMS). 
+1. Open SQL Server Management Studio (SSMS).
 
 1. In **Object Explorer,** connect to an instance of the SQL Server, and then expand that instance.
 
@@ -53,15 +52,15 @@ To create a schedule in SQL Server Management Studio, follow these steps:
 
 1. For **Schedule Type**, select one of the following:
 
-    -   Select **Start automatically when SQL Server Agent starts** to start the job when the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent service is started.
+   - Select **Start automatically when SQL Server Agent starts** to start the job when the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent service is started.
 
-    -   Select **Start whenever the CPUs become idle** to start the job when the CPUs reach an idle condition.
+   - Select **Start whenever the CPUs become idle** to start the job when the CPUs reach an idle condition.
 
-    -   Select **Recurring** if you want a schedule to run repeatedly. To set the recurring schedule, complete the **Frequency**, **Daily Frequency**, and **Duration** groups on the dialog.
+   - Select **Recurring** if you want a schedule to run repeatedly. To set the recurring schedule, complete the **Frequency**, **Daily Frequency**, and **Duration** groups on the dialog.
 
-    -   Select **One time** if you want the schedule to run only once. To set the **One time** schedule, complete the **One-time occurrence** group on the dialog.
+   - Select **One time** if you want the schedule to run only once. To set the **One time** schedule, complete the **One-time occurrence** group on the dialog.
 
-To attach a schedule to a job in SSMS, follow these steps: 
+To attach a schedule to a job in SSMS, follow these steps:
 
 1. In **Object Explorer,** connect to an instance of SQL Server, and then expand that instance.
 
@@ -81,35 +80,35 @@ To attach a schedule to a job in SSMS, follow these steps:
 
 Use [sp_add_schedule](/sql/relational-databases/system-stored-procedures/sp-add-schedule-transact-sql) to create a schedule and then use [sp_attach_schedule](/sql/relational-databases/system-stored-procedures/sp-attach-schedule-transact-sql) to attach the schedule to an existing job.
 
-The following Transact-SQL example schedules a job (named `UpdateStats`) to run on a schedule (named `NightlyJob`) every day at 1:00 A.M: 
+The following Transact-SQL example schedules a job (named `UpdateStats`) to run on a schedule (named `NightlyJob`) every day at 1:00 A.M:
 
 ```sql
-USE msdb ;
+USE msdb;
 GO
--- creates a schedule named NightlyJobs.
+
+-- Creates a schedule named NightlyJobs.
 -- Jobs that use this schedule execute every day when the time on the server is 01:00.
-EXEC sp_add_schedule
-    @schedule_name = N'NightlyJobs' ,
+EXECUTE sp_add_schedule
+    @schedule_name = N'NightlyJobs',
     @freq_type = 4,
     @freq_interval = 1,
-    @active_start_time = 010000 ;
+    @active_start_time = 010000;
 GO
+
 -- attaches the schedule to the job UpdateStats
-EXEC sp_attach_schedule
+EXECUTE sp_attach_schedule
     @job_name = N'UpdateStats',
-    @schedule_name = N'NightlyJobs' ;
+    @schedule_name = N'NightlyJobs';
 GO
 ```
 
 ### [SQL Server Management Objects (SMO)](#tab/smo)
 
-
 Use the **JobSchedule** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell. For more information, see [SQL Server Management Objects (SMO)](/sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide).
 
 ---
 
-
 ## Related content
 
-- [Create a job](create-a-job.md)
-- [SQL Server Agent](sql-server-agent.md)
+- [Create a SQL Server Agent job](create-a-job.md)
+- [SQL Server Agent overview](sql-server-agent.md)

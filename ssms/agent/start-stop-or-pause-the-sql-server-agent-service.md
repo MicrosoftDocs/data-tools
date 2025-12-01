@@ -1,9 +1,9 @@
 ---
 title: Start, Stop, or Pause the SQL Server Agent Service
-description: Start, stop, or pause the SQL Server Agent service.
+description: Start, stop, or pause the SQL Server Agent service using SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 07/26/2024
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -26,7 +26,7 @@ You can configure the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Ag
 
 ## Limitations
 
-[!INCLUDE [msCoName](../includes/msconame-md.md)] [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent must be running as a service in order to automate administrative tasks. For more information, see [Configure SQL Server Agent](configure-sql-server-agent.md).
+[!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent must be running as a service in order to automate administrative tasks. For more information, see [Configure SQL Server Agent](configure-sql-server-agent.md).
 
 Object Explorer only displays the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent node if you have permission to use it.
 
@@ -41,7 +41,9 @@ To perform its functions, [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)
 
 For more information about the Windows permissions required for the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] Agent service account, see [Select an account for the SQL Server Agent service](select-an-account-for-the-sql-server-agent-service.md) and [Configure Windows service accounts and permissions](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions).
 
-## <a id="SSMSProcedure"></a> Use SQL Server Management Studio
+<a id="SSMSProcedure"></a>
+
+## Use SQL Server Management Studio
 
 1. In **Object Explorer**, select the plus sign to expand the server where you want to manage SQL Server Agent Service.
 
