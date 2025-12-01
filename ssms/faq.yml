@@ -5,7 +5,7 @@ metadata:
   author: erinstellato-ms
   ms.author: erinstellato
   ms.reviewer: randolphwest
-  ms.date: 12/02/2025
+  ms.date: 12/17/2025
   ms.service: sql-server-management-studio
   ms.topic: faq
 title: SQL Server Management Studio FAQ
@@ -17,12 +17,12 @@ sections:
     questions:
       - question: "What is SQL Server Management Studio?"
         answer: |
-          [!INCLUDE [ssms-22-md](includes/ssms-22-md.md)] is the latest generally available version of Microsoft's integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL. With SQL Server Management Studio (SSMS), you can configure, monitor, and administer instances of SQL Server, as well as Azure SQL Managed Instance and Azure SQL databases. Use SSMS to deploy, monitor, and upgrade the data-tier components used by your applications, as well as develop queries and scripts. SSMS runs on Windows and is a free download from Microsoft.
+          [!INCLUDE [ssms-22-md](includes/ssms-22-md.md)] is the latest generally available version of Microsoft's integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL. With SQL Server Management Studio (SSMS), you can configure, monitor, and administer instances of SQL Server, as well as Azure SQL Managed Instance, Azure SQL databases, and SQL database in Microsoft Fabric. Use SSMS to deploy, monitor, and upgrade the data-tier components used by your applications, as well as develop queries and scripts. SSMS runs on Windows and is a free download from Microsoft.
 
       - question: "What are the new features in SSMS?"
         answer: |
           SSMS includes several new features and enhancements:
-          - **Update to Visual Studio 2026**: SSMS is based on the latest Visual Studio release.
+          - **Updated to Visual Studio 2026**: SSMS is based on the latest Visual Studio release.
           - **64-bit architecture**: SSMS is a 64-bit application, ensuring smoother operations and reduced out-of-memory errors.
           - **Enhanced user interface**: A refreshed, modernized design with updated icons, the initial phase of dark theme, and customizable layouts.
           - **Improved editor and results**: Enhancements include more efficient options for editing and managing scripts, customizable tab layouts, zooming in the results grid, and built-in support for viewing JSON output.
