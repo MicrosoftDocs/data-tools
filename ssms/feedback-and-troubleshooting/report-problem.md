@@ -4,7 +4,7 @@ description: Learn how to report a problem with SQL Server Management Studio (SS
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 06/26/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:

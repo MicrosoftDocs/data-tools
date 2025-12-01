@@ -1,9 +1,9 @@
 ---
 title: "Customize (Commands Page)"
-description: "Customize (Commands Page)"
+description: Customize (Commands Page)
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/15/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -41,4 +41,4 @@ Displays the **Keyboard** page of the **Options** dialog box so you can specify 
 
 ## Related content
 
-- [Customize Menus and Shortcut Keys](../customize-menus-and-shortcut-keys.md)
+- [Customize menus and shortcut keys](../customize-menus-and-shortcut-keys.md)

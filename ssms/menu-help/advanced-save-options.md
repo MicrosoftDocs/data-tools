@@ -1,9 +1,9 @@
 ---
-title: "Advanced Save Options"
-description: "Advanced Save Options"
+title: Advanced save Options
+description: Advanced Save Options
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/15/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -27,4 +27,4 @@ Use this list box to apply a new language encoding scheme to the target file.
 
 #### Line Endings
 
-To ensure that the target file runs on a specific operating system, select whether a carriage return (for Macintosh systems), a line feed (for Unix systems), or both characters (for Windows systems) marks the end of each line.
+To ensure that the target file runs on a specific operating system, select whether a line feed (for Linux, macOS, and Unix systems), or both characters (for Windows systems) marks the end of each line.
