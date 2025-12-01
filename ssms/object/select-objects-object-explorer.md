@@ -1,9 +1,9 @@
 ---
 title: "Select Objects (Object Explorer)"
-description: "Select Objects (Object Explorer)"
+description: "Select objects (Object Explorer)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/15/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -11,7 +11,7 @@ ms.collection:
 f1_keywords:
   - "sql13.swb.common.selectobjects.f1"
 ---
-# Select Objects (Object Explorer)
+# Select objects (Object Explorer)
 
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
@@ -21,7 +21,7 @@ Use the **Select Objects** dialog box to add an object to a list in another dial
 
 #### Select these object types
 
-Displays a list of the types of which the objects to be selected belong. The types include [!INCLUDE [msCoName](../includes/msconame-md.md)] [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] level and database level principals and securables. This box is populated from the selections made from the **Select Object Types** dialog box, accessed from the **Objects Type** button.
+Displays a list of the types of which the objects to be selected belong. The types include [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] level and database level principals and securables. This box is populated from the selections made from the **Select Object Types** dialog box, accessed from the **Objects Type** button.
 
 #### Enter the object names to select
 

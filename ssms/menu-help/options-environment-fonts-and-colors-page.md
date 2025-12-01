@@ -1,9 +1,9 @@
 ---
 title: "Options (Environment - Fonts and Colors Page)"
-description: "Options (Environment - Fonts and Colors Page)"
+description: "Options (Environment - Fonts and Colors page)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/15/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -13,7 +13,7 @@ ms.collection:
 
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
-The **Options** dialog box lets you establish a custom font and color scheme for various user interface elements in [!INCLUDE [msCoName](../includes/msconame-md.md)] [!INCLUDE [ssManStudioFull](../includes/ssmanstudiofull-md.md)]. On the **Tools** menu, select **Options,** expand the **Environment** folder, and select **Fonts and Colors**.
+The **Options** dialog box lets you establish a custom font and color scheme for various user interface elements in [!INCLUDE [ssManStudioFull](../includes/ssmanstudiofull-md.md)]. On the **Tools** menu, select **Options,** expand the **Environment** folder, and select **Fonts and Colors**.
 
 Color scheme changes don't take effect during the session in which you make them. You can evaluate color changes by opening another instance of SQL Server Management Studio and producing the conditions under which you expect your changes to apply.
 

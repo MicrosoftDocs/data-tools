@@ -1,10 +1,10 @@
 ---
-title: "About SQL Server Management Studio"
-description: "About SQL Server Management Studio"
+title: About SQL Server Management Studio
+description: About SQL Server Management Studio
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 09/15/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -21,7 +21,7 @@ helpviewer_keywords:
 
 Accessed from the Help menu in SQL Server Management Studio (SSMS), you can use this dialog box to view or copy information about your installation.
 
-## Grid Layout
+## Grid layout
 
 #### Component Name
 

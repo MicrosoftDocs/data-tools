@@ -2,8 +2,8 @@
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.reviewer: randolphwest
-ms.date: 07/02/2025
-ms.service: sql
+ms.date: 12/01/2025
+ms.service: sql-server-management-studio
 ms.topic: include
 ---
 

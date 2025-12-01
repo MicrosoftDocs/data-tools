@@ -4,7 +4,7 @@ description: Learn how to suggest features and improvements for SQL Server Manag
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 06/26/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:

@@ -4,7 +4,7 @@ description: Connect to Server (Additional Connection Parameters page) Database 
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 09/15/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -17,7 +17,7 @@ f1_keywords:
 
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
-Use this tab to enter advanced parameters when connecting to an instance of [!INCLUDE [msCoName](../includes/msconame-md.md)] [!INCLUDE [ssDEnoversion](../includes/ssdenoversion-md.md)] or registering [!INCLUDE [ssDE](../includes/ssde-md.md)] in **Registered Servers**. **Connect** and **Options** only appear in this dialog box when connecting to an instance of the [!INCLUDE [ssDE](../includes/ssde-md.md)]. **Test** and **Save** only appear in this dialog box when registering [!INCLUDE [ssDE](../includes/ssde-md.md)]. Access this tab by selecting **Options >>** on the login tab.
+Use this tab to enter advanced parameters when connecting to an instance of [!INCLUDE [ssDEnoversion](../includes/ssdenoversion-md.md)] or registering [!INCLUDE [ssDE](../includes/ssde-md.md)] in **Registered Servers**. **Connect** and **Options** only appear in this dialog box when connecting to an instance of the [!INCLUDE [ssDE](../includes/ssde-md.md)]. **Test** and **Save** only appear in this dialog box when registering [!INCLUDE [ssDE](../includes/ssde-md.md)]. Access this tab by selecting **Options >>** on the login tab.
 
 [!INCLUDE [entra-id-hard-coded](../includes/entra-id-hard-coded.md)]
 

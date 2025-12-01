@@ -5,12 +5,12 @@ description: Learn about configuring Azure OpenAI to use with Copilot in SQL Ser
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 07/28/2025
-ms.update-cycle: 180-days
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 f1_keywords:
   - "sql13.swb.copilot.configure.f1"
 # CustomerIntent: As a database administrator or database developer, I want to understand how to configure Azure OpenAI to use with Copilot in SQL Server Management Studio.
@@ -45,8 +45,10 @@ Endpoint creation is done in the Azure portal.
 1. Select **Next**.
 
 1. On the **Network** page, select **All Networks** unless you're using a Virtual Private Network (VPN). SQL Server Management Studio (SSMS) must be able to reach the endpoint for Copilot in SSMS to work.
-    1. If you are using a VPN, under **Type**, check the **Selected networks, configure network security for your Azure AI services resource** option and then choose the appropriate Virtual network and subnets.
-    1. Add the appropriate IP ranges for a firewall rule.
+
+   1. If you use a VPN, under **Type**, check the **Selected networks, configure network security for your Azure AI services resource** option and then choose the appropriate virtual network and subnets.
+
+   1. Add the appropriate IP ranges for a firewall rule.
 
 1. Select **Next**.
 
@@ -128,7 +130,7 @@ The final step required is creating the deployment.
 
 1. The **Model version** should be `2024-11-20`, and the resource location should be set by default (inherited from the endpoint you already created).
 
-1. Set the **Tokens per Minute Rate Limit** to the maximum value available. It can be modified in the Azure AI Foundry portal at any time, should you decide to lower the cap. The lower the value, the fewer the questions per minute that Copilot can answer. For more information, see [Azure OpenAI Service quotas and limits](/azure/ai-services/openai/quotas-limits).
+1. Set the **Tokens per Minute Rate Limit** to the maximum value available. It can be modified in the Azure AI Foundry portal at any time, should you decide to lower the cap. The lower the value, the fewer the questions per minute that Copilot can answer. For more information, see [Azure OpenAI in Azure AI Foundry Models quotas and limits](/azure/ai-services/openai/quotas-limits).
 
 1. Leave **Content filter** at the default value of **DefaultV2**, unless your company has its own policies around AI content filters.
 
@@ -146,11 +148,11 @@ The final step required is creating the deployment.
 
 ## Monitor cost
 
-The cost of Copilot in SSMS varies based on use and follows a pay-as-you-go billing model. Because the cost isn't a fixed, recurring value, we recommend monitoring the resource spend on a regular basis to mitigate surprises in billing. For more information, see [Plan to manage costs for Azure OpenAI Service](/azure/ai-services/openai/how-to/manage-costs).
+The cost of Copilot in SSMS varies based on use and follows a pay-as-you-go billing model. Because the cost isn't a fixed, recurring value, we recommend monitoring the resource spend on a regular basis to mitigate surprises in billing. For more information, see [Plan to manage costs for Azure OpenAI in Azure AI Foundry Models](/azure/ai-services/openai/how-to/manage-costs).
 
 ## Related content
 
 - [Troubleshooting issues with Copilot in SQL Server Management Studio](copilot-in-ssms-troubleshooting.md)
-- [What is Azure OpenAI Service?](/azure/ai-services/openai/overview)
+- [What is Azure OpenAI in Azure AI Foundry Models?](/azure/ai-services/openai/overview)
 - [Use the chat window for Copilot in SQL Server Management Studio](copilot-in-ssms-chat.md)
 - [Code assistance for Copilot in SQL Server Management Studio](copilot-in-ssms-code-assistance.md)

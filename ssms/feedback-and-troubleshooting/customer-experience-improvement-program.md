@@ -4,7 +4,7 @@ description: Learn about the Customer Experience Improvement Program in SQL Serv
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 12/10/2024
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -27,11 +27,11 @@ The VSCEIP is turned on by default. You can turn it off or back on again by foll
 
 1. The **Visual Studio Experience Improvement Program** dialog opens.
 
-1. To opt out, select **No, I would not like to participate**, and then select OK.
+1. To opt out, select **No, I would not like to participate**, and then select **OK**.
 
-1. To opt in, select **Yes, I am willing to participate (Recommended)**, and then select OK.
+1. To opt in, select **Yes, I am willing to participate (Recommended)**, and then select **OK**.
 
 ## Related content
 
-- [Suggest a feature or improvement for SQL Server Management Studio 21](suggest-feature.md)
-- [Report a problem with SQL Server Management Studio 21](report-problem.md)
+- [Suggest a feature or improvement for SQL Server Management Studio](suggest-feature.md)
+- [Report a problem with SQL Server Management Studio](report-problem.md)

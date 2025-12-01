@@ -3,7 +3,7 @@ title: SSMS Query Editor
 description: SQL Server Management Studio (SSMS) Query Editor
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 10/30/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -286,18 +286,18 @@ If the help search engine doesn't find an article with an F1 help keyword that e
 
 | Task Description | Article |
 | --- | --- |
-| Describes the various ways you can open the editors in SSMS. | [Open an Editor (SQL Server Management Studio)](../scripting/open-an-editor-sql-server-management-studio.md) |
-| Configure options for the various editors, such as line numbering and IntelliSense options. | [Configure Editors (SQL Server Management Studio)](../scripting/configure-editors-sql-server-management-studio.md) |
+| Describes the various ways you can open the editors in SSMS. | [Open an Editor](../scripting/open-an-editor-sql-server-management-studio.md) |
+| Configure options for the various editors, such as line numbering and IntelliSense options. | [Configure Editors](../scripting/configure-editors-sql-server-management-studio.md) |
 | How to manage the view mode, such as word wrap, splitting a window, or tabs. | [Manage the Editor and view mode](../scripting/manage-the-editor-and-view-mode.md) |
 | Set formatting options, such as hidden text or indentation. | [Manage code formatting](../scripting/manage-code-formatting.md) |
-| Navigate through the text in an editor window by using features such as incremental search or go to. | [Navigate Code and Text](../scripting/navigate-code-and-text.md) |
+| Navigate through the text in an editor window by using features such as incremental search or go to. | [Navigate code and text](../scripting/navigate-code-and-text.md) |
 | Set color coding options for various classes of syntax, which makes it easier to read complex statements. | [Color coding in query editors](../scripting/color-coding-in-query-editors.md) |
-| Drag text from one location in a script and drop it in a new location. | [Drag and Drop Text](../scripting/drag-and-drop-text.md) |
+| Drag text from one location in a script and drop it in a new location. | [Drag and drop text](../scripting/drag-and-drop-text.md) |
 | How to set bookmarks in order to more easily find important pieces of code. | [Manage Bookmarks](../scripting/manage-bookmarks.md) |
 | How to print scripts or the results in a window or grid. | [Print Code and Results](../scripting/print-code-and-results.md) |
 | View and use the basic features in the MDX Query Editor. | [Create Analysis Services Scripts](/analysis-services/instances/create-analysis-services-scripts-in-management-studio) |
 | View and use the basic features in the DMX Query Editor. | [Create a DMX Query](/analysis-services/data-mining/create-a-dmx-query-in-sql-server-management-studio) |
-| View and use the basic features in the XML/A Editor. | [XML editor (SQL Server Management Studio)](../scripting/xml-editor-sql-server-management-studio.md) |
+| View and use the basic features in the XML/A Editor. | [XML editor](../scripting/xml-editor-sql-server-management-studio.md) |
 | How to use the sqlcmd features in the Database Engine Query Editor. | [Edit SQLCMD Scripts with Query Editor](/sql/tools/sqlcmd/edit-sqlcmd-scripts-query-editor) |
 | How to use code snippets in the Database Engine Query Editor. Snippets are templates for commonly used statements or blocks, and can be customized or extended to include site-specific snippets. | [Add Transact-SQL snippets](../scripting/add-transact-sql-snippets.md) |
 | How to use the Transact-SQL debugger to step through code and view debugging information such as the values in variables and parameters. | [Transact-SQL debugger](/sql/ssdt/debugger/transact-sql-debugger) |
