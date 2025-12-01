@@ -3,7 +3,7 @@ title: Column Properties
 description: "Column Properties (Visual Database Tools)"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/03/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -15,17 +15,17 @@ f1_keywords:
   - "vdt.designers.properties.Column.ColumnComputedColumnSpec"
   - "vdt.designers.properties.Column.ColumnFulltextSpec"
 ---
-# Column Properties (Visual Database Tools)
+# Column properties (Visual Database Tools)
 
 [!INCLUDE [SQL Server](../includes/applies-to-version/sqlserver.md)]
 
-There are two sets of properties for columns: a full set that you can see in the **Column Properties** tab within Table Designer (available only for [!INCLUDE [msCoName](../includes/msconame-md.md)] [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] databases) and a subset you can see in the Properties window using Server Explorer.
+There are two sets of properties for columns: a full set that you can see in the **Column Properties** tab within Table Designer (available only for [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] databases) and a subset you can see in the Properties window using Server Explorer.
 
 > [!NOTE]  
 > The properties in this article are ordered by category rather than alphabet.
 
 > [!NOTE]  
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu.
+> The dialog boxes and menu commands you see might differ from dialog boxes and menu commands described in Help, depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu.
 
 ## Properties window
 
@@ -44,7 +44,9 @@ Shows the name of the column.
 
 #### Database
 
-Shows the name of the data source for the selected column. (Applies only to OLE DB.)
+**Applies to**: OLE DB only.
+
+Shows the name of the data source for the selected column.
 
 #### Misc Category
 
@@ -56,15 +58,21 @@ Shows the data type of the selected column. For more information, see [Data type
 
 #### Identity Increment
 
-Shows the increment that is added to the **Identity Seed** for each subsequent row of the identity column. (Applies only to [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)].)
+**Applies to**: [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] only.
+
+Shows the increment that is added to the **Identity Seed** for each subsequent row of the identity column.
 
 #### Identity Seed
 
-Shows the seed value assigned to the first row in the table for the identity column. (Applies only to [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)].)
+**Applies to**: [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] only.
+
+Shows the seed value assigned to the first row in the table for the identity column.
 
 #### Is Identity
 
-Shows whether the selected column is the identity column for the table. (Applies only to [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)].)
+**Applies to**: [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] only.
+
+Shows whether the selected column is the identity column for the table.
 
 #### Length
 
@@ -76,11 +84,11 @@ Shows whether or not the column allows null values.
 
 #### Precision
 
-Shows the maximum number of digits allowed for numeric data types. This property shows `0` for nonnumeric data types.
+Shows the maximum number of digits allowed for numeric data types. This property shows `0` for non-numeric data types.
 
 #### Scale
 
-Shows the maximum number of digits that can appear to the right of the decimal point for numeric data types. This value must be less than or equal to the precision. This property shows `0` for nonnumeric data types.
+Shows the maximum number of digits that can appear to the right of the decimal point for numeric data types. This value must be less than or equal to the precision. This property shows `0` for non-numeric data types.
 
 ## Column Properties Tab
 
@@ -118,11 +126,11 @@ Shows the number of characters allowed for character-based data types. This prop
 
 #### Precision
 
-Shows the maximum number of digits allowed for numeric data types. This property shows `0` for nonnumeric data types. This property is only available for numeric data types.
+Shows the maximum number of digits allowed for numeric data types. This property shows `0` for non-numeric data types. This property is only available for numeric data types.
 
 #### Scale
 
-Shows the maximum number of digits that can appear to the right of the decimal point for numeric data types. This value must be less than or equal to the precision. This property shows `0` for nonnumeric data types. This property is only available for numeric data types.
+Shows the maximum number of digits that can appear to the right of the decimal point for numeric data types. This value must be less than or equal to the precision. This property shows `0` for non-numeric data types. This property is only available for numeric data types.
 
 #### Table Designer Category
 
@@ -138,7 +146,7 @@ Expands to show properties for **Formula** and **Is Persisted**. If the column i
 
 #### Formula
 
-Shows the formula that the selected column uses if it's a computed column. In this field you can enter or change a formula.
+Shows the formula that the selected column uses if it's a computed column. Enter or change a formula in this field.
 
 #### Is Persisted
 
@@ -146,7 +154,7 @@ Allows you to save the computed column with the data source. A persisted compute
 
 #### Condensed Data Type
 
-Displays information about the field's data type, in the same format as the `SQL CREATE TABLE` statement. For example, a field containing a variable-length string with a maximum length of 20 characters would be represented as "varchar(20)." To change this property, type the value directly.
+Displays information about the field's data type, in the same format as the `SQL CREATE TABLE` statement. For example, a field containing a variable-length string with a maximum length of 20 characters would be represented as **varchar(20)**. To change this property, type the value directly.
 
 #### Description
 
@@ -172,7 +180,7 @@ Indicates the language used to index the column.
 
 Select whether to enable statistical semantic indexing for the selected column. For more information, see [Semantic Search (SQL Server)](/sql/relational-databases/search/semantic-search-sql-server).
 
-If you select a **Language** prior to selecting **Statistical Semantics**, and the selected language doesn't have an associated Semantic Language Model, then the **Statistical Semantics** option is set to **No** and can't be modified. If you select **Yes** for the **Statistical Semantics** option prior to selecting a **Language**, then the languages available in the **Language** column are restricted to those for which there's Semantic Language Model support.
+If you select a **Language** before selecting **Statistical Semantics**, and the selected language doesn't have an associated Semantic Language Model, then the **Statistical Semantics** option is set to **No** and can't be modified. If you select **Yes** for the **Statistical Semantics** option before selecting a **Language**, then the languages available in the **Language** column are restricted to languages for which there's Semantic Language Model support.
 
 #### Has Non-SQL Server Subscriber
 
@@ -204,7 +212,7 @@ Shows whether the column is DTS-published.
 
 #### Is Indexable
 
-Shows whether the selected column can be indexed. For example, non-deterministic computed columns can't be indexed.
+Shows whether the selected column can be indexed. For example, nondeterministic computed columns can't be indexed.
 
 #### Is Merge-published
 
@@ -227,4 +235,4 @@ Indicates whether [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] uses t
 Shows the size in bytes allowed by column's data type. For example, a **nchar** data type might have a length of 10 (the number of characters) but it would have a size of 20 to account for Unicode character sets.
 
 > [!NOTE]  
-> The length of a **varchar(max)** data type varies for each row. `sp_help` returns (-1) as the length of **varchar(max)** column. [!INCLUDE [ssManStudio](../includes/ssmanstudio-md.md)] displays -1 as the column size.
+> The length of a **varchar(max)** data type varies for each row. `sp_help` returns `-1` as the length of **varchar(max)** column. [!INCLUDE [ssManStudio](../includes/ssmanstudio-md.md)] displays `-1` as the column size.

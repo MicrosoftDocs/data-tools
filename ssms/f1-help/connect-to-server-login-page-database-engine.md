@@ -4,7 +4,7 @@ description: This article shows how to use the Connect to Server (Login page) Da
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 09/15/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -19,7 +19,7 @@ f1_keywords:
 
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
-Use this tab to configure the connection properties when you connect to [!INCLUDE [msCoName](../includes/msconame-md.md)] [!INCLUDE [ssDEnoversion](../includes/ssdenoversion-md.md)]. In most cases, you can connect by entering the computer name of the database server in the **Server name** box and then selecting **Connect**. If you're connecting to a named instance, use the computer name followed by a backslash and then the instance name. For example, `mycomputer\myinstance`. See [Connect to the Database Engine](/sql/sql-server/connect-to-database-engine) for more examples.
+Use this tab to configure the connection properties when you connect to [!INCLUDE [ssDEnoversion](../includes/ssdenoversion-md.md)]. In most cases, you can connect by entering the computer name of the database server in the **Server name** box and then selecting **Connect**. If you're connecting to a named instance, use the computer name followed by a backslash and then the instance name. For example, `mycomputer\myinstance`. See [Connect to the Database Engine](/sql/sql-server/connect-to-database-engine) for more examples.
 
 [!INCLUDE [entra-id-hard-coded](../includes/entra-id-hard-coded.md)]
 
@@ -59,7 +59,7 @@ By default, you connect to the `master` database. If you specify a user database
 
 The current version of SQL Server Management Studio (SSMS) offers eight authentication modes when you connect to a [!INCLUDE [ssDE](../includes/ssde-md.md)]. If your **Authentication** dialog box doesn't match the following list, [install the most recent version of SQL Server Management Studio](../install/install.md).
 
-- **Windows Authentication**: [!INCLUDE [msCoName](../includes/msconame-md.md)] Windows Authentication mode allows a user to connect through a Windows user account.
+- **Windows Authentication**: Windows Authentication mode allows a user to connect through a Windows user account.
 
 - **SQL Server Authentication**: When you connect with a specified login name and password, [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] performs the authentication by checking to see if a matching [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] login account exists and if the specified password matches the one previously recorded. If the [!INCLUDE [ssNoVersion](../includes/ssnoversion-md.md)] login doesn't exist, authentication fails, and you receive an error message.
 

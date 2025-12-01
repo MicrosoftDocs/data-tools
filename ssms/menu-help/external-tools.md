@@ -3,7 +3,7 @@ title: "External Tools"
 description: "External Tools"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/15/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -50,7 +50,7 @@ Specify the path to the .exe, .com, .pif, .bat, .cmd, or other file that you int
 
 #### Arguments
 
-Specify the variables that are passed to the tool when the tool is selected on the menu. Arguments can specify values that are passed to the tool or command when it launches. For example, a value can specify a file name or directory. Use the **Arrow** button to select from a list of predefined arguments. You can add more than one. For a complete list of predefined arguments and their definitions, see [Arguments for External Tools](../use-of-sql-server-features-and-capabilities-wwi-oltp.md). You can also enter custom arguments (command-prompt switches, for example), depending on the command or tool you use.
+Specify the variables that are passed to the tool when the tool is selected on the menu. Arguments can specify values that are passed to the tool or command when it launches. For example, a value can specify a file name or directory. Use the **Arrow** button to select from a list of predefined arguments. You can add more than one. For a complete list of predefined arguments and their definitions, see [Arguments for external tools](../use-of-sql-server-features-and-capabilities-wwi-oltp.md). You can also enter custom arguments (command-prompt switches, for example), depending on the command or tool you use.
 
 #### Initial directory
 

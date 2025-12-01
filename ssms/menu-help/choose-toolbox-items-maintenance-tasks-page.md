@@ -1,9 +1,9 @@
 ---
 title: "Choose Toolbox Items (Maintenance Tasks Page)"
-description: "Choose Toolbox Items (Maintenance Tasks Page)"
+description: Choose Toolbox Items (Maintenance Tasks Page)
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/15/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -26,7 +26,7 @@ The **Maintenance Tasks** tab includes the following columns of information.
 
 #### Name
 
-Displays the names of available components. Preceding each name is a check box. If selected, a check box indicates that SQL Server Management Studio has found an entry for the component in your computer's registry. The component is either already displayed on the active **Toolbox** tab, or it is added when you select **OK**. If cleared, a check box indicates that the component isn't currently displayed in the **Toolbox**, or that it is removed from the **Toolbox** when you select **OK**.
+Displays the names of available components. Preceding each name is a check box. If selected, a check box indicates that SQL Server Management Studio has found an entry for the component in your computer's registry. The component is either already displayed on the active **Toolbox** tab, or it's added when you select **OK**. If cleared, a check box indicates that the component isn't currently displayed in the **Toolbox**, or that it's removed from the **Toolbox** when you select **OK**.
 
 #### Path
 

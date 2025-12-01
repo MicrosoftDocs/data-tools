@@ -3,7 +3,7 @@ title: "SQL Server Management Studio Menu Help"
 description: "SQL Server Management Studio Menu Help"
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/15/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -20,10 +20,10 @@ This section contains F1 Help for the dialog boxes and pages available from the 
 
 - [About SQL Server Management Studio](about-sql-server-management-studio.md)
 - [Advanced Save Options](advanced-save-options.md)
-- [Choose Toolbox Items (Maintenance Tasks Page)](choose-toolbox-items-maintenance-tasks-page.md)
-- [Customize (Commands Page)](customize-commands-page.md)
-- [Customize (Toolbars Page)](customize-toolbars-page.md)
-- [External Tools](external-tools.md)
+- [Choose toolbox items (Maintenance Tasks page)](choose-toolbox-items-maintenance-tasks-page.md)
+- [Customize (Commands page)](customize-commands-page.md)
+- [Customize (Toolbars page)](customize-toolbars-page.md)
+- [External tools](external-tools.md)
 - [Open With (New File)](open-with-new-file.md)
 - [Save As](save-as.md)
 - [Save Changes](save-changes.md)
