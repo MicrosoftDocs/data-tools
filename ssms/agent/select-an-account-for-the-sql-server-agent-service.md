@@ -3,7 +3,7 @@ title: Select an Account for the SQL Server Agent Service
 description: The service startup account defines the Microsoft Windows account in which SQL Server Agent runs and its network permissions.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 07/26/2024
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -104,4 +104,4 @@ Use SQL Server Configuration Manager to specify that SQL Server Agent must start
 
 - [Configure Windows service accounts and permissions](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)
 - [SQL Server Configuration Manager: Connect to another computer](/sql/database-engine/configure-windows/scm-services-connect-to-another-computer)
-- [Implement SQL Server Agent Security](implement-sql-server-agent-security.md)
+- [Implement SQL Server Agent security](implement-sql-server-agent-security.md)

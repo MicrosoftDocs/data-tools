@@ -1,10 +1,10 @@
 ---
 title: "SQL Server Agent"
-description: Learn about the SQL Server Agent, used to schedule administrative tasks in SQL Server and Azure SQL Managed Instance.
+description: Learn about the SQL Server Agent, which you can use to schedule administrative tasks in SQL Server and Azure SQL Managed Instance.
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mathoma
-ms.date: 09/17/2025
+ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "automatic administration steps"
 ---
 
-# SQL Server Agent
+# SQL Server Agent overview
 
 [!INCLUDE [SQL Server SQL MI](../includes/applies-to-version/sql-asdbmi.md)]
 
@@ -95,7 +95,7 @@ An alert can perform the following actions:
 - Notify one or more operators
 - Run a job
 
-For more information, see [Alerts](alerts.md).
+For more information, see [SQL Server Agent alerts](alerts.md).
 
 ### Operators
 
@@ -135,7 +135,7 @@ Members of the **SQLAgentUserRole**, **SQLAgentReaderRole**, and **SQLAgentOpera
 
 ### Subsystems
 
-A subsystem is a predefined object that represents functionality that is available to a job step. Each proxy has access to one or more subsystems. Subsystems provide security because they delimit access to the functionality that is available to a proxy. Each job step runs in the context of a proxy, except for Transact-SQL job steps. Transact-SQL job steps use the `EXECUTE AS` command to set the security context to the owner of the Job.
+A subsystem is a predefined object that represents functionality that's available to a job step. Each proxy has access to one or more subsystems. Subsystems provide security because they delimit access to the functionality that's available to a proxy. Each job step runs in the context of a proxy, except for Transact-SQL job steps. Transact-SQL job steps use the `EXECUTE AS` command to set the security context to the owner of the Job.
 
 SQL Server defines the subsystems listed in the following table:
 
@@ -164,7 +164,7 @@ SQL Server Agent uses proxies to manage security contexts. A proxy can be used i
 
 Each proxy corresponds to a security credential. Each proxy can be associated with a set of subsystems and a set of logins. The proxy can be used only for job steps that use a subsystem associated with the proxy. To create a job step that uses a specific proxy, the job owner must either use a login associated with that proxy, or a member of a role with unrestricted access to proxies. Members of the **sysadmin** fixed server role have unrestricted access to proxies.
 
-Members of **SQLAgentUserRole**, **SQLAgentReaderRole**, or **SQLAgentOperatorRole** can only use proxies to which they are granted specific access. Each user that is a member of any of these SQL Server Agent fixed database roles must be granted access to specific proxies so that the user can create job steps that use those proxies.
+Members of **SQLAgentUserRole**, **SQLAgentReaderRole**, or **SQLAgentOperatorRole** can only use proxies to which they're granted specific access. Each user that is a member of any of these SQL Server Agent fixed database roles must be granted access to specific proxies so that the user can create job steps that use those proxies.
 
 ## Automate administration
 
@@ -172,7 +172,7 @@ Use the following steps to configure SQL Server Agent to automate SQL Server adm
 
 1. Establish which administrative tasks or server events occur regularly and whether these tasks or events can be administered programmatically. A task is a good candidate for automation if it involves a predictable sequence of steps and occurs at a specific time or in response to a specific event.
 
-1. Define a set of jobs, schedules, alerts, and operators by using SQL Server Management Studio, Transact-SQL scripts, or SQL Server Management Objects (SMO). For more information, see [Create Jobs](create-jobs.md).
+1. Define a set of jobs, schedules, alerts, and operators by using SQL Server Management Studio, Transact-SQL scripts, or SQL Server Management Objects (SMO). For more information, see [Create SQL Server Agent jobs](create-jobs.md).
 
 1. Run the SQL Server Agent jobs you defined.
 
@@ -201,7 +201,7 @@ Use the following tasks to get started with SQL Server Agent:
 
 [!INCLUDE [sssql25-md](../includes/sssql25-md.md)] introduces TDS 8.0 and TLS 1.3 support for the SQL Server Agent, which can use strict encryption. SQL Server Agent discovers the level of encryption configured in the **SQL Server Configuration Manager** (`Force Strict Encryption`, `Force Encryption`, or none) and uses the corresponding option to connect to SQL Server (`strict`, `mandatory`, or `optional`). SQL Agent T-SQL jobs connecting to the local instance use the SQL Server Agent encryption settings. This means that if SQL Server Agent connects with `strict` encryption, then a local T-SQL job also connects with the same level of encryption.
 
-| TLS version enabled | SQL Config Manager<br />Configuration setting | Expected SQL Server Agent outcome | Descrption |
+| TLS version enabled | SQL Config Manager<br />Configuration setting | Expected SQL Server Agent outcome | Description |
 | --- | --- | --- | --- |
 | TLS 1.3 | Force Strict Encryption | Successful connection and start | TDS 8.0 uses `strict` encryption |
 | TLS 1.3 | Force Encryption | Failure to connect and start | TLS 1.3 requires `strict` |
