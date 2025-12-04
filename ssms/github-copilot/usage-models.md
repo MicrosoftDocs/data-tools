@@ -5,7 +5,7 @@ description: Learn how to manage model use in the GitHub Copilot Chat experience
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 11/11/2025
+ms.date: 12/04/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -47,6 +47,7 @@ When your [premium request quota](https://docs.github.com/copilot/get-started/pl
 ## Related content
 
 - [AI model comparison](https://docs.github.com/copilot/reference/ai-models/model-comparison)
+- [Hosting of models for GitHub Copilot Chat](https://docs.github.com/copilot/reference/ai-models/model-hosting)
 - [Requests in GitHub Copilot](https://docs.github.com/copilot/concepts/billing/copilot-requests#premium-requests)
 - [GitHub Copilot billing](https://docs.github.com/copilot/concepts/billing/billing-for-individuals)
 - [GitHub support](https://support.github.com/request/landing)
