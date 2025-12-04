@@ -49,7 +49,7 @@ Open a query editor window and connect to a database. Within the Chat window, th
 
 Support for GitHub Copilot Chat is provided by [GitHub](https://support.github.com).
 
-To learn more about Copilot's security, privacy, compliance, and transparency, see the [GitHub Copilot Trust Center FAQ](https://copilot.github.trust.page/faq) and [Response use of GitHub Copilot features](https://docs.github.com/copilot/responsible-use).
+To learn more about Copilot's security, privacy, compliance, and transparency, see the [GitHub Copilot Trust Center FAQ](https://copilot.github.trust.page/faq) and [Responsible use of GitHub Copilot features](https://docs.github.com/copilot/responsible-use).
 
 ## Related content
 
