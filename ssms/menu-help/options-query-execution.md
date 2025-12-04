@@ -4,7 +4,7 @@ description: SSMS Options (Query Execution)
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 09/15/2025
+ms.date: 12/17/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -39,7 +39,7 @@ Use this page to specify the options for running Microsoft SQL Server queries. T
 
 - **By default, open new queries in SQLCMD Mode**
 
-  Select this check box to open new queries in SQLCMD mode. This check box is visible only when the dialog box is opened through the Tools menu.
+  Select this check box to open new queries in [SQLCMD mode](../scripting/sqlcmd-scripts-query-editor.md). This check box is visible only when the dialog box is opened through the **Tools** menu.
 
   When you select this option, be aware of the following limitations:
 
