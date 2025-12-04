@@ -5,7 +5,7 @@ description: Learn how to get started using GitHub Copilot in SQL Server Managem
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 11/11/2025
+ms.date: 12/04/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -49,7 +49,7 @@ Open a query editor window and connect to a database. Within the Chat window, th
 
 Support for GitHub Copilot Chat is provided by [GitHub](https://support.github.com).
 
-To learn more about Copilot's security, privacy, compliance, and transparency, see the [GitHub Copilot Trust Center FAQ](https://copilot.github.trust.page/faq).
+To learn more about Copilot's security, privacy, compliance, and transparency, see the [GitHub Copilot Trust Center FAQ](https://copilot.github.trust.page/faq) and [Response use of GitHub Copilot features](https://docs.github.com/copilot/responsible-use).
 
 ## Related content
 

@@ -5,7 +5,7 @@ description: Learn how to use the GitHub Copilot Chat experience in SQL Server M
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 11/11/2025
+ms.date: 12/04/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -15,7 +15,7 @@ ms.update-cycle: 180-days
 ---
 # Use the GitHub Copilot Chat experience in SQL Server Management Studio (Preview)
 
-The Chat window for GitHub Copilot in SQL Server Management Studio (SSMS) enables enhanced AI-assisted database administration and development in SSMS, helping you be more productive and efficient when working with your SQL database.
+The Chat window for GitHub Copilot in SQL Server Management Studio (SSMS) enables enhanced AI-assisted database administration and development in SSMS, helping you be more productive and efficient when working with your SQL database. Currently, the chat window only executes `SELECT` queries (read-only).
 
 In this article, you learn about using GitHub Copilot Chat in SSMS, a fully integrated AI-powered chat experience from GitHub Copilot that exists directly in SSMS. It enables you to get Transact-SQL (T-SQL) support, including syntax and context-specific help, without leaving the SSMS UI. Use the chat interface to submit your question as prompt and provide intent for better scoped answers.
 
@@ -52,7 +52,7 @@ Ask database and T-SQL questions in natural language and GitHub Copilot Chat wil
 
 There are two places you can ask Copilot these questions; in the chat window, or directly inline in the code that you're looking to modify, using inline chat. For questions where your goal is to modify or add to the SQL file you have open in the editor, the inline chat view might work best, whereas more general T-SQL questions are best answered in the chat pane.
 
-See tips to improve Copilot chat results to learn how to use [slash commands](chat-context.md#use-slash-commands-for-code-assistance), [reference files](chat-context.md#reference-other-files), and [threads](chat-context.md#manage-chat-history-context-with-threads) to get better answers with scoped context in Copilot Chat.
+To improve Copilot chat results, learn how to use [slash commands](chat-context.md#use-slash-commands-for-code-assistance), [reference files](chat-context.md#reference-other-files), and [threads](chat-context.md#manage-chat-history-context-with-threads) to get better answers with scoped context in Copilot Chat.
 
 ### Ask questions in the chat window
 
@@ -75,8 +75,12 @@ The inline chat view of Copilot Chat in SSMS enables you to ask your questions a
 1. You can promote your inline chat thread to the chat window by selecting **View in chat window**. This preserves the record and context of your conversation, and you can continue in the chat window.
 1. Select **Esc** to close the inline chat view.
 
+> [!NOTE]  
+> Queries from GitHub Copilot in SSMS are executed under the context of the user's login and permissions, whether from the chat window or inline chat view. There are no separate permissions for GitHub Copilot in SSMS.
+
 ## Related content
 
 - [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](get-started.md)
+- [Hosting of models for GitHub Copilot Chat](https://docs.github.com/copilot/reference/ai-models/model-hosting)
 - [Add context for GitHub Copilot in SQL Server Management Studio (Preview)](chat-context.md)
 - [Troubleshoot GitHub Copilot in SQL Server Management Studio (Preview)](troubleshoot.md)
