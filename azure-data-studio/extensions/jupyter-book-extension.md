@@ -172,7 +172,7 @@ Open the command palette again, and find the command that we registered, **Launc
 
    :::image type="content" source="media/jupyter-book-extension/jupyter-book-launch-ads.png" alt-text="Screenshot that shows the notebook-command.":::
 
-Congratulations! You built and can now ship your first Jupyter Book extension. For more information on Jupyter Books, see [Books with Jupyter](https://jupyterbook.org/intro.html).
+Congratulations! You built and can now ship your first Jupyter Book extension. For more information on Jupyter Books, see [Books with Jupyter](https://jupyterbook.org/v1/intro.html).
 
 ## Publish your extension to the Marketplace
 
