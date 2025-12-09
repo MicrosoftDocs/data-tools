@@ -4,7 +4,7 @@ description: Learn about known issues in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 11/11/2025
+ms.date: 12/09/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -20,7 +20,7 @@ This article lists known issues for [!INCLUDE [ssms-22-md](includes/ssms-22-md.m
 | Feature | Details | Workaround |
 | --- | --- | --- |
 | Analysis Services | After adding a new role, or when opening properties for an existing role, you can't use **Search by name or email address** to add a user. | Add users with the **Manual Entry** option. |
-| Arm64 | There is no support for SSAS, SSRS, and SSIS on Arm64 devices. | Run SSAS, SSRS, or SSIS on a device that isn't Arm64. |
+| Arm64 | There's no support for SSAS, SSRS, and SSIS on Arm64 devices. | Run SSAS, SSRS, or SSIS on a device that isn't Arm64. |
 | Arm64 - Data Classification | A LoadLibrary failure error message is displayed if you try to set Microsoft Information Protection Policy. | There's no workaround. |
 | Arm64 - Profiler | Trying to run Profiler results in an exception. | Run Profiler on a device that isn't Arm64. |
 | Arm64 - Replication | Trying to bring up the "Distributor Properties" form results in an exception. | Run SSMS on a device that isn't Arm64. |

@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 11/11/2025
+ms.date: 12/09/2025
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -31,11 +31,42 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.1.0"></a>
+
+### 22.1.0
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.1.0
+- Release date: December 9, 2025
+
+#### What's new in 22.1.0
+
+| Feature | Details |
+| --- | --- |
+| GitHub Copilot in SSMS (Preview) | Introduced the GitHub Copilot Walkthrough, available from the Copilot badge. |
+| GitHub Copilot in SSMS (Preview) | Added right-click menu support for Document, Explain, Fix, and Optimize code assistance. |
+| GitHub Copilot in SSMS (Preview) | Improved response time after submitting the first prompt for a thread. |
+| GitHub Copilot in SSMS (Preview) | Introduced Bring your own model (BYOM). |
+| GitHub Copilot in SSMS (Preview) | Updated the default model to be Claude 4.5 for paid subscriptions. |
+
+#### Bug fixes in 22.1.0
+
+| Feature | Description |
+| --- | --- |
+| Accessibility | Fixed an issue in Profiler to restore keyboard focus to the proper element when Profiler window is reactivated. |
+| Always Encrypted | Fixed a bug on the **New Column Master Key** page of the Always Encrypted Wizard that displayed the wrong name in the key vault dropdown. See [New Column Master Key Dialog doesn't show AKV names](https://developercommunity.visualstudio.com/t/New-Column-Master-Key-Dialog-doesnt-sho/10990450). |
+| Edit data | Resolved a crash that occurred when editing data for a table with a hierarchyid data type. See [Crash when data-editing Table with a hierarchyid column containing brackets ( ) in the name](https://developercommunity.visualstudio.com/t/Crash-when-data-editing-Table-with-a-hie/10978934). |
+| GitHub Copilot in SSMS (Preview) | Reintroduced the `/optimize` code assistance command. |
+| GitHub Copilot in SSMS (Preview) | Fixed the issue where Copilot displayed `Run ValidateGeneratedTQL` repeatedly and didn't answer, or answered incorrectly. See [SSMS v22 Copilot taking minutes to respond, generating inaccurate results](https://developercommunity.visualstudio.com/t/SSMS-v22-Copilot-taking-minutes-to-respo/11006503). |
+| GitHub Copilot in SSMS (Preview) | Fixed the error `An exception was encountered while constructing the content of this frame`. See [Copilot Chat not working. Exception thrown.](https://developercommunity.visualstudio.com/t/Copilot-Chat-not-working-Exception-thro/11007777). |
+| GitHub Copilot in SSMS (Preview) | Updated the query to identify blocking to account for sleeping sessions. |
+| Profiler | Removed CTP from the SQL Server 2025 entry in the **Trace provider type**. |
+| Query Hint Recommendation Tool (Preview) | Addressed an issue that inserted a query hint after an existing semicolon instead of before it. |
+
 <a id="22.0.0"></a>
 
 ### 22.0.0
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.0.0
 - Release date: November 11, 2025
