@@ -51,9 +51,14 @@ After the bootstrapper finishes downloading the layout files, the local layout f
 > [!NOTE]  
 > Make sure that your full installation path is fewer than 80 characters and that your machine has ample storage. SQL Server Management Studio requires a minimum of 4-GB of disk space. For more information, see [System requirements for SQL Server Management Studio](../system-requirements.md).
 
+<a id="validate-certificate"></a>
+
 ### Step 3 - Install SSMS from the local layout
 
 Before installing SSMS from a local layout in an offline environment, confirm that the necessary [certificates are installed](install-certificates.md) on the machine.
+
+> [!WARNING]
+> If the certificates aren't installed properly, the [installer fails silently](install-certificates.md#validate-a-certificate-for-offline-installations).
 
 When you install SSMS from a local layout, the Visual Studio Installer uses the local versions of the files. If you select components during installation that aren't in the layout, then the Visual Studio Installer attempts to download them from the internet. To make sure you install only the files you previously downloaded, use the same [command-line options](command-line-parameters.md) you used to create the local layout. To make sure your installer doesn't try to access the internet when it's installing the product, use the `--noweb` switch.
 
