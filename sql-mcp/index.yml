@@ -1,0 +1,15 @@
+### YamlMime:Hub
+title: SQL MCP Server documentation
+summary: Integrate SQL database capabilities with AI applications using SQL MCP Server.
+brand: sql
+metadata:
+  title: SQL MCP Server Documentation
+  titleSuffix:
+  description: Learn how to use SQL MCP Server to integrate SQL database capabilities with AI applications. Get started with setup, configuration, and examples.
+  ms.topic: overview
+  ms.date: 12/18/2025
+highlightedContent:
+  items:
+    - title: Introduction to SQL MCP Server
+      itemType: overview
+      url: overview.md
