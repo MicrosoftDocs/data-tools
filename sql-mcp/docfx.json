@@ -18,13 +18,23 @@
           "ThirdPartyNotices.md",
           "SECURITY.md"
         ]
+      },
+      {
+        "files": [
+          "zone-pivot-groups.yml"
+        ],
+        "src": "zone-pivots",
+        "dest": "zone-pivots/cosmos-db/"
       }
     ],
     "resource": [
       {
         "files": [
+          "**/*.gif",
+          "**/*.jpeg",
+          "**/*.jpg",
           "**/*.png",
-          "**/*.jpg"
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -38,11 +48,38 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-DocsSQL",
+      "permissioned-type": "public",
       "breadcrumb_path": "~/breadcrumb/sql-mcp/toc.yml",
+      "zone_pivot_group_filename": "zone-pivots/zone-pivot-groups.json",
       "feedback_system": "Standard",
-      "permissioned-type": "public"
+      "feedback_github_repo": "azure/data-api-builder",
+      "feedback_product_url": "https://feedback.azure.com/d365community/forum/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0",
+      "feedback_help_link_url": "https://learn.microsoft.com/answers/tags/191/sql-server",
+      "feedback_help_link_type": "get-help-at-qna"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "titleSuffix": {
+        "**/*.md": "SQL MCP Server",
+        "**/*.yml": "SQL MCP Server"
+      },
+      "author": {
+        "**/*.md": "jnixon",
+        "**/*.yml": "jnixon"
+      },
+      "ms.author": {
+        "**/*.md": "jerrynixon",
+        "**/*.yml": "jerrynixon"
+      },
+      "ms.reviewer": {
+        "*.md": "sidandrews",
+        "*.yml": "sidandrews"
+      },
+      "ms.service": {
+        "*.md": "data-api-builder",
+        "*.yml": "data-api-builder"
+      }
+    },
     "template": []
   }
 }

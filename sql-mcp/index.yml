@@ -6,10 +6,6 @@ metadata:
   title: SQL MCP Server Documentation
   titleSuffix:
   description: Learn how to use SQL MCP Server to integrate SQL database capabilities with AI applications. Get started with setup, configuration, and examples.
-  author: jnixon
-  ms.author: jerrynixon
-  ms.reviewer: sidandrews
-  ms.service: data-api-builder
   ms.topic: overview
   ms.date: 12/18/2025
 highlightedContent:
