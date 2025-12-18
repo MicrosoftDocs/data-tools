@@ -1,5 +1,10 @@
 ---
+author: jnixon
+ms.author: jerrynixon
+ms.reviewer: sidandrews
+ms.service: data-api-builder
 ms.topic: include
+ms.date: 12/09/2025
 ---
 
 > [!IMPORTANT]
