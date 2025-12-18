@@ -3,7 +3,7 @@ title: "Color Coding in Query Editors"
 description: Learn how text categories are color coded to help you more easily find specific text, and how you can configure a custom color scheme.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/15/2025
+ms.date: 12/17/2025
 ms.service: sql-server-management-studio
 ms.topic: article
 ms.collection:
@@ -25,7 +25,7 @@ The text entered in the code editors is assigned a category; each category is id
 | --- | --- |
 | Red | Transact-SQL string |
 | Dark green | Comment |
-| Black on silver background | `SQLCMD` command |
+| Black on silver background | [SQLCMD mode](sqlcmd-scripts-query-editor.md) |
 | Magenta | System function |
 | Green | System table, view, or table-valued function. Also, the system schemas `sys` and `INFORMATION_SCHEMA`. |
 | Blue | Keyword |

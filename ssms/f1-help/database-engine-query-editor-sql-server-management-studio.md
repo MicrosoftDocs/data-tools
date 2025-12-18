@@ -3,7 +3,7 @@ title: SSMS Query Editor
 description: SQL Server Management Studio (SSMS) Query Editor
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 12/01/2025
+ms.date: 12/17/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -298,7 +298,7 @@ If the help search engine doesn't find an article with an F1 help keyword that e
 | View and use the basic features in the MDX Query Editor. | [Create Analysis Services Scripts](/analysis-services/instances/create-analysis-services-scripts-in-management-studio) |
 | View and use the basic features in the DMX Query Editor. | [Create a DMX Query](/analysis-services/data-mining/create-a-dmx-query-in-sql-server-management-studio) |
 | View and use the basic features in the XML/A Editor. | [XML editor](../scripting/xml-editor-sql-server-management-studio.md) |
-| How to use the sqlcmd features in the Database Engine Query Editor. | [Edit SQLCMD Scripts with Query Editor](/sql/tools/sqlcmd/edit-sqlcmd-scripts-query-editor) |
+| How to use the sqlcmd features in the Database Engine Query Editor. | [Edit SQLCMD scripts with Query Editor](../scripting/sqlcmd-scripts-query-editor.md) |
 | How to use code snippets in the Database Engine Query Editor. Snippets are templates for commonly used statements or blocks, and can be customized or extended to include site-specific snippets. | [Add Transact-SQL snippets](../scripting/add-transact-sql-snippets.md) |
 | How to use the Transact-SQL debugger to step through code and view debugging information such as the values in variables and parameters. | [Transact-SQL debugger](/sql/ssdt/debugger/transact-sql-debugger) |
 

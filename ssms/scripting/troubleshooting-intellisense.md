@@ -52,7 +52,7 @@ The following issues apply to the [!INCLUDE [ssDEnoversion](../includes/ssdenove
 
 - IntelliSense is only available when the [!INCLUDE [ssDE](../includes/ssde-md.md)] Query Editor is connected to an instance of the [!INCLUDE [ssDE](../includes/ssde-md.md)] from [!INCLUDE [sql2008-md](../includes/sql2008-md.md)] or later. IntelliSense isn't available when the Query Editor is connected to earlier versions of the [!INCLUDE [ssDE](../includes/ssde-md.md)].
 
-- IntelliSense is turned off in the [!INCLUDE [ssDE](../includes/ssde-md.md)] Query Editor when the SQLCMD mode is set on.
+- IntelliSense is turned off in the [!INCLUDE [ssDE](../includes/ssde-md.md)] Query Editor when [SQLCMD mode](sqlcmd-scripts-query-editor.md) is turned on.
 
 - IntelliSense functionality doesn't cover database objects created by another connection after your editor window connected to the database. If objects are missing from IntelliSense features such as completion lists, you can choose one of these three mechanisms to refresh the cache of objects for your editor window:
 
