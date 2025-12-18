@@ -1,0 +1,7 @@
+- name: SQL MCP Server documentation
+  href: index.yml
+- name: Overview
+  expanded: true
+  items:
+    - name: What is SQL MCP Server?
+      href: overview.md
