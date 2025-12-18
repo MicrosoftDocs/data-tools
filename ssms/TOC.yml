@@ -697,46 +697,33 @@ items:
       - name: Script objects
         href: tutorials/scripting-ssms.md
       - name: Scripting of Database Engine
-        href: scripting/database-engine-scripting.md
         items:
-          - name: Query and Text Editors
-            href: /previous-versions/sql/sql-server-2012/ms173477(v=sql.110)?redirectedfrom=MSDN
-          - name: XML Editor
-            href: scripting/xml-editor-sql-server-management-studio.md
-          - name: Configure Editors
+          - name: Overview
+            href: scripting/database-engine-scripting.md
+          - name: Query and text editors
+            href: /previous-versions/sql/sql-server-2012/ms173477(v=sql.110)
+          - name: Configure editors
             href: scripting/configure-editors-sql-server-management-studio.md
-          - name: Associate File Extensions to a Code Editor
+          - name: Associate file extensions to a code editor
             href: scripting/associate-file-extensions-to-a-code-editor.md
-          - name: Change Font Color, Size, and Style
+          - name: Change font color, size, and style
             href: scripting/change-font-color-size-and-style.md
-          - name: Use the Properties Window in Management Studio
+          - name: Use the Properties window in Management Studio
             href: scripting/use-the-properties-window-in-management-studio.md
-          - name: Open an Editor
+          - name: Open an editor
             href: scripting/open-an-editor-sql-server-management-studio.md
-          - name: Manage the Editor and View Mode
+          - name: Manage the editor and view mode
             href: scripting/manage-the-editor-and-view-mode.md
-          - name: Manage Code Formatting
+          - name: Manage code formatting
             href: scripting/manage-code-formatting.md
-          - name: Navigate Code and Text
+          - name: Navigate code and text
             href: scripting/navigate-code-and-text.md
-          - name: Color Coding in Query Editors
+          - name: Color coding in query editors
             href: scripting/color-coding-in-query-editors.md
-          - name: Configure Editors
-            href: scripting/configure-editors-sql-server-management-studio.md
-          - name: Associate File Extensions to a Code Editor
-            href: scripting/associate-file-extensions-to-a-code-editor.md
-          - name: Change Font Color, Size, and Style
-            href: scripting/change-font-color-size-and-style.md
-          - name: Use the Properties Window in Management Studio
-            href: scripting/use-the-properties-window-in-management-studio.md
-          - name: Open an Editor
-            href: scripting/open-an-editor-sql-server-management-studio.md
-          - name: Manage the Editor and View Mode
-            href: scripting/manage-the-editor-and-view-mode.md
-          - name: Manage Code Formatting
-            href: scripting/manage-code-formatting.md
-          - name: Navigate Code and Text
-            href: scripting/navigate-code-and-text.md
+          - name: Edit scripts in SQLCMD mode
+            href: scripting/sqlcmd-scripts-query-editor.md
+          - name: XML editor
+            href: scripting/xml-editor-sql-server-management-studio.md
       - name: Scripting with SSMS
         items:
           - name: Generate scripts
@@ -747,17 +734,14 @@ items:
                 href: scripting/generate-and-publish-scripts-wizard.md
               - name: Objects supported by the Generate Scripts Wizard
                 href: scripting/objects-supported-by-the-generate-scripts-wizard.md
-              - name: XML editor
-                href: scripting/xml-editor-sql-server-management-studio.md
-              - name: Color coding in query editors
-                href: scripting/color-coding-in-query-editors.md
           - name: Code outlining
             href: scripting/code-outlining.md
           - name: Drag and Drop Text
             href: scripting/drag-and-drop-text.md
           - name: Search and Replace
-            href: scripting/search-and-replace.md
             items:
+              - name: Overview
+                href: scripting/search-and-replace.md
               - name: Search an Active Document Incrementally
                 href: scripting/search-an-active-document-incrementally.md
               - name: Search Documents Interactively
@@ -775,15 +759,17 @@ items:
               - name: Replace in Files
                 href: scripting/replace-in-files.md
           - name: Manage Bookmarks
-            href: scripting/manage-bookmarks.md
             items:
+              - name: Overview
+                href: scripting/manage-bookmarks.md
               - name: Bookmarks F1 Help
                 href: scripting/bookmarks-f1-help.md
           - name: Print Code and Results
             href: scripting/print-code-and-results.md
           - name: IntelliSense
-            href: scripting/intellisense-sql-server-management-studio.md
             items:
+              - name: Overview
+                href: scripting/intellisense-sql-server-management-studio.md
               - name: Configure IntelliSense
                 href: scripting/configure-intellisense-sql-server-management-studio.md
               - name: Parameter Info (IntelliSense)
@@ -799,8 +785,9 @@ items:
               - name: T-SQL Syntax Supported by IntelliSense
                 href: scripting/transact-sql-syntax-supported-by-intellisense.md
           - name: T-SQL Code Snippets
-            href: scripting/transact-sql-code-snippets.md
             items:
+              - name: Overview
+                href: scripting/transact-sql-code-snippets.md
               - name: Insert T-SQL Snippets
                 href: scripting/insert-transact-sql-snippets.md
               - name: Insert Surround-with T-SQL snippets
@@ -812,8 +799,9 @@ items:
               - name: Status Bar (Database Engine Query Editor)
                 href: scripting/status-bar-database-engine-query-editor.md
               - name: View Spatial Data in Object Explorer
-                href: scripting/view-spatial-data-in-object-explorer.md
                 items:
+                  - name: Overview
+                    href: scripting/view-spatial-data-in-object-explorer.md
                   - name: Spatial Results Window
                     href: scripting/spatial-results-window.md
 
@@ -1106,8 +1094,9 @@ items:
   - name: Monitor and troubleshoot
     items:
       - name: Log file viewer >
-        href: /sql/relational-databases/logs/log-file-viewer
         items:
+          - name: Overview >
+            href: /sql/relational-databases/logs/log-file-viewer
           - name: F1 help >
             href: /sql/relational-databases/logs/log-file-viewer-f1-help
           - name: Open >
