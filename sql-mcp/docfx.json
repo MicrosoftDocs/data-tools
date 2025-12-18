@@ -64,12 +64,12 @@
         "**/*.yml": "SQL MCP Server"
       },
       "author": {
-        "**/*.md": "jnixon",
-        "**/*.yml": "jnixon"
-      },
-      "ms.author": {
         "**/*.md": "jerrynixon",
         "**/*.yml": "jerrynixon"
+      },
+      "ms.author": {
+        "**/*.md": "jnixon",
+        "**/*.yml": "jnixon"
       },
       "ms.reviewer": {
         "*.md": "sidandrews",

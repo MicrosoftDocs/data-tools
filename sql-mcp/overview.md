@@ -23,7 +23,7 @@ SQL MCP Server is Microsoft's dynamic, open source engine for agentic apps. You 
 - Which tables, views, or stored procedures to expose
 - The permissions that apply to each object
 
-SQL MCP Server is included as part of Data API builder (DAB) starting in version 1.7. It exposes SQL operations as a small [family of MCP tools](#the-dml-tools) so agents can interact with database entities through a controlled contract. The server is self hosted but, for developers, it can also run locally through the [DAB command-line](../command-line/index.yml).
+SQL MCP Server is included as part of Data API builder (DAB) starting in version 1.7. It exposes SQL operations as a small family of MCP tools so agents can interact with database entities through a controlled contract. The server is self hosted but, for developers, it can also run locally through the [DAB command-line](/azure/data-api-builder/command-line/index.yml).
 
 > [!TIP]
 > Data API builder is open source and free to use.
