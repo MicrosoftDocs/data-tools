@@ -140,8 +140,8 @@ This command starts the SQL MCP Server. After startup, the terminal output shows
 
 ### Open your project folder
 
-1. Select **File** > **Open Folder**
-2. Open the folder that contains your `dab-config.json` file
+1. Select **File** > **Open Folder**.
+2. Open the folder that contains your `dab-config.json` file.
 
 ### Create your MCP server definition
 

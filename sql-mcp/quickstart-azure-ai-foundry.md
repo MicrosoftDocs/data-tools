@@ -32,27 +32,27 @@ You need access to Azure AI Foundry with an existing project and access to a cha
 
 ## Step 1: Access Azure AI Foundry
 
-1. Navigate to https://ai.azure.com
-2. In the header, select the **new Foundry experience** (preview toggle)
-3. Select your Foundry project
-4. In the left navigation, select **Playground**
+1. Navigate to https://ai.azure.com.
+2. In the header, select the **new Foundry experience** (preview toggle).
+3. Select your Foundry project.
+4. In the left navigation, select **Playground**.
 
 > [!NOTE]
 > UI text and navigation may vary as Azure AI Foundry evolves. For the latest guidance, see [MCP tools in Azure AI Foundry](/azure/ai-foundry/agents/concepts/tool-catalog).
 
 ## Step 2: Create or open an agent
 
-1. Select an existing agent or create a new one
-2. In the agent configuration, locate the **Tools** section on the left panel
+1. Select an existing agent or create a new one.
+2. In the agent configuration, locate the **Tools** section on the left panel.
 
 ## Step 3: Add a Model Context Protocol tool
 
-1. In the **Tools** section, select **Add** (the button may show a dropdown or **+** icon)
-2. Select **Add a new tool** from the dropdown
-3. The **Select a tool** dialog opens with three tabs: **Configured**, **Catalog**, and **Custom**
-4. Select the **Custom** tab at the top
-5. Select **Model Context Protocol (MCP)** from the available options
-6. Select **Create** to proceed
+1. In the **Tools** section, select **Add** (the button may show a dropdown or **+** icon).
+2. Select **Add a new tool** from the dropdown.
+3. The **Select a tool** dialog opens with three tabs: **Configured**, **Catalog**, and **Custom**.
+4. Select the **Custom** tab at the top.
+5. Select **Model Context Protocol (MCP)** from the available options.
+6. Select **Create** to proceed.
 
 ## Step 4: Configure your MCP connection
 
@@ -60,15 +60,15 @@ The **Add Model Context Protocol tool** dialog appears. Fill in the following in
 
 ### Name (required)
 
-Enter a descriptive name: `products-mcp`
+Enter a descriptive name: `products-mcp`.
 
 ### Remote MCP Server endpoint (required)
 
-Enter your MCP server URL: `https://<your-container-app-url>/mcp` (from your Azure Container Apps deployment)
+Enter your MCP server URL: `https://<your-container-app-url>/mcp` (from your Azure Container Apps deployment).
 
 ### Authentication (required)
 
-Select **Unauthenticated** from the dropdown
+Select **Unauthenticated** from the dropdown.
 
 > [!NOTE]
 > This configuration works because the Azure Container Apps quickstart configured **anonymous** permissions (for example, `anonymous:read`). At the time of writing, this quickstart uses Unauthenticated mode. If you enable authentication on your MCP server, configure the MCP tool accordingly (authentication configuration is not covered in this quickstart).
@@ -135,33 +135,34 @@ What's the most expensive product, and how many do we have in stock?
 ```
 
 The agent should:
-1. Query products sorted by Price descending
-2. Return the top result with Inventory count
+
+- Query products sorted by Price descending
+- Return the top result with Inventory count
 
 ## Step 7: View tool calls
 
 In the Chat Playground, you can see tool calls and their arguments/responses:
 
-1. **Tool called**: The schema discovery or query tool used
-2. **Arguments**: The parameters passed (filters, fields, etc.)
-3. **Response**: The data returned from your SQL database
+- **Tool called**: The schema discovery or query tool used
+- **Arguments**: The parameters passed (filters, fields, etc.)
+- **Response**: The data returned from your SQL database
 
 ## Troubleshooting
 
 ### Tool not appearing in Azure AI Foundry
 
-- Verify the MCP URL is correct and accessible
-- Check that the Container App is running with public ingress enabled (see [monitoring guidance](quickstart-azure-container-apps.md#monitoring-and-troubleshooting))
-- Test the `/mcp` endpoint using curl or a REST client to verify reachability
+- Verify the MCP URL is correct and accessible.
+- Check that the Container App is running with public ingress enabled (see [monitoring guidance](quickstart-azure-container-apps.md#monitoring-and-troubleshooting)).
+- Test the `/mcp` endpoint using curl or a REST client to verify reachability.
 
 ### Tool calls require approval
 
-- In the MCP tool configuration, ensure **Require approval** is set to `never`
+- In the MCP tool configuration, ensure **Require approval** is set to `never`.
 
 ### Agent not using the tool
 
-- Check your system message includes clear instructions about when to use the tool
-- Try asking more specific questions that relate to the Products data
+- Check your system message includes clear instructions about when to use the tool.
+- Try asking more specific questions that relate to the Products data.
 
 For deployment issues, see the [troubleshooting section](quickstart-azure-container-apps.md#monitoring-and-troubleshooting) in the Azure Container Apps deployment guide.
 

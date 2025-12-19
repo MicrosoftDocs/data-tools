@@ -341,13 +341,13 @@ curl "https://$MCP_URL/health"
 
 ## Security best practices for production
 
-1. **Enable authentication** - Configure EntraID authentication instead of anonymous access
-2. **Use managed identities** - Let Container Apps authenticate to SQL using managed identity
-3. **Implement CORS** - Restrict which domains can access your MCP server
-4. **Enable rate limiting** - Protect against abuse
-5. **Use Azure Key Vault** - Store connection strings securely
-6. **Monitor with Application Insights** - Track usage and performance
-7. **Restrict permissions** - Only grant necessary access levels
+- **Enable authentication** - Configure EntraID authentication instead of anonymous access
+- **Use managed identities** - Let Container Apps authenticate to SQL using managed identity
+- **Implement CORS** - Restrict which domains can access your MCP server
+- **Enable rate limiting** - Protect against abuse
+- **Use Azure Key Vault** - Store connection strings securely
+- **Monitor with Application Insights** - Track usage and performance
+- **Restrict permissions** - Only grant necessary access levels
 
 ## Clean up resources
 
