@@ -2,7 +2,7 @@
 title: Data Manipulation Language Tools (DMT)
 description: Reference guide for the six DML tools that SQL MCP Server exposes to AI agents.
 ms.topic: concept-article
-ms.date: 12/18/2025
+ms.date: 12/19/2025
 ---
 
 # Data manipulation language (DML) tools in SQL MCP Server

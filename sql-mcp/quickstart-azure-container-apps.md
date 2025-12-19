@@ -2,7 +2,7 @@
 title: Quickstart - Azure Container Apps
 description: Learn how to deploy SQL MCP Server to Azure Container Apps and connect it to Azure AI Foundry agents. Step-by-step guide with Azure CLI deployment steps.
 ms.topic: quickstart
-ms.date: 12/18/2025
+ms.date: 12/19/2025
 ---
 
 # Quickstart: Use SQL MCP Server with Azure Container Apps
