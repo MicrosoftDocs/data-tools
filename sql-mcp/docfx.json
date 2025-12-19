@@ -50,7 +50,7 @@
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-DocsSQL",
       "permissioned-type": "public",
-      "breadcrumb_path": "~/breadcrumb/sql-mcp/toc.yml",
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
       "zone_pivot_group_filename": "zone-pivots/zone-pivot-groups.json",
       "feedback_system": "Standard",
       "feedback_github_repo": "azure/data-api-builder",
@@ -60,6 +60,7 @@
     },
     "fileMetadata": {
       "titleSuffix": {
+        "**/index.yml": "",
         "**/*.md": "SQL MCP Server",
         "**/*.yml": "SQL MCP Server"
       },
