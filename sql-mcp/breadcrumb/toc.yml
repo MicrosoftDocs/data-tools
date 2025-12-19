@@ -3,5 +3,5 @@
   topicHref: /sql/index
   items:
     - name: SQL MCP Server
-      tocHref: /mcp/
-      topicHref: /mcp/index
+      tocHref: /sql/mcp/
+      topicHref: /sql/mcp/index
