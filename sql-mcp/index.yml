@@ -4,7 +4,6 @@ summary: Integrate SQL database capabilities with AI applications using SQL MCP 
 brand: sql
 metadata:
   title: SQL MCP Server Documentation
-  titleSuffix:
   description: Learn how to use SQL MCP Server to integrate SQL database capabilities with AI applications. Get started with setup, configuration, and examples.
   ms.topic: hub-page
   ms.date: 12/18/2025
