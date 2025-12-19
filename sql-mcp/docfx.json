@@ -81,8 +81,8 @@
         "*.yml": "data-api-builder"
       },
       "ms.subservice": {
-        "*.md": "sql-mcp",
-        "*.yml": "sql-mcp"
+        "*.md": "sql-mcp-server",
+        "*.yml": "sql-mcp-server"
       }
     },
     "template": []
