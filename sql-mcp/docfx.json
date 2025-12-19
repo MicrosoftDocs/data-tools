@@ -60,6 +60,7 @@
     },
     "fileMetadata": {
       "titleSuffix": {
+        "**/index.yml": "",
         "**/*.md": "SQL MCP Server",
         "**/*.yml": "SQL MCP Server"
       },
