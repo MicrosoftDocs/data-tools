@@ -13,7 +13,7 @@ ms.date: 12/19/2025
 
 This quickstart shows you how to deploy SQL MCP Server to Azure Container Apps. Once deployed, you can connect to it from Visual Studio Code (VS Code), Microsoft Foundry, or any other Model Context Protocol (MCP) client as a remote server endpoint.
 
-:::image type="complex" source="media/quickstart-azure-container-apps/diagram.png" lightbox="media/quickstart-azure-container-apps/diagram.png" alt-text="Diagram that shows a SQL MCP Server deployed to Azure Container Apps.":::
+:::image type="complex" source="media/quickstart-azure-container-apps/diagram.svg" lightbox="media/quickstart-azure-container-apps/diagram.svg" alt-text="Diagram that shows a SQL MCP Server deployed to Azure Container Apps.":::
   This architecture diagram illustrates a production cloud deployment in Azure. Within Azure, an Azure Container Apps environment (blue-bordered rectangle) contains an MCP (Model Context Protocol) server (green 3D box). Outside the container apps boundary but still within Azure, a SQL database (blue cylinder) is positioned on the right. A curved arrow connects from the MCP server to the SQL database. This architecture represents a scalable production deployment where the MCP server runs as a containerized application that can automatically scale based on demand while maintaining secure connections to the separately managed database, making it suitable for production workloads where AI agents need reliable access to SQL data.
 :::image-end:::
 
