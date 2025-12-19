@@ -19,7 +19,9 @@ This quickstart uses Aspire to build a container-based solution. The solution in
 
 Aspire runs everything for you, starts services and connects containers, and stops services when you close it.
 
-![Diagram that shows the Aspire solution with SQL Server, SQL MCP Server, and MCP Inspector.](media/quickstart-dotnet-aspire/diagram.png)
+:::image type="complex" source="media/quickstart-dotnet-aspire/diagram.png" lightbox="media/quickstart-dotnet-aspire/diagram.png" alt-text="Diagram that shows the Aspire solution with SQL Server, SQL MCP Server, and MCP Inspector.":::
+  This architecture diagram illustrates a containerized testing environment on a Local Machine with a Docker Environment (dashed-border rectangle). Inside the Docker container, three components are arranged: an MCP Inspector tool (orange box), an MCP (Model Context Protocol) server (green 3D box), and a SQL database (blue cylinder). A curved arrow flows from the MCP Inspector to the MCP server, which has a bidirectional connection to the database. This setup enables developers to test, debug, and inspect the MCP server's interactions with a SQL database in an isolated containerized environment, with the MCP Inspector serving as a diagnostic tool to validate communication between AI agents and the database.
+:::image-end:::
 
 ## Prerequisites
 

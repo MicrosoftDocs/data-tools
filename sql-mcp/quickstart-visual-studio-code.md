@@ -13,7 +13,9 @@ ms.date: 12/19/2025
 
 This quickstart uses the Data API builder CLI to run a SQL MCP Server locally without Aspire. You create a database, configure a config file, start SQL MCP Server, and connect to it from Visual Studio Code (VS Code) using a custom tool. This path is the easiest way to explore SQL MCP Server without containers or hosting frameworks.
 
-![Diagram that shows a local SQL MCP Server connected to Visual Studio Code.](media/quickstart-visual-studio-code/diagram.png)
+:::image type="complex" source="media/quickstart-visual-studio-code/diagram.png" lightbox="media/quickstart-visual-studio-code/diagram.png" alt-text="Diagram that shows a local SQL MCP Server connected to Visual Studio Code.":::
+  This architecture diagram illustrates a local development environment where GitHub Copilot connects to a Local Machine container. Inside the container, three components are arranged horizontally: VS Code (orange box), an MCP (Model Context Protocol) server (green 3D box), and a SQL database (blue cylinder). VS Code connects to the MCP server with a rightward arrow, and the MCP server has a bidirectional connection to the SQL database. This setup allows developers to leverage AI assistance through VS Code and GitHub Copilot for database operations during local development, with the MCP server acting as an intermediary that translates requests into database queries.
+:::image-end:::
 
 ## Prerequisites
 

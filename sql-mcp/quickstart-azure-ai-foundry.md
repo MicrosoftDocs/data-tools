@@ -16,7 +16,9 @@ This quickstart shows you how to connect a deployed SQL MCP Server to Azure AI F
 > [!NOTE]
 > The **new Foundry experience** is in preview. You need to select the preview toggle in the header when you access https://ai.azure.com.
 
-![Diagram that shows a deployed SQL MCP Server connected to Azure AI Foundry.](media/quickstart-azure-ai-foundry/diagram.png)
+:::image type="complex" source="media/quickstart-azure-ai-foundry/diagram.png" lightbox="media/quickstart-azure-ai-foundry/diagram.png" alt-text="Diagram that shows a deployed SQL MCP Server connected to Azure AI Foundry.":::
+  This architecture diagram illustrates a cloud-based AI agent system deployed in Azure. Within Azure, a Microsoft Foundry environment (blue-bordered rectangle) contains two components: a Custom Agent and a Custom Tool, connected by an arrow showing the flow from agent to tool. Below the Foundry container, an MCP (Model Context Protocol) server (green 3D box) connects to a SQL database (blue cylinder). An arrow flows from the Custom Tool to the MCP server, which has a bidirectional connection to the database. This architecture demonstrates how AI agents in Microsoft Foundry use custom tools to interact with SQL databases through the MCP server as an intermediary layer, enabling AI agents to query and manipulate data without direct database access.
+:::image-end:::
 
 ## Prerequisites
 
