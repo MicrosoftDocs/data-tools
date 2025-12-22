@@ -2,7 +2,7 @@
 title: Overview/Introduction
 description: Learn how SQL MCP Server enables AI agents to safely interact with SQL databases. Configure your data source and expose tables, views, and stored procedures through MCP tools.
 ms.topic: overview
-ms.date: 12/19/2025
+ms.date: 12/22/2025
 ---
 
 # What is SQL MCP Server?

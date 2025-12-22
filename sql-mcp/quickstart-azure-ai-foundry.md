@@ -2,7 +2,7 @@
 title: Quickstart - Azure AI Foundry
 description: Learn how to connect SQL MCP Server to Azure AI Foundry agents using Chat Playground. Test database queries with GPT models - no coding required.
 ms.topic: quickstart
-ms.date: 12/19/2025
+ms.date: 12/22/2025
 ---
 
 # Quickstart: Use SQL MCP Server with Azure AI Foundry
