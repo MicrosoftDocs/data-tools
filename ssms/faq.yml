@@ -103,7 +103,7 @@ sections:
         answer: |
           No.
 
-      - question: "Do you plan make SSMS open source?"
+      - question: "Do you plan to make SSMS open source?"
         answer: |
           No.
 
