@@ -1,2 +1,25 @@
-- name: Index
-  href: index.md
+- name: SQL MCP Server documentation
+  href: index.yml
+- name: Overview
+  expanded: true
+  items:
+    - name: What is SQL MCP Server?
+      href: overview.md
+- name: Get started
+  items:
+    - name: Azure AI Foundry
+      href: quickstart-azure-ai-foundry.md
+    - name: .NET Aspire
+      href: quickstart-dotnet-aspire.md
+    - name: Visual Studio Code
+      href: quickstart-visual-studio-code.md
+    - name: Azure Container Apps
+      href: quickstart-azure-container-apps.md
+- name: Tune and optimize
+  items:
+    - name: Add descriptions to entities
+      href: how-to-add-descriptions.md
+- name: Explore the architecture
+  items:
+    - name: Data manipulation tools
+      href: data-manipulation-language-tools.md

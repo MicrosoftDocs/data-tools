@@ -1,0 +1,7 @@
+- name: SQL
+  tocHref: /sql/
+  topicHref: /sql/index
+  items:
+    - name: SQL MCP Server
+      tocHref: /sql/mcp/
+      topicHref: /sql/mcp/index

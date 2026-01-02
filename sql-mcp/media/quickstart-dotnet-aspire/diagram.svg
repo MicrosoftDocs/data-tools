@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="420" height="320">
+  <!-- White Background -->
+  <rect x="0" y="0" width="420" height="320" fill="white"/>
+  
+  <!-- Local Machine Container -->
+  <rect x="20" y="30" width="380" height="270" fill="none" stroke="#666" stroke-width="2"/>
+  <rect x="20" y="30" width="380" height="30" fill="#666"/>
+  <text x="210" y="50" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="600">Local Machine</text>
+  
+  <!-- Docker Environment Container -->
+  <rect x="40" y="75" width="360" height="210" fill="#f0f0f0" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+  <rect x="40" y="75" width="360" height="30" fill="none" stroke="none"/>
+  <text x="220" y="95" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle" font-weight="600">Docker Environment</text>
+  
+  <!-- MCP Inspector Box -->
+  <rect x="60" y="125" width="90" height="70" fill="#ffb900" stroke="#d39200" stroke-width="2"/>
+  <text x="105" y="153" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#000" text-anchor="middle" font-weight="600">MCP</text>
+  <text x="105" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#000" text-anchor="middle" font-weight="600">Inspector</text>
+  
+  <!-- Arrow from Inspector to MCP -->
+  <path d="M 150 160 Q 190 160 215 180" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead3)"/>
+  
+  <!-- MCP Server (3D Box) -->
+  <defs>
+    <linearGradient id="mcpGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#90ee90;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5cb85c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <polygon points="190,180 190,240 250,240 250,180" fill="url(#mcpGradient3)" stroke="#4a934a" stroke-width="2"/>
+  <polygon points="190,180 205,168 265,168 250,180" fill="#b4f0b4" stroke="#4a934a" stroke-width="2"/>
+  <polygon points="250,180 265,168 265,228 250,240" fill="#7ed97e" stroke="#4a934a" stroke-width="2"/>
+  <text x="220" y="215" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#000" text-anchor="middle" font-weight="600">MCP</text>
+  
+  <!-- SQL Database (Cylinder) -->
+  <ellipse cx="330" cy="200" rx="40" ry="15" fill="#0078d4" stroke="#005a9e" stroke-width="2"/>
+  <rect x="290" y="200" width="80" height="40" fill="#0078d4" stroke="none"/>
+  <ellipse cx="330" cy="240" rx="40" ry="15" fill="#005a9e" stroke="#005a9e" stroke-width="2"/>
+  <line x1="290" y1="200" x2="290" y2="240" stroke="#005a9e" stroke-width="2"/>
+  <line x1="370" y1="200" x2="370" y2="240" stroke="#005a9e" stroke-width="2"/>
+  <text x="330" y="223" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="600">SQL</text>
+  
+  <!-- Arrow from MCP to SQL (bidirectional) -->
+  <line x1="250" y1="210" x2="290" y2="215" stroke="#000" stroke-width="2" marker-end="url(#arrowhead3)"/>
+  <line x1="290" y1="225" x2="250" y2="220" stroke="#000" stroke-width="2" marker-end="url(#arrowhead3)"/>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#000"/>
+    </marker>
+  </defs>
+</svg>
