@@ -1,0 +1,78 @@
+### YamlMime:Hub
+title: SQL MCP Server documentation
+summary: Enable AI agents to safely interact with SQL databases using Model Context Protocol. Built on Data API builder, SQL MCP Server provides deterministic, secure, and production-ready database operations for agentic applications.
+brand: sql
+metadata:
+  title: SQL MCP Server Documentation
+  description: Learn how to use SQL MCP Server to integrate SQL database capabilities with AI applications. Get started with setup, configuration, and examples.
+  ms.topic: hub-page
+  ms.date: 12/22/2025
+  ai-usage: ai-generated
+highlightedContent:
+  items:
+    - title: Introduction to SQL MCP Server
+      itemType: overview
+      url: overview.md
+    - title: Data manipulation tools
+      itemType: architecture
+      url: data-manipulation-language-tools.md
+    - title: Deploy to Azure Container Apps
+      itemType: deploy
+      url: quickstart-azure-container-apps.md
+    - title: Add descriptions to entities
+      itemType: how-to-guide
+      url: how-to-add-descriptions.md
+    - title: Data API builder documentation
+      itemType: reference
+      url: /azure/data-api-builder/
+    - title: Model Context Protocol specification
+      itemType: concept
+      url: https://spec.modelcontextprotocol.io/
+tools:
+  title: Get started with SQL MCP Server
+  summary: Deploy SQL MCP Server locally or to the cloud and connect it to your AI applications using these quickstart guides.
+  items:
+    - title: Visual Studio Code
+      imageSrc: https://learn.microsoft.com/media/logos/logo_vs-code.svg
+      url: quickstart-visual-studio-code.md
+    - title: .NET Aspire
+      imageSrc: https://learn.microsoft.com/media/logos/logo_net.svg
+      url: quickstart-dotnet-aspire.md
+    - title: Azure AI Foundry
+      imageSrc: https://learn.microsoft.com/media/logos/logo_azure.svg
+      url: quickstart-azure-ai-foundry.md
+    - title: Azure Container Apps
+      imageSrc: https://learn.microsoft.com/media/logos/logo_azure.svg
+      url: quickstart-azure-container-apps.md
+additionalContent:
+  sections:
+    - title: Core concepts
+      summary: Understand how SQL MCP Server enables AI agents to interact with databases safely using Model Context Protocol and Data API builder's proven architecture.
+      items:
+        - title: Model Context Protocol (MCP)
+          summary: Learn how MCP provides a standard way for AI agents to discover and call external tools with predictable inputs, outputs, and behavior.
+          links:
+            - text: What is SQL MCP Server?
+              url: overview.md
+            - text: Model Context Protocol specification
+              url: https://spec.modelcontextprotocol.io/
+        - title: Data manipulation tools
+          summary: Explore the six DML tools that SQL MCP Server exposes to AI agents for typed CRUD operations with full RBAC support.
+          links:
+            - text: Data manipulation tools reference
+              url: data-manipulation-language-tools.md
+            - text: Add descriptions to entities
+              url: how-to-add-descriptions.md
+        - title: Data API builder
+          summary: SQL MCP Server is built on Data API builder's entity abstraction layer, leveraging proven RBAC, caching, and telemetry capabilities.
+          links:
+            - text: Data API builder overview
+              url: /azure/data-api-builder/overview
+            - text: Configuration file structure
+              url: /azure/data-api-builder/configuration-file
+            - text: Role-based access control
+              url: /azure/data-api-builder/authorization
+  footer: |
+    SQL MCP Server is Microsoft's open-source solution for bringing AI agents into your data workflows. Built on Data API builder's proven entity abstraction, RBAC, and telemetry, SQL MCP Server provides a production-ready surface that works consistently across REST, GraphQL, and MCP.
+
+    Get started today with the **[Visual Studio Code quickstart](quickstart-visual-studio-code.md)** or deploy to **[Azure Container Apps](quickstart-azure-container-apps.md)** for production workloads.
