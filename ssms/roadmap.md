@@ -4,7 +4,7 @@ description: Roadmap for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 11/11/2025
+ms.date: 01/04/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # SQL Server Management Studio product roadmap
 
-This calendar year, SSMS had an unprecedented number of releases - 22 in total (including previews, major releases, and minor releases). After the GA release of SSMS 22, we're taking time to continue our commitment to evolving SSMS into a modern, consistent, and complete management tool for SQL Server and SQL databases across the Microsoft data platform. We're focused on extending support for [!INCLUDE [sssql25-md](includes/sssql25-md.md)], continuing to integrate with Fabric SQL experiences, and expanding our efforts related to theming and Arm64 support. We're also continuing our investment in AI-powered tooling enhancements to improve productivity and make intelligent recommendations more accessible throughout the management workflow.
+In the 2025 calendar year, SSMS had an unprecedented number of releases - 23 in total (including previews, major releases, and minor releases). After the GA release of SSMS 22, we're taking time to continue our commitment to evolving SSMS into a modern, consistent, and complete management tool for SQL Server and SQL databases across the Microsoft data platform. We're focused on extending support for [!INCLUDE [sssql25-md](includes/sssql25-md.md)], continuing to integrate with Fabric SQL experiences, and expanding our efforts related to theming and Arm64 support. We're also continuing our investment in AI-powered tooling enhancements to improve productivity and make intelligent recommendations more accessible throughout the management workflow.
 
 ## How we build our roadmap
 
