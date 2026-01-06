@@ -12,16 +12,16 @@ highlightedContent:
   items:
     - title: Introduction to SQL MCP Server
       itemType: overview
-      url: overview.md
+      url: /azure/data-api-builder/mcp/overview
     - title: Data manipulation tools
       itemType: architecture
-      url: data-manipulation-language-tools.md
+      url: /azure/data-api-builder/mcp/data-manipulation-language-tools
     - title: Deploy to Azure Container Apps
       itemType: deploy
-      url: quickstart-azure-container-apps.md
+      url: /azure/data-api-builder/mcp/quickstart-azure-container-apps
     - title: Add descriptions to entities
       itemType: how-to-guide
-      url: how-to-add-descriptions.md
+      url: /azure/data-api-builder/mcp/how-to-add-descriptions
     - title: Data API builder documentation
       itemType: reference
       url: /azure/data-api-builder/
@@ -34,16 +34,16 @@ tools:
   items:
     - title: Visual Studio Code
       imageSrc: https://learn.microsoft.com/media/logos/logo_vs-code.svg
-      url: quickstart-visual-studio-code.md
+      url: /azure/data-api-builder/mcp/quickstart-visual-studio-code
     - title: .NET Aspire
       imageSrc: https://learn.microsoft.com/media/logos/logo_net.svg
-      url: quickstart-dotnet-aspire.md
+      url: /azure/data-api-builder/mcp/quickstart-dotnet-aspire
     - title: Azure AI Foundry
       imageSrc: https://learn.microsoft.com/media/logos/logo_azure.svg
-      url: quickstart-azure-ai-foundry.md
+      url: /azure/data-api-builder/mcp/quickstart-azure-ai-foundry
     - title: Azure Container Apps
       imageSrc: https://learn.microsoft.com/media/logos/logo_azure.svg
-      url: quickstart-azure-container-apps.md
+      url: /azure/data-api-builder/mcp/quickstart-azure-container-apps
 additionalContent:
   sections:
     - title: Core concepts
@@ -53,16 +53,16 @@ additionalContent:
           summary: Learn how MCP provides a standard way for AI agents to discover and call external tools with predictable inputs, outputs, and behavior.
           links:
             - text: What is SQL MCP Server?
-              url: overview.md
+              url: /azure/data-api-builder/mcp/overview
             - text: Model Context Protocol specification
               url: https://spec.modelcontextprotocol.io/
         - title: Data manipulation tools
           summary: Explore the six DML tools that SQL MCP Server exposes to AI agents for typed CRUD operations with full RBAC support.
           links:
             - text: Data manipulation tools reference
-              url: data-manipulation-language-tools.md
+              url: /azure/data-api-builder/mcp/data-manipulation-language-tools
             - text: Add descriptions to entities
-              url: how-to-add-descriptions.md
+              url: /azure/data-api-builder/mcp/how-to-add-descriptions
         - title: Data API builder
           summary: SQL MCP Server is built on Data API builder's entity abstraction layer, leveraging proven RBAC, caching, and telemetry capabilities.
           links:
