@@ -75,4 +75,4 @@ additionalContent:
   footer: |
     SQL MCP Server is Microsoft's open-source solution for bringing AI agents into your data workflows. Built on Data API builder's proven entity abstraction, RBAC, and telemetry, SQL MCP Server provides a production-ready surface that works consistently across REST, GraphQL, and MCP.
 
-    Get started today with the **[Visual Studio Code quickstart](quickstart-visual-studio-code.md)** or deploy to **[Azure Container Apps](quickstart-azure-container-apps.md)** for production workloads.
+    Get started today with the **[Visual Studio Code quickstart](/azure/data-api-builder/mcp/quickstart-visual-studio-code)** or deploy to **[Azure Container Apps](/azure/data-api-builder/mcp/quickstart-azure-container-apps)** for production workloads.
