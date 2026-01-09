@@ -5,7 +5,7 @@ author: rwestMSFT
 ms.author: randolphwest
 ms.date: 08/15/2025
 ms.service: sql-server-management-studio
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.collection:
   - data-tools
 helpviewer_keywords:

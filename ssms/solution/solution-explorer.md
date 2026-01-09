@@ -6,7 +6,7 @@ author: rwestMSFT
 ms.author: randolphwest
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
-ms.topic: article
+ms.topic: concept-article
 ms.collection:
   - data-tools
 helpviewer_keywords:

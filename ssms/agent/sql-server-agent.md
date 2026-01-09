@@ -6,7 +6,7 @@ ms.author: randolphwest
 ms.reviewer: mathoma
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
-ms.topic: article
+ms.topic: overview
 ms.collection:
   - data-tools
 helpviewer_keywords:
