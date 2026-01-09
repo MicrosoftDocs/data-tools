@@ -6,7 +6,7 @@ ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
 ms.date: 12/09/2025
 ms.service: sql-server-management-studio
-ms.topic: article
+ms.topic: legal
 ms.collection:
   - data-tools
 helpviewer_keywords:
