@@ -6,7 +6,7 @@ ms.author: roblescarlos
 ms.reviewer: shaithal, randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
-ms.topic: article
+ms.topic: overview
 ms.collection:
   - data-tools
 ---

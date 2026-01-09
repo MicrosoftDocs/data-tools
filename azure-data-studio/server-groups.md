@@ -7,7 +7,7 @@ ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.update-cycle: 1825-days
 ms.service: azure-data-studio
-ms.topic: article
+ms.topic: how-to
 ms.collection:
   - data-tools
 ms.custom:

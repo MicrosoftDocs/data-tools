@@ -6,7 +6,7 @@ ms.author: roblescarlos
 ms.reviewer: randolphwest, maghan
 ms.date: 02/06/2025
 ms.service: azure-data-studio
-ms.topic: article
+ms.topic: get-started
 ms.collection:
   - data-tools
 ---
@@ -37,7 +37,7 @@ Now you can write and debug PowerShell scripts using the excellent IDE-like inte
 
 You can install the official release of the PowerShell extension by following the steps
 in the [Azure Data Studio documentation](./add-extensions.md).
-In the Extensions pane, search for "PowerShell" extension and install it there.  You will
+In the Extensions pane, search for "PowerShell" extension and install it there.  You'll
 get notified automatically about any future extension updates!
 
 You can also install a VSIX package from our [Releases page](https://github.com/PowerShell/vscode-powershell/releases) and install it through the command line:
@@ -56,7 +56,7 @@ Read the [FAQ](https://github.com/PowerShell/vscode-powershell/wiki/FAQ) for ans
 
 ## Installing PowerShell Core
 
-If you are running Azure Data Studio on macOS or Linux, you may also need to install PowerShell Core.
+If you're running Azure Data Studio on macOS or Linux, you may also need to install PowerShell Core.
 
 PowerShell Core is an Open Source project on [GitHub](https://github.com/powershell/powershell).
 For more information on installing PowerShell Core on macOS or Linux platforms, see the following articles:
@@ -76,7 +76,7 @@ This folder can be found at the following path:
 $HOME/.azuredatastudio/extensions/microsoft.powershell-<version>/examples
 ```
 
-or if you're using the preview version of the extension
+Or if you're using the preview version of the extension,
 
  ```powershell
 $HOME/.azuredatastudio/extensions/microsoft.powershell-preview-<version>/examples
@@ -118,11 +118,11 @@ For those users who are used to working with SSMS, you're used to being able to 
 
 The default is `true` for accessibility purposes.
 
-Be aware this setting will prevent the focus from changing to the console, even when you use a command that explicitly calls for input, like `Get-Credential`.
+Be aware this setting prevents the focus from changing to the console, even when you use a command that explicitly calls for input, like `Get-Credential`.
 
 ## SQL PowerShell Examples
 
-In order to use these examples (below), you need to install the SqlServer module from the [PowerShell Gallery](https://www.powershellgallery.com/packages/SqlServer).
+In order to use the following examples, you need to install the SqlServer module from the [PowerShell Gallery](https://www.powershellgallery.com/packages/SqlServer).
 
 ```powershell
 Install-Module -Name SqlServer
@@ -131,13 +131,13 @@ Install-Module -Name SqlServer
 > [!NOTE]
 > With version `21.1.18102` and up, the `SqlServer` module supports [PowerShell Core](https://github.com/PowerShell/PowerShell) 6.2 and up, in addition to Windows PowerShell.
 
-In this example, we use the `Get-SqlInstance` cmdlet to Get the Server SMO objects for ServerA & ServerB.  The default output for this command will include the Instance name, version, Service Pack, & CU Update Level of the instances.
+In this example, we use the `Get-SqlInstance` cmdlet to Get the Server SMO objects for ServerA & ServerB.  The default output for this command includes the Instance name, version, Service Pack, & CU Update Level of the instances.
 
 ```powershell
 Get-SqlInstance -ServerInstance ServerA, ServerB
 ```
 
-Here is a sample of what that output will look like:
+Here's a sample of what that output looks like:
 
 ```console
 Instance Name             Version    ProductLevel UpdateLevel  HostPlatform HostDistribution
@@ -146,7 +146,7 @@ ServerA                   13.0.5233  SP2          CU4          Windows      Wind
 ServerB                   14.0.3045  RTM          CU12         Linux        Ubuntu
 ```
 
-The `SqlServer` module contains a Provider called `SQLRegistration` which allows you to programatically access the following types of saved SQL Server connections:
+The `SqlServer` module contains a Provider called `SQLRegistration` that allows you to programatically access the following types of saved SQL Server connections:
 
 + Database Engine Server (Registered Servers)
 + Central Management Server (CMS)
@@ -154,13 +154,13 @@ The `SqlServer` module contains a Provider called `SQLRegistration` which allows
 + Integration Services
 + Reporting Services
 
- In the following example, we will do a `dir` (alias for `Get-ChildItem`) to get the list of all SQL Server instances listed in your Registered Servers file.
+ In the following example, we do a `dir` (alias for `Get-ChildItem`) to get the list of all SQL Server instances listed in your Registered Servers file.
 
 ```powershell
 dir 'SQLSERVER:\SQLRegistration\Database Engine Server Group' -Recurse
 ```
 
-Here is a sample of what that output could look like:
+Here's a sample of what that output could look like:
 
 ```powershell
 Mode Name
@@ -172,9 +172,9 @@ Mode Name
 -    localhost\SQL2017
 ```
 
-For many operations that involve a database, or objects within a database, the `Get-SqlDatabase` cmdlet can be used.  If you supply values for the both the `-ServerInstance` and `-Database` parameters, only that one database object will be retrieved.  However, if you specify only the `-ServerInstance` parameter, a full list of all databases on that instance will be returned.
+For many operations that involve a database, or objects within a database, the `Get-SqlDatabase` cmdlet can be used.  If you supply values for both the `-ServerInstance` and `-Database` parameters, only that one database object is retrieved.  However, if you specify only the `-ServerInstance` parameter, a full list of all databases on that instance is returned.
 
-Here is a sample of what that output will look like:
+Here's a sample of what that output looks like:
 
 ```console
 Name                 Status           Size     Space  Recovery Compat. Owner
@@ -191,7 +191,7 @@ tempdb               Normal       72.00 MB   61.25 MB Simple       140 sa
 WideWorldImporters   Normal         3.2 GB     2.6 GB Simple       130 sa
 ```
 
-This next example uses the `Get-SqlDatabase` cmdlet to retrieve a list of all databases on the ServerB instance, then presents a grid/table (using the `Out-GridView` cmdlet) to select which databases should be backed up.  Once the user clicks on the "OK" button, only the highlighted databases will be backed up.
+This next example uses the `Get-SqlDatabase` cmdlet to retrieve a list of all databases on the ServerB instance, then presents a grid/table (using the `Out-GridView` cmdlet) to select which databases should be backed up.  Once the user selects the "OK" button, only the highlighted databases are backed up.
 
 ```powershell
 Get-SqlDatabase -ServerInstance ServerB |
@@ -199,7 +199,7 @@ Out-GridView -PassThru |
 Backup-SqlDatabase -CompressionOption On
 ```
 
-This example, again, gets list of all SQL Server instances listed in your Registered Servers file, then calls the `Get-SqlAgentJobHistory` which reports every failed SQL Agent Job since Midnight, for each SQL Server instance listed.
+This example, again, gets a list of all SQL Server instances listed in your Registered Servers file, then calls the `Get-SqlAgentJobHistory`, which reports every failed SQL Agent Job since Midnight, for each SQL Server instance listed.
 
 ```powershell
 dir 'SQLSERVER:\SQLRegistration\Database Engine Server Group' -Recurse |
@@ -209,7 +209,7 @@ FOREACH {
 }
 ```
 
-In this example, we will do a `dir` (alias for `Get-ChildItem`) to get the list of all SQL Server instances listed in your Registered Servers file, and then use the `Get-SqlDatabase` cmdlet to get a list of Databases for each of those instances.
+In this example, we do a `dir` (alias for `Get-ChildItem`) to get the list of all SQL Server instances listed in your Registered Servers file, and then use the `Get-SqlDatabase` cmdlet to get a list of Databases for each of those instances.
 
 ```powershell
 dir 'SQLSERVER:\SQLRegistration\Database Engine Server Group' -Recurse |
@@ -219,7 +219,7 @@ FOREACH {
 }
 ```
 
-Here is a sample of what that output will look like:
+Here's a sample of what that output looks like:
 
 ```console
 Name                 Status           Size  Space     Recovery Compat. Owner
