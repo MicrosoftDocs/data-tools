@@ -5,7 +5,7 @@ author: rwestMSFT
 ms.author: randolphwest
 ms.date: "03/16/2017"
 ms.service: sql-server-management-studio
-ms.topic: article
+ms.topic: concept-article
 ms.collection:
   - data-tools
 helpviewer_keywords:
@@ -23,7 +23,7 @@ dev_langs:
  In [!INCLUDE[ssnoversion](../includes/ssnoversion-md.md)], IntelliSense supports only the most commonly used [!INCLUDE[tsql](../includes/tsql-md.md)] statements. Some general [!INCLUDE[ssDE](../includes/ssde-md.md)] Query Editor conditions might prevent IntelliSense from functioning. For more information, see [Troubleshooting IntelliSense &#40;SQL Server Management Studio&#41;](troubleshooting-intellisense.md).  
   
 > [!NOTE]  
->  IntelliSense is not available for encrypted database objects, such as encrypted stored procedures or user-defined functions. Parameter help and Quick Info are not available for the parameters of extended stored procedures and CLR Integration user-defined types.  
+>  IntelliSense isn't available for encrypted database objects, such as encrypted stored procedures or user-defined functions. Parameter help and Quick Info aren't available for the parameters of extended stored procedures and CLR Integration user-defined types.  
   
 ### SELECT Statement  
  The [!INCLUDE[ssDE](../includes/ssde-md.md)] Query Editor provides IntelliSense support for the following syntax elements in the SELECT statement:  
@@ -82,12 +82,12 @@ dev_langs:
 |[EXECUTE](/sql/t-sql/language-elements/execute-transact-sql)|Execution of user-defined stored procedures, system stored procedures, user-defined functions, and system functions.|None|  
 |[CREATE TABLE](/sql/t-sql/statements/create-table-transact-sql)|All syntax.|None|  
 |[CREATE VIEW](/sql/t-sql/statements/create-view-transact-sql)|All syntax.|None|  
-|[CREATE PROCEDURE](/sql/t-sql/statements/create-procedure-transact-sql)|All syntax.|There is no IntelliSense support for the EXTERNAL NAME clause.<br /><br /> In the AS clause, IntelliSense supports only the statements and syntax that are listed in this topic.|  
-|[ALTER PROCEDURE](/sql/t-sql/statements/alter-procedure-transact-sql)|All syntax|There is no IntelliSense support for the EXTERNAL NAME clause.<br /><br /> In the AS clause, IntelliSense supports only the statements and syntax that are listed in this topic.|  
+|[CREATE PROCEDURE](/sql/t-sql/statements/create-procedure-transact-sql)|All syntax.|There's no IntelliSense support for the EXTERNAL NAME clause.<br /><br /> In the AS clause, IntelliSense supports only the statements and syntax that are listed in this topic.|  
+|[ALTER PROCEDURE](/sql/t-sql/statements/alter-procedure-transact-sql)|All syntax|There's no IntelliSense support for the EXTERNAL NAME clause.<br /><br /> In the AS clause, IntelliSense supports only the statements and syntax that are listed in this topic.|  
 |[USE](/sql/t-sql/language-elements/use-transact-sql)|All syntax.|None|  
   
 ## IntelliSense in Supported Statements  
- IntelliSense in the [!INCLUDE[ssDE](../includes/ssde-md.md)] Query Editor supports the following syntax elements when they are used in one of the supported [!INCLUDE[tsql](../includes/tsql-md.md)] statements:  
+ IntelliSense in the [!INCLUDE[ssDE](../includes/ssde-md.md)] Query Editor supports the following syntax elements when they're used in one of the supported [!INCLUDE[tsql](../includes/tsql-md.md)] statements:  
   
 -   All join types, including APPLY  
   
@@ -109,19 +109,19 @@ dev_langs:
   
     -   Common table expressions (CTE)  
   
--   Database objects that are referenced only in CREATE or ALTER statements in the script or batch, but which do not exist in the database because the script or batch has not yet been run. These objects are as follows:  
+-   Database objects that are referenced only in CREATE or ALTER statements in the script or batch, but which don't exist in the database because the script or batch hasn't yet been run. These objects are as follows:  
   
     -   Tables and procedures that have been specified in a CREATE TABLE or CREATE PROCEDURE statement in the script or batch.  
   
     -   Changes to tables and procedures that have been specified in an ALTER TABLE or ALTER PROCEDURE statement in the script or batch.  
   
     > [!NOTE]  
-    >  IntelliSense is not available for the columns of a CREATE VIEW statement until the CREATE VIEW statement has been executed.  
+    >  IntelliSense isn't available for the columns of a CREATE VIEW statement until the CREATE VIEW statement has been executed.  
   
- IntelliSense is not provided for the previously listed elements when they are used in other [!INCLUDE[tsql](../includes/tsql-md.md)] statements. For example, there is IntelliSense support for column names that are used in a SELECT statement, but not for columns that are used in the CREATE FUNCTION statement.  
+ IntelliSense isn't provided for the previously listed elements when they're used in other [!INCLUDE[tsql](../includes/tsql-md.md)] statements. For example, there's IntelliSense support for column names that are used in a SELECT statement, but not for columns that are used in the CREATE FUNCTION statement.  
   
 ## Examples  
- Within a [!INCLUDE[tsql](../includes/tsql-md.md)] script or batch, IntelliSense in the [!INCLUDE[ssDE](../includes/ssde-md.md)] Query Editor supports only the statements and syntax that are listed in this topic. The following [!INCLUDE[tsql](../includes/tsql-md.md)] code examples show what statements and syntax elements IntelliSense supports. For example, in the following batch, IntelliSense is available for the `SELECT` statement when it is coded by itself, but not when the `SELECT` is contained in a `CREATE FUNCTION` statement.  
+ Within a [!INCLUDE[tsql](../includes/tsql-md.md)] script or batch, IntelliSense in the [!INCLUDE[ssDE](../includes/ssde-md.md)] Query Editor supports only the statements and syntax that are listed in this topic. The following [!INCLUDE[tsql](../includes/tsql-md.md)] code examples show what statements and syntax elements IntelliSense supports. For example, in the following batch, IntelliSense is available for the `SELECT` statement when it's coded by itself, but not when the `SELECT` is contained in a `CREATE FUNCTION` statement.  
   
 ```  
 USE AdventureWorks2022;  
@@ -144,7 +144,7 @@ RETURN
   
  This functionality also applies to the sets of [!INCLUDE[tsql](../includes/tsql-md.md)] statements in the AS clause of a CREATE PROCEDURE or ALTER PROCEDURE statement.  
   
- Within a [!INCLUDE[tsql](../includes/tsql-md.md)] script or batch, IntelliSense supports objects that have been specified in a CREATE or ALTER statement; however, these objects do not exist in the database because the statements have not been executed. For example, you might enter the following code in the Query Editor:  
+ Within a [!INCLUDE[tsql](../includes/tsql-md.md)] script or batch, IntelliSense supports objects that have been specified in a CREATE or ALTER statement; however, these objects don't exist in the database because the statements haven't been executed. For example, you might enter the following code in the Query Editor:  
   
 ```  
 USE MyTestDB;  
@@ -157,5 +157,5 @@ GO
 SELECT   
 ```  
   
- After you type `SELECT`, IntelliSense lists **PrimaryKeyCol**, **FirstNameCol**, and **LastNameCol** as possible elements in the select list, even if the script has not been executed and `MyTable` does not yet exist in `MyTestDB`.  
+ After you type `SELECT`, IntelliSense lists **PrimaryKeyCol**, **FirstNameCol**, and **LastNameCol** as possible elements in the select list, even if the script hasn't been executed and `MyTable` doesn't yet exist in `MyTestDB`.  
   

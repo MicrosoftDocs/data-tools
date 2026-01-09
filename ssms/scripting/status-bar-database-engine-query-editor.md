@@ -6,7 +6,7 @@ author: rwestMSFT
 ms.author: randolphwest
 ms.date: 12/04/2019
 ms.service: sql-server-management-studio
-ms.topic: article
+ms.topic: how-to
 ms.collection:
   - data-tools
 ---
