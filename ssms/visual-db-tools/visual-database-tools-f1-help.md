@@ -5,7 +5,7 @@ author: rwestMSFT
 ms.author: randolphwest
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
-ms.topic: article
+ms.topic: ui-reference
 ms.collection:
   - data-tools
 f1_keywords:
