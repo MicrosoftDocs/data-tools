@@ -6,7 +6,7 @@ ms.author: randolphwest
 ms.reviewer: vanto
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
-ms.topic: article
+ms.topic: concept-article
 ms.collection:
   - data-tools
 f1_keywords:
