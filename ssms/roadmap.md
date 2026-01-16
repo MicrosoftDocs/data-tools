@@ -4,7 +4,7 @@ description: Roadmap for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 01/04/2026
+ms.date: 01/16/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -38,7 +38,7 @@ SSMS 22 introduced significant support for [!INCLUDE [sssql25-md](includes/sssql
 
 ### Arm64 support
 
-SSMS 22 introduced initial support for Arm64 operating systems. We're continuing to expand that support to other experiences, including replication, SQL Server Reporting Services (SSRS), SQL Server Analysis Services (SSAS), and more.
+SSMS 22 introduced initial support for Arm64 operating systems. We're continuing to expand that support to other experiences, including replication, SQL Server Integration Services (SSIS), and more.
 
 ### Performance and stability improvements
 
