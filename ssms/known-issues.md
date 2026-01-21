@@ -4,7 +4,7 @@ description: Learn about known issues in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 12/09/2025
+ms.date: 01/20/2026
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -25,13 +25,12 @@ This article lists known issues for [!INCLUDE [ssms-22-md](includes/ssms-22-md.m
 | Arm64 - Profiler | Trying to run Profiler results in an exception. | Run Profiler on a device that isn't Arm64. |
 | Arm64 - Replication | Trying to bring up the "Distributor Properties" form results in an exception. | Run SSMS on a device that isn't Arm64. |
 | Available Databases Menu | A transient issue can cause the Available Databases dropdown menu to render incorrectly. | Change context to a different database with `USE <DatabaseName>` in the query editor. |
-| Connection | You can't import connections from a previous version. This issue will be resolved in a later preview. | There's no workaround. |
+| Connection | You can't import connections from a previous version. This issue will be resolved in a later release. | There's no workaround. |
 | Connection | Trying to connect to a SQL Server instance using Strict encryption through shared memory generates the error `Request is not supported`. See ["Shared Memory Provider, error: 15 - Function not supported" with Encrypt=Strict](https://github.com/dotnet/SqlClient/issues/1956). | Retry the connection. This error will be addressed in a future release of SSMS 22. |
 | Designers | The JSON data type isn't available for columns when creating or editing a table in Table Designer. See [SSMS 21.0 Preview 2.0 - Table Designer missing the "json" datatype](https://feedback.azure.com/d365community/idea/d2e6f106-9fb8-ef11-95f5-6045bdbfaf80). | Use T-SQL to add columns with the JSON data type, this functionality is planned for a later release. |
 | Designers | Unable to use SSMS after closing the **New View** pane when the **Add Table** dialog is left open. See [SSMS 21 Preview 1: New View window "Add Table" not aware I closed out of New View](https://feedback.azure.com/d365community/idea/8790c2c0-22a8-ef11-95f6-000d3a01397d). | Close the **Add Table** dialog before closing the view pane. |
 | Extended Events | The Specify Data Storage page is truncated in the Extended Events Wizard. See [Extended Events Wizard is cut off on Specify Data Storage page](https://feedback.azure.com/d365community/idea/e7de428c-76ab-ef11-95f6-000d3a01397d). | Use the **New Session...** option to create an Extended Events session. |
 | Generate Scripts Wizard | When using the **Generate Scripts** wizard, the **Set Scripting Options** section generates the error `Object reference not set to an instance of an object`. | Use an earlier version of SSMS. |
-| GitHub Copilot in SSMS (Preview) | Selecting **F5** or **Execute** executes all T-SQL queries in a query editor, when reviewing code suggestions. | Don't select **F5** or **Execute** when reviewing code suggestions. |
 | Menu | Opening a folder from **File** > **Recent Projects and Solutions** generates one of the following errors: `System.InvalidOperationException: Can't enqueue project dependencies calculation before starting solution load` or `An exception of type NullReferenceException has been encountered.` if opening the folder also opens one or more files that were open in the editor when the folder was last closed. | Closing the error allows work to continue. Alternatively, close all files in the editor before closing a folder. |
 | Modern Connection Dialog (Preview) | Trying to change the password for a newly created SQL login with the `MUST_CHANGE` property enabled generates the error "Login failed for user. Reason: The password of the account must be changed. (Microsoft SQL Server, Error: 18488)". See [Instead of Change password dialog an error pops up](https://developercommunity.visualstudio.com/t/Instead-of-Chage-password-dialog-an-erro/10899416). | Use the Classic connection dialog to change the password. |
 | Offline installation | Installing an offline instance of SQL Server Management Studio 21 silently fails, with a `certificate is invalid` error message in the installation log. | Download and install the Microsoft Windows Code Signing PCA 2024 certificate. For more information, see [Create an offline installation of SQL Server Management Studio](install/install-certificates.md#validate-a-certificate-for-offline-installations). |

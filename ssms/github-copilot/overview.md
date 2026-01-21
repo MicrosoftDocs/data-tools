@@ -5,7 +5,7 @@ description: Overview of GitHub Copilot in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 11/11/2025
+ms.date: 01/21/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -29,7 +29,9 @@ GitHub Copilot in SSMS uses your GitHub account with [Copilot access](https://do
 
 GitHub Copilot in SSMS includes [chat capabilities](chat.md) in the chat window and through the inline chat view. From either location you can use natural language to ask questions about your database, or get help writing T-SQL. Copilot in SSMS also includes code assistance, available using [slash commands](chat-context.md#use-slash-commands-for-code-assistance) such as `/doc`, to provide assistance documenting, explaining, fixing, or optimizing your T-SQL queries. To enable GitHub Copilot in SSMS, see [Install GitHub Copilot in SQL Server Management Studio (Preview)](installation-state.md).
 
-## Best practices for using GitHub Copilot in SSMS
+GitHub Copilot in SSMS also includes [autocompletions](code-completions.md) in the query editor, starting with SSMS 22.2.
+
+## Best practices for using GitHub Copilot chat in SSMS
 
 To maximize your productivity with GitHub Copilot in SSMS, open a query editor that is connected to your database, and then open the chat window. By default, the chat window has context about the database to which you're connected based on the active query editor. When writing prompts, be specific in your request as vague questions lead to vague responses. For more best practices, see [Best practices for GitHub Copilot in SQL Server Management Studio (Preview)](best-practices.md).
 
@@ -53,7 +55,6 @@ Microsoft is committed to ensuring that our AI systems are guided by our [AI pri
 
 Here are the current limitations of GitHub Copilot in SSMS:
 
-- GitHub Copilot in SSMS doesn't currently support code completions in the query editor.
 - GitHub Copilot might produce inaccurate results when the intent is to evaluate data.
 - GitHub Copilot responses can include inaccurate or low-quality content, so review outputs before using them in your work.
 - People who can meaningfully evaluate the content's accuracy and appropriateness should review the outputs.

@@ -113,6 +113,12 @@ items:
         href: github-copilot/overview.md
       - name: Get started with GitHub Copilot in SSMS (Preview)
         href: github-copilot/get-started.md
+      - name: Code suggestions
+        items:
+          - name: Code completions
+            href: github-copilot/code-completions.md
+          - name: Next Edit Suggestions
+            href: github-copilot/next-edit-suggestions.md
       - name: Chat
         items:
           - name: Ask mode

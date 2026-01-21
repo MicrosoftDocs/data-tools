@@ -5,7 +5,7 @@ description: Learn how to get started using GitHub Copilot in SQL Server Managem
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 12/04/2025
+ms.date: 01/21/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -23,7 +23,7 @@ In this article, you learn how to use GitHub Copilot and make the most of its fe
 
 ## Open GitHub Copilot
 
-Use of GitHub Copilot requires [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] or a later version. You should update to the latest version of SSMS to access the latest updates and features.
+GitHub Copilot requires [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] or a later version. Update to the latest version of SSMS to access the latest updates and features.
 
 1. Open SSMS and connect to a server or database in the query editor window.
 
@@ -39,11 +39,24 @@ Use of GitHub Copilot requires [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)
 
 ## Use GitHub Copilot
 
-Once you're signed in, use the Chat window to interact with your database using natural language. You can ask general questions about SQL, questions specific to a database, or get assistance writing or editing T-SQL.
+After you sign in, use the Chat window to interact with your database using natural language. You can ask general questions about SQL, questions specific to a database, or get assistance writing or editing T-SQL.
 
-If you're not connected to a database in a query editor window, the context in the Chat window is the general Copilot. It can answer general SQL questions, but without a query editor connection it can't answer database specific questions.
+> [!NOTE]  
+> [Code Completions for GitHub Copilot](code-completions.md) are available in SSMS 22.2 and later versions.
 
-Open a query editor window and connect to a database. Within the Chat window, the database connection in the active editor window provides context for the prompt. GitHub Copilot in SSMS has knowledge of both the context (SQL version) and database (schema aware) from the database connection, so responses are tailored to your environment. As you navigate between open query editors, the context in the Chat window changes appropriately.
+- Use the Chat window to interact with your database using natural language. You can ask general questions about SQL, questions specific to a database, or get assistance writing or editing T-SQL.
+  - If you're not connected to a database in a query editor window, the context in the Chat window is the general Copilot. It can answer general SQL questions, but without a query editor connection it can't answer database specific questions.
+  - Open a query editor window and connect to a database. Within the Chat window, the database connection in the active editor window provides context for the prompt. GitHub Copilot in SSMS has knowledge of both the context (SQL version) and database (schema aware) from the database connection, so responses are tailored to your environment. As you navigate between open query editors, the context in the Chat window changes appropriately.
+- Use Completions in the query editor. As you write T-SQL, Copilot provides suggestions directly in the editor. Copilot suggests both new code (shown as gray text) and edits to existing code.
+
+## Customize Copilot Chat
+
+You can customize Copilot for your workflow and requirements in SSMS.
+
+- Manage context with references: Use the + button to attach additional context, such as `.sql` files or `.sqlplan` files.
+- Access different [models](ai-models.md): Use the model picker in the prompt window to select AI models, or bring your own model to Copilot. Explore different models for different scenarios, whether it's answering quick questions, writing documentation, or generating code edits.
+
+To review Copilot features at any time, select **GitHub Copilot Walkthrough** from the GitHub Copilot badge in the upper right corner of SSMS.
 
 ## Support
 
