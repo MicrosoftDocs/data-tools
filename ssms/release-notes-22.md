@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 12/09/2025
+ms.date: 01/20/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -31,11 +31,37 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.2.1"></a>
+
+### 22.2.1
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.2.1
+- Release date: January 21, 2026
+
+#### What's new in 22.2.1
+
+| Feature | Details |
+| --- | --- |
+| GitHub Copilot in SSMS (Preview) | Introduced support for code completions and next edit suggestions (NES) in the query editor. |
+| Libraries | Updated Server Management Objects (SMO) to version 17.100.91. |
+
+#### Bug fixes in 22.2.1
+
+| Feature | Description |
+| --- | --- |
+| Activity Monitor | Fixed an issue where query text wasn't available in Activity Monitor. See [Session details missing query information in Activity monitor, SSMS 22.0.0 Preview 3.0](https://developercommunity.visualstudio.com/t/Session-details-missing-query-informatio/10992835). |
+| Database Diagrams | Addressed a crash in the database designer that occurs when a relationship is selected. |
+| Database Diagrams | Resolved inability to edit database diagrams that were created in an earlier version of SSMS. See [Database Diagram cannot be modified](https://developercommunity.visualstudio.com/t/Database-Diagram-cannot-be-modified/10894990). |
+| Migration Assistant | Addressed an issue where selecting **Previous** from the Summary window navigates to the incorrect page when both **Compatibility issues** and **SQL Server feature parity** are selected. See [SQL Server 2022 UI Issue while doing sql assessment from 2008 to 2025](https://developercommunity.visualstudio.com/t/SQL-Server-2022-UI-Issue--while-doing-sq/11014004). |
+| Object Explorer | Fixed error generated when scripting a CREATE OR ALTER for a view in SQL On Demand provided via Synapse Analytics. See [Generate Scripttext for CREATE OR ALTER view produces error](https://developercommunity.visualstudio.com/t/Generate-Scripttext-for-CREATE-OR-ALTER-/11004800). |
+| Object Explorer Details | Fixed error "Arithmetic operation resulted in an overflow" when navigating within Object Explorer Details with a specific three monitor configuration. See [Error editing table in object explorer details](https://developercommunity.visualstudio.com/t/Error-editing-table-in-object-explorer-d/10939472). |
+| Toolbar | Addressed behavior where customizing the width of the Available Database dropdown list wasn't respected. See [SSMS.22.Preview : Toolbar->SQLEditor->AvailableDatabase customization](https://developercommunity.visualstudio.com/t/SSMS22Preview-:-Toolbar-SQLEditor-Av/10987121). |
+
 <a id="22.1.0"></a>
 
 ### 22.1.0
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.1.0
 - Release date: December 9, 2025
@@ -55,7 +81,7 @@ For previous versions of SSMS, see:
 | Feature | Description |
 | --- | --- |
 | Accessibility | Fixed an issue in Profiler to restore keyboard focus to the proper element when Profiler window is reactivated. |
-| Always Encrypted | Fixed a bug on the **New Column Master Key** page of the Always Encrypted Wizard that displayed the wrong name in the key vault dropdown. See [New Column Master Key Dialog doesn't show AKV names](https://developercommunity.visualstudio.com/t/New-Column-Master-Key-Dialog-doesnt-sho/10990450). |
+| Always Encrypted | Fixed a bug on the **New Column Master Key** page of the Always Encrypted Wizard that displayed the wrong name in the key vault dropdown list. See [New Column Master Key Dialog doesn't show AKV names](https://developercommunity.visualstudio.com/t/New-Column-Master-Key-Dialog-doesnt-sho/10990450). |
 | Edit data | Resolved a crash that occurred when editing data for a table with a hierarchyid data type. See [Crash when data-editing Table with a hierarchyid column containing brackets ( ) in the name](https://developercommunity.visualstudio.com/t/Crash-when-data-editing-Table-with-a-hie/10978934). |
 | GitHub Copilot in SSMS (Preview) | Reintroduced the `/optimize` code assistance command. |
 | GitHub Copilot in SSMS (Preview) | Fixed the issue where Copilot displayed `Run ValidateGeneratedTQL` repeatedly and didn't answer, or answered incorrectly. See [SSMS v22 Copilot taking minutes to respond, generating inaccurate results](https://developercommunity.visualstudio.com/t/SSMS-v22-Copilot-taking-minutes-to-respo/11006503). |
@@ -132,7 +158,7 @@ For previous versions of SSMS, see:
 | GitHub Copilot in SSMS (Preview) | Updated Copilot Badge **Learn More** menus to reference SSMS documentation. |
 | GitHub Copilot in SSMS (Preview) | Fixed unexpected hang in chat window or SSMS. See [SSMS 22 Preview hangs at Modern Connection Dialog after installing GitHub Copilot](https://developercommunity.visualstudio.com/t/SSMS-22-Preview-hangs-at-Modern-Connecti/10984949). |
 | GitHub Copilot in SSMS (Preview) | Addressed bug where Copilot could generate broken queries where whitespace was incorrectly ignored. |
-| GitHub Copilot in SSMS (Preview) | Updated the unsaved query editor name to match what's displayed on the editor tab. |
+| GitHub Copilot in SSMS (Preview) | Updated the unsaved query editor name to match what displays on the editor tab. |
 | GitHub Copilot in SSMS (Preview) | Fixed invalid file name error when selecting **Add to new file** for a query in the chat window. |
 | GitHub Copilot in SSMS (Preview) | Fixed an issue with an empty chat window that hangs. See [SSMS 22 Preview hangs at Modern Connection Dialog after installing GitHub Copilot](https://developercommunity.visualstudio.com/t/SSMS-22-Preview-hangs-at-Modern-Connecti/10984949). |
 | GitHub Copilot in SSMS (Preview) | Improved task execution reliability. |

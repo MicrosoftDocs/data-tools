@@ -5,7 +5,7 @@ description: Learn how to troubleshoot GitHub Copilot in SQL Server Management S
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/14/2025
+ms.date: 01/21/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -63,13 +63,19 @@ Your administrator can [disable GitHub Copilot](/visualstudio/ide/visual-studio-
 
 **Action:** Contact your IT department to confirm whether your administrator disabled Copilot.
 
+### Log files
+
+Log files for GitHub Copilot in SSMS, which can assist with troubleshooting, can be found in %TEMP%/VSGitHubCopilotLogs.
+
 ## Send feedback
 
 - Report a problem to us from SSMS (**Help** > **Send Feedback** > **Report a Problem...**) or the Visual Studio Installer. The built-in feedback tool from both applications allows you to easily add diagnostic information that helps the SSMS team troubleshoot and fix issues.
 
-- Suggest a feature, track product issues, and find answers in the [SSMS Developer Community](https://aka.ms/ssms-feedback).
+- Suggest a feature, track product issues, and find answers on the [SSMS feedback site](https://aka.ms/ssms-feedback).
 
 ## Related content
 
+- [Troubleshooting network errors for GitHub Copilot](https://docs.github.com/copilot/how-tos/troubleshoot-copilot/troubleshoot-network-errors)
+- [Troubleshooting firewall settings for GitHub Copilot](https://docs.github.com/copilot/how-tos/troubleshoot-copilot/troubleshoot-firewall-settings)
 - [Install GitHub Copilot in SQL Server Management Studio (Preview)](installation-state.md)
 - [Use GitHub Copilot for free in SQL Server Management Studio (Preview)](free-plan.md)
