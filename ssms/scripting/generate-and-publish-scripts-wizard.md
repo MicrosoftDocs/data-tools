@@ -32,6 +32,7 @@ f1_keywords:
   - "sql13.swb.generatescriptswizard.advancedscriptingoptions.f1"
   - "sql9.swb.generatescriptswizard.choosescriptoptions.f1"
   - "sql9.swb.generatescriptswizard.chooseudf.f1"
+  - "sql13.swb.generatescriptswizard.saveorpublishscripts.f1"
 helpviewer_keywords:
   - "scripts [SQL Server], generating"
   - "databases [SQL Server], generating scripts"
