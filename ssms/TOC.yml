@@ -146,6 +146,8 @@ items:
     items:
       - name: Connect with SQL Server Management Studio
         href: quickstarts/ssms-connect.md
+      - name: Open SQL Server Management Studio from a command prompt
+        href: ssms-utility.md
       - name: Connect and query SQL Server
         href: quickstarts/ssms-connect-query-sql-server.md
       - name: Connect and query SQL Server on Azure VM
@@ -614,8 +616,6 @@ items:
             href: properties-window-management-studio.md
           - name: Use the toolbox
             href: use-the-toolbox.md
-      - name: SSMS utility
-        href: ssms-utility.md
       - name: Solution explorer
         items:
           - name: Overview
