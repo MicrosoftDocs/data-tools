@@ -4,7 +4,7 @@ description: Use command-line parameters to install SQL Server Management Studio
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 11/11/2025
+ms.date: 01/30/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -25,9 +25,9 @@ When you install SQL Server Management Studio (SSMS) programmatically or from a 
 - Automate the installation or update process.
 - Create or maintain a network layout of the product files for installing or updating client machines.
 
-The following command-line verbs and parameters can be used with the following executables or programs:
+Use the following command-line verbs and parameters with the following executables or programs:
 
-- The setup bootstrapper, which is the small (~5 MB) file (for example, `vs_SSMS.exe`) that initiates the download process and the initial installation.
+- The setup bootstrapper, which is the small (approximately 5 MB) file (for example, `vs_SSMS.exe`) that initiates the download process and the initial installation.
 - The Visual Studio installer that might already be installed on the machine and is located in the folder `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe`. You must initiate the installer programmatically from a *different* directory that the installer resides in. The installer is typically used for update or modify commands.
 
 Not all commands or parameters work in each of these situations, and any special caveats or exceptions are documented. Furthermore, in some scenarios you might not have access to all of these executables described previously. For example, client machines might only have the installer available for programmatic execution if SSMS was installed via a layout.
@@ -39,14 +39,14 @@ To get the latest bootstrappers for [!INCLUDE [ssms-22-md](../includes/ssms-22-m
 | Release | [!INCLUDE [latest-build](../includes/latest-build.md)] | [SQL Server Management Studio](https://aka.ms/ssms/22/release/vs_SSMS.exe) |
 
 > [!TIP]  
-> If you previously downloaded a bootstrapper file, you can verify the version before you try to install. Open File Explorer, right-click the bootstrapper file, select **Properties**, and then select the **Details** tab. The **Product version** field describes the [channel and version](channels-release.md) that the bootstrapper installs. The version number should always be read as "latest servicing version of what is specified," and the channel is Release unless explicitly specified. A bootstrapper with a product version that says [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] installs the latest version of [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] from the Release channel.
+> If you previously downloaded a bootstrapper file, you can verify the version before you try to install. Open File Explorer, right-click the bootstrapper file, select **Properties**, and then select the **Details** tab. The **Product version** field describes the [channel and version](channels-release.md) that the bootstrapper installs. The version number always represents the *latest servicing release of the specified version*, and the channel is Release unless otherwise explicitly specified. A bootstrapper with a product version that says [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] installs the latest version of [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] from the Release channel.
 
 ## Install, update, modify, repair, uninstall, and export commands and command-line parameters
 
-When the SSMS bootstrapper or the installer is invoked programmatically, to install the product or to maintain a layout:
+When you invoke the SSMS bootstrapper or the installer programmatically, to install the product or maintain a layout:
 
 - The first parameter is the command (the verb) that describes the operation to perform.
-- The subsequent optional command line parameters, all prefixed by two dashes (`--`), further define how that operation is supposed to happen.
+- The subsequent optional command line parameters, all prefixed by two dashes (`--`), further define how that operation happens.
 
 All SSMS command-line parameters are case-insensitive.
 
@@ -54,7 +54,7 @@ Syntax example: `vs_SSMS.exe [command] <optional parameters>...`
 
 | **Command** | **Description** |
 | --- | --- |
-| (blank) | The default command both installs the product, and it's used for all layout maintenance operations. |
+| (blank) | The default command both installs the product and is used for all layout maintenance operations. |
 | `modify` | Modifies an installed product. |
 | `update` | Updates an installed product. |
 | `updateall` | Updates all of the installed products in sequential order. Works with `--quiet` and `--passive` parameters. |
@@ -69,40 +69,40 @@ Syntax example: `vs_SSMS.exe [command] <optional parameters>...`
 | --- | --- |
 | `--installPath <dir>` | For the default install command, this parameter is **Optional** and describes where the instance is installed on the client machine. For other commands like update or modify, this parameter is **Required** and denotes the installation directory for the instance to act upon. |
 | `--productId <id>` | **Optional**: The ID of the product instance that is modified, and used with `--channelId`. The `productId` is `Microsoft.VisualStudio.Product.SSMS`. |
-| `--channelUri` | **Optional**: During an update command, you can pass in a new `--channelUri` to change the update settings location. Recommend to pair with `--installPath` parameter so that it's explicit which instance of SSMS you're configuring. See [syntax examples of `--channelUri`](/visualstudio/install/command-line-parameter-examples#using---channeluri) |
+| `--channelUri` | **Optional**: During an update command, you can pass in a new `--channelUri` to change the update settings location. Pair it with the `--installPath` parameter so that the instance of SSMS you're configuring is explicit. See [syntax examples of `--channelUri`](/visualstudio/install/command-line-parameter-examples#using---channeluri). |
 | `--channelId <id>` | The ID of the channel, for example, `SSMS.22.SSMS.Release`. `channelId` is required for modify operations, alongside either `--productId` or `--installPath`. |
-| `--add <one or more workload or component IDs>` | **Optional**: During an install or modify command, this repeatable parameter specifies one or more workload or component IDs to add. The required components of the artifact are installed, but not the recommended or optional components. You can control other components globally using `--includeRecommended` and/or `--includeOptional` parameters. To include multiple workloads or components, repeat the `--add` command (for example, `--add Workload1 --add Workload2`). For finer-grained control, you can append `;includeRecommended` or `;includeOptional` to the ID (for example, `--add Workload1;includeRecommended` or `--add Workload2;includeRecommended;includeOptional`). |
+| `--add <one or more workload or component IDs>` | **Optional**: During an install or modify command, this repeatable parameter specifies one or more workload or component IDs to add. The required components of the artifact are installed, but not the recommended or optional components. You can control other components globally, using the `--includeRecommended` and `--includeOptional` parameters. To include multiple workloads or components, repeat the `--add` command (for example, `--add Workload1 --add Workload2`). For finer-grained control, you can append `;includeRecommended` or `;includeOptional` to the ID (for example, `--add Workload1;includeRecommended` or `--add Workload2;includeRecommended;includeOptional`). |
 | `--all` | **Optional**: During an install or modify command, this parameter causes all workloads and components for the product to be installed. |
 | `--allWorkloads` | **Optional**: During an install or modify command, this parameter installs all workloads and components, but no recommended or optional components. |
-| `--includeRecommended` | **Optional**: During an install or modify command, this parameter includes the recommended components for any workloads that are installed. It doesn't include the optional components. The workloads are specified either with `--allWorkloads` or `--add`. By using the `--includeRecommended` parameter, you enable your **Update Settings** dialog to "add recommended components for installed workloads on update". To change these settings, see [Customize update settings](update.md#customize-update-settings). |
+| `--includeRecommended` | **Optional**: During an install or modify command, this parameter includes the recommended components for any workloads that are installed. It doesn't include the optional components. The workloads are specified either by using `--allWorkloads` or `--add`. By using the `--includeRecommended` parameter, you enable your **Update Settings** dialog to "add recommended components for installed workloads on update". To change these settings, see [Customize update settings](update.md#customize-update-settings). |
 | `--includeOptional` | **Optional**: During an install or modify command, this parameter includes the optional components for any workloads that are installed. It doesn't include the recommended components. The workloads are specified either with `--allWorkloads` or `--add`. |
-| `--addProductLang <language-locale>` | **Optional**: During an install or modify command, this repeatable parameter specifies the UI language packs that should be installed with the product. If not present, the installation uses the language pack that corresponds to the machine locale. For more information, see the [List of language locales] |
+| `--addProductLang <language-locale>` | **Optional**: During an install or modify command, this repeatable parameter specifies the UI language packs that should be installed with the product. If not present, the installation uses the language pack that corresponds to the machine locale. For more information, see the [List of language locales]. |
 | `--remove <one or more workload or component IDs>` | **Optional**: During a modify command, this repeatable parameter specifies one or more workload or component IDs to remove. It complements and behaves similarly to the `--add` parameter. |
 | `--addProductLang <language-locale>` | **Optional**: During an install or modify command, this repeatable parameter specifies the UI language packs that should be installed with the product. If not present, the installation uses the language pack that corresponds to the machine locale. For more information, see the [List of language locales](#list-of-language-locales) section on this article. |
 | `--removeProductLang <language-locale>` | **Optional**: During an install or modify command, this repeatable parameter determines the UI language packs that should be removed from the product. It complements and behaves similarly to the `--addProductLang` parameter. |
 | `--in <path>` | **Optional**: The URI or path to a response file, which can contain configuration settings. |
-| `--quiet` | **Optional**: This parameter, when used with any command, prevents any user interface from being displayed while the command is being executed. Not available to use programmatically by standard users regardless of how the [AllowStandardUserControl policy](https://aka.ms/vs/setup/policies) is set. |
-| `--passive, -p` | **Optional**: This parameter causes the user interface to be displayed in a non-interactive manner. This parameter is mutually exclusive from (and in fact overrides) the `--quiet` parameter. Also not available to use programmatically by standard users regardless of how the [AllowStandardUserControl policy](https://aka.ms/vs/setup/policies) is set. |
+| `--quiet` | **Optional**: This parameter, when used with any command, prevents any user interface from being displayed while the command is being executed. Standard users can't use this parameter programmatically, regardless of how the [AllowStandardUserControl policy](https://aka.ms/vs/setup/policies) is set. |
+| `--passive, -p` | **Optional**: This parameter causes the user interface to be displayed in a non-interactive manner. This parameter is mutually exclusive from (and in fact overrides) the `--quiet` parameter. Standard users can't use this parameter programmatically, regardless of how the [AllowStandardUserControl policy](https://aka.ms/vs/setup/policies) is set. |
 | `--norestart` | **Optional**: This parameter must be paired with either the `--passive` or `--quiet` parameters. During an install, update, or modify command, adding the `--norestart` parameter delays any necessary reboot. |
 | `--force` | **Optional**: This parameter forces SSMS to close even if any SSMS process is in use. Forcing SSMS to close might cause loss of work, so use it with caution. |
 | `--installWhileDownloading` | **Optional**: During an install, update, or modify command. This parameter allows SSMS to both download and install the product in parallel. It's the default experience. |
 | `--downloadThenInstall` | **Optional**: During an install, update, or modify command, this parameter forces SSMS to download all files before installing them. It's mutually exclusive from the `--installWhileDownloading` parameter. |
 | `--nickname <name>` | **Optional**: During an install command, this parameter defines the nickname to assign to an installed product. The nickname can't be longer than 10 characters. |
-| `--removeOos true` | **Optional**: During an install, update, or modify command, this parameter, followed by `true` or `false`, tells the Visual Studio Installer whether to remove all installed components transitioned to an out-of-support state. This behavior is applicable for a single event. If you want to make this behavior persistent, apply this parameter to the `modifySettings` command, described later, or configure the `removeOOS` global policy. Useful for helping to keep the machine secure. |
-| `--config <path to *.vsconfig file>` | **Optional**: During an install or modify operation, you can pass in a configuration file using the `--config` parameter to specify the workloads, components, or extensions to add based on a previously saved installation configuration file. This operation is additive only; it doesn't remove anything not specified in the file. Also, items specified in the config file that don't apply to the product aren't added. Highly recommend you specify the fully qualified path to the config file. During an export operation, this parameter determines the location to save the installation configuration file. |
+| `--removeOos true` | **Optional**: During an install, update, or modify command, this parameter, followed by `true` or `false`, tells the Visual Studio Installer whether to remove all installed components transitioned to an out-of-support state. This behavior is applicable for a single event. If you want to make this behavior persistent, apply this parameter to the `modifySettings` command, described later, or configure the `removeOOS` global policy. This parameter is useful for helping to keep the machine secure. |
+| `--config <path to *.vsconfig file>` | **Optional**: During an install or modify operation, you can pass in a configuration file using the `--config` parameter to specify the workloads, components, or extensions to add based on a previously saved installation configuration file. This operation is additive only; it doesn't remove anything not specified in the file. Also, the installer doesn't add items specified in the config file that don't apply to the product. Specify the fully qualified path to the config file. During an export operation, this parameter determines the location to save the installation configuration file. |
 | `--allowUnsignedExtensions` | **Optional**: During an install or modify operation run in a `--passive` or `--quiet` context using a `--config` file, if extensions are specified in the config file, then this parameter is necessary in order to load extensions without a digital signature. |
 | `--installerOnly` | **Optional**: During an install or update operation, this parameter tells the Visual Studio Installer to install just itself (the installer) and not the SSMS product. Its functionality is equivalent to the `--update` parameter, but more intuitive. Meant to be used when prepping and preconfiguring client machines. |
 | `--help, --?, -h, -?` | Displays an offline version of this article. |
 
 ## Layout command and command-line parameters
 
-All layout management operations, such as creating or updating a layout, are run using the bootstrapper exe and assume that the command is the default Install (blank). All layout management operations should start with the required `--layout` initial parameter. The following table describes the other parameters you can use to create or update a layout using the command line.
+All layout management operations, such as creating or updating a layout, are run using the bootstrapper executable. These operations assume that the command is the default install (blank). You should start all layout management operations with the required `--layout` initial parameter. The following table describes the other parameters you can use to create or update a layout using the command line.
 
-| Layout parameters | Description |
+| **Layout parameters** | **Description** |
 | --- | --- |
 | `--layout <dir>` | Specifies a directory to create or update an offline install cache. |
-| `--lang <one or more language-locales>` | **Optional**: Used with `--layout` to prepare an offline install cache with resource packages with the specified one or more specified languages. For more information, see the [List of language locales](#list-of-language-locales) section on this article. |
-| `--add <one or more workload or component IDs>` | **Optional**: One or more workload or component IDs to add. The required components of the artifact are installed, but not the recommended or optional components. You can control more components globally using `--includeRecommended` and/or `--includeOptional`. For finer-grained control, you can append `;includeRecommended` or `;includeOptional` to the ID (for example, `--add Workload1;includeRecommended` or `--add Workload2;includeOptional`).<br /><br />**Note**: If `--add` is used, only the specified workloads and components and their dependencies are downloaded. If `--add` isn't specified, all workloads and components are downloaded to the layout. |
+| `--lang <one or more language-locales>` | **Optional**: Used with `--layout` to prepare an offline install cache with resource packages, in the one or more languages specified. For more information, see the [List of language locales](#list-of-language-locales) section on this article. |
+| `--add <one or more workload or component IDs>` | **Optional**: One or more workload or component IDs to add. The required components of the artifact are installed, but not the recommended or optional components. You can control more components globally using `--includeRecommended` and `--includeOptional`. For finer-grained control, you can append `;includeRecommended` or `;includeOptional` to the ID (for example, `--add Workload1;includeRecommended` or `--add Workload2;includeOptional`).<br /><br />**Note**: If you use `--add`, only the specified workloads and components and their dependencies are downloaded. If you don't specify `--add`, all workloads and components are downloaded to the layout. |
 | `--includeRecommended` | **Optional**: Includes the recommended components for any workloads that are installed, but not the optional components. The workloads are specified either with `--allWorkloads` or `--add`. |
 | `--includeOptional` | **Optional**: Includes the recommended *and* optional components for any workloads being included in the layout. The workloads are specified with `--add`. |
 | `--wait` | **Optional**: The process waits until the install is completed before returning an exit code. `wait` is useful when automating installations where one needs to wait for the install to finish to handle the return code from that install. The `--wait` parameter can only be passed into the bootstrapper; the installer (setup.exe) doesn't support it. It's useful when updating layouts. |
@@ -115,23 +115,23 @@ All layout management operations, such as creating or updating a layout, are run
 | **Advanced layout parameters** | **Description** |
 | --- | --- |
 | `--channelId <id>` | **Optional**: The ID of the channel for the instance to be installed, represented like `SSMS.22.SSMS.Release`. `channelId` is required for the install command, and ignored for other commands if `--installPath` is specified. For more information, see [syntax examples](/visualstudio/install/command-line-parameter-examples#using---channeluri) of `--channelId`. |
-| `--channelUri <uri>` | **Optional**: The URI of the channel manifest. This value governs the [source location of updates](update.md#configure-source-location-of-updates) and the initial value is configured in the layout's `response.json` file. If updates aren't wanted, `--channelUri` can point to a nonexistent file (for example, `--channelUri C:\doesntExist.chman`). This parameter can be used for the install command; other commands ignore it. |
-| `--installChannelUri <uri>` | **Optional**: The URI of the channel manifest to use for the installation. The URI specified by `--channelUri` (which must be specified when `--installChannelUri` is specified) is used to detect updates. This parameter can be used for the install command; other commands ignore it. |
-| `--installCatalogUri <uri>` | **Optional**: The URI of the catalog manifest to use for the installation. If specified, the channel manager attempts to download the catalog manifest from this URI before using the URI in the install channel manifest. This parameter is used to support offline install, where the layout cache is created with the product catalog already downloaded. This parameter can be used for the install command; other commands ignore it. |
+| `--channelUri <uri>` | **Optional**: The URI of the channel manifest. This value governs the [source location of updates](update.md#configure-source-location-of-updates) and the initial value is configured in the layout's `response.json` file. If you don't want updates, `--channelUri` can point to a nonexistent file (for example, `--channelUri C:\doesntExist.chman`). This parameter can be used for the install command. Other commands ignore it. |
+| `--installChannelUri <uri>` | **Optional**: The URI of the channel manifest to use for the installation. The URI specified by `--channelUri` (which you must specify when `--installChannelUri` is specified) is used to detect updates. This parameter can be used for the install command. Other commands ignore it. |
+| `--installCatalogUri <uri>` | **Optional**: The URI of the catalog manifest to use for the installation. If specified, the channel manager attempts to download the catalog manifest from this URI before using the URI in the install channel manifest. This parameter supports offline install, where the layout cache is created with the product catalog already downloaded. This parameter can be used for the install command. Other commands ignore it. |
 | `--productId <id>` | **Optional**: The ID of the product for the instance that is installed. This parameter is prepopulated in normal installation conditions. The `productId` is `Microsoft.VisualStudio.Product.SSMS`. |
 | `--keepLayoutVersion` | **Optional**: Apply changes to the layout without updating the product version of the layout. |
 | `--locale <language-locale>` | **Optional**: Change the display language of the user interface for the installer itself. The setting is persisted. For more information, see the [List of language locales](#list-of-language-locales) section on this article. |
-| `--cache` | **Optional**: If present, packages will be kept after being installed for subsequent repairs. This overrides the global policy setting to be used for subsequent installs, repairs, or modifications. The default policy is to cache packages. This policy is ignored for the uninstall command. |
-| `--nocache` | **Optional**: If present, packages will be deleted after being installed or repaired. They'll be downloaded again only if needed and deleted again after use. This overrides the global policy setting to be used for subsequent installs, repairs, or modifications. The default policy is to cache packages. This policy is ignored for the uninstall command. |
+| `--cache` | **Optional**: If present, packages are kept after being installed for subsequent repairs. This setting overrides the global policy setting to be used for subsequent installs, repairs, or modifications. The default policy is to cache packages. This policy is ignored for the uninstall command. |
+| `--nocache` | **Optional**: If present, packages are deleted after being installed or repaired. They're downloaded again only if needed and deleted again after use. This setting overrides the global policy setting to be used for subsequent installs, repairs, or modifications. The default policy is to cache packages. This policy is ignored for the uninstall command. |
 | `--noUpdateInstaller` | **Optional**: If present, prevents the installer from updating itself when `quiet` is specified. The installer fails the command and returns a nonzero exit code if `--noUpdateInstaller` is specified with `quiet` when an installer update is required. |
 | `--path <name>=<path>` | **Optional**: Used to specify custom install paths for the installation. Supported path names are shared, cache, and install. |
-| `--path cache=<path>` | **Optional**: Uses the location you specify to download installation files. This location can only be set the first time that SSMS is installed. Example: `--path cache="C:\SSMS\cache"` |
-| `--path shared=<path>` | **Optional**: Contains shared files for side-by-side SSMS and Visual Studio installations. Some tools and SDKs install to a location on this drive, while some others might override this setting and install to another drive. Example: `--path shared="C:\VS\shared"`<br /><br />**Important**: This path can be set only once and on the first time that either SSMS or Visual Studio is installed. |
-| `--path install=<path>` | **Optional**: Equivalent to `–-installPath`. Specifically, `--installPath "C:\SSMS"` and `--path install="C:\SSMS"` are equivalent. Only one of these commands can be used at a time. |
+| `--path cache=<path>` | **Optional**: Uses the location you specify to download installation files. You can only set this location the first time that SSMS is installed. Example: `--path cache="C:\SSMS\cache"` |
+| `--path shared=<path>` | **Optional**: Contains shared files for side-by-side SSMS and Visual Studio installations. Some tools and SDKs install to a location on this drive, while some others might override this setting and install to another drive. Example: `--path shared="C:\VS\shared"`<br /><br />**Important**: You can only set this path once, on the first time that either SSMS or Visual Studio is installed. |
+| `--path install=<path>` | **Optional**: Equivalent to `--installPath`. Specifically, `--installPath "C:\SSMS"` and `--path install="C:\SSMS"` are equivalent. Use only one of these commands at a time. |
 
 ## ModifySettings command and command-line parameters
 
-You can modify the update settings and programmatically configure the source location of updates for a given instance of SSMS. This change can be done using the installer or the bootstrapper on the client machine, and passing in the modifySettings command and the desired update channel.
+You can modify the update settings and programmatically configure the source location of updates for a given instance of SSMS. You can make this change by using the installer or the bootstrapper on the client machine. Pass in the `modifySettings` command and the desired update channel.
 
 | **Command** | **Description** |
 | --- | --- |
@@ -140,9 +140,9 @@ You can modify the update settings and programmatically configure the source loc
 | **modifySettings parameters** | **Description** |
 | --- | --- |
 | `--installPath <dir>` | **Recommended** to use to specify which instance of SSMS to act upon. |
-| `--newChannelUri` | **Required**: The URI of the channel manifest. This value specifies where the next [source location of updates](update.md#configure-source-location-of-updates) will be. If updates aren't wanted, `--channelUri` can point to a nonexistent file (for example, `--channelUri C:\doesNotExist.chman`). |
-| `--channelUri` | The URI of the old channel manifest. Can be used if the `--installPath` isn't known. Must be used with `--productId` to identify the right instance to act upon. |
-| `--productId <id>` | Must be used if `--channelUri` is specified and is used to identify the right instance to act upon. The `productId` is `Microsoft.VisualStudio.Product.SSMS`. |
+| `--newChannelUri` | **Required**: The URI of the channel manifest. This value specifies where the next [source location of updates](update.md#configure-source-location-of-updates) will be. If you don't want updates, `--channelUri` can point to a nonexistent file (for example, `--channelUri C:\doesNotExist.chman`). |
+| `--channelUri` | The URI of the old channel manifest. Use it if you don't know the `--installPath`. Must be used with `--productId` to identify the right instance to act upon. |
+| `--productId <id>` | Use this parameter if you specify `--channelUri`. It identifies the right instance to act upon. The `productId` is `Microsoft.VisualStudio.Product.SSMS`. |
 | `--includeRecommended` | **Optional**: During a modifySettings command, this parameter (which must have the word true or false immediately after it) tells the SSMS installer to disable the "add recommended components for installed workloads on update" functionality in the Update Setting dialog. |
 | `--quiet` | **Optional**: This parameter prevents any user interface from being displayed while the command is being executed. Not available to use programmatically by [standard users](https://aka.ms/vs/setup/policies). |
 | `--removeOos true` | **Optional**: During a modifySettings command, this parameter tells the SSMS installer to *persistently* remove, or not remove, all installed components that transitioned to an out-of-support state. This setting must have the word true or false immediately after it. This setting helps keep the machine secure. |
@@ -159,7 +159,7 @@ Syntax examples:
 
 ## Remove channel command and command-line parameters
 
-Channels that are available to update from, are cached on the client, and over time they can generate clutter. You can manually remove [update channels](update.md#configure-source-location-of-updates) by bringing up the Visual Studio Installer, switching to the **Available** tab, and selecting the **X** in the top right corner of the product card. You can programmatically remove channels (for example, older layout locations) using the `removeChannel` command. You can run `vswhere` programmatically on the client machine to determine which channels are cached on the client machine.
+The client caches channels that you can update from, and over time they can generate clutter. You can manually remove [update channels](update.md#configure-source-location-of-updates) by opening Visual Studio Installer, switching to the **Available** tab, and selecting the **X** in the upper right corner of the product card. You can programmatically remove channels (for example, older layout locations) using the `removeChannel` command. You can run `vswhere` programmatically on the client machine to determine which channels are cached on the client machine.
 
 | **Command** | **Description** |
 | --- | --- |
@@ -168,7 +168,7 @@ Channels that are available to update from, are cached on the client, and over t
 | **removeChannel parameters** | **Description** |
 | --- | --- |
 | `--channelUri` | **Required** The URI of the old channel manifest. |
-| `--quiet` | **Optional** This parameter prevents any user interface from being displayed while the command is being executed. |
+| `--quiet` | **Optional** This parameter prevents any user interface from being displayed while the command is running. |
 | `--passive` | **Optional** This parameter overrides the `--quiet` parameter. It causes the UI to appear in a non-interactive manner. |
 
 Syntax example:
@@ -179,9 +179,9 @@ Syntax example:
 
 ## Use winget to install or modify SSMS
 
-You can use the [Windows Package Manager](/windows/package-manager/winget/) (**winget**) tool to programmatically install, modify, or update SSMS on your machine along with other packages managed by **winget**.
+Use the [Windows Package Manager](/windows/package-manager/winget/) (**winget**) tool to programmatically install, modify, or update SSMS on your machine along with other packages that **winget** manages.
 
-By default, **winget** just installs the SSMS core workload.
+By default, **winget** installs just the SSMS core workload.
 
 Syntax example:
 
@@ -189,7 +189,7 @@ Syntax example:
   winget install Microsoft.SQLServerManagementStudio.22
   ```
 
-Visual Studio Installer operations currently require administrator privileges, so **winget** prompts you to elevate your privileges if necessary to complete the command. Also, SSMS must be closed if you're going to upgrade it to the latest version.
+Visual Studio Installer operations currently require administrator privileges, so **winget** prompts you to elevate your privileges if necessary to complete the command. Also, you must close SSMS if you're going to upgrade it to the latest version.
 
 ## List of workload IDs and component IDs
 
@@ -197,7 +197,7 @@ For a list of workload and component IDs sorted by SSMS product, see [Workload a
 
 ## List of language locales
 
-The following table lists the language locales that can be used with the `--addProductLang` and `--removeProductLang` parameters.
+The following table lists the language locales that you can use with the `--addProductLang` and `--removeProductLang` parameters.
 
 | Language-locale | Language |
 | --- | --- |
@@ -240,7 +240,7 @@ Depending on the result of the operation, the `%ERRORLEVEL%` environment variabl
 | 8004 | Target directory failure |
 | 8005 | Verifying source payloads failure |
 | 8006 | SSMS processes running |
-| 8010 | Operating System not supported. Refer to the [system requirements](../system-requirements.md). |
+| 8010 | Operating system not supported. Refer to the [system requirements](../system-requirements.md). |
 | -1073720687 | Connectivity failure |
 | -1073741510 | Microsoft Visual Studio Installer was terminated (by the user or external process) |
 | Other<br />(for example:<br />-1, 1, 1603) | Failure condition occurred - check the logs for more information |

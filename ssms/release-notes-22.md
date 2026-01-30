@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 01/20/2026
+ms.date: 01/30/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -46,6 +46,7 @@ For previous versions of SSMS, see:
 | --- | --- |
 | GitHub Copilot in SSMS (Preview) | Introduced support for code completions and next edit suggestions (NES) in the query editor. |
 | Libraries | Updated Server Management Objects (SMO) to version 17.100.91. |
+| Visual Studio | Updated to Visual Studio 18.2 [11415.280]. |
 
 #### Bug fixes in 22.2.1
 
@@ -75,6 +76,7 @@ For previous versions of SSMS, see:
 | GitHub Copilot in SSMS (Preview) | Improved response time after submitting the first prompt for a thread. |
 | GitHub Copilot in SSMS (Preview) | Introduced Bring your own model (BYOM). |
 | GitHub Copilot in SSMS (Preview) | Updated the default model to be Claude 4.5 for paid subscriptions. |
+| Visual Studio | Updated to Visual Studio 18.1 [11304.174]. |
 
 #### Bug fixes in 22.1.0
 
@@ -137,7 +139,7 @@ For previous versions of SSMS, see:
 | Table Designer | Added support for Vector data type to Table Designer. |
 | Themes | Introduced new themes and removed the Blue (SSMS) theme. |
 | Theming | Expanded dark theme support to include the Connect to Azure Storage dialog, and the Registered Servers Export, Import, and Move Registered Server dialogs. |
-| Visual Studio | Updated to Visual Studio 18.0.0 Insiders [11201.2]. |
+| Visual Studio | Updated to Visual Studio 18.0 [11205.157]. |
 
 #### Bug fixes in 22.0.0
 

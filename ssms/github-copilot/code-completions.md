@@ -5,7 +5,7 @@ description: Learn how to use code completions from GitHub Copilot in SQL Server
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 01/21/2026
+ms.date: 01/30/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -24,7 +24,7 @@ For related information about GitHub Copilot Chat, see [Use the GitHub Copilot C
 
 ## How Code Completions work
 
-Code Completions for GitHub Copilot in SSMS use advanced machine learning models trained on a vast dataset of publicly available code from GitHub repositories. As you type code, the AI analyzes the context and provides relevant suggestions in real time. You can also receive suggestions by writing a comment in natural language that describes what you want the code to do.
+Code Completions for GitHub Copilot in SSMS use advanced machine learning models trained on a vast dataset of publicly available code from GitHub repositories. As you type code, the AI analyzes the context and provides relevant suggestions in real time. Context for GitHub Copilot in SSMS includes the schema for the database to which you're connected in the active editor, the contents of the current and all open editors. You can also obtain suggestions by writing a comment, often preceeded by `--`, in natural language that describes what you want the code to do.
 
 ## Prerequisites
 
