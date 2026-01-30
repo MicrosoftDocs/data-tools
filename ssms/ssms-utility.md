@@ -1,9 +1,9 @@
 ---
-title: SSMS Utility
-description: Learn about the SSMS utility.
+title: Use Command-Line Parameters to Open SQL Server Management Studio
+description: Learn about opening SSMS from a command line.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 08/15/2025
+ms.date: 01/30/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -16,16 +16,16 @@ helpviewer_keywords:
   - "opening SQL Server Management Studio"
 ---
 
-# SSMS utility
+# Open SQL Server Management Studio from a command prompt
 
 [!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-The **ssms** utility opens SQL Server Management Studio. If specified, **ssms** also establishes a connection to a server, and opens queries, scripts, files, projects, and solutions.
+SQL Server Management Studio (SSMS) can be opened from a command prompt. If you specify connection information, SSMS connects to a server. You can also specify a file for SSMS to open.
 
-You can specify files that contain queries, projects, or solutions. Files that contain queries are automatically connected to a server if connection information is provided and the file type is associated with that type of server. For instance, `.sql` files open a SQL Query Editor window in SQL Server Management Studio, and `.mdx` files open an MDX Query Editor window in SQL Server Management Studio. **SQL Server Solutions and Projects** open in SQL Server Management Studio.
+You can specify files that contain queries, projects, or solutions. If you provide connection information, query files automatically connect to a server. The file type determines the associated server type. For example, `.sql` files open a Query Editor window, and `.mdx` files open an MDX Query Editor window. Solution and project files open in Solution Explorer.
 
 > [!NOTE]  
-> The **ssms** utility doesn't run queries. To run queries from the command line, use the **sqlcmd** utility.
+> The command prompt doesn't run queries. To run queries from the command line, use the **sqlcmd** utility.
 
 ## Syntax
 
@@ -35,69 +35,31 @@ ssms
 [ -S servername ] [ -d databasename ] [ -G ] [ -U username ] [ -E ] [ -nosplash ] [ -log [ filename ] ? ] [ -? ]
 ```
 
-## Arguments
+| **Command** | **Description** |
+| --- | --- |
+| `-?` | Displays command-line help. |
+| `-S <servername>` | Server name. |
+| `-d <databasename>` | Database name. |
+| `-U <username>` | User name when connecting with SQL Authentication. |
+| `-E` | Connect using Windows Authentication. |
+| `-A` | Connect using Active Directory authentication such as `ActiveDirectoryInteractive`. For a full list of values, see Microsoft.Data.SqlClient's [SqlAuthenticationMethodEnum](/dotnet/api/microsoft.data.sqlclient.sqlauthenticationmethod). The type of connection is determined by whether `-U` is included. |
+| `-N <option>` | Specifies the encryption option for the connection: **Optional**, **Mandatory** (default), or **Strict**. |
+| `-C` | Specifies that the connection trusts the server certificate without validation. |
+| `-i <hostname>` | Specifies a different, expected Common Name (CN) or Subject Alternative Name (SAN) in the server certificate to use during server certificate validation. |
+| `-nosplash` | Prevents SSMS from displaying the splash screen graphic while opening. Use this option when connecting to the computer running SSMS over Terminal Services, on a connection with limited bandwidth. This argument isn't case-sensitive and can appear before or after other arguments. |
+| `-log <file>*` | Logs SSMS activity to the specified file for troubleshooting. This argument must be the *last* switch. |
+| `scriptfile` | Specifies one or more script files to open. The parameter must contain the full path to the files. |
+| `projectfile` | Specifies a script project to open. The parameter must contain the full path to the script project file. |
+| `solutionfile` | Specifies a solution to open. The parameter must contain the full path to the solution file. |
 
-#### *scriptfile*
-
-Specifies one or more script files to open. The parameter must contain the full path to the files.
-
-#### *projectfile*
-
-Specifies a script project to open. The parameter must contain the full path to the script project file.
-
-#### *solutionfile*
-
-Specifies a solution to open. The parameter must contain the full path to the solution file.
-
-#### [ -S *servername* ]
-
-Server name
-
-#### [ -d *databasename* ]
-
-Database name
-
-#### [ -G ]
-
-Connect using Active Directory authentication. The type of connection is determined whether `-U` is included.
-
-> [!NOTE]  
-> **Active Directory - Universal with MFA support** isn't currently supported.
-
-#### [ -U *username* ]
-
-User name when connecting with SQL Authentication.
-
-> [!NOTE]  
-> `-P` was removed in SSMS version 18.0. Try to connect to the server once using the UI and save your password.
-
-#### [ -E ]
-
-Connect using Windows Authentication.
-
-#### [ -nosplash ]
-
-Prevents SQL Server Management Studio from displaying the splash screen graphic while opening. Use this option when connecting to the computer running SQL Server Management Studio over Terminal Services, on a connection with a limited bandwidth. This argument isn't case-sensitive and might appear before or after other arguments
-
-#### [ -log* [ filename ] ?* ]
-
-Logs SQL Server Management Studio activity to the specified file for troubleshooting
-
-#### [ -? ]
-
-Displays command-line help
+> [!NOTE]
+> The `-P` parameter was removed in SSMS version 18.0. Connect to the server with your username and password. You can save your password by enabling **Remember Password** in the connection dialog. This step bypasses entering the password manually.
 
 ## Remarks
 
-All of the switches are optional and separated by a space except files, which are separated by commas. If you don't specify any switches, **ssms** opens SQL Server Management Studio as specified in the **Options** settings on the **Tools** menu. For example, if the **Environment/General** page **At startup** option specifies **Open new query window**, **ssms** opens with a blank Query Editor.
+All of the switches are optional. The switches are separated by a space, except for files, which are separated by commas. If you don't specify any switches, `ssms` opens SQL Server Management Studio as specified in **Tools** > **Options** > **Environment** > **Startup**. For example, if the **At startup** option specifies **Open new query window**, SSMS opens with a blank Query Editor.
 
-The `-log` switch must appear at the end of the command line, after all, other switches. The filename argument is optional. If a filename is specified, and the file doesn't exist, the file is created. If the file can't be created - for example, due to insufficient write access, the log is written to the nonlocalized `APPDATA` location instead (See the following example). If the filename argument isn't specified, two files are written to the current user's nonlocalized application data folder.
-
-The nonlocalized application data folder for SQL Server can be found from the `APPDATA` environment variable. For example, for SQL Server 2012, the folder is `<system drive>:\Users\<username\>\AppData\Roaming\Microsoft\AppEnv\10.0\`. The two files are, by default, named `ActivityLog.xml` and `ActivityLog.xsl`. The former contains the activity log data, and the latter is an XML style sheet, which provides a more convenient way to view the XML file.
-
-Use the following steps to view the log file in your default XML viewer, like Internet Explorer: Select **Start**, then select **Run...**, type `<system drive>:\Users\<username\>\AppData\Roaming\Microsoft\AppEnv\10.0\ActivityLog.xml` into the field provided, and then press Enter.
-
-Files that contain queries prompt to be connected to a server if connection information is provided and the file type is associated with that type of server. For instance, `.sql` files open a SQL Query Editor window in SQL Server Management Studio, and `.mdx` files open an MDX Query Editor window in SQL Server Management Studio. **SQL Server Solutions and Projects** open in SQL Server Management Studio.
+If you provide connection information, files that contain queries prompt to be connected to a server. The file type is associated with that type of server. For instance, `.sql` files open a SQL Query Editor window, `.mdx` files open an MDX Query Editor window, and Solutions and Projects open in Solution Explorer.
 
 The following table maps server types to file extensions.
 
@@ -105,45 +67,58 @@ The following table maps server types to file extensions.
 | --- | --- |
 | SQL Server | `.sql` |
 | SQL Server Analysis Services | `.mdx`, `.xmla` |
+| SQL Server Solution | `.slnx` |
+| SQL Server Project | `.ssmssqlproj` |
+
+The `-log` switch must appear at the end of the command line, after all other switches. The filename argument is optional. If you specify a filename and the file doesn't exist, the file is created. If the file can't be created (for example, due to insufficient write access), the log is written to the nonlocalized `APPDATA` location instead. If you don't specify the filename argument, two files are written to the current user's nonlocalized application data folder.
+
+You can find the nonlocalized application data folder for SQL Server from the `APPDATA` environment variable. In SSMS 22 for example, the folder is `%APPDATA%\Microsoft\SSMS\<installid>` and the file is named `ActivityLog.xml`.
 
 ## Examples
 
-The following script opens SQL Server Management Studio from a command prompt with the default settings:
+These examples assume that the location of the SSMS installation is in your default path, or that you navigate to that location within Command Prompt. For SSMS 22, the default installation location is `C:\Program Files\Microsoft SQL Server Management Studio 22\Release\Common7\IDE`.
+
+The following script opens SSMS from a command prompt with the default settings:
 
 ```console
 ssms
 ```
 
-The following script opens SQL Server Management Studio from a command prompt using *Active Directory - Integrated*:
+The following script opens SSMS from a command prompt using *Active Directory Interactive*:
 
 ```console
-ssms.exe -S servername.database.windows.net -G
+ssms.exe -S servername.database.windows.net -U username -A ActiveDirectoryInteractive
 ```
 
-The following script opens SQL Server Management Studio from a command prompt, with Windows Authentication, with the Code Editor set to the server `ACCTG` and the database [!INCLUDE [sssampledbobject-md](includes/sssampledbobject-md.md)], without showing the splash screen:
+The following script opens SSMS from a command prompt, connecting to the server `ACCTG` and the database [!INCLUDE [sssampledbobject-md](includes/sssampledbobject-md.md)] with Windows Authentication and trusting the connection, without showing the splash screen:
 
 ```console
-ssms -E -S ACCTG -d AdventureWorks2022 -nosplash
+ssms -S ACCTG -d AdventureWorks2025 -A ActiveDirectoryIntegrated -C -nosplash
 ```
 
-The following script opens SQL Server Management Studio from a command prompt, and opens the MonthEndQuery script.
+The following script opens SSMS from a command prompt, and opens the MonthEndQuery script.
 
 ```console
-ssms "C:\Documents and Settings\username\My Documents\SQL Server Management Studio Projects\FinanceScripts\FinanceScripts\MonthEndQuery.sql"
+ssms "C:\FinanceScripts\MonthEndQuery.sql"
 ```
 
-The following script opens SQL Server Management Studio from a command prompt, and opens the NewReportsProject project on the computer named `developer`:
+The following script opens SSMS from a command prompt, and opens the NewReportsProject project:
 
 ```console
-ssms "\\developer\fin\ReportProj\ReportProj\NewReportProj.ssmssqlproj"
+ssms "C:\Projects\Reports\NewReportsProject.ssmssqlproj"
 ```
 
-The following script opens SQL Server Management Studio from a command prompt, and opens the MonthlyReports solution:
+The following script opens SSMS from a command prompt, and opens the MonthlyReports solution:
 
 ```console
-ssms "C:\solutionsfolder\ReportProj\MonthlyReports.ssmssln"
+ssms "C:\Solutions\Reports\MonthlyReports.ssmssln"
 ```
+
+> [!NOTE]  
+> If you don't see the Project or Solution when SSMS opens, go to **View** > **Solution Explorer**.
 
 ## Related content
 
 - [What is SQL Server Management Studio (SSMS)?](sql-server-management-studio-ssms.md)
+- [Use command-line parameters to install SQL Server Management Studio](install/command-line-parameters.md)
+- [Command-line parameter examples for SQL Server Management Studio installation](install/command-line-examples.md)

@@ -4,7 +4,7 @@ description: Roadmap for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 01/16/2026
+ms.date: 01/30/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -46,4 +46,4 @@ We know from customer feedback how critical performance and stability are to you
 
 ### Evolution of AI experiences
 
-With the GitHub Copilot in SSMS in preview, expect further efforts to bring intelligent, context-aware experiences to your daily workflow. This includes enhancements to code completion, administrative tasks, query optimization, and troubleshooting.
+With the GitHub Copilot in SSMS in preview, expect further efforts to bring intelligent, context-aware experiences to your daily workflow. This includes enhancements to code completion and Agent Mode to support advanced administrative tasks, query optimization, and troubleshooting.
