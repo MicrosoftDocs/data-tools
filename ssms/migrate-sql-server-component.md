@@ -39,6 +39,9 @@ The migration component in SQL Server Management Studio (SSMS) checks upgrade an
 
 You can also physically migrate your database using the migration component. It follows the backup-copy-restore technology to move data from the source to the target by providing a backup folder and, optionally, a copy folder. Along with the data, the migration wizard transfers logins to simplify side by side migration.
 
+> [!NOTE]  
+> Because migration requires network shares to access backup files, this component can't migrate databases to Azure SQL Managed Instance or Azure SQL Database.
+
 ## Prerequisites
 
 - SQL Server Management Studio 21 and later versions.
