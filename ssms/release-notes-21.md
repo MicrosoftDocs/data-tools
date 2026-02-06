@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS) 21.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 11/21/2025
+ms.date: 02/06/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -27,7 +27,7 @@ For information about the latest version of SQL Server Management Studio (SSMS),
 
 This section contains release notes for SSMS 21. For release notes for different versions of SSMS, see:
 
-- [Release notes for SQL Server Management Studio](release-notes-22.md)
+- [Release notes for SQL Server Management Studio (SSMS) 22](release-notes-22.md)
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
@@ -271,7 +271,7 @@ This section contains release notes for SSMS 21. For release notes for different
 | Azure SQL Database | Added support for `MANUAL_CUTOVER` and `PERFORM_CUTOVER`. For more information, see [Improving the conversion to Hyperscale with greater efficiency](https://techcommunity.microsoft.com/blog/azuresqlblog/improving-the-conversion-to-hyperscale-with-greater-efficiency/4377505). |
 | Azure SQL Database | Introduced UI support for creating logins and database users. |
 | Azure SQL Managed Instance | Introduced new validation steps in the Failover Readiness Assessment dialog to assess the health status of the link before failover. |
-| Command Line | Added the `-A` option to specify the authentication method to use when connecting from the command line. Accepted values are authentication types from [SqlAuthenticationMethod](/dotnet/api/microsoft.data.sqlclient.sqlauthenticationmethod) supported by SSMS. The `–G` (use Entra ID authentication) and `–E` (use Windows Authentication) options are now deprecated and will be removed in a later version. |
+| Command Line | Added the `-A` option to specify the authentication method to use when connecting from the command line. Accepted values are authentication types from [SqlAuthenticationMethod](/dotnet/api/microsoft.data.sqlclient.sqlauthenticationmethod) supported by SSMS. The `-G` (use Entra ID authentication) and `-E` (use Windows Authentication) options are now deprecated and will be removed in a later version. |
 | Configuration | The default value for a firewall rule name created in SSMS uses the format `ClientIPAddress_YYYY-MM-DD_HH-MM-SS`. |
 | Connection | When you connect to a server from command line parameters, SSMS displays a prompt to confirm the connection and parameters. |
 | Connection | Added **Close Idle SQL Connections** command under the Help menu. For more information, see [Connection Pooling in SQL Server Management Studio](https://aka.ms/ssms-close-idle-connections). |
@@ -304,7 +304,7 @@ This section contains release notes for SSMS 21. For release notes for different
 | Query Plans | Added JSON index and Implicit Broadcast support to Query Plans. |
 | Query Store | Added theme support for the search window and grid in the Tracked Queries report. |
 | Query Store | Added theme support for Plan ID box and toolbar dropdown lists in Query Store reports. |
-| Query Store | The Query Store reports feature a **Replica** dropdown list, allowing users to view Query Store data across various replica sets or roles. For more information, see [sys.query_store_replicas](/sql/relational-databases/system-catalog-views/sys-query-store-replicas) to understand the current association between a replica and its role. When the [Query Store for readable secondaries](/sql/relational-databases/performance/query-store-for-secondary-replicas) feature is enabled, data populates exclusively for roles that are deployed and designated as replicas. |
+| Query Store | The Query Store reports feature a **Replica** dropdown list, allowing users to view Query Store data across various replica sets or roles. For more information, see [sys.query_store_replicas](/sql/relational-databases/system-catalog-views/sys-query-store-replicas) to understand the current association between a replica and its role. When the [Query Store for readable secondary replicas](/sql/relational-databases/performance/query-store-for-secondary-replicas) feature is enabled, data populates exclusively for roles that are deployed and designated as replicas. |
 | Results Grid | Added the ability to customize the Results Grid cell border color. See [SSMS 21 - Add option to change ResultGrid cell border color](https://developercommunity.visualstudio.com/t/SSMS-21---Add-option-to-change-ResultGri/10859450). |
 | Scripting | Added support for scripting objects that use the Vector data type. |
 | Settings | Changed default startup option for SSMS back to **Open Object Explorer**, within **Tools** > **Options** > **Startup**. |
@@ -317,7 +317,7 @@ This section contains release notes for SSMS 21. For release notes for different
 | Theming | Improved dark theme support for the Activity Monitor and Object Explorer Details dialogs. |
 | Theming | Added dark theme support to tabs and icons in the Results pane of the Query Editor, and to the script splitter bar. |
 | Theming | Added dark theme support to the query and plan panes within Query Store reports. |
-| Tools | Removed Azure Data Studio entry from the Tools menu. For more information, see [What's Happening to Azure Data Studio](https://aka.ms/ads-retirement). |
+| Tools | Removed Azure Data Studio entry from the Tools menu. For more information, see [What's happening with Azure Data Studio](/sql/tools/whats-happening-azure-data-studio). |
 | User Interface | The updated SSMS interface has a refreshed, modernized design optimized for a streamlined experience that integrates with high-DPI displays. The new design includes updated icons, a modern dark theme, and customizable layouts to suit your preferences. |
 | Vector Data Types | Added support for Vector data type in object designers, the edit data window, and Object Explorer. |
 | Visual Studio | Updated to Visual Studio 17.14.0. |
@@ -366,7 +366,7 @@ This section contains release notes for SSMS 21. For release notes for different
 | Options | Enabling Per Monitor Awareness (PMA) by checking **Optimize rendering for screens with different pixel densities (requires restart)** within **Tools** > **Options** can cause issues with dialogs not rendering. | Don't enable **Optimize rendering for screens with different pixel densities (requires restart)** within **Tools** > **Options**. |
 | Options | Enabling **Unified Settings Experience (requires restart)** within **Tools** > **Options** > **General** > **Preview Features** can cause issues with dialogs not rendering. | Don't enable **Unified Settings Experience (requires restart)** within **Tools** > **Options** > **General** > **Preview Features**. |
 | Options | Changing the default value for options within **Tools** > **Options** > **General** > **Preview Features** can cause unpredictable behavior, both in terms of visual display and functionality. | Don't change the default value for any option within **Tools** > **Options** > **General** > **Preview Features**. |
-| Query Store | When you use any of the Query Store reports, the Replica dropdown menu option might not populate with the correct replica name when the [Query Store for readable secondaries](/sql/relational-databases/performance/query-store-for-secondary-replicas) is enabled. | Use Transact-SQL to query the Query Store data for a readable secondary where the `replica_group_id` for a secondary can be mapped using the [sys.query_store_runtime_stats system](/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql) catalog view, which has a foreign key relationship with the [sys.query_store_replicas](/sql/relational-databases/system-catalog-views/sys-query-store-replicas) system catalog view. |
+| Query Store | When you use any of the Query Store reports, the Replica dropdown menu option might not populate with the correct replica name when the [Query Store for readable secondary replicas](/sql/relational-databases/performance/query-store-for-secondary-replicas) is enabled. | Use Transact-SQL to query the Query Store data for a readable secondary where the `replica_group_id` for a secondary can be mapped using the [sys.query_store_runtime_stats](/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql) system catalog view, which has a foreign key relationship with the [sys.query_store_replicas](/sql/relational-databases/system-catalog-views/sys-query-store-replicas) system catalog view. |
 | Results Pane | When you switch themes, if the output is set to Results to Text, the Results pane doesn't switch to the new theme. | To apply any theme changes to the Results pane, restart SSMS. |
 | SQL Server Analysis Services (SSAS) | When connected to a MultiDimensional DW with Analysis Services, right-clicking on a cube and selecting **Browse** generates the error 'Object reference not set to an instance of an object.'. See [SSMS 21 Error browsing OLAP cubes](https://developercommunity.visualstudio.com/t/SSMS-21-Error-browsing-OLAP-cubes/10915226). | Use an earlier version of SSMS to browse a cube. |
 | SQL Server Integration Services (SSIS) | Support for legacy [Integration Services service](/sql/integration-services/service/integration-services-service-ssis-service#manage-the-service) isn't available for SQL Server 2022. | To manage the legacy Integration Services Service for SQL Server 2022, use SSMS 20.2.1 or SSMS 19.3. |
