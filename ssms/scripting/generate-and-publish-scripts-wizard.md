@@ -4,7 +4,7 @@ description: Learn how to use the Generate Scripts Wizard to create scripts to t
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mathoma
-ms.date: 08/15/2025
+ms.date: 02/06/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -109,8 +109,6 @@ Use this page to specify if you want the wizard to save scripts to the location 
 
 :::image type="content" source="media/generate-and-publish-scripts-wizard/save.png" alt-text="Screenshot of Save as notebook." lightbox="media/generate-and-publish-scripts-wizard/save.png":::
 
-- **[Save as notebook](/azure-data-studio/notebooks/notebooks-guidance)** - Save the script to one or more .sql files. Select the browse button (**...**) to specify a name and location for the file.
-
 - **Save as script file** Save the script to one or more .sql files. Select the browse button **(...)** to specify a name and location for the file. Select the **Overwrite existing file** check box to replace the file if one already exists with the same name. Select **Single script file** or **One script file per object** to specify how the scripts should be generated. Select **Unicode text** or **ANSI text** to specify the kind of text that should be used in the script.
 
 - **Save to Clipboard** - Save the Transact-SQL script to the Clipboard.
@@ -151,7 +149,7 @@ Use this page to specify how you want this wizard to generate scripts. Many diff
 
 - **Schema qualify object names** - Includes the schema name in the name of objects that are created. The default is **True**.
 
-- **Script binding** - Generates a script for binding default and rule objects. The default is **False**. For more information, see [CREATE DEFAULT (Transact-SQL)](/sql/t-sql/statements/create-default-transact-sql) and [CREATE RULE (Transact-SQL)](/sql/t-sql/statements/create-rule-transact-sql).
+- **Script binding** - Generates a script for binding default and rule objects. The default is **False**. For more information, see [CREATE DEFAULT](/sql/t-sql/statements/create-default-transact-sql) and [CREATE RULE](/sql/t-sql/statements/create-rule-transact-sql).
 
 - **Script collation** - Includes collation information in the script. The default is **False**. For more information, see [Collation and Unicode support](/sql/relational-databases/collations/collation-and-unicode-support).
 
@@ -169,9 +167,9 @@ Use this page to specify how you want this wizard to generate scripts. Many diff
 
 - **Script object-Level permissions** - Includes scripts to set permission on the objects in the database. The default is **False**.
 
-- **Script statistics** - When set to **Script Statistics**, this option includes the `CREATE STATISTICS` statement to re-create statistics on the object. The **Script statistics and histograms** option also creates histogram information. The default is **Do not script statistics**. For more information, see [CREATE STATISTICS (Transact-SQL)](/sql/t-sql/statements/create-statistics-transact-sql).
+- **Script statistics** - When set to **Script Statistics**, this option includes the `CREATE STATISTICS` statement to re-create statistics on the object. The **Script statistics and histograms** option also creates histogram information. The default is **Do not script statistics**. For more information, see [CREATE STATISTICS](/sql/t-sql/statements/create-statistics-transact-sql).
 
-- **Script USE DATABASE** - Adds the `USE DATABASE` statement to the script. To make sure that database objects are created in the correct database, include the `USE DATABASE` statement. If you expect to use the script in a different database, select **False** to omit the `USE DATABASE` statement. The default is **True**. For more information, see [USE (Transact-SQL)](/sql/t-sql/language-elements/use-transact-sql).
+- **Script USE DATABASE** - Adds the `USE DATABASE` statement to the script. To make sure that database objects are created in the correct database, include the `USE DATABASE` statement. If you expect to use the script in a different database, select **False** to omit the `USE DATABASE` statement. The default is **True**. For more information, see [USE](/sql/t-sql/language-elements/use-transact-sql).
 
 - **Types of data to script** - Selects what should be scripted: **Data only**, **Schema only**, or both. The default is **Schema only**.
 
