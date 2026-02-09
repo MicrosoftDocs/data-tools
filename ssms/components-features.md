@@ -4,7 +4,7 @@ titleSuffix: SQL Server Management Studio
 description: Discover capabilities and where to start with each component in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 01/05/2026
+ms.date: 02/06/2026
 ms.service: sql-server-management-studio
 ms.topic: overview
 ms.collection:
@@ -24,7 +24,7 @@ This article describes the components and features available in [!INCLUDE [ssman
 | **Query Hint Recommendation Tool (Preview)** | Analyze statements and apply recommended hints. Installed via **Visual Studio Installer** > **Individual Components** > **Code Tools**. | [Query Hint Recommendation tool (Preview)](query-hint-tool/hint-tool-overview.md) |
 | **Git integration** | Integration with Git for tracking, managing, and collaborating on SQL scripts. Clone and create repositories, manage branches, and view diffs inside SSMS, using the same familiar interface as Visual Studio. | [About Git in Visual Studio](/visualstudio/version-control/git-with-visual-studio) |
 | **Modern connection dialog** | Browse Microsoft Fabric resources, copy and paste connection strings, and manage encryption and certificate options more easily. | [Quickstart: Connect and query a SQL Server instance](quickstarts/ssms-connect-query-sql-server.md) |
-| **SQL Server migration component** | Assess, prepare, and migrate your [!INCLUDE [ssnoversion-md](../azure-data-studio/includes/ssnoversion-md.md)] databases. | [SQL Server migration component in SQL Server Management Studio](migrate-sql-server-component.md) |
+| **SQL Server migration component** | Assess, prepare, and migrate your [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] databases. | [SQL Server migration component in SQL Server Management Studio](migrate-sql-server-component.md) |
 | **Object Explorer** | View and manage all objects in one or more instances of the [!INCLUDE [ssdenoversion-md](includes/ssdenoversion-md.md)]. | [Object Explorer](object/object-explorer.md) |
 | **Template Explorer** | Build and manage files of boilerplate text that you use to speed the development of queries and scripts. | [Template Explorer](template/template-explorer.md) |
 | **Visual Database Tools** | Use the visual design tools included in SSMS to build queries, tables, and diagram databases. | [Visual Database Tools](visual-db-tools/visual-database-tools.md) |
@@ -38,7 +38,7 @@ This section describes management, security, developer, and productivity capabil
 
 SSMS supports the following database engines:
 
-- [!INCLUDE [ssnoversion-md](../azure-data-studio/includes/ssnoversion-md.md)] on Windows, Linux, and containers
+- [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] on Windows, Linux, and containers
   - [!INCLUDE [sssql25-md](includes/sssql25-md.md)]
   - [!INCLUDE [sssql22-md](includes/sssql22-md.md)]
   - [!INCLUDE [sssql19-md](includes/sssql19-md.md)]
@@ -70,7 +70,7 @@ You can use SSMS to access, configure, manage, and administer Analysis Services 
 | --- | --- |
 | **SSIS** | Manage the `SSISDB` catalog, execute packages, and use the Import/Export Wizard. |
 | **SSAS** | Script projects using MDX, DAX, DMX, or XMLA, and handle object processing and backups. |
-| **SSRS** <sup>1</sup> | Perform server-level administration tasks like managing roles, jobs, and schedules for [!INCLUDE [sssql22-md](../azure-data-studio/includes/sssql22-md.md)] and earlier versions. |
+| **SSRS** <sup>1</sup> | Perform server-level administration tasks like managing roles, jobs, and schedules for [!INCLUDE [sssql22-md](includes/sssql22-md.md)] and earlier versions. |
 
 <sup>1</sup> For more information, see [Reporting Services consolidation FAQ](/sql/reporting-services/reporting-services-consolidation-faq).
 

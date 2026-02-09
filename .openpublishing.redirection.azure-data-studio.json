@@ -299,6 +299,11 @@
       "source_path": "azure-data-studio/extensions/azure-cosmos-db-mongodb-migration-faq.yml",
       "redirect_url": "/azure/cosmos-db/mongodb/vcore/migration-options",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "azure-data-studio/whats-happening-azure-data-studio.md",
+      "redirect_url": "/sql/tools/whats-happening-azure-data-studio",
+      "redirect_document_id": false
     }
   ]
 }
