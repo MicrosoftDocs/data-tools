@@ -1,12 +1,16 @@
 ---
-author: croblesm
-ms.author: roblescarlos
-ms.date: 02/06/2025
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: abhishekum
+ms.date: 02/09/2026
 ms.service: dms
 ms.topic: include
 ---
 
 The Azure SQL migration extension for Azure Data Studio enables you to assess, get right-sized Azure recommendations and migrate your SQL Server databases to Azure.
+
+> [!IMPORTANT]  
+> The Azure SQL migration extension in Azure Data Studio [is retired](/lifecycle/definitions#retirement) as of **February 28, 2026** along with Azure Data Studio. For more information, see [Post-retirement alternatives for Azure SQL migration extension](../extensions/azure-sql-migration-extension.md#post-retirement-alternatives-for-azure-sql-migration-extension).
 
 The Azure SQL Migration extension for Azure Data Studio offers these key benefits:
 
@@ -14,8 +18,7 @@ The Azure SQL Migration extension for Azure Data Studio offers these key benefit
 
 - An enhanced assessment mechanism that can evaluate SQL Server instances. The extension identifies databases that are ready to migrate to Azure SQL targets.
 
-  > [!NOTE]
-  > You can use the Azure SQL Migration extension to assess SQL Server databases running on Windows or Linux.
+  You can use the [SQL Server migration experience in the Azure Arc portal](/sql/sql-server/azure-arc/migration-assessment) to assess SQL Server databases.
 
 - An SKU recommendation engine that collects performance data from the on-premises source SQL Server instance and then generates right-sized SKU recommendations based on your Azure SQL target.
 
@@ -29,17 +32,11 @@ The Azure SQL Migration extension for Azure Data Studio offers these key benefit
 
 For information about specific migration scenarios and Azure SQL targets, see the list of tutorials in the following table:
 
-| Migration scenario | Migration mode
-|---------|---------|
-SQL Server to Azure SQL Managed Instance| [Online](/azure/dms/tutorial-sql-server-managed-instance-online-ads) / [Offline](/azure/dms/tutorial-sql-server-managed-instance-offline-ads)
-SQL Server to SQL Server on an Azure virtual machine|[Online](/azure/dms/tutorial-sql-server-to-virtual-machine-online-ads) / [Offline](/azure/dms/tutorial-sql-server-to-virtual-machine-offline-ads)
-SQL Server to Azure SQL Database | [Offline](/azure/dms/tutorial-sql-server-azure-sql-database-offline-ads)
+| Migration scenario | Migration mode |
+| --- | --- |
+| SQL Server to Azure SQL Managed Instance | [Online](/azure/dms/tutorial-sql-server-managed-instance-online-ads) / [Offline](/azure/dms/tutorial-sql-server-managed-instance-offline-ads) |
+| SQL Server to SQL Server on Azure Virtual Machines | [Online](/azure/dms/tutorial-sql-server-to-virtual-machine-online-ads) / [Offline](/azure/dms/tutorial-sql-server-to-virtual-machine-offline-ads) |
+| SQL Server to Azure SQL Database | [Offline](/azure/dms/tutorial-sql-server-azure-sql-database-offline-ads) |
 
-> [!IMPORTANT]
-> If your target is Azure SQL Database, make sure you deploy the database schema before you begin the migration. You can use tools like the [SQL Server dacpac extension](../extensions/sql-server-dacpac-extension.md) or the [SQL Database Projects extension](../extensions/sql-database-project-extension.md) for Azure Data Studio.
-
-The following video explains recent updates and features added to the Azure SQL Migration extension for Azure Data Studio:
-
-<br />
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?show=data-exposed&ep=how-to-migrate-sql-server-to-azure-sql-database-offline-using-azure-data-studio-data-exposed]
+> [!IMPORTANT]  
+> If your target is Azure SQL Database, make sure you deploy the database schema before you begin the migration. You can use [Azure Database Migration Service either from Azure portal](/data-migration/sql-server/database/database-migration-service) or using [PowerShell / AZ cmdlets](/azure/dms/migration-dms-powershell-cli).
