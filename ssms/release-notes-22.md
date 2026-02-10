@@ -31,16 +31,16 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
-<a id="22.3"></a>
+<a id="22.3.0"></a>
 
-### 22.3
+### 22.3.0
 
 **[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
-- Release number: 22.3
+- Release number: 22.3.0
 - Release date: February 10, 2026
 
-#### What's new in 22.3
+#### What's new in 22.3.0
 
 | Feature | Details |
 | --- | --- |
@@ -51,7 +51,7 @@ For previous versions of SSMS, see:
 | Libraries | Updated MSODBCSQL to 18.6.1.1. |
 | Visual Studio | Updated to Visual Studio 18.3 [11506.43]. |
 
-#### Bug fixes in 22.3
+#### Bug fixes in 22.3.0
 
 | Feature | Description |
 | --- | --- |
