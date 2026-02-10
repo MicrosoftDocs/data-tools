@@ -125,6 +125,8 @@ items:
             href: github-copilot/chat.md
           - name: Chat context
             href: github-copilot/chat-context.md
+          - name: Database instructions
+            href: github-copilot/database-instructions.md
           - name: AI models
             href: github-copilot/ai-models.md
       - name: Account
