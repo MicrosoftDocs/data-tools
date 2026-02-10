@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 01/30/2026
+ms.date: 02/10/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -31,11 +31,50 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.3"></a>
+
+### 22.3
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.3
+- Release date: February 10, 2026
+
+#### What's new in 22.3
+
+| Feature | Details |
+| --- | --- |
+| Connection dialog | Improved startup performance of the modern connection dialog. |
+| External Models | Added template support for external models. |
+| GitHub Copilot in SSMS (Preview) | Introduced support for database instructions. See [Use database instructions with GitHub Copilot in SQL Server Management Studio (Preview)](github-copilot/database-instructions.md). |
+| Libraries | Updated Microsoft.Data.SqlClient to 6.1.3. |
+| Libraries | Updated MSODBCSQL to 18.6.1.1. |
+| Visual Studio | Updated to Visual Studio 18.3 [11506.43]. |
+
+#### Bug fixes in 22.3
+
+| Feature | Description |
+| --- | --- |
+| Analysis Services | Addressed error `Could not load file or assembly 'Microsoft.VisualStudio.Data.Framework, Version=18.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The system cannot find the file specified.` when trying to change the connection string for an Analysis Services database. See [Can't change "Connection String" for Analysis Services Database](https://developercommunity.visualstudio.com/t/Cant-change-Connection-String-for-Ana/11000063). |
+| Analysis Services | Fixed error `Object reference not set to an instance of an object` when trying to browse a multi-dimensional cube. |
+| Arm64 | Added support for Profiler and Database Tuning Advisor (DTA) on Arm64 devices. See [SQL Server Profiler 22 does not open on ARM](https://developercommunity.visualstudio.com/t/SQL-Server-Profiler-22-does-not-open-on-/11006644). Both Profiler and DTA run as 32-bit applications. |
+| Azure Authentication | Fixed an issue where errors could occur when signing into an account or selecting placeholder values in dialogs using Azure authentication. |
+| Connection dialog | Updated the modern connection dialog to ensure advanced properties are carried to subsequent connections, for example, when opening a query editor from an existing connection in Object Explorer. |
+| Dataverse | Resolved issue where expanding the list of columns for a table was blank for a Dynamics Dataverse database. See [When connected to Dynamics dataverse in SSMS 22, expanding the list of columns in a table shows nothing](https://developercommunity.visualstudio.com/t/When-connected-to-Dynamics-dataverse-in-/11012102). |
+| GitHub Copilot | Reduced frequency of schema cache updates to optimize performance for code completions. |
+| Maintenance Plans | Added ability to create maintenance plans in SQL Server 2025 with Strict Encryption enforced for the instance. |
+| Query Editor | Fixed an issue where the editor would show an error notification when no error exists. See [1 Error, Click to navigate to the error list](https://developercommunity.visualstudio.com/t/1-Error-Click-to-navigate-to-the-error-/10855667). |
+| Query Editor | Updated the behavior of the Query Editor to not prompt to save a file when closing if the contents were changed and then reverted. See ["Query Execution -> SQL Server -> General -> Prompt to save unsaved T-SQL query windows on close" Edge Case](https://developercommunity.visualstudio.com/t/Query-Execution---SQL-Server---Genera/10958824). |
+| Query Store Reports | Addressed a scenario where Query Store data appeared under the incorrect time range. See [Query Store viewer in SSMS 21 is reporting data with incorrect time offset when using local time](https://developercommunity.visualstudio.com/t/Query-Store-viewer-in-SSMS-21-is-reporti/10941754). |
+| Query Store Reports | Fixed an issue where query text is truncated in the execution plan for a query. See [In the SSMS 22 query store, the query display is cut off](https://developercommunity.visualstudio.com/t/In-the-SSMS-22-query-store-the-query-di/11002498). |
+| Replication | Clarified the **Interval** option for the Publication Properties dialog. See [SSMS 21.3.7 - Replication Publication Properties - incorrect and misleading labels](https://developercommunity.visualstudio.com/t/SSMS-2137---Replication-Publication-Pr/10928637). |
+| Results Grid | Fixed issue where large JSON text was split across multiple rows in the results grid. See [SSMS 22 Preview - Large JSON Output Split Across Multiple Rows](https://developercommunity.visualstudio.com/t/SSMS-22-Preview-%E2%80%93-Large-JSON-Output-Spli/10991392) and [The viewer's results table using "JSON PATH" sometimes does not show a row with valid JSON; instead, it shows several rows with truncated data](https://developercommunity.visualstudio.com/t/The-viewers-results-table-using-JSON-P/11000557). |
+| Results Pane | Restored ability to use <kbd>Ctrl</kbd>+<kbd>R</kbd> to hide or restore the results pane when viewing an execution plan. See [SSMS 22: CTRL+R Shortcut Doesn't Work From Execution Plan Tab](https://developercommunity.visualstudio.com/t/SSMS-22:-CTRLR-Shortcut-Doesnt-Work-Fr/11007268). |
+| Spatial results | Resolved error `One of the identified items was an invalid format` when viewing spatial results. See [Spatial results tab returns invalid format error when viewing features that pass .isValidDetailed() test](https://developercommunity.visualstudio.com/t/Spatial-results-tab-returns-invalid-form/10848203). |
+
 <a id="22.2.1"></a>
 
 ### 22.2.1
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.2.1
 - Release date: January 21, 2026

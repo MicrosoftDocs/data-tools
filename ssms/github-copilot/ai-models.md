@@ -5,7 +5,7 @@ description: Learn how to select different models in the GitHub Copilot Chat exp
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 01/21/2026
+ms.date: 02/10/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -26,9 +26,6 @@ Choose from a curated set of models in the model picker, such as:
 - GPT-5
 - GPT-5 mini
 - GPT-5.1
-- GPT-5.1 Codex
-- GPT-5.1 Codex mini
-- GPT-5.1 Codex max
 - GPT-4.1
 - GPT-4o
 - Claude Sonnet 4

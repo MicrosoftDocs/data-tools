@@ -4,7 +4,7 @@ description: SQL Server Management Studio (SSMS) support policy
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 01/21/2026
+ms.date: 02/10/2026
 ms.service: sql-server-management-studio
 ms.topic: legal
 ms.collection:
@@ -36,7 +36,7 @@ The SSMS team doesn't actively back-port fixes to an earlier release.
 
 Refer to the following table for SQL Server Management Studio servicing support.
 
-| Version | November 2018 | June 2022 | January 2024 | April 2025 | October 2025 | January 2026 |
+| Version | November 2018 | June 2022 | January 2024 | April 2025 | October 2025 | February 2026 |
 | ---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [!INCLUDE [latest-build](includes/latest-build.md)] | | | | | | Full support |
 | 21.6.17 | | | | | Full support | Upgrade |
