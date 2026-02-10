@@ -39,4 +39,4 @@ For information about specific migration scenarios and Azure SQL targets, see th
 | SQL Server to Azure SQL Database | [Offline](/azure/dms/tutorial-sql-server-azure-sql-database-offline-ads) |
 
 > [!IMPORTANT]  
-> If your target is Azure SQL Database, make sure you deploy the database schema before you begin the migration. You can use [Azure Database Migration Service either from Azure Portal](/data-migration/sql-server/database/database-migration-service) or using [PowerShell / AZ cmdlets](/azure/dms/migration-dms-powershell-cli).
+> If your target is Azure SQL Database, make sure you deploy the database schema before you begin the migration. You can use [Azure Database Migration Service either from Azure portal](/data-migration/sql-server/database/database-migration-service) or using [PowerShell / AZ cmdlets](/azure/dms/migration-dms-powershell-cli).
