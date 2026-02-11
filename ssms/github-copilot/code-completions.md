@@ -2,10 +2,10 @@
 title: Code Completions
 titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
 description: Learn how to use code completions from GitHub Copilot in SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 01/30/2026
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: erinstellato
+ms.date: 02/11/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -30,7 +30,7 @@ Code Completions for GitHub Copilot in SSMS use advanced machine learning models
 
 Code Completions for GitHub Copilot in SSMS supports the T-SQL language.
 
-1. Install SSMS 22.2 or later with the [AI Assistance workload](installation-state.md#install-github-copilot-in-ssms-using-the-visual-studio-installer).
+1. Install SSMS 22.2 or a later version with the [AI Assistance workload](installation-state.md#install-github-copilot-in-ssms-using-the-visual-studio-installer).
 
 1. Sign in to your GitHub account with Copilot access.
 
@@ -49,6 +49,8 @@ As you type comments or T-SQL in the editor, GitHub Copilot provides context-awa
 
 1. Select enter to see the suggestion.
 1. To accept the suggestion, select <kbd>Tab</kbd>. To reject the suggestion, select <kbd>Esc</kbd> or continue typing.
+
+Suggestions can also be accepted, either partially or entirely, with a mouse click starting in SSMS 22.3. To change the keyboard shortcut used to accept suggestions, go to **Tools** > **Options** > **All Settings** > **Text Editor** > **Code Completions** > **Preferences** > **Accept code compeltions using keyboard shortcuts**.
 
 ## Shortcuts and settings
 
