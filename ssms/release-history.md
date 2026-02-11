@@ -1,10 +1,10 @@
 ---
 title: Release History for SQL Server Management Studio
 description: Learn about the release history for SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest, mbarickman
-ms.date: 01/30/2026
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: mbarickman, erinstellato
+ms.date: 02/11/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -15,7 +15,7 @@ ms.collection:
 
 SQL Server Management Studio is regularly updated to provide new features, performance and reliability improvements, security updates, and bug fixes.
 
-[!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] introduces Preview and Release channels to give you the flexibility and control to decide when to adopt feature updates. The latest release on each channel is always the most secure version, so we encourage you to stay up to date regardless of the channel you choose.
+[!INCLUDE [ssms-21-md](includes/ssms-21-md.md)] introduces Preview and Release channels to give you the flexibility and control to decide when to adopt feature updates. The latest release on each channel is always the most secure version, so you should stay up to date regardless of the channel you choose.
 
 For more information, see:
 
@@ -45,17 +45,17 @@ To install an earlier release of SQL Server Management Studio 21.x or earlier fo
 
 - On Windows, from **Programs and Features** in the Control Panel, find your version of **SSMS** and uninstall it.
 
-Before attempting to install a previous version of SQL Server Management Studio, refer to our [support policy](support-policy.md). Microsoft doesn't guarantee support outside of this policy.
+Before attempting to install a previous version of SQL Server Management Studio, refer to the [support policy](support-policy.md). Microsoft doesn't guarantee support outside of this policy.
 
-If you're unable to follow the previous steps due to a corrupted install, follow the steps to remove SQL Server Management Studio with the [InstallCleanup.exe tool](install/uninstall.md#remove-all-with-installcleanupexe).
+If a corrupted install prevents you from following the previous steps, follow the steps to remove SQL Server Management Studio with the [InstallCleanup.exe tool](install/uninstall.md#remove-all-with-installcleanupexe).
 
-Uninstalling SSMS doesn't remove standalone products and components such as .NET and Visual C++ Redistributables. These components might need to be removed manually from **Apps and Features** in Windows Settings.
+Uninstalling SSMS doesn't remove standalone products and components such as .NET and Visual C++ Redistributables. You might need to remove these components manually from **Apps and Features** in Windows Settings.
 
 ## Release dates and build numbers
 
 This section provides links to the publicly released bootstrappers for SQL Server Management Studio. The bootstrappers initiate Visual Studio's installation process. Only the latest release is supported.
 
-To verify what version a given bootstrapper installs, right-click on the bootstrapper `vs_SSMS.exe`, choose **Properties** > **Details**, and look at the Product Version information. The version number should always be read as *latest of that version*. A bootstrapper with a Product Version of 21.0 would install the latest 21.0.x servicing release that's available.
+To verify what version a given bootstrapper installs, right-click on the bootstrapper `vs_SSMS.exe`, choose **Properties** > **Details**, and look at the Product Version information. The version number should always be read as *latest of that version*. A bootstrapper with a Product Version of 21.0 installs the latest 21.0.x servicing release that's available.
 
 ### Evergreen bootstrapper
 
@@ -64,6 +64,7 @@ The bootstrapper in the following table always installs the latest release of SS
 | Channel | Version | Bootstrapper |
 | --- | --- | --- |
 | Release | [!INCLUDE [latest-build](includes/latest-build.md)] | [SQL Server Management Studio GA](https://aka.ms/ssms/22/release/vs_SSMS.exe) |
+| Release | 22.2.1 |  [SQL Server Management Studio 22.2.1](https://download.visualstudio.microsoft.com/download/pr/98009c04-e4b8-4223-8794-58f961de75a4/75159abce36103c35f173e03b7b3ec0b004094013968f5980d77a4c0436e36c7/vs_SSMS.exe) |
 | Release | 22.1 | [SQL Server Management Studio 22.1](https://download.visualstudio.microsoft.com/download/pr/451b234a-4e25-491d-a007-bf3e55b2562f/4a7eda53a20fecf4d012d8b845bf4b7e2c94a4bced41f979b85cdee1b517021f/vs_SSMS.exe) |
 | Release | 22.0 | [SQL Server Management Studio 22.0](https://download.visualstudio.microsoft.com/download/pr/d3b4e0f6-4bc0-4ec0-ba9c-20b355d61cc4/b50e52759454345ab17bdafcb40774f9bc635cf8fd933dacc4097909f3dbccf7/vs_SSMS.exe) |
 

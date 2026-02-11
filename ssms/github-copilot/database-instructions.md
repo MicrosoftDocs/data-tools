@@ -2,10 +2,10 @@
 title: Database Instructions
 titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
 description: Learn how to use database instructions with GitHub Copilot in SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 02/10/2026
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: erinstellato
+ms.date: 02/11/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -30,7 +30,7 @@ Database instructions are stored as metadata in the database, which allows Copil
 
 Database instructions for GitHub Copilot in SSMS rely on information in extended properties.
 
-1. Install SSMS 22.3 or later with the [AI Assistance workload](installation-state.md#install-github-copilot-in-ssms-using-the-visual-studio-installer).
+1. Install SSMS 22.3 or a later version with the [AI Assistance workload](installation-state.md#install-github-copilot-in-ssms-using-the-visual-studio-installer).
 
 1. Sign in to your GitHub account with Copilot access.
 

@@ -1,10 +1,10 @@
 ---
 title: Known Issues in SQL Server Management Studio
 description: Learn about known issues in SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest, mbarickman
-ms.date: 02/09/2026
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: mbarickman, erinstellato
+ms.date: 02/11/2026
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -27,8 +27,9 @@ This article lists known issues for [!INCLUDE [ssms-22-md](includes/ssms-22-md.m
 | Connection | You can't import connections from a previous version. This issue will be resolved in a later release. | There's no workaround. |
 | Connection | Trying to connect to a SQL Server instance using Strict encryption through shared memory generates the error `Request is not supported`. See ["Shared Memory Provider, error: 15 - Function not supported" with Encrypt=Strict](https://github.com/dotnet/SqlClient/issues/1956). | Retry the connection. This error will be addressed in a future release of SSMS 22. |
 | Extended Events | The Specify Data Storage page is truncated in the Extended Events Wizard. See [Extended Events Wizard is cut off on Specify Data Storage page](https://feedback.azure.com/d365community/idea/e7de428c-76ab-ef11-95f6-000d3a01397d). | Use the **New Session...** option to create an Extended Events session. |
-| GitHub Copilot | When you set `environment.visualExperience.hideCopilotBadge` to `true` in the `settings.json` file, the Copilot badge isn't hidden. | Select **Hide Copilot** from the Copilot badge. |
-| GitHub Copilot | GPT-5.1-Codex* models might produce errors or not respond. | Don't use GPT-5.1-Codex* models. |
+| GitHub Copilot (Preview) | When you set `environment.visualExperience.hideCopilotBadge` to `true` in the `settings.json` file, the Copilot badge isn't hidden. | Select **Hide Copilot** from the Copilot badge. |
+| GitHub Copilot (Preview) | GPT-5.1-Codex* models might produce errors or don't respond. | Don't use GPT-5.1-Codex* models. |
+| GitHub Copilot (Preview) | A database constitution, created as an extended property for the database with the name `CONSTITUTION.md`, isn't recognized automatically by GitHub Copilot. | Include a direction to use the database constitution explicitly in your prompt. |
 | Menu | Opening a folder from **File** > **Recent Projects and Solutions** generates one of the following errors: `System.InvalidOperationException: Can't enqueue project dependencies calculation before starting solution load` or `An exception of type NullReferenceException has been encountered.` if opening the folder also opens one or more files that were open in the editor when the folder was last closed. | Closing the error allows work to continue. Alternatively, close all files in the editor before closing a folder. |
 | Offline installation | Installing an offline instance of SQL Server Management Studio 21 silently fails, with a `certificate is invalid` error message in the installation log. | Download and install the Microsoft Windows Code Signing PCA 2024 certificate. For more information, see [Create an offline installation of SQL Server Management Studio](install/install-certificates.md#validate-a-certificate-for-offline-installations). |
 | Options | Enabling Per Monitor Awareness (PMA) by checking **Optimize rendering for screens with different pixel densities (requires restart)** within **Tools** > **Options** can cause issues with dialogs not rendering. | Don't enable **Optimize rendering for screens with different pixel densities (requires restart)** within **Tools** > **Options**. |
