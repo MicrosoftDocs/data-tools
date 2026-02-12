@@ -51,7 +51,7 @@ For previous versions of SSMS, see:
 | GitHub Copilot in SSMS (Preview) | Underlying enhancements now enable accepting a code completion, either partially or entirely, with a mouse click. |
 | Libraries | Updated Microsoft.Data.SqlClient to 6.1.3. |
 | Libraries | Updated MSODBCSQL to 18.6.1.1. |
-| Query Editor | Underlying enhancements now enable faster scrolling when holding down the <kbd>Alt<kbd> key. Use the **Fast scroll multiplier** setting in **Tools** > **Options** > **Text Editor** > **Advanced** > **Touchpad and mouse wheel scrolling sensitivity** to adjust the scroll speed. |
+| Query Editor | Underlying enhancements now enable faster scrolling when holding down the <kbd>Alt</kbd> key. Use the **Fast scroll multiplier** setting in **Tools** > **Options** > **Text Editor** > **Advanced** > **Touchpad and mouse wheel scrolling sensitivity** to adjust the scroll speed. |
 | Query Editor | Underlying enhancements now enable syntatic line compression to allow lines without letters or numbers to compress by 25%. Enable this feature in **Tools** > **Options** > **Text Editor** > **Advanced** by checking both **Compress blank lines** and **Compress lines that do not have any alphanumeric characters**. |
 | Visual Studio | Updated to Visual Studio 18.3 [11506.43]. |
 
