@@ -24,7 +24,7 @@ For related information about GitHub Copilot Chat, see [Use the GitHub Copilot C
 
 ## How Code Completions work
 
-Code Completions for GitHub Copilot in SSMS use advanced machine learning models trained on a vast dataset of publicly available code from GitHub repositories. As you type code, the AI analyzes the context and provides relevant suggestions in real time. Context for GitHub Copilot in SSMS includes the schema for the database to which you're connected in the active editor, the contents of the current and all open editors. You can also obtain suggestions by writing a comment, often preceeded by `--`, in natural language that describes what you want the code to do.
+Code Completions for GitHub Copilot in SSMS use advanced machine learning models trained on a vast dataset of publicly available code from GitHub repositories. As you type code, the AI analyzes the context and provides relevant suggestions in real time. Context for GitHub Copilot in SSMS includes the schema for the database to which you're connected in the active editor, the contents of the current and all open editors. You can also obtain suggestions by writing a comment, often preceded by `--`, in natural language that describes what you want the code to do.
 
 ## Prerequisites
 
@@ -41,6 +41,7 @@ Code Completions for GitHub Copilot in SSMS supports the T-SQL language.
 As you type comments or T-SQL in the editor, GitHub Copilot provides context-aware code completions and suggestions.
 
 1. Open SSMS and connect to your database in query editor.
+
 1. In the editor, enter a comment to see inline code suggestions from GitHub Copilot:
 
    ```sql
@@ -48,9 +49,10 @@ As you type comments or T-SQL in the editor, GitHub Copilot provides context-awa
    ```
 
 1. Select enter to see the suggestion.
+
 1. To accept the suggestion, select <kbd>Tab</kbd>. To reject the suggestion, select <kbd>Esc</kbd> or continue typing.
 
-Suggestions can also be accepted, either partially or entirely, with a mouse click starting in SSMS 22.3. To change the keyboard shortcut used to accept suggestions, go to **Tools** > **Options** > **All Settings** > **Text Editor** > **Code Completions** > **Preferences** > **Accept code compeltions using keyboard shortcuts**.
+Suggestions can also be accepted, either partially or entirely, with a mouse or other pointing device starting in SSMS 22.3. To change the keyboard shortcut used to accept suggestions, go to **Tools** > **Options** > **All Settings** > **Text Editor** > **Code Completions** > **Preferences** > **Accept code completions using keyboard shortcuts**.
 
 ## Shortcuts and settings
 
