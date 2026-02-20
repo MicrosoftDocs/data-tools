@@ -28,7 +28,7 @@ Ask Copilot any question, in any order, in the sidecar chat. For example:
 - `List server configuration settings that have been changed from the default in table format with the setting and current value`
 - `How do I find out who is connected to this database?`
 - `What is the compatibility mode for the database?`
-- `hat's the largest table in the database?`
+- `What's the largest table in the database?`
 - `What columns store email addresses?`
 - `How many customers do we have and where are they located?`
 - `Have any SQL Agent jobs have failed in the last week and if so, which ones?`
