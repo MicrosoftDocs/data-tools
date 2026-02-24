@@ -49,11 +49,11 @@ If you're scripting the deployment of SSMS in an offline environment to client w
    Alternatively, create a batch file that uses certutil.exe, which ships with Windows, with the following commands:
 
    ```console
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
+   certutil.exe -f -addstore "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -f -addstore "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
+   certutil.exe -f -addstore "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
 
 1. Deploy the batch file to the client. This command should run from an elevated process.
@@ -78,6 +78,12 @@ To ensure the installation completes successfully, follow these steps:
 1. Select **Finish**.
 1. You see the prompt, **The import was successful**.
 1. Install SSMS using the local layout.
+
+Alternatively, create a batch file that uses certutil.exe, which ships with Windows, with the following commands:
+
+```console
+certutil.exe -f -addstore "CA" "[layout path]\certificates\Microsoft Windows Code Signing PCA 2024.crt)"
+```
 
 ## Maintain an offline machine
 
