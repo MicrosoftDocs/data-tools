@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 02/11/2026
+ms.date: 02/24/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -31,11 +31,32 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.3.2"></a>
+
+### 22.3.2
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.3.2
+- Release date: February 24, 2026
+
+#### What's new in 22.3.2
+
+| Feature | Details |
+| --- | --- |
+| GitHub Copilot in SSMS (Preview) | Added connection information at the beginning of a response to clearly display the server and database for which the response is generated. |
+
+#### Bug fixes in 22.3.2
+
+| Feature | Description |
+| --- | --- |
+| GitHub Copilot in SSMS (Preview) | Fixed issue where a database constitution created as an extended property for the database with the name `CONSTITUTION.md`, wasn't recognized automatically. See [Database constitution not honored automatically in SSMS v22.3](https://developercommunity.visualstudio.com/t/Database-constitution-not-honored-automa/11043008). |
+| GitHub Copilot in SSMS (Preview) | Addressed issue that left open connections from GitHub Copilot. See [GitHub Copilot leaves open connections on SQL Server](https://developercommunity.visualstudio.com/t/GitHub-Copilot-leaves-open-connections-o/11033490). |
+| GitHub Copilot in SSMS (Preview) | Improved response handling to mitigate extensive retries. See [Copilot in SSMS 22 ate up 50% of usage credits on business account](https://developercommunity.visualstudio.com/t/Copilot-in-SSMS-22-ate-up-50-of-usage-c/11022120). |
+
 <a id="22.3.0"></a>
 
 ### 22.3.0
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.3.0
 - Release date: February 10, 2026
@@ -52,7 +73,7 @@ For previous versions of SSMS, see:
 | Libraries | Updated Microsoft.Data.SqlClient to 6.1.3. |
 | Libraries | Updated MSODBCSQL to 18.6.1.1. |
 | Query Editor | Underlying enhancements now enable faster scrolling when holding down the <kbd>Alt</kbd> key. Use the **Fast scroll multiplier** setting in **Tools** > **Options** > **Text Editor** > **Advanced** > **Touchpad and mouse wheel scrolling sensitivity** to adjust the scroll speed. |
-| Query Editor | Underlying enhancements now enable syntatic line compression to allow lines without letters or numbers to compress by 25%. Enable this feature in **Tools** > **Options** > **Text Editor** > **Advanced** by checking both **Compress blank lines** and **Compress lines that do not have any alphanumeric characters**. |
+| Query Editor | Underlying enhancements now enable syntactic line compression to allow lines without letters or numbers to compress by 25%. Enable this feature in **Tools** > **Options** > **Text Editor** > **Advanced** by checking both **Compress blank lines** and **Compress lines that do not have any alphanumeric characters**. |
 | Visual Studio | Updated to Visual Studio 18.3 [11506.43]. |
 
 #### Bug fixes in 22.3.0
@@ -163,7 +184,7 @@ For previous versions of SSMS, see:
 | IntelliSense | Added support for ANSI concatenation using the `||=` operator. |
 | IntelliSense | Added support for `AI_GENERATE_EMBEDDINGS` syntax. |
 | IntelliSense | Added support for regular expression functions `REGEXP_MATCHES` and `REGEXP_SPLIT_TO_TABLE`. |
-| IntelliSense | Added IntelliSense support for `VECTOR_SEARCH`, `CREATE VECTOR INDEX`, `AUTOSEEDING_SYSTEM_DATABASES`, `REUSE_SYSTEM_DATABASES`, AND `CREATE JSON INDEX`. |
+| IntelliSense | Added IntelliSense support for `VECTOR_SEARCH`, `CREATE VECTOR INDEX`, `AUTOSEEDING_SYSTEM_DATABASES`, `REUSE_SYSTEM_DATABASES`, and `CREATE JSON INDEX`. |
 | JSON Viewer | Added the ability to view JSON data from the results grid. See [JSON column view like in Azure Data Studio](https://developercommunity.microsoft.com/t/JSON-column-view-like-in-azure-data-stud/10881763). |
 | Libraries | Updated Server Management Objects (SMO) to version 17.100.73. |
 | Libraries | Updated DacFx to version 170.0.97. |
@@ -178,7 +199,7 @@ For previous versions of SSMS, see:
 | Scripting | Added scripting support for tables with Vector columns. |
 | Snippets | Added numerous new snippet files, including snippets for creating various index types, creating and altering external models for AI embeddings, and managing security and schema objects. |
 | SQL Server Integration Services (SSIS) | Reinstated SQL Server Integration Services (SSIS) capabilities, including SSISDB catalog management, automated execution of SSIS packages, and the Import Export Wizard. |
-| Startup commands | Removed `-G` and `-E` options (replaced by `-A)`. |
+| Startup commands | Removed `-G` and `-E` options (replaced by `-A`). |
 | Table Designer | Added support for Vector data type to Table Designer. |
 | Themes | Introduced new themes and removed the Blue (SSMS) theme. |
 | Theming | Expanded dark theme support to include the Connect to Azure Storage dialog, and the Registered Servers Export, Import, and Move Registered Server dialogs. |
@@ -191,7 +212,7 @@ For previous versions of SSMS, see:
 | Activity Monitor | Resolved various context menu issues for **Recent Expensive Queries** and **Active Expensive Queries**. See [Activity Monitor Failed to retrieve Execution Plan data](https://developercommunity.visualstudio.com/t/Activity-Monitor-Failed-to-retrieve-Exec/10983180). |
 | Analysis Services | Resolved error `Object reference not set to an instance of an object. (Microsoft.VisualStudio.Design)` when browsing OLAP cubes. See [SSMS 21 Error browsing OLAP cubes](https://developercommunity.visualstudio.com/t/SSMS-21-Error-browsing-OLAP-cubes/10915226). |
 | Analysis Services | Resolved error `Could not load file or assembly 'Microsoft.Data.ConnectionUI.Dialog, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The system cannot find the file specified.` See [Browse MDM models generates an error](https://developercommunity.visualstudio.com/t/Browse-MDM-models-generates-an-error/10920140). |
-| Authentication | Introduced a new menu option in **Help** > **Clear Entra ID Token Cache** to fix an issue that prevented users recently added to an Entra ID group from being able to sign in. See [Unable to login when recently been added to an EntraID group](https://developercommunity.microsoft.com/t/Unable-to-login-when-recently-been-added/10946664). |
+| Authentication | Introduced a new menu option in **Help** > **Clear Entra ID Token Cache** to fix an issue that prevented users recently added to a Microsoft Entra ID group from being able to sign in. See [Unable to login when recently been added to an EntraID group](https://developercommunity.microsoft.com/t/Unable-to-login-when-recently-been-added/10946664). |
 | Available Databases | Resolved an issue that generated the error `Parse error at line: 1, column: 5: Incorrect syntax near 'NOEXEC'.` when switching between a SQL database and a Data Warehouse on the same server. See [Issue switching between DW and SQL database in SSMS21](https://developercommunity.visualstudio.com/t/-Issue-switching-between-DW-and-SQL-data/10972386). |
 | Connection Dialog | Fixed an issue where the **Application Name** field in **Advanced Properties** wasn't being inherited. See [New Query from Object Explorer Does Not Inherit App Name from Highlighted Database](https://developercommunity.visualstudio.com/t/New-Query-from-Object-Explorer-Does-Not-/10977858). |
 | Database Properties | Fixed an issue that blocked the ability to change compatibility level for users with `ALTER` permissions. See [Database compatibility level drop down disabled but query works](https://developercommunity.visualstudio.com/t/Database-compatibility-level--drop-down-/10927466). |
