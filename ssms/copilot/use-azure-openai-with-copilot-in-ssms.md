@@ -17,7 +17,7 @@ f1_keywords:
 ---
 # Use Azure OpenAI with Copilot in SSMS
 
-Copilot in SQL Server Management Studio (SSMS) uses an endpoint and deployment in Azure OpenAI. This article provides the steps to create the necessary Azure OpenAI resources. For more information, see [Create and deploy an Azure OpenAI in Azure AI Foundry Models resource](/azure/ai-services/openai/how-to/create-resource).
+Copilot in SQL Server Management Studio (SSMS) uses an endpoint and deployment in Azure OpenAI. This article provides the steps to create the necessary Azure OpenAI resources. For more information, see [Create and deploy an Azure OpenAI in Microsoft Foundry Models resource](/azure/ai-services/openai/how-to/create-resource).
 
 Access to deployments can be provided using Microsoft Entra authentication, or API Keys. Microsoft Entra authentication is recommended as a more secure option.
 
@@ -31,11 +31,9 @@ Endpoint creation is done in the Azure portal.
 
 1. Go to **Services**.
 
-1. Select **Azure AI services**, which is listed under **AI + Machine Learning**.
+1. Under **AI + machine learning**, select **Azure OpenAI**.
 
-1. Within *Azure AI services**, select **Azure OpenAI account**.
-
-1. Select **+ Create** to create a new Azure OpenAI service.
+1. Select **+ Create**, and then select **Azure OpenAI** to create a new Azure OpenAI service.
 
 1. On the **Basics** page, complete all the required details.
 
@@ -104,11 +102,11 @@ The final step required is creating the deployment.
 
 1. Within the endpoint resource, go to the **Overview** page.
 
-1. Select **Explore Azure AI Foundry portal**, which launches a separate portal.
+1. Select **Go to Foundry portal**, which launches a separate portal.
 
 1. A warning that you're leaving the Azure portal appears. Select **Continue**.
 
-1. Within the Azure AI Foundry portal, select **Deployments** under **Shared resources**.
+1. Within the Foundry portal, select **Deployments** under **Shared resources**.
 
 1. Select **+ Deploy model**, then select **Deploy base model**.
 
@@ -130,7 +128,7 @@ The final step required is creating the deployment.
 
 1. The **Model version** should be `2024-11-20`, and the resource location should be set by default (inherited from the endpoint you already created).
 
-1. Set the **Tokens per Minute Rate Limit** to the maximum value available. It can be modified in the Azure AI Foundry portal at any time, should you decide to lower the cap. The lower the value, the fewer the questions per minute that Copilot can answer. For more information, see [Azure OpenAI in Azure AI Foundry Models quotas and limits](/azure/ai-services/openai/quotas-limits).
+1. Set the **Tokens per Minute Rate Limit** to the maximum value available. It can be modified in the Foundry portal at any time, should you decide to lower the cap. The lower the value, the fewer the questions per minute that Copilot can answer. For more information, see [Azure OpenAI in Foundry Models quotas and limits](/azure/ai-services/openai/quotas-limits).
 
 1. Leave **Content filter** at the default value of **DefaultV2**, unless your company has its own policies around AI content filters.
 
@@ -148,11 +146,11 @@ The final step required is creating the deployment.
 
 ## Monitor cost
 
-The cost of Copilot in SSMS varies based on use and follows a pay-as-you-go billing model. Because the cost isn't a fixed, recurring value, we recommend monitoring the resource spend on a regular basis to mitigate surprises in billing. For more information, see [Plan to manage costs for Azure OpenAI in Azure AI Foundry Models](/azure/ai-services/openai/how-to/manage-costs).
+The cost of Copilot in SSMS varies based on use and follows a pay-as-you-go billing model. Because the cost isn't a fixed, recurring value, we recommend monitoring the resource spend on a regular basis to mitigate surprises in billing. For more information, see [Plan and manage costs for Microsoft Foundry](/azure/ai-services/openai/how-to/manage-costs).
 
 ## Related content
 
 - [Troubleshooting issues with Copilot in SQL Server Management Studio](copilot-in-ssms-troubleshooting.md)
-- [What is Azure OpenAI in Azure AI Foundry Models?](/azure/ai-services/openai/overview)
+- [What is Azure OpenAI in Foundry Models?](/azure/ai-services/openai/overview)
 - [Use the chat window for Copilot in SQL Server Management Studio](copilot-in-ssms-chat.md)
 - [Code assistance for Copilot in SQL Server Management Studio](copilot-in-ssms-code-assistance.md)

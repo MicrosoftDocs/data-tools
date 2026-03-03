@@ -122,7 +122,7 @@ Copilot offers commands to customize your experience, capture information, and a
 
 Commands with a colon (`:`) require more information. For example, submitting the prompt `/style respond in the style of a super friendly assistant and use emojis` doesn't change the style.
 
-For more information about Azure OpenAI token limits, see [Azure OpenAI in Azure AI Foundry Models quotas and limits](/azure/ai-services/openai/quotas-limits).
+For more information about Azure OpenAI token limits, see [Azure OpenAI in Microsoft Foundry Models quotas and limits](/azure/ai-services/openai/quotas-limits).
 
 ## Provide feedback
 

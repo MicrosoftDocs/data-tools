@@ -90,7 +90,7 @@ To add a model that is provisioned in Azure OpenAI, you need the deployment and 
 
 1. Select **Save** to close the dialog.
 
-For more information on model deployment in Azure OpenAI, see [Create and deploy an Azure OpenAI in Azure AI Foundry Models resource](/azure/ai-services/openai/how-to/create-resource).
+For more information on model deployment in Azure OpenAI, see [Create and deploy an Azure OpenAI in Microsoft Foundry Models resource](/azure/ai-services/openai/how-to/create-resource).
 
 ### Edit a custom model
 
