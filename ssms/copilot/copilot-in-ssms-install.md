@@ -24,7 +24,7 @@ Copilot in SQL Server Management Studio (SSMS) is your AI assistant that can ans
 To use Copilot in SSMS, you need:
 
 - [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)]
-- An endpoint and deployment in [Azure OpenAI in Azure AI Foundry](/azure/ai-services/openai/overview)
+- An endpoint and deployment in [Azure OpenAI in Microsoft Foundry](/azure/ai-services/openai/overview)
 
 [!INCLUDE [ssms-21-md](../includes/ssms-21-md.md)] is the GA version of SQL Server Management Studio (SSMS). For information related to SSMS 21 installation, see [Install SQL Server Management Studio](../install/install.md).
 
@@ -68,7 +68,7 @@ You can remove Copilot in SSMS from your SSMS installation using the Visual Stud
 ## Related content
 
 - [Troubleshooting issues with Copilot in SQL Server Management Studio](copilot-in-ssms-troubleshooting.md)
-- [What is Azure OpenAI in Azure AI Foundry Models?](/azure/ai-services/openai/overview)
+- [What is Azure OpenAI in Foundry Models?](/azure/ai-services/openai/overview)
 - [Use Azure OpenAI with Copilot in SSMS](use-azure-openai-with-copilot-in-ssms.md)
 - [Use the chat window for Copilot in SQL Server Management Studio](copilot-in-ssms-chat.md)
 - [Code assistance for Copilot in SQL Server Management Studio](copilot-in-ssms-code-assistance.md)
