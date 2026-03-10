@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 02/24/2026
+ms.date: 03/10/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -31,11 +31,24 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.3.3"></a>
+
+### 22.3.3
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.3.3
+- Release date: March 10, 2026
+
+#### What's new in 22.3.3
+
+| Feature | Details |
+| --- | --- |
+| Visual Studio | Updated to Visual Studio 18.3.3 [11527.330]. |
+
 <a id="22.3.2"></a>
 
 ### 22.3.2
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.3.2
 - Release date: February 24, 2026
@@ -45,6 +58,7 @@ For previous versions of SSMS, see:
 | Feature | Details |
 | --- | --- |
 | GitHub Copilot in SSMS (Preview) | Added connection information at the beginning of a response to clearly display the server and database for which the response is generated. |
+| Visual Studio | Updated to Visual Studio 18.3.2 [11520.95]. |
 
 #### Bug fixes in 22.3.2
 
@@ -176,8 +190,8 @@ For previous versions of SSMS, see:
 | Edit Data | Added support for Vector data type to Edit Data. |
 | Execution Plans | Added the ability to open an execution plan in a new tab. When viewing an Execution Plan, right-click to bring up the menu and select **Show Execution Plan in New Tab.** See [SSMS Right Click To Open Execution Plans In A New Tab](https://feedback.azure.com/d365community/idea/8c1f1930-35cc-ee11-92bc-6045bd83e1af). |
 | GitHub Copilot in SSMS (Preview) | Added [GitHub Copilot in SQL Server Management Studio (Preview)](github-copilot/get-started.md), available from the **AI Assistance** workload in the Visual Studio Installer. |
-| GitHub Copilot in SSMS | Added support for model selection within chat. |
-| GitHub Copilot in SSMS | Improved responses for [!INCLUDE [sssql25-md](includes/sssql25-md.md)] features. |
+| GitHub Copilot in SSMS (Preview) | Added support for model selection within chat. |
+| GitHub Copilot in SSMS (Preview) | Improved responses for [!INCLUDE [sssql25-md](includes/sssql25-md.md)] features. |
 | GitHub Copilot in SSMS (Preview) | Introduced support for the SSMS responder when using **Ask Copilot** within **Feature Search**. |
 | Indexes | Added options to create Vector and JSON indexes. Right-click **Indexes** > **New Index** > **JSON Index...** or **Vector Index...** |
 | IntelliSense | Added support for CURRENT_TIMEZONE_ID syntax, see [SSMS 21 does not recognize CURRENT_TIMEZONE_ID function](https://developercommunity.microsoft.com/t/SSMS-21-does-not-recognize-CURRENT_TIMEZ/10879862). |
