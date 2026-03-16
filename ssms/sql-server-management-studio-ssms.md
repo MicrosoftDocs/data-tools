@@ -3,7 +3,7 @@ title: "SQL Server Management Studio (SSMS)"
 description: Learn details about SQL Server Management Studio (SSMS) and what SSMS can do, including how to manage Analysis Services Solutions.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 01/05/2026
+ms.date: 03/09/2026
 ms.service: sql-server-management-studio
 ms.topic: overview
 ms.collection:
@@ -21,7 +21,7 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server ASDB, ASDBMI, ASDW](includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
-SQL Server Management Studio (SSMS) is an integrated environment for managing any SQL infrastructure. Use SSMS to access, configure, manage, administer, and develop all components of [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)], [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview), [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview), [SQL Server on Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview), [SQL database in Microsoft Fabric](/fabric/database/sql/overview), and [Azure Synapse Analytics](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is/).
+SQL Server Management Studio (SSMS) is an integrated environment for managing any SQL infrastructure. Use SSMS to access, configure, manage, administer, and develop platforms that use the [Microsoft SQL Database Engine](/sql/database-engine/sql-database-engine), including [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)], [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview), [SQL database in Microsoft Fabric](/fabric/database/sql/overview), [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview), [SQL Server on Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview), and others.
 
 SSMS provides a single comprehensive utility that combines a broad group of graphical tools with many rich script editors to provide access to [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] for developers and database administrators of all skill levels. For more information, see
 [Components and features in SQL Server Management Studio](components-features.md).

@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # Configure WMI to show server status in SQL Server tools
 
-[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE [SQL Server](includes/applies-to-version/sqlserver.md)]
 
 This article describes how to configure WMI to show the server status in SQL Server tools in [!INCLUDE [ssnoversion](includes/ssnoversion-md.md)]. When connecting to servers, both the Registered Servers and Object Explorer components of [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)], as well as [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] Configuration Manager, use Windows Management Instrumentation (WMI) to obtain the status of the [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] (MSSQLSERVER) and [!INCLUDE [ssNoVersion](includes/ssnoversion-md.md)] Agent (MSSQLSERVER) services.
 
