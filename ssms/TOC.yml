@@ -19,19 +19,19 @@ items:
     items:
       - name: Overview
         href: components-features.md
-      - name: Query Hint Recommendation tool (Preview)
+      - name: Query Hint Recommendation tool
         items:
-          - name: Overview of the Query Hint Recommendation tool (Preview)
+          - name: Overview of the Query Hint Recommendation tool
             href: query-hint-tool/hint-tool-overview.md
-          - name: Install the Query Hint Recommendation tool (Preview)
+          - name: Install the Query Hint Recommendation tool
             href: query-hint-tool/hint-tool-install.md
-          - name: Use the Query Hint Recommendation tool (Preview)
+          - name: Use the Query Hint Recommendation tool
             href: query-hint-tool/hint-tool-use.md
-      - name: Copilot in SQL Server Management Studio (SSMS) (Preview)
+      - name: Copilot in SQL Server Management Studio (SSMS)
         items:
-          - name: Overview of Copilot in SSMS (Preview)
+          - name: Overview of Copilot in SSMS
             href: copilot/copilot-in-ssms-overview.md
-          - name: Install Copilot in SSMS (Preview)
+          - name: Install Copilot in SSMS
             href: copilot/copilot-in-ssms-install.md
           - name: Azure OpenAI configuration
             href: copilot/use-azure-openai-with-copilot-in-ssms.md
@@ -107,11 +107,11 @@ items:
       - name: User assistance in SSMS
         href: user-assistance-in-sql-server-management-studio.md
 
-  - name: GitHub Copilot in SQL Server Management Studio (SSMS) (Preview)
+  - name: GitHub Copilot in SQL Server Management Studio (SSMS)
     items:
-      - name: What is GitHub Copilot in SSMS (Preview)?
+      - name: What is GitHub Copilot in SSMS?
         href: github-copilot/overview.md
-      - name: Get started with GitHub Copilot in SSMS (Preview)
+      - name: Get started with GitHub Copilot in SSMS
         href: github-copilot/get-started.md
       - name: Code suggestions
         items:
@@ -127,6 +127,8 @@ items:
             href: github-copilot/chat-context.md
           - name: Database instructions
             href: github-copilot/database-instructions.md
+          - name: Custom instructions
+            href: github-copilot/custom-instructions.md
           - name: AI models
             href: github-copilot/ai-models.md
       - name: Account
@@ -166,6 +168,8 @@ items:
         href: connection-pooling-sql-server-management-studio.md
       - name: Modern connection dialog
         href: quickstarts/ssms-connect-query-sql-server.md?tabs=modern#connect-to-a-sql-server-instance
+      - name: Query results
+        href: quickstarts/work-with-query-results.md
       - name: Register servers
         items:
           - name: Overview

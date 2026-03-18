@@ -1,11 +1,11 @@
 ---
-title: "Overview of the Query Hint Recommendation Tool (Preview)"
+title: Overview of the Query Hint Recommendation Tool
 titleSuffix: SQL Server Management Studio
 description: Query Hint Recommendation tool overview.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/07/2025
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -14,7 +14,7 @@ ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to use the Query Hint Recommendation Tool.
 ---
 
-# Query Hint Recommendation tool (Preview)
+# Query Hint Recommendation tool
 
 Microsoft SQL Server and Azure SQL offer a suite of query hints that can guide the query optimizer to generate alternative query execution plans that provide better performance. [Query Store hints](/sql/relational-databases/performance/query-store-hints) provide a user-friendly way to influence the shape of query plans without changing the application code. While Query Store hints are convenient, identifying the optimal hint for a specific query can require a manual trial-and-error process, which can be time consuming for users.
 
@@ -28,5 +28,5 @@ In summary, the tool makes effective use of the tuning time budget to efficientl
 
 ## Related content
 
-- [Install the Query Hint Recommendation tool (Preview)](hint-tool-install.md)
-- [Use the Query Hint Recommendation tool (Preview)](hint-tool-use.md)
+- [Install the Query Hint Recommendation tool](hint-tool-install.md)
+- [Use the Query Hint Recommendation tool](hint-tool-use.md)

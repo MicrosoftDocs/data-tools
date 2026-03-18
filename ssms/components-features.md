@@ -5,7 +5,7 @@ description: Discover capabilities and where to start with each component in SQL
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato, drskwier
-ms.date: 03/11/2026
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: overview
 ms.collection:
@@ -21,8 +21,8 @@ This article describes the components and features available in [!INCLUDE [ssman
 
 | Component or feature | Description | Article |
 | --- | --- | --- |
-| **GitHub Copilot in SSMS (Preview)** | Chat, code actions (Document, Explain, Fix, Optimize), walkthrough, model selection, and Bring Your Own Model (BYOM). | [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](github-copilot/get-started.md) |
-| **Query Hint Recommendation Tool (Preview)** | Analyze statements and apply recommended hints. Installed via **Visual Studio Installer** > **Individual Components** > **Code Tools**. | [Query Hint Recommendation tool (Preview)](query-hint-tool/hint-tool-overview.md) |
+| **GitHub Copilot in SSMS (Preview)** | Chat, code actions (Document, Explain, Fix, Optimize), walkthrough, model selection, and Bring Your Own Model (BYOM). | [Get started with GitHub Copilot in SQL Server Management Studio](github-copilot/get-started.md) |
+| **Query Hint Recommendation Tool (Preview)** | Analyze statements and apply recommended hints. Installed via **Visual Studio Installer** > **Individual Components** > **Code Tools**. | [Query Hint Recommendation tool](query-hint-tool/hint-tool-overview.md) |
 | **Git integration** | Integration with Git for tracking, managing, and collaborating on SQL scripts. Clone and create repositories, manage branches, and view diffs inside SSMS, using the same familiar interface as Visual Studio. | [About Git in Visual Studio](/visualstudio/version-control/git-with-visual-studio) |
 | **Modern connection dialog** | Browse Microsoft Fabric resources, copy and paste connection strings, and manage encryption and certificate options more easily. | [Quickstart: Connect and query a SQL Server instance](quickstarts/ssms-connect-query-sql-server.md) |
 | **SQL Server migration component** | Assess, prepare, and migrate your [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] databases. | [SQL Server migration component in SQL Server Management Studio](migrate-sql-server-component.md) |

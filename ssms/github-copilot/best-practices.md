@@ -5,7 +5,7 @@ description: Learn about best practices for using GitHub Copilot in SQL Server M
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/14/2025
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -13,13 +13,13 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand the best practices to optimize my use of Copilot in SQL Server Management Studio.
 ---
-# Best practices for GitHub Copilot in SQL Server Management Studio (Preview)
+# Best practices for GitHub Copilot in SQL Server Management Studio
 
 GitHub Copilot in SQL Server Management Studio (SSMS) accelerates your productivity within your workflow in SSMS, including writing and editing Transact-SQL (T-SQL). To get the most out of GitHub Copilot in SSMS, you should learn how to collaborate with it effectively. Like any partner, GitHub Copilot in SSMS performs best when given clear direction and appropriate context. Optimal use of the chat window also enhances the quality of your experience with GitHub Copilot in SSMS.
 
 ## Chat window
 
-The icons and capabilities of the chat window are documented in [Use the GitHub Copilot Chat experience in SQL Server Management Studio (Preview)](chat.md), but there are other considerations specific to prompts.
+The icons and capabilities of the chat window are documented in [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md), but there are other considerations specific to prompts.
 
 Primarily, don't treat the chat window as a results window. When you ask GitHub Copilot questions about your schema or data, it might directly execute a query to return information to you in the chat window. GitHub Copilot in SSMS doesn't determine the number of rows returned by a query before it executes, and if the query returns 1,000 rows, it tries to display that information in the chat. Large result sets aren't easily readable, and can't be manipulated, within the chat window.
 
@@ -57,5 +57,5 @@ Example prompts:
 
 ## Related content
 
-- [Use the GitHub Copilot Chat experience in SQL Server Management Studio (Preview)](chat.md)
-- [Scenarios for GitHub Copilot in SQL Server Management Studio (Preview)](scenarios.md)
+- [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md)
+- [Scenarios for GitHub Copilot in SQL Server Management Studio](scenarios.md)

@@ -1,11 +1,11 @@
 ---
 title: Database Instructions
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to use database instructions with GitHub Copilot in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 02/11/2026
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,13 +14,13 @@ ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to use database instructions with GitHub Copilot in SQL Server Management Studio.
 ---
 
-# Use database instructions with GitHub Copilot in SQL Server Management Studio (Preview)
+# Use database instructions with GitHub Copilot in SQL Server Management Studio
 
 Database instructions provide GitHub Copilot in SQL Server Management Studio (SSMS) with database-specific context and guidance that lives directly in the database. Database owners and teams can use them to describe business rules, data conventions, and usage patterns. With database instructions, Copilot can generate more accurate, meaningful, and consistent responses when users ask questions or write queries. Database instructions act as living documentation that travels with the database and is automatically applied during Copilot interactions.
 
 In this article, you learn how to use database instructions, which further empower users and Copilot to find the correct objects and information faster. This feature helps reduce the time spent providing database, business, and internal knowledge to Copilot.
 
-For related information about GitHub Copilot Chat, see [Use the GitHub Copilot Chat experience in SQL Server Management Studio (Preview)](chat.md).
+For related information about GitHub Copilot Chat, see [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md).
 
 ## How database instructions work
 
@@ -102,5 +102,5 @@ Database instructions are currently only supported as extended properties. They 
 
 ## Related content
 
-- [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](get-started.md)
-- [Troubleshoot GitHub Copilot in SQL Server Management Studio (Preview)](troubleshoot.md)
+- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
+- [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)

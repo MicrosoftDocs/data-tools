@@ -1,11 +1,11 @@
 ---
 title: Chat Context
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to add context for GitHub Copilot in SQL Server Management Studio.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/30/2025
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -14,7 +14,7 @@ ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to add context for GitHub Copilot in SQL Server Management Studio.
 ---
 
-# Add context for GitHub Copilot in SQL Server Management Studio (Preview)
+# Add context for GitHub Copilot in SQL Server Management Studio
 
 Add more context to your prompts in GitHub Copilot in SQL Server Management Studio (SSMS) by using references, in addition to its contextual knowledge, to obtain better responses.
 
@@ -46,11 +46,11 @@ To start over with a new chat session and discard the current context, start a n
 
 ### New chat thread
 
-Select **Create new thread** or **Ctrl**+**N** in the chat window to start a new thread.
+Select **Create new thread** or <kbd>Ctrl</kbd>+<kbd>N</kbd> in the chat window to start a new thread.
 
 ### Switch chat thread
 
-You can toggle between multiple ongoing threads to provide the right historical context for your question. Use **Ctrl**+**Page Down** for previous thread or **Ctrl**+**Page Up** for next thread in the chat window. **Ctrl**+**Shift**+**T** expands the thread dropdown list.
+You can toggle between multiple ongoing threads to provide the right historical context for your question. Use <kbd>Ctrl</kbd>+<kbd>Page Down</kbd> for previous thread or <kbd>Ctrl</kbd>+<kbd>Page Up</kbd> for next thread in the chat window. <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> expands the thread dropdown list.
 
 ### Preserve the inline chat
 
@@ -67,5 +67,5 @@ Keep the chat conversation open and continue to iterate and prompt Copilot to im
 
 ## Related content
 
-- [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](get-started.md)
-- [Scenarios for GitHub Copilot in SQL Server Management Studio (Preview)](scenarios.md)
+- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
+- [Scenarios for GitHub Copilot in SQL Server Management Studio](scenarios.md)

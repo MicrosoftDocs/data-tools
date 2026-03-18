@@ -1,11 +1,11 @@
 ---
 title: Scenarios
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn about example scenarios for GitHub Copilot in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 11/11/2025
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -13,7 +13,7 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand scenarios where I can leverage GitHub Copilot in SQL Server Management Studio.
 ---
-# Scenarios for GitHub Copilot in SQL Server Management Studio (Preview)
+# Scenarios for GitHub Copilot in SQL Server Management Studio
 
 Copilot in SSMS is an advanced AI tool designed to assist users of SQL Server Management Studio (SSMS) with managing and developing SQL databases. Whether you're a database administrator, database developer, application administrator, business analyst, or somewhere in between, Copilot in SSMS can save you time and help you become more efficient in your workflow.
 
@@ -124,5 +124,5 @@ You can ask Copilot any question about SQL or writing T-SQL. Always review scrip
 
 ## Related content
 
-- [Use the GitHub Copilot Chat experience in SQL Server Management Studio (Preview)](chat.md)
-- [Add context for GitHub Copilot in SQL Server Management Studio (Preview)](chat-context.md)
+- [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md)
+- [Add context for GitHub Copilot in SQL Server Management Studio](chat-context.md)

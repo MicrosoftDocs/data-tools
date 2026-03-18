@@ -1,11 +1,11 @@
 ---
-title: "Use the Query Hint Recommendation Tool (Preview)"
+title: Use the Query Hint Recommendation Tool
 titleSuffix: SQL Server Management Studio
 description: Learn how to use the Query Hint Recommendation tool.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 01/16/2026
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -13,7 +13,7 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to learn how to use the Query Hint Recommendation tool so that I can improve query performance.
 ---
-# Use the Query Hint Recommendation tool (Preview)
+# Use the Query Hint Recommendation tool
 
 The Query Hint Recommendation tool helps users of SQL Server Management Studio (SSMS) explore [query hints](/sql/t-sql/queries/hints-transact-sql-query) to improve query performance.
 
@@ -54,13 +54,15 @@ The Query Hint Recommendation tool works with a single query in the active query
 
 The Query Hint Recommendation tool creates a log file that contains detailed information about the evaluation process, including errors, and can be useful for troubleshooting. The log file is stored in your `%TEMP%` folder by default. You can change the location by using the folder selection button in the tool window.
 
-## Visualizing the tuning process
+<a id="visualizing-the-tuning-process"></a>
+
+## Visualize the tuning process
 
 The Query Hint Recommendation tool includes a chart to provide a visual representation of the tuning process. This chart shows you the performance impact of different query hints in real-time. The chart includes a baseline performance measurement and then overlays the performance of increasingly helpful hints as they're found.
 
 ## Tabular view of explored hints
 
-The Query Hint Recommendation tool also provides a tabular view of all explored hints. This view includes key information such as the hint text, its performance impact, and whether it was skipped to save tuning time. Use this view  to quickly assess the effectiveness of different hints, and make an informed decision about which hint to apply.
+The Query Hint Recommendation tool also provides a tabular view of all explored hints. This view includes key information such as the hint text, its performance impact, and whether it was skipped to save tuning time. Use this view to quickly assess the effectiveness of different hints, and make an informed decision about which hint to apply.
 
 | Column | Description |
 | --- | --- |
@@ -70,7 +72,9 @@ The Query Hint Recommendation tool also provides a tabular view of all explored 
 | Gain % | The percentage improvement in query execution duration achieved by the query hint. |
 | Hint | The query hint applied to the query. |
 
-### Skipping query hints
+<a id="skipping-query-hints"></a>
+
+### Skip query hints
 
 The Query Hint Recommendation tool uses the following criteria to improve tuning efficiency by skipping certain hints.
 
@@ -105,4 +109,4 @@ By default, the Query Hint Recommendation tool explores all of the predefined qu
 
 ## Related content
 
-- [Install the Query Hint Recommendation tool (Preview)](hint-tool-install.md)
+- [Install the Query Hint Recommendation tool](hint-tool-install.md)

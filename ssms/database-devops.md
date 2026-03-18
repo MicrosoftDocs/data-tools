@@ -11,7 +11,7 @@ ms.collection:
   - data-tools
 ---
 
-# Database DevOps (Preview) in SQL Server Management Studio
+# Database DevOps (preview) in SQL Server Management Studio
 
 A SQL database project is a local representation of SQL objects that comprise the schema for a single database, such as tables, stored procedures, or functions. The development cycle of a SQL database project helps you integrate database development into continuous integration and continuous deployment (CI/CD) workflows that are familiar as development best practices. In SSMS, you can use `Microsoft.Build.Sql` projects in preview to help you implement, manage, and collaborate on database changes, by providing a local definition of the database objects.
 
