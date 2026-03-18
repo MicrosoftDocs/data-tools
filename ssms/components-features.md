@@ -1,10 +1,11 @@
 ---
-title: "Components and Features"
+title: Components and Features
 titleSuffix: SQL Server Management Studio
 description: Discover capabilities and where to start with each component in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 02/06/2026
+ms.reviewer: erinstellato, drskwier
+ms.date: 03/11/2026
 ms.service: sql-server-management-studio
 ms.topic: overview
 ms.collection:
@@ -29,6 +30,7 @@ This article describes the components and features available in [!INCLUDE [ssman
 | **Template Explorer** | Build and manage files of boilerplate text that you use to speed the development of queries and scripts. | [Template Explorer](template/template-explorer.md) |
 | **Visual Database Tools** | Use the visual design tools included in SSMS to build queries, tables, and diagram databases. | [Visual Database Tools](visual-db-tools/visual-database-tools.md) |
 | **Query Editor** | Use the SSMS language editors to interactively build queries and scripts. | [Query and text editors](f1-help/database-engine-query-editor-sql-server-management-studio.md) |
+| **Database DevOps (Preview)** | Implement, manage, and collaborate on database changes with SQL database projects and source control. | [Database DevOps (Preview) in SQL Server Management Studio](database-devops.md) |
 
 ## Management, security, and productivity
 
