@@ -4,7 +4,7 @@ description: Develop and deploy database changes with SQL database projects in S
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: drskwier, erinstellato
-ms.date: 03/17/2026
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -60,6 +60,15 @@ CREATE TABLE [dbo].[Products]
 Organize files by schema and object type using subfolders, such as `dbo/Tables` or `Sales/StoredProcedures`. This structure matches the output of SqlPackage extract and makes it easier to locate objects as your project grows. The SQL project build process includes all `.sql` files in the project folder and its subfolders by default.
 
 SSMS provides templates for common items to help you get started. To add a new item, right-click the project in Solution Explorer, select **Add** > **New Item**, and choose from the list of SQL object templates.
+
+## Open existing projects
+
+To open an existing SQL database project in SSMS, select **File** > **Open** > **Project/Solution** and navigate to the `.sqlproj` file.
+
+> [!IMPORTANT]
+> SSMS supports SDK-style `Microsoft.Build.Sql` projects only. The minimum supported SDK version is 2.1.0. If you have an original SQL project created in Visual Studio, you must convert it to the SDK-style format before opening it.
+
+For guidance on converting original SQL projects to the SDK-style format, see [Convert an original SQL project to an SDK-style project](/sql/tools/sql-database-projects/howto/convert-original-sql-project).
 
 ## Build projects and deploy changes
 
