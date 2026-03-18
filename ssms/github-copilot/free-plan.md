@@ -1,11 +1,11 @@
 ---
 title: Use GitHub Copilot for Free
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to use GitHub Copilot for free in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 11/11/2025
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -13,7 +13,7 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to use GitHub Copilot for free in SQL Server Management Studio.
 ---
-# Use GitHub Copilot for free in SQL Server Management Studio (Preview)
+# Use GitHub Copilot for free in SQL Server Management Studio
 
 GitHub Copilot Free enables you to experience AI-powered assistance in SQL Server Management Studio (SSMS) by providing limited access to Copilot features including Chat.
 
@@ -22,7 +22,7 @@ GitHub Copilot Free enables you to experience AI-powered assistance in SQL Serve
 To get started with Copilot Free in SSMS, you need:
 
 - [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)]
-- [GitHub Copilot in SQL Server Management Studio (Preview)](installation-state.md)
+- [GitHub Copilot in SQL Server Management Studio](installation-state.md)
 
 For information related to SSMS 22 installation, see [Install SQL Server Management Studio](../install/install.md).
 
@@ -74,5 +74,5 @@ For more information, see [About GitHub Copilot Free](https://aka.ms/ghdocscopil
 
 ## Related content
 
-- [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](get-started.md)
-- [Use the GitHub Copilot Chat experience in SQL Server Management Studio (Preview)](chat.md)
+- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
+- [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md)

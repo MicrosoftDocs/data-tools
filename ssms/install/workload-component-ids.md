@@ -1,10 +1,10 @@
 ---
 title: Workload and Component IDs for SQL Server Management Studio
 description: List the workload and component IDs that can be used when creating an offline installation of SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 11/11/2025
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: erinstellato, drskwier
+ms.date: 03/17/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -39,9 +39,9 @@ In SSMS 21 and later versions, every Preview and GA release has its own unique c
 
 ## SQL Server Management Studio core editor (included with SSMS)
 
-**ID:** Microsoft.VisualStudio.Component.CoreEditor
+**ID**: Microsoft.VisualStudio.Component.CoreEditor
 
-**Description:** The SQL Server Management Studio (SSMS) core experience. This component includes the Query Editor and Object Explorer, as well as database management, troubleshooting, and high availability and disaster recovery configuration.
+**Description**: The SQL Server Management Studio (SSMS) core experience. This component includes the Query Editor and Object Explorer, as well as database management, troubleshooting, and high availability and disaster recovery configuration.
 
 ### Components included by this workload
 
@@ -54,9 +54,9 @@ In SSMS 21 and later versions, every Preview and GA release has its own unique c
 
 ## AI Assistance
 
-**ID:** Microsoft.SqlServer.Workload.SSMS.AI
+**ID**: Microsoft.SqlServer.Workload.SSMS.AI
 
-**Description:** AI-powered assistants to help you write queries and manager your databases more efficiently.
+**Description**: AI-powered assistants to help you write queries and manager your databases more efficiently.
 
 ### Components included by this workload
 
@@ -67,9 +67,9 @@ In SSMS 21 and later versions, every Preview and GA release has its own unique c
 
 ## Business Intelligence
 
-**ID:** Microsoft.SqlServer.Workload.SSMS.BI
+**ID**: Microsoft.SqlServer.Workload.SSMS.BI
 
-**Description:** Empower your business end-to-end, transforming data into insights, analytics into action, and reports into results.
+**Description**: Empower your business end-to-end, transforming data into insights, analytics into action, and reports into results.
 
 ### Components included by this workload
 
@@ -81,9 +81,9 @@ In SSMS 21 and later versions, every Preview and GA release has its own unique c
 
 ## Code tools
 
-**ID:** Microsoft.SqlServer.Workload.SSMS.CodeTools
+**ID**: Microsoft.SqlServer.Workload.SSMS.CodeTools
 
-**Description:** Tools to fit when and where you work while improving code.
+**Description**: Tools to fit when and where you work while improving code.
 
 ### Components included by this workload
 
@@ -93,11 +93,24 @@ In SSMS 21 and later versions, every Preview and GA release has its own unique c
 | Microsoft.VisualStudio.Component.TeamExplorer.MinGit | Git integration | Recommended |
 | Microsoft.SSMS.Component.QueryHintTool | Query Hint Recommendations Tool | Recommended |
 
+## Database DevOps
+
+**ID**: Microsoft.SqlServer.Workload.SSMS.DevOps
+
+**Description**: Implement, manage, and collaborate on database changes with SQL database projects and source control.
+
+### Components included by this workload
+
+| Component ID | Name | Dependency type |
+| --- | --- | --- |
+| Microsoft.SSMS.Component.DevOps | SQL Database Projects | Required |
+| Microsoft.VisualStudio.Component.TeamExplorer.MinGit | Git integration | Optional |
+
 ## Hybrid and Migration
 
-**ID:** Microsoft.SqlServer.Workload.SSMS.HybridAndMigration
+**ID**: Microsoft.SqlServer.Workload.SSMS.HybridAndMigration
 
-**Description:** Assess database upgrade readiness, and move your data with ease.
+**Description**: Assess database upgrade readiness, and move your data with ease.
 
 ### Components included by this workload
 
@@ -107,7 +120,7 @@ In SSMS 21 and later versions, every Preview and GA release has its own unique c
 
 For more information about how to use this information, see [Create an offline installation of SQL Server Management Studio](create-offline.md).
 
-## Support or troubleshooting
+## Support and troubleshooting
 
 Sometimes, things can go wrong. If your SQL Server Management Studio installation fails, see [Troubleshoot installation and upgrade issues for SQL Server Management Studio](troubleshoot.md) for step-by-step guidance.
 

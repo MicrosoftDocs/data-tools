@@ -4,7 +4,7 @@ description: Learn to comment & uncomment code, indent text, filter objects, acc
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mathoma
-ms.date: 10/30/2025
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: tutorial
 ms.collection:
@@ -131,6 +131,12 @@ You can use the indentation buttons on the toolbar to increase or decrease the i
 
    > [!NOTE]  
    > The keyboard shortcut to decrease the indent is **Shift**+**Tab**.
+
+## Export query results
+
+Starting in SSMS 22.4.1, you can export query results from the **Results** grid to JSON, XML, Excel, and Markdown file types.
+
+For more information about query results destinations, including keyboard shortcuts and options, see [Query results in SQL Server Management Studio](../quickstarts/work-with-query-results.md).
 
 ## Filter objects in Object Explorer
 

@@ -1,11 +1,11 @@
 ---
 title: Ask Mode
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to use the GitHub Copilot Chat experience in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 12/04/2025
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -13,7 +13,7 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to use GitHub Copilot Chat in SQL Server Management Studio.
 ---
-# Use the GitHub Copilot Chat experience in SQL Server Management Studio (Preview)
+# Use the GitHub Copilot Chat experience in SQL Server Management Studio
 
 The Chat window for GitHub Copilot in SQL Server Management Studio (SSMS) enables enhanced AI-assisted database administration and development in SSMS, helping you be more productive and efficient when working with your SQL database. Currently, the chat window only executes `SELECT` queries (read-only).
 
@@ -44,7 +44,7 @@ GitHub Copilot Chat provides AI assistance to help you make informed decisions a
 
 ## Prerequisites
 
-To use GitHub Copilot Chat in SSMS, you need SSMS 22 or a later version, and a GitHub account with [Copilot access](https://docs.github.com/copilot/get-started/what-is-github-copilot#getting-access-to-copilot). Otherwise, you can use [Use GitHub Copilot for free in SQL Server Management Studio (Preview)](free-plan.md).
+To use GitHub Copilot Chat in SSMS, you need SSMS 22 or a later version, and a GitHub account with [Copilot access](https://docs.github.com/copilot/get-started/what-is-github-copilot#getting-access-to-copilot). Otherwise, you can use [Use GitHub Copilot for free in SQL Server Management Studio](free-plan.md).
 
 ## Use Copilot Chat in SSMS
 
@@ -60,27 +60,27 @@ The chat window of Copilot Chat in SSMS enables you to ask your questions and se
 
 1. Open a query editor window and connection to your database.
 1. In SSMS, select **View** > **GitHub Copilot Chat**.
-1. Use the example starter prompts in the chat window to start exploring Copilot Chat, or type in a prompt and select **Enter** or **Send** to submit your question.
+1. Use the example starter prompts in the chat window to start exploring Copilot Chat, or type in a prompt and select <kbd>Enter</kbd> or **Send** to submit your question.
 1. If Copilot Chat offers a T-SQL suggestion you want to use, select **Apply** to apply the code to the active query editor, **Copy code block** to copy the suggestion, or **Add to new file** to insert the code suggestion in a new file.
    - If you ask for help with understanding your code, the **Insert in new file** option isn't available.
-1. If you select **Apply**, the code suggestion is applied to the active editor in the diff view pattern. You can review and refine what is being proposed and apply it using **Tab**, or discard it using **Alt**+**Delete**.
+1. If you select **Apply**, the code suggestion is applied to the active editor in the diff view pattern. You can review and refine what is being proposed and apply it using <kbd>Tab</kbd>, or discard it using <kbd>Alt</kbd>+<kbd>Delete</kbd>.
 
 ### Ask questions in the inline chat view
 
 The inline chat view of Copilot Chat in SSMS enables you to ask your questions and see answers inline with the code directly in the editor window. With inline chat, you don't have to go back and forth to the chat window. You might find it easier to work with Copilot on questions that add to or update a currently open SQL file using inline chat.
 
-1. In SSMS, select **Alt**+**/** to bring up the inline chat view of Copilot Chat in the editor.
-1. Type your T-SQL related question in the Ask Copilot text box, and then select **Enter** or **Send** to ask your question.
-1. Code suggestions from Copilot Chat appear in the diff view. You can review and refine what is being proposed and apply the change to your code using **Tab**, or discard it using **Alt**+**Delete**.
+1. In SSMS, select <kbd>Alt</kbd>+<kbd>/</kbd> to bring up the inline chat view of Copilot Chat in the editor.
+1. Type your T-SQL related question in the Ask Copilot text box, and then select <kbd>Enter</kbd> or **Send** to ask your question.
+1. Code suggestions from Copilot Chat appear in the diff view. You can review and refine what is being proposed and apply the change to your code using <kbd>Tab</kbd>, or discard it using <kbd>Alt</kbd>+<kbd>Delete</kbd>.
 1. You can promote your inline chat thread to the chat window by selecting **View in chat window**. This preserves the record and context of your conversation, and you can continue in the chat window.
-1. Select **Esc** to close the inline chat view.
+1. Select <kbd>Esc</kbd> to close the inline chat view.
 
 > [!NOTE]  
 > Queries from GitHub Copilot in SSMS are executed under the context of the user's login and permissions, whether from the chat window or inline chat view. There are no separate permissions for GitHub Copilot in SSMS.
 
 ## Related content
 
-- [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](get-started.md)
+- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
 - [Hosting of models for GitHub Copilot Chat](https://docs.github.com/copilot/reference/ai-models/model-hosting)
-- [Add context for GitHub Copilot in SQL Server Management Studio (Preview)](chat-context.md)
-- [Troubleshoot GitHub Copilot in SQL Server Management Studio (Preview)](troubleshoot.md)
+- [Add context for GitHub Copilot in SQL Server Management Studio](chat-context.md)
+- [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)

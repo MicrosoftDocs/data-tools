@@ -1,11 +1,11 @@
 ---
 title: Manage Usage and Models
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to manage model use in the GitHub Copilot Chat experience in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 12/04/2025
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -13,7 +13,7 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to use GitHub Copilot Chat in SQL Server Management Studio.
 ---
-# Manage Copilot usage and models in SQL Server Management Studio (Preview)
+# Manage Copilot usage and models in SQL Server Management Studio
 
 GitHub Copilot includes built-in tools to help you track usage, manage your plan, and understand how model selection affects [request consumption](https://docs.github.com/copilot/concepts/billing/copilot-requests).
 
@@ -51,4 +51,4 @@ When your [premium request quota](https://docs.github.com/copilot/get-started/pl
 - [Requests in GitHub Copilot](https://docs.github.com/copilot/concepts/billing/copilot-requests#premium-requests)
 - [GitHub Copilot billing](https://docs.github.com/copilot/concepts/billing/billing-for-individuals)
 - [GitHub support](https://support.github.com/request/landing)
-- [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](get-started.md)
+- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)

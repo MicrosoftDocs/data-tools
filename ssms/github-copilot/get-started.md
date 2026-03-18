@@ -1,11 +1,11 @@
 ---
 title: Get Started
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to get started using GitHub Copilot in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 01/30/2026
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -13,7 +13,7 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to get started with GitHub Copilot in SQL Server Management Studio.
 ---
-# Get started with GitHub Copilot in SQL Server Management Studio (Preview)
+# Get started with GitHub Copilot in SQL Server Management Studio
 
 GitHub Copilot is an AI assistant in SQL Server Management Studio (SSMS).
 
@@ -31,7 +31,7 @@ GitHub Copilot requires [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] or a 
 
    :::image type="content" source="media/sign-in.png" alt-text="Screenshot of GitHub Copilot badge options.":::
 
-1. If GitHub Copilot isn't installed, select **Install Copilot** from the **GitHub Copilot** badge, or open the Visual Studio Installer and modify your SSMS installation to add the **AI Assistance** workload. For more information, see [Install GitHub Copilot in SQL Server Management Studio (Preview)](installation-state.md).
+1. If GitHub Copilot isn't installed, select **Install Copilot** from the **GitHub Copilot** badge, or open the Visual Studio Installer and modify your SSMS installation to add the **AI Assistance** workload. For more information, see [Install GitHub Copilot in SQL Server Management Studio](installation-state.md).
 
 1. In the Chat window, sign in with your existing GitHub account or select **Sign up for Copilot Free**. Follow the prompts in your browser to complete the sign-in or sign-up process.
 
@@ -78,6 +78,6 @@ To learn more about Copilot's security, privacy, compliance, and transparency, s
 
 ## Related content
 
-- [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](get-started.md)
-- [Use GitHub Copilot for free in SQL Server Management Studio (Preview)](free-plan.md)
-- [Troubleshoot GitHub Copilot in SQL Server Management Studio (Preview)](troubleshoot.md)
+- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
+- [Use GitHub Copilot for free in SQL Server Management Studio](free-plan.md)
+- [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)

@@ -1,11 +1,11 @@
 ---
 title: Next Edit Suggestions
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to use next edit suggestions for GitHub Copilot in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 02/11/2026
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,7 +14,7 @@ ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to use GitHub Copilot Completions in SQL Server Management Studio.
 ---
 
-# Use Next Edit Suggestions in SQL Server Management Studio (Preview)
+# Use Next Edit Suggestions in SQL Server Management Studio
 
 The Next Edit Suggestions (NES) feature of GitHub Copilot uses your recent edits to anticipate the next edit that you might want to make, and the location of that edit. With this capability, Copilot suggests revisions to your code and comments.
 
@@ -64,6 +64,6 @@ To view a hidden suggestion, select the margin indicator or the <kbd>Tab</kbd> k
 
 ## Related content
 
-- [Use Code Completions in SQL Server Management Studio (Preview)](code-completions.md)
-- [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](get-started.md)
-- [Troubleshoot GitHub Copilot in SQL Server Management Studio (Preview)](troubleshoot.md)
+- [Use Code Completions in SQL Server Management Studio](code-completions.md)
+- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
+- [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)

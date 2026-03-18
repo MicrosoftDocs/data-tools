@@ -1,11 +1,11 @@
 ---
 title: Code Completions
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to use code completions from GitHub Copilot in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 02/11/2026
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,13 +14,13 @@ ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to use GitHub Copilot Completions in SQL Server Management Studio.
 ---
 
-# Use Code Completions in SQL Server Management Studio (Preview)
+# Use Code Completions in SQL Server Management Studio
 
 Use GitHub Copilot in SQL Server Management Studio (SSMS) to enhance your Transact-SQL (T-SQL) development with AI assistance. GitHub Copilot helps you be more productive and efficient when writing T-SQL.
 
 In this article, you learn how to use GitHub Copilot Completions, which provide you with context-aware code completions, suggestions, and even entire code snippets. This feature helps reduce the time spent on repetitive tasks and minimizes errors.
 
-For related information about GitHub Copilot Chat, see [Use the GitHub Copilot Chat experience in SQL Server Management Studio (Preview)](chat.md).
+For related information about GitHub Copilot Chat, see [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md).
 
 ## How Code Completions work
 
@@ -77,6 +77,6 @@ If you're a Copilot Business or Enterprise user, your administrator needs to ena
 
 ## Related content
 
-- [Use Next Edit Suggestions in SQL Server Management Studio (Preview)](next-edit-suggestions.md)
-- [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](get-started.md)
-- [Troubleshoot GitHub Copilot in SQL Server Management Studio (Preview)](troubleshoot.md)
+- [Use Next Edit Suggestions in SQL Server Management Studio](next-edit-suggestions.md)
+- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
+- [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)

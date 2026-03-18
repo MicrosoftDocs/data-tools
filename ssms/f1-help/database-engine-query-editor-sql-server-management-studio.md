@@ -3,7 +3,7 @@ title: SSMS Query Editor
 description: SQL Server Management Studio (SSMS) Query Editor
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 12/17/2025
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -90,19 +90,19 @@ You can also **Execute** a query by selecting F5 or from the [context menu](#exe
 
 Sends a cancellation request to the server. Some queries can't be canceled immediately but must wait for a suitable cancellation condition. When transactions are canceled, delays might occur while transactions are rolled back.
 
-You can also cancel an executing query by selecting **Alt**+**Break**.
+You can also cancel an executing query by selecting <kbd>Alt</kbd>+<kbd>Break</kbd>.
 
 ### Parse using the editor toolbar
 
 Checks the syntax of the selected code. If no code is selected, it checks all the code's syntax in the Query Editor window.
 
-You can also check the code in the Query Editor by selecting **Ctrl**+**F5**.
+You can also check the code in the Query Editor by selecting <kbd>Ctrl</kbd>+<kbd>F5</kbd>.
 
 ### Display estimated execution plan using the editor toolbar
 
 Requests a query execution plan from the query processor without executing the query, and displays the plan in the **Execution plan** window. This plan uses index statistics to estimate the number of rows expected to return during each part of the query execution. The actual query plan that is used can be different from the estimated execution plan. If the number of returned rows is different from the estimate, and the query processor changes the plan to be more efficient, this can occur.
 
-You can also display an estimated execution plan by selecting **Ctrl**+**L** or from the [context menu](#display-estimated-execution-plan-using-the-context-menu).
+You can also display an estimated execution plan by selecting <kbd>Ctrl</kbd>+<kbd>L</kbd> or from the [context menu](#display-estimated-execution-plan-using-the-context-menu).
 
 ### Query options using the editor toolbar
 
@@ -114,13 +114,13 @@ You can also select **Query Options** from the [context menu](#query-options-usi
 
 Specifies whether [IntelliSense](../scripting/configure-intellisense-sql-server-management-studio.md) functionality is available in the Database Engine Query Editor. This option is set by default.
 
-You can also select **IntelliSense Enabled** by selecting **Ctrl**+**B** then **Ctrl**+**I**, or from the [context menu](#intellisense-enabled-using-the-context-menu).
+You can also select **IntelliSense Enabled** by selecting <kbd>Ctrl</kbd>+<kbd>B</kbd> then <kbd>Ctrl</kbd>+<kbd>I</kbd>, or from the [context menu](#intellisense-enabled-using-the-context-menu).
 
 ### Include actual execution plan using the editor toolbar
 
 Executes the query, returns the query results, and uses the execution plan for the query. The queries appear as a graphical query plan in the **Execution plan** window.
 
-You can also select the **Include Actual Execution Plan** by selecting **Ctrl**+**M** or from the [context menu](#include-actual-execution-plan-using-the-context-menu).
+You can also select the **Include Actual Execution Plan** by selecting <kbd>Ctrl</kbd>+<kbd>M</kbd> or from the [context menu](#include-actual-execution-plan-using-the-context-menu).
 
 ### Include live query statistics using the editor toolbar
 
@@ -132,37 +132,35 @@ You can also select the **Include Live Query Statistics** from the [context menu
 
 Includes a **Client Statistics** window that contains statistics about the query and about the network packets, and the elapsed time of the query.
 
-You can also select the **Include Live Query Statistics** by selecting **Shift**+**Alt**+**S** or from the [context menu](#include-client-statistics-using-the-context-menu).
+You can also select the **Include Live Query Statistics** by selecting <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd> or from the [context menu](#include-client-statistics-using-the-context-menu).
 
 ### Results to text using the editor toolbar
 
-Returns the query results as text in the **Results** window.
-
-You can also return results to text by selecting **Ctrl**+**T** or from the [context menu](#results-using-the-context-menu).
+Sends the query results as text to the **Results** window. For more information about query results destinations, including keyboard shortcuts and options, see [Query results in SQL Server Management Studio](../quickstarts/work-with-query-results.md).
 
 ### Results to grid using the editor toolbar
 
-Returns the query results as one or more grids in the **Results** window. This option is enabled by default.
+Sends the query results as one or more grids to the **Results** window.
 
-You can also return results to text by selecting **Ctrl**+**D** or from the [context menu](#results-using-the-context-menu).
+Starting in SSMS 22.4.1, you can also export results to JSON, XML, Excel, and Markdown file types.
+
+For more information about query results destinations, including keyboard shortcuts and options, see [Query results in SQL Server Management Studio](../quickstarts/work-with-query-results.md).
 
 ### Results to file using the editor toolbar
 
-When the query executes, the **Save Results** dialog box opens. In **Save In**, select the folder in which you want to save the file. In **Filename**, type the name of the file, and then select **Save** to save the query results as a **Report** file that has the `.rpt` extension. For advanced options, select the down-arrow on the **Save** button, and then select **Save with Encoding**.
-
-You can also return results to text by selecting **Ctrl**+**Shift**+**F** or from the [context menu](#results-using-the-context-menu).
+Sends the query results directly to a file instead of displaying them in the **Results** window. For more information about query results destinations, including keyboard shortcuts and options, see [Query results in SQL Server Management Studio](../quickstarts/work-with-query-results.md).
 
 ### Comment out the selected lines using the editor toolbar
 
 Makes the current line a comment by adding a comment operator (`--`) at the beginning of the line.
 
-You can also comment out a line by selecting **Ctrl**+**K**, then **Ctrl**+**C**.
+You can also comment out a line by selecting <kbd>Ctrl</kbd>+<kbd>K</kbd>, then <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 ### Uncomment the selected lines using the editor toolbar
 
 Makes the current line an active source statement by removing any comment operator (--) at the beginning of the line.
 
-You can also uncomment a line by selecting **Ctrl**+**K**, then **Ctrl**+**U**.
+You can also uncomment a line by selecting <kbd>Ctrl</kbd>+<kbd>K</kbd>, then <kbd>Ctrl</kbd>+<kbd>U</kbd>.
 
 ### Decrease indent using the editor toolbar
 
@@ -248,7 +246,7 @@ Includes a **Client Statistics** window that contains statistics about the query
 
 :::image type="content" source="media/database-engine-query-editor-sql-server-management-studio/context-menu-results.png" alt-text="Screenshot of Results options." lightbox="media/database-engine-query-editor-sql-server-management-studio/context-menu-results.png":::
 
-You can select any of the *Result* options you want from the context menu.
+You can select any of the *Result* options you want from the context menu. For more information about query results destinations, including keyboard shortcuts and options, see [Query results in SQL Server Management Studio](../quickstarts/work-with-query-results.md).
 
 - **Results to Text** - Returns the query results as text in the **Results** window.
 

@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot GitHub Copilot
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to troubleshoot GitHub Copilot in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 01/21/2026
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -13,9 +13,9 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to troubleshoot issues with GitHub Copilot in SQL Server Management Studio.
 ---
-# Troubleshoot GitHub Copilot in SQL Server Management Studio (Preview)
+# Troubleshoot GitHub Copilot in SQL Server Management Studio
 
-This troubleshooting guide includes steps for resolving issues with GitHub Copilot in SQL Server Management Studio (SSMS) 22 (Preview) or later. Some issues related to GitHub Copilot might require assistance from an administrator or your network team.
+This troubleshooting guide includes steps for resolving issues with GitHub Copilot in SQL Server Management Studio (SSMS) 22 or later. Some issues related to GitHub Copilot might require assistance from an administrator or your network team.
 
 GitHub Copilot is a separate subscription managed by GitHub. For questions regarding GitHub Copilot subscriptions and support, see [Individual subscriptions](https://docs.github.com/copilot/how-tos/manage-your-account/get-started-with-a-copilot-plan) or [Business subscriptions](https://docs.github.com/copilot/how-tos/administer-copilot/manage-for-organization/manage-plan/subscribe).
 
@@ -77,5 +77,5 @@ Log files for GitHub Copilot in SSMS, which can assist with troubleshooting, can
 
 - [Troubleshooting network errors for GitHub Copilot](https://docs.github.com/copilot/how-tos/troubleshoot-copilot/troubleshoot-network-errors)
 - [Troubleshooting firewall settings for GitHub Copilot](https://docs.github.com/copilot/how-tos/troubleshoot-copilot/troubleshoot-firewall-settings)
-- [Install GitHub Copilot in SQL Server Management Studio (Preview)](installation-state.md)
-- [Use GitHub Copilot for free in SQL Server Management Studio (Preview)](free-plan.md)
+- [Install GitHub Copilot in SQL Server Management Studio](installation-state.md)
+- [Use GitHub Copilot for free in SQL Server Management Studio](free-plan.md)

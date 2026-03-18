@@ -1,11 +1,11 @@
 ---
 title: Install GitHub Copilot
-titleSuffix: GitHub Copilot in SQL Server Management Studio (Preview)
+titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to install GitHub Copilot in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 11/11/2025
+ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -13,7 +13,7 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to install GitHub Copilot in SQL Server Management Studio.
 ---
-# Install GitHub Copilot in SQL Server Management Studio (Preview)
+# Install GitHub Copilot in SQL Server Management Studio
 
 GitHub Copilot in SQL Server Management Studio (SSMS) is an AI assistant that can save you time by providing the help you need from within SSMS. GitHub Copilot in SSMS can answer questions about your database and environment, and help you write, fix, and refactor Transact-SQL (T-SQL).
 
@@ -75,7 +75,7 @@ If your administrator disabled Copilot, contact your IT administrator to learn m
 
 ## Copilot is unavailable
 
-If GitHub Copilot is installed but unavailable for use, it might be due to network connectivity issues, server-side technical problems, or an expired service plan. In this state, Copilot doesn't provide its usual services until the external issues are resolved. For more information on diagnosing and resolving common errors with GitHub Copilot, see [Troubleshoot GitHub Copilot in SQL Server Management Studio (Preview)](troubleshoot.md).
+If GitHub Copilot is installed but unavailable for use, it might be due to network connectivity issues, server-side technical problems, or an expired service plan. In this state, Copilot doesn't provide its usual services until the external issues are resolved. For more information on diagnosing and resolving common errors with GitHub Copilot, see [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md).
 
 When the issue is resolved and you're signed in with an active subscription, the Copilot status icon updates to active.
 
@@ -103,7 +103,7 @@ You can remove GitHub Copilot in SSMS from your SSMS installation using the Visu
 
 ## Related content
 
-- [Get started with GitHub Copilot in SQL Server Management Studio (Preview)](get-started.md)
-- [Use the GitHub Copilot Chat experience in SQL Server Management Studio (Preview)](chat.md)
-- [Use GitHub Copilot for free in SQL Server Management Studio (Preview)](free-plan.md)
-- [Troubleshoot GitHub Copilot in SQL Server Management Studio (Preview)](troubleshoot.md)
+- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
+- [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md)
+- [Use GitHub Copilot for free in SQL Server Management Studio](free-plan.md)
+- [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)
