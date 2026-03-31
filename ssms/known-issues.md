@@ -4,7 +4,7 @@ description: Learn about known issues in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 02/25/2026
+ms.date: 03/31/2026
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -36,6 +36,7 @@ This article lists known issues for [!INCLUDE [ssms-22-md](includes/ssms-22-md.m
 | Options | Enabling Per Monitor Awareness (PMA) by checking **Optimize rendering for screens with different pixel densities (requires restart)** within **Tools** > **Options** can cause issues with dialogs not rendering. | Don't enable **Optimize rendering for screens with different pixel densities (requires restart)** within **Tools** > **Options**. |
 | Options | Enabling **Unified Settings Experience (requires restart)** within **Tools** > **Options** > **General** > **Preview Features** can cause issues with dialogs not rendering. | Don't enable **Unified Settings Experience (requires restart)** within **Tools** > **Options** > **General** > **Preview Features**. |
 | Options | Changing the default value for options within **Tools** > **Options** > **General** > **Preview Features** can cause unpredictable behavior, both in terms of visual display and functionality. | Don't change the default value for any option within **Tools** > **Options** > **General** > **Preview Features**. |
+| Profiler | Connecting to a PowerBI workspace generates the error `Cannot connect to powerbi`. | Install the [MSOLAP native drivers](/analysis-services/client-libraries) using the MSI appropriate for your environment. |
 | Query Store | When you use any of the Query Store reports, the Replica dropdown menu option might not populate with the correct replica name when the [Query Store for readable secondary replicas](/sql/relational-databases/performance/query-store-for-secondary-replicas) is enabled. | Use Transact-SQL to query the Query Store data for a readable secondary where the `replica_group_id` for a secondary can be mapped using the [sys.query_store_runtime_stats](/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql) system catalog view, which has a foreign key relationship with the [sys.query_store_replicas](/sql/relational-databases/system-catalog-views/sys-query-store-replicas) system catalog view. |
 | Results Pane | When you switch themes, if the output is set to Results to Text, the Results pane doesn't switch to the new theme. | To apply any theme changes to the Results pane, restart SSMS. |
 | SQL Server Integration Services (SSIS) | Maintenance Tasks (including Back Up Database Task, Check Database Integrity Task, Execute SQL Server Agent Job Task, Execute T-SQL Statement Task, History Cleanup Task, and Maintenance Cleanup Task) aren't supported by [Execute Package Utility (dtexecui)](/sql/integration-services/packages/execute-package-utility-dtexecui-ui-reference). | Use [dtexec Utility](/sql/integration-services/packages/dtexec-utility) to run packages that include these Maintenance Tasks, or use [Execute Package Utility (dtexecui)](/sql/integration-services/packages/execute-package-utility-dtexecui-ui-reference) in SSMS 20. |
