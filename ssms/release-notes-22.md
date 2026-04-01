@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 03/18/2026
+ms.date: 04/1/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -61,6 +61,7 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Always Encrypted | Fixed an error where Always Encrypted Key Vault authentication failed for federated identity providers because Always Encrypted used a deprecated embedded browser. See [When creating a Column Encryption Key, SSMS uses the built-in browser to authenticate the Azure Account](https://developercommunity.visualstudio.com/t/When-creating-a-Column-Encryption-Key-S/10988419). |
 | Connection | Fixed error `Unable to cast object of type 'System.DBNull' to type 'System.String' (Microsoft.SqlServer.ConnectionInfo)` when trying to connect to Dataverse. See [Error when trying to connect to Dataverse using SSMS 22.3](https://developercommunity.visualstudio.com/t/when-trying-to-connect-to-Dataverse-usin/11043701). |
+| Export Data-tier Application | Resolved the error `Could not load file or assembly 'System.IO.Hashing' [...] or one of its dependencies. The system cannot find the file specified. (Azure.Storage.Blobs)` when uploading to Azure storage. See [SSMS 21/22 Error Upload BACPAC file to Azure Storage](https://techcommunity.microsoft.com/discussions/sql_server/ssms-2122-error-upload-bacpac-file-to-azure-storage/4458685). |
 | Extended Events | Updated icon in the Extended Event Session Properties dialog. See [Extend Events Session Properties dialog shows PRE icon](https://developercommunity.visualstudio.com/t/Extended-Events-Session-Properties-dialo/11052186). |
 | GitHub Copilot in SSMS | Addressed an issue where use of GitHub Copilot required setting the `DOTNET_ENVIRONMENT` configured as Development in order to use GitHub Copilot in SSMS. See [GitHub Copilot chats fail with JSON-RPC error](https://developercommunity.visualstudio.com/t/GitHub-Copilot-chats-fail-with-JSON-RPC/10988926), and [SSMS 22 GitHub Copilot Chat not producing any results](https://developercommunity.visualstudio.com/t/SSMS-22-GitHub-Copilot-Chat-not-producin/11029042). |
 | GitHub Copilot in SSMS | Fixed an issue where Code completions tried to connect to a database that doesn't exist with a `USE` statement. See [GitHub Copilot Completions may be interpreting "Use" in "User" as the USE command - accessing invalid databases](https://developercommunity.visualstudio.com/t/Github-Copilot-Completions-may-be-interp/11045214). |
