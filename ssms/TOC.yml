@@ -45,8 +45,13 @@ items:
             href: copilot/copilot-in-ssms-best-practices.md
           - name: Troubleshooting
             href: copilot/copilot-in-ssms-troubleshooting.md
-      - name: SQL Server migration component
-        href: migrate-sql-server-component.md
+
+  - name: Migration
+    items:
+      - name: Migrate SQL Server to Azure SQL
+        href: migrate/migrate-sql-server-azure-sql.md
+      - name: Upgrade SQL Server
+        href: migrate/upgrade-sql-server.md
 
   - name: Installation and support
     items:
@@ -137,8 +142,10 @@ items:
             href: github-copilot/installation-state.md
           - name: Use GitHub Copilot for free
             href: github-copilot/free-plan.md
-          - name: Manage usage and models
-            href: github-copilot/usage-models.md
+          - name: Manage usage
+            href: github-copilot/manage-usage.md
+          - name: Admin controls
+            href: github-copilot/admin-controls.md
       - name: Scenarios
         href: github-copilot/scenarios.md
       - name: Best practices

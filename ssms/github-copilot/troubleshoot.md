@@ -2,10 +2,10 @@
 title: Troubleshoot GitHub Copilot
 titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to troubleshoot GitHub Copilot in SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 03/18/2026
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: erinstellato
+ms.date: 04/14/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -34,25 +34,25 @@ GitHub Copilot might be offline due to one of the following reasons:
 - Credentials requiring a refresh
 - Copilot being disabled
 
-If you're running into an issue not in this list, report your problem to us.
+If you run into an issue that's not in this list, report your problem to us.
 
 ### Network issues
 
 If your network is down, GitHub Copilot might not be able to connect.
 
-**Action:** Ensure you have a stable internet connection. For more information, see [Troubleshooting network errors for GitHub Copilot](https://docs.github.com/copilot/how-tos/troubleshoot-copilot/troubleshoot-network-errors).
+**Action**: Ensure you have a stable internet connection. For more information, see [Troubleshooting network errors for GitHub Copilot](https://docs.github.com/copilot/how-tos/troubleshoot-copilot/troubleshoot-network-errors).
 
 ### Copilot service is unavailable
 
 The GitHub Copilot service might be temporarily down.
 
-**Action:** Wait for the service to come back online. You can check the status on [GitHub Status](https://www.githubstatus.com/).
+**Action**: Wait for the service to come back online. You can check the status on [GitHub Status](https://www.githubstatus.com/).
 
 ### Refresh your credentials
 
 Occasionally, you might need to refresh your credentials due to expected timeouts.
 
-**Action:** Select **Refresh your credentials** from the Copilot badge in the upper right corner of your SSMS environment to reauthenticate your GitHub account and sign in again.
+**Action**: Select **Refresh your credentials** from the Copilot badge in the upper right corner of your SSMS environment to reauthenticate your GitHub account and sign in again.
 
 > [!NOTE]  
 > If you don't see the option to refresh your credentials for the GitHub account in the All Accounts window, you can resolve this issue by removing and then adding your GitHub account again. For more information, see the [Developer Community ticket](https://developercommunity.visualstudio.com/t/Copilot-badge-refresh-credentials-not-wo/10667230?q=refresh+credentials) related to this issue.
@@ -61,15 +61,23 @@ Occasionally, you might need to refresh your credentials due to expected timeout
 
 Your administrator can [disable GitHub Copilot](/visualstudio/ide/visual-studio-github-copilot-admin) for an individual or any Copilot license.
 
-**Action:** Contact your IT department to confirm whether your administrator disabled Copilot.
+**Action**: Contact your IT department to confirm whether your administrator disabled Copilot.
 
 ### Log files
 
-Log files for GitHub Copilot in SSMS, which can assist with troubleshooting, can be found in %TEMP%/VSGitHubCopilotLogs.
+Log files for GitHub Copilot in SSMS, which can assist with troubleshooting, can be found in `%TEMP%\VSGitHubCopilotLogs`.
+
+## Monitor queries from GitHub Copilot
+
+To monitor what queries GitHub Copilot in SSMS runs, set up an Extended Events session and filter on `client_app_name`.
+
+To capture queries generated based on prompts entered in the chat window, use `Microsoft SQL Server Management Studio - GitHub Copilot` for the `client_app_name`.
+
+To capture queries generated for code completions, use `Microsoft SQL Server Management Studio - Copilot Completions` for the `client_app_name`.
 
 ## Send feedback
 
-- Report a problem to us from SSMS (**Help** > **Send Feedback** > **Report a Problem...**) or the Visual Studio Installer. The built-in feedback tool from both applications allows you to easily add diagnostic information that helps the SSMS team troubleshoot and fix issues.
+- Report a problem to us from SSMS (**Help** > **Send Feedback** > **Report a Problem...**) or the Visual Studio Installer. The built-in feedback tool from both applications makes it easy to add diagnostic information that helps the SSMS team troubleshoot and fix issues.
 
 - Suggest a feature, track product issues, and find answers on the [SSMS feedback site](https://aka.ms/ssms-feedback).
 

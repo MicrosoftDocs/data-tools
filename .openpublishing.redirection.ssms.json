@@ -104,6 +104,16 @@
       "source_path": "ssms/install/install-preview.md",
       "redirect_url": "/ssms/install/install",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/migrate-sql-server-component.md",
+      "redirect_url": "/ssms/migrate/upgrade-sql-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/github-copilot/usage-models.md",
+      "redirect_url": "/ssms/github-copilot/manage-usage",
+      "redirect_document_id": false
     }
   ]
 }

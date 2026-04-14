@@ -1,10 +1,10 @@
 ---
-title: SQL Server Migration Component
+title: Upgrade SQL Server Using SSMS Migration Component
 description: Learn about the SQL Server migration component in SQL Server Management Studio (SSMS).
-author: nilabjaball
-ms.author: niball
-ms.reviewer: randolphwest
-ms.date: 11/26/2025
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: niball
+ms.date: 04/14/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -33,7 +33,7 @@ keywords:
   - components
 ---
 
-# Use the SQL Server migration component in SQL Server Management Studio
+# Upgrade SQL Server using the migration component in SSMS
 
 The migration component in SQL Server Management Studio (SSMS) checks upgrade and compatibility issues from lower versions of SQL Server to higher versions of SQL Server, running on-premises and on other virtual machine (VM) environments. The migration component finds compatibility issues related to breaking changes, behavior changes, deprecated features, and other information. The report also provides a feature parity check if you want to migrate from one cross-platform database to another. The upgrade adviser assessment report provides the effect of objects, the possible cause, and remediation steps.
 
@@ -49,15 +49,17 @@ You can also physically migrate your database using the migration component. It 
 
 ## Installation and configuration
 
-1. Install the latest version of [SQL Server Management Studio](install/install.md) (SSMS). Once the installation is complete, select **Modify** > **Individual Components**.
+1. Install the latest version of [SQL Server Management Studio](../install/install.md) (SSMS). Once the installation is complete, select **Modify** > **Individual Components**. SSMS is installed using Visual Studio Installer.
 
 1. Select the **Migration** component, choose **Install while downloading** from the dropdown list, and select **Modify** to complete the installation.
 
-## Assess your environment
+## Upgrade assessment
 
 1. Connect to the SQL Server instance that needs to be assessed for upgrade from an earlier version of SQL Server to the later version.
 
-1. Right-click on the source instance, and navigate to **Migrate SQL Server** > **New Assessment...**.
+1. Right-click on the source instance, and navigate to **Migrate SQL Server**.
+
+1. In the **Migration** landing page, select **Upgrade Assessment** in the **Migrate to higher version of SQL Server** section.
 
 1. Select the assessment type using the following information:
 
@@ -82,11 +84,11 @@ You can also physically migrate your database using the migration component. It 
 
 You can change the compatibility to identify issue for a particular database compatibility level, as shown in the following screenshot.
 
-:::image type="content" source="media/migrate-sql-server-component/assessment-report.png" alt-text="Screenshot of the SQL migration report, featuring a filter on the database compatibility level." lightbox="media/migrate-sql-server-component/assessment-report.png":::
+:::image type="content" source="media/upgrade-sql-server/assessment-report.png" alt-text="Screenshot of the SQL migration report, featuring a filter on the database compatibility level." lightbox="media/upgrade-sql-server/assessment-report.png":::
 
 If you already saved an assessment report, you can open the assessment by navigating to **View Assessment Report** > **Open Assessment**, and choosing the `assessment_<name>.json` file.
 
-## Prepare for migration
+## Prepare for upgrade
 
 - Make sure that the assessment report is reviewed and all issues are resolved.
 
@@ -100,17 +102,19 @@ If you already saved an assessment report, you can open the assessment by naviga
 
   1. If you prefer separate shared folders, ensure that the Windows user performing the migration has permissions to copy the backup files from the source shared folder to the target shared folder.
 
-## Migrate your database
+## Upgrade SQL Server
 
 1. Connect to the SQL Server that needs to be assessed for upgrade from lower version of SQL Server to higher version.
 
-1. Right-click on the SQL Server instance, and navigate to **Migrate SQL Server** > **New Migration...**.
+1. Right-click on the source instance, and navigate to **Migrate SQL Server**.
+
+1. In the **Migration** landing page, select **Upgrade SQL Server** in the **Migrate to higher version of SQL Server** section.
 
 1. Provide the target server details:
 
    - **Migration Name**: A unique migration name
    - Target SQL Server instance name
-   - **Authentication Type** – Windows authentication or SQL authentication
+   - **Authentication Type**: Windows authentication or SQL authentication
    - Provide the user credentials
    - Select other connection settings as per your environment
 

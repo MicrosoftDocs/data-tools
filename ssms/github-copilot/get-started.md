@@ -2,10 +2,10 @@
 title: Get Started
 titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to get started using GitHub Copilot in SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 03/18/2026
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: erinstellato
+ms.date: 04/14/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -41,34 +41,15 @@ GitHub Copilot requires [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)] or a 
 
 After you sign in, use the Chat window to interact with your database using natural language. You can ask general questions about SQL, questions specific to a database, or get assistance writing or editing T-SQL.
 
-> [!NOTE]  
-> [Code Completions for GitHub Copilot](code-completions.md) are available in SSMS 22.2 and later versions.
+- **Chat**: Use the Chat window or inline chat to ask questions about your database, get T-SQL help, and generate code. For more information, see [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md).
 
-- Use the Chat window to interact with your database using natural language. You can ask general questions about SQL, questions specific to a database, or get assistance writing or editing T-SQL.
+- **Code Completions**: As you write T-SQL, Copilot provides suggestions directly in the editor. Copilot suggests both new code (shown as gray text) and edits to existing code. For more information, see [Use Code Completions in SQL Server Management Studio](code-completions.md).
 
-  - If you're not connected to a database in a query editor window, the context in the Chat window is the general Copilot. It can answer general SQL questions, but without a query editor connection it can't answer database specific questions.
+- **Next Edit Suggestions**: Copilot anticipates your next edit based on recent changes and suggests revisions in context. For more information, see [Use Next Edit Suggestions in SQL Server Management Studio](next-edit-suggestions.md).
 
-  - Open a query editor window and connect to a database. Within the Chat window, the database connection in the active editor window provides context for the prompt. GitHub Copilot in SSMS has knowledge of both the context (SQL version) and database (schema aware) from the database connection, so responses are tailored to your environment. As you navigate between open query editors, the context in the Chat window changes appropriately.
-
-- Use Completions in the query editor. As you write T-SQL, Copilot provides suggestions directly in the editor. Copilot suggests both new code (shown as gray text) and edits to existing code.
-
-## Customize Copilot Chat
-
-You can customize Copilot for your workflow and requirements in SSMS.
-
-- Manage context with references: Use the **+** button to attach more context, such as `.sql` files or `.sqlplan` files.
-
-- Access different [models](ai-models.md): Use the model picker in the prompt window to select AI models, or bring your own model to Copilot. Explore different models for different scenarios, whether it's answering quick questions, writing documentation, or generating code edits.
+- **Database instructions**: Store business rules and context directly in your database so Copilot can generate more accurate responses. For more information, see [Use database instructions with GitHub Copilot in SQL Server Management Studio](database-instructions.md).
 
 To review Copilot features at any time, select **GitHub Copilot Walkthrough** from the GitHub Copilot badge in the upper right corner of SSMS.
-
-## Monitor queries from Copilot
-
-To monitor what queries Copilot in SSMS is running, set up an Extended Events session and filter on `client_app_name`.
-
-To capture queries generated based on prompts entered in the chat window, use `Microsoft SQL Server Management Studio - GitHub Copilot` for the `client_app_name`.
-
-To capture queries generated for code completions, use `Microsoft SQL Server Management Studio - Copilot Completions` for the `client_app_name`.
 
 ## Support
 
@@ -78,6 +59,5 @@ To learn more about Copilot's security, privacy, compliance, and transparency, s
 
 ## Related content
 
-- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
 - [Use GitHub Copilot for free in SQL Server Management Studio](free-plan.md)
 - [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)
