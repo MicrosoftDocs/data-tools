@@ -297,7 +297,7 @@ This section contains release notes for SSMS 21. For release notes for different
 | Libraries | Updated Azure.Core to version 1.41.0. |
 | Libraries | Updated DacFx to version 170.0.94. |
 | Libraries | Updated System.Text.Json to version 8.0.4. |
-| Migration Component | Added the [SQL Server migration component](migrate-sql-server-component.md) under **Individual Components** > **Hybrid and Migration** in the Visual Studio Installer. |
+| Migration Component | Added the [SQL Server migration component](migrate/upgrade-sql-server.md) under **Individual Components** > **Hybrid and Migration** in the Visual Studio Installer. |
 | Presenter Mode | Reinstated [Presenter mode](presenter-mode.md) as an option under **View** > **Presenter Mode**. |
 | Query Editor | Intellisense errors are updated to map to the IntelliSense dropdown list in the Error List pane. The Error List pane is available from the **View** > **Error List** menu or by selecting the error icon in the file health indicator, located in the bottom left of the Query Editor toolbar. |
 | Query Editor | The scroll bar for the query editor in SSMS 21 defaults to **map mode**. To change the option, right-click the scroll bar and select **Scroll Bar Options...**. Within the **Options** dialog, you can change the display to **Use bar mode for vertical scroll bar**. |

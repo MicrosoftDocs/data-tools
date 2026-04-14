@@ -2,10 +2,10 @@
 title: AI Models
 titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to select different models in the GitHub Copilot Chat experience in SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 03/18/2026
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: erinstellato
+ms.date: 04/14/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -13,9 +13,9 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to make models available for GitHub Copilot in SQL Server Management Studio.
 ---
-# Get started with AI models in the GitHub Copilot Chat experience in SQL Server Management Studio
+# AI models for GitHub Copilot in SQL Server Management Studio
 
-With [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)], GitHub Copilot in SSMS selects a default model to provide fast response times, high-quality suggestions, and improve efficiency for coding tasks. The default model varies based on your subscription.
+With [!INCLUDE [ssms-22-md](../includes/ssms-22-md.md)], GitHub Copilot in SQL Server Management Studio (SSMS) selects a default model to provide fast response times, high-quality suggestions, and improved efficiency for coding tasks. The default model varies based on your subscription.
 
 However, you're not limited to using this model. You can also select a different model that best fits your requirements.
 
@@ -23,11 +23,11 @@ However, you're not limited to using this model. You can also select a different
 
 Choose from a curated set of models in the model picker, such as:
 
-- GPT-5.4
 - GPT-4.1
 - GPT-4o
 - Claude Sonnet 4
 - Claude Sonnet 4.5
+- Claude Sonnet 4.6
 - Claude Opus 4.5
 - Claude Opus 4.6
 - Claude Haiku 4.5
@@ -74,7 +74,7 @@ You can add a custom model from the GitHub Copilot chat window.
 
 ### Add a custom model for Azure
 
-To add a model that is provisioned in Azure OpenAI, you need the deployment and endpoint information.
+To add a model that's provisioned in Azure OpenAI, you need the deployment and endpoint information.
 
 1. In the chat view, go to the model picker dropdown list and select **Manage Models**.
 
@@ -85,13 +85,13 @@ To add a model that is provisioned in Azure OpenAI, you need the deployment and 
 1. Enter the required information for your Azure OpenAI resource.
    1. The **Display Name** defines how the model appears in the model picker dropdown list in the chat view.
    1. The **Model ID** is the name of the deployment.
-   1. The **Resource Endpoint** is the URL for the endpoint (for example, `https://ghcp-ssms-endpoint.openai.azure.com/`)
+   1. The **Resource Endpoint** is the URL for the endpoint (for example, `https://ghcp-ssms-endpoint.openai.azure.com/`).
 
 1. Select **Add** to add the model.
 
 1. Select **Save** to close the dialog.
 
-For more information on model deployment in Azure OpenAI, see [Create and deploy an Azure OpenAI in Microsoft Foundry Models resource](/azure/ai-services/openai/how-to/create-resource).
+For more information about model deployment in Azure OpenAI, see [Create and deploy an Azure OpenAI in Azure AI Foundry Models resource](/azure/ai-services/openai/how-to/create-resource).
 
 ### Edit a custom model
 
@@ -125,9 +125,10 @@ You can delete a model from the list of custom models in the GitHub Copilot chat
 
 ## Related content
 
+- [Manage Copilot usage in SQL Server Management Studio](manage-usage.md)
 - [AI model comparison](https://docs.github.com/copilot/reference/ai-models/model-comparison)
 - [Hosting of models for GitHub Copilot Chat](https://docs.github.com/copilot/reference/ai-models/model-hosting)
 - [Requests in GitHub Copilot](https://docs.github.com/copilot/concepts/billing/copilot-requests#premium-requests)
 - [GitHub Copilot billing](https://docs.github.com/copilot/concepts/billing/billing-for-individuals)
 - [GitHub support](https://support.github.com/request/landing)
-- [Manage Copilot usage and models in SQL Server Management Studio](usage-models.md)
+- [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)

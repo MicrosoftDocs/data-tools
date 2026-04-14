@@ -1,11 +1,11 @@
 ---
-title: Ask Mode
+title: GitHub Copilot Chat
 titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to use the GitHub Copilot Chat experience in SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 03/31/2026
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: erinstellato
+ms.date: 04/14/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -15,7 +15,7 @@ ms.update-cycle: 180-days
 ---
 # Use the GitHub Copilot Chat experience in SQL Server Management Studio
 
-The Chat window for GitHub Copilot in SQL Server Management Studio (SSMS) enables enhanced AI-assisted database administration and development in SSMS, helping you be more productive and efficient when working with your SQL database. Currently, the chat window only executes `SELECT` queries (read-only).
+The Chat window for GitHub Copilot in SQL Server Management Studio (SSMS) enables enhanced AI-assisted database administration and development in SSMS. It helps you be more productive and efficient when working with your SQL database. Currently, the chat window only executes `SELECT` queries (read-only).
 
 In this article, you learn about using GitHub Copilot Chat in SSMS, a fully integrated AI-powered chat experience from GitHub Copilot that exists directly in SSMS. It enables you to get Transact-SQL (T-SQL) support, including syntax and context-specific help, without leaving the SSMS UI. Use the chat interface to submit your question as prompt and provide intent for better scoped answers.
 
@@ -25,22 +25,22 @@ GitHub Copilot Chat provides AI assistance to help you make informed decisions a
 
 - T-SQL assistance:
 
-  - Get context-specific code suggestions and recommendations
-  - Understand and document what a query does
-  - Get assistance fixing syntax errors in your query
-  - Refactor queries
+  - Get context-specific code suggestions and recommendations.
+  - Understand and document what a query does.
+  - Get assistance fixing syntax errors in your query.
+  - Refactor queries.
 
 - Database administration:
 
-  - Get help managing settings, security, and more
-  - Configure and monitor database maintenance
-  - Implement new SQL features
+  - Get help managing settings, security, and more.
+  - Configure and monitor database maintenance.
+  - Implement new SQL features.
 
 - Database development:
 
-  - Schema design
-  - Data type selection
-  - Indexing recommendations
+  - Schema design.
+  - Data type selection.
+  - Indexing recommendations.
 
 ## Prerequisites
 
@@ -50,13 +50,13 @@ To use GitHub Copilot Chat in SSMS, you need SSMS 22 or a later version, and a G
 
 Ask database and T-SQL questions in natural language and GitHub Copilot Chat answers them in the context of your database and its connection.
 
-There are two places you can ask Copilot these questions; in the chat window, or directly inline in the code that you're looking to modify, using inline chat. For questions where you want to modify or add to the SQL file open in the editor, the inline chat view might work best. Use the chat pane for answers to general T-SQL questions.
+You can ask Copilot these questions in two places: the chat window, or directly inline in the code that you're looking to modify, using inline chat. For questions where you want to modify or add to the SQL file open in the editor, the inline chat view might work best. Use the chat window for answers to general T-SQL questions.
 
-To improve Copilot chat results, learn how to use [slash commands](chat-context.md#use-slash-commands-for-code-assistance), [reference files](chat-context.md#reference-other-files), and [threads](chat-context.md#manage-chat-history-context-with-threads) to get better answers with scoped context in Copilot Chat.
+To improve Copilot chat results, learn how to use [reference files](chat-context.md#reference-other-files), [threads](#create-threads-for-separate-conversations), and [slash commands](chat-context.md#use-slash-commands-for-code-assistance) to get better answers with scoped context in Copilot Chat.
 
 ### Ask questions in the chat window
 
-The chat window of Copilot Chat in SSMS enables you to ask your questions and see answers in the chat pane. It's usually the preferred way to work with Copilot for database help and general T-SQL questions.
+The chat window of Copilot Chat in SSMS enables you to ask your questions and see answers in the chat window. It's usually the preferred way to work with Copilot for database help and general T-SQL questions.
 
 1. Open a query editor window and connection to your database.
 1. In SSMS, select **View** > **GitHub Copilot Chat**.
@@ -80,9 +80,9 @@ The inline chat view of Copilot Chat in SSMS enables you to ask your questions a
 
 ## Create threads for separate conversations
 
-As you ask questions and send prompts in a chat session, Copilot uses the history of chat prompts and responses. The previous prompts and responses provide context to your current chat prompt. This means that you can ask follow-up questions or clarify your previous question without having to repeat the context. For example, you can ask "How do I change the compatibility mode?", "What are the differences between compatibility mode 140 and 170?", "What do I need to consider when changing compatibility mode?", and more.
+As you ask questions and send prompts in a chat session, Copilot uses the history of chat prompts and responses. The previous prompts and responses provide context to your current chat prompt. You can ask follow-up questions or clarify your previous question without having to repeat the context. For example, you can ask `What is the compatibility mode for this database?`, `What are the differences between compatibility mode 140 and 170?`, `Do all users need to be out of the system when changing compatibility mode?`, and more.
 
-To start over with a new chat session and discard the current context, select **Delete thread**. Select **Create new thread** or <kbd>Ctrl</kbd>+<kbd>N</kbd> in the chat window to start a new thread. New threads are useful when you want to move to a different topic and avoid the previous context and history. Use threads to keep conversations focused on the task at hand, and keep the context clear so the answers are based on relevant history.
+Use threads to start a new conversation for a new task. Select **Create new thread** or <kbd>Ctrl</kbd>+<kbd>N</kbd> in the chat window to start a new thread. New threads are useful when you want to move to a different topic and avoid the previous context and history. Use threads to keep conversations focused on the task at hand, and keep the context clear so the answers are based on relevant history.
 
 ### Switch chat thread
 
@@ -91,6 +91,10 @@ You can toggle between multiple ongoing threads to provide the right historical 
 ### Preserve the inline chat
 
 To preserve the history of your inline chat, promote it to the chat window. Select **View in chat window** to maintain a record and context of the conversation, and continue in the chat window.
+
+### Delete chat thread
+
+To start over with a new chat session and discard the current context, select **Delete thread**. Delete threads that are no longer relevant or that didn't give you the desired result.
 
 ## Preview Markdown content
 
@@ -104,12 +108,20 @@ For example, you might use one or more of the following prompts:
 
 - `Visualize the relationships between tables in this database as a Mermaid diagram`
 - `Visualize the relationships between tables in the Orders schema of this database as a Mermaid diagram`
-- `Create a Mermaid flowchart for the steps to change the compatability mode`
+- `Create a Mermaid flowchart for the steps to change the compatibility mode`
 
 Copilot uses your active query editor and any references you add to gather context, and then returns the Mermaid syntax in the chat window. Select **Preview** to open a new Markdown file and view the diagram. You can save or share the Markdown or rendered chart for future use.
 
 > [!TIP]  
 > You can use the [Markdown preview controls](/visualstudio/ide/markdown-preview) to switch between preview modes and zoom in on complex Mermaid diagrams.
+
+## Customize Copilot Chat
+
+You can customize Copilot for your workflow and requirements in SSMS.
+
+- **Manage context with references**: Use the **+** button to attach more context, such as `.sql` files or `.sqlplan` files. For more information, see [Add context for GitHub Copilot in SQL Server Management Studio](chat-context.md).
+
+- **Access different models**: Use the model picker in the prompt window to select AI models, or bring your own model to Copilot. Explore different models for different scenarios, whether it's answering quick questions, writing documentation, or generating code edits. For more information, see [AI models for GitHub Copilot in SQL Server Management Studio](ai-models.md).
 
 ## Related content
 

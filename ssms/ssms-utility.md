@@ -3,7 +3,7 @@ title: Use Command-Line Parameters to Open SQL Server Management Studio
 description: Learn about opening SSMS from a command line.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 01/30/2026
+ms.date: 04/14/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -46,6 +46,7 @@ ssms
 | `-N <option>` | Specifies the encryption option for the connection: **Optional**, **Mandatory** (default), or **Strict**. |
 | `-C` | Specifies that the connection trusts the server certificate without validation. |
 | `-i <hostname>` | Specifies a different, expected Common Name (CN) or Subject Alternative Name (SAN) in the server certificate to use during server certificate validation. |
+| `-dn` | Specifies the display name for the connection within the connection dialog. |
 | `-nosplash` | Prevents SSMS from displaying the splash screen graphic while opening. Use this option when connecting to the computer running SSMS over Terminal Services, on a connection with limited bandwidth. This argument isn't case-sensitive and can appear before or after other arguments. |
 | `-log <file>*` | Logs SSMS activity to the specified file for troubleshooting. This argument must be the *last* switch. |
 | `scriptfile` | Specifies one or more script files to open. The parameter must contain the full path to the files. |

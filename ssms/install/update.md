@@ -4,7 +4,7 @@ description: Update your SQL Server Management Studio (SSMS) installation to the
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
-ms.date: 11/11/2025
+ms.date: 04/14/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -127,7 +127,13 @@ The most current release of the installer in the latest version of SSMS typicall
 - In a command window, use the bootstrapper to update the installer:
 
   ```console
-  vs_SSMS.exe --update --quiet
+  vs_SSMS.exe update --quiet
+  ```
+
+- For offline installations, update after copying the layout to the offline machine:
+
+  ```console
+  vs_SSMS.exe update --quiet --noWeb
   ```
 
 [!INCLUDE [support](../includes/support.md)]
