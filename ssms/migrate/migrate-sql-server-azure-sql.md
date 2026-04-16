@@ -39,7 +39,7 @@ You can also provision Azure SQL targets and monitor migrations from SSMS or the
 
 1. Install the latest version of [SQL Server Management Studio](../install/install.md) (SSMS). Once the installation is complete, select **Modify** > **Individual Components**. SSMS is installed using Visual Studio Installer.
 
-1. Select the **Migration** component, choose **Install while downloading** from the dropdown list, and select **Modify** to complete the installation.
+1. Select the **Hybrid and Migration** workload, choose **Install while downloading** from the dropdown list, and select **Modify** to complete the installation.
 
 ## Migration process
 
