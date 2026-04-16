@@ -72,6 +72,10 @@ As a last resort, you can remove all SSMS installation files and product informa
 
 To resolve issues with a [network installation](/visualstudio/install/create-a-network-installation-of-visual-studio), see [Error Codes](/visualstudio/install/create-a-network-installation-of-visual-studio#error-codes) or [Troubleshoot network-related errors when you install or use Visual Studio](/troubleshoot/developer/visualstudio/installation/troubleshoot-network-related-errors).
 
+## Brand new server builds in Air Gapped Cloud environments
+
+In an environment where you have brand new server builds, it is required that Visual C++ v14 Redistributable have both [x86](https://aka.ms/vc14/vc_redist.x86.exe) and [x64](https://aka.ms/vc14/vc_redist.x64.exe) installed.
+
 ## Collect installation logs for Microsoft Support
 
 If you contact Microsoft Support, you might be asked to collect setup logs by using the [Microsoft Visual Studio and .NET Framework log collection tool](https://aka.ms/vscollect). The log collection tool collects setup logs from all components installed by SSMS and Visual Studio, including .NET Framework. The collection tool also collects computer information, a Windows Installer inventory, and Windows event log information for the Visual Studio Installer, Windows Installer, and System Restore.
