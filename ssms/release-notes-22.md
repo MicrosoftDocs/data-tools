@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 04/14/2026
+ms.date: 04/17/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -51,6 +51,7 @@ For previous versions of SSMS, see:
 | Database DevOps workload (preview) | Updated the SQL database project icon to use a fluent design. |
 | GitHub Copilot in SSMS | Improved context handling to only send contents of the active editor for code completions. |
 | GitHub Copilot in SSMS | Introduced support for interacting with the results pane from the chat window, including execution plan, messages, client statistics, and the results grid. |
+| GitHub Copilot in SSMS | Underlying enhancements now support customizing keyboard shortcuts for accepting inline suggestions. |
 | Migration Component | Introduced the [Migrate SQL Server to Azure SQL](migrate/migrate-sql-server-azure-sql.md) capability that enables offline migration readiness assessment and supports migration of SQL Server workloads to Azure using existing SSMS wizards or the Azure Database Migration Service. For Azure Arc-managed SQL Server instances, users can view migration readiness assessments and perform migrations through the Azure portal. |
 | Security | For security issues addressed in this release, see the [Visual Studio release notes](/visualstudio/releases/2026/release-notes#18.4.4). |
 | Settings | Added support for custom endpoint entry in **Tools** > **Options** > **Environment** > **Account** > **Registered Azure Clouds**. |
@@ -112,6 +113,7 @@ For previous versions of SSMS, see:
 | GitHub Copilot in SSMS | Fixed a bug that displayed the incorrect date when using Copilot Free. See [SSMS 22.1 GitHub Copilot Chat monthly limit message contradiction](https://developercommunity.visualstudio.com/t/SSMS-221-GitHub-Copilot-Chat-monthly-li/11014467). |
 | GitHub Copilot in SSMS | Addressed the error `Incorrect syntax near 'WITHOUT_ARRAY_WRAPPER'` when using GitHub Copilot with SQL Server 2014 and earlier. See [SQL Management Studio 22 - Copilot error - not working at all]( https://developercommunity.visualstudio.com/t/SQL-Management-Studio-22---Copilot-error/11003748), [SSMS Copilot chat stuck at gathering references forever](https://developercommunity.visualstudio.com/t/SSMS-Copilot-chat-stuck-at-gathering-ref/11050599), and [Copilot in SSMS 22 unusable](https://developercommunity.visualstudio.com/t/Copilot-in-SSMS-22-unusable/11032195). |
 | GitHub Copilot in SSMS | Improved handling of failed query executions and executions that returned no results. |
+| GitHub Copilot in SSMS | Fixed incorrect date listed when monthly limit reached, see [SSMS 22.1 GitHub Copilot Chat monthly limit message contradiction (GHCP)](https://developercommunity.visualstudio.com/t/SSMS-221-GitHub-Copilot-Chat-monthly-li/11014467). |
 | Query Editor | Addressed an issue where the database dropdown list for the query editor didn't display all available databases. See [SSMS 22 Preview 3.0 does not show all databases](https://developercommunity.visualstudio.com/t/SSMS-22-preview-30-dows-not-show-all-da/10985325). |
 | Profiler | Resolved an error in the Profiler Execution Plans that caused the execution plan to render incorrectly. See [SSMS 22 Profiler - Execution Plan](https://developercommunity.visualstudio.com/t/SSMS-22-Profiler---Execution-Plan/11000054). |
 | Results Grid | Added a setting in **Tools > Options > Query Results > Results to Grid** that sets how JSON is displayed in text columns. See [ver 22.3: Unable to recognize JSON format of type nvarchar; shortcut links cannot be opened](https://developercommunity.microsoft.com/t/ver-223-:-Unable-to-recognize-JSON-format/11042059). |
