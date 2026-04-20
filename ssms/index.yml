@@ -37,7 +37,7 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: SQL Server Management Studio release notes
-            url: release-notes-21.md
+            url: release-notes-22.md
           - text: Copilot in SQL Server Management Studio (preview)
             url: copilot/copilot-in-ssms-overview.md
 
