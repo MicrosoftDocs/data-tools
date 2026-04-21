@@ -82,7 +82,7 @@ To ensure the installation completes successfully, follow these steps:
 Alternatively, create a batch file that uses certutil.exe, which ships with Windows, with the following commands:
 
 ```console
-certutil.exe -f -addstore "CA" "[layout path]\certificates\Microsoft Windows Code Signing PCA 2024.crt)"
+certutil.exe -f -addstore "CA" "[layout path]\certificates\Microsoft Windows Code Signing PCA 2024.crt"
 ```
 
 ## Maintain an offline machine
