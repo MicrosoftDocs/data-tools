@@ -1,10 +1,10 @@
 ---
 title: Troubleshoot Installation and Upgrade Issues for SQL Server Management Studio
 description: Learn how to troubleshoot issues with SQL Server Management Studio (SSMS) installation and upgrades.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 05/19/2025
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: erinstellato, mbarickman
+ms.date: 04/21/2026
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general
 ms.collection:
@@ -14,25 +14,25 @@ ms.collection:
 
 [!INCLUDE [sql-asdb-asdbmi-asa](../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
-This troubleshooting guide includes step-by-step instructions to resolve common issues with SQL Server Management Studio (SSMS) installation and upgrade.
+This troubleshooting guide provides step-by-step instructions to resolve common issues with SQL Server Management Studio (SSMS) installation and upgrade.
 
 ## Online installations or updates
 
 Try the following possible resolutions that apply to a typical online installation issue in order.
 
-#### 1. Check whether the problem is a known issue
+### 1. Check whether the problem is a known issue
 
-The first thing to check is whether or not the issue you're encountering is a known issue with the Visual Studio Installer that Microsoft is working on fixing.
+First, check whether the issue you're encountering is a known issue with the Visual Studio Installer that Microsoft is working on fixing.
 
 To see if there's a workaround for your problem, check [Known issues in SQL Server Management Studio](../known-issues.md).
 
-#### 2. Try repairing SSMS
+### 2. Try repairing SSMS
 
 Try to [repair your installation](repair.md). It might fix many common update issues.
 
-#### 3. Delete the installer folder (update issues)
+### 3. Delete the installer folder (update issues)
 
-If you encounter an issue when updating, try deleting the Visual Studio Installer folder, and then rerunning the installation bootstrapper. Doing so reinstalls the Visual Studio Installer files and resets the installation metadata.
+If you encounter an issue when updating, try deleting the Visual Studio Installer folder, and then rerun the installation bootstrapper. Doing so reinstalls the Visual Studio Installer files and resets the installation metadata.
 
 1. Close the Visual Studio Installer.
 
@@ -42,7 +42,7 @@ If you encounter an issue when updating, try deleting the Visual Studio Installe
 
 1. Try to install or update SSMS again. If the installer continues to fail, report the problem to support.
 
-#### 4. Report the problem to support
+### 4. Report the problem to support
 
 In some situations, when there are corrupted files, issues might require case-by-case troubleshooting.
 
@@ -58,7 +58,7 @@ Follow these steps to submit the problem to Microsoft Support:
 
 1. Choose **Submit**.
 
-#### 5. Remove all SSMS installation files
+### 5. Remove all SSMS installation files
 
 As a last resort, you can remove all SSMS installation files and product information:
 
@@ -70,7 +70,17 @@ As a last resort, you can remove all SSMS installation files and product informa
 
 ## Network layout or offline installations
 
-To resolve issues with a [network installation](/visualstudio/install/create-a-network-installation-of-visual-studio), see [Error Codes](/visualstudio/install/create-a-network-installation-of-visual-studio#error-codes) or [Troubleshoot network-related errors when you install or use Visual Studio](/troubleshoot/developer/visualstudio/installation/troubleshoot-network-related-errors).
+If the SSMS installer fails in an offline environment, verify the following prerequisites before you try again:
+
+- The necessary [certificates are installed](install-certificates.md) on the machine. If the certificates aren't installed properly, the [installer fails silently](install-certificates.md#validate-a-certificate-for-offline-installations).
+
+- The Microsoft Visual C++ v14 Redistributable ([x86](https://aka.ms/vc14/vc_redist.x86.exe) and [x64](https://aka.ms/vc14/vc_redist.x64.exe)) is installed.
+
+To resolve issues with a [network installation](/visualstudio/install/create-a-network-installation-of-visual-studio), see:
+
+- [Error Codes](/visualstudio/install/create-a-network-installation-of-visual-studio#error-codes)
+
+- [Troubleshoot network-related errors when you install or use Visual Studio](/troubleshoot/developer/visualstudio/installation/troubleshoot-network-related-errors).
 
 ## Collect installation logs for Microsoft Support
 

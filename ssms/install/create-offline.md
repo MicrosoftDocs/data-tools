@@ -1,10 +1,10 @@
 ---
 title: Create an Offline Installation of SQL Server Management Studio
 description: Create an offline installation package to install SQL Server Management Studio (SSMS) offline when you have an unreliable internet connection or low bandwidth.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest, mbarickman
-ms.date: 11/11/2025
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: erinstellato, mbarickman
+ms.date: 04/21/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -55,10 +55,11 @@ After the bootstrapper finishes downloading the layout files, the local layout f
 
 ### Step 3 - Install SSMS from the local layout
 
-Before installing SSMS from a local layout in an offline environment, confirm that the necessary [certificates are installed](install-certificates.md) on the machine.
+Before you install SSMS from a local layout in an offline environment:
 
-> [!WARNING]
-> If the certificates aren't installed properly, the [installer fails silently](install-certificates.md#validate-a-certificate-for-offline-installations).
+- Confirm that the necessary [certificates are installed](install-certificates.md) on the machine. If the certificates aren't installed properly, the [installer fails silently](install-certificates.md#validate-a-certificate-for-offline-installations).
+
+- Check that the Microsoft Visual C++ v14 Redistributable ([x86](https://aka.ms/vc14/vc_redist.x86.exe) and [x64](https://aka.ms/vc14/vc_redist.x64.exe)) is installed.
 
 When you install SSMS from a local layout, the Visual Studio Installer uses the local versions of the files. If you select components during installation that aren't in the layout, then the Visual Studio Installer attempts to download them from the internet. To make sure you install only the files you previously downloaded, use the same [command-line options](command-line-parameters.md) you used to create the local layout. To make sure your installer doesn't try to access the internet when it's installing the product, use the `--noweb` switch.
 
