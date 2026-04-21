@@ -1,9 +1,9 @@
 ---
 title: System Requirements for SQL Server Management Studio
 description: Learn about the system requirements for SQL Server Management Studio (SSMS) on Windows.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest, mbarickman
+author: rwestMSFT
+ms.author: randolphwest
+ms.reviewer: erinstellato, mbarickman
 ms.date: 04/20/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
@@ -80,17 +80,17 @@ The following operating systems aren't supported:
 
 ### Hardware
 
-- x64 processor; Quad-core or better recommended.
+- x64 processor; quad-core or better recommended.
 
   - Arm32 processors aren't supported.
 
-- Minimum of 4 GB of RAM. Many factors affect resources used; we recommend 16-GB RAM for typical professional solutions.
+- Minimum of 4 GB of RAM. Many factors affect the resources used, so 16 GB of RAM is recommended for typical professional solutions.
 
-- Hard disk space: Minimum of 4 GB up to 50 GB of available space, depending on features installed; typical installations require 20 to 50 GB of free space. We recommend installing Windows and SSMS on a solid-state drive (SSD) to increase performance.
+- Hard disk space: Minimum of 4 GB up to 50 GB of available space, depending on the features installed. Typical installations require 20 GB to 50 GB of free space. To increase performance, install Windows and SSMS on a solid-state drive (SSD).
 
-- Video card that supports a minimum display resolution of WXGA (1366 by 768); SSMS works best at a resolution of 1920 by 1080 or higher.
+- Video card that supports a minimum display resolution of WXGA (1366 by 768). SSMS works best at a resolution of 1920 by 1080 or higher.
 
-  - Minimum resolution assumes zoom, DPI settings, and text scaling are set at 100%. If not set to 100%, minimum resolution should be scaled accordingly. For example, if you set the Windows display **Scale and layout** setting on your Surface Book, which has a 3000x2000 physical display, to 200%, then SSMS would see a logical screen resolution of 1500x1000, meeting the minimum 1366x768 requirement.
+  - The minimum resolution assumes zoom, DPI settings, and text scaling are set at 100%. If you don't set these settings to 100%, scale the minimum resolution accordingly. For example, if you set the Windows display **Scale and layout** setting on your Surface Book, which has a 3000x2000 physical display, to 200%, SSMS sees a logical screen resolution of 1500x1000, meeting the minimum 1366x768 requirement.
 
 ### Supported languages
 
@@ -98,15 +98,18 @@ The following operating systems aren't supported:
 
 ### Additional requirements and guidance
 
-- Administrator rights are required to install or update [!INCLUDE [ssms-22-md](includes/ssms-22-md.md)].
+- You need administrator rights to install or update [!INCLUDE [ssms-22-md](includes/ssms-22-md.md)].
 
-- Refer to [Create an offline installation of SQL Server Management Studio](install/create-offline.md) for guidance on how to install, deploy, update, and configure SQL Server Management Studio in an offline scenario.
+- For guidance on how to install, deploy, update, and configure SQL Server Management Studio in an offline scenario, see [Create an offline installation of SQL Server Management Studio](install/create-offline.md).
 
-- .NET Framework 4.7.2 or above is required to *install* [!INCLUDE [ssms-22-md](includes/ssms-22-md.md)]. [!INCLUDE [ssms-22-md](includes/ssms-22-md.md)] requires .NET Framework 4.8 to run. If .NET Framework 4.8 isn't already installed, it's installed during setup.
+  > [!NOTE]  
+  > Make sure the Microsoft Visual C++ v14 Redistributable ([x86](https://aka.ms/vc14/vc_redist.x86.exe) and [x64](https://aka.ms/vc14/vc_redist.x64.exe)) is installed before you install [!INCLUDE [ssms-22-md](includes/ssms-22-md.md)] in an offline environment.
+
+- .NET Framework 4.7.2 or later is required to *install* [!INCLUDE [ssms-22-md](includes/ssms-22-md.md)]. [!INCLUDE [ssms-22-md](includes/ssms-22-md.md)] requires .NET Framework 4.8 to run. If .NET Framework 4.8 isn't already installed, the setup installs it.
 
 - Team Foundation Server 2019 Office Integration requires Office 2016, Office 2013, or Office 2010.
 
-- Smart App Control, which is a Windows feature, shouldn't be enabled on machines. Any setting other than "off" might negatively affect SQL Server Management Studio performance.
+- Don't enable Smart App Control, which is a Windows feature. Any setting other than "off" might negatively affect SQL Server Management Studio performance.
 
 ## Related content
 
