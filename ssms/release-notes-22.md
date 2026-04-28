@@ -4,7 +4,7 @@ description: Release notes for SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 04/17/2026
+ms.date: 04/28/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -31,11 +31,33 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.5.2"></a>
+
+### 22.5.2
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.5.2
+- Release date: April 28, 2026
+
+#### What's new in 22.5.2
+
+| Feature | Details |
+| --- | --- |
+| GitHub Copilot in SSMS | Disabled code completions by default. To enable code completions, go to **Tools** > **Options** > **Text Editor** > **Inline Suggestions** > **General** and select **Copilot completions (single and multi-line completions from Copilot)**, or **Select all** to enable both code completions options. If you previously modified a code completion option, code completions aren't disabled when updating to 22.5.2. |
+| Visual Studio | Updated to Visual Studio 18.5.2 [11723.231]. |
+
+#### Bug fixes in 22.5.2
+
+| Feature | Description |
+| --- | --- |
+| Database DevOps workload (preview) | Fixed an issue where non-build items were excluded from Solution Explorer instead of being displayed as miscellaneous files in the project. |
+| Database DevOps workload (preview) | Fixed an issue where the SQL projects **Generate Script** button in the Publish dialog incorrectly triggered a publish action in the background. |
+| GitHub Copilot in SSMS | Fixed an issue where GitHub Copilot slash commands were no longer available in the chat window. See [Did the GitHub Copilot / slash commands change in SSMS 22.5.0 from 22.4.1?](https://developercommunity.visualstudio.com/t/Did-the-GitHub-Copilot--slash-commands-/11076422). |
+
 <a id="22.5.0"></a>
 
 ### 22.5.0
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.5.0
 - Release date: April 14, 2026
@@ -44,8 +66,8 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Connection Dialog | Updated the connection dialog to clear the custom name when either the server name, authentication type, username or database name fields change. |
-| Database DevOps workload (preview) | Added 74 new item templates for SQL projects, covering a programmability, security, storage, tables, and views. |
+| Connection Dialog | Updated the connection dialog to clear the custom name when either the server name, authentication type, username, or database name fields change. |
+| Database DevOps workload (preview) | Added 74 new item templates for SQL projects, covering programmability, security, storage, tables, and views. |
 | Database DevOps workload (preview) | Added importing objects from an existing database into a SQL project. |
 | Database DevOps workload (preview) | Added the **Advanced Publish Settings** dialog (publish properties) to the **Publish Database** dialog. |
 | Database DevOps workload (preview) | Updated the SQL database project icon to use a fluent design. |
@@ -61,21 +83,21 @@ For previous versions of SSMS, see:
 
 | Feature | Description |
 | --- | --- |
-| Analysis Services | Resolved an issue where the **Execution time-out (seconds)** setting, in **Tools** > **Options** > **Query Execution** > **Analysis Server**, was not respected in the query editor. |
+| Analysis Services | Resolved an issue where the **Execution time-out (seconds)** setting, in **Tools** > **Options** > **Query Execution** > **Analysis Server**, wasn't respected in the query editor. |
 | Database DevOps workload (preview) | Fixed improperly truncated error messages during publish failures. |
 | Database DevOps workload (preview) | Fixed the generate script dialog appearing frozen during the process. |
 | Database DevOps workload (preview) | Solution Explorer now opens automatically when a database project is created. |
 | Database Tuning Advisor | Resolved an issue where DTA didn't start with error `Failed to open a new connection`. |
-| Extended Events | Fixed an issue where <kbd>Ctrl</kbd>+<kbd>R</kbd> didn't open the Filter dialog in the Extended Events viewer, see [SSMS22: Ctrl+R does not work for Extended Events](https://developercommunity.visualstudio.com/t/SSMS22:-CtrlR-does-not-work-for-Extende/11052846). |
-| Extended Events | Addressed exception `Object reference not set to an instance of an object` that occurred when opening the Extended Events filter, see [Exception occurs on the Extended Events filter](https://developercommunity.visualstudio.com/t/Exception-occurs-on-the-Extended-Events-/11054849). |
+| Extended Events | Fixed an issue where <kbd>Ctrl</kbd>+<kbd>R</kbd> didn't open the Filter dialog in the Extended Events viewer. See [SSMS22: Ctrl+R does not work for Extended Events](https://developercommunity.visualstudio.com/t/SSMS22:-CtrlR-does-not-work-for-Extende/11052846). |
+| Extended Events | Addressed exception `Object reference not set to an instance of an object` that occurred when opening the Extended Events filter. See [Exception occurs on the Extended Events filter](https://developercommunity.visualstudio.com/t/Exception-occurs-on-the-Extended-Events-/11054849). |
 | General | Fixed a stack overflow crash in `Microsoft.SqlServer.Management.SqlParser.dll`. |
 | General | Resolved an application hang that occurred during a rename operation. |
-| GitHub Copilot in SSMS | Fixed an issue where chat messages weren't showing even though the chat title was displayed, see [GitHub Copilot Chat messages not showing in SSMS 22 even though chat title shows](https://developercommunity.visualstudio.com/t/GitHub-Copilot-Chat-messages-not-showing/11040615). |
-| GitHub Copilot in SSMS | Addressed an issue where the monthly limit for the chat had the incorrect date, see [SSMS 22.1 GitHub Copilot Chat monthly limit message contradiction (GHCP)](https://developercommunity.visualstudio.com/t/SSMS-221-GitHub-Copilot-Chat-monthly-li/11014467). |
-| GitHub Copilot in SSMS | Model selection now persists after clearing chat or starting a new thread, see [GitHub Copilot Chat always selects Claude instead of last used Model (GHCP)](https://developercommunity.visualstudio.com/t/GitHub-Copilot-Chat-always-selects-Claud/11033548). |
-| Localization | Fixed a typo within the Portuguese (Brazil) connection dialog, see [Typo in Portuguese (Brazil) localization: "Ravoritas" instead of "Favoritas"](https://developercommunity.visualstudio.com/t/Typo-in-Portuguese-Brazil-localization/11049121). |
-| Localization | Resolved an issue where Object Explorer menus weren't localized, see [22.4.1 The language of the Object Explorer does not match the language of the regional settings.](https://developercommunity.visualstudio.com/t/2241-The-language-of-the-Object-Explor/11062750). |
-| Solution Explorer | Addressed an issue where Solution Explorer became blank after opening a file, see [Solution Explorer is blank when opening solution from git repo.](https://developercommunity.visualstudio.com/t/Solution-Explorer-get-stuck/11043177). |
+| GitHub Copilot in SSMS | Fixed an issue where chat messages weren't showing even though the chat title was displayed. See [GitHub Copilot Chat messages not showing in SSMS 22 even though chat title shows](https://developercommunity.visualstudio.com/t/GitHub-Copilot-Chat-messages-not-showing/11040615). |
+| GitHub Copilot in SSMS | Addressed an issue where the monthly limit for the chat had the incorrect date. See [SSMS 22.1 GitHub Copilot Chat monthly limit message contradiction (GHCP)](https://developercommunity.visualstudio.com/t/SSMS-221-GitHub-Copilot-Chat-monthly-li/11014467). |
+| GitHub Copilot in SSMS | Model selection now persists after clearing chat or starting a new thread. See [GitHub Copilot Chat always selects Claude instead of last used Model (GHCP)](https://developercommunity.visualstudio.com/t/GitHub-Copilot-Chat-always-selects-Claud/11033548). |
+| Localization | Fixed a typo within the Portuguese (Brazil) connection dialog. See [Typo in Portuguese (Brazil) localization: "Ravoritas" instead of "Favoritas"](https://developercommunity.visualstudio.com/t/Typo-in-Portuguese-Brazil-localization/11049121). |
+| Localization | Resolved an issue where Object Explorer menus weren't localized. See [22.4.1 The language of the Object Explorer does not match the language of the regional settings.](https://developercommunity.visualstudio.com/t/2241-The-language-of-the-Object-Explor/11062750). |
+| Solution Explorer | Addressed an issue where Solution Explorer became blank after opening a file. See [Solution Explorer is blank when opening solution from git repo.](https://developercommunity.visualstudio.com/t/Solution-Explorer-get-stuck/11043177). |
 | SQL Agent | Fixed a localization issue where the job schedule frequency dialog was obscured. |
 
 <a id="22.4.1"></a>
@@ -89,11 +111,11 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Connection Dialog | Introduced a new setting, **Automatically select the most recent connection**, in **Tools > Options > Connection Dialog** that controls the default behavior of the modern Connection Dialog when opened. |
-| Database DevOps workload (preview) | Introduced the **Database DevOps** workload (preview), that enables you to implement, manage, and collaborate on database changes using SQL database projects and source control. See [Database DevOps (preview) in SQL Server Management Studio](database-devops.md) and [Add support for SQL database projects](https://developercommunity.visualstudio.com/t/Add-support-for-SQL-database-projects/10864596). |
+| Connection Dialog | Added a new setting, **Automatically select the most recent connection**, in **Tools > Options > Connection Dialog** that controls the default behavior of the modern Connection Dialog when opened. |
+| Database DevOps workload (preview) | Added the **Database DevOps** workload (preview), that enables you to implement, manage, and collaborate on database changes using SQL database projects and source control. See [Database DevOps (preview) in SQL Server Management Studio](database-devops.md) and [Add support for SQL database projects](https://developercommunity.visualstudio.com/t/Add-support-for-SQL-database-projects/10864596). |
 | GitHub Copilot in SSMS | GitHub Copilot in SSMS is now generally available. |
 | GitHub Copilot in SSMS | Added support for user-level [custom instructions](github-copilot/custom-instructions.md). See [Copilot should support an Instructions file](https://developercommunity.visualstudio.com/t/Copilot-should-support-an-Instructions-f/10948846). |
-| Object Explorer | Added the ability to group database objects by schema to the Object Explorer. To toggle the setting on and off, select the icon for Group by schema (between the Refresh and Show Policy Health icons). Default behavior can be set under **Tools > Options > SQL Server Object Explorer > General**. See [Group objects by schema in Object Explorer](https://developercommunity.visualstudio.com/t/Group-objects-by-schema-in-Object-Explor/10874158). |
+| Object Explorer | Added the ability to group database objects by schema to the Object Explorer. To toggle the setting on and off, select the icon for Group by schema (between the Refresh and Show Policy Health icons). Set the default behavior under **Tools > Options > SQL Server Object Explorer > General**. See [Group objects by schema in Object Explorer](https://developercommunity.visualstudio.com/t/Group-objects-by-schema-in-Object-Explor/10874158). |
 | Output Window | Introduced a new channel for SQL Management Objects (SMO) events in **View > Output**. |
 | Query Hint Recommendation Tool | The Query Hint Recommendation Tool is now generally available. |
 | Results Grid | Added Excel, JSON, Markdown, and XML as supported file formats when saving results from the Results Grid. See [Quick Export Options in SSMS Query Results](https://developercommunity.visualstudio.com/t/Quick-Export-Options-in-SSMS-Query-Resul/10853468). |
@@ -113,7 +135,7 @@ For previous versions of SSMS, see:
 | GitHub Copilot in SSMS | Fixed a bug that displayed the incorrect date when using Copilot Free. See [SSMS 22.1 GitHub Copilot Chat monthly limit message contradiction](https://developercommunity.visualstudio.com/t/SSMS-221-GitHub-Copilot-Chat-monthly-li/11014467). |
 | GitHub Copilot in SSMS | Addressed the error `Incorrect syntax near 'WITHOUT_ARRAY_WRAPPER'` when using GitHub Copilot with SQL Server 2014 and earlier. See [SQL Management Studio 22 - Copilot error - not working at all]( https://developercommunity.visualstudio.com/t/SQL-Management-Studio-22---Copilot-error/11003748), [SSMS Copilot chat stuck at gathering references forever](https://developercommunity.visualstudio.com/t/SSMS-Copilot-chat-stuck-at-gathering-ref/11050599), and [Copilot in SSMS 22 unusable](https://developercommunity.visualstudio.com/t/Copilot-in-SSMS-22-unusable/11032195). |
 | GitHub Copilot in SSMS | Improved handling of failed query executions and executions that returned no results. |
-| GitHub Copilot in SSMS | Fixed incorrect date listed when monthly limit reached, see [SSMS 22.1 GitHub Copilot Chat monthly limit message contradiction (GHCP)](https://developercommunity.visualstudio.com/t/SSMS-221-GitHub-Copilot-Chat-monthly-li/11014467). |
+| GitHub Copilot in SSMS | Fixed incorrect date listed when monthly limit reached. See [SSMS 22.1 GitHub Copilot Chat monthly limit message contradiction (GHCP)](https://developercommunity.visualstudio.com/t/SSMS-221-GitHub-Copilot-Chat-monthly-li/11014467). |
 | Query Editor | Addressed an issue where the database dropdown list for the query editor didn't display all available databases. See [SSMS 22 Preview 3.0 does not show all databases](https://developercommunity.visualstudio.com/t/SSMS-22-preview-30-dows-not-show-all-da/10985325). |
 | Profiler | Resolved an error in the Profiler Execution Plans that caused the execution plan to render incorrectly. See [SSMS 22 Profiler - Execution Plan](https://developercommunity.visualstudio.com/t/SSMS-22-Profiler---Execution-Plan/11000054). |
 | Results Grid | Added a setting in **Tools > Options > Query Results > Results to Grid** that sets how JSON is displayed in text columns. See [ver 22.3: Unable to recognize JSON format of type nvarchar; shortcut links cannot be opened](https://developercommunity.microsoft.com/t/ver-223-:-Unable-to-recognize-JSON-format/11042059). |
@@ -286,7 +308,7 @@ For previous versions of SSMS, see:
 | GitHub Copilot in SSMS (Preview) | Improved responses for [!INCLUDE [sssql25-md](includes/sssql25-md.md)] features. |
 | GitHub Copilot in SSMS (Preview) | Introduced support for the SSMS responder when using **Ask Copilot** within **Feature Search**. |
 | Indexes | Added options to create vector and JSON indexes. Right-click **Indexes** > **New Index** > **JSON Index...** or **Vector Index...** |
-| IntelliSense | Added support for `CURRENT_TIMEZONE_ID` syntax, see [SSMS 21 does not recognize CURRENT_TIMEZONE_ID function](https://developercommunity.microsoft.com/t/SSMS-21-does-not-recognize-CURRENT_TIMEZ/10879862). |
+| IntelliSense | Added support for `CURRENT_TIMEZONE_ID` syntax. See [SSMS 21 does not recognize CURRENT_TIMEZONE_ID function](https://developercommunity.microsoft.com/t/SSMS-21-does-not-recognize-CURRENT_TIMEZ/10879862). |
 | IntelliSense | Added support for ANSI concatenation using the `||=` operator. |
 | IntelliSense | Added support for `AI_GENERATE_EMBEDDINGS` syntax. |
 | IntelliSense | Added support for regular expression functions `REGEXP_MATCHES` and `REGEXP_SPLIT_TO_TABLE`. |
@@ -301,7 +323,7 @@ For previous versions of SSMS, see:
 | Query Hint Recommendation Tool (Preview) | Added the [Query Hint Recommendation tool](query-hint-tool/hint-tool-overview.md) component under **Individual Components** > **Code Tools** in the Visual Studio Installer. |
 | Query Plans | Added support for JSON and vector index operations. |
 | Query Store | Improved Find Query and Run Query buttons in the Tracked Queries report. |
-| Results Grid | Introduced Zoom support for grid results, see [Zoom the results area independently](https://developercommunity.visualstudio.com/t/Zoom-the-results-area-independently/10860281). |
+| Results Grid | Introduced Zoom support for grid results. See [Zoom the results area independently](https://developercommunity.visualstudio.com/t/Zoom-the-results-area-independently/10860281). |
 | Scripting | Added scripting support for tables with **vector** columns. |
 | Snippets | Added numerous new snippet files, including snippets for creating various index types, creating and altering external models for AI embeddings, and managing security and schema objects. |
 | SQL Server Integration Services (SSIS) | Reinstated SQL Server Integration Services (SSIS) capabilities, including SSISDB catalog management, automated execution of SSIS packages, and the Import Export Wizard. |
@@ -325,7 +347,7 @@ For previous versions of SSMS, see:
 | Database Properties | Fixed validation for `MAXDOP` and `LEDGER_DIGEST_STORAGE_ENDPOINT` in Database Scoped Configurations tab. |
 | Find/Replace | Restored ability to use <kbd>Ctrl</kbd>+<kbd>C</kbd> in the Find/Replace dialog after opening a saved `.sql` file. See [Copy (Ctrl+C) does not work in Find/Replace dialog](https://developercommunity.visualstudio.com/t/Copy-CtrlC-does-not-work-in-FindRepl/10909707). |
 | General UI | Resolved behavior for selected dialogs that appear behind the main windows when opened. |
-| General UI | Fixed an error that occurs when you use <kbd>Ctrl</kbd>+<kbd>C</kbd> in the Quick Find dialog (<kbd>Ctrl</kbd>+<kbd>F</kbd>). The error message is `Unsaved documents cannot be cut or copied to the clipboard from the Miscellaneous Files project. You must save the unsaved document(s) before cutting or copying them.` |
+| General UI | Fixed an error that occurs when you use <kbd>Ctrl</kbd>+<kbd>C</kbd> in the Quick Find dialog (<kbd>Ctrl</kbd>+<kbd>F</kbd>). The error message is `Unsaved documents cannot be cut or copied to the clipboard from the Miscellaneous Files project. You must save the unsaved documents before cutting or copying them.` |
 | Generate Scripts Wizard | Resolved an `Object reference not set to an instance of an object` error thrown when you try to select options on the **Set Scripting Option** menu. See [Advance option on generate script button click throwing error in SSMS 2022 Preview 3](https://developercommunity.visualstudio.com/t/Advance-option-on-generate-script-button/10984224). |
 | GitHub Copilot in SSMS (Preview) | Updated Copilot Badge **Learn More** menus to reference SSMS documentation. |
 | GitHub Copilot in SSMS (Preview) | Fixed unexpected hang in chat window or SSMS. See [SSMS 22 Preview hangs at Modern Connection Dialog after installing GitHub Copilot](https://developercommunity.visualstudio.com/t/SSMS-22-Preview-hangs-at-Modern-Connecti/10984949). |
@@ -342,7 +364,7 @@ For previous versions of SSMS, see:
 | Query Store | Addressed incorrect sizing with Configure Regressed Queries dialog. See ["Configure regressed queries" dialog goes off the screen vertically on 1920x1080 monitor](https://developercommunity.visualstudio.com/t/Confgure-regressed-queries-dialog-goes/10929863). |
 | Reports | Addressed a bug that causes an arithmetic overflow error in the Object Execution Statistics and Batch Execution Statistics reports when execution_count exceeds the **int** data type limit. |
 | Results Grid | Resolved an issue that prevents direct scroll bar navigation from working properly. See [Direct scroll bar navigation via Shift-click does not work for Object Explorer and Results Grid](https://developercommunity.visualstudio.com/t/DirectscrollbarnavigationviaShift-clickdoesnotworkforObjectExplorerandResultsgrid/10936054). |
-| Solution Explorer | Resolved an error that occurs when opening a folder that was closed but had files that were open. See [SSMS 21 Preview - error while opening a folder in Windows 11](https://developercommunity.visualstudio.com/t/SSMS-21-Preview---error-while-opening-a-/10855845). |
+| Solution Explorer | Resolved an error that occurs when opening a folder that you previously closed but had files that were open. See [SSMS 21 Preview - error while opening a folder in Windows 11](https://developercommunity.visualstudio.com/t/SSMS-21-Preview---error-while-opening-a-/10855845). |
 | Status Bar | Fixed an issue that causes color contrast issues when you select certain colors. See [Query Summary Row, Text Illegible, Accessibility Issue](https://developercommunity.visualstudio.com/t/Query-Summary-Row-Text-Illegible-Acces/10958981). |
 | Status Bar | Reinstated line and column numbers in the status bar. See [In SSMS21 I can't find column number after clicking cell in grid results](https://developercommunity.visualstudio.com/t/In-SSMS21-I-cant-find-column-number-aft/10928369). |
 | T-SQL Language Settings | Fixed a bug that causes some T-SQL language settings to persist between SSMS sessions. |
