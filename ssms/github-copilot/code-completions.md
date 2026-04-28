@@ -5,7 +5,7 @@ description: Learn how to use completions from GitHub Copilot in SQL Server Mana
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 04/17/2026
+ms.date: 04/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -20,8 +20,9 @@ Use GitHub Copilot in SQL Server Management Studio (SSMS) to enhance your Transa
 
 Copilot provides two kinds of inline suggestions, both of which take your existing T-SQL into account:
 
-- Completions: As you type in the editor, Copilot provides ghost text suggestions at your current cursor location.
-- Next edit suggestions (NES): Based on your current editing patterns, [NES](next-edit-suggestions.md) predicts both where your next code edit will be and what changes you'll make.
+- **Completions**: As you type in the editor, Copilot provides ghost text suggestions at your current cursor location.
+
+- **Next edit suggestions (NES)**: Based on your current editing patterns, [NES](next-edit-suggestions.md) predicts both where your next code edit will be and what changes you'll make.
 
 For related information about GitHub Copilot Chat, see [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md).
 
@@ -37,7 +38,9 @@ Code Completions for GitHub Copilot in SSMS supports the T-SQL language.
 
 1. Sign in to your GitHub account with Copilot access.
 
-[Use GitHub Copilot for free](free-plan.md). Sign up and use AI to code faster and more efficiently.
+   [Use GitHub Copilot for free](free-plan.md). Sign up and use AI to code faster and more efficiently.
+
+1. Enable Code Completions from **Tools** > **Options** > **Text Editor** > **Inline Suggestions** > **General**.
 
 ## Use GitHub Copilot for code completions and suggestions
 
@@ -55,7 +58,7 @@ As you type comments or T-SQL in the editor, GitHub Copilot provides ghost text 
 
 1. To accept the suggestion, select <kbd>Tab</kbd>. To reject the suggestion, select <kbd>Esc</kbd> or continue typing.
 
-Suggestions can also be accepted, either partially or entirely, with a mouse or other pointing device starting in SSMS 22.3. All inline suggestions settings can be found via **Tools** > **Options** > **Text Editor** > **Inline Suggestions**. You can also access settings using **Settings** > **Options** from the Copilot badge.
+Starting in SSMS 22.3, you can accept suggestions, either partially or entirely, by using a mouse or other pointing device. You can find inline suggestions settings under **Tools** > **Options** > **Text Editor** > **Inline Suggestions**. You can also access settings by using **Settings** > **Options** from the Copilot badge.
 
 ## Shortcuts and settings
 
@@ -67,6 +70,8 @@ Several keyboard shortcuts are available for completions:
 - To partially accept a completion line by line, use <kbd>Ctrl</kbd>+<kbd>Down arrow</kbd>.
 
 You can customize your completion experience by changing selected settings.
+
+Make sure code completions are enabled, under **Tools** > **Options** > **Text Editor** > **Inline Suggestions** > **General** and select **Copilot completions (single and multi-line completions from Copilot)**, or **Select all** to enable both code completions options.
 
 If completions appear too quickly and interrupt your typing, adjust the display timing under **Tools** > **Options** > **Text Editor** > **Inline Suggestions** > **Preferences**. Select **Show code completions only after a pause in typing** to add a short pause (a *debounce* delay) so completions don't flash and disappear while you're still typing.
 
