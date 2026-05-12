@@ -4,7 +4,7 @@ description: Learn about the release history for SQL Server Management Studio (S
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 04/28/2026
+ms.date: 05/12/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -64,6 +64,7 @@ The bootstrapper in the following table always installs the latest release of SS
 | Channel | Version | Bootstrapper |
 | --- | --- | --- |
 | Release | [!INCLUDE [latest-build](includes/latest-build.md)] | [SQL Server Management Studio GA](https://aka.ms/ssms/22/release/vs_SSMS.exe) |
+| Release | 22.5.2 | [SQL Server Management Studio 22.5.2](https://download.visualstudio.microsoft.com/download/pr/ef8a1da5-1f31-4995-8be6-cb9800f90516/48044f0377d8387a50442c6d7093d3b2a55735b2b1ff0b680c452a64fada2636/vs_SSMS.exe). |
 | Release | 22.5.0 | [SQL Server Management Studio 22.5.0](https://download.visualstudio.microsoft.com/download/pr/7b660e19-415f-4c6c-bc8a-6a0b524cc688/1f9caf4ef28bf1a7ca10c4a21aeb5413b56aad3f6c7ecfc5fa0900a7037b6843/vs_SSMS.exe) |
 | Release | 22.4.1 | [SQL Server Management Studio 22.4.1](https://download.visualstudio.microsoft.com/download/pr/691c58af-be53-40df-9b3e-d4fb7c24879f/fa33ed7913b30e6c73f160e9f71445e2f51e4f63f9555cba44e8f25b610aa204/vs_SSMS.exe) |
 | Release | 22.3.3 | [SQL Server Management Studio 22.3.3](https://download.visualstudio.microsoft.com/download/pr/c7f9c40d-5956-4fa0-bd04-b866c2461198/58efa2590bf79fcea84f35cb6d0c5f6b852f7aa21a8e40939d1fdfe9cba80650/vs_SSMS.exe) |
