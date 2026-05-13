@@ -42,7 +42,7 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Database DevOps workload (preview) | Added **Create new SQL project from existing databases** to Object Explorer context menu. |
+| Database DevOps workload (preview) | Added **Create Project from Database...** under the **Tasks** context menu in Object Explorer. |
 | Libraries | Updated MSODBCSQL to 18.6.2.1. |
 | Options | Migrated Transact-SQL IntelliSense and Keyboard Query shortcuts settings from the **Tools** > **Options** dialog to the new Unified Settings tab experience. |
 | Query Designer | Added the right-click menu option **Change Column Width** in the **Show Criteria** pane for adjusting an individual column's width. |
