@@ -3,7 +3,7 @@ title: Use Command-Line Parameters to Open SQL Server Management Studio
 description: Learn about opening SSMS from a command line.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 04/14/2026
+ms.date: 05/18/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -32,7 +32,7 @@ You can specify files that contain queries, projects, or solutions. If you provi
 ```syntax
 ssms
 [ scriptfile ] [ projectfile ] [ solutionfile ]
-[ -S servername ] [ -d databasename ] [ -G ] [ -U username ] [ -E ] [ -nosplash ] [ -log [ filename ] ? ] [ -? ]
+[ -S servername ] [ -d databasename ] [ -A ] [ -U username ] [ -nosplash ] [ -log [ filename ] ? ] [ -? ]
 ```
 
 | **Command** | **Description** |
@@ -41,8 +41,7 @@ ssms
 | `-S <servername>` | Server name. |
 | `-d <databasename>` | Database name. |
 | `-U <username>` | User name when connecting with SQL Authentication. |
-| `-E` | Connect using Windows Authentication. |
-| `-A` | Connect using Active Directory authentication such as `ActiveDirectoryInteractive`. For a full list of values, see Microsoft.Data.SqlClient's [SqlAuthenticationMethodEnum](/dotnet/api/microsoft.data.sqlclient.sqlauthenticationmethod). The type of connection is determined by whether `-U` is included. |
+| `-A` | Connect using Active Directory authentication such as `ActiveDirectoryInteractive`. For a full list of values, see Microsoft.Data.SqlClient's [SqlAuthenticationMethodEnum](/dotnet/api/microsoft.data.sqlclient.sqlauthenticationmethod). The type of connection is determined by whether `-U` is included. Replaces `-E` and `-G`. |
 | `-N <option>` | Specifies the encryption option for the connection: **Optional**, **Mandatory** (default), or **Strict**. |
 | `-C` | Specifies that the connection trusts the server certificate without validation. |
 | `-i <hostname>` | Specifies a different, expected Common Name (CN) or Subject Alternative Name (SAN) in the server certificate to use during server certificate validation. |
