@@ -5,7 +5,7 @@ description: Learn how to use custom instructions with GitHub Copilot in SQL Ser
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 03/18/2026
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -74,4 +74,4 @@ Custom instruction files are markdown files (`.md` file extension) and contain a
 ## Related content
 
 - [Use database instructions with GitHub Copilot in SQL Server Management Studio](database-instructions.md)
-- [Adding repository customer instructions for GitHub Copilot](https://docs.github.com/enterprise-cloud@latest/copilot/how-tos/configure-custom-instructions/add-repository-instructions?tool=visualstudio)
+- [Adding repository customer instructions for GitHub Copilot](https://docs.github.com/enterprise-cloud@latest/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions?tool=visualstudio)

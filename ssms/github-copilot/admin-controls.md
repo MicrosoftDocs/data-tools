@@ -5,7 +5,7 @@ description: Learn about administrative controls for GitHub Copilot in SQL Serve
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 04/14/2026
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -19,7 +19,7 @@ Administrators can configure and manage GitHub Copilot in SQL Server Management 
 
 ## Disable Copilot
 
-Administrators can disable GitHub Copilot for individual accounts or for an entire organization through [GitHub Copilot settings](https://docs.github.com/copilot/how-tos/administer-copilot/manage-for-organization/manage-plan/subscribe).
+Administrators can disable GitHub Copilot for individual accounts or for an entire organization through [GitHub Copilot settings](https://docs.github.com/copilot/concepts/about-enterprise-accounts-for-copilot-business).
 
 For Copilot Business and Enterprise subscriptions, administrators manage access through the organization or enterprise settings on GitHub.com. Individual users can be granted or revoked access to Copilot through license assignment.
 

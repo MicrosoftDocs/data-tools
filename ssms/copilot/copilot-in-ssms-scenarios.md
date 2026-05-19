@@ -1,19 +1,21 @@
 ---
-title: "Scenarios"
+title: Scenarios
 titleSuffix: Copilot in SQL Server Management Studio
 description: Learn about example scenarios for Copilot in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2025
-ms.update-cycle: 180-days
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
   - ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand various scenarios where I can leverage Copilot in SQL Server Management Studio.
 ---
 # Scenarios for Copilot in SQL Server Management Studio
+
+[!INCLUDE [copilot](../includes/copilot.md)]
 
 Copilot in SSMS is an advanced AI tool designed to assist users of SQL Server Management Studio (SSMS) with managing and developing SQL databases. Whether you're a database administrator, database developer, application administrator, business analyst, or somewhere in between, Copilot in SSMS can save you time and help you become more efficient in your workflow.
 

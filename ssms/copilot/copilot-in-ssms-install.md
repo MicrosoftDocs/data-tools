@@ -5,7 +5,7 @@ description: Learn how to install Copilot in SQL Server Management Studio.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/07/2025
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -14,8 +14,9 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to install Copilot in SQL Server Management Studio.
 ---
-
 # Install Copilot in SQL Server Management Studio
+
+[!INCLUDE [copilot](../includes/copilot.md)]
 
 Copilot in SQL Server Management Studio (SSMS) is your AI assistant that can answer questions about your database and environment, and help with writing and fixing Transact-SQL (T-SQL).
 

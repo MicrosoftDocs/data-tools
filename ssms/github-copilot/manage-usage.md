@@ -5,7 +5,7 @@ description: Learn how to manage model use in the GitHub Copilot Chat experience
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 04/14/2026
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
