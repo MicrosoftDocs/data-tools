@@ -41,7 +41,7 @@ ssms
 | `-S <servername>` | Server name. |
 | `-d <databasename>` | Database name. |
 | `-U <username>` | User name when connecting with SQL Authentication. |
-| `-A` | Connect using Active Directory authentication such as `ActiveDirectoryInteractive`. For a full list of values, see Microsoft.Data.SqlClient's [SqlAuthenticationMethodEnum](/dotnet/api/microsoft.data.sqlclient.sqlauthenticationmethod). The type of connection is determined by whether `-U` is included. Replaces `-E` and `-G`. |
+| `-A` | Connect using Active Directory authentication such as `ActiveDirectoryInteractive`. For a full list of values, see [SqlAuthenticationMethodEnum](/dotnet/api/microsoft.data.sqlclient.sqlauthenticationmethod) in `Microsoft.Data.SqlClient`. The type of connection is determined by whether `-U` is included. Replaces `-E` and `-G`. |
 | `-N <option>` | Specifies the encryption option for the connection: **Optional**, **Mandatory** (default), or **Strict**. |
 | `-C` | Specifies that the connection trusts the server certificate without validation. |
 | `-i <hostname>` | Specifies a different, expected Common Name (CN) or Subject Alternative Name (SAN) in the server certificate to use during server certificate validation. |
