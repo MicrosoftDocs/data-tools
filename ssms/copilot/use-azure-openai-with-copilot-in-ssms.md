@@ -5,7 +5,7 @@ description: Learn about configuring Azure OpenAI to use with Copilot in SQL Ser
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 12/01/2025
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -16,6 +16,8 @@ f1_keywords:
 # CustomerIntent: As a database administrator or database developer, I want to understand how to configure Azure OpenAI to use with Copilot in SQL Server Management Studio.
 ---
 # Use Azure OpenAI with Copilot in SSMS
+
+[!INCLUDE [copilot](../includes/copilot.md)]
 
 Copilot in SQL Server Management Studio (SSMS) uses an endpoint and deployment in Azure OpenAI. This article provides the steps to create the necessary Azure OpenAI resources. For more information, see [Create and deploy an Azure OpenAI in Microsoft Foundry Models resource](/azure/ai-services/openai/how-to/create-resource).
 
