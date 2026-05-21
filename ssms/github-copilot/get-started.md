@@ -5,7 +5,7 @@ description: Learn how to get started using GitHub Copilot in SQL Server Managem
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 04/14/2026
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -43,7 +43,7 @@ After you sign in, use the Chat window to interact with your database using natu
 
 - **Chat**: Use the Chat window or inline chat to ask questions about your database, get T-SQL help, and generate code. For more information, see [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md).
 
-- **Code Completions**: As you write T-SQL, Copilot provides suggestions directly in the editor. Copilot suggests both new code (shown as gray text) and edits to existing code. For more information, see [Use Code Completions in SQL Server Management Studio](code-completions.md).
+- **Code Completions**: As you write T-SQL, Copilot provides suggestions directly in the editor. Copilot suggests both new code (shown as gray text) and edits to existing code. For more information, see [Use Completions in SQL Server Management Studio](code-completions.md).
 
 - **Next Edit Suggestions**: Copilot anticipates your next edit based on recent changes and suggests revisions in context. For more information, see [Use Next Edit Suggestions in SQL Server Management Studio](next-edit-suggestions.md).
 

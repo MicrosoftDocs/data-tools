@@ -5,15 +5,17 @@ description: Learn about best practices for using Copilot in SQL Server Manageme
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/21/2025
-ms.update-cycle: 180-days
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand the best practices to optimize my use of Copilot in SQL Server Management Studio.
 ---
 # Best practices for Copilot in SQL Server Management Studio
+
+[!INCLUDE [copilot](../includes/copilot.md)]
 
 A primary goal of Copilot in SQL Server Management Studio (SSMS) is to accelerate your productivity within your workflow in SSMS, including writing and editing Transact-SQL (T-SQL). To get the most out of Copilot in SSMS, it's not just about turning it on, it's about learning how to collaborate with it effectively. Like any partner, Copilot in SSMS performs best when given clear direction and appropriate context. Optimal use of the chat window also enhances the quality of your experience with Copilot in SSMS.
 

@@ -5,7 +5,7 @@ description: Learn how to use the chat window for Copilot in SQL Server Manageme
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/30/2025
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -15,8 +15,9 @@ f1_keywords:
   - "sql13.swb.copilot.chat.f1"
 # CustomerIntent: As a database administrator or database developer, I want to understand how to use the chat for Copilot in SQL Server Management Studio.
 ---
-
 # Use the chat window for Copilot in SQL Server Management Studio
+
+[!INCLUDE [copilot](../includes/copilot.md)]
 
 Copilot in SQL Server Management Studio (SSMS) includes a chat window to interact with Copilot in natural language. You can ask Copilot general questions about SQL, questions specific to a database, or get assistance writing or editing T-SQL.
 

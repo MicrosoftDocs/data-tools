@@ -5,7 +5,7 @@ description: Learn how to use next edit suggestions for GitHub Copilot in SQL Se
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 03/18/2026
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -64,6 +64,6 @@ To view a hidden suggestion, select the margin indicator or the <kbd>Tab</kbd> k
 
 ## Related content
 
-- [Use Code Completions in SQL Server Management Studio](code-completions.md)
+- [Use Completions in SQL Server Management Studio](code-completions.md)
 - [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
 - [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)

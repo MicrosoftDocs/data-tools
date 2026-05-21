@@ -1,11 +1,11 @@
 ---
-title: "What Is Copilot in SSMS"
+title: What Is Copilot in SSMS?
 titleSuffix: Copilot in SQL Server Management Studio
-description: Learn about Copilot in SQL Server Management Studio.
+description: Learn about Copilot in SQL Server Management Studio (Preview).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/13/2025
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -13,8 +13,9 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand the Copilot in SQL Server Management Studio feature.
 ---
-
 # What is Copilot in SQL Server Management Studio (Preview)?
+
+[!INCLUDE [copilot](../includes/copilot.md)]
 
 Use Copilot in SQL Server Management Studio (SSMS) to ask questions about your database and environment, and get help writing Transact-SQL (T-SQL) with AI.
 
@@ -38,17 +39,23 @@ To maximize your productivity with Copilot in SSMS, open a query editor that's c
 
 The following example prompts are clear, specific, and tailored to the properties of your schema and database, making it easier for Copilot in SSMS to generate accurate replies.
 
-  ```copilot-prompt
-    - What are the top-selling products by quantity?
-    - How do I change the compatibility mode for this database?
-    - Is there blocking in my database right now?
-  ```
+```copilot-prompt
+What are the top-selling products by quantity?
+```
+
+```copilot-prompt
+How do I change the compatibility mode for this database?
+```
+
+```copilot-prompt
+Is there blocking in my database right now?
+```
 
 More examples can be found in [Best practices for Copilot in SQL Server Management Studio](copilot-in-ssms-best-practices.md#prompt-writing).
 
 ## Responsible AI use of Copilot in SSMS
 
-Copilot in SSMS adheres to [Responsible AI practices for Azure OpenAI models](/legal/cognitive-services/openai/overview). Microsoft is committed to ensuring that our AI systems are guided by our [AI principles](https://www.microsoft.com/ai/principles-and-approach/). Learn more about the AI principles for Copilot in SSMS in the [Transparency Note for Copilot in SQL Server Management Studio](/legal/sql/ssms/transparency-note-copilot). These principles include empowering our customers to use these systems effectively and in line with their intended uses. Our approach to responsible AI is continually evolving to proactively address emerging issues.
+Copilot in SSMS adheres to [Responsible AI practices for Azure OpenAI models](/legal/cognitive-services/openai/overview). Microsoft is committed to ensuring that our AI systems are guided by our [AI principles](https://www.microsoft.com/ai/principles-and-approach). Learn more about the AI principles for Copilot in SSMS in the [Transparency Note for Copilot in SQL Server Management Studio](/legal/sql/ssms/transparency-note-copilot). These principles include empowering our customers to use these systems effectively and in line with their intended uses. Our approach to responsible AI is continually evolving to proactively address emerging issues.
 
 ## Limitations
 
@@ -63,6 +70,6 @@ Here are the current limitations of Copilot in SSMS:
 
 ## Related content
 
-- [What is SQL Server Management Studio?](../sql-server-management-studio-ssms.md)
-- [Use Azure OpenAI with Copilot in SQL Server Management Studio](use-azure-openai-with-copilot-in-ssms.md)
+- [What is SQL Server Management Studio (SSMS)?](../sql-server-management-studio-ssms.md)
+- [Use Azure OpenAI with Copilot in SSMS](use-azure-openai-with-copilot-in-ssms.md)
 - [Install Copilot in SQL Server Management Studio](copilot-in-ssms-install.md)

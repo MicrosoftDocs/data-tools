@@ -5,7 +5,7 @@ description: Learn how to troubleshoot GitHub Copilot in SQL Server Management S
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 04/14/2026
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -17,7 +17,7 @@ ms.update-cycle: 180-days
 
 This troubleshooting guide includes steps for resolving issues with GitHub Copilot in SQL Server Management Studio (SSMS) 22 or later. Some issues related to GitHub Copilot might require assistance from an administrator or your network team.
 
-GitHub Copilot is a separate subscription managed by GitHub. For questions regarding GitHub Copilot subscriptions and support, see [Individual subscriptions](https://docs.github.com/copilot/how-tos/manage-your-account/get-started-with-a-copilot-plan) or [Business subscriptions](https://docs.github.com/copilot/how-tos/administer-copilot/manage-for-organization/manage-plan/subscribe).
+GitHub Copilot is a separate subscription managed by GitHub. For questions regarding GitHub Copilot subscriptions and support, see [Individual subscriptions](https://docs.github.com/copilot/how-tos/manage-your-account/get-started-with-a-copilot-plan) or [Business subscriptions](https://docs.github.com/copilot/concepts/about-enterprise-accounts-for-copilot-business).
 
 ## GitHub Copilot authentication
 

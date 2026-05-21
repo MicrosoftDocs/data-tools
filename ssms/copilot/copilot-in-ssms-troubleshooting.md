@@ -5,7 +5,7 @@ description: Learn how to troubleshoot issues with Copilot in SQL Server Managem
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 10/30/2025
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -13,8 +13,9 @@ ms.collection:
 ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to troubleshoot issues with Copilot in SQL Server Management Studio.
 ---
-
 # Troubleshooting issues with Copilot in SQL Server Management Studio
+
+[!INCLUDE [copilot](../includes/copilot.md)]
 
 ## General logging
 

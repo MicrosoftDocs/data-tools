@@ -5,7 +5,7 @@ description: Learn how to use database instructions with GitHub Copilot in SQL S
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 03/18/2026
+ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
