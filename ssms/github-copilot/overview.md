@@ -5,7 +5,7 @@ description: Overview of GitHub Copilot in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2026
+ms.date: 05/29/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -50,6 +50,22 @@ More examples can be found in [Scenarios for GitHub Copilot in SQL Server Manage
 ## Responsible AI use of Copilot
 
 Microsoft is committed to ensuring that our AI systems are guided by our [AI principles](https://www.microsoft.com/ai/principles-and-approach). To learn more about GitHub Copilot's security, privacy, compliance, and transparency, see the [GitHub Copilot Trust Center FAQ](https://copilot.github.trust.page/faq). Our AI principles include empowering our customers to use these systems effectively and in line with their intended uses. Our approach to responsible AI is continually evolving to proactively address emerging issues.
+
+### Database engine support
+
+GitHub Copilot in SSMS supports the following database engines:
+
+- [!INCLUDE [ssnoversion-md](../includes/ssnoversion-md.md)] on Windows, Linux, and containers
+  - [!INCLUDE [sssql25-md](../includes/sssql25-md.md)]
+  - [!INCLUDE [sssql22-md](../includes/sssql22-md.md)]
+  - [!INCLUDE [sssql19-md](../includes/sssql19-md.md)]
+  - [!INCLUDE [sssql17-md](../includes/sssql17-md.md)]
+  - [!INCLUDE [sssql16-md](../includes/sssql16-md.md)]
+  - [!INCLUDE [sssql14-md](../includes/sssql14-md.md)]
+- [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview)
+- [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview)
+- [SQL Server on Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview)
+- [SQL database in Microsoft Fabric](/fabric/database/sql/overview)
 
 ## Limitations
 
