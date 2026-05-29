@@ -5,7 +5,7 @@ description: Learn how to troubleshoot GitHub Copilot in SQL Server Management S
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 05/19/2026
+ms.date: 05/29/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -65,7 +65,11 @@ Your administrator can [disable GitHub Copilot](/visualstudio/ide/visual-studio-
 
 ### Log files
 
-Log files for GitHub Copilot in SSMS, which can assist with troubleshooting, can be found in `%TEMP%\VSGitHubCopilotLogs`.
+GitHub Copilot in SSMS writes log files to the following paths:
+
+- `%TEMP%\VSGitHubCopilotLogs`
+- `%LOCALAPPDATA%\ssmscopilot`
+- `%LOCALAPPDATA%\Microsoft\SSMS\22.0_*\SSMSGitHubCopilot`
 
 ## Monitor queries from GitHub Copilot
 
