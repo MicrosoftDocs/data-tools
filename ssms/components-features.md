@@ -5,7 +5,7 @@ description: Discover capabilities and where to start with each component in SQL
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato, drskwier
-ms.date: 03/18/2026
+ms.date: 06/09/2026
 ms.service: sql-server-management-studio
 ms.topic: overview
 ms.collection:
@@ -24,13 +24,14 @@ This article describes the components and features available in [!INCLUDE [ssman
 | **GitHub Copilot in SSMS (Preview)** | Chat, code actions (Document, Explain, Fix, Optimize), walkthrough, model selection, and Bring Your Own Model (BYOM). | [Get started with GitHub Copilot in SQL Server Management Studio](github-copilot/get-started.md) |
 | **Query Hint Recommendation Tool (Preview)** | Analyze statements and apply recommended hints. Installed via **Visual Studio Installer** > **Individual Components** > **Code Tools**. | [Query Hint Recommendation tool](query-hint-tool/hint-tool-overview.md) |
 | **Git integration** | Integration with Git for tracking, managing, and collaborating on SQL scripts. Clone and create repositories, manage branches, and view diffs inside SSMS, using the same familiar interface as Visual Studio. | [About Git in Visual Studio](/visualstudio/version-control/git-with-visual-studio) |
-| **Modern connection dialog** | Browse Microsoft Fabric resources, copy and paste connection strings, and manage encryption and certificate options more easily. | [Quickstart: Connect and query a SQL Server instance](quickstarts/ssms-connect-query-sql-server.md) |
-| **SQL Server migration component** | Assess, prepare, and migrate your [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] databases. | [SQL Server migration component in SQL Server Management Studio](migrate/migrate-sql-server-azure-sql.md) |
+| **Modern connection dialog** | Browse Microsoft Fabric resources, copy and paste connection strings, and manage encryption and certificate options more easily. | [Quickstart: Connect and query a SQL Server instance using SQL Server Management Studio (SSMS)](quickstarts/ssms-connect-query-sql-server.md) |
+| **SQL Server migration component** | Assess, prepare, and migrate your [!INCLUDE [ssnoversion-md](includes/ssnoversion-md.md)] databases. | [Migrate SQL Server to Azure SQL using the migration component in SSMS](migrate/migrate-sql-server-azure-sql.md) |
 | **Object Explorer** | View and manage all objects in one or more instances of the [!INCLUDE [ssdenoversion-md](includes/ssdenoversion-md.md)]. | [Object Explorer](object/object-explorer.md) |
 | **Template Explorer** | Build and manage files of boilerplate text that you use to speed the development of queries and scripts. | [Template Explorer](template/template-explorer.md) |
 | **Visual Database Tools** | Use the visual design tools included in SSMS to build queries, tables, and diagram databases. | [Visual Database Tools](visual-db-tools/visual-database-tools.md) |
-| **Query Editor** | Use the SSMS language editors to interactively build queries and scripts. | [Query and text editors](f1-help/database-engine-query-editor-sql-server-management-studio.md) |
-| **Database DevOps (Preview)** | Implement, manage, and collaborate on database changes with SQL database projects and source control. | [Database DevOps (Preview) in SQL Server Management Studio](database-devops.md) |
+| **Query Editor** | Use the SSMS language editors to interactively build queries and scripts. | [Query Editor (SQL Server Management Studio)](f1-help/database-engine-query-editor-sql-server-management-studio.md) |
+| **Database DevOps (Preview)** | Implement, manage, and collaborate on database changes with SQL database projects and source control. | [Database DevOps (preview) in SQL Server Management Studio](database-devops.md) |
+| **Schema Compare (Preview)** | Compare schemas between databases, `.dacpac` files, and SQL database projects. View differences and apply changes to a target. | [Schema Compare (preview) in SQL Server Management Studio](schema-compare.md) |
 
 ## Management, security, and productivity
 

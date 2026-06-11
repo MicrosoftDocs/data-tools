@@ -5,7 +5,7 @@ description: Learn about best practices for using GitHub Copilot in SQL Server M
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/19/2026
+ms.date: 06/09/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -19,15 +19,23 @@ GitHub Copilot in SQL Server Management Studio (SSMS) accelerates your productiv
 
 ## Chat window
 
-The icons and capabilities of the chat window are documented in [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md), but there are other considerations specific to prompts.
+The icons and capabilities of the chat window are documented in [Ask mode](chat.md) and [Agent mode (preview)](agent-mode.md), but other considerations are specific to prompts.
 
 Primarily, don't treat the chat window as a results window. When you ask GitHub Copilot questions about your schema or data, it might directly execute a query to return information to you in the chat window. GitHub Copilot in SSMS doesn't determine the number of rows returned by a query before it executes, and if the query returns 1,000 rows, it tries to display that information in the chat. Large result sets aren't easily readable, and can't be manipulated, within the chat window.
 
 Asking GitHub Copilot in SSMS to write the query to return the information is often preferred, and creates a better interaction and experience with GitHub Copilot.
 
+## Permissions
+
+GitHub Copilot in SQL Server Management Studio (SSMS) executes queries and commands under the context of your login. Apply the principle of least-privilege: grant users only the `SELECT`, `EXECUTE`, and other permissions they need on the specific objects they should access. Starting in SSMS 22.7, administrators can configure execution context that ensures Copilot-generated queries run under a dedicated, least-privileged account rather than the user's own permissions. This configuration uses a database user or SQL login, specified in the database's `CONSTITUTION.md`. For more information, see [Execution context for GitHub Copilot in SQL Server Management Studio](execution-context.md).
+
+## Context
+
+An AI model doesn't know your schema, your naming conventions, your business rules, or which server you're pointing at, unless you tell it. The more accurate context you provide, the better the response. For GitHub Copilot in SSMS, context comes from multiple sources: the active database connection (server, database), open query editors, results in the grid, [database instructions](database-instructions.md), the database constitution, and [custom instructions](custom-instructions.md) you configure. A prompt like "optimize this query" improves dramatically when the model knows the table structures, index coverage, and workload patterns involved. Clear intent tells the model what you want to accomplish, and accurate context tells it *where* you're working and *what* you're working with. Together, they eliminate guesswork and reduce incorrect information, which is especially important when the output is T-SQL that could execute against production data. For more information, see [Add context for GitHub Copilot in SQL Server Management Studio](chat-context.md).
+
 ## Consistency
 
-A common frustration among users of copilots is an inconsistency in responses. AI responses can be inconsistent because they're generated probabilistically rather than deterministically. This means that even when asked the same question, the model might choose a different, but still plausible, set of words or sentence structure based on subtle variations in context, configuration, or internal randomness. Additionally, AI models weigh many potential interpretations of a prompt, so small changes in phrasing or timing can lead to different outcomes. This variability is part of what makes AI so flexible and powerful, but it can also lead to unpredictable results if prompts aren't optimally constructed.
+A common frustration among users of copilots is an inconsistency in responses. AI responses can be inconsistent because they're generated probabilistically rather than deterministically. Specifically, when asked the same question, the model might choose a different, but still plausible, set of words or sentence structure based on subtle variations in context, configuration, or internal randomness. Additionally, AI models weigh many potential interpretations of a prompt, so small changes in phrasing or timing can lead to different outcomes. This variability is part of what makes AI so flexible and powerful, but it can also lead to unpredictable results if prompts aren't optimally constructed.
 
 ## Prompt writing
 
@@ -53,9 +61,10 @@ Example prompts:
 | **Be clear and specific** | `Okay, so I've got this thing where I need to maybe get some kind of report or output or whatever for yesterday's stuff but like only for users that are new but not too new, if that makes sense` | `Write a query to return users who registered yesterday and have not yet made a purchase` |
 | **Provide context** | `List western schools with no language reqs` | `List schools in the US-West geo that have a lang_req value of 0` |
 | **Use examples** | `Write a query to get recent customer info` | `Write a query to get customer ID, name, and total number of orders for the last 10 business days ordered by total desc` |
-| **Define the output format** | `Give me hospital locations and size with the busiest emergency rooms` | `List the hospitals with the busiest emergency rooms in table format and include city state and size` |
+| **Define the output format** | `Give me hospital locations and size with the busiest emergency rooms` | `List the hospitals with the busiest emergency rooms in table format and include city, state, and size` |
 
 ## Related content
 
 - [Use the GitHub Copilot Chat experience in SQL Server Management Studio](chat.md)
 - [Scenarios for GitHub Copilot in SQL Server Management Studio](scenarios.md)
+- [Add context for GitHub Copilot in SQL Server Management Studio](chat-context.md)
