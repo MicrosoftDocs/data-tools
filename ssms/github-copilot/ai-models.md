@@ -5,7 +5,7 @@ description: Learn how to select different models in the GitHub Copilot Chat exp
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 05/19/2026
+ms.date: 06/09/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -23,13 +23,17 @@ However, you're not limited to using this model. You can also select a different
 
 Choose from a curated set of models in the model picker, such as:
 
-- GPT-4.1
-- GPT-4o
-- Claude Sonnet 4
+- GPT-5 mini
+- GPT-5.3-Codex
+- GPT-5.4
+- GPT-5.4 mini
+- GPT-5.5
 - Claude Sonnet 4.5
 - Claude Sonnet 4.6
 - Claude Opus 4.5
 - Claude Opus 4.6
+- Claude Opus 4.7
+- Claude Opus 4.8
 - Claude Haiku 4.5
 - Gemini 2.5 Pro
 - Gemini 3.1 Pro
@@ -128,7 +132,7 @@ You can delete a model from the list of custom models in the GitHub Copilot chat
 - [Manage Copilot usage in SQL Server Management Studio](manage-usage.md)
 - [AI model comparison](https://docs.github.com/copilot/reference/ai-models/model-comparison)
 - [Hosting of models for GitHub Copilot Chat](https://docs.github.com/copilot/reference/ai-models/model-hosting)
-- [Requests in GitHub Copilot](https://docs.github.com/copilot/concepts/billing/copilot-requests#premium-requests)
-- [GitHub Copilot billing](https://docs.github.com/copilot/concepts/billing/billing-for-individuals)
+- [Requests in GitHub Copilot](https://docs.github.com/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests#premium-requests)
+- [GitHub Copilot billing](https://docs.github.com/copilot/concepts/billing/usage-based-billing-for-individuals)
 - [GitHub support](https://support.github.com/request/landing)
 - [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)

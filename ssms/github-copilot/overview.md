@@ -5,7 +5,7 @@ description: Overview of GitHub Copilot in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 05/29/2026
+ms.date: 06/08/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -17,7 +17,7 @@ ms.update-cycle: 180-days
 
 GitHub Copilot in SQL Server Management Studio (SSMS) helps you write Transact-SQL (T-SQL) faster and with greater accuracy. It can also answer general SQL questions and assist with administrator tasks, directly in your SSMS environment.
 
-GitHub Copilot in SSMS doesn't retain any of your information (prompts, responses, system metadata, etc.) and doesn't use any of your data to train or retrain models. For more information, see [GitHub Copilot Trust Center](https://copilot.github.trust.page).
+GitHub Copilot in SSMS doesn't retain any of your information, such as prompts, responses, and system metadata, and doesn't use any of your data to train or retrain models. For more information, see [GitHub Copilot Trust Center](https://copilot.github.trust.page).
 
 GitHub Copilot in SSMS can answer questions for databases in SQL Server, Azure SQL Database, Azure SQL Managed Instance, and SQL Database in Fabric. GitHub Copilot executes queries based on the permissions for your login. For example, if you don't have permission to select from the table `Sales.Orders` and you ask GitHub Copilot to write and execute a select query such as `SELECT TOP 100 * FROM Sales.Orders`, the query execution can't occur.
 
@@ -31,6 +31,8 @@ GitHub Copilot in SSMS includes [chat capabilities](chat.md) in the chat window 
 
 GitHub Copilot in SSMS also includes [autocompletions](code-completions.md) in the query editor, starting with SSMS 22.2.
 
+Starting with SSMS 22.7, GitHub Copilot in SSMS also includes [Agent mode (preview)](agent-mode.md), which lets you specify a high-level goal and have Copilot work through it autonomously. Agent mode can execute queries, read execution plans, and modify schema with your approval. Agent mode can be extended with [agent skills](agent-skills.md) and [MCP servers](mcp-servers.md) for external tool integrations.
+
 ## Best practices for using GitHub Copilot chat in SSMS
 
 To maximize your productivity with GitHub Copilot in SSMS, open a query editor that is connected to your database, and then open the chat window. By default, the chat window has context about the database to which you're connected based on the active query editor. When writing prompts, be specific in your request as vague questions lead to vague responses. For more best practices, see [Best practices for GitHub Copilot in SQL Server Management Studio](best-practices.md).
@@ -40,12 +42,12 @@ To maximize your productivity with GitHub Copilot in SSMS, open a query editor t
 The following example prompts are clear, specific, and tailored to the properties of your schema and database, making it easier for GitHub Copilot in SSMS to generate accurate replies.
 
   ```copilot-prompt
-    - What are the top-selling products by quantity?
-    - How do I change the compability mode for this database?
-    - Is there blocking in my database right now?
+  - What are the top-selling products by quantity?
+  - How do I change the compatibility mode for this database?
+  - Is there blocking in my database right now?
   ```
 
-More examples can be found in [Scenarios for GitHub Copilot in SQL Server Management Studio](scenarios.md)
+Find more examples in [Scenarios for GitHub Copilot in SQL Server Management Studio](scenarios.md).
 
 ## Responsible AI use of Copilot
 
@@ -75,7 +77,6 @@ Here are the current limitations of GitHub Copilot in SSMS:
 - GitHub Copilot responses can include inaccurate or low-quality content, so review outputs before using them in your work.
 - People who can meaningfully evaluate the content's accuracy and appropriateness should review the outputs.
 - GitHub Copilot doesn't currently support exporting the chat.
-- GitHub Copilot doesn't currently support Agent mode.
 
 ## Related content
 

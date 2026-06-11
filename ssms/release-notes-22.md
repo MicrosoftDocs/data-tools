@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 05/12/2026
+ms.date: 06/09/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,47 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.7.0"></a>
+
+### 22.7.0
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.7.0
+- Release date: June 9, 2026
+
+#### What's new in 22.7.0
+
+| Feature | Details |
+| --- | --- |
+| Authentication | Added support for creating a Windows account on Azure SQL Managed Instance. |
+| Database DevOps workload (preview) | Added a target database (platform) selection to the new SQL project dialog. |
+| Database DevOps workload (preview) | Added a **Create project from database** action to the **Solution** node context menu in Solution Explorer. |
+| Database DevOps workload (preview) | Added SQLCMD variable support to the **Publish** dialog. |
+| Database DevOps workload (preview) | Updated the SQL project Properties editor UI to align with the Visual Studio Property Page editor. |
+| GitHub Copilot in SSMS Agent Mode (preview) | Agent Mode for GitHub Copilot in SSMS is now available in preview. |
+| GitHub Copilot in SSMS | Introduced separate execution context for GitHub Copilot using the database `CONSTITUTION.md`. For more information, see [Execution context for GitHub Copilot in SQL Server Management Studio](github-copilot/execution-context.md). |
+| Libraries | Updated Microsoft.Data.SqlClient to 6.1.5. |
+| Query editor | Added SQL formatting (preview). |
+| Schema compare | Added schema comparison (preview) for databases, `.dacpac` files, and SQL projects. |
+| Visual Studio | Updated to Visual Studio 18.7.0 [11903.348] |
+
+#### Bug fixes in 22.7.0
+
+| Feature | Description |
+| --- | --- |
+| Command Line | Fixed an issue where the Connect to Server dialog was shown even when both `-S` and `-d` command-line parameters were provided alongside a filename. See [Unable to skip the Connect dialog, even with -S and -d parameters, if you pass as filename]( https://developercommunity.visualstudio.com/t/Unable-to-skip-the-Connect-dialog-even-/11032294). |
+| Connection | Fixed an issue where selecting **Activity Monitor** (**Ctrl**+**Alt**+**A**) from the toolbar opened the legacy connection dialog when no Object Explorer connection was active. See [If there is no open connection on object explorer and I click Activity Monitor (Ctrl+alt+A) from toolbar, it opens the old connect to server dialog](https://developercommunity.visualstudio.com/t/If-there-is-no-open-connection-on-object/11074108). |
+| General | Updated the post installation assembly optimization task to clarify it's optimizing SSMS assemblies. |
+| GitHub Copilot in SSMS | Restored use of GPT-5* models. See [SSMS GitHub Copilot removed GPT-4 and GPT-5 model options in GitHub Copilot chat in version 22.5+](https://developercommunity.visualstudio.com/t/SSMS-GitHub-Copilot-removed-GPT-4-and-GP/11101989). |
+| Object Explorer | Fixed an issue where Object Explorer warned about unsaved name changes after pressing **F2** on a schema-qualified database object even when the name wasn't changed. See [Object Explorer rename on Schema Database objects - warns on out of focus after F2 with no name change](https://developercommunity.visualstudio.com/t/Object-Explorer-rename---warns-on-out-of/11083137). |
+| Query Hint Recommendation Tool | Fixed a theme issue where the **Do not consider combinations of hints** label was not theme-compliant. |
+| Results Grid | Fixed an issue where the **Save Results As** dialog filtered **All files** as `*.txt`. See [Results Grid "Save Results As" dialog filters "All files" as *.txt](https://developercommunity.visualstudio.com/t/Results-Grid-Save-Results-As-dialog-fi/11090238). |
+| Settings | Fixed an issue where debug-only settings errors were displayed in the Output window. See [SQL Server Management Studio 22 versions later than 22.2.1](https://developercommunity.visualstudio.com/t/SQL-Server-Management-Studio-22-versions/11053753). |
+
 <a id="22.6.0"></a>
 
 ### 22.6.0
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.6.0
 - Release date: May 12, 2026

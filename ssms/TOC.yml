@@ -85,7 +85,7 @@ items:
             href: github-copilot/overview.md
           - name: Get started with GitHub Copilot in SSMS
             href: github-copilot/get-started.md
-          - name: Code suggestions
+          - name: Inline suggestions
             items:
               - name: Code completions
                 href: github-copilot/code-completions.md
@@ -95,12 +95,20 @@ items:
             items:
               - name: Ask mode
                 href: github-copilot/chat.md
+              - name: Agent mode
+                href: github-copilot/agent-mode.md
+              - name: Execution context
+                href: github-copilot/execution-context.md
               - name: Chat context
                 href: github-copilot/chat-context.md
-              - name: Database instructions
-                href: github-copilot/database-instructions.md
               - name: Custom instructions
                 href: github-copilot/custom-instructions.md
+              - name: Database instructions
+                href: github-copilot/database-instructions.md
+              - name: Agent skills
+                href: github-copilot/agent-skills.md
+              - name: MCP servers
+                href: github-copilot/mcp-servers.md
               - name: AI models
                 href: github-copilot/ai-models.md
           - name: Account
@@ -838,6 +846,8 @@ items:
         href: build-database-projects-by-using-sql-server-management-studio.md
       - name: Database DevOps in SSMS
         href: database-devops.md
+      - name: Schema Compare in SSMS
+        href: schema-compare.md
 
       - name: Visual database tools
         items:
