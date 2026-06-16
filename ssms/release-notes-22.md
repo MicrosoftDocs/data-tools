@@ -29,11 +29,24 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.7.1"></a>
+
+### 22.7.1
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.7.1
+- Release date: June 16, 2026
+
+#### Bug fixes in 22.7.1
+
+| Feature | Description |
+| --- | --- |
+| Query editor | Fixed an issue where the large scripts would cause the query editor to consume excessive memory, causing hangs and other performance issues. |
+
 <a id="22.7.0"></a>
 
 ### 22.7.0
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.7.0
 - Release date: June 9, 2026
