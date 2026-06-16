@@ -797,6 +797,8 @@ items:
                 href: scripting/bookmarks-f1-help.md
           - name: Print code and results
             href: scripting/print-code-and-results.md
+          - name: Format T-SQL
+            href: scripting/format-t-sql.md
           - name: IntelliSense
             items:
               - name: Overview
