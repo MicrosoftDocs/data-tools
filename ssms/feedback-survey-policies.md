@@ -22,12 +22,13 @@ One of the main categories included in the Visual Studio ADMX templates is feedb
 
 ## Supported policies
 
-Two feedback group policies exist for SSMS.
+The following feedback group policies exist for SSMS:
 
 | Name | Description |
 | --- | --- |
 | `SurveysDisabled` | Controls whether the user receives survey links in SSMS. If enabled, SSMS and the Visual Studio Installer don't display any product survey requests or links to surveys to the user. |
 | `ProductFeedbackDisabled` | Controls whether the user can submit feedback through SSMS. If enabled, SSMS and the Visual Studio Installer don't allow users to submit feedback to Microsoft. Examples include, but aren't limited to reporting feedback, submitting suggestions, and providing feedback on features via a thumbs up/down control. |
+| `InformationDisabled` | Controls whether the user receives informational announcements in SSMS. If enabled, SSMS and the Visual Studio Installer don't display informational announcements via info bars, such as general product announcements or notices. This policy applies to SSMS releases based on Visual Studio 2026 or later. |
 
 ## Related content
 
