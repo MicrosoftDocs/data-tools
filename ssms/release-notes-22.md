@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 06/23/2026
+ms.date: 07/14/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,48 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.8.0"></a>
+
+### 22.8.0
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.8.0
+- Release date: July 14, 2026
+
+#### What's new in 22.8.0
+
+| Feature | Details |
+| --- | --- |
+| Database DevOps (preview) | Added SQL projects system database package references (`master`, `msdb`) to Solution Explorer. |
+| Database Properties | Added the **Auto Index Compaction** option to the Database Properties and New Database dialogs. |
+| GitHub Copilot in SSMS Agent Mode (preview) | Added several skills, including: statistics assessments, geo DR, wait category analysis, slow query investigation, IO pressure, active connections, resource usage, and memory issues. |
+| Libraries | Updated MSOLEDBSQL MSI to 19.4.2. |
+| Results Grid | Updated the Save Results Grid behavior to default to the last file type used. |
+| Schema Compare | Added a label to the schema compare results **Group By** button, displaying "Action", "Schema", or "Type". |
+| Visual Studio | Updated to Visual Studio 18.8.0 [12009.203]. |
+
+#### Bug fixes in 22.8.0
+
+| Feature | Description |
+| --- | --- |
+| Execution Plans | Fixed an issue that caused parts of a branched query to be omitted when Edit Query Text selected. See [SSMS's Edit Query Text doesn't show contents of all IF branches in a query](https://developercommunity.visualstudio.com/t/SSMSs-Edit-Query-Text-doesnt-show-cont/11038140). |
+| GitHub Copilot in SSMS Agent Mode (preview) | Fixed several bugs that generated various error messages, including `ISharedTelemetryNull`, `ProxyTimeoutOnly`, `TokenManagerProxy` and `ICopilotInteractionServiceNull`. |
+| Import/Export Wizard | Fixed an issue with the SQL Server Import/Export Wizard that generated an error when the data source was Microsoft OLE DB Driver 19 for SQL Server. |
+| Localization | Fixed the Czech translation for Select Top and Edit Top N Rows. See [Czech translation is horrible AI translation in SSMS 22](https://developercommunity.visualstudio.com/t/czech-translation-is-horrible-AI-transla/11058700). |
+| Migration Assistant | Fixed an issue that caused the Migration Assessment wizard to crash. See [Migration assessment fails with same error across multiple machines]( https://developercommunity.microsoft.com/t/Migration-assessment-fails-with-same-err/11113935?q=migration+assessment). |
+| Object Explorer Details | Fixed a bug that caused various rendering issues when scrolling the Object Explorer details window after a refresh. See [Object Explorer Details pane eventually goes blank]( https://developercommunity.visualstudio.com/t/Object-Explorer-Details-pane-eventually-/10937488). |
+| Schema Compare | Restored syntax coloring in the diff viewer. |
+| SQL Formatter | Fixed a bug that caused invalid syntax in scripts that had leading commas. See [SQL Formatter reformats leading commas to invalid SQL]( https://developercommunity.visualstudio.com/t/SQL-Formatter-reformats-leading-commas-t/11106704). |
+| SQL Formatter | Fixed an error that combined block comments with adjacent single line comments. See [SQL Formatter merges block comment into - comment, causing Msg 102]( https://developercommunity.visualstudio.com/t/SQL-Formatter-merges-block-comment-into-/11106450). |
+| SQL Formatter | Fixed an issue where the entire editor was eligible for formatting when in SQLCMD mode. Scripts containing SQLCMD syntax can be formatted with non-SQLCMD syntax highlighted. See [SSMS SQL formatter fails to parse scripts with SQLCMD Mode commands]( https://developercommunity.visualstudio.com/t/SSMS-SQL-formatter-fails-to-parse-script/11108095). |
+| Query Shortcuts | Fixed an issue that caused the query shortcuts menu in **Tools > Options > Keyboard > Query Shortcuts** to be disabled. See [Query Shortcuts menu is disabled and cannot add new shortcuts]( https://developercommunity.visualstudio.com/t/Query-Shortcuts-menu-is-disabled-and-can/11101475). |
+| Query Tabs | Fixed a regression that caused renamed query tabs to revert to their default tab name after executing a query. See [SSMS query tab execution resets renamed tab title to original name]( https://developercommunity.visualstudio.com/t/SSMS-query-tab-execution-resets-renamed-/11094081). |
+| Registered Servers | Fixed an `unhandled exception` error that was thrown when opening the **Database Engine** group. |
+
 <a id="22.7.2"></a>
 
 ### 22.7.2
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.7.2
 - Release date: June 23, 2026
@@ -58,7 +95,7 @@ For previous versions of SSMS, see:
 
 | Feature | Description |
 | --- | --- |
-| Query editor | Fixed an issue where the large scripts would cause the query editor to consume excessive memory, causing hangs and other performance issues. |
+| Query editor | Fixed an issue where large scripts caused the query editor to consume excessive memory, leading to hangs and other performance problems. |
 | Visual Studio | Updated to Visual Studio 18.7.1 [11911.148] |
 
 <a id="22.7.0"></a>
@@ -88,7 +125,7 @@ For previous versions of SSMS, see:
 
 | Feature | Description |
 | --- | --- |
-| Command Line | Fixed an issue where the Connect to Server dialog was shown even when both `-S` and `-d` command-line parameters were provided alongside a filename. See [Unable to skip the Connect dialog, even with -S and -d parameters, if you pass as filename]( https://developercommunity.visualstudio.com/t/Unable-to-skip-the-Connect-dialog-even-/11032294). |
+| Command Line | Fixed an issue where the Connect to Server dialog appeared even when both `-S` and `-d` command-line parameters were provided alongside a filename. See [Unable to skip the Connect dialog, even with -S and -d parameters, if you pass as filename]( https://developercommunity.visualstudio.com/t/Unable-to-skip-the-Connect-dialog-even-/11032294). |
 | Connection | Fixed an issue where selecting **Activity Monitor** (**Ctrl**+**Alt**+**A**) from the toolbar opened the legacy connection dialog when no Object Explorer connection was active. See [If there is no open connection on object explorer and I click Activity Monitor (Ctrl+alt+A) from toolbar, it opens the old connect to server dialog](https://developercommunity.visualstudio.com/t/If-there-is-no-open-connection-on-object/11074108). |
 | General | Updated the post installation assembly optimization task to clarify it's optimizing SSMS assemblies. |
 | GitHub Copilot in SSMS | Restored use of GPT-5* models. See [SSMS GitHub Copilot removed GPT-4 and GPT-5 model options in GitHub Copilot chat in version 22.5+](https://developercommunity.visualstudio.com/t/SSMS-GitHub-Copilot-removed-GPT-4-and-GP/11101989). |
@@ -198,8 +235,8 @@ For previous versions of SSMS, see:
 | GitHub Copilot in SSMS | Fixed an issue where the monthly limit for the chat had the incorrect date. See [SSMS 22.1 GitHub Copilot Chat monthly limit message contradiction (GHCP)](https://developercommunity.visualstudio.com/t/SSMS-221-GitHub-Copilot-Chat-monthly-li/11014467). |
 | GitHub Copilot in SSMS | Model selection now persists after clearing chat or starting a new thread. See [GitHub Copilot Chat always selects Claude instead of last used Model (GHCP)](https://developercommunity.visualstudio.com/t/GitHub-Copilot-Chat-always-selects-Claud/11033548). |
 | Localization | Fixed a typo within the Portuguese (Brazil) connection dialog. See [Typo in Portuguese (Brazil) localization: "Ravoritas" instead of "Favoritas"](https://developercommunity.visualstudio.com/t/Typo-in-Portuguese-Brazil-localization/11049121). |
-| Localization | Fixed an issue where Object Explorer menus weren't localized. See [22.4.1 The language of the Object Explorer does not match the language of the regional settings.](https://developercommunity.visualstudio.com/t/2241-The-language-of-the-Object-Explor/11062750). |
-| Solution Explorer | Fixed an issue where Solution Explorer became blank after opening a file. See [Solution Explorer is blank when opening solution from git repo.](https://developercommunity.visualstudio.com/t/Solution-Explorer-get-stuck/11043177). |
+| Localization | Fixed an issue where Object Explorer menus weren't localized. See [22.4.1 The language of the Object Explorer does not match the language of the regional settings](https://developercommunity.visualstudio.com/t/2241-The-language-of-the-Object-Explor/11062750). |
+| Solution Explorer | Fixed an issue where Solution Explorer became blank after opening a file. See [Solution Explorer is blank when opening solution from git repo](https://developercommunity.visualstudio.com/t/Solution-Explorer-get-stuck/11043177). |
 | SQL Agent | Fixed a localization issue where the job schedule frequency dialog was obscured. |
 
 <a id="22.4.1"></a>
@@ -381,7 +418,7 @@ For previous versions of SSMS, see:
 | Edit data | Fixed a crash that occurred when editing data for a table with a hierarchyid data type. See [Crash when data-editing Table with a hierarchyid column containing brackets ( ) in the name](https://developercommunity.visualstudio.com/t/Crash-when-data-editing-Table-with-a-hie/10978934). |
 | GitHub Copilot in SSMS (Preview) | Reintroduced the `/optimize` code assistance command. |
 | GitHub Copilot in SSMS (Preview) | Fixed the issue where Copilot displayed `Run ValidateGeneratedTQL` repeatedly and didn't answer, or answered incorrectly. See [SSMS v22 Copilot taking minutes to respond, generating inaccurate results](https://developercommunity.visualstudio.com/t/SSMS-v22-Copilot-taking-minutes-to-respo/11006503). |
-| GitHub Copilot in SSMS (Preview) | Fixed the error `An exception was encountered while constructing the content of this frame`. See [Copilot Chat not working. Exception thrown.](https://developercommunity.visualstudio.com/t/Copilot-Chat-not-working-Exception-thro/11007777). |
+| GitHub Copilot in SSMS (Preview) | Fixed the error `An exception was encountered while constructing the content of this frame`. See [Copilot Chat not working. Exception thrown](https://developercommunity.visualstudio.com/t/Copilot-Chat-not-working-Exception-thro/11007777). |
 | GitHub Copilot in SSMS (Preview) | Updated the query to identify blocking to account for sleeping sessions. |
 | Profiler | Removed CTP from the [!INCLUDE [sssql25-md](includes/sssql25-md.md)] entry in the **Trace provider type**. |
 | Query Hint Recommendation Tool (Preview) | Fixed an issue that inserted a query hint after an existing semicolon instead of before it. |
