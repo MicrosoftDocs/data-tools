@@ -26,6 +26,7 @@ For more information, see:
 
 Here are the release notes for different versions of SQL Server Management Studio:
 
+- [SQL Server Management Studio 22 release notes](release-notes-22.md)
 - [SQL Server Management Studio 21 release notes](release-notes-21.md)
 - [SQL Server Management Studio 20 release notes](release-notes-20.md)
 
