@@ -4,7 +4,7 @@ description: Learn how to assess, plan, and migrate SQL Server databases to Azur
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: niball
-ms.date: 04/14/2026
+ms.date: 07/15/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -256,6 +256,32 @@ The following common issues might occur during migration. Use the recommended re
 - Verify data integrity checks.
 - Review application compatibility with target platform.
 - Check for blocking issues in assessment report.
+
+## Permissions
+
+To perform a migration, your [!INCLUDE [ssnoversion-md](../includes/ssnoversion-md.md)] instance login requires **sysadmin** permissions.
+
+If you only need to run an assessment, and don't plan to perform migration or migration monitoring, the following minimum permissions are required.
+
+| Object type | Database or object name | Privilege |
+| --- | --- | --- |
+| Server | | `CONNECT ANY DATABASE` |
+| Server | | `CONNECT SQL` |
+| Server | | `VIEW ANY DATABASE` |
+| Server | | `VIEW ANY DEFINITION` |
+| Server | | `VIEW SERVER STATE` |
+| Database | All databases | `SELECT sys.sql_expression_dependencies` |
+| Database | `msdb` | `EXECUTE dbo.agent_datetime` |
+| Database | `msdb` | `SELECT dbo.syscategories` |
+| Database | `msdb` | `SELECT dbo.sysjobhistory` |
+| Database | `msdb` | `SELECT dbo.sysjobs` |
+| Database | `msdb` | `SELECT dbo.sysjobsteps` |
+| Database | `msdb` | `SELECT dbo.sysmail_account` |
+| Database | `msdb` | `SELECT dbo.sysmail_profile` |
+| Database | `msdb` | `SELECT dbo.sysmail_profileaccount` |
+| Database | `msdb` | `SELECT dbo.syssubsystems` |
+| Database | `msdb` | `DB DATA READER` |
+| Database | `msdb` | `EXECUTE` |
 
 ## Related content
 
