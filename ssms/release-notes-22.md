@@ -36,7 +36,7 @@ For previous versions of SSMS, see:
 **[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.8.1
-- Release date: July 21, 2026
+- Release date: July 22, 2026
 
 #### What's new in 22.8.1
 
