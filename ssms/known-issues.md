@@ -20,6 +20,7 @@ This article lists known issues for [!INCLUDE [ssms-22-md](includes/ssms-22-md.m
 | Feature | Details | Workaround |
 | --- | --- | --- |
 | Analysis Services | After adding a new role, or when opening properties for an existing role, you can't use **Search by name or email address** to add a user. | Add users with the **Manual Entry** option. |
+| Analysis Services | When adding Azure Analysis Services administrators through Server Properties > Security, the **Search by name or email address** feature may not return results. | Add users with the **Manual Entry** option. |
 | Arm64 | There's no support for SSAS and SSIS on Arm64 devices. | Run SSAS or SSIS on a device that isn't Arm64. |
 | Arm64 - Data Classification | A LoadLibrary failure error message appears if you try to set Microsoft Information Protection Policy. | There's no workaround. |
 | Arm64 - Replication | Trying to bring up the "Distributor Properties" form results in an exception. | Run SSMS on a device that isn't Arm64. |
