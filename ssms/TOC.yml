@@ -127,24 +127,6 @@ items:
             href: github-copilot/best-practices.md
           - name: Troubleshoot GitHub Copilot in SSMS
             href: github-copilot/troubleshoot.md
-      - name: Copilot in SQL Server Management Studio (SSMS)
-        items:
-          - name: Overview of Copilot in SSMS
-            href: copilot/copilot-in-ssms-overview.md
-          - name: Install Copilot in SSMS
-            href: copilot/copilot-in-ssms-install.md
-          - name: Azure OpenAI configuration
-            href: copilot/use-azure-openai-with-copilot-in-ssms.md
-          - name: Use the chat window
-            href: copilot/copilot-in-ssms-chat.md
-          - name: Use code assistance
-            href: copilot/copilot-in-ssms-code-assistance.md
-          - name: Scenarios
-            href: copilot/copilot-in-ssms-scenarios.md
-          - name: Best practices
-            href: copilot/copilot-in-ssms-best-practices.md
-          - name: Troubleshooting
-            href: copilot/copilot-in-ssms-troubleshooting.md
       - name: Query Hint Recommendation tool
         items:
           - name: Overview of the Query Hint Recommendation tool

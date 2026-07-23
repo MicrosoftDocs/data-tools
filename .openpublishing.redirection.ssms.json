@@ -114,6 +114,46 @@
       "source_path": "ssms/github-copilot/usage-models.md",
       "redirect_url": "/ssms/github-copilot/manage-usage",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/copilot/copilot-in-ssms-overview.md",
+      "redirect_url": "/ssms/github-copilot/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/copilot/copilot-in-ssms-install.md",
+      "redirect_url": "/ssms/github-copilot/installation-state",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/copilot/use-azure-openai-with-copilot-in-ssms.md",
+      "redirect_url": "/ssms/github-copilot/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/copilot/copilot-in-ssms-chat.md",
+      "redirect_url": "/ssms/github-copilot/chat",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/copilot/copilot-in-ssms-code-assistance.md",
+      "redirect_url": "/ssms/github-copilot/chat-context#use-slash-commands-for-code-assistance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/copilot/copilot-in-ssms-scenarios.md",
+      "redirect_url": "/ssms/github-copilot/scenarios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/copilot/copilot-in-ssms-best-practices.md",
+      "redirect_url": "/ssms/github-copilot/best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ssms/copilot/copilot-in-ssms-troubleshooting.md",
+      "redirect_url": "/ssms/github-copilot/troubleshoot",
+      "redirect_document_id": false
     }
   ]
 }

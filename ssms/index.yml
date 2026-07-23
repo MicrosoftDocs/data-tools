@@ -38,8 +38,8 @@ landingContent:
         links:
           - text: SQL Server Management Studio release notes
             url: release-notes-22.md
-          - text: Copilot in SQL Server Management Studio (preview)
-            url: copilot/copilot-in-ssms-overview.md
+          - text: GitHub Copilot in SQL Server Management Studio
+            url: github-copilot/overview.md
 
   - title: Get started
     linkLists:
