@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 07/22/2026
+ms.date: 07/28/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,30 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.8.2"></a>
+
+### 22.8.2
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.8.2
+- Release date: July 28, 2026
+
+#### What's new in 22.8.2
+
+| Feature | Details |
+| --- | --- |
+| Visual Studio | Updated to Visual Studio 18.8.2 [12023.21]. |
+
+#### Bug fixes
+
+| Feature | Description |
+| --- | --- |
+| GitHub Copilot in SSMS | Fixed an issue that caused inline chat to fail with the error `There was a problem completing your request. Please try again.` |
+
 <a id="22.8.1"></a>
 
 ### 22.8.1
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.8.1
 - Release date: July 22, 2026
@@ -42,7 +61,7 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Visual Studio | Updated to Visual Studio 18.8.0 [12016.197]. |
+| Visual Studio | Updated to Visual Studio 18.8.1 [12016.197]. |
 
 <a id="22.8.0"></a>
 
