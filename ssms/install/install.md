@@ -7,7 +7,8 @@ ms.reviewer: randolphwest, mbarickman
 ms.date: 12/17/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
-ms.collection: data-tools
+ms.collection:
+  - data-tools
 ---
 # Install SQL Server Management Studio
 

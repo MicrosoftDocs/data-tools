@@ -6,7 +6,8 @@ ms.author: randolphwest
 ms.date: 03/09/2026
 ms.service: sql-server-management-studio
 ms.topic: overview
-ms.collection: data-tools
+ms.collection:
+  - data-tools
 f1_keywords:
   - "sql13.ssms.viewhelp.f1"
 helpviewer_keywords:
