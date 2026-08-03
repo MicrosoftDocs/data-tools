@@ -1,6 +1,6 @@
 ---
-title: "SQL Server Management Studio (SSMS)"
-description: Learn details about SQL Server Management Studio (SSMS) and what SSMS can do, including how to manage Analysis Services Solutions.
+title: SQL Server Management Studio (SSMS)
+description: Use SQL Server Management Studio (SSMS) to configure, administer, and develop for the SQL Database Engine. Learn about SSMS components, languages, and support.
 author: rwestMSFT
 ms.author: randolphwest
 ms.date: 03/09/2026
