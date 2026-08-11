@@ -5,7 +5,7 @@ description: Learn how to format SQL code in SQL Server Management Studio (SSMS)
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: drskwier, mbarickman
-ms.date: 06/17/2026
+ms.date: 08/11/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -99,17 +99,20 @@ All SQL formatter keys go under `[*.sql]` in `.editorconfig`.
 | --- | --- | --- | --- | --- |
 | `format_on_save` | bool | | `false` | Auto-format on save (SSMS-only, not in ScriptDOM). |
 | `as_keyword_on_own_line` | bool | | `true` | Place `AS` on its own line. |
+| `column_alias_style` | enum | `AsKeyword` `EqualsSign` `Preserve` | `Preserve` | Render column aliases using the `AS` keyword, an equals sign, or preserve the original style. |
+| `comma_placement` | enum | `Trailing` `Leading` | `Trailing` | Place commas at the end of the line (trailing) or the start of the next line (leading) in multiline lists. |
 | `include_semicolons` | bool | | `false` | Append semicolons to statements. |
 | `keyword_casing` | enum | `Uppercase` `Lowercase` `PascalCase` | `Uppercase` | Keyword casing style. |
 | `preserve_comments` | bool | | `true` | Preserve comments during formatting. |
 
 #### Indentation
 
-| Key | Type | Default | Description |
-| --- | --- | --- | --- |
-| `indent_set_clause` | bool | `false` | Indent `SET` clause in `UPDATE` statements. |
-| `indentation_size` | int (1–8) | `4` | Spaces per indent level. |
-| `indent_view_body` | bool | `false` | Indent `VIEW` body. |
+| Key | Type | Values | Default | Description |
+| --- | --- | --- | --- | --- |
+| `indent_set_clause` | bool | | `false` | Indent `SET` clause in `UPDATE` statements. |
+| `indentation_mode` | enum | `Spaces` `Tabs` | `Spaces` | Indent using spaces or tab characters. |
+| `indentation_size` | int (1–8) | | `4` | Spaces per indent level. |
+| `indent_view_body` | bool | | `false` | Indent `VIEW` body. |
 
 #### Multiline
 
@@ -130,8 +133,10 @@ All SQL formatter keys go under `[*.sql]` in `.editorconfig`.
 | `new_line_before_from_clause` | bool | `true` |
 | `new_line_before_group_by_clause` | bool | `true` |
 | `new_line_before_having_clause` | bool | `true` |
+| `new_line_after_join_keyword` | bool | `true` |
 | `new_line_before_join_clause` | bool | `true` |
 | `new_line_before_offset_clause` | bool | `true` |
+| `new_line_before_on_clause` | bool | `true` |
 | `new_line_before_open_parenthesis_in_multiline_list` | bool | `false` |
 | `new_line_before_order_by_clause` | bool | `true` |
 | `new_line_before_output_clause` | bool | `true` |

@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 07/28/2026
+ms.date: 08/11/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,71 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.9.0"></a>
+
+### 22.9.0
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.9.0
+- Release date: August 11, 2026
+
+#### What's new in 22.9.0
+
+| Feature | Details |
+| --- | --- |
+| Azure SQL Database | Updated the **Create Database** dialog for Azure SQL Databases with separate fields for compute and storage selection, removed options that don't apply to Azure SQL Databases, and changed the default tier to Hyperscale Gen5 2 vCore. |
+| Connection Dialog | Added the **hostname in certificate** field to the default connection properties view. |
+| Connection Dialog | Added support for subscription search and filtering when browsing Azure resources and workspaces, and when browsing Fabric resources. |
+| Connection Dialog | Added horizontal layout support. |
+| Connection Dialog | Changed the server name field to an editable drop-down menu for improved keyboard accessibility. |
+| Connection Dialog | Increased the maximum number of recent and favorite connections to 60. |
+| Connection Dialog | Added support for browsing Managed Instances for Azure. |
+| Connection Dialog | Added search and filtering support to the **Browse** tab. |
+| Connection Dialog | Added support for connection import and export. |
+| Connection Dialog | Added enhanced support for available SSMS themes. |
+| Database DevOps (preview) | Improved support for theming in dialogs, including **Publish**, **Generate Script**, and **Add Database Reference** dialogs. |
+| Database DevOps (preview) | Added more reference types to the **Add Database Reference** dialog. The dialog now supports four reference types: DACPAC, database project, NuGet package, plus the existing system database. |
+| Database DevOps (preview) | Updated the SqlProj document tab names to remove the "- not connected" suffix. See [Document tab names in SSMS sqlproj are not good](https://developercommunity.visualstudio.com/t/Document-ab-names-in-SSMS-sqlproj-are-no/11075237). |
+| Database DevOps (preview) | Added support for schema compare (`.scmp`) and publish profile (`.publish.xml`) files in Solution Explorer, including launching **Schema Compare** and **Publish** from the associated file type. | 
+| Database Properties | Added the `TIME_ZONE` configuration option. |
+| GitHub Copilot Agent Mode (preview) | Added tools that let GitHub Copilot interact with connected objects in Object Explorer. |
+| GitHub Copilot Ask Mode | Updated the behavior of Ask mode and removed the ability to execute arbitrary queries. |
+| Settings | Updated the startup settings to remove conflicting options and increase clarity. See [Startup configured to open Empty environment still showing Connect windows on startging.](https://developercommunity.visualstudio.com/t/Startup-configured-to-open-Empty-enviro/10990498). |
+| SQL Formatter (preview) | Added the ability to indent with tabs instead of spaces. See [SQL Formatter lacks option to indent with tabs instead of spaces](https://developercommunity.visualstudio.com/t/SQL-Formatter-lacks-option-to-indent-wit/11105064). |
+| SQL Formatter (preview) | Added a setting that configures comma style (trailing or leading). See [SQL Formatter lacks configurable option for trailing comma style](https://developercommunity.visualstudio.com/t/SQL-Formatter-lacks-configurable-option-/11105147). |
+| SQL Formatter (preview) | Added a setting that configures column aliases to use the `AS` keyword, an equals sign, or the original style. See [SQL Formatter: add option to preserve column alias style "AS" or "="](https://developercommunity.visualstudio.com/t/SQL-Formatter:-add-option-to-preserve-co/11105065). |
+| SQL Formatter (preview) | Added settings that control the new line after the `JOIN` keyword and before the `ON` keyword. See [SQL Formatter forces newline after JOIN and lacks "new line before ON" option](https://developercommunity.visualstudio.com/t/SQL-Formatter-forces-newline-after-JOIN-/11108118). |
+| SQL Formatter (preview) | Added a before-and-after preview to the SQL Formatter settings dialog, which displays example T-SQL with the selected settings. See [SQL Formatter settings should preview before/after T-SQL changes](https://developercommunity.visualstudio.com/t/SQL-Formatter-settings-should-preview-be/11108572). |
+| SQL Formatter (preview) | Removed the **Include Semicolons** setting. |
+| Visual Studio | Updated to Visual Studio 18.9.0 [12105.275]. |
+
+#### Bug fixes in 22.9.0
+
+| Feature | Description |
+| --- | --- |
+| Connection dialog | Fixed an issue that prevented saving multiple connection strings with different application intent values. See [Unable to save 2 connection strings with different application intents using the new connect screen](https://developercommunity.visualstudio.com/t/SMSS-22-Unable-to-save-2-connection-st/11004674). |
+| Database Tuning Advisor | Fixed an issue that generated an initialization error when running Database Tuning Advisor on the Japanese version of SSMS. |
+| Error messages | Fixed help links in several error dialogs that generated 404 errors. See [SQL Server error 4815 documentation link returns 404 (error message body during CSV import)](https://developercommunity.visualstudio.com/t/SQL-Server-error-4815-documentation-link/11109449). |
+| General | Fixed a stack overflow crash that occurred when mousing over a nested query. |
+| Object Explorer | Fixed an issue that prevented some users from viewing Agent details despite having the proper permissions. |
+| Query Data Store | Fixed an issue that displayed an incorrect value for **Stale Threshold** when **Custom capture mode** was initially enabled. |
+| Results Grid | Fixed an issue that truncated the toolstrip labels in some languages. See [Visibility counts completed rows](https://developercommunity.visualstudio.com/t/Visibility-counts-completed-rows/11076037). |
+| Schema Compare (preview) | Fixed an issue that did not show comment-only differences immediately before a `CREATE VIEW` in the diff viewer. See [Schema Compare Preview fails to display comment-only differences in front of create views](https://developercommunity.visualstudio.com/t/Schema-Compare-Preview-fails-to-display-/11105811). |
+| Schema Compare (preview) | Fixed an issue that caused Schema Compare to show no differences between different database schemas. See [Schema compare shows no differences between different database schemas](https://developercommunity.visualstudio.com/t/SSMS-Schema-Compare-shows-no-differences/11109078). |
+| Schema Compare (preview) | Fixed a bug that ignored comments regardless of the **Ignore Comments** setting. See [Compare Schemas ignores comment differences regardless of Ignore Comments setting](https://developercommunity.visualstudio.com/t/Compare-Schemas-ignores-comment-differen/11104855). |
+| Schema Compare (preview) | Fixed an issue that made SQL stored procedure bodies that differ semantically appear in the diff view as though they were reformatted, even though applying the change preserved the original formatting in the target database. See [When comparing stored procedures in Schema Compare, they are reformatted](https://developercommunity.visualstudio.com/t/When-comparing-stored-procedures-in-Sche/11117458). |
+| Schema Compare (preview) | Fixed an issue that incorrectly highlighted whitespace differences in the Schema Compare diff viewer. See [Schema Compare incorrectly flags differences in whitespace in table comparison which is due to how SSMS formats the CREATE TABLE script](https://developercommunity.visualstudio.com/t/Schema-Compare-incorrectly-flags-differe/11117487). |
+| Security | Fixed a potential security issue when replaying traces that invoke stored procedures with table-valued parameters via RPC. |
+| Security | Addressed vulnerabilities [CVE-2025-70873](https://nvd.nist.gov/vuln/detail/CVE-2025-70873), [CVE-2026-11822](https://nvd.nist.gov/vuln/detail/CVE-2026-11822), and [CVE-2026-11824](https://nvd.nist.gov/vuln/detail/CVE-2026-11824). See [SSMS SQLite library needs updating](https://developercommunity.microsoft.com/t/SSMS-SQLITE-library-needs-updating/11016836). |
+| SQL Agent | Fixed an issue that required users to have `EXECUTE` permission on `xp_instance_regread` to view or run SQL Server Agent jobs. See [SQL Agent blocks AD groups from viewing jobs without xp_instance_regread access](https://developercommunity.visualstudio.com/t/SQL-Agent-blocks-AD-groups-from-viewing-/11111711). |
+| SQL Formatter (preview) | Fixed an issue that merged `CONSTRAINT` lines into the preceding commented line. See [SQL Formatter merges CONSTRAINT line into preceding -- comment](https://developercommunity.visualstudio.com/t/SQL-Formatter-merges-CONSTRAINT-line-int/11104795). |
+| Theme | Fixed an issue that caused the SSMS theme to revert to Cool Breeze after restarting. See [SSMS theme setting reverts from Dark to Cool Breeze after restart](https://developercommunity.visualstudio.com/t/SSMS-theme-setting-reverts-from-Dark-to-/11121602). |
+| Toolbar | Fixed an issue that caused several toolbar icons to disappear. See [SSMS toolbar icons missing for query controls and execution plan buttons](https://developercommunity.visualstudio.com/t/SSMS-toolbar-icons-missing-for-query-con/11104974). |
+
 <a id="22.8.2"></a>
 
 ### 22.8.2
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.8.2
 - Release date: July 28, 2026
@@ -86,8 +146,8 @@ For previous versions of SSMS, see:
 
 | Feature | Description |
 | --- | --- |
-| Execution Plans | Fixed an issue that caused parts of a branched query to be omitted when Edit Query Text selected. See [SSMS's Edit Query Text doesn't show contents of all IF branches in a query](https://developercommunity.visualstudio.com/t/SSMSs-Edit-Query-Text-doesnt-show-cont/11038140). |
-| GitHub Copilot in SSMS Agent Mode (preview) | Fixed several bugs that generated various error messages, including `ISharedTelemetryNull`, `ProxyTimeoutOnly`, `TokenManagerProxy` and `ICopilotInteractionServiceNull`. |
+| Execution Plans | Fixed an issue that caused parts of a branched query to be omitted when you select **Edit Query Text**. See [SSMS's Edit Query Text doesn't show contents of all IF branches in a query](https://developercommunity.visualstudio.com/t/SSMSs-Edit-Query-Text-doesnt-show-cont/11038140). |
+| GitHub Copilot in SSMS Agent Mode (preview) | Fixed several bugs that generated various error messages, including `ISharedTelemetryNull`, `ProxyTimeoutOnly`, `TokenManagerProxy`, and `ICopilotInteractionServiceNull`. |
 | Import/Export Wizard | Fixed an issue with the SQL Server Import/Export Wizard that generated an error when the data source was Microsoft OLE DB Driver 19 for SQL Server. |
 | Localization | Fixed the Czech translation for Select Top and Edit Top N Rows. See [Czech translation is horrible AI translation in SSMS 22](https://developercommunity.visualstudio.com/t/czech-translation-is-horrible-AI-transla/11058700). |
 | Migration Assistant | Fixed an issue that caused the Migration Assessment wizard to crash. See [Migration assessment fails with same error across multiple machines]( https://developercommunity.microsoft.com/t/Migration-assessment-fails-with-same-err/11113935?q=migration+assessment). |
