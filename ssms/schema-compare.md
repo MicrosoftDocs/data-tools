@@ -4,7 +4,7 @@ description: Compare database schemas between databases, .dacpac files, and SQL 
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: drskwier, mbarickman
-ms.date: 06/09/2026
+ms.date: 08/11/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -111,7 +111,7 @@ You can save the comparison definition for Schema Compare as an `.scmp` file, kn
 - Comparison options
 - Excluded object types
 
-You can open an `.scmp` file in SSMS to run the same comparison again later, or to share the comparison with others.
+Open an `.scmp` file in SSMS to run the same comparison again later or to share the comparison with others. If you save an `.scmp` file as part of a SQL database project, the `.scmp` file appears in Solution Explorer. Opening the file launches Schema Compare with the comparison settings loaded.
 
 ## Related content
 
