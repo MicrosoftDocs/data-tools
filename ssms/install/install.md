@@ -1,6 +1,6 @@
 ---
 title: Install SQL Server Management Studio
-description: Learn how to install SQL Server Management Studio, select workloads, and set up side-by-side versions. Use SSMS to configure and manage your database engine.
+description: Learn how to use Visual Studio Installer to install SQL Server Management Studio (SSMS). Use SSMS to configure and manage your database engine.
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest, mbarickman
