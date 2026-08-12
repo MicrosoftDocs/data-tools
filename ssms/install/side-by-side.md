@@ -4,7 +4,7 @@ description: Learn how to install SQL Server Management Studio (SSMS) on a compu
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 11/11/2025
+ms.date: 08/12/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -22,7 +22,7 @@ Before you install versions side-by-side, review the following conditions:
 
 - Use SSMS 21 and higher to open a solution that was created in SSMS 20 or an earlier version. You might need to modify your projects and files to be compatible with SSMS 21 and higher.
 
-- If you uninstall a version of SSMS on a computer that has more than one version installed, the file associations for SSMS are removed for all versions.
+- If you uninstall a version of SSMS on a computer that has more than one version installed, the file association handler registered for the uninstalled SSMS instance is removed. Handlers registered by other installed instances of SSMS remain.
 
 ## Install different channels of the same major SSMS version side-by-side
 
