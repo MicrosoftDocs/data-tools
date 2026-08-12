@@ -59,7 +59,7 @@ For previous versions of SSMS, see:
 | Database Properties | Added the `TIME_ZONE` configuration option. |
 | GitHub Copilot Agent Mode (preview) | Added tools that let GitHub Copilot interact with connected objects in Object Explorer. |
 | GitHub Copilot Ask Mode | Updated the behavior of Ask mode and removed the ability to execute arbitrary queries. |
-| Settings | Updated the startup settings to remove conflicting options and increase clarity. See [Startup configured to open Empty environment still showing Connect windows on starting.](https://developercommunity.visualstudio.com/t/Startup-configured-to-open-Empty-enviro/10990498). |
+| Settings | Updated the startup settings to remove conflicting options and increase clarity. See [Startup configured to open Empty environment still showing Connect windows on starting](https://developercommunity.visualstudio.com/t/Startup-configured-to-open-Empty-enviro/10990498). |
 | SQL Formatter (preview) | Added the ability to indent with tabs instead of spaces. See [SQL Formatter lacks option to indent with tabs instead of spaces](https://developercommunity.visualstudio.com/t/SQL-Formatter-lacks-option-to-indent-wit/11105064). |
 | SQL Formatter (preview) | Added a setting that configures comma style (trailing or leading). See [SQL Formatter lacks configurable option for trailing comma style](https://developercommunity.visualstudio.com/t/SQL-Formatter-lacks-configurable-option-/11105147). |
 | SQL Formatter (preview) | Added a setting that configures column aliases to use the `AS` keyword, an equals sign, or the original style. See [SQL Formatter: add option to preserve column alias style "AS" or "="](https://developercommunity.visualstudio.com/t/SQL-Formatter:-add-option-to-preserve-co/11105065). |
