@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 08/11/2026
+ms.date: 08/18/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,31 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.9.1"></a>
+
+### 22.9.1
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.9.1
+- Release date: August 18, 2026
+
+#### What's new in 22.9.1
+
+| Feature | Details |
+| --- | --- |
+| Visual Studio | Updated to Visual Studio 18.9.1 [12112.369]. |
+
+#### Bug fixes in 22.9.1
+
+| Feature | Description |
+| --- | --- |
+| Index Properties Dialog | Fixed an issue that generated a `System.Windows.Media.Effects.DropShadowEffect` error when trying to modify included columns on indexes. See [SSMS Object Explorer index Included Columns dialog throws DropShadowEffect cross-thread exception](https://developercommunity.visualstudio.com/t/SSMS-Object-Explorer-index-Included-Colu/11121442). |
+| Restore Database Wizard | Fixed an issue that generated a `System.Windows.Media.Effects.DropShadowEffect` error when hovering over the timeline interval. See [Restore Database wizard Timeline Interval hover throws Freezable exception](https://developercommunity.visualstudio.com/t/Restore-Database-wizard-Timeline-Interva/11135646). |
+
 <a id="22.9.0"></a>
 
 ### 22.9.0
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.9.0
 - Release date: August 11, 2026
