@@ -58,7 +58,7 @@ When you reach usage limits for Copilot Free, you can wait for them to reset at 
 
 ### Who can access Copilot Free?
 
-Copilot Free isn't available if you have an Enterprise Managed Users (EMU) account, access to a Copilot license through an organization, an existing Copilot Pro subscription or trial, or free access to Copilot Pro as a student, teacher, or open-source maintainer. For the latest information, see [About GitHub Copilot Free](https://aka.ms/ghdocscopilotfreepage).
+Copilot Free isn't available if you have an Enterprise Managed Users (EMU) account, access to a Copilot license through an organization, an existing Copilot Pro subscription or trial, or free access to Copilot Pro as a student, teacher, or open-source maintainer. For the latest information, see [About GitHub Copilot Free](https://docs.github.com/copilot/get-started/plans).
 
 ### Can I block suggestions matching public code with Copilot Free?
 
@@ -66,11 +66,11 @@ Yes. You can configure these settings from the [GitHub Copilot Settings](https:/
 
 ### What Copilot features are included in Copilot Free?
 
-Copilot Free includes Copilot Chat. Learn more at [About GitHub Copilot Free](https://aka.ms/ghdocscopilotfreepage).
+Copilot Free includes Copilot Chat. Learn more at [About GitHub Copilot Free](https://docs.github.com/copilot/get-started/plans).
 
 ### What are the Copilot Free limits for Chat?
 
-For more information, see [About GitHub Copilot Free](https://aka.ms/ghdocscopilotfreepage).
+For more information, see [About GitHub Copilot Free](https://docs.github.com/copilot/get-started/plans).
 
 ## Related content
 
