@@ -1,9 +1,11 @@
 ---
-title: "Use the Properties Window in Management Studio"
+title: Use the Properties Window
+titleSuffix: SQL Server Management Studio
 description: Learn how to use the Properties window to see information about a SQL Server Management Studio item, such as a connection, and about database objects.
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: "03/01/2017"
+ms.reviewer: mbarickman
+ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -12,37 +14,40 @@ helpviewer_keywords:
   - "viewing properties"
   - "Properties window [SQL Server Management Studio]"
   - "complex properties [SQL Server Management Studio]"
+ai-usage: ai-assisted
 ---
-# Use the Properties Window in Management Studio
-[!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
-  The Properties window describes the state of an item in [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)], such as a connection or a Showplan operator, and information about database objects such as tables, views, and designers.  
-  
- You can use the Properties window to view the properties of the current connection. Many properties are read-only in the Properties window but can be changed elsewhere in the [!INCLUDE[ssManStudio](../includes/ssmanstudio-md.md)]. For example, the Database property of a query is read-only in the Properties window, but can be changed on the tool bar.  
-  
-### To view properties using the Properties window  
-  
-1.  If the Properties window is not visible, click **Properties Window** on the **View** menu, or press F4.  
-  
-2.  Set the focus on the object that you want to view.  
-  
-3.  Look for a specific property in the Properties window.  
-  
-### To view connection properties of a query window  
-  
-1.  If the Properties window is not visible, click **Properties Window** on the **View** menu, or press F4.  
-  
-2.  In the Properties window, you can see all the connection properties.  
-  
-### To view the properties of a Showplan operator  
-  
-1.  On the **Query** menu, click **Include Actual Execution Plan**.  
-  
-2.  In the SQL Query Editor, type and execute a query.  
-  
-3.  If the Properties window is not visible, click **Properties Window** on the **View** menu, or press F4.  
-  
-4.  On the **Execution plan** tab of the SQL Query Editor click the icons of the operators to view information about the operators in the Properties window.  
-  
-## See Also  
- [Properties Window &#40;Management Studio&#41;](../properties-window-management-studio.md)  
-  
+# Use the Properties window in SQL Server Management Studio
+
+[!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+
+The **Properties** window shows the state of an item in [!INCLUDE [ssManStudioFull](../includes/ssmanstudiofull-md.md)], such as a connection or a Showplan operator. It also shows information about database objects, such as tables and views, and about designers.
+
+Many properties in the **Properties** window are read-only, but you can change them in a different part of [!INCLUDE [ssManStudio](../includes/ssmanstudio-md.md)].
+
+> [!NOTE]  
+> If the **Properties** window isn't visible, select **Properties Window** on the **View** menu, or press <kbd>F4</kbd>.
+
+## View the properties of an object
+
+1. Select the object that you want to view.
+
+1. Find the property in the **Properties** window.
+
+## View the connection properties of a query window
+
+The **Properties** window shows all the connection properties of the query window.
+
+- Open a query window.
+
+## View the properties of a Showplan operator
+
+1. On the **Query** menu, select **Include Actual Execution Plan**.
+
+1. In the query editor, enter a query and run it.
+
+1. On the **Execution plan** tab, select an operator icon. The **Properties** window shows the properties of that operator.
+
+## Related content
+
+- [Properties window (SSMS)](../properties-window-management-studio.md)
+- [Properties window F1 help (SSMS)](../menu-help/properties-window-f1-help-management-studio.md)

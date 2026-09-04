@@ -1,10 +1,9 @@
 ---
-title: "General User Interface Elements"
-description: "General User Interface Elements"
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
-ms.date: 12/01/2025
+title: General User Interface Elements
+description: Explore the user interface elements in SQL Server Management Studio (SSMS).
+author: rwestMSFT
+ms.author: randolphwest
+ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -17,13 +16,13 @@ helpviewer_keywords:
 
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
-The **Editor**, the **Properties** window, and the **Toolbox** are some of the basic elements of [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)].
+The **Editor**, the **Properties** window, and the **Toolbox** are some of the basic elements of [!INCLUDE [ssManStudioFull](includes/ssmanstudiofull-md.md)] (SSMS).
 
 ## In this section
 
 | Article | Description |
 | --- | --- |
-| [SQL Server Management Studio Web Browser](sql-server-management-studio-web-browser.md) | Describes how SQL Server Management Studio invokes a web browser. |
-| [External tools](menu-help/external-tools.md) | Allows you to add tools to the **Tools** menu that aren't part of SQL Server Management Studio. |
-| [Properties Window (Management Studio)](properties-window-management-studio.md) | Allows you to view properties and events of selected objects that are located in editors and designers. Also allows you to edit and view the properties of files, projects, and solutions. Some properties can be edited in the Properties window. |
-| [Use the Toolbox](use-the-toolbox.md) | Explains how to manipulate and use the **Toolbox** to add controls to your project's designers. For example, you use the **Toolbox** to add steps to a Maintenance task. |
+| [SQL Server Management Studio Web Browser](sql-server-management-studio-web-browser.md) | Describes how SSMS opens a web browser. |
+| [External tools](menu-help/external-tools.md) | Describes how to add tools to the **Tools** menu that aren't part of SSMS. |
+| [Properties window (SSMS)](properties-window-management-studio.md) | Describes how to view the properties and events of the objects in editors and designers. You can also view the properties of files, projects, and solutions, and change some of them. |
+| [Use the Toolbox](use-the-toolbox.md) | Describes how to use the **Toolbox** to add controls to the designers in your project. For example, use the **Toolbox** to add steps to a maintenance task. |
