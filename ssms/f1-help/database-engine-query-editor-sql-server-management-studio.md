@@ -3,7 +3,7 @@ title: SSMS Query Editor
 description: SQL Server Management Studio (SSMS) Query Editor
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 03/18/2026
+ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -52,6 +52,7 @@ This article explains the query editor's features and functions in SQL Server Ma
 > If you want to learn how to use Transact-SQL (T-SQL) F1 Help, see the [Transact-SQL F1 Help](#transact-sql-f1-help) section. If you want to learn about tasks that you can do with the editor, see the [Editor tasks](#editor-tasks) section.
 
 The editors in SSMS share a typical architecture. The text editor implements the base level of functionality and can be used as a basic editor for text files. The other editors, or query editors, extend this functionality base by including a language service that defines the syntax of one of the languages supported in SQL Server. The query editors also implement varying levels of support for editor features such as IntelliSense and debugging. The query editors include the Database Engine Query Editor for use in building scripts containing T-SQL and XQuery statements, the MDX editor for the MDX language, the DMX editor for the DMX language, and the XML/A editor for the XML for Analysis language.
+
 You can use the Query Editor to create and run scripts containing Transact-SQL statements.
 
 :::image type="content" source="media/database-engine-query-editor-sql-server-management-studio/new-query.png" alt-text="Screenshot of New query.":::
@@ -258,7 +259,7 @@ You can select any of the *Result* options you want from the context menu. For m
 
 The [Properties window](../menu-help/properties-window-f1-help-management-studio.md) describes the state of an item in SQL Server Management Studio, such as a connection or a Showplan operator, and information about database objects such as tables, views, and designers.
 
-You use the Properties window to view the properties of the current connection. Many properties are read-only in the Properties window but can be changed elsewhere in the Management Studio. For example, the Database property of a query is read-only in the Properties window but can be changed on the tool bar.
+You use the Properties window to view the properties of the current connection. Many properties are read-only in the Properties window but can be changed elsewhere in SSMS.
 
 ### Query options using the context menu
 

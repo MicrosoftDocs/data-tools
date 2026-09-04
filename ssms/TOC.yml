@@ -263,7 +263,7 @@ items:
             href: solution/rename-solutions-and-project-items.md
           - name: Close a solution
             href: solution/close-a-solution.md
-          - name: View or change the properties of a connection in a project
+          - name: View or modify the properties of a connection in a project
             href: solution/view-or-change-the-properties-of-a-connection-in-a-project.md
           - name: Add existing items to a project
             href: solution/add-existing-items-to-a-project.md
@@ -700,6 +700,28 @@ items:
                 href: agent/proxy-account-properties-new-proxy-account-principals-tab.md
       - name: Configure login auditing
         href: configure-login-auditing-sql-server-management-studio.md
+      - name: Server Properties window
+        items:
+          - name: Overview
+            href: server-properties/server-properties-window.md
+          - name: General page
+            href: server-properties/general-page.md
+          - name: Memory page
+            href: server-properties/memory-page.md
+          - name: Processors page
+            href: server-properties/processors-page.md
+          - name: Security page
+            href: server-properties/security-page.md
+          - name: Connections page
+            href: server-properties/connections-page.md
+          - name: Database Settings page
+            href: server-properties/database-settings-page.md
+          - name: Advanced page
+            href: server-properties/advanced-page.md
+          - name: Permissions page
+            href: server-properties/permissions-page.md
+          - name: View or modify server properties >
+            href: /sql/database-engine/configure-windows/view-or-change-server-properties-sql-server
       - name: Configure Azure SQL Managed Instance link >>
         href: /azure/azure-sql/managed-instance/managed-instance-link-configure-how-to-ssms?toc=/ssms/toc.json&bc=/ssms/breadcrumb/toc.json
       - name: Configure WMI to show server status in SQL Server tools
@@ -1179,7 +1201,7 @@ items:
         items:
           - name: SQL Server Management Studio menu help
             href: menu-help/sql-server-management-studio-menu-help.md
-          - name: Properties window F1 help (Management Studio)
+          - name: Properties window F1 help (SSMS)
             href: menu-help/properties-window-f1-help-management-studio.md
           - name: Options
             items:

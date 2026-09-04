@@ -1,9 +1,11 @@
 ---
-title: "Properties Window F1 Help (Management Studio)"
-description: "Properties Window F1 Help (Management Studio)"
+title: Properties Window F1 Help (SSMS)
+titleSuffix: SQL Server Management Studio
+description: Use the Properties window to view properties of selected elements in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.date: 09/15/2025
+ms.reviewer: mbarickman
+ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -21,38 +23,36 @@ helpviewer_keywords:
   - "SQL Server Management Studio [SQL Server], Help"
   - "Properties window [SQL Server Management Studio]"
   - "SQL Server Management Studio Help [SQL Server], properties window"
+ai-usage: ai-assisted
 ---
 
-# Properties Window F1 Help (Management Studio)
+# Properties window F1 help (SSMS)
 
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance Synapse Analytics PDW Fabric SE Fabric DW Fabric SQL DB](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
-Use the **Properties** window to view properties of selected elements. You can also use the **Properties** window to view file, project, and solution properties. The **Properties** window is available by selecting **Properties Window** on the **View** menu.
+Use the **Properties** window to view the properties of a selected element in SQL Server Management Studio (SSMS). You can also use the **Properties** window to view the properties of files, projects, and solutions. To open the window, select **Properties Window** on the **View** menu, or press <kbd>F4</kbd>.
 
-The **Properties** window displays different types of editing fields, depending on the needs of a particular property. Properties shown in gray are read-only.
+The **Properties** window shows a different type of edit field for each property. Properties that are gray are read-only.
 
 ## Options
 
-#### Object name
+### Object name
 
-Lists the currently selected object or objects. Only objects from the active editor or designer are visible.
+Lists the selected object or objects. The window shows only the objects in the active editor or designer.
 
-#### Categorized
+### Sort Properties By Category
 
-Lists all properties and property values for the selected object, by category. You can collapse a category to reduce the number of visible properties. When you expand or collapse a category, you see a plus (**+**) or minus (**-**) to the left of the category name. Categories are listed alphabetically.
+Lists the properties and the property values of the selected object by category. Categories are in alphabetical order. To expand or collapse a category, select the plus (**+**) or minus (**-**) to the left of the category name.
 
-#### Alphabetic
+### Sort Properties Alphabetically
 
-Alphabetically sorts all design-time properties and events for selected objects.
+Lists the design-time properties and events of the selected objects in alphabetical order.
 
-#### Properties
+### Description pane
 
-Displays the properties for an object.
-
-#### Description pane
-
-The description pane appears at the bottom of the **Properties** window and shows the property type and a short description of the property. You can turn the description of the property off and on using the **Description** command on the shortcut menu.
+Shows the property type and a short description of the selected property. This pane is at the bottom of the **Properties** window. To hide or show the pane, select **Description** on the shortcut menu.
 
 ## Related content
 
-- [Use the Properties Window in Management Studio](../scripting/use-the-properties-window-in-management-studio.md)
+- [Properties window (SSMS)](../properties-window-management-studio.md)
+- [Use the Properties window in SQL Server Management Studio](../scripting/use-the-properties-window-in-management-studio.md)
