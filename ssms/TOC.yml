@@ -720,7 +720,7 @@ items:
             href: server-properties/advanced-page.md
           - name: Permissions page
             href: server-properties/permissions-page.md
-          - name: View or modify server properties
+          - name: View or modify server properties >
             href: /sql/database-engine/configure-windows/view-or-change-server-properties-sql-server
       - name: Configure Azure SQL Managed Instance link >>
         href: /azure/azure-sql/managed-instance/managed-instance-link-configure-how-to-ssms?toc=/ssms/toc.json&bc=/ssms/breadcrumb/toc.json
