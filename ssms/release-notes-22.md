@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 08/25/2026
+ms.date: 09/08/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,24 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.10.0"></a>
+
+### 22.10.0
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.10.0
+- Release date: September 8, 2026
+
+#### What's new in 22.10.0
+
+| Feature | Details |
+| --- | --- |
+| Visual Studio | Updated to Visual Studio 18.10.0 [12201.205]. |
+
 <a id="22.9.2"></a>
 
 ### 22.9.2
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.9.2
 - Release date: August 25, 2026
