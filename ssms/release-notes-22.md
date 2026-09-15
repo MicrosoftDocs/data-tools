@@ -44,6 +44,12 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Visual Studio | Updated to Visual Studio 18.10.1 [12210.168]. |
 
+#### Bug fixes in 22.10.1
+
+| Feature | Description |
+| --- | --- |
+| Performance Tools | Fixed an issue that caused Database Engine Tuning Advisor (DTA), SQL Monitor, and SQL Server Profiler to fail when connecting. |
+
 <a id="22.10.0"></a>
 
 ### 22.10.0
