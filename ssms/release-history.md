@@ -4,7 +4,7 @@ description: Learn about the release history for SQL Server Management Studio (S
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 08/25/2026
+ms.date: 09/15/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -65,6 +65,8 @@ The bootstrapper in the following table always installs the latest release of SS
 | Channel | Version | Bootstrapper |
 | --- | --- | --- |
 | Release | [!INCLUDE [latest-build](includes/latest-build.md)] | [SQL Server Management Studio GA](https://aka.ms/ssms/22/release/vs_SSMS.exe) |
+| Release | 22.10.0 | [SQL Server Management Studio 22.10.0](https://download.visualstudio.microsoft.com/download/pr/af2bf19c-59e9-48c4-bac6-019f173389ac/1dab93450311bab4a759f4e85f76ebe749b261041b00fd24a6a2db5f21971a0a/vs_SSMS.exe) |
+| Release | 22.9.2 | [SQL Server Management Studio 22.9.2](https://download.visualstudio.microsoft.com/download/pr/fe4fb3e6-ea32-4ae3-b154-72821a274f0d/3826637010859431029327f8cb8d63608166da459bd5ca3da5ad524c80892270/vs_SSMS.exe) |
 | Release | 22.9.1 | [SQL Server Management Studio 22.9.1](https://download.visualstudio.microsoft.com/download/pr/7834fc97-5a8c-4392-a2a9-ed4b98f77180/afe9a072e7c230f87e639cfd10868b37804152ee91997f0e72c49282686b70fe/vs_SSMS.exe) |
 | Release | 22.9.0 | [SQL Server Management Studio 22.9.0](https://download.visualstudio.microsoft.com/download/pr/b1ea2f6c-5e55-49bc-81e8-7623cc5a6743/3a464c9f251ad95716f197e1c76d0ecd4e96dbdf4b22ef8709a83602ff3b5eb4/vs_SSMS.exe) |
 | Release | 22.8.2 | [SQL Server Management Studio 22.8.2](https://download.visualstudio.microsoft.com/download/pr/58aec969-7d60-47ab-a001-285ca0c69097/48e041e0c0733e22d9035a085cfea82370c9ca1dc0dcc8f8d2717453f8b5e35f/vs_SSMS.exe) |
@@ -73,8 +75,8 @@ The bootstrapper in the following table always installs the latest release of SS
 | Release | 22.7.2 | [SQL Server Management Studio 22.7.2](https://download.visualstudio.microsoft.com/download/pr/4c1645e2-fb0d-4889-a6b9-3fb6fd3a782f/398cc5c7919bf1be33b9bfb876831f2bd324d376136a902912b1fe45998ff3ca/vs_SSMS.exe) |
 | Release | 22.7.1 | [SQL Server Management Studio 22.7.1](https://download.visualstudio.microsoft.com/download/pr/a95b7880-2074-4c46-bdbf-e1b8c547ac60/bc34d75d5b325e2cc9c804019442a7ef2599ab33eda2011a9aec23745239d048/vs_SSMS.exe) |
 | Release | 22.7.0 | [SQL Server Management Studio 22.7.0](https://download.visualstudio.microsoft.com/download/pr/105ab965-3bff-41cb-a75d-b4020a784328/1b424980a39e6408fec3a24977c6f0aa69bdac9bbf937cef2eadbcce86bb17e9/vs_SSMS.exe) |
-| Release | 22.6.0 | [SQL Server Management Studio 22.6.0](https://download.visualstudio.microsoft.com/download/pr/c40d2503-2e56-4f54-96c2-d886056cfedb/7b7e3d2c029a74af8ba86a2e6fe1cdabecb39732ad041f6d25d15bf89f2913a4/vs_SSMS.exe). |
-| Release | 22.5.2 | [SQL Server Management Studio 22.5.2](https://download.visualstudio.microsoft.com/download/pr/ef8a1da5-1f31-4995-8be6-cb9800f90516/48044f0377d8387a50442c6d7093d3b2a55735b2b1ff0b680c452a64fada2636/vs_SSMS.exe). |
+| Release | 22.6.0 | [SQL Server Management Studio 22.6.0](https://download.visualstudio.microsoft.com/download/pr/c40d2503-2e56-4f54-96c2-d886056cfedb/7b7e3d2c029a74af8ba86a2e6fe1cdabecb39732ad041f6d25d15bf89f2913a4/vs_SSMS.exe) |
+| Release | 22.5.2 | [SQL Server Management Studio 22.5.2](https://download.visualstudio.microsoft.com/download/pr/ef8a1da5-1f31-4995-8be6-cb9800f90516/48044f0377d8387a50442c6d7093d3b2a55735b2b1ff0b680c452a64fada2636/vs_SSMS.exe) |
 | Release | 22.5.0 | [SQL Server Management Studio 22.5.0](https://download.visualstudio.microsoft.com/download/pr/7b660e19-415f-4c6c-bc8a-6a0b524cc688/1f9caf4ef28bf1a7ca10c4a21aeb5413b56aad3f6c7ecfc5fa0900a7037b6843/vs_SSMS.exe) |
 | Release | 22.4.1 | [SQL Server Management Studio 22.4.1](https://download.visualstudio.microsoft.com/download/pr/691c58af-be53-40df-9b3e-d4fb7c24879f/fa33ed7913b30e6c73f160e9f71445e2f51e4f63f9555cba44e8f25b610aa204/vs_SSMS.exe) |
 | Release | 22.3.3 | [SQL Server Management Studio 22.3.3](https://download.visualstudio.microsoft.com/download/pr/c7f9c40d-5956-4fa0-bd04-b866c2461198/58efa2590bf79fcea84f35cb6d0c5f6b852f7aa21a8e40939d1fdfe9cba80650/vs_SSMS.exe) |
