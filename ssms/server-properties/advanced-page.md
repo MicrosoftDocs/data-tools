@@ -26,7 +26,7 @@ Use this page to view or modify advanced server settings.
 
 ### Enable Contained Databases
 
-Indicates if this instance of the [!INCLUDE [ssdenoversion-md](../includes/ssdenoversion-md.md)] permits contained databases. When **True**, you can create, restore, or attach a contained database. When **False**, you can't create, restore, or attach a contained database to this instance. Changing the containment property can affect the security of the database. Enabling contained databases lets database owners grant access to this [!INCLUDE [ssde-md](../includes/ssde-md.md)] instance. Disabling contained databases can prevent users from connecting.
+Indicates if this instance of the [!INCLUDE [ssdenoversion-md](../includes/ssdenoversion-md.md)] permits contained databases. When **True**, you can create, restore, or attach a contained database. When **False**, you can't create, restore, or attach a contained database to this instance. Changing the containment property can affect the security of the database. Enabling contained databases lets database owners grant access to this [!INCLUDE [ssde-md](../includes/ssde-md.md)] instance. Disabling contained databases can prevent users from connecting if the instance has contained databases.
 
 For more information, see [Contained Databases](/sql/relational-databases/databases/contained-databases) and [Security Best Practices with Contained Databases](/sql/relational-databases/databases/security-best-practices-with-contained-databases).
 
@@ -60,7 +60,7 @@ For more information, see the "Nested Triggers" section in [CREATE TRIGGER](/sql
 
 ### Blocked Process Threshold
 
-Specifies the threshold, in seconds, at which the system generates blocked process reports. You can set the threshold from `0` to `86400` (86,400 seconds, or 24 hours). By default, the system doesn't produce any blocked process reports.
+Specifies the threshold, in seconds, at which the system generates blocked process reports. You can set the threshold from `5` to `86400` (86,400 seconds, or 24 hours). By default, the value is `0`, which means that the system doesn't produce any blocked process reports.
 
 For more information, see [Server configuration: blocked process threshold](/sql/database-engine/configure-windows/blocked-process-threshold-server-configuration-option).
 
@@ -84,7 +84,7 @@ For the language that corresponds to the displayed setting, see [sys.fulltext_la
 
 ### Default Language
 
-The default language for all new logins, unless you specify otherwise.
+The default language for all new logins, unless you specify otherwise when creating a login.
 
 ### Full-Text Upgrade Option
 
@@ -103,7 +103,7 @@ For more information, see [Upgrade Full-Text Search (SQL Server Search)](/sql/re
 
 ### Max Text Replication Size
 
-Specifies the maximum size (in bytes) of **text**, **ntext**, **varchar(max)**, **nvarchar(max)**, **xml**, and **image** data that you can add to a replicated column or captured column in a single `INSERT`, `UPDATE`, `WRITETEXT`, or `UPDATETEXT` statement. Changing the setting takes effect immediately.
+Specifies the maximum size (in bytes) of **text**, **ntext**, **varchar(max)**, **nvarchar(max)**, **json**, **xml**, and **image** data that you can add to a replicated column or captured column in a single `INSERT`, `UPDATE`, `WRITETEXT`, or `UPDATETEXT` statement. Changing the setting takes effect immediately.
 
 For more information, see [Server configuration: max text repl size](/sql/database-engine/configure-windows/configure-the-max-text-repl-size-server-configuration-option).
 
@@ -113,7 +113,7 @@ Specifies whether the [!INCLUDE [ssde-md](../includes/ssde-md.md)] stores a smal
 
 ### Scan for Startup Procs
 
-Specifies that the [!INCLUDE [ssde-md](../includes/ssde-md.md)] scans for stored procedures to run automatically at startup. If set to **True**, the [!INCLUDE [ssde-md](../includes/ssde-md.md)] scans for and runs all automatically run stored procedures defined on the server. If set to **False** (the default), no scan is performed.
+Specifies that the [!INCLUDE [ssde-md](../includes/ssde-md.md)] runs all stored procedures that [sp_procoption](/sql/relational-databases/system-stored-procedures/sp-procoption-transact-sql) marks as `startup`. If you set this option to **True**, the [!INCLUDE [ssde-md](../includes/ssde-md.md)] scans for and runs these stored procedures. If you set this option to **False** (the default), the [!INCLUDE [ssde-md](../includes/ssde-md.md)] doesn't scan for or run startup stored procedures.
 
 For more information, see [Server configuration: scan for startup procs](/sql/database-engine/configure-windows/configure-the-scan-for-startup-procs-server-configuration-option).
 
@@ -133,7 +133,7 @@ Specifies whether the [!INCLUDE [ssde-md](../includes/ssde-md.md)] service uses 
 
 ### Network Packet Size
 
-Sets the packet size in bytes for the whole network. The default packet size is `4096` (4,096 bytes). If an application performs bulk copy operations or sends or receives large amounts of **text** or **image** data, a packet size larger than the default might improve efficiency because it results in fewer network reads and writes. If an application sends and receives small amounts of information, set the packet size to 512 bytes, which is sufficient for most data transfers.
+Sets the packet size in bytes for the whole network. The default packet size is `4096` (4,096 bytes). If an application performs bulk copy operations or sends or receives large amounts of [LOB data](/sql/t-sql/data-types/data-types-transact-sql), a packet size larger than the default might improve efficiency because it results in fewer network reads and writes. If an application sends and receives small amounts of information, set the packet size to 512 bytes, which is sufficient for most data transfers.
 
 For more information, see [Server configuration: network packet size](/sql/database-engine/configure-windows/configure-the-network-packet-size-server-configuration-option).
 
@@ -142,7 +142,7 @@ For more information, see [Server configuration: network packet size](/sql/datab
 
 ### Remote Login Timeout
 
-Specifies the number of seconds that the [!INCLUDE [ssde-md](../includes/ssde-md.md)] waits before returning from a failed remote login attempt. This setting affects connections to OLE DB providers made for heterogeneous queries. The default value is 20 seconds. A value of `0` allows for an infinite wait.
+Specifies the number of seconds that the [!INCLUDE [ssde-md](../includes/ssde-md.md)] waits before returning from a failed remote login attempt. This setting affects only connections to OLE DB providers made for heterogeneous queries. The default value is 20 seconds. A value of `0` allows for an infinite wait.
 
 For more information, see [Server configuration: remote login timeout](/sql/database-engine/configure-windows/configure-the-remote-login-timeout-server-configuration-option).
 
@@ -152,7 +152,7 @@ Changing the setting takes effect immediately.
 
 ### Cost Threshold for Parallelism
 
-Specifies the threshold above which the [!INCLUDE [ssde-md](../includes/ssde-md.md)] creates and runs parallel plans for queries. The cost refers to an estimated elapsed time in seconds required to run the serial plan on a specific hardware configuration. Set this option only on computers with more than one [logical processor](/sql/sql-server/compute-capacity-limits-by-edition-of-sql-server#remarks).
+Specifies the threshold above which [!INCLUDE [ssde-md](../includes/ssde-md.md)] might create and use parallel plans for queries. Cost is the sum of estimated operator costs in a query plan (for example, CPU and I/O). It's a relative measure used only for plan selection; it doesn't measure actual runtime. This option has an effect only on computers with more than one [logical processor](/sql/sql-server/compute-capacity-limits-by-edition-of-sql-server#remarks).
 
 For more information, see [Server configuration: cost threshold for parallelism](/sql/database-engine/configure-windows/configure-the-cost-threshold-for-parallelism-server-configuration-option).
 
@@ -166,7 +166,7 @@ For more information, see [Server configuration: locks](/sql/database-engine/con
 
 ### Max Degree of Parallelism
 
-Limits the number of processors (up to a maximum of `64`) to use in parallel plan execution. The default value of `0` uses all available processors. A value of `1` suppresses parallel plan generation. A number greater than `1` restricts the maximum number of processors used by a single query execution. If a value greater than the number of available processors is specified, the actual number of available processors is used.
+Limits the degree of intra-query parallelism in parallel query plan execution. The default value of `0` means unlimited up to the maximum of 64. A value of `1` suppresses parallel plan generation.
 
 For more information, see [Server configuration: max degree of parallelism](/sql/database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option).
 
