@@ -29,6 +29,8 @@ To control what browser is invoked from SSMS, change the setting, **Use system d
 
 - For SSMS 19.0.2 and below, the default value is *True*. When set to *True*, SSMS invokes Microsoft Internet Explorer for Microsoft Entra authentication. Internet Explorer was retired in June 2022. If you encounter an error message titled `Unsupported browser`, change **Use system default web browser** to *False* and configure the default browser for the workstation.
 
+- For SSMS 22 and higher, this setting cannot be configured.
+
 ## Related content
 
 - [General user interface elements](general-user-interface-elements.md)
