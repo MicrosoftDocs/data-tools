@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 09/15/2026
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,71 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.10.2"></a>
+
+### 22.10.2
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.10.2
+- Release date: September 28, 2026
+
+#### What's new in 22.10.2
+
+| Feature | Details |
+| --- | --- |
+| Database DevOps | The **Database DevOps** workload is now generally available. See [Database DevOps in SQL Server Management Studio](database-devops.md). |
+| Fabric SQL Database | Added **Open in Fabric Portal** option when right-clicking a Fabric SQL Database connected in Object Explorer. |
+| GitHub Copilot Agent Mode | Agent Mode for GitHub Copilot in SSMS is now generally available. |
+| GitHub Copilot Agent Mode | Updated the bundled SQL Tools MCP server to version 3.0.17, adding the latest skills and access-mode improvements. Query execution permissions are now determined by the connected SQL account's permissions. |
+| Maintenance Plans | Added an informational message that displays when attempting to launch Maintenance Plans on an installation of SSMS that is missing the SQL Server Integration Services (SSIS) component. |
+| Query Diagnostics | Added new settings in **Tools** > **Options** > **Query Execution** > **SQL Server** > **General** to control the default behavior for actual execution plans, client statistics, and live query statistics. See [Add option to keep actual execution plans enabled for all tab](https://developercommunity.visualstudio.com/t/Add-option-to-keep-actual-execution-plan/10952667). |
+| Results to Grid | Added a checkbox to the **Save Grid Results** dialog to include column headers in the export. See [The export to excel, include headers option should be on the Save As dialogue box](https://developercommunity.visualstudio.com/t/The-export-to-excel-include-headers-opt/11063139). |
+| Schema Compare | Schema compare is now generally available. |
+| SQL Formatter | SQL Formatter is now generally available. |
+| SQL Formatter | Added a setting to preserve, add, or remove square brackets around identifiers. |
+| SQL Formatter | Added a setting to set whether the values in an `IN (values)` predicate are written as a multi-line list or on a single line. |
+| SQL Formatter | Added a setting to set clause body alignment. |
+| SQL Formatter | Added a setting to set the casing for identifiers. Options include preserve, `UPPERCASE`, `lowercase`, or `PascaleCase`. |
+| SQL Formatter | Added settings that control new line behavior after a `JOIN` clause or before an `ON` clause. |
+| SQL Formatter | Added a progress dialog that displays when SQL Formatter is running on large documents. |
+| SQL Formatter | Added a setting that controls the casing of built-in function names. |
+| SQL Formatter | Added a setting that controls whether block statements end with a semicolon. |
+| SQL Formatter | Added a setting that controls the number of spaces inserted after a leading comma. |
+| SQL Formatter | Added settings that format `GROUP BY`, `HAVING`, `ORDER BY`, and `PARTITION BY` elements on separate lines. |
+| SQL Formatter | Added a setting that formats option in `WITH` and `OPTION` clauses on separate lines. |
+| SQL Formatter | Added a setting that formats parameters in nested function calls on separate lines. |
+| SQL Formatter | Added a setting that allows you to control the number of new lines after each top-level statement in a batch. |
+| SQL Formatter | Added a setting that allow you to control the number of new lines after a `GO` batch separator. |
+| Visual Studio | Updated to Visual Studio 18.10.2 [12217.157]. |
+
+#### Bug fixes in 22.10.2
+
+| Feature | Description |
+| --- | --- |
+| Availability Group wizard | Fixed an issue that caused manual failover in the Availability Group wizard to fail when the SSMS UI was set to Japanese. See [Availability Groups: Japanese UI breaks manual failover with format error](https://developercommunity.visualstudio.com/t/Availability-Groups:-Japanese-UI-breaks-/11087784). |
+| Available Databases | Fixed an issue that prevented databases from being selected from the Available Databases dropdown menu when connected to Azure SQL Database. See [Cannot select the database from the Available databases drop-down](https://developercommunity.visualstudio.com/t/Cannot-select-the-database-from-the-Avai/10926033). |
+| Database DevOps | Fixed an issue that caused `<Folder Include="dbo\Tables\" />` to be removed from the project file when a table was added. |
+| Database DevOps | Fixed an issue that caused the database references node to appear in the wrong location instead of remaining pinned as the first project item. |
+| Database DevOps | Fixed an issue that caused the .sql files icon to change its appearance. |
+| Database DevOps | Fixed an issue that caused scripts generated from Solution Explorer to open in the incorrect mode. |
+| Fabric SQL Analytics Endpoint | Fixed an issue that prevented the schema list for a Fabric SQL Database analytics endpoint from appearing in alphabetical order. |
+| GitHub Copilot Agent Mode | Fixed an issue in Agent Mode where `sql-editor-list` did not include open non-SQL documents. |
+| Managed Instance Link wizard | Fixed an issue in the Managed Instance Link wizard that allowed unsupported characters to be submitted in link names. |
+| Object Explorer | Fixed an issue that caused SSMS to freeze when connected to an Azure SQL database and right-clicking on a database node and selecting **Reports**. See [Reports tab on databases makes SSMS get stuck](https://developercommunity.visualstudio.com/t/Reports-tab-on-databases-makes-SSMS-get-/11032590). |
+| Object Explorer Details | Fixed an issue that caused the Object Explorer Details pane to go blank. See [Object Explorer Details pane eventually goes blank](https://developercommunity.visualstudio.com/t/Object-Explorer-Details-pane-eventually-/10937488). |
+| Restore Database dialog | Fixed an issue that generated an `Unhandled exception` error when restoring a database. See [SSMS Restore Backup dialog throws unhandled exception after database drop](https://developercommunity.visualstudio.com/t/SSMS-Restore-Backup-dialog-throws-unhand/11131502). |
+| Registered Servers | Fixed an issue that generated an invalid link in the Registered Servers error message. See [SSMS error dialog help link redirects to SQL Server marketing](https://developercommunity.visualstudio.com/t/SSMS-error-dialog-help-link-LinkId20476/11091922). |
+| Results to Grid | Fixed an issue that caused `.xslx` files generated by SSMS to behave erratically. See [Unable to Edit XLSX File Exported from SSMS 22 - Multiple Selection Error in Excel](https://developercommunity.visualstudio.com/t/Unable-to-Edit-XLSX-File-Exported-from-S/11075106) and [SSMS .xslx export omits workbookView, causing Excel multiple selection error](https://developercommunity.visualstudio.com/t/SSMS-xlsx-export-omits-workbookView-ca/11129361). |
+| Schema Compare | Fixed an issue that caused labels in the Schema Compare interface to be covered when **Presenter mode** was enabled. |
+| Schema Compare | Fixed an issue that caused node state to be reset when the SSMS theme was changed. |
+| SQL Formatter | Fixed an issue that caused the setting for **Number of new lines after statement** to be ignored. |
+| SQL Formatter | Fixed an issue that removed semicolons prior to `WITH CTE` and `THROW` statements, causing invalid T-SQL. See [SSMS formatting preview removes required semicolons before WITH CTE and THROW](https://developercommunity.visualstudio.com/t/SSMS-formatting-preview-removes-required/11106588). |
+| SQL Formatter | Fixed an issue that failed to insert a new line before unqualified `JOIN` statements. See [Format Preview doesn't insert newlines before CROSS APPLY and OUTER APPLY](https://developercommunity.visualstudio.com/t/Format-Preview-doesnt-insert-newlines-b/11126282). |
+
 <a id="22.10.1"></a>
 
 ### 22.10.1
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.10.1
 - Release date: September 15, 2026
@@ -267,10 +327,10 @@ For previous versions of SSMS, see:
 | Feature | Details |
 | --- | --- |
 | Authentication | Added support for creating a Windows account on Azure SQL Managed Instance. |
-| Database DevOps workload (preview) | Added a target database (platform) selection to the new SQL project dialog. |
-| Database DevOps workload (preview) | Added a **Create project from database** action to the **Solution** node context menu in Solution Explorer. |
-| Database DevOps workload (preview) | Added SQLCMD variable support to the **Publish** dialog. |
-| Database DevOps workload (preview) | Updated the SQL project Properties editor UI to align with the Visual Studio Property Page editor. |
+| Database DevOps (preview) | Added a target database (platform) selection to the new SQL project dialog. |
+| Database DevOps (preview) | Added a **Create project from database** action to the **Solution** node context menu in Solution Explorer. |
+| Database DevOps (preview) | Added SQLCMD variable support to the **Publish** dialog. |
+| Database DevOps (preview) | Updated the SQL project Properties editor UI to align with the Visual Studio Property Page editor. |
 | GitHub Copilot in SSMS Agent Mode (preview) | Agent Mode for GitHub Copilot in SSMS is now available in preview. |
 | GitHub Copilot in SSMS | Introduced separate execution context for GitHub Copilot using the database `CONSTITUTION.md`. For more information, see [Execution context for GitHub Copilot in SQL Server Management Studio](github-copilot/execution-context.md). |
 | Libraries | Updated Microsoft.Data.SqlClient to 6.1.5. |
@@ -302,7 +362,7 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Database DevOps workload (preview) | Added **Create Project from Database...** under the **Tasks** context menu in Object Explorer. |
+| Database DevOps (preview) | Added **Create Project from Database...** under the **Tasks** context menu in Object Explorer. |
 | Libraries | Updated MSODBCSQL to 18.6.2.1. |
 | Options | Migrated Transact-SQL IntelliSense and Keyboard Query shortcuts settings from the **Tools** > **Options** dialog to the new Unified Settings tab experience. |
 | Query Designer | Added the right-click menu option **Change Column Width** in the **Show Criteria** pane for adjusting an individual column's width. |
@@ -317,7 +377,7 @@ For previous versions of SSMS, see:
 | --- | --- |
 | Availability Group wizard | Fixed a bug in the New Availability Group wizard that caused the **Specify cluster connection options** menu item to display in the incorrect order when using [!INCLUDE [sssql25-md](includes/sssql25-md.md)]. |
 | Connection dialog | Fixed an issue where the password field was shown in plain text when viewing a connection string. See [When connecting to a SQL Lakehouse, using Entra Password, password is stored as plain text](https://developercommunity.visualstudio.com/t/When-connecting-to-a-SQL-Lakehouse-usin/11062246). |
-| Database DevOps workload (preview) | Fixed an issue where the connection dialog appeared when opening a `.sql` file, despite no need for database connection when offline project editing. |
+| Database DevOps (preview) | Fixed an issue where the connection dialog appeared when opening a `.sql` file, despite no need for database connection when offline project editing. |
 | GitHub Copilot in SSMS | Fixed a crash that occurred when using GitHub Copilot Edit. See [SSMS crashed while waiting for Copilot edits thread to respond](https://developercommunity.visualstudio.com/t/SSMS-crashed-while-waiting-for-Copilot-e/11068084). |
 | GitHub Copilot in SSMS | Removed GPT-5* models for Ask Mode. |
 | Localization | Fixed the Portuguese translation for the **Save changes** dialog. See [Bad translations for pt-PT](https://developercommunity.visualstudio.com/t/Bad-translations-for-pt-PT/11055987). |
@@ -347,8 +407,8 @@ For previous versions of SSMS, see:
 
 | Feature | Description |
 | --- | --- |
-| Database DevOps workload (preview) | Fixed an issue where non-build items were excluded from Solution Explorer instead of being displayed as miscellaneous files in the project. |
-| Database DevOps workload (preview) | Fixed an issue where the SQL projects **Generate Script** button in the Publish dialog incorrectly triggered a publish action in the background. |
+| Database DevOps (preview) | Fixed an issue where Solution Explorer excluded non-build items instead of displaying them as miscellaneous files in the project. |
+| Database DevOps (preview) | Fixed an issue where the SQL projects **Generate Script** button in the Publish dialog incorrectly triggered a publish action in the background. |
 | GitHub Copilot in SSMS | Fixed an issue where GitHub Copilot slash commands were no longer available in the chat window. See [Did the GitHub Copilot / slash commands change in SSMS 22.5.0 from 22.4.1?](https://developercommunity.visualstudio.com/t/Did-the-GitHub-Copilot--slash-commands-/11076422). |
 
 <a id="22.5.0"></a>
@@ -363,10 +423,10 @@ For previous versions of SSMS, see:
 | Feature | Details |
 | --- | --- |
 | Connection Dialog | Updated the connection dialog to clear the custom name when either the server name, authentication type, username, or database name fields change. |
-| Database DevOps workload (preview) | Added 74 new item templates for SQL projects, covering programmability, security, storage, tables, and views. |
-| Database DevOps workload (preview) | Added importing objects from an existing database into a SQL project. |
-| Database DevOps workload (preview) | Added the **Advanced Publish Settings** dialog (publish properties) to the **Publish Database** dialog. |
-| Database DevOps workload (preview) | Updated the SQL database project icon to use a fluent design. |
+| Database DevOps (preview) | Added 74 new item templates for SQL projects, covering programmability, security, storage, tables, and views. |
+| Database DevOps (preview) | Added importing objects from an existing database into a SQL project. |
+| Database DevOps (preview) | Added the **Advanced Publish Settings** dialog (publish properties) to the **Publish Database** dialog. |
+| Database DevOps (preview) | Updated the SQL database project icon to use a fluent design. |
 | GitHub Copilot in SSMS | Improved context handling to only send contents of the active editor for code completions. |
 | GitHub Copilot in SSMS | Introduced support for interacting with the results pane from the chat window, including execution plan, messages, client statistics, and the results grid. |
 | GitHub Copilot in SSMS | Underlying enhancements now support customizing keyboard shortcuts for accepting inline suggestions. |
@@ -380,9 +440,9 @@ For previous versions of SSMS, see:
 | Feature | Description |
 | --- | --- |
 | Analysis Services | Fixed an issue where the **Execution time-out (seconds)** setting, in **Tools** > **Options** > **Query Execution** > **Analysis Server**, wasn't respected in the query editor. |
-| Database DevOps workload (preview) | Fixed improperly truncated error messages during publish failures. |
-| Database DevOps workload (preview) | Fixed the Generate Script dialog appearing frozen during the process. |
-| Database DevOps workload (preview) | Solution Explorer now opens automatically when a database project is created. |
+| Database DevOps (preview) | Fixed improperly truncated error messages during publish failures. |
+| Database DevOps (preview) | Fixed the Generate Script dialog appearing frozen during the process. |
+| Database DevOps (preview) | Solution Explorer now opens automatically when a database project is created. |
 | Database Tuning Advisor | Fixed an issue where DTA didn't start with error `Failed to open a new connection`. |
 | Extended Events | Fixed an issue where <kbd>Ctrl</kbd>+<kbd>R</kbd> didn't open the Filter dialog in the Extended Events viewer. See [SSMS22: Ctrl+R does not work for Extended Events](https://developercommunity.visualstudio.com/t/SSMS22:-CtrlR-does-not-work-for-Extende/11052846). |
 | Extended Events | Fixed the exception `Object reference not set to an instance of an object` that occurred when opening the Extended Events filter. See [Exception occurs on the Extended Events filter](https://developercommunity.visualstudio.com/t/Exception-occurs-on-the-Extended-Events-/11054849). |
@@ -408,7 +468,7 @@ For previous versions of SSMS, see:
 | Feature | Details |
 | --- | --- |
 | Connection Dialog | Added a new setting, **Automatically select the most recent connection**, in **Tools** > **Options** > **Connection Dialog** that controls the default behavior of the modern Connection Dialog when opened. |
-| Database DevOps workload (preview) | Added the **Database DevOps** workload (preview), that enables you to implement, manage, and collaborate on database changes using SQL database projects and source control. See [Database DevOps (preview) in SQL Server Management Studio](database-devops.md) and [Add support for SQL database projects](https://developercommunity.visualstudio.com/t/Add-support-for-SQL-database-projects/10864596). |
+| Database DevOps (preview) | Added the **Database DevOps** workload (preview), that enables you to implement, manage, and collaborate on database changes using SQL database projects and source control. See [Database DevOps (preview) in SQL Server Management Studio](database-devops.md) and [Add support for SQL database projects](https://developercommunity.visualstudio.com/t/Add-support-for-SQL-database-projects/10864596). |
 | GitHub Copilot in SSMS | GitHub Copilot in SSMS is now generally available. |
 | GitHub Copilot in SSMS | Added support for user-level [custom instructions](github-copilot/custom-instructions.md). See [Copilot should support an Instructions file](https://developercommunity.visualstudio.com/t/Copilot-should-support-an-Instructions-f/10948846). |
 | Object Explorer | Added the ability to group database objects by schema to the Object Explorer. To toggle the setting on and off, select the icon for Group by schema (between the Refresh and Show Policy Health icons). Set the default behavior under **Tools** > **Options** > **SQL Server Object Explorer** > **General**. See [Group objects by schema in Object Explorer](https://developercommunity.visualstudio.com/t/Group-objects-by-schema-in-Object-Explor/10874158). |
