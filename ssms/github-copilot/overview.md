@@ -5,7 +5,7 @@ description: Overview of GitHub Copilot in SQL Server Management Studio (SSMS).
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 06/08/2026
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -31,7 +31,7 @@ GitHub Copilot in SSMS includes [chat capabilities](chat.md) in the chat window 
 
 GitHub Copilot in SSMS also includes [autocompletions](code-completions.md) in the query editor, starting with SSMS 22.2.
 
-Starting with SSMS 22.7, GitHub Copilot in SSMS also includes [Agent mode (preview)](agent-mode.md), which lets you specify a high-level goal and have Copilot work through it autonomously. Agent mode can execute queries, read execution plans, and modify schema with your approval. Agent mode can be extended with [agent skills](agent-skills.md) and [MCP servers](mcp-servers.md) for external tool integrations.
+Starting with SSMS 22.7, GitHub Copilot in SSMS also includes [Agent mode](agent-mode.md), which lets you specify a high-level goal and have Copilot work through it autonomously. Agent mode can execute queries, read execution plans, and modify schema with your approval. Agent mode can be extended with [agent skills](agent-skills.md) and [MCP servers](mcp-servers.md) for external tool integrations.
 
 ## Best practices for using GitHub Copilot chat in SSMS
 

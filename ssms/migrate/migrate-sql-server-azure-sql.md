@@ -1,10 +1,10 @@
 ---
 title: Migrate SQL Server to Azure SQL
-description: Learn how to assess, plan, and migrate SQL Server databases to Azure using SQL Server Management Studio (SSMS) and Azure migration tools.
+description: Learn how to assess, compare, size, plan, and migrate SQL Server databases to Azure using SQL Server Management Studio (SSMS) and Azure migration tools.
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: niball
-ms.date: 07/15/2026
+ms.date: 09/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -15,33 +15,41 @@ keywords:
   - Azure SQL
   - SSMS
   - SQL Server Management Studio
+  - migration assessment
+  - target sizing
+  - pricing recommendation
   - extensions
   - components
 ---
 
 # Migrate SQL Server to Azure SQL using the migration component in SSMS
 
-The Migrate SQL Server feature in SQL Server Management Studio (SSMS) assesses SQL Server instances and migrates them to Azure SQL.
+The **Migrate SQL Server** feature in SQL Server Management Studio (SSMS) helps you assess SQL Server instances, compare Azure SQL migration targets, review migration readiness, get target sizing and pricing recommendations, and start a migration to Azure.
 
 | Azure&nbsp;Arc enabled | Details |
 | --- | --- |
-| **Yes** | SSMS uses readiness assessments already collected through Azure Arc. These assessments include compatibility findings, target sizing, and recommended migration paths. |
-| **No** | SSMS runs a local, metadata-based readiness assessment and recommends an Azure SQL target (Azure SQL Managed Instance or SQL Server on Azure Virtual Machines). From the assessment results, you can start a migration using<br /><br />- The link feature for Azure SQL Managed Instance (near-zero downtime)<br />- Native backup and restore (lift-and-shift)<br />- Azure Database Migration Service (Azure DMS) |
+| **Yes** | SSMS uses readiness assessments collected from Azure Arc. These assessments include compatibility findings, target sizing, pricing estimates when available, and recommended migration paths. |
+| **No** | SSMS runs an assessment and compares supported Azure SQL targets. The report can include migration readiness, compatibility findings, sizing recommendations, pricing estimates, and recommended migration paths. From the results, you can start a migration by using SQL Managed Instance link, native backup and restore, or Azure Database Migration Service (Azure DMS). |
 
 You can also provision Azure SQL targets and monitor migrations from SSMS or the Azure portal.
 
 ## Prerequisites
 
-- SQL Server Management Studio 22 and later versions.
-- A SQL Server instance login with **sysadmin** permissions.
+- SQL Server Management Studio 22 or a later version.
+- A SQL Server instance login with **sysadmin** permissions to perform a migration.
+
+For assessment-only permissions, see [Permissions](#permissions).
 
 ## Installation and configuration
 
-1. Install the latest version of [SQL Server Management Studio](../install/install.md) (SSMS). Once the installation is complete, select **Modify** > **Individual Components**. SSMS is installed using Visual Studio Installer.
-
-1. Select the **Hybrid and Migration** workload, choose **Install while downloading** from the dropdown list, and select **Modify** to complete the installation.
+1. Install the latest version of [SQL Server Management Studio](../install/install.md) (SSMS) by using Visual Studio Installer.
+1. In Visual Studio Installer, select **Modify** for your SSMS installation.
+1. Select the **Hybrid and Migration** workload.
+1. Select **Install while downloading**, and then select **Modify** to complete the installation.
 
 ## Migration process
+
+The workflow depends on whether your SQL Server instance is enabled by Azure Arc.
 
 ## [SQL Server migration](#tab/sql-standard)
 
@@ -59,209 +67,307 @@ This workflow is available for SQL Server instances enabled by Azure Arc. It pro
 
 ### Connect to SQL Server
 
+Start the migration workflow from SSMS.
+
 ## [SQL Server migration](#tab/sql-standard)
 
 1. Open SSMS.
 1. Connect to your source SQL Server instance.
-1. Right-click on your SQL Server instance in Object Explorer, and select **Migrate SQL Server**.
+1. Right-click your SQL Server instance in Object Explorer, and select **Migrate SQL Server**.
 
-This action opens the **Migration** landing page and opens other SSMS wizards for migrating data .
+This action opens the **Migration** landing page, where you can assess the source environment, compare targets, and open the appropriate migration experience.
 
 ## [SQL Server migration enabled by Azure Arc](#tab/sql-arc)
 
 1. Open SSMS.
 1. Connect to your source SQL Server instance.
-1. Right-click on your SQL Server instance in Object Explorer, and select **Migrate SQL Server**.
+1. Right-click your SQL Server instance in Object Explorer, and select **Migrate SQL Server**.
+
+This action opens the **Migration** landing page, where you can assess the source environment, compare targets, and open the appropriate migration experience.
 
 ---
 
 ### Assess readiness for migration
 
+Assess migration compatibility and generate target recommendations.
+
 ## [SQL Server migration](#tab/sql-standard)
 
 The migration landing page opens to the **Database Assessment** phase.
 
-**Azure Migration Readiness** evaluates your database for compatibility with Azure SQL targets. The migration readiness check identifies any migration blockers for Azure SQL Managed Instance, Azure SQL Database, or SQL Server on Azure Virtual Machines (Azure VM) targets.
+**Azure Migration Readiness** assesses your SQL Server environment and helps you select an appropriate Azure SQL target. The assessment evaluates migration compatibility and can provide target, sizing, and pricing recommendations.
 
-**To run an assessment**:
+To run an assessment:
 
 1. Select **Run Assessment** from the **Migration** landing page.
-1. The tool generates an HTML report with detailed findings.
-1. Review the **target recommendations**, which are determined by:
-   - Migration path with the least blocking issues
-   - Migration activities requiring minimal manual intervention
 
-> [!TIP]  
-> For performance-based sizing recommendations with detailed metrics, consider using the [migration readiness assessment](/sql/sql-server/azure-arc/migration-assessment) method described in [SQL Server migration enabled by Azure Arc](?tabs=sql-arc#assess-readiness-for-migration).
+1. When the assessment completes, open the generated HTML report.
 
-The assessment results provide insights into both instance readiness and database readiness. The readiness categories are described in the following table:
+1. Review the available migration targets and recommendations for:
+
+   - Migration readiness
+   - Compatibility findings
+   - Recommended Azure SQL target
+   - Minimum target configuration
+   - Compute and storage sizing
+   - Estimated monthly cost
+   - Available pricing options
+
+The report can compare these targets:
+
+- Azure SQL Database
+- Azure SQL Managed Instance
+- SQL Server on Azure Virtual Machines
+
+#### Migration readiness categories
+
+The assessment uses the following user-facing migration readiness categories:
 
 | Category | Description |
 | --- | --- |
-| **Ready** | Databases can be migrated to the target without requiring any changes. |
-| **Ready with warnings** | Some non-blocking issues are present. Migration can proceed without breaking changes to the database or application. |
-| **Not ready** | Migration-blocking issues exist. These issues require remediation before migrating to the target environment. The report includes a list of identified issues that must be fixed before migration. |
+| **Ready** | The database can be migrated to the target with no conditions to review. |
+| **Ready with conditions** | The database has conditions to review before migration, including issues, warnings, affected objects, and recommended remediation. |
+
+A target shown as **Ready with conditions** can include findings that require remediation. Open the target details to review the affected databases and objects before planning the migration.
+
+#### Target sizing recommendations
+
+When sizing information is available, the report can include:
+
+- Recommended service tier
+- Recommended compute configuration in vCores
+- Recommended storage
+- Database-level sizing (for Azure SQL Database targets)
+- Target-specific storage configuration
+- Reasons for the recommendation, based on the assessment's compute, memory, storage, and I/O inputs
+
+Sizing represents a recommended minimum target configuration based on the assessment data available at report-generation time. Validate the recommendation against expected production workload, growth, resiliency, and operational requirements before provisioning the target.
+
+> [!TIP]  
+> Review the recommendation details to understand the sizing factors that influenced the recommended configuration. Depending on the assessment data available, these factors can include compute, memory, storage, IOPS, and I/O throughput.
+
+#### Pricing recommendations
+
+When pricing information is available, the report provides an estimated monthly cost for each evaluated target. The estimate can include:
+
+- Compute cost
+- Storage cost
+- Total estimated monthly cost
+- Pricing region
+- Currency
+- Pricing basis
+- Available reservation or savings plan pricing
+
+Commitment pricing can affect compute charges, while storage can continue to be priced separately. If pricing isn't available for a target or pricing option, the report displays the value as unavailable rather than calculating an assumed discount.
+
+> [!IMPORTANT]  
+> Prices in the assessment report are estimates. Actual Azure charges can vary based on usage, configuration, region, offer, licensing selection, discounts, taxes, and changes to Azure pricing. Use the Azure pricing tools and your organization's commercial agreement to validate costs before provisioning.
 
 ## [SQL Server migration enabled by Azure Arc](#tab/sql-arc)
 
-Select **View Readiness Assessment** to see [precomputed assessment data collected by Azure Arc](/sql/sql-server/azure-arc/migration-assessment). You don't need to run manual assessment scans.
+Select **View Readiness Assessment** to see [precomputed assessment data collected by Azure Arc](/sql/sql-server/azure-arc/migration-assessment). You don't need to run a separate manual assessment scan.
 
-Review the assessment results:
+Review the following results:
 
-- **Assessment findings**: Compatibility issues and migration readiness.
-- **Target sizing recommendations**: Right-sizing based on [actual performance metrics](/sql/sql-server/azure-arc/migration-assessment).
-- **Migration path recommendations**: Optimal target selection.
+- **Assessment findings**: Compatibility issues, warnings, affected objects, and migration readiness.
+- **Target sizing recommendations**: Right-sizing based on the assessment data available from Azure Arc.
+- **Pricing recommendations**: Estimated target costs when pricing information is available.
+- **Migration path recommendations**: Recommended target and migration approach.
 
 ---
 
 ### Select target
 
+Compare targets from the assessment before you provision.
+
 ## [SQL Server migration](#tab/sql-standard)
 
-When the assessment finishes, set up your migration target:
+When the assessment finishes, compare the available migration targets before provisioning your destination.
 
-1. Select **Provision Target** to access the **Azure SQL Hub**.
+For each target, review:
 
-1. From the [Azure SQL Hub](https://aka.ms/azuresqlhub), you can create any SQL target type from a single pane:
+- Migration readiness
+- Compatibility findings
+- Estimated monthly cost
+- Minimum recommended target configuration
+- Recommended service tier
+- Compute and storage recommendations
+- Recommendation details
+
+The report highlights a recommended migration target. Select **View details** to review database readiness, assessment findings, target configuration, sizing information, and pricing information before you decide.
+
+After selecting a target:
+
+1. Select **Provision Target** to access the [Azure SQL hub](https://aka.ms/azuresqlhub).
+
+1. Create the Azure SQL target that fits your migration requirements:
 
    - Azure SQL Database
    - Azure SQL Managed Instance
    - SQL Server on Azure VM
 
+1. Validate the provisioned configuration against the recommendation and your production requirements.
+
 ## [SQL Server migration enabled by Azure Arc](#tab/sql-arc)
 
-Choose your [destination platform](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance?tabs=mi-link#select-target):
+Choose an Azure SQL target as your [destination platform](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance?tabs=mi-link#select-target):
 
-- **Azure SQL Managed Instance**: For maximum compatibility.
-- **SQL Server on Azure VM**: For lift-and-shift scenarios.
+- **Azure SQL Managed Instance**: For high SQL Server compatibility with a managed platform.
+- **SQL Server on Azure VM**: For lift-and-shift scenarios and operating-system-level control.
 
-Configure the target environment based on the recommendations provided.
+Configure the target environment based on the sizing, compatibility, and pricing recommendations provided by the assessment.
 
 ---
 
 ### Migrate data
 
-From the **Migration** landing page, choose **Migrate data**. You can then choose the appropriate migration method based on your target and requirements.
+Select the migration method that fits your target, downtime requirements, and operational needs.
 
 ## [SQL Server migration](#tab/sql-standard)
 
-#### SQL Managed Instance (SQL Managed Instance link)
+From the **Migration** landing page, select **Migrate data**.
 
-- Use [SQL Managed Instance link](/azure/azure-sql/managed-instance/managed-instance-link-configure-how-to-ssms) to set up a SQL Managed Instance link.
-- Enables near-real-time data replication with minimal downtime.
+#### SQL Managed Instance link
+
+Use a [SQL Managed Instance link](/azure/azure-sql/managed-instance/managed-instance-link-configure-how-to-ssms) to continuously replicate data between SQL Server and Azure SQL Managed Instance.
+
+Consider this method for online migrations that require minimal downtime.
 
 #### Backup and restore
 
-- Use the SSMS backup and restore functionality for [SQL Server migration](upgrade-sql-server.md#prepare-for-upgrade).
-- Suitable for smaller databases or when downtime is acceptable.
+Use SSMS backup and restore functionality for [SQL Server migration](upgrade-sql-server.md#prepare-for-upgrade).
 
-#### Azure Database Migration Service (Azure DMS)
+Consider this method when downtime is acceptable and the source and target support the required backup and restore path.
 
-- Redirects to [Azure DMS](/azure/dms/) for enterprise-grade migrations.
-- Supports all target types (SQL Database, SQL Managed Instance, and Azure VM).
-- Provides both **offline** and **online** migration options.
-- Recommended for large-scale or complex migrations.
+#### Azure Database Migration Service
+
+Use [Azure Database Migration Service](/azure/dms/) for supported migration scenarios.
+
+Use offline or online migration options when supported by the selected source and target.
+
+Consider Azure DMS for large-scale or complex migrations.
 
 ## [SQL Server migration enabled by Azure Arc](#tab/sql-arc)
 
-In the Azure portal, navigate to your SQL Server instance, and open the **Database migration** pane, to choose the migration method that best fits your needs.
+In the Azure portal, go to the SQL Server instance, and open the **Database migration** pane to choose a migration method.
 
 #### SQL Managed Instance
 
-After an initial configuration to prepare your environment, the migration process automates the rest based on your selection. For more information, see [Integrated migration methods](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance?tabs=mi-link#integrated-migration-methods) and [Migrate data](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance?tabs=mi-link#migrate-data).
+After the initial environment configuration, continue with the selected integrated migration method. For more information, see [Integrated migration methods](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance?tabs=mi-link#integrated-migration-methods) and [Migrate data](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance?tabs=mi-link#migrate-data).
 
 - **SQL Managed Instance link**: Continuous data replication with online migration.
-- **Log shipping**: Traditional log shipping method.
+- **Log shipping**: Log-based migration method.
 
 #### SQL Server on Azure Virtual Machines
 
-Use backup and restore or Azure DMS to migrate to SQL Server on Azure VM.
+Use backup and restore or Azure DMS for supported migrations to SQL Server on Azure VM.
 
 ---
 
 ### Monitor migration
 
+Track migration progress through the appropriate monitoring experience.
+
 ## [SQL Server migration](#tab/sql-standard)
 
-Track your migration progress and perform cutover:
+Track migration progress and cut over:
 
-1. **For Azure DMS migrations**: Use the [Azure DMS](/azure/dms/) monitoring dashboard.
-1. **For Managed Instance link migrations**: Monitor through the [SQL Managed Instance link](/azure/azure-sql/managed-instance/managed-instance-link-failover-how-to) feature.
+1. For Azure DMS migrations, use the [Azure DMS](/azure/dms/) monitoring experience.
+1. For Managed Instance link migrations, monitor the [SQL Managed Instance link](/azure/azure-sql/managed-instance/managed-instance-link-failover-how-to).
 
 ## [SQL Server migration enabled by Azure Arc](#tab/sql-arc)
 
-The **Monitor and Cutover** page in Azure DMS and Azure Arc-enabled SQL Server migrations provides a centralized experience to:
+Use the monitoring experience for the selected migration method to:
 
 - Track migration progress
 - Validate replication status
 - Identify migration errors
-- Perform final production cutover
+- Perform the final production cutover
 
-For more information, see [Monitor and cutover](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance?tabs=mi-link#monitor-and-cutover).
+For more information, see [Monitor and cut over](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance?tabs=mi-link#monitor-and-cutover).
 
 ---
 
 ## SQL Server upgrade
 
-In addition to Azure migration, SSMS provides [database compatibility upgrade capabilities](upgrade-sql-server.md#upgrade-assessment). The upgrade assessment identifies compatibility issues related to breaking changes, behavior changes, and deprecated features. The report also provides a feature parity check for cross-platform database migration.
+In addition to Azure migration, SSMS provides [database compatibility upgrade capabilities](upgrade-sql-server.md#upgrade-assessment). The upgrade assessment identifies compatibility issues related to breaking changes, behavior changes, and deprecated features. The report also provides a feature-parity check for cross-platform database migration.
 
 ### Upgrade assessment
 
 1. Select **Upgrade Assessment** from the **Migrate to higher version of SQL Server** section.
-1. The tool evaluates compatibility level upgrade readiness.
+1. Allow the tool to evaluate compatibility-level upgrade readiness.
 1. Review breaking changes and deprecated features in the report.
 
 ### Database upgrade
 
-1. Go to **Upgrade SQL Server** from the **Migrate to higher version of SQL Server** section.
+1. Select **Upgrade SQL Server** from the **Migrate to higher version of SQL Server** section.
 1. Follow the **Upgrade Database** steps.
-1. Perform compatibility level upgrade with minimal disruption.
+1. Test and complete the compatibility-level upgrade.
 
 ## Best practices
 
-- Always run assessments before planning migration to identify potential issues early.
-- Use Arc-enabled assessment when available for more accurate performance-based sizing.
-- Choose online migration (Managed Instance link or Azure DMS online) for production databases requiring minimal downtime.
-- Test thoroughly in nonproduction environments before production migration.
-- Monitor performance during and after migration to ensure optimal configuration.
-- Plan cutover windows during low-traffic periods to minimize effect on end users.
+- Run an assessment before planning the migration.
+
+- Review both target-level and database-level readiness.
+
+- Treat **Ready with conditions** as an instruction to review and address the associated findings, not as an automatic approval to migrate.
+
+- Validate target sizing against representative workload data, expected growth, resiliency, and performance requirements.
+
+- Validate pricing estimates against the intended region, licensing model, commercial agreement, and current Azure pricing.
+
+- Choose an online migration method when the production workload requires minimal downtime and the method supports your scenario.
+
+- Test the migration and application behavior in a nonproduction environment.
+
+- Monitor performance during and after migration.
+
+- Plan the cutover during an approved change window.
 
 ## Migration options comparison
 
-| Migration method | Target types | Downtime | Best for |
+| Migration method | Primary target | Downtime profile | Consider when |
 | --- | --- | --- | --- |
-| SSMS Managed Instance link | SQL Managed Instance | Minimal (online) | Production databases, continuous sync |
-| Backup and restore | All | Moderate to high | Scheduled downtime |
-| Log shipping | SQL Managed Instance | Low to moderate | Large databases, traditional approach |
-| Azure DMS | All | Minimal to none | Enterprise migrations, multiple databases |
+| SQL Managed Instance link | Azure SQL Managed Instance | Minimal | Requires continuous replication and an online cutover. |
+| Backup and restore | Supported SQL Server and Azure SQL targets | Moderate to high | A planned outage is acceptable. |
+| Log shipping | Azure SQL Managed Instance in supported integrated scenarios | Low to moderate | A log-based migration approach meets the scenario requirements. |
+| Azure DMS | Supported Azure SQL targets | Depends on the selected migration mode | Requires centralized migration orchestration. |
 
 ## Known issues
 
-The following common issues might occur during migration. Use the recommended resolutions to address them.
-
 ### Assessment fails
 
-- Verify connectivity to source database.
-- Check user permissions for system catalog access.
-- Ensure SSMS is up to date.
+- Verify connectivity to the source database.
+- Check that the login has the permissions required for assessment.
+- Ensure SSMS and the migration components are up to date.
+- Review assessment errors in the generated report.
+
+### Sizing or pricing recommendation is unavailable
+
+- Confirm that the assessment completed successfully.
+- Review the report for missing assessment or pricing data.
+- Verify that the selected target, region, currency, and pricing option are supported by the recommendation data.
+- Don't interpret an unavailable price as a zero-cost recommendation.
 
 ### Migration performance is slow
 
-- Check network bandwidth between source and Azure.
-- Review target tier sizing recommendations.
-- Consider using Azure ExpressRoute for large data transfers.
+- Check network bandwidth and latency between the source and Azure.
+- Review the target sizing recommendation.
+- Validate compute, storage, IOPS, and throughput requirements.
+- Consider Azure ExpressRoute when it fits the network architecture and migration requirements.
 
 ### Cutover validation fails
 
 - Verify data integrity checks.
-- Review application compatibility with target platform.
-- Check for blocking issues in assessment report.
+- Review application compatibility with the target platform.
+- Review unresolved conditions and migration errors.
+- Confirm that replication or synchronization is healthy before cutover.
 
 ## Permissions
 
 To perform a migration, your [!INCLUDE [ssnoversion-md](../includes/ssnoversion-md.md)] instance login requires **sysadmin** permissions.
 
-If you only need to run an assessment, and don't plan to perform migration or migration monitoring, the following minimum permissions are required.
+To run an assessment without running or monitoring a migration, you need the following minimum permissions.
 
 | Object type | Database or object name | Privilege |
 | --- | --- | --- |

@@ -30,8 +30,8 @@ This article describes the components and features available in [!INCLUDE [ssman
 | **Template Explorer** | Build and manage files of boilerplate text that you use to speed the development of queries and scripts. | [Template Explorer](template/template-explorer.md) |
 | **Visual Database Tools** | Use the visual design tools included in SSMS to build queries, tables, and diagram databases. | [Visual Database Tools](visual-db-tools/visual-database-tools.md) |
 | **Query Editor** | Use the SSMS language editors to interactively build queries and scripts. | [Query Editor (SQL Server Management Studio)](f1-help/database-engine-query-editor-sql-server-management-studio.md) |
-| **Database DevOps (Preview)** | Implement, manage, and collaborate on database changes with SQL database projects and source control. | [Database DevOps (preview) in SQL Server Management Studio](database-devops.md) |
-| **Schema Compare (Preview)** | Compare schemas between databases, `.dacpac` files, and SQL database projects. View differences and apply changes to a target. | [Schema Compare (preview) in SQL Server Management Studio](schema-compare.md) |
+| **Database DevOps** | Implement, manage, and collaborate on database changes with SQL database projects and source control. | [Database DevOps in SQL Server Management Studio](database-devops.md) |
+| **Schema Compare** | Compare schemas between databases, `.dacpac` files, and SQL database projects. View differences and apply changes to a target. | [Schema Compare in SQL Server Management Studio](schema-compare.md) |
 
 ## Management, security, and productivity
 

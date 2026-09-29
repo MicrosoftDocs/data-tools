@@ -1,19 +1,19 @@
 ---
-title: Database DevOps (Preview) in SQL Server Management Studio
+title: Database DevOps in SQL Server Management Studio
 description: Develop and deploy database changes with SQL database projects in SQL Server Management Studio (SSMS) as part of your database DevOps workflows.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: drskwier, erinstellato
-ms.date: 03/18/2026
+ms.reviewer: mahyon, mbarickman
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
   - data-tools
 ---
 
-# Database DevOps (preview) in SQL Server Management Studio
+# Database DevOps in SQL Server Management Studio
 
-A SQL database project is a local representation of SQL objects that comprise the schema for a single database, such as tables, stored procedures, or functions. The development cycle of a SQL database project helps you integrate database development into continuous integration and continuous deployment (CI/CD) workflows that are familiar as development best practices. In SSMS, you can use `Microsoft.Build.Sql` projects in preview to help you implement, manage, and collaborate on database changes, by providing a local definition of the database objects.
+A SQL database project is a local representation of SQL objects that comprise the schema for a single database, such as tables, stored procedures, or functions. The development cycle of a SQL database project helps you integrate database development into continuous integration and continuous deployment (CI/CD) workflows that are familiar as development best practices. In SSMS, you can use `Microsoft.Build.Sql` projects to help you implement, manage, and collaborate on database changes, by providing a local definition of the database objects.
 
 This article describes how to use SQL database projects in SQL Server Management Studio (SSMS) as part of or to anchor database DevOps workflows. For more information about SQL database projects, see [SQL database projects](/sql/tools/sql-database-projects/sql-database-projects).
 
@@ -65,7 +65,7 @@ SSMS provides templates for common items to help you get started. To add a new i
 
 To open an existing SQL database project in SSMS, select **File** > **Open** > **Project/Solution** and navigate to the `.sqlproj` file.
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > SSMS supports SDK-style `Microsoft.Build.Sql` projects only. The minimum supported SDK version is 2.1.0. If you have an original SQL project created in Visual Studio, you must convert it to the SDK-style format before opening it.
 
 For guidance on converting original SQL projects to the SDK-style format, see [Convert an original SQL project to an SDK-style project](/sql/tools/sql-database-projects/howto/convert-original-sql-project).

@@ -5,7 +5,7 @@ description: Learn how to use Model Context Protocol (MCP) servers with GitHub C
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 06/09/2026
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 # Use MCP servers with GitHub Copilot in SQL Server Management Studio
 
-Model Context Protocol (MCP) is an open standard that lets GitHub Copilot use tools and services outside of SSMS. With MCP, Agent mode (currently in preview) can interact with external systems such as source control, documentation, your internal ticketing system, and other APIs. You use the same conversational interface for these systems alongside database tasks.
+Model Context Protocol (MCP) is an open standard that lets GitHub Copilot use tools and services outside of SSMS. With MCP, Agent mode can interact with external systems such as source control, documentation, your internal ticketing system, and other APIs. You use the same conversational interface for these systems alongside database tasks.
 
 MCP works through a client-server model:
 
@@ -96,6 +96,6 @@ For more information, see [Managing policies and features for GitHub Copilot in 
 
 ## Related content
 
-- [Use GitHub Copilot Agent mode (preview) in SQL Server Management Studio](agent-mode.md)
+- [Use GitHub Copilot Agent mode in SQL Server Management Studio](agent-mode.md)
 - [Admin controls for GitHub Copilot in SQL Server Management Studio](admin-controls.md)
 - [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)
