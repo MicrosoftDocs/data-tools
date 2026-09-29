@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # SQL Server Management Studio product roadmap
 
-In the 2025 calendar year, SSMS had an unprecedented number of releases - 23 in total (including previews, major releases, and minor releases). Since the GA release of SSMS 22, we've continued our commitment to evolve SSMS into a modern, consistent, and complete management tool for SQL Server and SQL databases across the Microsoft data platform. We're focused on extending support for [Database DevOps (Preview) in SQL Server Management Studio](database-devops.md), advancing the connection experience for all SQL databases, and investing in improvements for IntelliSense and T-SQL formatting, to provide a better experience in the query editor. We're also continuing our investment in AI-powered tooling to further ehance productivity and make intelligent recommendations more accessible throughout the management workflow.
+In the 2025 calendar year, SSMS had an unprecedented number of releases - 23 in total (including previews, major releases, and minor releases). Since the GA release of SSMS 22, we've continued our commitment to evolve SSMS into a modern, consistent, and complete management tool for SQL Server and SQL databases across the Microsoft data platform. We're focused on extending support for [Database DevOps in SQL Server Management Studio](database-devops.md), advancing the connection experience for all SQL databases, and investing in improvements for IntelliSense and T-SQL formatting, to provide a better experience in the query editor. We're also continuing our investment in AI-powered tooling to further ehance productivity and make intelligent recommendations more accessible throughout the management workflow.
 
 ## How we build our roadmap
 

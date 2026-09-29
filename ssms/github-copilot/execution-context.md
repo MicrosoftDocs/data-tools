@@ -5,7 +5,7 @@ description: Learn how to configure the execution context for GitHub Copilot in 
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 06/09/2026
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -21,9 +21,6 @@ GitHub Copilot in SQL Server Management Studio (SSMS) executes queries and comma
 ## Default execution context
 
 All queries that GitHub Copilot in SSMS generates and executes, in both Ask mode and Agent mode, run under the user or login you used to connect to the database.
-
-> [!NOTE]  
-> GitHub Copilot Agent mode in SQL Server Management Studio (SSMS) is currently in preview.
 
 Copilot has no separate permissions and no elevated access. If your user or login can't read a table, Copilot can't read it either.
 
@@ -192,6 +189,6 @@ WHERE class = 0
 ## Related content
 
 - [Use database instructions with GitHub Copilot in SQL Server Management Studio](database-instructions.md)
-- [Use GitHub Copilot Agent mode (preview) in SQL Server Management Studio](agent-mode.md)
+- [Use GitHub Copilot Agent mode in SQL Server Management Studio](agent-mode.md)
 - [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
 - [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)

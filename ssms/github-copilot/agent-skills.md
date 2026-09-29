@@ -5,7 +5,7 @@ description: Learn how to create and use skills with GitHub Copilot in SQL Serve
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 06/09/2026
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -16,10 +16,7 @@ ms.update-cycle: 180-days
 
 # Use Agent skills with GitHub Copilot in SQL Server Management Studio
 
-Agent skills are reusable sets of instructions that instruct GitHub Copilot how to perform specific tasks. Each skill is a markdown file that you define one time, saving time and ensuring consistent behavior across your workflow. Think of skills as a runbook, not one giant prompt. When you use [Agent mode (preview)](agent-mode.md), Copilot automatically discovers and applies relevant skills based on what you're asking.
-
-> [!NOTE]  
-> GitHub Copilot Agent mode in SQL Server Management Studio (SSMS) is currently in preview.
+Agent skills are reusable sets of instructions that tell GitHub Copilot how to perform specific tasks. Each skill is a markdown file that you define once, saving time and ensuring consistent behavior across your workflow. Think of skills as a runbook, not one giant prompt. When you use [Agent mode](agent-mode.md), Copilot automatically discovers and applies relevant skills based on what you're asking.
 
 Unlike [custom instructions](custom-instructions.md), which set general preferences for every response, skills provide focused task-specific guidance that any agent can discover and use. Define a skill once, and it applies consistently across sessions and across your team.
 
@@ -282,7 +279,7 @@ Identify:
 
 ## Related content
 
-- [Use GitHub Copilot Agent mode (preview) in SQL Server Management Studio](agent-mode.md)
+- [Use GitHub Copilot Agent mode in SQL Server Management Studio](agent-mode.md)
 - [Use MCP servers with GitHub Copilot in SQL Server Management Studio](mcp-servers.md)
 - [Use custom instructions with GitHub Copilot in SQL Server Management Studio](custom-instructions.md)
 - [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)

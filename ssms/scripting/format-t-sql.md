@@ -4,8 +4,8 @@ titleSuffix: SQL Server Management Studio
 description: Learn how to format SQL code in SQL Server Management Studio (SSMS), including format on demand, format on save, and configuring formatting options with .editorconfig files.
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: drskwier, mbarickman
-ms.date: 08/11/2026
+ms.reviewer: mahyon, mbarickman
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -23,7 +23,7 @@ The SQL formatting functionality in SSMS is built on top of [ScriptDOM](https://
 
 ## Prerequisites
 
-- [SSMS 22.7 or later](../install/install.md)
+- [SQL Server Management Studio](../install/install.md) 22.7 or a later version
 
 ## Format on demand
 
@@ -33,7 +33,7 @@ To format SQL on demand, use one of the following methods:
 
 - **Context menu**: Right-click in a T-SQL editor window and select **Format SQL (Preview)**.
 - **Edit menu**: Select **Edit** > **Advanced** > **Format SQL (Preview)**.
-- **Keyboard shortcut**: Press **Ctrl+K**, **Ctrl+Q**.
+- **Keyboard shortcut**: Press <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
 When you select text, the formatter applies only to the selection. When you don't select text, the formatter applies to the entire document.
 
@@ -80,60 +80,66 @@ All SQL formatter keys go under `[*.sql]` in `.editorconfig`.
 
 #### Alignment
 
-| Key | Type | Default | Description |
-| --- | --- | --- | --- |
-| `align_clause_bodies` | bool | `true` | Align bodies of `FROM`, `WHERE`, `GROUP BY`, and similar clauses. |
-| `align_column_definition_fields` | bool | `true` | Align column-definition fields, such as name, type, and constraints. |
-| `align_set_clause_item` | bool | `true` | Align `SET` clause items in `UPDATE` statements. |
-
-#### Paths
-
-| Key | Type | Default |
-| --- | --- | --- |
-| `allow_external_language_paths` | bool | `true` |
-| `allow_external_library_paths` | bool | `true` |
+| Key | Type | Values | Default | Description |
+| --- | --- | --- | --- | --- |
+| `align_clause_bodies` | bool | | `true` | Align bodies of `FROM`, `WHERE`, `GROUP BY`, and similar clauses. |
+| `align_column_definition_fields` | bool | | `true` | Align column-definition fields, such as name, type, and constraints. |
+| `align_set_clause_item` | bool | | `true` | Align `SET` clause items in `UPDATE` statements. |
+| `clause_body_alignment` | enum | `Aligned` `Indented` | `Aligned` | Controls whether clause bodies are aligned with the clause keyword or placed on the next line and indented. |
 
 #### Formatting
 
 | Key | Type | Values | Default | Description |
 | --- | --- | --- | --- | --- |
-| `format_on_save` | bool | | `false` | Auto-format on save (SSMS-only, not in ScriptDOM). |
 | `as_keyword_on_own_line` | bool | | `true` | Place `AS` on its own line. |
+| `built_in_function_casing` | enum | `Preserve` `Uppercase` `Lowercase` `PascalCase` | `Preserve` | Controls the casing of built-in function names. |
 | `column_alias_style` | enum | `AsKeyword` `EqualsSign` `Preserve` | `Preserve` | Render column aliases using the `AS` keyword, an equals sign, or preserve the original style. |
 | `comma_placement` | enum | `Trailing` `Leading` | `Trailing` | Place commas at the end of the line (trailing) or the start of the next line (leading) in multiline lists. |
-| `include_semicolons` | bool | | `false` | Append semicolons to statements. |
+| `format_on_save` | bool | | `false` | Auto-format on save (SSMS-only, not in ScriptDOM). |
+| `identifier_bracketing` | enum | `Preserve` `IncludeBrackets` `ExcludeBrackets` | `Preserve` | Controls whether square brackets around identifiers are preserved, added, or removed. |
+| `identifier_casing` | enum | `Preserve` `Uppercase` `Lowercase` `PascalCase` | `Preserve` | Controls the casing applied to identifiers. |
 | `keyword_casing` | enum | `Uppercase` `Lowercase` `PascalCase` | `Uppercase` | Keyword casing style. |
+| `leading_comma_space_count` | int | (0 - 1) | `1` | Controls the number of spaces inserted after a leading comma. |
 | `preserve_comments` | bool | | `true` | Preserve comments during formatting. |
+| `terminate_block_statements` | bool | | `false` | Controls whether block statements end with a semicolon. |
 
 #### Indentation
 
 | Key | Type | Values | Default | Description |
 | --- | --- | --- | --- | --- |
 | `indent_set_clause` | bool | | `false` | Indent `SET` clause in `UPDATE` statements. |
-| `indentation_mode` | enum | `Spaces` `Tabs` | `Spaces` | Indent using spaces or tab characters. |
-| `indentation_size` | int (1–8) | | `4` | Spaces per indent level. |
 | `indent_view_body` | bool | | `false` | Indent `VIEW` body. |
+| `indentation_mode` | enum | `Spaces` `Tabs` | `Spaces` | Indent using spaces or tab characters. |
+| `indentation_size` | int | (1 - 8) | `4` | Spaces per indent level. |
 
 #### Multiline
 
 | Key | Type | Default | Description |
 | --- | --- | --- | --- |
+| `multiline_group_by_elements_list` | bool | `true` | `GROUP BY` elements on separate lines. |
+| `multiline_having_predicates_list` | bool | `true` | `HAVING` predicates on separate lines. |
+| `multiline_in_values_list` | bool | `true` | `IN` expression values on separate lines. |
 | `multiline_insert_sources_list` | bool | `true` | `INSERT` sources as multiline. |
 | `multiline_insert_targets_list` | bool | `true` | `INSERT` columns as multiline. |
+| `multiline_nested_function_calls` | bool | `true` | Parameters in nested function calls on separate lines. |
+| `multiline_order_by_elements_list` | bool | `true` | `ORDER BY` elements on separate lines. |
+| `multiline_partition_by_elements_list` | bool | `true` | `PARTITION BY` elements on separate lines. |
+| `multiline_procedure_parameters_list` | bool | `true` | Stored procedure parameters on separate lines. |
 | `multiline_select_elements_list` | bool | `true` | `SELECT` columns as multiline. |
 | `multiline_set_clause_items` | bool | `true` | `SET` items as multiline. |
 | `multiline_view_columns_list` | bool | `true` | `VIEW` columns as multiline. |
 | `multiline_where_predicates_list` | bool | `true` | `WHERE` predicates as multiline. |
+| `multiline_with_options_list` | bool | `true` | Options in `WITH` and `OPTION` clauses on separate lines. |
 
 #### New Line
 
 | Key | Type | Default |
 | --- | --- | --- |
+| `new_line_after_join_keyword` | bool | `true` |
 | `new_line_before_close_parenthesis_in_multiline_list` | bool | `true` |
 | `new_line_before_from_clause` | bool | `true` |
 | `new_line_before_group_by_clause` | bool | `true` |
 | `new_line_before_having_clause` | bool | `true` |
-| `new_line_after_join_keyword` | bool | `true` |
 | `new_line_before_join_clause` | bool | `true` |
 | `new_line_before_offset_clause` | bool | `true` |
 | `new_line_before_on_clause` | bool | `true` |
@@ -144,7 +150,9 @@ All SQL formatter keys go under `[*.sql]` in `.editorconfig`.
 | `new_line_before_window_clause` | bool | `true` |
 | `newline_formatted_check_constraint` | bool | `false` |
 | `newline_formatted_index_definition` | bool | `false` |
-| `num_newlines_after_statement` | int (0–5) | `1` |
+| `num_newlines_after_batch_statement` | int (0 - 10) | `2` |
+| `num_newlines_after_batches` | int (0 - 10) | `1` |
+| `num_newlines_after_statement` | int (0 - 10) | `1` |
 
 #### Spacing
 

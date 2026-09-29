@@ -5,7 +5,7 @@ description: Learn how to use database instructions with GitHub Copilot in SQL S
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 06/09/2026
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -84,7 +84,7 @@ When using database instructions with Copilot, you can also ask about instructio
 
 ## Use GitHub Copilot to create a database constitution
 
-GitHub Copilot in SSMS also supports a single constitution for your database, which sets the highest precedence instruction for the database. The constitution can include recommendations, coding guidelines, retention policies, and more. In Agent mode (currently in preview), you can also use `CONSTITUTION.md` to specify the database user or SQL login used by Agent mode for query execution. For more information, see [Execution context for GitHub Copilot in SQL Server Management Studio](execution-context.md).
+GitHub Copilot in SSMS also supports a single constitution for your database, which sets the highest precedence instruction for the database. The constitution can include recommendations, coding guidelines, retention policies, and more. In Agent mode, you can also use `CONSTITUTION.md` to specify the database user or SQL login used by Agent mode for query execution. For more information, see [Execution context for GitHub Copilot in SQL Server Management Studio](execution-context.md).
 
 > [!NOTE]  
 > Implementing a database constitution applies to GitHub Copilot conversations for every user that uses GitHub Copilot in SSMS. The recommendations and guidelines apply only to GitHub Copilot conversations.

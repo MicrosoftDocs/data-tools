@@ -5,7 +5,7 @@ description: Learn about administrative controls for GitHub Copilot in SQL Serve
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 06/09/2026
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -97,7 +97,7 @@ Excluded files can't be referenced in the chat window, and excluded content isn'
 - [Install GitHub Copilot in SQL Server Management Studio](installation-state.md)
 - [Manage Copilot usage in SQL Server Management Studio](manage-usage.md)
 - [Use GitHub Copilot for free in SQL Server Management Studio](free-plan.md)
-- [Use GitHub Copilot Agent mode (preview) in SQL Server Management Studio](agent-mode.md)
+- [Use GitHub Copilot Agent mode in SQL Server Management Studio](agent-mode.md)
 - [GitHub Copilot Trust Center](https://copilot.github.trust.page)
 - [Managing GitHub Copilot in your organization](https://docs.github.com/copilot/how-tos/administer-copilot/manage-for-organization)
 - [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)

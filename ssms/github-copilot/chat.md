@@ -5,7 +5,7 @@ description: Learn how to use the GitHub Copilot Chat experience in SQL Server M
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 06/09/2026
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -144,7 +144,7 @@ You can customize Copilot for your workflow and requirements in SSMS.
 ## Related content
 
 - [Get started with GitHub Copilot in SQL Server Management Studio](get-started.md)
-- [Use GitHub Copilot Agent mode (preview) in SQL Server Management Studio](agent-mode.md)
+- [Use GitHub Copilot Agent mode in SQL Server Management Studio](agent-mode.md)
 - [Hosting of models for GitHub Copilot Chat](https://docs.github.com/copilot/reference/ai-models/model-hosting)
 - [Add context for GitHub Copilot in SQL Server Management Studio](chat-context.md)
 - [Troubleshoot GitHub Copilot in SQL Server Management Studio](troubleshoot.md)

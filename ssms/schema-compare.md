@@ -1,17 +1,17 @@
 ---
-title: Schema Compare (Preview) in SQL Server Management Studio
+title: Schema Compare in SQL Server Management Studio
 description: Compare database schemas between databases, .dacpac files, and SQL database projects in SQL Server Management Studio (SSMS).
 author: rwestMSFT
 ms.author: randolphwest
-ms.reviewer: drskwier, mbarickman
-ms.date: 08/11/2026
+ms.reviewer: mahyon, mbarickman
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
   - data-tools
 ---
 
-# Schema Compare (preview) in SQL Server Management Studio
+# Schema Compare in SQL Server Management Studio
 
 [!INCLUDE [SQL Server ASDB, ASDBMI, ASDW](includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
@@ -41,18 +41,18 @@ You can open Schema Compare in SSMS from several entry points.
 
 ### Object Explorer
 
-Right-click a database in **Object Explorer** and select **Tasks** > **Schema Compare (Preview)**. The selected database is automatically set as the source.
+Right-click a database in **Object Explorer** and select **Tasks** > **Schema Compare**. The selected database is automatically set as the source.
 
 ### Solution Explorer
 
-Right-click a SQL database project in **Solution Explorer** and select **Schema Compare (Preview)**. The selected project is automatically set as the source.
+Right-click a SQL database project in **Solution Explorer** and select **Schema Compare**. The selected project is automatically set as the source.
 
 > [!NOTE]
 > To work with SQL database projects in Solution Explorer, you need the [Database DevOps workload](install/modify.md).
 
 ### Tools menu
 
-On the **Tools** menu, select **Schema Compare (Preview)**. The Schema Compare window opens without a preset source or target.
+On the **Tools** menu, select **Schema Compare**. The Schema Compare window opens without a preset source or target.
 
 ## Select source and target
 
@@ -116,5 +116,5 @@ Open an `.scmp` file in SSMS to run the same comparison again later or to share 
 ## Related content
 
 - [Schema comparison overview](/sql/tools/sql-database-projects/concepts/schema-comparison)
-- [Database DevOps (preview) in SQL Server Management Studio](database-devops.md)
+- [Database DevOps in SQL Server Management Studio](database-devops.md)
 - [SQL database projects](/sql/tools/sql-database-projects/sql-database-projects)

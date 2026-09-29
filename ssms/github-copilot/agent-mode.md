@@ -1,11 +1,11 @@
 ---
-title: GitHub Copilot Agent Mode (Preview)
+title: GitHub Copilot Agent Mode
 titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to use GitHub Copilot Agent mode in SQL Server Management Studio (SSMS) to autonomously complete complex, multi-step database tasks.
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: erinstellato
-ms.date: 06/09/2026
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -14,12 +14,9 @@ ms.update-cycle: 180-days
 # CustomerIntent: As a database administrator or database developer, I want to understand how to use GitHub Copilot Agent mode in SQL Server Management Studio to complete complex, multi-step database tasks.
 ---
 
-# Use GitHub Copilot Agent mode (preview) in SQL Server Management Studio
+# Use GitHub Copilot Agent mode in SQL Server Management Studio
 
-GitHub Copilot Agent mode (preview) in SQL Server Management Studio (SSMS) lets you specify a high-level goal in natural language and have Copilot work through it by executing queries, reading files, and iterating on its own outputs until the task is complete or your input is needed.
-
-> [!NOTE]  
-> GitHub Copilot Agent mode in SQL Server Management Studio (SSMS) is currently in preview.
+GitHub Copilot Agent mode in SQL Server Management Studio (SSMS) lets you specify a high-level goal in natural language and have Copilot work through it by executing queries, reading files, and iterating on its own outputs until the task is complete or your input is needed.
 
 Unlike Ask mode, which stops after a single response, Agent mode continues running steps, invoking tools, and refining its approach until it reaches your goal. All queries and commands are executed under the context of the user's login and permissions, unless a custom database user or SQL login is specified in the front matter of the database's `CONSTITUTION.md`. For more information, see [Execution context for GitHub Copilot in SQL Server Management Studio](execution-context.md).
 

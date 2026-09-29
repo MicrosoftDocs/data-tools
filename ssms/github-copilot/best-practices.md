@@ -5,7 +5,7 @@ description: Learn about best practices for using GitHub Copilot in SQL Server M
 author: erinstellato-ms
 ms.author: erinstellato
 ms.reviewer: randolphwest
-ms.date: 06/09/2026
+ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -19,7 +19,7 @@ GitHub Copilot in SQL Server Management Studio (SSMS) accelerates your productiv
 
 ## Chat window
 
-The icons and capabilities of the chat window are documented in [Ask mode](chat.md) and [Agent mode (preview)](agent-mode.md), but other considerations are specific to prompts.
+The icons and capabilities of the chat window are documented in [Ask mode](chat.md) and [Agent mode](agent-mode.md), but other considerations are specific to prompts.
 
 Primarily, don't treat the chat window as a results window. When you ask GitHub Copilot questions about your schema or data, it might directly execute a query to return information to you in the chat window. GitHub Copilot in SSMS doesn't determine the number of rows returned by a query before it executes, and if the query returns 1,000 rows, it tries to display that information in the chat. Large result sets aren't easily readable, and can't be manipulated, within the chat window.
 
