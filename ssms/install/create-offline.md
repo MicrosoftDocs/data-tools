@@ -71,7 +71,7 @@ C:\SSMS_Layout\vs_SSMS.exe --noWeb --add Microsoft.Component.HelpViewer
 
 > [!IMPORTANT]
 > When SSMS is installed from a local layout, the installer records the layout path in the `C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances\<InstanceID>\state.json` file.
-> Future Updates or component additions expect the layout to remain at the same path.
+> Future updates or component additions expect the layout to remain at the same path.
 > If the local layout is moved to a different location, the installer may not be able to find the required packages.
 
 ## Use the "Download all, then install" feature
