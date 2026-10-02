@@ -69,6 +69,14 @@ For example, if you created a local installation layout using the command from s
 C:\SSMS_Layout\vs_SSMS.exe --noWeb --add Microsoft.Component.HelpViewer
 ```
 
+When you use a local layout to install SSMS, the installer records the layout path in the following location:
+
+```output
+C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances\<InstanceID>\state.json
+```
+
+Future updates or component additions expect to find the layout at the same path. If the local layout moves to a different location, the installer might not be able to find the required packages.
+
 ## Use the "Download all, then install" feature
 
 Sometimes online access is problematic. For example, you might have an unreliable internet connection or your internet connection might have low bandwidth. For situations like these, you can use the **Download all, then install** feature from the Visual Studio Installer to download an installation package on the local machine *before* you install it locally. Alternatively, you can use the command line to create a local installation package to install locally later.
