@@ -5,7 +5,7 @@ description: Learn how to format SQL code in SQL Server Management Studio (SSMS)
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mahyon, mbarickman
-ms.date: 09/28/2026
+ms.date: 10/05/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -17,7 +17,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw-fabricse-fabricdw-fabricsqldb.md)]
 
-Consistent formatting makes Transact-SQL (T-SQL) easier to read, review, and maintain, especially when multiple people contribute to the same codebase. SQL Server Management Studio (SSMS) includes a built-in SQL formatter (Preview) that you can run on demand, configure for automatic formatting on save, and customize through SSMS settings or `.editorconfig` files.
+Consistent formatting makes Transact-SQL (T-SQL) easier to read, review, and maintain, especially when multiple people contribute to the same codebase. SQL Server Management Studio (SSMS) includes a built-in SQL formatter that you can run on demand, configure for automatic formatting on save, and customize through SSMS settings or `.editorconfig` files.
 
 The SQL formatting functionality in SSMS is built on top of [ScriptDOM](https://github.com/microsoft/sqlscriptdom), an open-source .NET library that parses T-SQL and generates scripts based on abstract syntax trees.
 
@@ -31,8 +31,8 @@ You can format T-SQL in any query editor window at any time. The formatter can a
 
 To format SQL on demand, use one of the following methods:
 
-- **Context menu**: Right-click in a T-SQL editor window and select **Format SQL (Preview)**.
-- **Edit menu**: Select **Edit** > **Advanced** > **Format SQL (Preview)**.
+- **Context menu**: Right-click in a T-SQL editor window and select **Format SQL**.
+- **Edit menu**: Select **Edit** > **Advanced** > **Format SQL**.
 - **Keyboard shortcut**: Press <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
 When you select text, the formatter applies only to the selection. When you don't select text, the formatter applies to the entire document.
@@ -44,7 +44,7 @@ When you turn on the **Format on Save** option, the formatter automatically appl
 To enable format on save for all files:
 
 1. Select **Tools** > **Options**.
-1. Go to **SQL Formatter (Preview)** > **Formatting**.
+1. Go to **SQL Formatter** > **Formatting**.
 1. Set **Format on Save** to **True**.
 1. Select **OK**.
 
@@ -61,7 +61,7 @@ When both an SSMS setting and an `.editorconfig` value exist for the same option
 To configure formatting options in SSMS:
 
 1. Select **Tools** > **Options**.
-1. Go to **SQL Formatter (Preview)**.
+1. Go to **SQL Formatter**.
 1. Adjust the settings in the subcategories: **General**, **Alignment**, **Paths**, **Formatting**, **Indentation**, **Multiline**, **New Line**, and **Spacing**.
 1. Select **OK**.
 
