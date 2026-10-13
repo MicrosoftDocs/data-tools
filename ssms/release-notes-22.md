@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: rwestMSFT
 ms.author: randolphwest
 ms.reviewer: mbarickman, erinstellato
-ms.date: 09/28/2026
+ms.date: 10/13/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,41 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.11.0"></a>
+
+### 22.11.0
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.11.0
+- Release date: October 13, 2026
+
+#### What's new in 22.11.0
+
+| Feature | Details |
+| --- | --- |
+| Connection Dialog | Improved startup performance of the Modern Connection Dialog. |
+| Entra Integrated authentication | Added support for Microsoft Entra Integrated authentication when connecting to Azure SQL Database and Managed Instance when Web Account Manager setting is disabled. See [SSMS fails to use PRT for Microsoft.Data.SqlClient Integrated Authentication](https://developercommunity.visualstudio.com/t/SSMS-fails-to-use-PRT-for-MicrosoftData/11154133). |
+| Libraries | Updated Microsoft.Data.SqlClient to 6.1.6. |
+| Libraries | Updated MSODBCSQL to 18.7.1.1. |
+| Visual Studio | Updated to Visual Studio 18.11.0 [12306.390] |
+
+#### Bug fixes in 22.11.0
+
+| Feature | Description |
+| --- | --- |
+| Connection Dialog | Fixed an issue that caused the subscription dropdown list to show an incomplete list. See [SSMS firewall rule dialog shows empty server subscription list](https://developercommunity.visualstudio.com/t/SSMS-firewall-rule-dialog-shows-empty-se/11132184). |
+| Localization | Fixed an issue that generated a Portuguese translation error in the **Tools** > **Options** > **Editor and Appearance** menu, under the **Light Extra Contrast** option. See [The SSMS PT-BR localization incorrectly labels the "Extra Light Contrast" appearance option](https://developercommunity.visualstudio.com/t/The-SSMS-PT-BR-localization-incorrectly-/11091989). |
+| New Database Dialog | Fixed an issue that prevented the details of an error message from being copied to the clipboard. |
+| Object Explorer Details | Fixed an issue that caused Object Explorer Details to duplicate databases after changing database settings. See [SSMS Object Explorer Details duplicates databases after setting changes](https://developercommunity.visualstudio.com/t/SSMS-Object-Explorer-Details-duplicates-/11127879). |
+| Query Window | Fixed an issue that generated a `Value cannot be null` exception when opening a new query window. See [SSMS New Query window fails with null value in SetGridResultsFont](https://developercommunity.visualstudio.com/t/SSMS-New-Query-window-fails-with-null-va/11162240). |
+| Shortcuts | Fixed an issue that prevented the **Toggle Line Comment** shortcut from working correctly when commenting out a single line. See [SSMS Toggle Line Comment command unavailable for single SQL lines](https://developercommunity.visualstudio.com/t/SSMS-Toggle-Line-Comment-command-unavail/11133445). |
+| SQL Formatter | Fixed an issue that incorrectly reordered inline comments and added spaces after commas. See [SQL Formatter reorders inline comments and adds spaces after commas](https://developercommunity.visualstudio.com/t/SQL-Formatter-reorders-inline-comments-a/11147232). |
+| SQL Formatter | Fixed an issue that incorrectly inserted the `AS` keyword when the **Preserve** option for column aliases was enabled. See [SQL Formatter Preserve alias style incorrectly inserts AS keyword](https://developercommunity.visualstudio.com/t/SQL-Formatter-Preserve-alias-style-incor/11147774). |
+
 <a id="22.10.2"></a>
 
 ### 22.10.2
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.10.2
 - Release date: September 28, 2026
@@ -72,13 +102,13 @@ For previous versions of SSMS, see:
 | Feature | Description |
 | --- | --- |
 | Availability Group wizard | Fixed an issue that caused manual failover in the Availability Group wizard to fail when the SSMS UI was set to Japanese. See [Availability Groups: Japanese UI breaks manual failover with format error](https://developercommunity.visualstudio.com/t/Availability-Groups:-Japanese-UI-breaks-/11087784). |
-| Available Databases | Fixed an issue that prevented databases from being selected from the Available Databases dropdown menu when connected to Azure SQL Database. See [Cannot select the database from the Available databases drop-down](https://developercommunity.visualstudio.com/t/Cannot-select-the-database-from-the-Avai/10926033). |
+| Available Databases | Fixed an issue that prevented databases from being selected from the Available Databases dropdown list when connected to Azure SQL Database. See [Cannot select the database from the Available databases drop-down](https://developercommunity.visualstudio.com/t/Cannot-select-the-database-from-the-Avai/10926033). |
 | Database DevOps | Fixed an issue that caused `<Folder Include="dbo\Tables\" />` to be removed from the project file when a table was added. |
 | Database DevOps | Fixed an issue that caused the database references node to appear in the wrong location instead of remaining pinned as the first project item. |
-| Database DevOps | Fixed an issue that caused the .sql files icon to change its appearance. |
+| Database DevOps | Fixed an issue that caused the `.sql` files icon to change its appearance. |
 | Database DevOps | Fixed an issue that caused scripts generated from Solution Explorer to open in the incorrect mode. |
 | Fabric SQL Analytics Endpoint | Fixed an issue that prevented the schema list for a Fabric SQL Database analytics endpoint from appearing in alphabetical order. |
-| GitHub Copilot Agent Mode | Fixed an issue in Agent Mode where `sql-editor-list` did not include open non-SQL documents. |
+| GitHub Copilot Agent Mode | Fixed an issue in Agent Mode where `sql-editor-list` didn't include open non-SQL documents. |
 | Managed Instance Link wizard | Fixed an issue in the Managed Instance Link wizard that allowed unsupported characters to be submitted in link names. |
 | Object Explorer | Fixed an issue that caused SSMS to freeze when connected to an Azure SQL database and right-clicking on a database node and selecting **Reports**. See [Reports tab on databases makes SSMS get stuck](https://developercommunity.visualstudio.com/t/Reports-tab-on-databases-makes-SSMS-get-/11032590). |
 | Object Explorer Details | Fixed an issue that caused the Object Explorer Details pane to go blank. See [Object Explorer Details pane eventually goes blank](https://developercommunity.visualstudio.com/t/Object-Explorer-Details-pane-eventually-/10937488). |
@@ -171,7 +201,7 @@ For previous versions of SSMS, see:
 | Connection Dialog | Added the **hostname in certificate** field to the default connection properties view. |
 | Connection Dialog | Added support for subscription search and filtering when browsing Azure resources and workspaces, and when browsing Fabric resources. |
 | Connection Dialog | Added horizontal layout support. |
-| Connection Dialog | Changed the server name field to an editable drop-down menu for improved keyboard accessibility. |
+| Connection Dialog | Changed the server name field to an editable dropdown list for improved keyboard accessibility. |
 | Connection Dialog | Increased the maximum number of recent and favorite connections to 60. |
 | Connection Dialog | Added support for browsing Managed Instances for Azure. |
 | Connection Dialog | Added search and filtering support to the **Browse** tab. |
@@ -180,7 +210,7 @@ For previous versions of SSMS, see:
 | Database DevOps (preview) | Improved support for theming in dialogs, including **Publish**, **Generate Script**, and **Add Database Reference** dialogs. |
 | Database DevOps (preview) | Added more reference types to the **Add Database Reference** dialog. The dialog now supports four reference types: DACPAC, database project, NuGet package, plus the existing system database. |
 | Database DevOps (preview) | Updated the SqlProj document tab names to remove the "- not connected" suffix. See [Document tab names in SSMS sqlproj are not good](https://developercommunity.visualstudio.com/t/Document-ab-names-in-SSMS-sqlproj-are-no/11075237). |
-| Database DevOps (preview) | Added support for schema compare (`.scmp`) and publish profile (`.publish.xml`) files in Solution Explorer, including launching **Schema Compare** and **Publish** from the associated file type. | 
+| Database DevOps (preview) | Added support for schema compare (`.scmp`) and publish profile (`.publish.xml`) files in Solution Explorer, including launching **Schema Compare** and **Publish** from the associated file type. |
 | Database Properties | Added the `TIME_ZONE` configuration option. |
 | GitHub Copilot Agent Mode (preview) | Added tools that let GitHub Copilot interact with connected objects in Object Explorer. |
 | GitHub Copilot Ask Mode | Updated the behavior of Ask mode and removed the ability to execute arbitrary queries. |
