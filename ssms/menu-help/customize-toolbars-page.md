@@ -1,8 +1,9 @@
 ---
-title: "Customize (Toolbars Page)"
-description: "Customize (Toolbars Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Customize (Toolbars Page)
+description: Customize (Toolbars Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

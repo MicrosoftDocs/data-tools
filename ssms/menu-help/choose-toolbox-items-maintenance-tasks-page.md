@@ -1,8 +1,9 @@
 ---
-title: "Choose Toolbox Items (Maintenance Tasks Page)"
+title: Choose Toolbox Items (Maintenance Tasks Page)
 description: Choose Toolbox Items (Maintenance Tasks Page)
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

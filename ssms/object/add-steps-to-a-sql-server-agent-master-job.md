@@ -1,8 +1,9 @@
 ---
-title: "Add Steps to a SQL Server Agent Master Job"
+title: Add Steps to a SQL Server Agent Master Job
 description: Learn how to add steps to a SQL Server Agent master job in SQL Server.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

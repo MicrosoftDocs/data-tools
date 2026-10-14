@@ -1,8 +1,9 @@
 ---
-title: "SQL Server Management Studio Menu Help"
-description: "SQL Server Management Studio Menu Help"
-author: rwestMSFT
-ms.author: randolphwest
+title: SQL Server Management Studio Menu Help
+description: SQL Server Management Studio Menu Help
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

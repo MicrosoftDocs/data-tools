@@ -1,8 +1,9 @@
 ---
-title: "Job Properties - New Job (General Page)"
-description: "Job Properties - New Job (General Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Job Properties - New Job (General Page)
+description: Job Properties - New Job (General Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -52,6 +53,7 @@ Displays the date and time that the job last started running. Only available on 
 **View Job History**  
 View the job history for the job. Only available on the **Job PropertiesGeneral** page.  
   
-## See Also  
-[Implement Jobs](implement-jobs.md)  
-[Job Categories - Manage Job Categories](job-categories-manage-job-categories.md)  
+## Related content
+
+- [Implement Jobs](implement-jobs.md)
+- [Job Categories - Manage Job Categories](job-categories-manage-job-categories.md)

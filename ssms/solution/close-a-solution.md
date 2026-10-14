@@ -1,9 +1,10 @@
 ---
-title: "Close a Solution"
-description: "Close a Solution"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Close a Solution
+description: Close a Solution
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -23,6 +24,6 @@ You can close a solution and remove it from Solution Explorer. Closing a solutio
   
 1.  On the **File** menu, click **Close Solution**.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-  
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)

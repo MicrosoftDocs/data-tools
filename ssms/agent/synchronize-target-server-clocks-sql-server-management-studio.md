@@ -1,8 +1,9 @@
 ---
 title: Synchronize Target Server Clocks
-description: "Synchronize Target Server Clocks"
-author: rwestMSFT
-ms.author: randolphwest
+description: Synchronize Target Server Clocks
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -70,4 +71,4 @@ Requires membership in the **sysadmin** fixed server role.
     GO  
     ```  
   
-For more information, see [sp_resync_targetserver (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-resync-targetserver-transact-sql).  
+For more information, see [sp_resync_targetserver (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-resync-targetserver-transact-sql).

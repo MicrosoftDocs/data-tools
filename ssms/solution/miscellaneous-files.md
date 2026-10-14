@@ -1,9 +1,10 @@
 ---
-title: "Miscellaneous Files"
+title: Miscellaneous Files
 titleSuffix: SQL Server Management Studio
 description: Work with miscellaneous files in SQL Server Management Studio (SSMS) projects and solutions.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

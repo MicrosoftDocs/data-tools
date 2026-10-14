@@ -1,8 +1,9 @@
 ---
-title: "SQL Server Agent Properties (Advanced Page)"
-description: "SQL Server Agent Properties (Advanced Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: SQL Server Agent Properties (Advanced Page)
+description: SQL Server Agent Properties (Advanced Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -49,6 +50,7 @@ Percentage of CPU usage below which the CPU is considered to be idle.
 **And remains below this level for**  
 Amount of time that the average CPU must below the level specified before [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent runs jobs on the Idle CPU schedule.  
   
-## See Also  
-[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)  
-[Manage Events](manage-events.md)  
+## Related content
+
+- [Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)
+- [Manage Events](manage-events.md)

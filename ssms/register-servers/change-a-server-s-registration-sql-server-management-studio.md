@@ -1,8 +1,9 @@
 ---
-title: "Change a Server's Registration"
+title: Change a Server's Registration
 description: Overview of changing a server's registration in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

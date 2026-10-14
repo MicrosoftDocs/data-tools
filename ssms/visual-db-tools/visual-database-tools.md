@@ -1,8 +1,9 @@
 ---
 title: Visual Database Tools
-description: "Visual Database Tools - A comprehensive set of visual tools for designing and managing databases in SQL Server Management Studio."
-author: rwestMSFT
-ms.author: randolphwest
+description: Visual Database Tools - A comprehensive set of visual tools for designing and managing databases in SQL Server Management Studio.
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: overview

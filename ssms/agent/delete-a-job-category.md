@@ -1,8 +1,9 @@
 ---
-title: "Delete a Job Category"
-description: "Delete a Job Category"
-author: rwestMSFT
-ms.author: randolphwest
+title: Delete a Job Category
+description: Delete a Job Category
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -75,4 +76,4 @@ For more information, see [sp_delete_category (Transact-SQL)](/sql/relational-da
 ## <a name="SMO"></a>Using SQL Server Management Objects  
 **To delete a job category**  
   
-Call the **JobCategory** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.  
+Call the **JobCategory** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.

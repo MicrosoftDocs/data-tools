@@ -1,8 +1,9 @@
 ---
 title: Automatic Matching of Syntax Pairs
 description: Learn about automatic matching of syntax pairs in Query Editor (delimiter matching), XMLA Query Editor (brace matching), and MDX and DMX (parenthesis matching).
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

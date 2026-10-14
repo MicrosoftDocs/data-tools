@@ -1,8 +1,9 @@
 ---
 title: Usage and Diagnostic Data
-description: "Local audit for SSMS usage and diagnostic data collection"
-author: rwestMSFT
-ms.author: randolphwest
+description: Local audit for SSMS usage and diagnostic data collection
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

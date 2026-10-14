@@ -1,9 +1,10 @@
 ---
-title: "Status Bar (Database Engine Query Editor)"
+title: Status Bar (Database Engine Query Editor)
 titleSuffix: T-SQL debugger
 description: Learn how to color code the status bar of a Database Engine Query Editor window to indicate which instance of the DataBase engine the window is connected to.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/04/2019
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -86,6 +87,6 @@ Setting a custom status bar color for a server node in Object Explorer must be d
   
 -   Fill in the rest of the connection information, and then select the **Connect** button.  
   
-## See Also  
- [Query and Text Editors &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)  
-  
+## Related content
+
+- [Query Editor (SQL Server Management Studio)](../f1-help/database-engine-query-editor-sql-server-management-studio.md)

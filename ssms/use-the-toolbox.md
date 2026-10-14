@@ -1,8 +1,9 @@
 ---
 title: Use the Toolbox
 description: Use the Toolbox to perform operations in forms, pages, and designers.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

@@ -1,9 +1,10 @@
 ---
-title: "Search Documents Interactively"
+title: Search Documents Interactively
 description: Learn how to use the Find and Replace dialog box to search one or more open files or windows, pausing after each match to review what was found, in its context. You can also perform a bulk find operation and review the search matches in report format.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -54,9 +55,9 @@ helpviewer_keywords:
   
  The **Replace All** command replaces all search matches, including those you have skipped with the **Find Next** button. To cancel **Replace All**, click **Undo** from the **Edit** menu before closing any of the files.  
   
-## See Also  
- [Search an Active Document Incrementally](search-an-active-document-incrementally.md)   
- [Search and Replace](search-and-replace.md)   
- [Search Documents Using Results Lists](search-documents-using-results-lists.md)   
- [Search Text with Regular Expressions](search-text-with-regular-expressions.md)  
-  
+## Related content
+
+- [Search an Active Document Incrementally](search-an-active-document-incrementally.md)
+- [Search and Replace](search-and-replace.md)
+- [Search Documents Using Results Lists](search-documents-using-results-lists.md)
+- [How to search text with regular expressions](search-text-with-regular-expressions.md)

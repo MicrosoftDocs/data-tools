@@ -1,8 +1,9 @@
 ---
 title: Configure Login Auditing
 description: Configure login auditing for SQL Server on Windows, using SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

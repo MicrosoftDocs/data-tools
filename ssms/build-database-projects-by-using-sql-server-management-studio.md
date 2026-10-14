@@ -1,9 +1,9 @@
 ---
 title: Projects in SQL Server Management Studio
 description: Use projects with SQL Server Management Studio
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: drskwier
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 03/11/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article

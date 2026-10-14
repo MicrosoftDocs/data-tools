@@ -1,8 +1,9 @@
 ---
 title: Export Registered Server Information
 description: How to export registered server information in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

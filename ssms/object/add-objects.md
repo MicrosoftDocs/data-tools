@@ -1,8 +1,9 @@
 ---
-title: "Add Objects"
+title: Add Objects
 description: Add Objects limits the object selection dialog boxes.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

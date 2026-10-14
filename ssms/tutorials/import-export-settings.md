@@ -2,9 +2,9 @@
 title: Import and Export Settings
 titleSuffix: SQL Server Management Studio
 description: Learn how to import and export settings for SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: tutorial

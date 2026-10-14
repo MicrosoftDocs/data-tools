@@ -1,8 +1,9 @@
 ---
-title: "Manage Jobs Across an Enterprise"
-description: "Manage Jobs Across an Enterprise"
-author: rwestMSFT
-ms.author: randolphwest
+title: Manage Jobs Across an Enterprise
+description: Manage Jobs Across an Enterprise
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -77,5 +78,6 @@ The following are common tasks for managing jobs across an enterprise:
   
 -   [Transact-SQL](/sql/relational-databases/system-stored-procedures/sp-post-msx-operation-transact-sql)  
   
-## See Also  
-[Manage Events](manage-events.md)  
+## Related content
+
+- [Manage Events](manage-events.md)

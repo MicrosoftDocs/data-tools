@@ -1,8 +1,9 @@
 ---
-title: "Set Job Step Success or Failure Flow with SQL Server Agent Jobs"
-description: "Set job step success or failure flow"
-author: rwestMSFT
-ms.author: randolphwest
+title: Set Job Step Success or Failure Flow with SQL Server Agent Jobs
+description: Set job step success or failure flow
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/16/2021
 ms.service: sql-server-management-studio
 ms.topic: how-to

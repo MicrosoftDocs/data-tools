@@ -1,8 +1,9 @@
 ---
-title: "Code Outlining"
+title: Code Outlining
 description: Learn how to use the code outlining feature in the SQL Server Management Studio query editors to selectively hide code.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

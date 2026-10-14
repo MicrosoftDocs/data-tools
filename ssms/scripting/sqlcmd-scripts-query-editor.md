@@ -2,8 +2,9 @@
 title: Edit SQLCMD Scripts with Query Editor
 titleSuffix: SQL Server Management Studio
 description: Write and edit SQLCMD scripts using the query editor. Learn how SQLCMD scripts help you to process Windows System commands and Transact-SQL statements in the same script.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/17/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

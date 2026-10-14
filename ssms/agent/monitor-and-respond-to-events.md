@@ -1,8 +1,9 @@
 ---
-title: "Monitor and Respond to Events"
-description: "Monitor and Respond to Events"
-author: rwestMSFT
-ms.author: randolphwest
+title: Monitor and Respond to Events
+description: Monitor and Respond to Events
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -63,5 +64,6 @@ When [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] logs a message, the 
   
 Regardless of the source of the event, the [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent service responds to the event by performing the tasks specified in the alert for the event.  
   
-## See Also  
-[sp_altermessage](/sql/relational-databases/system-stored-procedures/sp-altermessage-transact-sql)  
+## Related content
+
+- [sp_altermessage](/sql/relational-databases/system-stored-procedures/sp-altermessage-transact-sql)

@@ -1,9 +1,10 @@
 ---
-title: "The SQL Server Management Studio Environment"
-description: "The SQL Server Management Studio Environment"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: The SQL Server Management Studio Environment
+description: The SQL Server Management Studio Environment
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
@@ -29,4 +30,4 @@ Outline general features of the user interface, such as Solution Explorer, Objec
 Introduces Solution Explorer, which provides you with an organized view of your projects and their files as well as ready access to commands for managing them.  
   
 [Solution Explorer Source Control](solution/solution-explorer.md)  
-Describes how SQL Server Management Studio integrates with source control products.  
+Describes how SQL Server Management Studio integrates with source control products.

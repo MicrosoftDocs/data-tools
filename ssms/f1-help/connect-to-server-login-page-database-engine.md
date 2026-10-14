@@ -1,9 +1,9 @@
 ---
-title: "Connect to Server (Login Page) - Database Engine"
+title: Connect to Server (Login Page) - Database Engine
 description: This article shows how to use the Connect to Server (Login page) Database Engine.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

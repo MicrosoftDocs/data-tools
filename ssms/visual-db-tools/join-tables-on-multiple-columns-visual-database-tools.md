@@ -1,8 +1,9 @@
 ---
 title: Join Tables on Multiple Columns
-description: "Join Tables on Multiple Columns (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Join Tables on Multiple Columns (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

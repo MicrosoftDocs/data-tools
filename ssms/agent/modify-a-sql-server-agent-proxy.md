@@ -1,8 +1,9 @@
 ---
-title: "Modify a SQL Server Agent Proxy"
-description: "Modify a SQL Server Agent Proxy"
-author: rwestMSFT
-ms.author: randolphwest
+title: Modify a SQL Server Agent Proxy
+description: Modify a SQL Server Agent Proxy
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 06/03/2020
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -74,4 +75,4 @@ Only members of the **sysadmin** fixed server role can create, modify, or delete
     GO  
     ```  
   
-For more information, see [sp_update_proxy (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-proxy-transact-sql).  
+For more information, see [sp_update_proxy (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-proxy-transact-sql).

@@ -1,8 +1,9 @@
 ---
-title: "Jobs That Reference a Schedule"
-description: "Jobs That Reference a Schedule"
-author: rwestMSFT
-ms.author: randolphwest
+title: Jobs That Reference a Schedule
+description: Jobs That Reference a Schedule
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -37,5 +38,6 @@ Read-only. Indicates whether this job is currently enabled.
 **Category**  
 Job category.  
   
-## See Also  
-[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)  
+## Related content
+
+- [Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)

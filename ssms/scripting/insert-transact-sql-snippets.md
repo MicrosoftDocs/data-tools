@@ -1,8 +1,9 @@
 ---
 title: Insert Transact-SQL Snippets
 description: Learn how to choose, insert, and modify a Transact-SQL code snippet that can serve as a starting point when writing new Transact-SQL statements in the Database Engine Query Editor.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -37,4 +38,4 @@ You can use the **Insert Snippet** menu to open a categorized list of snippets t
 
 ## Related content
 
-- [Insert Surround-with Transact-SQL snippets](insert-surround-with-transact-sql-snippets.md)
+- [Insert surround-with Transact-SQL snippets](insert-surround-with-transact-sql-snippets.md)

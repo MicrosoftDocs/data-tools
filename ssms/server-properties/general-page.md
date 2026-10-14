@@ -2,9 +2,9 @@
 title: Server Properties (General Page)
 titleSuffix: SQL Server Management Studio
 description: View read-only properties for a SQL Server instance, including server name, operating system, collation, and version.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

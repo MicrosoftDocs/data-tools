@@ -1,8 +1,9 @@
 ---
-title: "Options (Environment - Keyboard Page)"
-description: "Options (Environment - Keyboard Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Options (Environment - Keyboard Page)
+description: Options (Environment - Keyboard Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

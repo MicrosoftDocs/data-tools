@@ -1,9 +1,9 @@
 ---
 title: Registered Servers
 description: Overview of Registered Servers in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
-ms.manager: jroth
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

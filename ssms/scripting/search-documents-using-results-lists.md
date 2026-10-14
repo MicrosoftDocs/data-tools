@@ -1,9 +1,10 @@
 ---
-title: "Search Documents Using Results Lists"
+title: Search Documents Using Results Lists
 description: Learn how to search and replace text in all files contained in a project, solution, or file system folder. Matches appear in the Find Results 1 window, and you can double-click a match to see the line that contains it.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -55,8 +56,8 @@ helpviewer_keywords:
   
  Replacement information appears in the Find Results 1 window by default. You can browse replacements by double-clicking each entry in the Find Results 1 window.  
   
-## See Also  
- [Search and Replace](search-and-replace.md)   
- [Search Documents Interactively](search-documents-interactively.md)   
- [Search Text with Regular Expressions](search-text-with-regular-expressions.md)  
-  
+## Related content
+
+- [Search and Replace](search-and-replace.md)
+- [Search Documents Interactively](search-documents-interactively.md)
+- [How to search text with regular expressions](search-text-with-regular-expressions.md)

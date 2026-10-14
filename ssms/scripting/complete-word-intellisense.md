@@ -1,9 +1,10 @@
 ---
-title: "Complete Word (IntelliSense)"
+title: Complete Word (IntelliSense)
 description: The Microsoft IntelliSense Complete Word feature can complete what you are typing once you have typed enough to uniquely identify it, or it can provide a list of possibilities for you to choose from. Learn the four ways to invoke this feature.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/25/2022"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/25/2022
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -31,6 +32,4 @@ There are four ways to invoke the Complete Word feature:
   
 - Select the **Complete Word** button on the **Text Editor** toolbar.  
   
-If what you have typed has more than one possible match, invoke Complete Word to display a list of possible matches, which you can then use to find the term and insert it into your code.  
-  
-  
+If what you have typed has more than one possible match, invoke Complete Word to display a list of possible matches, which you can then use to find the term and insert it into your code.

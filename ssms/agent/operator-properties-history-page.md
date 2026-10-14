@@ -1,8 +1,9 @@
 ---
-title: "Operator Properties (History Page)"
-description: "Operator Properties (History Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Operator Properties (History Page)
+description: Operator Properties (History Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -30,5 +31,6 @@ Most recent notification attempts made by pager, or **(Never paged)** if this op
 **By net send**  
 Most recent notification attempts made by net send, or **(Never notified by net send)** if this operator has never been notified by net send.  
   
-## See Also  
-[Operators](operators.md)  
+## Related content
+
+- [Operators](operators.md)

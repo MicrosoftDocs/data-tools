@@ -1,8 +1,9 @@
 ---
 title: Set CPU Idle Time and Duration
 description: Set CPU idle time and duration in SQL Server Management Studio to define when SQL Server Agent responds to idle events. Follow this step-by-step guide.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 07/08/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

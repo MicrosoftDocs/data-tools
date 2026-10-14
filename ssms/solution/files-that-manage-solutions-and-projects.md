@@ -1,9 +1,10 @@
 ---
-title: "Files That Manage Solutions and Projects"
+title: Files That Manage Solutions and Projects
 titleSuffix: SQL Server Management Studio
 description: Learn about the file types that are specific to SQL Server Management Studio (SSMS) for managing solutions and projects.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

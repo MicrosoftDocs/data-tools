@@ -1,8 +1,9 @@
 ---
 title: Specify a Target Server Location
-description: "Specify a Target Server's Location"
-author: rwestMSFT
-ms.author: randolphwest
+description: Specify a Target Server's Location
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -61,4 +62,4 @@ Requires membership in the **sysadmin** fixed server role.
     GO  
     ```  
   
-For more information, see [sp_msx_enlist (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-msx-enlist-transact-sql).  
+For more information, see [sp_msx_enlist (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-msx-enlist-transact-sql).

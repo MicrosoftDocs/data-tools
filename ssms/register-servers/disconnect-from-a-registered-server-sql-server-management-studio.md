@@ -1,8 +1,9 @@
 ---
 title: Disconnect from a Registered Server
-description: "Disconnect from a registered server (SQL Server Management Studio)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Disconnect from a registered server (SQL Server Management Studio)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

@@ -1,9 +1,10 @@
 ---
-title: "Associate a Query with a Connection in a Project"
-description: "Associate a Query with a Connection in a Project"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Associate a Query with a Connection in a Project
+description: Associate a Query with a Connection in a Project
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -24,8 +25,8 @@ If a query was created without a connection, or if a query is moved from one pro
   
 2.  In the **Connect to Database Engine** dialog box, provide the connection information. If the connection information matches an existing connection, the query will be associated with that connection.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Change the Connection Associated with a Query](change-the-connection-associated-with-a-query.md)  
-[View or Change the Properties of a Connection in a Project](view-or-change-the-properties-of-a-connection-in-a-project.md)  
-  
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Change the Connection Associated with a Query](change-the-connection-associated-with-a-query.md)
+- [View or Change the Properties of a Connection in a Project](view-or-change-the-properties-of-a-connection-in-a-project.md)

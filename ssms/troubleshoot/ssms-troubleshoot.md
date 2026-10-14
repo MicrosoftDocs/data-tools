@@ -1,9 +1,9 @@
 ---
 title: Advanced Troubleshooting for SQL Server Management Studio
 description: Capture diagnostic data for a SQL Server Management Studio (SSMS) problem or crash
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 11/11/2025
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general

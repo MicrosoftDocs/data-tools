@@ -1,8 +1,9 @@
 ---
-title: "Search Text with Regular Expressions"
-description: "Learn how to use regular expressions in the Find what field of a Find and Replace dialog box to specify a pattern to be matched."
-author: rwestMSFT
-ms.author: randolphwest
+title: Search Text with Regular Expressions
+description: Learn how to use regular expressions in the Find what field of a Find and Replace dialog box to specify a pattern to be matched.
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

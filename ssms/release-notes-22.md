@@ -1,9 +1,9 @@
 ---
 title: Release Notes for SQL Server Management Studio (SSMS)
 description: Updates, improvements, and bug fixes for the current version of SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mbarickman, erinstellato
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/13/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new

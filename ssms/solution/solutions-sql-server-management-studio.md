@@ -1,9 +1,10 @@
 ---
-title: "Solutions (SQL Server Management Studio)"
-description: "Solutions (SQL Server Management Studio)"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Solutions (SQL Server Management Studio)
+description: Solutions (SQL Server Management Studio)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -45,7 +46,7 @@ Solutions and projects can be integrated into a [!INCLUDE[msCoName](../includes/
 |Describes how to move items between projects in a solution.|[Move Items in a Solution](move-items-in-a-solution.md)|  
 |Describes how to rename a solution or the items in the solution.|[Rename Solutions and Project Items](rename-solutions-and-project-items.md)|  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Projects &#40;SQL Server Management Studio&#41;](projects-sql-server-management-studio.md)  
-[Solution Explorer Source Control](solution-explorer.md)  
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Projects (SQL Server Management Studio)](projects-sql-server-management-studio.md)

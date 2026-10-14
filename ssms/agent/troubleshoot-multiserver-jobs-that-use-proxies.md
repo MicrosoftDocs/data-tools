@@ -1,8 +1,9 @@
 ---
-title: "Troubleshoot Multiserver Jobs That Use Proxies"
-description: "Troubleshoot Multiserver Jobs That Use Proxies"
-author: rwestMSFT
-ms.author: randolphwest
+title: Troubleshoot Multiserver Jobs That Use Proxies
+description: Troubleshoot Multiserver Jobs That Use Proxies
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -30,5 +31,6 @@ Distributed jobs whose steps are associated with a proxy run under the context o
 > [!CAUTION]  
 > [!INCLUDE[ssNoteRegistry](../includes/ssnoteregistry-md.md)]  
   
-## See Also  
-[Create a Multiserver Environment](create-a-multiserver-environment.md)  
+## Related content
+
+- [Create a multiserver environment](create-a-multiserver-environment.md)

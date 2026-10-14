@@ -1,8 +1,9 @@
 ---
 title: Reorder Output Columns
-description: "Reorder output columns (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Reorder output columns (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

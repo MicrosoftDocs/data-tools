@@ -1,8 +1,9 @@
 ---
 title: Create or Edit a Server Group
-description: "Create or edit a server group (SQL Server Management Studio)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Create or edit a server group (SQL Server Management Studio)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

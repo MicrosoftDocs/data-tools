@@ -2,9 +2,9 @@
 title: Server Properties (Advanced Page)
 titleSuffix: SQL Server Management Studio
 description: View and modify advanced server settings including FILESTREAM, containment, network, and parallelism options by using the Advanced page of the Server Properties window.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

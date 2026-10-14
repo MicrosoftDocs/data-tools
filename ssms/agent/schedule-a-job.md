@@ -1,9 +1,9 @@
 ---
-title: "Configure Schedule for SQL Server Agent Job"
+title: Configure Schedule for SQL Server Agent Job
 description: Create a SQL Server Agent job schedule to run on SQL Server or Azure SQL Managed Instance, using SQL Server Management Studio, Transact-SQL, or SQL Server Management Objects.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mathoma
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

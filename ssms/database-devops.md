@@ -1,9 +1,9 @@
 ---
 title: Database DevOps in SQL Server Management Studio
 description: Develop and deploy database changes with SQL database projects in SQL Server Management Studio (SSMS) as part of your database DevOps workflows.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mahyon, mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article

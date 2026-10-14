@@ -1,8 +1,9 @@
 ---
-title: "Change the Default Location for Projects"
-description: "Change the Default Location for Projects"
-author: rwestMSFT
-ms.author: randolphwest
+title: Change the Default Location for Projects
+description: Change the Default Location for Projects
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

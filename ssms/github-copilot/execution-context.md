@@ -2,9 +2,9 @@
 title: Execution Context for GitHub Copilot
 titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to configure the execution context for GitHub Copilot in SQL Server Management Studio (SSMS) using the CONSTITUTION.md for the database.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: erinstellato
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

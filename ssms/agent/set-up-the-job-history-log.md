@@ -1,8 +1,9 @@
 ---
-title: "Set up the Job History Log"
-description: "Set Up the Job History Log"
-author: rwestMSFT
-ms.author: randolphwest
+title: Set up the Job History Log
+description: Set Up the Job History Log
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -45,7 +46,8 @@ For detailed information, see [Implement SQL Server Agent Security](implement-sq
   
     2.  Check **Automatically remove agent history**, and specify a time period, such that history older than this period will be purged from the log.  
   
-## See Also  
-[Implement Jobs](implement-jobs.md)  
-[Monitor Job Activity](monitor-job-activity.md)  
-[Create Jobs](create-jobs.md)  
+## Related content
+
+- [Implement Jobs](implement-jobs.md)
+- [Monitor Job Activity](monitor-job-activity.md)
+- [Create SQL Server Agent jobs](create-jobs.md)

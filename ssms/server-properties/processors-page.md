@@ -2,9 +2,9 @@
 title: Server Properties (Processors Page)
 titleSuffix: SQL Server Management Studio
 description: View and modify processor and I/O affinity settings and maximum worker threads by using the Processors page of the Server Properties window.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

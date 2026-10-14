@@ -1,8 +1,9 @@
 ---
 title: SQL Server Management Studio (SSMS)
 description: Use SQL Server Management Studio (SSMS) to configure, administer, and develop for the SQL Database Engine. Learn about SSMS components, languages, and support.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 03/09/2026
 ms.service: sql-server-management-studio
 ms.topic: overview

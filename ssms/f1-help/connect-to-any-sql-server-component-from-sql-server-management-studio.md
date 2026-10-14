@@ -1,8 +1,9 @@
 ---
 title: Connect to Any SQL Server Component
 description: Connect to Any SQL Server Component from SQL Server Management Studio.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

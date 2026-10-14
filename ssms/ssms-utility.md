@@ -1,8 +1,9 @@
 ---
 title: Use Command-Line Parameters to Open SQL Server Management Studio
 description: Learn about opening SSMS from a command line.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 05/18/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article

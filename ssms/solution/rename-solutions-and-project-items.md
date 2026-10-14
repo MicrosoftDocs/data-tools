@@ -1,9 +1,10 @@
 ---
-title: "Rename Solutions and Project Items"
-description: "Rename Solutions and Project Items"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Rename Solutions and Project Items
+description: Rename Solutions and Project Items
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -29,6 +30,6 @@ You can rename a solution and its project items in Solution Explorer.
   
 3.  In the Properties window, edit the **(Name)** property.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-  
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)

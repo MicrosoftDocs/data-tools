@@ -1,8 +1,9 @@
 ---
-title: "Post Download Instructions"
-description: "Post Download Instructions"
-author: rwestMSFT
-ms.author: randolphwest
+title: Post Download Instructions
+description: Post Download Instructions
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -46,5 +47,6 @@ View the date and time of the target server in the local time zone for that serv
 **Polling interval**  
 View the current polling interval for the target server.  
   
-## See Also  
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)  
+## Related content
+
+- [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)

@@ -1,8 +1,9 @@
 ---
 title: Copy Tables from One Database Diagram to Another
-description: "Copy tables from one database diagram to another (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Copy tables from one database diagram to another (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

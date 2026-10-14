@@ -1,8 +1,9 @@
 ---
-title: "Start a Job"
+title: Start a Job
 description: Learn how to start a SQL Server Agent job with SQL Server Management Studio, Transact-SQL, or SQL Server Management Objects.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

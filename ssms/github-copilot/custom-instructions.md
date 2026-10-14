@@ -2,9 +2,9 @@
 title: Custom Instructions
 titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to use custom instructions with GitHub Copilot in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: erinstellato
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 05/19/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

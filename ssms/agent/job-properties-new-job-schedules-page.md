@@ -1,8 +1,9 @@
 ---
-title: "Job Properties - New Job (Schedules Page)"
-description: "Job Properties - New Job (Schedules Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Job Properties - New Job (Schedules Page)
+description: Job Properties - New Job (Schedules Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -34,5 +35,6 @@ Edit the selected schedule to change job schedule properties.
 **Remove**  
 Remove the selected schedule from the job. If no other jobs use the schedule, the schedule is deleted from the database.  
   
-## See Also  
-[Implement Jobs](implement-jobs.md)  
+## Related content
+
+- [Implement Jobs](implement-jobs.md)

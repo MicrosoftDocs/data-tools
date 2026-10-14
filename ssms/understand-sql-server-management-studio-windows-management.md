@@ -1,8 +1,9 @@
 ---
-title: "Understand SQL Server Management Studio Windows Management"
+title: Understand SQL Server Management Studio Windows Management
 description: Understand how to manage the windows for SQL Server Management Studio tools.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 06/03/2024
 ms.service: sql-server-management-studio
 ms.topic: concept-article
@@ -36,5 +37,5 @@ When a login (or a contained database user) connects and is authenticated, the c
 
 ## Related content
 
-- [Use SQL Server Management Studio](sql-server-management-studio-ssms.md)
+- [What is SQL Server Management Studio (SSMS)?](sql-server-management-studio-ssms.md)
 - [The SQL Server Management Studio Environment](the-sql-server-management-studio-environment.md)

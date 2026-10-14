@@ -1,8 +1,9 @@
 ---
-title: "Alert Properties - New Alert (General Page)"
+title: Alert Properties - New Alert (General Page)
 description: Use the New Alert (General) page to view and modify the general properties of SQL Server Agent alerts.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

@@ -1,8 +1,9 @@
 ---
-title: "Browse for Objects (Object Explorer)"
-description: "Browse for Objects (Object Explorer)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Browse for Objects (Object Explorer)
+description: Browse for Objects (Object Explorer)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

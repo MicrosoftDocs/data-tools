@@ -1,8 +1,9 @@
 ---
-title: "New Job Schedule - Job Schedule Properties"
-description: "New Job Schedule - Job Schedule Properties"
-author: rwestMSFT
-ms.author: randolphwest
+title: New Job Schedule - Job Schedule Properties
+description: New Job Schedule - Job Schedule Properties
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -91,6 +92,7 @@ Select the date for the job to run.
 **Time**  
 Select the time for the job to run.  
   
-## See Also  
-[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)  
-[Schedule a Job](schedule-a-job.md)  
+## Related content
+
+- [Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)
+- [Configure a SQL Server Agent job schedule](schedule-a-job.md)

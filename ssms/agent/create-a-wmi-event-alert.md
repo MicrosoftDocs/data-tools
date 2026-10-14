@@ -1,8 +1,9 @@
 ---
-title: "Create a WMI Event Alert"
-description: "Create a WMI Event Alert"
-author: rwestMSFT
-ms.author: randolphwest
+title: Create a WMI Event Alert
+description: Create a WMI Event Alert
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/20/2022
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -75,6 +76,6 @@ By default, only members of the **sysadmin** fixed server role can execute `sp_a
    GO
    ```
 
-## Next steps
+## Related content
 
 - [sp_add_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-alert-transact-sql)

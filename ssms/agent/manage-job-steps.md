@@ -1,8 +1,9 @@
 ---
-title: "Manage Job Steps"
+title: Manage Job Steps
 description: Learn how to manage job steps, or actions that a SQL Server Agent job takes on a database or a server.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -184,5 +185,5 @@ For more information about creating job steps that run [!INCLUDE [ssISnoversion]
 ## Related content
 
 - [sysjobstepslogs](/sql/relational-databases/system-tables/dbo-sysjobstepslogs-transact-sql)
-- [Create Jobs](create-jobs.md)
+- [Create SQL Server Agent jobs](create-jobs.md)
 - [sp_add_job](/sql/relational-databases/system-stored-procedures/sp-add-job-transact-sql)

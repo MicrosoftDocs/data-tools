@@ -1,9 +1,10 @@
 ---
-title: "View Spatial Data in Object Explorer"
+title: View Spatial Data in Object Explorer
 description: Learn how to use the visual mapping tools of the Query Editor Spatial results window to view spatial data results (either geometric or geographic).
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -31,8 +32,7 @@ ms.collection:
   
 5.  Adjust the **Zoom** slider to increase the visual size of mapped elements. For polygon shapes, the label is visible only when the shape is large enough to hold the label text.  
   
-## See Also  
- [Spatial Results Window](spatial-results-window.md)   
- [Database Engine Query Editor &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)   
- [Query and Text Editors &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)  
-  
+## Related content
+
+- [Spatial Results Window](spatial-results-window.md)
+- [Query Editor (SQL Server Management Studio)](../f1-help/database-engine-query-editor-sql-server-management-studio.md)

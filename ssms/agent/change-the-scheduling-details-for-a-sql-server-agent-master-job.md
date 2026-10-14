@@ -1,8 +1,9 @@
 ---
 title: Change the Scheduling Details for a Master Job
-description: "Change the Scheduling Details for a SQL Server Agent Master Job"
-author: rwestMSFT
-ms.author: randolphwest
+description: Change the Scheduling Details for a SQL Server Agent Master Job
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to

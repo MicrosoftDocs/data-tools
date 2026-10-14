@@ -1,8 +1,9 @@
 ---
-title: "Object Dependencies"
-description: "Object Dependencies"
-author: rwestMSFT
-ms.author: randolphwest
+title: Object Dependencies
+description: Object Dependencies
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

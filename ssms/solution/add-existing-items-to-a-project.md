@@ -1,8 +1,9 @@
 ---
 title: Add Existing Items to a Project
 description: Learn how to add new items to a project to extend application functionality.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -69,6 +70,6 @@ Add new items to a project to extend application functionality. An existing item
 
 ## Related content
 
-- [Solution Explorer](solution-explorer.md)
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
 - [Add New Items to a Project](add-new-items-to-a-project.md)
 - [Remove or Delete an Item or Project](remove-or-delete-an-item-or-project.md)

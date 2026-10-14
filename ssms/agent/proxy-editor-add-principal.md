@@ -1,8 +1,9 @@
 ---
 title: Proxy Editor - Add Principal
-description: "Proxy Editor - Add Principal"
-author: rwestMSFT
-ms.author: randolphwest
+description: Proxy Editor - Add Principal
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -30,5 +31,6 @@ Lists the principals of the type chosen.
 **Name**  
 Select the name of the principal to grant access to that principal, or select **Name** to grant access to all principals in the list.  
   
-## See Also  
-[Create a SQL Server Agent Proxy](create-a-sql-server-agent-proxy.md)  
+## Related content
+
+- [Create a SQL Server Agent proxy](create-a-sql-server-agent-proxy.md)

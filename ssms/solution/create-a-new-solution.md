@@ -1,8 +1,9 @@
 ---
-title: "Create a New Solution"
+title: Create a New Solution
 description: Create a new solution for managing projects in SQL Server Management Studio.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 02/06/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

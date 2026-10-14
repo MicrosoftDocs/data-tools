@@ -1,8 +1,9 @@
 ---
 title: Define the Response to an Alert
-description: "Define the Response to an Alert"
-author: rwestMSFT
-ms.author: randolphwest
+description: Define the Response to an Alert
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to

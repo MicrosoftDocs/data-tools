@@ -1,8 +1,9 @@
 ---
-title: "Create an Analysis Services Job Step"
-description: "Create an Analysis Services Job Step"
-author: rwestMSFT
-ms.author: randolphwest
+title: Create an Analysis Services Job Step
+description: Create an Analysis Services Job Step
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -171,4 +172,4 @@ For more information, see [sp_add_jobstep (Transact-SQL)](/sql/relational-databa
 ## <a name="SMO"></a>Using SQL Server Management Objects  
 **To create a PowerShell Script job step**  
   
-Use the **JobStep** class by using a programming language that you choose, such as XMLA or MDX. For more information, see [SQL Server Management Objects (SMO)](/sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide).  
+Use the **JobStep** class by using a programming language that you choose, such as XMLA or MDX. For more information, see [SQL Server Management Objects (SMO)](/sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide).

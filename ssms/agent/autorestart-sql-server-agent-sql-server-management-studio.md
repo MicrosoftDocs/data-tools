@@ -1,8 +1,9 @@
 ---
 title: Auto Restart SQL Server Agent
-description: "Auto Restart SQL Server Agent"
-author: rwestMSFT
-ms.author: randolphwest
+description: Auto Restart SQL Server Agent
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 07/28/2021
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -54,4 +55,4 @@ For more information about the Windows permissions required for the SQL Server A
 
 2. Right-click **SQL Server Agent**, and then click **Properties**.  
 
-3. On the **General** page, check **Auto restart SQL Server Agent if it stops unexpectedly**.  
+3. On the **General** page, check **Auto restart SQL Server Agent if it stops unexpectedly**.

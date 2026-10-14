@@ -1,9 +1,10 @@
 ---
-title: "Remove or Delete an Item or Project"
-description: "Remove or Delete an Item or Project"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Remove or Delete an Item or Project
+description: Remove or Delete an Item or Project
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -45,8 +46,8 @@ You can delete a project permanently, but you first need to remove any reference
   
 3.  On the **File** menu, click **Delete**.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Add New Items to a Project](add-new-items-to-a-project.md)  
-[Add Existing Items to a Project](add-existing-items-to-a-project.md)  
-  
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Add New Items to a Project](add-new-items-to-a-project.md)
+- [Add existing items to a project](add-existing-items-to-a-project.md)

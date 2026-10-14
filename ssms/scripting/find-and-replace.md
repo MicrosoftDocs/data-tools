@@ -1,8 +1,9 @@
 ---
-title: "Find and Replace"
+title: Find and Replace
 description: Learn how to use the Find and Replace dialog box to find and replace text.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

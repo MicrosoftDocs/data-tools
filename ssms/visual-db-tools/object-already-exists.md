@@ -1,8 +1,9 @@
 ---
 title: Object Already Exists
-description: "Object Already Exists"
-author: rwestMSFT
-ms.author: randolphwest
+description: Object Already Exists
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: error-reference

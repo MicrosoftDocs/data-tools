@@ -1,8 +1,9 @@
 ---
-title: "Delete Objects"
+title: Delete Objects
 description: Delete Objects is used to delete a database or database object.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

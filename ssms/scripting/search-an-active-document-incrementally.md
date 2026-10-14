@@ -1,9 +1,10 @@
 ---
-title: "Search an Active Document Incrementally"
+title: Search an Active Document Incrementally
 description: Learn how to incrementally search a single document or window. As you type, the incremental search operation highlights the next occurrence of what you have typed to that point. Hidden text is ignored.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -40,9 +41,9 @@ helpviewer_keywords:
 > [!NOTE]  
 >  For a complete list of keyboard shortcut keys, see [SQL Server Management Studio Keyboard Shortcuts](../sql-server-management-studio-keyboard-shortcuts.md).  
   
-## See Also  
- [Search and Replace](search-and-replace.md)   
- [Search Documents Interactively](search-documents-interactively.md)   
- [Search Documents Using Results Lists](search-documents-using-results-lists.md)   
- [Search Text with Regular Expressions](search-text-with-regular-expressions.md)  
-  
+## Related content
+
+- [Search and Replace](search-and-replace.md)
+- [Search Documents Interactively](search-documents-interactively.md)
+- [Search Documents Using Results Lists](search-documents-using-results-lists.md)
+- [How to search text with regular expressions](search-text-with-regular-expressions.md)

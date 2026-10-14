@@ -1,8 +1,9 @@
 ---
-title: "Proxy Account Properties (References Tab)"
-description: "Proxy Account Properties (References Tab)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Proxy Account Properties (References Tab)
+description: Proxy Account Properties (References Tab)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -30,5 +31,6 @@ Names of job steps in the job that use this proxy account
 **Subsystem**  
 Subsystem this proxy account uses.  
   
-## See Also  
-[Create a SQL Server Agent Proxy](create-a-sql-server-agent-proxy.md)  
+## Related content
+
+- [Create a SQL Server Agent proxy](create-a-sql-server-agent-proxy.md)

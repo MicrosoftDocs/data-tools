@@ -1,8 +1,9 @@
 ---
 title: Advanced save Options
 description: Advanced Save Options
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

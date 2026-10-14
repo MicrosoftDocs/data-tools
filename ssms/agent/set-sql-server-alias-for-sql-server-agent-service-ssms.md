@@ -1,8 +1,9 @@
 ---
 title: Set a SQL Server Alias for the SQL Server Agent Service
-description: "Set a SQL Server Alias for the SQL Server Agent Service"
-author: rwestMSFT
-ms.author: randolphwest
+description: Set a SQL Server Alias for the SQL Server Agent Service
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -56,4 +57,4 @@ For more information about the Windows permissions required for the [!INCLUDE[ss
   
 4.  In the **Alias local host server** box, type the alias of the server to which [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent should connect.  
   
-5.  Click **OK**.  
+5.  Click **OK**.

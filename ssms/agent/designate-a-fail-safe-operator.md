@@ -1,8 +1,9 @@
 ---
-title: "Designate a Fail-Safe Operator"
-description: "Designate a Fail-Safe Operator"
-author: rwestMSFT
-ms.author: randolphwest
+title: Designate a Fail-Safe Operator
+description: Designate a Fail-Safe Operator
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -52,4 +53,4 @@ Only members of the **sysadmin** fixed server role can designate fail-safe opera
   
 6.  Select either any or all of the following check boxes to specify how the operator will be notified: **E-mail**, **Pager**, or **Net send**.  
   
-7.  When finished, click **OK**.  
+7.  When finished, click **OK**.

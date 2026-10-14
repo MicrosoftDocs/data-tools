@@ -1,8 +1,9 @@
 ---
-title: "New Job Step Properties (Advanced Page)"
-description: "Job Step Properties - New Job Step (Advanced Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: New Job Step Properties (Advanced Page)
+description: Job Step Properties - New Job Step (Advanced Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -143,6 +144,6 @@ Appends output to the existing contents of the table. Otherwise, the previous ta
 **Include step output in history**  
 Select this option to include output from the job step in the job history.  
   
-## See Also
+## Related content
 
-- [Manage Job Steps](manage-job-steps.md)
+- [Manage job steps](manage-job-steps.md)

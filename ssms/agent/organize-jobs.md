@@ -1,8 +1,9 @@
 ---
-title: "Organize Jobs"
-description: "Organize Jobs"
-author: rwestMSFT
-ms.author: randolphwest
+title: Organize Jobs
+description: Organize Jobs
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -30,4 +31,4 @@ Job categories help you organize your jobs for easy filtering and grouping. For 
 |Describes how to delete a job category.|[Delete a Job Category](delete-a-job-category.md)|  
 |Describes how to assign a job to a job category.|[Assign a Job to a Job Category](assign-a-job-to-a-job-category.md)|  
 |Describes how to change the membership of a job category.|[Change the Membership of a Job Category](change-the-membership-of-a-job-category.md)|  
-|Describes how to list the category information.|[List Job Category Information](list-job-category-information.md)|  
+|Describes how to list the category information.|[List Job Category Information](list-job-category-information.md)|

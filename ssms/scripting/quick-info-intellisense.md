@@ -1,9 +1,10 @@
 ---
-title: "Quick Info (IntelliSense)"
+title: Quick Info (IntelliSense)
 description: Learn how to use the IntelliSense Quick Info option to display the complete declaration for any identifier in your code. In SQL Server Management Studio, the option is available in the Database Engine Editor and XML Query Editor.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/14/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/14/2017
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -23,6 +24,6 @@ helpviewer_keywords:
   
  In the [!INCLUDE[ssDE](../includes/ssde-md.md)] Query Editor, **Quick Info** is available only for those parts of the [!INCLUDE[tsql](../includes/tsql-md.md)] syntax that IntelliSense supports. For example, if you move the mouse pointer over the identifier for an object that has a data type that IntelliSense does not support, the **Quick Info** pop-up window contains a message that states that the data type is not supported.  
   
-## See Also  
- [Transact-SQL Syntax Supported by IntelliSense](transact-sql-syntax-supported-by-intellisense.md)  
-  
+## Related content
+
+- [Transact-SQL Syntax Supported by IntelliSense](transact-sql-syntax-supported-by-intellisense.md)

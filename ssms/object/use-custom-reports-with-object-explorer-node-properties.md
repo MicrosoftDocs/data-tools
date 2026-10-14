@@ -1,8 +1,9 @@
 ---
-title: "Use Custom Reports with Object Explorer Node Properties"
-description: "Use Custom Reports with Object Explorer Node Properties"
-author: rwestMSFT
-ms.author: randolphwest
+title: Use Custom Reports with Object Explorer Node Properties
+description: Use Custom Reports with Object Explorer Node Properties
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

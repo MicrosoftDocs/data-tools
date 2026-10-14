@@ -1,8 +1,9 @@
 ---
 title: Arguments for External Tools
 description: Arguments for External Tools
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

@@ -1,9 +1,10 @@
 ---
-title: "Find in Files"
+title: Find in Files
 description: Learn how to search for a string or expression in a specified set of files, and how to specify the location of the search results.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -124,5 +125,6 @@ helpviewer_keywords:
  **Switch to Find Symbols**  
  This toolbar tab changes the dialog box to a **Find in Symbols** dialog box.  
   
-## See Also  
- [SQL Server Management Studio Keyboard Shortcuts](../sql-server-management-studio-keyboard-shortcuts.md)
+## Related content
+
+- [SQL Server Management Studio keyboard shortcuts](../sql-server-management-studio-keyboard-shortcuts.md)

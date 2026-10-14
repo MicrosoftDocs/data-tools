@@ -1,8 +1,9 @@
 ---
-title: "Remove Steps from a SQL Server Agent Master Job"
-description: "Remove Steps from a SQL Server Agent Master Job"
-author: rwestMSFT
-ms.author: randolphwest
+title: Remove Steps from a SQL Server Agent Master Job
+description: Remove Steps from a SQL Server Agent Master Job
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -65,4 +66,4 @@ Unless you are a member of the **sysadmin** fixed server role, you can only modi
     GO  
     ```  
   
-For more information, see [sp_delete_jobstep (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-delete-jobstep-transact-sql).  
+For more information, see [sp_delete_jobstep (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-delete-jobstep-transact-sql).

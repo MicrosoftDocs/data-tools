@@ -1,9 +1,10 @@
 ---
-title: "Search and Replace"
+title: Search and Replace
 description: Learn about the four different ways to find and replace text, each of which displays its own version of the Find and Replace dialog box. The Find and Replace option settings affect all these ways of searching.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -41,9 +42,9 @@ helpviewer_keywords:
   
  Generally, you cannot search items with graphical views.  
   
-## See Also  
- [Search an Active Document Incrementally](search-an-active-document-incrementally.md)   
- [Search Documents Interactively](search-documents-interactively.md)   
- [Search Documents Using Results Lists](search-documents-using-results-lists.md)   
- [Search Text with Regular Expressions](search-text-with-regular-expressions.md)  
-  
+## Related content
+
+- [Search an Active Document Incrementally](search-an-active-document-incrementally.md)
+- [Search Documents Interactively](search-documents-interactively.md)
+- [Search Documents Using Results Lists](search-documents-using-results-lists.md)
+- [How to search text with regular expressions](search-text-with-regular-expressions.md)

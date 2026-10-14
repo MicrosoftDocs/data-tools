@@ -1,8 +1,9 @@
 ---
-title: "SQL Server Agent Properties (History Page)"
-description: "SQL Server Agent Properties (History Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: SQL Server Agent Properties (History Page)
+description: SQL Server Agent Properties (History Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -34,5 +35,6 @@ Specifies that [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent will
 **Older than**  
 Sets the amount of time that [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent will retain entries.  
   
-## See Also  
-[SQL Server Agent Error Log](sql-server-agent-error-log.md)  
+## Related content
+
+- [SQL Server Agent Error Log](sql-server-agent-error-log.md)

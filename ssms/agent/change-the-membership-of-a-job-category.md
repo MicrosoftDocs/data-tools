@@ -1,8 +1,9 @@
 ---
-title: "Change the Membership of a Job Category"
-description: "Change the Membership of a Job Category"
-author: rwestMSFT
-ms.author: randolphwest
+title: Change the Membership of a Job Category
+description: Change the Membership of a Job Category
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -71,4 +72,4 @@ For more information, see [sp_update_job (Transact-SQL)](/sql/relational-databas
 ## <a name="SMO"></a>Using SQL Server Management Objects  
 **To change the membership of a job category**  
   
-Use the **JobCategory** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.  
+Use the **JobCategory** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.

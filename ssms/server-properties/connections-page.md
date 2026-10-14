@@ -2,9 +2,9 @@
 title: Server Properties (Connections Page)
 titleSuffix: SQL Server Management Studio
 description: View and modify connection options, default connection settings, and remote server connections by using the Connections page of the Server Properties window.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

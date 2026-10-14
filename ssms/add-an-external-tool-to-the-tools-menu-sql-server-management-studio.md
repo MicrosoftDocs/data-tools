@@ -1,8 +1,9 @@
 ---
-title: "Add an External Tool to the Tools Menu"
-description: "Add an External Tool to the Tools Menu (SQL Server Management Studio)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Add an External Tool to the Tools Menu
+description: Add an External Tool to the Tools Menu (SQL Server Management Studio)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

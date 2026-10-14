@@ -1,8 +1,9 @@
 ---
 title: Add and Change a Database Diagram
 description: "Walkthrough: Add and change a database diagram"
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

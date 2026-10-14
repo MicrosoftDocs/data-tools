@@ -1,8 +1,9 @@
 ---
-title: "SQL Server Agent Properties (Connection Page)"
-description: "SQL Server Agent Properties (Connection Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: SQL Server Agent Properties (Connection Page)
+description: SQL Server Agent Properties (Connection Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -35,4 +36,4 @@ Sets [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Authentication as th
 Specifies the login name to use to connect to [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].  
   
 **Password**  
-Specifies the password to use to connect to [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].  
+Specifies the password to use to connect to [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].

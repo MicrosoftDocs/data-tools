@@ -1,9 +1,10 @@
 ---
-title: "Change the Connection Associated with a Query"
-description: "Change the Connection Associated with a Query"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Change the Connection Associated with a Query
+description: Change the Connection Associated with a Query
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -24,8 +25,8 @@ A query can be executed against several different servers or databases by changi
   
 2.  In the **Connect to Database Engine** dialog box, provide the new connection information, and then click **Connect**.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Associate a Query with a Connection in a Project](associate-a-query-with-a-connection-in-a-project.md)  
-[View or Change the Properties of a Connection in a Project](view-or-change-the-properties-of-a-connection-in-a-project.md)  
-  
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Associate a Query with a Connection in a Project](associate-a-query-with-a-connection-in-a-project.md)
+- [View or Change the Properties of a Connection in a Project](view-or-change-the-properties-of-a-connection-in-a-project.md)

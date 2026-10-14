@@ -1,8 +1,9 @@
 ---
-title: "Hide System Objects in Object Explorer"
+title: Hide System Objects in Object Explorer
 description: Learn how to hide system objects in Object Explorer in SQL Server.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

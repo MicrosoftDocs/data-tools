@@ -1,9 +1,9 @@
 ---
 title: Update SQL Server Management Studio
 description: Update your SQL Server Management Studio (SSMS) installation to the most recent release to access the latest feature changes and fixes for known issues.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest, mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 04/14/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

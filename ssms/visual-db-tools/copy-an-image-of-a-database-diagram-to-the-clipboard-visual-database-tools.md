@@ -1,8 +1,9 @@
 ---
 title: Copy an Image of a Database Diagram to the Clipboard
-description: "Copy an image of a database diagram to the clipboard (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Copy an image of a database diagram to the clipboard (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

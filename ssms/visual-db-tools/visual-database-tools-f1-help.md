@@ -1,8 +1,9 @@
 ---
 title: Visual Database Tools F1 Help
-description: "Visual Database Tools F1 Help - Comprehensive documentation for using Visual Database Tools in SSMS."
-author: rwestMSFT
-ms.author: randolphwest
+description: Visual Database Tools F1 Help - Comprehensive documentation for using Visual Database Tools in SSMS.
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

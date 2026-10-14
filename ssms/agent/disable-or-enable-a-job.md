@@ -1,8 +1,9 @@
 ---
-title: "Disable or Enable a Job"
+title: Disable or Enable a Job
 description: Disable or enable a SQL Server Agent job, using SQL Server Management Studio or Transact-SQL.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

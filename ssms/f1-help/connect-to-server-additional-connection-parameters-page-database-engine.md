@@ -1,9 +1,9 @@
 ---
-title: "Connect to Server (Additional Connection Parameters Page) Database Engine"
+title: Connect to Server (Additional Connection Parameters Page) Database Engine
 description: Connect to Server (Additional Connection Parameters page) Database Engine.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

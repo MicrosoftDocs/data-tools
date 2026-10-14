@@ -2,9 +2,9 @@
 title: MCP Servers
 titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to use Model Context Protocol (MCP) servers with GitHub Copilot Agent mode in SQL Server Management Studio (SSMS) to extend Copilot capabilities.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: erinstellato
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

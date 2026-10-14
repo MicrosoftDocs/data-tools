@@ -1,8 +1,9 @@
 ---
 title: Set the SQL Server Connection for the SQL Server Agent Service
-description: "Set the SQL Server Connection for the SQL Server Agent Service"
-author: rwestMSFT
-ms.author: randolphwest
+description: Set the SQL Server Connection for the SQL Server Agent Service
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -54,4 +55,4 @@ For more information about the Windows permissions required for the [!INCLUDE[ss
   
 3.  In the **SQL Server Agent Properties** dialog box, under **Select a page**, click **Connection**.  
   
-4.  Under **SQL Server connection**, select **Use Windows Authentication** to enable [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent to connect to an instance of the [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] [!INCLUDE[ssDE](../includes/ssde-md.md)] with [!INCLUDE[msCoName](../includes/msconame-md.md)] Windows Authentication. Connections to [!INCLUDE[ssVersion2005](../includes/ssversion2005-md.md)] and later databases require Windows Authentication.  
+4.  Under **SQL Server connection**, select **Use Windows Authentication** to enable [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent to connect to an instance of the [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] [!INCLUDE[ssDE](../includes/ssde-md.md)] with [!INCLUDE[msCoName](../includes/msconame-md.md)] Windows Authentication. Connections to [!INCLUDE[ssVersion2005](../includes/ssversion2005-md.md)] and later databases require Windows Authentication.

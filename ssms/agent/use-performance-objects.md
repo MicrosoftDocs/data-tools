@@ -1,8 +1,9 @@
 ---
-title: "Use Performance Objects"
-description: "Use Performance Objects"
-author: rwestMSFT
-ms.author: randolphwest
+title: Use Performance Objects
+description: Use Performance Objects
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -44,6 +45,7 @@ The following table shows how the [!INCLUDE[ssNoVersion](../includes/ssnoversion
 |[SQLAgent:Alerts](/sql/relational-databases/performance-monitor/sql-server-agent-alerts-object)|Information about number of alerts and notifications|  
 |[SQLAgent:Statistics](/sql/relational-databases/performance-monitor/sql-server-agent-statistics-object)|General performance information|  
   
-## See Also  
-[Monitor and Tune for Performance](/sql/relational-databases/performance/monitor-and-tune-for-performance)  
-[How to: Start System Monitor (Windows)](/sql/relational-databases/performance/start-system-monitor-windows)  
+## Related content
+
+- [Monitor and Tune for Performance](/sql/relational-databases/performance/monitor-and-tune-for-performance)
+- [How to: Start System Monitor (Windows)](/sql/relational-databases/performance/start-system-monitor-windows)

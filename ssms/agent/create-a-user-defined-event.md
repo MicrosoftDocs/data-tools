@@ -1,8 +1,9 @@
 ---
-title: "Create a User-Defined Event"
-description: "Create a User-Defined Event"
-author: rwestMSFT
-ms.author: randolphwest
+title: Create a User-Defined Event
+description: Create a User-Defined Event
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -74,5 +75,6 @@ The following tasks provide information about how to create user-defined events 
   
 -   [Transact-SQL](/sql/relational-databases/system-stored-procedures/sp-update-alert-transact-sql)  
   
-## See Also  
-[sp_update_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-alert-transact-sql)  
+## Related content
+
+- [sp_update_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-alert-transact-sql)

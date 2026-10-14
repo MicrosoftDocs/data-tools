@@ -1,9 +1,9 @@
 ---
 title: Configure Feedback Group Policies for SQL Server Management Studio
 description: Configure group policies that control submission of feedback and survey responses for enterprise deployments of SQL Server Management Studio (SSMS)
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: erinstellato
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 07/08/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

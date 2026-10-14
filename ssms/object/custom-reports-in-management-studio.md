@@ -1,8 +1,9 @@
 ---
-title: "Custom Reports in Management Studio"
+title: Custom Reports in Management Studio
 description: Learn about custom reports available in SQL Server Management Studio.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

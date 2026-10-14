@@ -1,8 +1,9 @@
 ---
 title: Add Related Tables to Diagrams
-description: "Add related tables to diagrams (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Add related tables to diagrams (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

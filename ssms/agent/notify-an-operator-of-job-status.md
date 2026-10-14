@@ -1,8 +1,9 @@
 ---
-title: "Notify an Operator of Job Status"
-description: "Notify an Operator of Job Status"
-author: rwestMSFT
-ms.author: randolphwest
+title: Notify an Operator of Job Status
+description: Notify an Operator of Job Status
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

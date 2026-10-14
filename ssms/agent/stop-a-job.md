@@ -1,8 +1,9 @@
 ---
-title: "Stop a Job"
+title: Stop a Job
 description: Stop a SQL Agent job with SQL Server Management Studio, Transact-SQL, or SQL Server Management Objects.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

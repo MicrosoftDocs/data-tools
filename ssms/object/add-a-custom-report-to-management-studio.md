@@ -1,8 +1,9 @@
 ---
-title: "Add a Custom Report to Management Studio"
-description: "Add a Custom Report to Management Studio"
-author: rwestMSFT
-ms.author: randolphwest
+title: Add a Custom Report to Management Studio
+description: Add a Custom Report to Management Studio
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

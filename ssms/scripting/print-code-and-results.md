@@ -1,9 +1,10 @@
 ---
-title: "Print Code and Results"
+title: Print Code and Results
 description: Learn how to specify the coloration of text when printed. The colors can differ from those used for display. Learn also how to control whether line numbers appear in the listing.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -25,6 +26,6 @@ When you print a query or file, colorized elements print in color if your printe
   
  If you have line numbers enabled in the Editor, the line numbers will not print unless you select **Include line numbers** in the **Print** dialog box on the **File** menu.  
   
-## See Also  
- [Change Font Color, Size, and Style](change-font-color-size-and-style.md)  
-  
+## Related content
+
+- [Change font color, size, and style](change-font-color-size-and-style.md)

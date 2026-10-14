@@ -1,8 +1,9 @@
 ---
-title: "Add Transact-SQL Snippets"
+title: Add Transact-SQL Snippets
 description: Learn how to add your own Transact-SQL code snippets to the set of predefined snippets included in SQL Server.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -108,4 +109,4 @@ The following example creates a `TRY...CATCH` surround-with snippet and imports 
 
 ## Related content
 
-- [Insert Surround-with Transact-SQL snippets](insert-surround-with-transact-sql-snippets.md)
+- [Insert surround-with Transact-SQL snippets](insert-surround-with-transact-sql-snippets.md)

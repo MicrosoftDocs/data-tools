@@ -1,8 +1,9 @@
 ---
-title: "Enlist a Target Server to a Master Server"
-description: "Enlist a Target Server to a Master Server"
-author: rwestMSFT
-ms.author: randolphwest
+title: Enlist a Target Server to a Master Server
+description: Enlist a Target Server to a Master Server
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -42,5 +43,6 @@ Full Transport Layer Security (TLS), previously known as Secure Sockets Layer (S
   
 1.  Use the **sp_msx_enlist** stored procedure.  For more information, see [sp_msx_enlist (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-msx-enlist-transact-sql)  
   
-## See Also  
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)  
+## Related content
+
+- [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)

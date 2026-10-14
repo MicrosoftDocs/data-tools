@@ -1,9 +1,10 @@
 ---
-title: "Open an Existing Solution"
-description: "Open an Existing Solution"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Open an Existing Solution
+description: Open an Existing Solution
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -22,7 +23,7 @@ You can have only one solution at a time open in Solution Explorer.
   
 2.  In the **Open Project** dialog box, navigate to the solution you want, click the solution, and then click **Open**.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Create a New Solution](create-a-new-solution.md)  
-  
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Create a new solution](create-a-new-solution.md)

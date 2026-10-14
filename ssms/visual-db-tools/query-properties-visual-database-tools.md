@@ -1,8 +1,9 @@
 ---
 title: Query Properties
-description: "Query Properties (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Query Properties (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

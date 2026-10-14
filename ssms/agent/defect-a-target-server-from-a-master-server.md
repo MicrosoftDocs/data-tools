@@ -1,8 +1,9 @@
 ---
-title: "Defect a Target Server from a Master Server"
-description: "Defect a Target Server from a Master Server"
-author: rwestMSFT
-ms.author: randolphwest
+title: Defect a Target Server from a Master Server
+description: Defect a Target Server from a Master Server
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -58,7 +59,8 @@ For more information, see [sp_msx_defect (Transact-SQL)](/sql/relational-databas
 ## <a name="PowerShellProcedure"></a>Using SQL Server Management Objects (SMO)  
 Use the **MsxDefect Method**.  
   
-## See Also  
-[Create a Multiserver Environment](create-a-multiserver-environment.md)  
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)  
-[Defect Multiple Target Servers from a Master Server](defect-multiple-target-servers-from-a-master-server.md)  
+## Related content
+
+- [Create a multiserver environment](create-a-multiserver-environment.md)
+- [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)
+- [Defect Multiple Target Servers from a Master Server](defect-multiple-target-servers-from-a-master-server.md)

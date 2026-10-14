@@ -2,8 +2,9 @@
 title: Edit a Breakpoint Location
 titleSuffix: T-SQL debugger
 description: Learn how to move a breakpoint in a Transact-SQL script file to another location in the script, or to a different script.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/04/2019
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -35,7 +36,7 @@ When you edit a breakpoint location, the breakpoint moves to the new location, c
   
      The **Allow the source code to be different from the original version** option has no effect when debugging [!INCLUDE[tsql](../includes/tsql-md.md)].  
   
-## See Also
+## Related content
 
 - [Specify a Hit Count](/sql/ssdt/debugger/specify-hit-count)
 - [Specify a Breakpoint Action](/sql/ssdt/debugger/specify-breakpoint-action)

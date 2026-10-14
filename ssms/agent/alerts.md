@@ -1,8 +1,9 @@
 ---
 title: Alerts
 description: Learn how SQL Server Agent generates alerts based on events in the Windows application log.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

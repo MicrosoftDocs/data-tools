@@ -1,9 +1,10 @@
 ---
-title: "View Project Properties"
-description: "View Project Properties"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: View Project Properties
+description: View Project Properties
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -26,6 +27,6 @@ You can view properties associated with your projects in the Properties window.
   
 Project properties, such as the date created, are read-only and cannot be changed from the Properties window.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-  
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)

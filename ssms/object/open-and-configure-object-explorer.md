@@ -1,8 +1,9 @@
 ---
 title: Open and Configure Object Explorer
 description: Learn how to access and configure Object Explorer to browse Microsoft SQL Database Engine servers and databases.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

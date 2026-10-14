@@ -1,8 +1,9 @@
 ---
-title: "View Job Step Information"
-description: "View Job Step Information"
-author: rwestMSFT
-ms.author: randolphwest
+title: View Job Step Information
+description: View Job Step Information
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -65,4 +66,4 @@ You can view only those jobs that you own, unless you are a member of the **sysa
   
     -   When you are connected to [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] or later, you can click **View** only when **Log to table** is checked. In this case, the job step output is written to the **sysjobstepslogs** table in the **msdb** database.  
   
-    -   The **View** button is disabled when job step output is written to a file. To view a job step output file, use Notepad.  
+    -   The **View** button is disabled when job step output is written to a file. To view a job step output file, use Notepad.

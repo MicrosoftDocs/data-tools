@@ -1,8 +1,9 @@
 ---
-title: "Automated Administration Across an Enterprise"
-description: "Automated Administration Across an Enterprise"
-author: rwestMSFT
-ms.author: randolphwest
+title: Automated Administration Across an Enterprise
+description: Automated Administration Across an Enterprise
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -74,17 +75,18 @@ Contains information about event forwarding from target servers to master server
 [Tune Automated Administration Across an Enterprise](tune-automated-administration-across-an-enterprise.md)  
 Contains information about how automated administration in a multiserver environment takes advantage of the self-tuning features of [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].  
   
-## See Also  
-[Backward Compatibility Topics for Installing the SQL Server Database Engine](/sql/database-engine/discontinued-database-engine-functionality-in-sql-server)  
-[Registering Servers](../register-servers/register-servers.md)  
-[sp_add_targetservergroup](/sql/relational-databases/system-stored-procedures/sp-add-targetservergroup-transact-sql)  
-[sp_delete_targetserver](/sql/relational-databases/system-stored-procedures/sp-delete-targetserver-transact-sql)  
-[sp_delete_targetservergroup](/sql/relational-databases/system-stored-procedures/sp-delete-targetservergroup-transact-sql)  
-[sp_help_downloadlist](/sql/relational-databases/system-stored-procedures/sp-help-downloadlist-transact-sql)  
-[sp_help_jobserver](/sql/relational-databases/system-stored-procedures/sp-help-jobserver-transact-sql)  
-[sp_help_targetservergroup](/sql/relational-databases/system-stored-procedures/sp-help-targetservergroup-transact-sql)  
-[sp_resync_targetserver](/sql/relational-databases/system-stored-procedures/sp-resync-targetserver-transact-sql)  
-[sp_update_targetservergroup](/sql/relational-databases/system-stored-procedures/sp-update-targetservergroup-transact-sql)  
-[sysjobservers](/sql/relational-databases/system-tables/dbo-sysjobservers-transact-sql)  
-[syslogins](/sql/relational-databases/system-compatibility-views/sys-syslogins-transact-sql)  
-[systargetservers](/sql/relational-databases/system-tables/dbo-systargetservers-transact-sql)  
+## Related content
+
+- [Backward Compatibility Topics for Installing the SQL Server Database Engine](/sql/database-engine/discontinued-database-engine-functionality-in-sql-server)
+- [Registered Servers in SQL Server Management Studio](../register-servers/register-servers.md)
+- [sp_add_targetservergroup](/sql/relational-databases/system-stored-procedures/sp-add-targetservergroup-transact-sql)
+- [sp_delete_targetserver](/sql/relational-databases/system-stored-procedures/sp-delete-targetserver-transact-sql)
+- [sp_delete_targetservergroup](/sql/relational-databases/system-stored-procedures/sp-delete-targetservergroup-transact-sql)
+- [sp_help_downloadlist](/sql/relational-databases/system-stored-procedures/sp-help-downloadlist-transact-sql)
+- [sp_help_jobserver](/sql/relational-databases/system-stored-procedures/sp-help-jobserver-transact-sql)
+- [sp_help_targetservergroup](/sql/relational-databases/system-stored-procedures/sp-help-targetservergroup-transact-sql)
+- [sp_resync_targetserver](/sql/relational-databases/system-stored-procedures/sp-resync-targetserver-transact-sql)
+- [sp_update_targetservergroup](/sql/relational-databases/system-stored-procedures/sp-update-targetservergroup-transact-sql)
+- [sysjobservers](/sql/relational-databases/system-tables/dbo-sysjobservers-transact-sql)
+- [syslogins](/sql/relational-databases/system-compatibility-views/sys-syslogins-transact-sql)
+- [systargetservers](/sql/relational-databases/system-tables/dbo-systargetservers-transact-sql)

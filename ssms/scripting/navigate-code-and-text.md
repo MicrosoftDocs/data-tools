@@ -1,8 +1,9 @@
 ---
 title: Navigate Code and Text
 description: "Learn how to navigate through a document with various techniques: set a bookmark for a location to make it easy to return to that location; search incrementally; use mouse and keyboard; and, use the Go To command to go to a line by specifying its line number."
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

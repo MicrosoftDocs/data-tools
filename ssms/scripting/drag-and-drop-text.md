@@ -1,8 +1,9 @@
 ---
 title: Drag and Drop Text
 description: Learn how to drag text from an editor or Object Explorer and then drop it in an editor location or the Recycle Bin.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -36,4 +37,4 @@ Dragging text moves it; that is, the text is erased from the old location and mo
 
 ## Related content
 
-- [Navigate Code and Text](navigate-code-and-text.md)
+- [Navigate code and text](navigate-code-and-text.md)

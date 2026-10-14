@@ -1,8 +1,9 @@
 ---
-title: "Job Categories - Manage Job Categories"
-description: "Job Categories - Manage Job Categories"
-author: rwestMSFT
-ms.author: randolphwest
+title: Job Categories - Manage Job Categories
+description: Job Categories - Manage Job Categories
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -41,4 +42,4 @@ Queries the server for the current information.
   
 #### To access the Job Categories dialog box  
   
-1.  In **Object Explorer**, expand **SQL Server Agent**, right-click **Jobs**, and then click **Manage Job Categories**.  
+1.  In **Object Explorer**, expand **SQL Server Agent**, right-click **Jobs**, and then click **Manage Job Categories**.

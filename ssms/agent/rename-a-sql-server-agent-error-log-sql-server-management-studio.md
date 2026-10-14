@@ -1,8 +1,9 @@
 ---
 title: Rename a SQL Server Agent Error Log
-description: "Rename a SQL Server Agent Error Log"
-author: rwestMSFT
-ms.author: randolphwest
+description: Rename a SQL Server Agent Error Log
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -56,4 +57,4 @@ For more information about the Windows permissions required for the [!INCLUDE[ss
   
 4.  In the **Configure SQL Server Agent Error Logs** dialog box, in the **Error log file** box, enter the new file path and file name for the error log. Alternately, click the ellipsis **(...)** to open the **Specify agent error log location** dialog box.  
   
-5.  When finished, click **OK**.  
+5.  When finished, click **OK**.

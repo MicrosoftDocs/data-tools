@@ -1,8 +1,9 @@
 ---
 title: Make a Master Server
 description: Make a Master Server
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 05/14/2021
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -117,7 +118,7 @@ GO
 
 For more information, see [sp_msx_enlist (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-msx-enlist-transact-sql).  
 
-## See Also
+## Related content
 
-- [Create a Multiserver Environment](create-a-multiserver-environment.md)
+- [Create a multiserver environment](create-a-multiserver-environment.md)
 - [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)

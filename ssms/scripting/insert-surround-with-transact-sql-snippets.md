@@ -1,8 +1,9 @@
 ---
 title: Insert Surround-With Transact-SQL Snippets
 description: Learn how to insert a surround-with snippet to serve as a starting point for placing statements in code blocks.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -41,4 +42,4 @@ After inserting the snippet, you must change the replacement text to form a vali
 
 ## Related content
 
-- [Insert Transact-SQL Snippets](insert-transact-sql-snippets.md)
+- [Insert Transact-SQL snippets](insert-transact-sql-snippets.md)

@@ -1,8 +1,9 @@
 ---
-title: "Job Properties - New Job (Notifications Page)"
-description: "Job Properties - New Job (Notifications Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Job Properties - New Job (Notifications Page)
+description: Job Properties - New Job (Notifications Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -34,6 +35,7 @@ Select this option to write an entry in the application event log when the job c
 **Automatically delete job**  
 Select this option to delete the job when the job completes. After selecting this option, specify the condition that will trigger deletion of the job: **When the job succeeds**; **When the job fails**; or **When the job completes**.  
   
-## See Also  
-[Implement Jobs](implement-jobs.md)  
-[How to: Configure SQL Server Agent Mail to Use Database Mail](/sql/relational-databases/database-mail/configure-sql-server-agent-mail-to-use-database-mail)  
+## Related content
+
+- [Implement Jobs](implement-jobs.md)
+- [How to: Configure SQL Server Agent Mail to Use Database Mail](/sql/relational-databases/database-mail/configure-sql-server-agent-mail-to-use-database-mail)
