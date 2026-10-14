@@ -30,5 +30,6 @@ To manage [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent jobs, you
 |Describes how to stop a [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent job.|[Stop a Job](stop-a-job.md)|  
 |Describes how to disable or enable a [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent job.|[Disable or Enable a Job](disable-or-enable-a-job.md)|  
   
-## See Also  
-[sysdownloadlist](/sql/relational-databases/system-tables/dbo-sysdownloadlist-transact-sql)
+## Related content
+
+- [sysdownloadlist](/sql/relational-databases/system-tables/dbo-sysdownloadlist-transact-sql)

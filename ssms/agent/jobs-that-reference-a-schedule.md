@@ -38,5 +38,6 @@ Read-only. Indicates whether this job is currently enabled.
 **Category**  
 Job category.  
   
-## See Also  
-[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)
+## Related content
+
+- [Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)

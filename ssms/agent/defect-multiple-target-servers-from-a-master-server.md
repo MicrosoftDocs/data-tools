@@ -42,7 +42,8 @@ This topic describes how to defect multiple target servers from a multiserver ad
   
     -   Click **These target servers**, and then click the corresponding **Select** box, to defect some, but not all, target servers of this master server.  
   
-## See Also  
-[Create a Multiserver Environment](create-a-multiserver-environment.md)  
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)  
-[Defect a Target Server from a Master Server](defect-a-target-server-from-a-master-server.md)
+## Related content
+
+- [Create a multiserver environment](create-a-multiserver-environment.md)
+- [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)
+- [Defect a Target Server from a Master Server](defect-a-target-server-from-a-master-server.md)

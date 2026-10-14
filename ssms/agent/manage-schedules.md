@@ -44,5 +44,6 @@ Click this button to delete the selected schedule.
 **Properties**  
 Click this button to change the properties of the selected schedule.  
   
-## See Also  
-[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)
+## Related content
+
+- [Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)

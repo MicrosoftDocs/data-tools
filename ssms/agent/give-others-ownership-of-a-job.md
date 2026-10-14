@@ -82,4 +82,4 @@ For detailed information, see [Implement SQL Server Agent security](implement-sq
 ## Related content
 
 - [Implement Jobs](implement-jobs.md)
-- [Create Jobs](create-jobs.md)
+- [Create SQL Server Agent jobs](create-jobs.md)

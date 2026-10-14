@@ -42,4 +42,4 @@ After inserting the snippet, you must change the replacement text to form a vali
 
 ## Related content
 
-- [Insert Transact-SQL Snippets](insert-transact-sql-snippets.md)
+- [Insert Transact-SQL snippets](insert-transact-sql-snippets.md)

@@ -49,7 +49,7 @@ To modify information about a connection, use the properties window in [!INCLUDE
 |Describes how to change the connection information for a query.|[Change the Connection Associated with a Query](change-the-connection-associated-with-a-query.md)|  
 |Describes how to change connection properties.|[View or Change the Properties of a Connection in a Project](view-or-change-the-properties-of-a-connection-in-a-project.md)|  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Solutions &#40;SQL Server Management Studio&#41;](solutions-sql-server-management-studio.md)  
-[Solution Explorer Source Control](solution-explorer.md)
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Solutions (SQL Server Management Studio)](solutions-sql-server-management-studio.md)

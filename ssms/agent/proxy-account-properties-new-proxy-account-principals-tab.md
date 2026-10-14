@@ -31,5 +31,6 @@ Adds a principal to the list.
 **Remove**  
 Removes the selected principal from the list.  
   
-## See Also  
-[Create a SQL Server Agent Proxy](create-a-sql-server-agent-proxy.md)
+## Related content
+
+- [Create a SQL Server Agent proxy](create-a-sql-server-agent-proxy.md)

@@ -26,7 +26,8 @@ The properties of a connection saved in a project can be viewed and some can be 
   
 2.  View the connection properties in the Properties window. You can change the **Execution Timeout**, **Database**, and **Login Timeout** properties.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Associate a Query with a Connection in a Project](associate-a-query-with-a-connection-in-a-project.md)  
-[Change the Connection Associated with a Query](change-the-connection-associated-with-a-query.md)
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Associate a Query with a Connection in a Project](associate-a-query-with-a-connection-in-a-project.md)
+- [Change the Connection Associated with a Query](change-the-connection-associated-with-a-query.md)

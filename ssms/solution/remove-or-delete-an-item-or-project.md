@@ -46,7 +46,8 @@ You can delete a project permanently, but you first need to remove any reference
   
 3.  On the **File** menu, click **Delete**.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Add New Items to a Project](add-new-items-to-a-project.md)  
-[Add Existing Items to a Project](add-existing-items-to-a-project.md)
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Add New Items to a Project](add-new-items-to-a-project.md)
+- [Add existing items to a project](add-existing-items-to-a-project.md)

@@ -49,5 +49,6 @@ Select the time of day after which [!INCLUDE[ssNoVersion](../includes/ssnoversio
 **Workday end**  
 Select the time of day after which [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent no longer sends messages to the pager.  
   
-## See Also  
-[Operators](operators.md)
+## Related content
+
+- [Operators](operators.md)

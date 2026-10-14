@@ -27,5 +27,6 @@ You can view properties associated with your projects in the Properties window.
   
 Project properties, such as the date created, are read-only and cannot be changed from the Properties window.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)

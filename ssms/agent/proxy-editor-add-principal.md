@@ -31,5 +31,6 @@ Lists the principals of the type chosen.
 **Name**  
 Select the name of the principal to grant access to that principal, or select **Name** to grant access to all principals in the list.  
   
-## See Also  
-[Create a SQL Server Agent Proxy](create-a-sql-server-agent-proxy.md)
+## Related content
+
+- [Create a SQL Server Agent proxy](create-a-sql-server-agent-proxy.md)

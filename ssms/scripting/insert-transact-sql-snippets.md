@@ -38,4 +38,4 @@ You can use the **Insert Snippet** menu to open a categorized list of snippets t
 
 ## Related content
 
-- [Insert Surround-with Transact-SQL snippets](insert-surround-with-transact-sql-snippets.md)
+- [Insert surround-with Transact-SQL snippets](insert-surround-with-transact-sql-snippets.md)

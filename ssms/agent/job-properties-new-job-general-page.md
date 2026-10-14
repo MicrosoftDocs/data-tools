@@ -53,6 +53,7 @@ Displays the date and time that the job last started running. Only available on 
 **View Job History**  
 View the job history for the job. Only available on the **Job PropertiesGeneral** page.  
   
-## See Also  
-[Implement Jobs](implement-jobs.md)  
-[Job Categories - Manage Job Categories](job-categories-manage-job-categories.md)
+## Related content
+
+- [Implement Jobs](implement-jobs.md)
+- [Job Categories - Manage Job Categories](job-categories-manage-job-categories.md)

@@ -37,5 +37,5 @@ When a login (or a contained database user) connects and is authenticated, the c
 
 ## Related content
 
-- [Use SQL Server Management Studio](sql-server-management-studio-ssms.md)
+- [What is SQL Server Management Studio (SSMS)?](sql-server-management-studio-ssms.md)
 - [The SQL Server Management Studio Environment](the-sql-server-management-studio-environment.md)

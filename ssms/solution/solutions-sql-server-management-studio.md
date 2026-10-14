@@ -46,7 +46,7 @@ Solutions and projects can be integrated into a [!INCLUDE[msCoName](../includes/
 |Describes how to move items between projects in a solution.|[Move Items in a Solution](move-items-in-a-solution.md)|  
 |Describes how to rename a solution or the items in the solution.|[Rename Solutions and Project Items](rename-solutions-and-project-items.md)|  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Projects &#40;SQL Server Management Studio&#41;](projects-sql-server-management-studio.md)  
-[Solution Explorer Source Control](solution-explorer.md)
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Projects (SQL Server Management Studio)](projects-sql-server-management-studio.md)

@@ -40,5 +40,6 @@ Lists the job numbers attached to the schedule. Click a number to view the prope
 **Properties**  
 Launches the **Job Schedule Properties** dialog where you can view information about the schedule.  
   
-## See Also  
-[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)
+## Related content
+
+- [Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)

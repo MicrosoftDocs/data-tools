@@ -26,6 +26,6 @@ A [!INCLUDE[tsql](../includes/tsql-md.md)].code snippet is a template containing
 |Describes how to finish building a complete [!INCLUDE[tsql](../includes/tsql-md.md)] statement or block after inserting a code snippet.|[Complete Transact-SQL Snippets](complete-transact-sql-snippets.md)|  
 |Describes how to build your own custom snippets and add them to the set of SQL Server snippets.|[Add Transact-SQL Snippets](add-transact-sql-snippets.md)|  
   
-## See Also
+## Related content
 
-[Query and Text Editors &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)
+- [Query Editor (SQL Server Management Studio)](../f1-help/database-engine-query-editor-sql-server-management-studio.md)

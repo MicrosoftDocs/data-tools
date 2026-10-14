@@ -32,6 +32,7 @@ Modify the selected alert definition.
 **Remove**  
 Remove the selected alert from the job, and delete the alert.  
   
-## See Also  
-[Alerts](alerts.md)  
-[Implement Jobs](implement-jobs.md)
+## Related content
+
+- [SQL Server Agent alerts](alerts.md)
+- [Implement Jobs](implement-jobs.md)

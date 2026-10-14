@@ -39,5 +39,6 @@ You can run a job manually, or you can configure it to run according to a schedu
 |Contains information about how to view existing jobs, their history once executes, and how to modify them.|[View or Modify Jobs](view-or-modify-jobs.md)|  
 |Contains information about how to delete jobs.|[Delete Jobs](delete-jobs.md)|  
   
-## See Also  
-[Implement SQL Server Agent Security](implement-sql-server-agent-security.md)
+## Related content
+
+- [Implement SQL Server Agent security](implement-sql-server-agent-security.md)

@@ -36,7 +36,7 @@ When you edit a breakpoint location, the breakpoint moves to the new location, c
   
      The **Allow the source code to be different from the original version** option has no effect when debugging [!INCLUDE[tsql](../includes/tsql-md.md)].  
   
-## See Also
+## Related content
 
 - [Specify a Hit Count](/sql/ssdt/debugger/specify-hit-count)
 - [Specify a Breakpoint Action](/sql/ssdt/debugger/specify-breakpoint-action)

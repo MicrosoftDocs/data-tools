@@ -35,5 +35,6 @@ Change the category of the job by checking or clearing it.
 **Job**  
 Displays the name of the job.  
   
-## See Also  
-[Create Jobs](create-jobs.md)
+## Related content
+
+- [Create SQL Server Agent jobs](create-jobs.md)

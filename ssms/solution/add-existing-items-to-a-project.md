@@ -70,6 +70,6 @@ Add new items to a project to extend application functionality. An existing item
 
 ## Related content
 
-- [Solution Explorer](solution-explorer.md)
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
 - [Add New Items to a Project](add-new-items-to-a-project.md)
 - [Remove or Delete an Item or Project](remove-or-delete-an-item-or-project.md)

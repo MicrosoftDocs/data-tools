@@ -41,5 +41,6 @@ Change the selected job step.
 **Delete**  
 Delete the selected job step. When job steps are deleted their output log is automatically deleted.  
   
-## See Also  
-[Implement Jobs](implement-jobs.md)
+## Related content
+
+- [Implement Jobs](implement-jobs.md)

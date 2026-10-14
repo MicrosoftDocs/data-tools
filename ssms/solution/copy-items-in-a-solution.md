@@ -31,6 +31,7 @@ You can copy items using Solution Explorer or Windows Explorer.
 > [!NOTE]  
 > Connections cannot be copied between projects. When copying a query with an associated connection to another project, its associated connection is not copied to the target project. You must manually create the connection in the target project.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Move Items in a Solution](move-items-in-a-solution.md)
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Move Items in a Solution](move-items-in-a-solution.md)

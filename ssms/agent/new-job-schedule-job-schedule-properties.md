@@ -92,6 +92,7 @@ Select the date for the job to run.
 **Time**  
 Select the time for the job to run.  
   
-## See Also  
-[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)  
-[Schedule a Job](schedule-a-job.md)
+## Related content
+
+- [Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)
+- [Configure a SQL Server Agent job schedule](schedule-a-job.md)

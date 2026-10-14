@@ -35,6 +35,7 @@ Select this option to write an entry in the application event log when the job c
 **Automatically delete job**  
 Select this option to delete the job when the job completes. After selecting this option, specify the condition that will trigger deletion of the job: **When the job succeeds**; **When the job fails**; or **When the job completes**.  
   
-## See Also  
-[Implement Jobs](implement-jobs.md)  
-[How to: Configure SQL Server Agent Mail to Use Database Mail](/sql/relational-databases/database-mail/configure-sql-server-agent-mail-to-use-database-mail)
+## Related content
+
+- [Implement Jobs](implement-jobs.md)
+- [How to: Configure SQL Server Agent Mail to Use Database Mail](/sql/relational-databases/database-mail/configure-sql-server-agent-mail-to-use-database-mail)

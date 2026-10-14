@@ -44,6 +44,7 @@ Writes the error log file as a non-Unicode file. This reduces the amount of disk
 **Net send recipient**  
 Type the name of an operator to receive net send notification of messages that [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent writes to the log file.  
   
-## See Also  
-[Operators](operators.md)  
-[SQL Server Agent Error Log](sql-server-agent-error-log.md)
+## Related content
+
+- [Operators](operators.md)
+- [SQL Server Agent Error Log](sql-server-agent-error-log.md)

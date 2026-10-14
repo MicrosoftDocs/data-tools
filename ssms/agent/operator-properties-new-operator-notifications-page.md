@@ -45,5 +45,6 @@ Notify this operator by sending e-mail to the pager address.
 **Net send**  
 Notify this operator using **net send**.  
   
-## See Also  
-[Operators](operators.md)
+## Related content
+
+- [Operators](operators.md)

@@ -41,5 +41,6 @@ Select the subsystems that the proxy account has access to.
 **Reassign job steps to**  
 Select the proxy to reassign job steps to. This list is enabled when you revoke access to a subsystem that the proxy previously had access to.  
   
-## See Also  
-[Create a SQL Server Agent Proxy](create-a-sql-server-agent-proxy.md)
+## Related content
+
+- [Create a SQL Server Agent proxy](create-a-sql-server-agent-proxy.md)

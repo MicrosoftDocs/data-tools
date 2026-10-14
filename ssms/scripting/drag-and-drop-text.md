@@ -37,4 +37,4 @@ Dragging text moves it; that is, the text is erased from the old location and mo
 
 ## Related content
 
-- [Navigate Code and Text](navigate-code-and-text.md)
+- [Navigate code and text](navigate-code-and-text.md)

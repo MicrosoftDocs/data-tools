@@ -47,5 +47,6 @@ View the date and time of the target server in the local time zone for that serv
 **Polling interval**  
 View the current polling interval for the target server.  
   
-## See Also  
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)
+## Related content
+
+- [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)

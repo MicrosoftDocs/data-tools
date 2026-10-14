@@ -45,4 +45,4 @@ To specify a default editor (and language encoding options, if applicable) for t
 
 ## Related content
 
-- [Associate file extensions to a code editor](../scripting/associate-file-extensions-to-a-code-editor.md)
+- [Associate file extensions with a code editor](../scripting/associate-file-extensions-to-a-code-editor.md)

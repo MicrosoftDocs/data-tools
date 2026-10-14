@@ -229,7 +229,7 @@ You can find information about the connection properties under the results of yo
 
 ## Related content
 
-- [SQL Server Management Studio (SSMS) Query Editor](../f1-help/database-engine-query-editor-sql-server-management-studio.md)
+- [Query Editor (SQL Server Management Studio)](../f1-help/database-engine-query-editor-sql-server-management-studio.md)
 - [Script objects in SQL Server Management Studio](../tutorials/scripting-ssms.md)
 - [Use templates in SQL Server Management Studio](../template/templates-ssms.md)
 - [SQL Server Management Studio components and configuration](../tutorials/ssms-configuration.md)

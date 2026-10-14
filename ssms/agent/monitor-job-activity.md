@@ -56,8 +56,9 @@ You can also view job activity for the current session by using the stored proce
 |-|-|   
 |Describes how to view the runtime state of [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent jobs.|[View Job Activity](view-job-activity.md)|  
   
-## See Also  
-[View Job Activity](view-job-activity.md)  
-[sysjobactivity (Transact-SQL)](/sql/relational-databases/system-tables/dbo-sysjobactivity-transact-sql)  
-[syssessions (Transact-SQL)](/sql/relational-databases/system-tables/dbo-syssessions-transact-sql)  
-[sp_help_jobactivity (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-help-jobactivity-transact-sql)
+## Related content
+
+- [View SQL Server Agent job activity](view-job-activity.md)
+- [sysjobactivity (Transact-SQL)](/sql/relational-databases/system-tables/dbo-sysjobactivity-transact-sql)
+- [syssessions (Transact-SQL)](/sql/relational-databases/system-tables/dbo-syssessions-transact-sql)
+- [sp_help_jobactivity (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-help-jobactivity-transact-sql)

@@ -118,7 +118,7 @@ GO
 
 For more information, see [sp_msx_enlist (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-msx-enlist-transact-sql).  
 
-## See Also
+## Related content
 
-- [Create a Multiserver Environment](create-a-multiserver-environment.md)
+- [Create a multiserver environment](create-a-multiserver-environment.md)
 - [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)

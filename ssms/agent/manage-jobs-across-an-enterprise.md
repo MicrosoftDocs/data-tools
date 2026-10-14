@@ -78,5 +78,6 @@ The following are common tasks for managing jobs across an enterprise:
   
 -   [Transact-SQL](/sql/relational-databases/system-stored-procedures/sp-post-msx-operation-transact-sql)  
   
-## See Also  
-[Manage Events](manage-events.md)
+## Related content
+
+- [Manage Events](manage-events.md)

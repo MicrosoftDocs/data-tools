@@ -365,7 +365,8 @@ Specify options in the command-line window.
 **Command line**  
 Type the command line options to use for this package.  
   
-## See Also  
-[Manage Job Steps](manage-job-steps.md)  
-[SQL Server Agent Jobs for Packages](/sql/integration-services/packages/sql-server-agent-jobs-for-packages)  
-[Administering Replication Agents](/sql/relational-databases/replication/agents/replication-agent-administration)
+## Related content
+
+- [Manage job steps](manage-job-steps.md)
+- [SQL Server Agent Jobs for Packages](/sql/integration-services/packages/sql-server-agent-jobs-for-packages)
+- [Administering Replication Agents](/sql/relational-databases/replication/agents/replication-agent-administration)

@@ -90,5 +90,6 @@ Permissions to execute this procedure default to members of the **sysadmin** fix
   
     For more information, see [sp_msx_enlist (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-msx-enlist-transact-sql).  
   
-## See Also  
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)
+## Related content
+
+- [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)

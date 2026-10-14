@@ -40,5 +40,6 @@ Writes only warnings and informational messages to the log file.
 **Information**  
 Writes only informational messages to the log file.  
   
-## See Also  
-[SQL Server Agent Error Log](sql-server-agent-error-log.md)
+## Related content
+
+- [SQL Server Agent Error Log](sql-server-agent-error-log.md)

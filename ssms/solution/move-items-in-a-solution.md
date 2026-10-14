@@ -33,6 +33,7 @@ You can move items by dragging Query and Miscellaneous files within Solution Exp
 > [!NOTE]  
 > Moving a connected query does not move the connection to the target project. The query will lose its connection after it is moved to the target project.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Copy Items in a Solution](copy-items-in-a-solution.md)
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Copy Items in a Solution](copy-items-in-a-solution.md)

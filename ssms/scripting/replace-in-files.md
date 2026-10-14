@@ -146,5 +146,6 @@ helpviewer_keywords:
  **Switch to Find Symbols**  
  This toolbar tab changes the dialog box to a **Find in Symbols** dialog box.  
   
-## See Also  
- [SQL Server Management Studio Keyboard Shortcuts](../sql-server-management-studio-keyboard-shortcuts.md)
+## Related content
+
+- [SQL Server Management Studio keyboard shortcuts](../sql-server-management-studio-keyboard-shortcuts.md)

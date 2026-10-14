@@ -28,5 +28,6 @@ ms.collection:
 |Describes how IntelliSense can identify both ends of a pair of delimiters, and how you can jump between the two ends of the pair.|[Automatic Matching of Syntax Pairs](automatic-matching-of-syntax-pairs.md)|  
 |Describes the conditions under which IntelliSense may not work.|Troubleshooting IntelliSense (SQL Server Management Studio)|  
   
-## See Also  
- [Query and Text Editors &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)
+## Related content
+
+- [Query Editor (SQL Server Management Studio)](../f1-help/database-engine-query-editor-sql-server-management-studio.md)

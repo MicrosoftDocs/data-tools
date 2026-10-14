@@ -185,5 +185,5 @@ For more information about creating job steps that run [!INCLUDE [ssISnoversion]
 ## Related content
 
 - [sysjobstepslogs](/sql/relational-databases/system-tables/dbo-sysjobstepslogs-transact-sql)
-- [Create Jobs](create-jobs.md)
+- [Create SQL Server Agent jobs](create-jobs.md)
 - [sp_add_job](/sql/relational-databases/system-stored-procedures/sp-add-job-transact-sql)

@@ -50,6 +50,7 @@ Percentage of CPU usage below which the CPU is considered to be idle.
 **And remains below this level for**  
 Amount of time that the average CPU must below the level specified before [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent runs jobs on the Idle CPU schedule.  
   
-## See Also  
-[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)  
-[Manage Events](manage-events.md)
+## Related content
+
+- [Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)
+- [Manage Events](manage-events.md)

@@ -35,5 +35,6 @@ Edit the selected schedule to change job schedule properties.
 **Remove**  
 Remove the selected schedule from the job. If no other jobs use the schedule, the schedule is deleted from the database.  
   
-## See Also  
-[Implement Jobs](implement-jobs.md)
+## Related content
+
+- [Implement Jobs](implement-jobs.md)

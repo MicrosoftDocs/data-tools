@@ -46,7 +46,7 @@ To alter a table, you must have `ALTER` permissions on the table. For more infor
 
 - [Tables](/sql/relational-databases/tables/tables)
 - [Table properties (Visual Database Tools)](table-properties-visual-database-tools.md)
-- [Column Properties (Visual Database Tools)](column-properties-visual-database-tools.md)
+- [Column properties (Visual Database Tools)](column-properties-visual-database-tools.md)
 - [Add Columns to a Table (Database Engine)](/sql/relational-databases/tables/add-columns-to-a-table-database-engine)
 - [Primary and foreign key constraints](/sql/relational-databases/tables/primary-and-foreign-key-constraints)
 - [Indexes](/sql/relational-databases/indexes/indexes)

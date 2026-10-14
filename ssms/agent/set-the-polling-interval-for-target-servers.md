@@ -62,5 +62,6 @@ For detailed information, see [Implement SQL Server Agent Security](implement-sq
   
 3.  In the query window, use the [sp_post_msx_operation (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-post-msx-operation-transact-sql) system stored procedure to set the polling interval for target servers.  
   
-## See Also  
-[sysdownloadlist](/sql/relational-databases/system-tables/dbo-sysdownloadlist-transact-sql)
+## Related content
+
+- [sysdownloadlist](/sql/relational-databases/system-tables/dbo-sysdownloadlist-transact-sql)

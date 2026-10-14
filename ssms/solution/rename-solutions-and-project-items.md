@@ -30,5 +30,6 @@ You can rename a solution and its project items in Solution Explorer.
   
 3.  In the Properties window, edit the **(Name)** property.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)

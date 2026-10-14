@@ -100,7 +100,8 @@ This section allows you to enable job step tokens that can be used in jobs run b
 **Replace tokens for all job responses to alerts**  
 Select this check box to enable token replacement for jobs that are activated by [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] alerts.  
   
-## See Also  
-[Operators](operators.md)  
-[Configure SQL Server Agent Mail to Use Database Mail](/sql/relational-databases/database-mail/configure-sql-server-agent-mail-to-use-database-mail)  
-[Database Mail](/sql/relational-databases/database-mail/database-mail)
+## Related content
+
+- [Operators](operators.md)
+- [Configure SQL Server Agent Mail to Use Database Mail](/sql/relational-databases/database-mail/configure-sql-server-agent-mail-to-use-database-mail)
+- [Database Mail](/sql/relational-databases/database-mail/database-mail)

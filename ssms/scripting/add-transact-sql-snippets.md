@@ -109,4 +109,4 @@ The following example creates a `TRY...CATCH` surround-with snippet and imports 
 
 ## Related content
 
-- [Insert Surround-with Transact-SQL snippets](insert-surround-with-transact-sql-snippets.md)
+- [Insert surround-with Transact-SQL snippets](insert-surround-with-transact-sql-snippets.md)

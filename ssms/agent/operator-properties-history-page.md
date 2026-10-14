@@ -31,5 +31,6 @@ Most recent notification attempts made by pager, or **(Never paged)** if this op
 **By net send**  
 Most recent notification attempts made by net send, or **(Never notified by net send)** if this operator has never been notified by net send.  
   
-## See Also  
-[Operators](operators.md)
+## Related content
+
+- [Operators](operators.md)

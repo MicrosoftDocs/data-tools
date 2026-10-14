@@ -41,8 +41,9 @@ helpviewer_keywords:
 > [!NOTE]  
 >  For a complete list of keyboard shortcut keys, see [SQL Server Management Studio Keyboard Shortcuts](../sql-server-management-studio-keyboard-shortcuts.md).  
   
-## See Also  
- [Search and Replace](search-and-replace.md)   
- [Search Documents Interactively](search-documents-interactively.md)   
- [Search Documents Using Results Lists](search-documents-using-results-lists.md)   
- [Search Text with Regular Expressions](search-text-with-regular-expressions.md)
+## Related content
+
+- [Search and Replace](search-and-replace.md)
+- [Search Documents Interactively](search-documents-interactively.md)
+- [Search Documents Using Results Lists](search-documents-using-results-lists.md)
+- [How to search text with regular expressions](search-text-with-regular-expressions.md)

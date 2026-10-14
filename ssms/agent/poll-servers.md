@@ -56,6 +56,6 @@ If you use the following items, you don't have to post operations explicitly:
   
 - [Transact-SQL](/sql/relational-databases/system-stored-procedures/sp-post-msx-operation-transact-sql)  
   
-## See also
+## Related content
 
 - [Manage Events](manage-events.md)

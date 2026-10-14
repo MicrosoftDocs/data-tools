@@ -59,7 +59,8 @@ For more information, see [sp_msx_defect (Transact-SQL)](/sql/relational-databas
 ## <a name="PowerShellProcedure"></a>Using SQL Server Management Objects (SMO)  
 Use the **MsxDefect Method**.  
   
-## See Also  
-[Create a Multiserver Environment](create-a-multiserver-environment.md)  
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)  
-[Defect Multiple Target Servers from a Master Server](defect-multiple-target-servers-from-a-master-server.md)
+## Related content
+
+- [Create a multiserver environment](create-a-multiserver-environment.md)
+- [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)
+- [Defect Multiple Target Servers from a Master Server](defect-multiple-target-servers-from-a-master-server.md)

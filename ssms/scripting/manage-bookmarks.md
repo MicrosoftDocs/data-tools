@@ -87,5 +87,6 @@ While you are working in a code editor, the **Bookmarks** window allows you to c
  **Disable/Enable All Bookmarks**  
  Clears or enables the check boxes for all bookmarks in the **Bookmarks** window. Does not remove bookmarks, or alter the lines of code that they mark.  
   
-## See Also  
- [SQL Server Management Studio Keyboard Shortcuts](../sql-server-management-studio-keyboard-shortcuts.md)
+## Related content
+
+- [SQL Server Management Studio keyboard shortcuts](../sql-server-management-studio-keyboard-shortcuts.md)

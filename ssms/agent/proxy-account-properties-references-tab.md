@@ -31,5 +31,6 @@ Names of job steps in the job that use this proxy account
 **Subsystem**  
 Subsystem this proxy account uses.  
   
-## See Also  
-[Create a SQL Server Agent Proxy](create-a-sql-server-agent-proxy.md)
+## Related content
+
+- [Create a SQL Server Agent proxy](create-a-sql-server-agent-proxy.md)

@@ -70,5 +70,6 @@ GO
   
 For more information, see [sp_add_jobserver (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-jobserver-transact-sql).  
   
-## See Also  
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)
+## Related content
+
+- [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)

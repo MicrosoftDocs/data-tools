@@ -75,5 +75,6 @@ The following tasks provide information about how to create user-defined events 
   
 -   [Transact-SQL](/sql/relational-databases/system-stored-procedures/sp-update-alert-transact-sql)  
   
-## See Also  
-[sp_update_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-alert-transact-sql)
+## Related content
+
+- [sp_update_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-alert-transact-sql)

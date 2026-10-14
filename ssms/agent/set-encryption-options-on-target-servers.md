@@ -34,5 +34,6 @@ If **1** or **2** is specified, you must have TLS enabled on both the master and
 > [!CAUTION]  
 > [!INCLUDE[ssNoteRegistry](../includes/ssnoteregistry-md.md)]  
   
-## See Also  
-[How to: Enable Encrypted Connections to the Database Engine (SQL Server Configuration Manager)](/sql/database-engine/configure-windows/configure-sql-server-encryption)
+## Related content
+
+- [How to: Enable Encrypted Connections to the Database Engine (SQL Server Configuration Manager)](/sql/database-engine/configure-windows/configure-sql-server-encryption)

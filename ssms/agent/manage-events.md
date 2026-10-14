@@ -84,5 +84,6 @@ You can define a job to be executed in response to an alert. For example, you ca
 > [!NOTE]  
 > Because a job can raise an event, be careful not to create a recursive alert-job loop.  
   
-## See Also  
-[sp_add_notification (Transact-SQL)](/sql/relational-databases/system-compatibility-views/sys-sysmessages-transact-sql)
+## Related content
+
+- [sp_add_notification (Transact-SQL)](/sql/relational-databases/system-compatibility-views/sys-sysmessages-transact-sql)

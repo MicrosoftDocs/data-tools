@@ -76,6 +76,6 @@ By default, only members of the **sysadmin** fixed server role can execute `sp_a
    GO
    ```
 
-## Next steps
+## Related content
 
 - [sp_add_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-alert-transact-sql)

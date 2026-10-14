@@ -31,5 +31,6 @@ Distributed jobs whose steps are associated with a proxy run under the context o
 > [!CAUTION]  
 > [!INCLUDE[ssNoteRegistry](../includes/ssnoteregistry-md.md)]  
   
-## See Also  
-[Create a Multiserver Environment](create-a-multiserver-environment.md)
+## Related content
+
+- [Create a multiserver environment](create-a-multiserver-environment.md)

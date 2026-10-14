@@ -56,7 +56,8 @@ helpviewer_keywords:
   
  Replacement information appears in the Find Results 1 window by default. You can browse replacements by double-clicking each entry in the Find Results 1 window.  
   
-## See Also  
- [Search and Replace](search-and-replace.md)   
- [Search Documents Interactively](search-documents-interactively.md)   
- [Search Text with Regular Expressions](search-text-with-regular-expressions.md)
+## Related content
+
+- [Search and Replace](search-and-replace.md)
+- [Search Documents Interactively](search-documents-interactively.md)
+- [How to search text with regular expressions](search-text-with-regular-expressions.md)

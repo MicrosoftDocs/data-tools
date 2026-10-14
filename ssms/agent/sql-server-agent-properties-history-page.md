@@ -35,5 +35,6 @@ Specifies that [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent will
 **Older than**  
 Sets the amount of time that [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent will retain entries.  
   
-## See Also  
-[SQL Server Agent Error Log](sql-server-agent-error-log.md)
+## Related content
+
+- [SQL Server Agent Error Log](sql-server-agent-error-log.md)

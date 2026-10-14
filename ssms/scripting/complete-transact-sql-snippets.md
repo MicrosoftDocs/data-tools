@@ -36,5 +36,5 @@ You can also add additional syntax elements to the template code inserted by a s
 
 ## Related content
 
-- [Insert Transact-SQL Snippets](insert-transact-sql-snippets.md)
-- [Insert Surround-with Transact-SQL snippets](insert-surround-with-transact-sql-snippets.md)
+- [Insert Transact-SQL snippets](insert-transact-sql-snippets.md)
+- [Insert surround-with Transact-SQL snippets](insert-surround-with-transact-sql-snippets.md)

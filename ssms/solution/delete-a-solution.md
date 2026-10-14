@@ -31,8 +31,9 @@ Deleting a solution permanently erases files from physical storage as well as th
   
 4.  On the **File** menu, click **Delete**.  
   
-## See Also  
-[Solution Explorer](solution-explorer.md)  
-[Create a New Solution](create-a-new-solution.md)  
-[Create a Project](create-a-project.md)  
-[Remove or Delete an Item or Project](remove-or-delete-an-item-or-project.md)
+## Related content
+
+- [Solution Explorer (SQL Server Management Studio)](solution-explorer.md)
+- [Create a new solution](create-a-new-solution.md)
+- [Create a Project](create-a-project.md)
+- [Remove or Delete an Item or Project](remove-or-delete-an-item-or-project.md)

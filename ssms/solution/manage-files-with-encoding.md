@@ -55,6 +55,7 @@ If you are using Visual SourceSafe to store files with ANSI, UTF8, or Unicode, b
   
 -   UTF8 files do not work safely with Visual SourceSafe because changes that cause problems for UTF8 file editors are made during check in, check out, difference checking, and merging.  
   
-## See Also  
-[Files That Manage Solutions and Projects](files-that-manage-solutions-and-projects.md)  
-[Associating File Extensions to a Code Editor](../scripting/associate-file-extensions-to-a-code-editor.md)
+## Related content
+
+- [Files that manage solutions and projects](files-that-manage-solutions-and-projects.md)
+- [Associate file extensions with a code editor](../scripting/associate-file-extensions-to-a-code-editor.md)

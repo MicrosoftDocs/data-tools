@@ -88,5 +88,5 @@ Call the **JobCategory** class by using a programming language that you choose, 
 
 ## Related content
 
-- [Create a Job Step](job-properties-new-job-steps-page.md)
-- [Create a Job](create-a-job.md)
+- [Job Properties - New Job (Steps Page)](job-properties-new-job-steps-page.md)
+- [Create a SQL Server Agent job](create-a-job.md)
