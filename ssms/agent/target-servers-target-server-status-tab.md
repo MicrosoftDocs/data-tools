@@ -1,8 +1,9 @@
 ---
-title: "Target Servers (Target Server Status Tab)"
-description: "Target Servers (Target Server Status Tab)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Target Servers (Target Server Status Tab)
+description: Target Servers (Target Server Status Tab)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/05/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

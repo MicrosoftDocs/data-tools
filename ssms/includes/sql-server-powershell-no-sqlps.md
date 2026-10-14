@@ -1,9 +1,9 @@
 ---
 title: Using NOSQLPS for SQL Server Agent with PowerShell
 description: Message to explain to use the sqlserver powershell cmdlet instead of the sqlps cmdlet with SQL Server Agent
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: drskwier
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.topic: include
 ---
 

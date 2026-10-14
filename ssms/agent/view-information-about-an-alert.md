@@ -1,8 +1,9 @@
 ---
-title: "View Information About an Alert"
-description: "View Information About an Alert"
-author: rwestMSFT
-ms.author: randolphwest
+title: View Information About an Alert
+description: View Information About an Alert
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -75,4 +76,4 @@ By default, members of the **sysadmin** fixed server role can view information a
     GO  
     ```  
   
-For more information, see [sp_help_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-help-alert-transact-sql).  
+For more information, see [sp_help_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-help-alert-transact-sql).

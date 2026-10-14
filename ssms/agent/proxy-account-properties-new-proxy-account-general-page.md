@@ -1,8 +1,9 @@
 ---
-title: "Proxy Account Properties - New Proxy Account (General Page)"
-description: "Proxy Account Properties - New Proxy Account (General Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Proxy Account Properties - New Proxy Account (General Page)
+description: Proxy Account Properties - New Proxy Account (General Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -41,4 +42,4 @@ Select the subsystems that the proxy account has access to.
 Select the proxy to reassign job steps to. This list is enabled when you revoke access to a subsystem that the proxy previously had access to.  
   
 ## See Also  
-[Create a SQL Server Agent Proxy](create-a-sql-server-agent-proxy.md)  
+[Create a SQL Server Agent Proxy](create-a-sql-server-agent-proxy.md)

@@ -1,8 +1,9 @@
 ---
 title: Designate an Events Forwarding Server
 description: Configure event forwarding in SQL Server to send events to a designated server. Learn how to set up an events forwarding server using SQL Server Management Studio.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 07/08/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

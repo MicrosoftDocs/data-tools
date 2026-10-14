@@ -1,8 +1,9 @@
 ---
 title: Visual Database Tool Designers
-description: "Visual Database Tool Designers"
-author: rwestMSFT
-ms.author: randolphwest
+description: Visual Database Tool Designers
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

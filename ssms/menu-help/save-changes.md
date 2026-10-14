@@ -1,8 +1,9 @@
 ---
-title: "Save Changes"
-description: "Save Changes"
-author: rwestMSFT
-ms.author: randolphwest
+title: Save Changes
+description: Save Changes
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

@@ -1,8 +1,9 @@
 ---
-title: "Disable or Reactivate an Alert"
-description: "Disable or Reactivate an Alert"
-author: rwestMSFT
-ms.author: randolphwest
+title: Disable or Reactivate an Alert
+description: Disable or Reactivate an Alert
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -67,4 +68,4 @@ By default, members of the **sysadmin** fixed server role can edit information i
     GO  
     ```  
   
-For more information, see [sp_update_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-alert-transact-sql).  
+For more information, see [sp_update_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-alert-transact-sql).

@@ -2,9 +2,9 @@
 title: Properties Window
 titleSuffix: SQL Server Management Studio
 description: View properties of selected elements in SQL Server Management Studio.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

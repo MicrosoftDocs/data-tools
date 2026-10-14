@@ -1,8 +1,9 @@
 ---
-title: "Automatically Delete a Job"
-description: "Automatically Delete a Job"
-author: rwestMSFT
-ms.author: randolphwest
+title: Automatically Delete a Job
+description: Automatically Delete a Job
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 06/03/2020
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -65,4 +66,4 @@ For detailed information, see [Implement SQL Server Agent Security](implement-sq
 ## <a name="SMO"></a>Using SQL Server Management Objects  
 **To automatically delete a job**  
   
-Use the **DeleteLevel** property of the **Job** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell. For more information, see [SQL Server Management Objects (SMO)](/sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide).  
+Use the **DeleteLevel** property of the **Job** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell. For more information, see [SQL Server Management Objects (SMO)](/sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide).

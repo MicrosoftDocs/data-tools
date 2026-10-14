@@ -3,7 +3,7 @@ title: Rename Tabs in SQL Server Management Studio
 description: Learn how to customize tab names in SQL Server Management Studio (SSMS) by renaming them.
 author: mbarickman
 ms.author: mbarickman
-ms.reviewer: randolphwest
+ms.reviewer: mahyon
 ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

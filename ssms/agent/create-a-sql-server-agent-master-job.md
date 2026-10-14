@@ -1,8 +1,9 @@
 ---
-title: "Create a SQL Server Agent Master Job"
-description: "Create a SQL Server Agent Master Job"
-author: rwestMSFT
-ms.author: randolphwest
+title: Create a SQL Server Agent Master Job
+description: Create a SQL Server Agent Master Job
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -120,4 +121,4 @@ For more information, see:
   
 -   [sp_attach_schedule (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-attach-schedule-transact-sql)  
   
--   [sp_add_jobserver (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-jobserver-transact-sql)  
+-   [sp_add_jobserver (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-jobserver-transact-sql)

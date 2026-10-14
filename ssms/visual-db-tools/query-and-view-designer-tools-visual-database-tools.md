@@ -1,9 +1,9 @@
 ---
 title: Query and View Designer Tools
-description: "Query and View Designer Tools (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: vanto
+description: Query and View Designer Tools (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

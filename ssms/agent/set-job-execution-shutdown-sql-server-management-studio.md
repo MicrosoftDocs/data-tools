@@ -1,8 +1,9 @@
 ---
 title: Set Job Execution Shutdown
-description: "Set Job Execution Shutdown"
-author: rwestMSFT
-ms.author: randolphwest
+description: Set Job Execution Shutdown
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -46,4 +47,4 @@ By default, members of the **sysadmin** fixed server role can set the time that 
   
 3.  Under **Select a page**, select **Job System**.  
   
-4.  Set the **Shutdown time-out interval** in seconds to increase or decrease the shutdown time-out interval. This determines how long [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent will wait for executing jobs to finish before [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent itself finishes.  
+4.  Set the **Shutdown time-out interval** in seconds to increase or decrease the shutdown time-out interval. This determines how long [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent will wait for executing jobs to finish before [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent itself finishes.

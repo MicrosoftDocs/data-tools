@@ -1,8 +1,9 @@
 ---
 title: Navigate in Database Diagram Designer
-description: "Navigate in Database Diagram Designer (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Navigate in Database Diagram Designer (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

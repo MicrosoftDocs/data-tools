@@ -1,8 +1,9 @@
 ---
-title: "List Job Category Information"
-description: "List Job Category Information"
-author: rwestMSFT
-ms.author: randolphwest
+title: List Job Category Information
+description: List Job Category Information
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -56,4 +57,4 @@ For more information, see [sp_help_category (Transact-SQL)](/sql/relational-data
 ## <a name="SMO"></a>Using SQL Server Management Objects  
 **To list job category information**  
   
-Use the **JobCategory** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.  
+Use the **JobCategory** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.

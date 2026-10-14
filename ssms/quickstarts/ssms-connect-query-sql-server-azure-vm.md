@@ -1,9 +1,9 @@
 ---
 title: Connect and Query SQL Server on Azure VM Using SSMS
 description: Connect to a SQL Server instance on an Azure VM using SSMS. Create and query SQL Server on an Azure VM by running basic T-SQL queries in SSMS.
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 02/29/2024
 ms.service: sql-server-management-studio
 ms.topic: quickstart

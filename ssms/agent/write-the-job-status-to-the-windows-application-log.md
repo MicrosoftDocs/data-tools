@@ -1,8 +1,9 @@
 ---
 title: Write the Job Status to the Windows Application Log
-description: "Write the Job Status to the Windows Application Log"
-author: rwestMSFT
-ms.author: randolphwest
+description: Write the Job Status to the Windows Application Log
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -68,4 +69,4 @@ The following code example sets the job to generate an operating system event lo
 $srv = new-object Microsoft.SqlServer.Management.Smo.Server("(local)")  
 $jb = new-object Microsoft.SqlServer.Management.Smo.Agent.Job($srv.JobServer, "Test Job")  
 $jb.EventLogLevel = [Microsoft.SqlServer.Management.Smo.Agent.CompletionAction]::Always  
-```  
+```

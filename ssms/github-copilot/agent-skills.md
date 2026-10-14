@@ -2,9 +2,9 @@
 title: Agent Skills
 titleSuffix: GitHub Copilot in SQL Server Management Studio
 description: Learn how to create and use skills with GitHub Copilot in SQL Server Management Studio (SSMS) to provide reusable task-specific instructions for Agent mode.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: erinstellato
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

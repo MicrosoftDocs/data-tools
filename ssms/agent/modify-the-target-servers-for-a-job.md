@@ -1,8 +1,9 @@
 ---
-title: "Modify the Target Servers for a Job"
-description: "Modify the Target Servers for a Job"
-author: rwestMSFT
-ms.author: randolphwest
+title: Modify the Target Servers for a Job
+description: Modify the Target Servers for a Job
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -70,4 +71,4 @@ GO
 For more information, see [sp_add_jobserver (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-jobserver-transact-sql).  
   
 ## See Also  
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)  
+[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)

@@ -1,8 +1,9 @@
 ---
 title: Work with Tables in Database Diagram
 description: Learn how to modify and create database tables using Table Designer or Database Diagram Designer.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

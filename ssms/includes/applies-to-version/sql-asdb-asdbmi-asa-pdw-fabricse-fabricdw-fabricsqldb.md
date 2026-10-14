@@ -1,7 +1,7 @@
 ---
-author: WilliamDAssafMSFT
-ms.author: wiassaf
-ms.reviewer: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/12/2025
 ms.service: sql
 ms.topic: include

@@ -1,9 +1,10 @@
 ---
-title: "Configure Editors (SQL Server Management Studio)"
+title: Configure Editors (SQL Server Management Studio)
 description: Learn how to customize the operation of the SQL Server Management Studio editors by setting options in the Options dialog.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:

@@ -1,9 +1,10 @@
 ---
-title: "Solutions (SQL Server Management Studio)"
-description: "Solutions (SQL Server Management Studio)"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Solutions (SQL Server Management Studio)
+description: Solutions (SQL Server Management Studio)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -48,4 +49,4 @@ Solutions and projects can be integrated into a [!INCLUDE[msCoName](../includes/
 ## See Also  
 [Solution Explorer](solution-explorer.md)  
 [Projects &#40;SQL Server Management Studio&#41;](projects-sql-server-management-studio.md)  
-[Solution Explorer Source Control](solution-explorer.md)  
+[Solution Explorer Source Control](solution-explorer.md)

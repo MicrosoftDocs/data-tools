@@ -1,8 +1,9 @@
 ---
-title: "Unsuppress Run Custom Report Warnings"
-description: "Unsuppress Run Custom Report Warnings"
-author: rwestMSFT
-ms.author: randolphwest
+title: Unsuppress Run Custom Report Warnings
+description: Unsuppress Run Custom Report Warnings
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

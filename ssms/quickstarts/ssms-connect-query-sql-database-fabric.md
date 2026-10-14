@@ -1,9 +1,9 @@
 ---
 title: Connect and Query SQL Database in Microsoft Fabric
 description: Connect to and query a SQL database in Microsoft Fabric using SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: wiassaf, randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: wiassaf, mahyon
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: quickstart

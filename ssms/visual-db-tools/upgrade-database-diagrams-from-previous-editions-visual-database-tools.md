@@ -1,8 +1,9 @@
 ---
 title: Upgrade Database Diagrams from Previous Editions
-description: "Upgrade database diagrams from previous editions (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Upgrade database diagrams from previous editions (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: upgrade-and-migration-article

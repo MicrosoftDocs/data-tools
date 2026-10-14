@@ -1,9 +1,9 @@
 ---
 title: Schema Compare in SQL Server Management Studio
 description: Compare database schemas between databases, .dacpac files, and SQL database projects in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mahyon, mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/28/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article

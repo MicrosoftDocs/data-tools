@@ -1,8 +1,9 @@
 ---
-title: "Job Properties - New Job (Steps Page)"
-description: "Job Properties - New Job (Steps Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Job Properties - New Job (Steps Page)
+description: Job Properties - New Job (Steps Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -41,4 +42,4 @@ Change the selected job step.
 Delete the selected job step. When job steps are deleted their output log is automatically deleted.  
   
 ## See Also  
-[Implement Jobs](implement-jobs.md)  
+[Implement Jobs](implement-jobs.md)

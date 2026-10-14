@@ -1,6 +1,7 @@
 ---
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/13/2026
 ms.service: sql-server-management-studio
 ms.topic: include

@@ -1,8 +1,9 @@
 ---
 title: Tool Windows in SQL Server Management Studio
 description: Tool windows in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 07/08/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

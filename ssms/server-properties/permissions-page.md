@@ -2,9 +2,9 @@
 title: Server Properties (Permissions Page)
 titleSuffix: SQL Server Management Studio
 description: View and modify server-level permissions for logins and roles by using the Permissions page of the Server Properties window.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

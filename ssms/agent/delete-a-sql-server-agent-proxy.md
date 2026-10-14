@@ -1,8 +1,9 @@
 ---
-title: "Delete a SQL Server Agent Proxy"
-description: "Delete a SQL Server Agent Proxy"
-author: rwestMSFT
-ms.author: randolphwest
+title: Delete a SQL Server Agent Proxy
+description: Delete a SQL Server Agent Proxy
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -74,4 +75,4 @@ Only members of the **sysadmin** fixed server role can create, modify, or delete
     GO  
     ```  
   
-For more information, see [sp_delete_proxy (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-delete-proxy-transact-sql).  
+For more information, see [sp_delete_proxy (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-delete-proxy-transact-sql).

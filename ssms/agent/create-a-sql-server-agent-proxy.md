@@ -1,8 +1,9 @@
 ---
-title: "Create a SQL Server Agent Proxy"
+title: Create a SQL Server Agent Proxy
 description: Create a SQL Server Agent Proxy using SQL Server Management Studio, or in Transact-SQL.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

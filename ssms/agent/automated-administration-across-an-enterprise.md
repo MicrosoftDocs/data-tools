@@ -1,8 +1,9 @@
 ---
-title: "Automated Administration Across an Enterprise"
-description: "Automated Administration Across an Enterprise"
-author: rwestMSFT
-ms.author: randolphwest
+title: Automated Administration Across an Enterprise
+description: Automated Administration Across an Enterprise
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -87,4 +88,4 @@ Contains information about how automated administration in a multiserver environ
 [sp_update_targetservergroup](/sql/relational-databases/system-stored-procedures/sp-update-targetservergroup-transact-sql)  
 [sysjobservers](/sql/relational-databases/system-tables/dbo-sysjobservers-transact-sql)  
 [syslogins](/sql/relational-databases/system-compatibility-views/sys-syslogins-transact-sql)  
-[systargetservers](/sql/relational-databases/system-tables/dbo-systargetservers-transact-sql)  
+[systargetservers](/sql/relational-databases/system-tables/dbo-systargetservers-transact-sql)

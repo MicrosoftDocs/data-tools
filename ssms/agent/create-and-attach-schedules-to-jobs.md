@@ -1,8 +1,9 @@
 ---
-title: "Create and Attach Schedules to Jobs"
-description: "Create and Attach Schedules to Jobs"
-author: rwestMSFT
-ms.author: randolphwest
+title: Create and Attach Schedules to Jobs
+description: Create and Attach Schedules to Jobs
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -90,4 +91,4 @@ Define the CPU idle condition as a percentage below which CPU usage must remain 
   
 ## See Also  
 [sp_help_jobschedule](/sql/relational-databases/system-stored-procedures/sp-help-jobschedule-transact-sql)  
-[sysjobschedules](/sql/relational-databases/system-tables/dbo-sysjobschedules-transact-sql)  
+[sysjobschedules](/sql/relational-databases/system-tables/dbo-sysjobschedules-transact-sql)

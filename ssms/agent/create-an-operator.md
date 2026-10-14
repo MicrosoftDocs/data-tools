@@ -1,8 +1,9 @@
 ---
-title: "Create an Operator"
+title: Create an Operator
 description: Learn how to create a SQL Server Agent operator.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

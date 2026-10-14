@@ -1,8 +1,9 @@
 ---
-title: "Job Properties - New Job (Alerts Page)"
-description: "Job Properties - New Job (Alerts Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Job Properties - New Job (Alerts Page)
+description: Job Properties - New Job (Alerts Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -33,4 +34,4 @@ Remove the selected alert from the job, and delete the alert.
   
 ## See Also  
 [Alerts](alerts.md)  
-[Implement Jobs](implement-jobs.md)  
+[Implement Jobs](implement-jobs.md)

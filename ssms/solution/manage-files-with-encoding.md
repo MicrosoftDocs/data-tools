@@ -1,9 +1,10 @@
 ---
-title: "Manage Files with Encoding"
-description: "Manage Files with Encoding"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Manage Files with Encoding
+description: Manage Files with Encoding
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -56,4 +57,4 @@ If you are using Visual SourceSafe to store files with ANSI, UTF8, or Unicode, b
   
 ## See Also  
 [Files That Manage Solutions and Projects](files-that-manage-solutions-and-projects.md)  
-[Associating File Extensions to a Code Editor](../scripting/associate-file-extensions-to-a-code-editor.md)  
+[Associating File Extensions to a Code Editor](../scripting/associate-file-extensions-to-a-code-editor.md)

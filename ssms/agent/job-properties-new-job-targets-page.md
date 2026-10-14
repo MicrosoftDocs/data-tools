@@ -1,8 +1,9 @@
 ---
-title: "Job Properties - New Job (Targets Page)"
-description: "Job Properties - New Job (Targets Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Job Properties - New Job (Targets Page)
+description: Job Properties - New Job (Targets Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -26,4 +27,4 @@ Run the job on the local server. If there are no target servers enlisted, this i
 Run the job on one or more target servers. After selecting this option, choose the servers to run the job on. Available target servers are listed. Click a target server to select it.  
   
 ## See Also  
-[Implement Jobs](implement-jobs.md)  
+[Implement Jobs](implement-jobs.md)

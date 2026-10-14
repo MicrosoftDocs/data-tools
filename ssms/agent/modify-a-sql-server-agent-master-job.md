@@ -1,9 +1,10 @@
 ---
-title: "Modify a SQL Server Agent Master Job"
-description: "Modify a SQL Server Agent Master Job"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "02/28/2017"
+title: Modify a SQL Server Agent Master Job
+description: Modify a SQL Server Agent Master Job
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 02/28/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -28,4 +29,4 @@ The following topics describe how to modify a [!INCLUDE[msCoName](../includes/ms
   
 [Remove Steps from a SQL Server Agent Master Job](remove-steps-from-a-sql-server-agent-master-job.md)  
   
-[Modify the Target Server&#40;s&#41; Associated with a SQL Server Agent Master Job](modify-the-target-server-s-associated-with-a-sql-server-agent-master-job.md)  
+[Modify the Target Server&#40;s&#41; Associated with a SQL Server Agent Master Job](modify-the-target-server-s-associated-with-a-sql-server-agent-master-job.md)

@@ -1,9 +1,10 @@
 ---
-title: "Manage Bookmarks"
+title: Manage Bookmarks
 description: The Bookmarks window in a code editor enables you to create links to locations in code . Learn how to create, delete, activate, and disable bookmarks, and how to use them to navigate through your code.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -87,4 +88,4 @@ While you are working in a code editor, the **Bookmarks** window allows you to c
  Clears or enables the check boxes for all bookmarks in the **Bookmarks** window. Does not remove bookmarks, or alter the lines of code that they mark.  
   
 ## See Also  
- [SQL Server Management Studio Keyboard Shortcuts](../sql-server-management-studio-keyboard-shortcuts.md)  
+ [SQL Server Management Studio Keyboard Shortcuts](../sql-server-management-studio-keyboard-shortcuts.md)

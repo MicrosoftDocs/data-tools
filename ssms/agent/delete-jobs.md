@@ -1,8 +1,9 @@
 ---
-title: "Delete Jobs"
-description: "Delete Jobs"
-author: rwestMSFT
-ms.author: randolphwest
+title: Delete Jobs
+description: Delete Jobs
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -35,4 +36,4 @@ Members of the **sysadmin** fixed server role can execute **sp_delete_job** to d
 |Description|Topic|  
 |-|-|   
 |Describes how to delete one or more [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent jobs.|[Delete One or More Jobs](delete-one-or-more-jobs.md)|  
-|Describes how to configure [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent to automatically delete jobs when they succeed, fail, or complete.|[Automatically Delete a Job](automatically-delete-a-job.md)|  
+|Describes how to configure [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent to automatically delete jobs when they succeed, fail, or complete.|[Automatically Delete a Job](automatically-delete-a-job.md)|

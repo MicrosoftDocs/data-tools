@@ -1,9 +1,10 @@
 ---
-title: "Move Items in a Solution"
-description: "Move Items in a Solution"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Move Items in a Solution
+description: Move Items in a Solution
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -34,5 +35,4 @@ You can move items by dragging Query and Miscellaneous files within Solution Exp
   
 ## See Also  
 [Solution Explorer](solution-explorer.md)  
-[Copy Items in a Solution](copy-items-in-a-solution.md)  
-  
+[Copy Items in a Solution](copy-items-in-a-solution.md)

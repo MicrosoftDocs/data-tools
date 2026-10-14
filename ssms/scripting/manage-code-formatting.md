@@ -1,8 +1,9 @@
 ---
 title: Manage Code Formatting
 description: Learn about the three styles of text indenting and how to use them, and learn how to create clickable URLs.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

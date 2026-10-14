@@ -1,8 +1,9 @@
 ---
-title: "Parameter Info (IntelliSense)"
+title: Parameter Info (IntelliSense)
 description: Learn how to use the IntelliSense Parameter info option, which provides information as you type about the parameters required by a function or stored procedure.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

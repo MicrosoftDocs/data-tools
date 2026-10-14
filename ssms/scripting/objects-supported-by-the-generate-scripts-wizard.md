@@ -1,9 +1,10 @@
 ---
-title: "Objects Supported by the Generate Scripts Wizard"
+title: Objects Supported by the Generate Scripts Wizard
 description: See what object types that the Generate and Publish Scripts Wizard can help you publish.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -101,6 +102,4 @@ ms.collection:
 
  *Published without encryption.  
   
- **Any non-system users that exist in the database are published as Roles.  
-  
-  
+ **Any non-system users that exist in the database are published as Roles.

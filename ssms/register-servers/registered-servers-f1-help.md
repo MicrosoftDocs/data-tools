@@ -1,11 +1,12 @@
 ---
-title: "Registered Servers F1 Help"
-description: "Registered Servers F1 Help"
-author: rwestMSFT
-ms.author: randolphwest
+title: Registered Servers F1 Help
+description: Registered Servers F1 Help
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 07/07/2025
 ms.service: sql-server-management-studio
-ms.topic: "reference"
+ms.topic: reference
 ms.collection:
   - data-tools
 helpviewer_keywords:

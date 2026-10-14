@@ -1,8 +1,9 @@
 ---
-title: "New Job Step Properties (General Page)"
-description: "Job Step Properties - New Job Step (General Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: New Job Step Properties (General Page)
+description: Job Step Properties - New Job Step (General Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -367,4 +368,4 @@ Type the command line options to use for this package.
 ## See Also  
 [Manage Job Steps](manage-job-steps.md)  
 [SQL Server Agent Jobs for Packages](/sql/integration-services/packages/sql-server-agent-jobs-for-packages)  
-[Administering Replication Agents](/sql/relational-databases/replication/agents/replication-agent-administration)  
+[Administering Replication Agents](/sql/relational-databases/replication/agents/replication-agent-administration)

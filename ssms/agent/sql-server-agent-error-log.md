@@ -1,8 +1,9 @@
 ---
 title: SQL Server Agent Error Log
-description: "SQL Server Agent Error Log"
-author: rwestMSFT
-ms.author: randolphwest
+description: SQL Server Agent Error Log
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: concept-article
@@ -47,4 +48,4 @@ When [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent is stopped, yo
   
 **To write execution trace messages to the SQL Server Agent error log**  
   
--   [Write Execution Trace Messages to the SQL Server Agent Error Log &#40;SQL Server Management Studio&#41;](write-execution-trace-messages-to-sql-server-agent-log-ssms.md)  
+-   [Write Execution Trace Messages to the SQL Server Agent Error Log &#40;SQL Server Management Studio&#41;](write-execution-trace-messages-to-sql-server-agent-log-ssms.md)

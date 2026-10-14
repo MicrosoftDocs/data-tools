@@ -1,8 +1,9 @@
 ---
-title: "Open With (New File)"
-description: "Open With (New File)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Open With (New File)
+description: Open With (New File)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/15/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

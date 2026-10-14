@@ -1,8 +1,9 @@
 ---
 title: Permissions and Visual Database Tools
-description: "Permissions and Visual Database Tools (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Permissions and Visual Database Tools (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

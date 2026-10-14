@@ -1,8 +1,9 @@
 ---
-title: "View a Job"
+title: View a Job
 description: View a SQL Server Agent job using SQL Server Management Studio, Transact-SQL, or SQL Server Management Objects.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

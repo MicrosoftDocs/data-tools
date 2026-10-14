@@ -1,9 +1,10 @@
 ---
-title: "Template Explorer"
-description: "Template Explorer"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Template Explorer
+description: Template Explorer
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -41,5 +42,4 @@ Use the following topics to get started with templates
 |**Description**|**Topic**|  
 |-------------------|-------------|  
 |Describes how to incorporate the code from a template into a code editor window.|[Open a Template](open-a-template.md)|  
-|Describes how to replace template parameter values after opening a template in a code editor.|[Replace Template Parameters](replace-template-parameters.md)|  
-  
+|Describes how to replace template parameter values after opening a template in a code editor.|[Replace Template Parameters](replace-template-parameters.md)|

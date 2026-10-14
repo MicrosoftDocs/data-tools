@@ -1,8 +1,9 @@
 ---
-title: "External Tools"
-description: "External Tools"
-author: rwestMSFT
-ms.author: randolphwest
+title: External Tools
+description: External Tools
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

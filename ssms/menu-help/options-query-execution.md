@@ -1,9 +1,9 @@
 ---
 title: SSMS Options Page - Query Execution
 description: SSMS Options (Query Execution)
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/17/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

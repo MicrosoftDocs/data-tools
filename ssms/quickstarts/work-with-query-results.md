@@ -2,9 +2,9 @@
 title: Query Results in SQL Server Management Studio
 titleSuffix: SQL Server Management Studio
 description: Understand options for query results in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: erinstellato
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 03/18/2026
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

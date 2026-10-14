@@ -1,9 +1,10 @@
 ---
-title: "Replace in Files"
+title: Replace in Files
 description: Learn how to use the Replace in Files feature of the Find and Replace window to search the text of a set of files for a string or expression and change some or all of the found text.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:

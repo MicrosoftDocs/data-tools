@@ -1,8 +1,9 @@
 ---
-title: "SQL Server Agent Properties (General Page)"
-description: "SQL Server Agent Properties (General Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: SQL Server Agent Properties (General Page)
+description: SQL Server Agent Properties (General Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -45,4 +46,4 @@ Type the name of an operator to receive net send notification of messages that [
   
 ## See Also  
 [Operators](operators.md)  
-[SQL Server Agent Error Log](sql-server-agent-error-log.md)  
+[SQL Server Agent Error Log](sql-server-agent-error-log.md)

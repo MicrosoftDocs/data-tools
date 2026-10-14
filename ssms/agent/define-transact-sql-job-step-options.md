@@ -1,8 +1,9 @@
 ---
-title: "Define Transact-SQL Job Step Options"
-description: "Define Transact-SQL Job Step Options"
-author: rwestMSFT
-ms.author: randolphwest
+title: Define Transact-SQL Job Step Options
+description: Define Transact-SQL Job Step Options
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -56,4 +57,4 @@ For detailed information, see [Implement SQL Server Agent Security](implement-sq
 ## <a name="SMO"></a>Using SQL Server Management Objects  
 **To define Transact-SQL job step options**  
   
-Use the **JobStep** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.  
+Use the **JobStep** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.

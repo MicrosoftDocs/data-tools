@@ -1,9 +1,9 @@
 ---
-title: "SQL Server Agent"
+title: SQL Server Agent
 description: Learn about the SQL Server Agent, which you can use to schedule administrative tasks in SQL Server and Azure SQL Managed Instance.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mathoma
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: overview

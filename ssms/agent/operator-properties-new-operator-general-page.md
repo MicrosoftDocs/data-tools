@@ -1,8 +1,9 @@
 ---
-title: "New Operator Properties (General Page)"
-description: "Operator Properties - New Operator (General Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: New Operator Properties (General Page)
+description: Operator Properties - New Operator (General Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -49,4 +50,4 @@ Select the time of day after which [!INCLUDE[ssNoVersion](../includes/ssnoversio
 Select the time of day after which [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent no longer sends messages to the pager.  
   
 ## See Also  
-[Operators](operators.md)  
+[Operators](operators.md)

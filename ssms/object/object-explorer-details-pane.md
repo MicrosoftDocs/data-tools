@@ -1,8 +1,9 @@
 ---
-title: "Object Explorer Details Pane"
+title: Object Explorer Details Pane
 description: The Object Explorer Details pane provides a tabular view of all the objects in the server and presents a user interface to manage them.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

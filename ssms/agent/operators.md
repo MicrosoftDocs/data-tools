@@ -1,8 +1,9 @@
 ---
-title: "Operators"
-description: "Operators"
-author: rwestMSFT
-ms.author: randolphwest
+title: Operators
+description: Operators
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: concept-article
@@ -117,4 +118,4 @@ You must set up one or more of the following in order to notify an operator:
 |Tasks related to assigning alerts|[Assign Alerts to an Operator](assign-alerts-to-an-operator.md)<br /><br />[Define the Response to an Alert &#40;SQL Server Management Studio&#41;](define-the-response-to-an-alert-sql-server-management-studio.md)<br /><br />[sp_add_notification (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-notification-transact-sql)<br /><br />[Assign Alerts to an Operator](assign-alerts-to-an-operator.md)|  
   
 ## See Also  
-[Database Mail](/sql/relational-databases/database-mail/database-mail)  
+[Database Mail](/sql/relational-databases/database-mail/database-mail)

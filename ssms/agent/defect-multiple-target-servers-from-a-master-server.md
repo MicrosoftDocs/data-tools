@@ -1,8 +1,9 @@
 ---
 title: Defect Multiple Target Servers from a Master Server
-description: "Defect Multiple Target Servers from a Master Server"
-author: rwestMSFT
-ms.author: randolphwest
+description: Defect Multiple Target Servers from a Master Server
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -44,4 +45,4 @@ This topic describes how to defect multiple target servers from a multiserver ad
 ## See Also  
 [Create a Multiserver Environment](create-a-multiserver-environment.md)  
 [Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)  
-[Defect a Target Server from a Master Server](defect-a-target-server-from-a-master-server.md)  
+[Defect a Target Server from a Master Server](defect-a-target-server-from-a-master-server.md)

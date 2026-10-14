@@ -1,8 +1,9 @@
 ---
-title: "Use Tokens in Job Steps"
-description: "Use Tokens in Job Steps"
-author: rwestMSFT
-ms.author: randolphwest
+title: Use Tokens in Job Steps
+description: Use Tokens in Job Steps
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

@@ -1,9 +1,9 @@
 ---
 title: Known Issues in SQL Server Management Studio
 description: Learn about known issues in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mbarickman, erinstellato
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 06/09/2026
 ms.service: sql-server-management-studio
 ms.topic: troubleshooting-general

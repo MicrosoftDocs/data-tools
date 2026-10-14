@@ -1,9 +1,9 @@
 ---
-title: "Connection Pooling in SQL Server Management Studio"
+title: Connection Pooling in SQL Server Management Studio
 description: Understand how SQL Server Management Studio manages connections.
-author: Charles-Gagnon
-ms.author: chgagnon
-ms.reviewer: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 03/11/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

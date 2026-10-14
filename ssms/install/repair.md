@@ -1,9 +1,9 @@
 ---
 title: Repair SQL Server Management Studio
 description: Learn how to uninstall SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 05/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

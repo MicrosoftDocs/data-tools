@@ -1,8 +1,9 @@
 ---
-title: "Manage Schedules"
-description: "Manage Schedules"
-author: rwestMSFT
-ms.author: randolphwest
+title: Manage Schedules
+description: Manage Schedules
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -44,4 +45,4 @@ Click this button to delete the selected schedule.
 Click this button to change the properties of the selected schedule.  
   
 ## See Also  
-[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)  
+[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)

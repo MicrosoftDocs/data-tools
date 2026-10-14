@@ -1,8 +1,9 @@
 ---
-title: "Pick Schedule for Job"
-description: "Pick Schedule for Job"
-author: rwestMSFT
-ms.author: randolphwest
+title: Pick Schedule for Job
+description: Pick Schedule for Job
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -40,4 +41,4 @@ Lists the job numbers attached to the schedule. Click a number to view the prope
 Launches the **Job Schedule Properties** dialog where you can view information about the schedule.  
   
 ## See Also  
-[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)  
+[Create and Attach Schedules to Jobs](create-and-attach-schedules-to-jobs.md)

@@ -1,8 +1,9 @@
 ---
 title: Transact-SQL Code Snippets
 description: You can use Transact-SQL code snippets to aid your code writing. Look here for a list of snippet tasks with links to articles that describe them.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 03/16/2017
 ms.service: sql-server-management-studio
 ms.topic: overview

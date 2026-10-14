@@ -1,8 +1,9 @@
 ---
 title: Select Rows That Do Not Match a Value
-description: "Select rows that do not match a value (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Select rows that do not match a value (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

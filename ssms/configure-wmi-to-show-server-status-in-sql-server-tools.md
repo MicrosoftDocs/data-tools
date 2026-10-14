@@ -1,8 +1,9 @@
 ---
-title: "Configure WMI to Show Server Status in SQL Server Tools"
-description: "Configure WMI to Show Server Status in SQL Server Tools"
-author: rwestMSFT
-ms.author: randolphwest
+title: Configure WMI to Show Server Status in SQL Server Tools
+description: Configure WMI to Show Server Status in SQL Server Tools
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

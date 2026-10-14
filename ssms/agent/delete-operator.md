@@ -1,8 +1,9 @@
 ---
-title: "Delete Operator"
-description: "Delete Operator"
-author: rwestMSFT
-ms.author: randolphwest
+title: Delete Operator
+description: Delete Operator
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/05/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

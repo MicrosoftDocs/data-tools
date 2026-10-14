@@ -1,8 +1,9 @@
 ---
-title: "Handle Multiple Job Steps"
-description: "Handle Multiple Job Steps"
-author: rwestMSFT
-ms.author: randolphwest
+title: Handle Multiple Job Steps
+description: Handle Multiple Job Steps
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -44,4 +45,4 @@ Job steps must be self-contained. That is, a job cannot pass Boolean values, dat
 [sysjobs (Transact-SQL)](/sql/relational-databases/system-tables/dbo-sysjobs-transact-sql)  
 [sysjobsteps](/sql/relational-databases/system-tables/dbo-sysjobsteps-transact-sql)  
 [Implement Jobs](implement-jobs.md)  
-[Manage Job Steps](manage-job-steps.md)  
+[Manage Job Steps](manage-job-steps.md)

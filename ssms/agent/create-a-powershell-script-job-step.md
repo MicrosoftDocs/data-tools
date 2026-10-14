@@ -1,9 +1,10 @@
 ---
-title: "Create a PowerShell Script Job Step"
-description: "Create a PowerShell Script Job Step"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/20/2017"
+title: Create a PowerShell Script Job Step
+description: Create a PowerShell Script Job Step
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/20/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -76,4 +77,4 @@ For more information, see [sp_add_jobstep (Transact-SQL)](/sql/relational-databa
 ## <a name="SMO"></a>Using SQL Server Management Objects  
 **To create a PowerShell Script job step**  
   
-Use the **JobStep** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.  
+Use the **JobStep** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.

@@ -1,8 +1,9 @@
 ---
-title: "Job Categories Properties - New Job Category"
-description: "Job Categories Properties - New Job Category"
-author: rwestMSFT
-ms.author: randolphwest
+title: Job Categories Properties - New Job Category
+description: Job Categories Properties - New Job Category
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -35,4 +36,4 @@ Change the category of the job by checking or clearing it.
 Displays the name of the job.  
   
 ## See Also  
-[Create Jobs](create-jobs.md)  
+[Create Jobs](create-jobs.md)

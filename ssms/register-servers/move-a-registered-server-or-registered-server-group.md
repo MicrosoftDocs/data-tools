@@ -1,8 +1,9 @@
 ---
 title: Move a Registered Server or Server Group
 description: Overview of how to move a registered server or registered server group in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

@@ -1,9 +1,10 @@
 ---
-title: "View or Change the Properties of a Connection in a Project"
-description: "View or Change the Properties of a Connection in a Project"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: View or Change the Properties of a Connection in a Project
+description: View or Change the Properties of a Connection in a Project
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -28,5 +29,4 @@ The properties of a connection saved in a project can be viewed and some can be 
 ## See Also  
 [Solution Explorer](solution-explorer.md)  
 [Associate a Query with a Connection in a Project](associate-a-query-with-a-connection-in-a-project.md)  
-[Change the Connection Associated with a Query](change-the-connection-associated-with-a-query.md)  
-  
+[Change the Connection Associated with a Query](change-the-connection-associated-with-a-query.md)

@@ -1,8 +1,9 @@
 ---
-title: "Make a Target Server"
-description: "Make a Target Server"
-author: rwestMSFT
-ms.author: randolphwest
+title: Make a Target Server
+description: Make a Target Server
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 06/03/2020
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -90,4 +91,4 @@ Permissions to execute this procedure default to members of the **sysadmin** fix
     For more information, see [sp_msx_enlist (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-msx-enlist-transact-sql).  
   
 ## See Also  
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)  
+[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)

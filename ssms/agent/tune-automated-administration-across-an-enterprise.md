@@ -1,8 +1,9 @@
 ---
 title: Tune Automated Administration Across an Enterprise
-description: "Tune Automated Administration Across an Enterprise"
-author: rwestMSFT
-ms.author: randolphwest
+description: Tune Automated Administration Across an Enterprise
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/05/2023
 ms.service: sql-server-management-studio
 ms.topic: how-to

@@ -1,8 +1,9 @@
 ---
-title: "Format Pager Addresses for Alerts"
-description: "Format Pager Addresses for Alerts"
-author: rwestMSFT
-ms.author: randolphwest
+title: Format Pager Addresses for Alerts
+description: Format Pager Addresses for Alerts
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -45,4 +46,4 @@ By default, members of the **sysadmin** fixed server role can view information a
   
 6.  Select the **Include body of e-mail in notification page** check box to include the full e-mail message with the pager message (as opposed to the subject line only).  
   
-7.  When finished, click **OK**.  
+7.  When finished, click **OK**.

@@ -1,8 +1,9 @@
 ---
-title: "Assign Alerts to an Operator"
-description: "Assign Alerts to an Operator"
-author: rwestMSFT
-ms.author: randolphwest
+title: Assign Alerts to an Operator
+description: Assign Alerts to an Operator
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -81,4 +82,4 @@ Only members of the **sysadmin** fixed server role can assign alerts to operator
     GO  
     ```  
   
-For more information, see [sp_add_notification (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-notification-transact-sql).  
+For more information, see [sp_add_notification (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-notification-transact-sql).

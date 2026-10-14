@@ -1,8 +1,9 @@
 ---
-title: "New Operator (Notifications Page)"
-description: "Operator Properties - New Operator (Notifications Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: New Operator (Notifications Page)
+description: Operator Properties - New Operator (Notifications Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -45,4 +46,4 @@ Notify this operator by sending e-mail to the pager address.
 Notify this operator using **net send**.  
   
 ## See Also  
-[Operators](operators.md)  
+[Operators](operators.md)

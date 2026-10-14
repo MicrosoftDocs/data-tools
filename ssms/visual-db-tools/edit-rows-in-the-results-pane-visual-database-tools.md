@@ -1,8 +1,9 @@
 ---
 title: Edit Rows in the Results Pane
-description: "Edit rows in the Results pane (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Edit rows in the Results pane (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

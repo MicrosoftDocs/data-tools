@@ -1,8 +1,9 @@
 ---
-title: "Manage Job Steps"
+title: Manage Job Steps
 description: Learn how to manage job steps, or actions that a SQL Server Agent job takes on a database or a server.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

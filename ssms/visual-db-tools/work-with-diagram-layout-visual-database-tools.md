@@ -1,8 +1,9 @@
 ---
 title: Work with Diagram Layout
-description: "Work with diagram layout (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Work with diagram layout (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

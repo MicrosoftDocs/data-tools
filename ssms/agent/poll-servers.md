@@ -1,8 +1,9 @@
 ---
-title: "Poll Servers"
-description: "Poll servers control how frequently the target server connects to the master server to download instructions and upload the results of job execution."
-author: rwestMSFT
-ms.author: randolphwest
+title: Poll Servers
+description: Poll servers control how frequently the target server connects to the master server to download instructions and upload the results of job execution.
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 04/18/2022
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -57,4 +58,4 @@ If you use the following items, you don't have to post operations explicitly:
   
 ## See also
 
-- [Manage Events](manage-events.md)  
+- [Manage Events](manage-events.md)

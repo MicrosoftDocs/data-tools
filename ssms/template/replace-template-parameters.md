@@ -1,8 +1,9 @@
 ---
-title: "Replace Template Parameters"
-description: "Replace Template Parameters"
-author: rwestMSFT
-ms.author: randolphwest
+title: Replace Template Parameters
+description: Replace Template Parameters
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

@@ -1,8 +1,9 @@
 ---
-title: "Create an ActiveX Script Job Step"
-description: "Create an ActiveX Script Job Step"
-author: rwestMSFT
-ms.author: randolphwest
+title: Create an ActiveX Script Job Step
+description: Create an ActiveX Script Job Step
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/06/2020
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -91,4 +92,4 @@ For more information, see [sp_add_jobstep (Transact-SQL)](/sql/relational-databa
 ## <a name="SMO"></a>Using SQL Server Management Objects  
 **To create an ActiveX Script job step**  
   
-Use the **JobStep** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.  
+Use the **JobStep** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell.

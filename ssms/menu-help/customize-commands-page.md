@@ -1,8 +1,9 @@
 ---
-title: "Customize (Commands Page)"
+title: Customize (Commands Page)
 description: Customize (Commands Page)
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

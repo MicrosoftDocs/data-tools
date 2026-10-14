@@ -1,9 +1,9 @@
 ---
 title: Install Certificates Required for an Offline Installation of SQL Server Management Studio
 description: Install the certificates required for an offline installation of SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest, mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/24/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

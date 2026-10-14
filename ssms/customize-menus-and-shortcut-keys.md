@@ -1,8 +1,9 @@
 ---
 title: Customize Menus and Shortcut Keys
 description: Customize menus and shortcut keys with keyboard accelerators.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

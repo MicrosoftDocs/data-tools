@@ -1,8 +1,9 @@
 ---
-title: "Delete One or More Jobs"
-description: "Delete One or More Jobs"
-author: rwestMSFT
-ms.author: randolphwest
+title: Delete One or More Jobs
+description: Delete One or More Jobs
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -73,4 +74,4 @@ For more information, see [sp_delete_job (Transact-SQL)](/sql/relational-databas
 ## <a name="SMO"></a>Using SQL Server Management Objects  
 **To delete multiple jobs**  
   
-Use the **JobCollection** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell. For more information, see [SQL Server Management Objects (SMO)](/sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide).  
+Use the **JobCollection** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell. For more information, see [SQL Server Management Objects (SMO)](/sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide).

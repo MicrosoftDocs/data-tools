@@ -1,8 +1,9 @@
 ---
-title: "SQL Server Agent Properties (Alert System Page)"
-description: "SQL Server Agent Properties (Alert System Page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: SQL Server Agent Properties (Alert System Page)
+description: SQL Server Agent Properties (Alert System Page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -102,4 +103,4 @@ Select this check box to enable token replacement for jobs that are activated by
 ## See Also  
 [Operators](operators.md)  
 [Configure SQL Server Agent Mail to Use Database Mail](/sql/relational-databases/database-mail/configure-sql-server-agent-mail-to-use-database-mail)  
-[Database Mail](/sql/relational-databases/database-mail/database-mail)  
+[Database Mail](/sql/relational-databases/database-mail/database-mail)

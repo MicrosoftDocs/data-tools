@@ -1,8 +1,9 @@
 ---
-title: "Manage Events"
-description: "Manage Events"
-author: rwestMSFT
-ms.author: randolphwest
+title: Manage Events
+description: Manage Events
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -84,4 +85,4 @@ You can define a job to be executed in response to an alert. For example, you ca
 > Because a job can raise an event, be careful not to create a recursive alert-job loop.  
   
 ## See Also  
-[sp_add_notification (Transact-SQL)](/sql/relational-databases/system-compatibility-views/sys-sysmessages-transact-sql)  
+[sp_add_notification (Transact-SQL)](/sql/relational-databases/system-compatibility-views/sys-sysmessages-transact-sql)

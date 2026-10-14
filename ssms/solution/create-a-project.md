@@ -1,9 +1,10 @@
 ---
-title: "Create a Project"
-description: "Create a Project"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Create a Project
+description: Create a Project
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -96,4 +97,4 @@ You can set a name for the script project, but the folder names are established 
 [Add Existing Items to a Project](add-existing-items-to-a-project.md)  
 [Change the Default Location for Projects](change-the-default-location-for-projects.md)  
 [Remove or Delete an Item or Project](remove-or-delete-an-item-or-project.md)  
-[Delete a Solution](delete-a-solution.md)  
+[Delete a Solution](delete-a-solution.md)

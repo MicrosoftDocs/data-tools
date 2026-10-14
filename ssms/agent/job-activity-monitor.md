@@ -1,8 +1,9 @@
 ---
 title: Job Activity Monitor
 description: View the current activity of SQL Server Agent jobs.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

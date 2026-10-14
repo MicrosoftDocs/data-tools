@@ -1,9 +1,10 @@
 ---
 title: Transact-SQL Syntax Supported by IntelliSense
 description: Learn which Transact-SQL statements and syntax elements are supported by SQL Server Management Studio IntelliSense in SQL Server 2019 (15.x).
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/16/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/16/2017
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -12,7 +13,7 @@ helpviewer_keywords:
   - "Transact-SQL IntelliSense"
   - "IntelliSense [SQL Server], Transact-SQL syntax"
 dev_langs:
-  - "TSQL"
+  - TSQL
 ---
 
 # Transact-SQL Syntax Supported by IntelliSense
@@ -157,5 +158,4 @@ GO
 SELECT   
 ```  
   
- After you type `SELECT`, IntelliSense lists **PrimaryKeyCol**, **FirstNameCol**, and **LastNameCol** as possible elements in the select list, even if the script hasn't been executed and `MyTable` doesn't yet exist in `MyTestDB`.  
-  
+ After you type `SELECT`, IntelliSense lists **PrimaryKeyCol**, **FirstNameCol**, and **LastNameCol** as possible elements in the select list, even if the script hasn't been executed and `MyTable` doesn't yet exist in `MyTestDB`.

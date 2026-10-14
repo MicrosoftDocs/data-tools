@@ -1,8 +1,9 @@
 ---
-title: "Create a WMI Event Alert"
-description: "Create a WMI Event Alert"
-author: rwestMSFT
-ms.author: randolphwest
+title: Create a WMI Event Alert
+description: Create a WMI Event Alert
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/20/2022
 ms.service: sql-server-management-studio
 ms.topic: how-to

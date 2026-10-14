@@ -1,8 +1,9 @@
 ---
-title: "Associate File Extensions with a Code Editor"
+title: Associate File Extensions with a Code Editor
 description: Learn how to associate a file extension to a specific code editor, so that the file is opened by the associated editor.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/30/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

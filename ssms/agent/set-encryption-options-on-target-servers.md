@@ -1,8 +1,9 @@
 ---
-title: "Set Encryption Options on Target Servers"
-description: "Set Encryption Options on Target Servers"
-author: rwestMSFT
-ms.author: randolphwest
+title: Set Encryption Options on Target Servers
+description: Set Encryption Options on Target Servers
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to

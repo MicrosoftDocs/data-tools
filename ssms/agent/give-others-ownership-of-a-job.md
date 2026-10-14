@@ -1,8 +1,9 @@
 ---
-title: "Give Others Ownership of a Job"
+title: Give Others Ownership of a Job
 description: Learn how to give others ownership of a SQL Server Agent job.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

@@ -1,8 +1,9 @@
 ---
-title: "Edit an Operator"
-description: "Edit an Operator"
-author: rwestMSFT
-ms.author: randolphwest
+title: Edit an Operator
+description: Edit an Operator
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -86,4 +87,4 @@ Only members of the **sysadmin** fixed server role can edit operators.
     GO  
     ```  
   
-For more information, see [sp_update_operator (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-operator-transact-sql).  
+For more information, see [sp_update_operator (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-update-operator-transact-sql).

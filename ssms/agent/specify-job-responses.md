@@ -1,8 +1,9 @@
 ---
-title: "Specify Job Responses"
-description: "Specify Job Responses"
-author: rwestMSFT
-ms.author: randolphwest
+title: Specify Job Responses
+description: Specify Job Responses
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -41,4 +42,4 @@ Job responses specify actions that the [!INCLUDE[ssNoVersion](../includes/ssnove
 |Describes how to write job status to the Windows application log.|[Write the Job Status to the Windows Application Log](write-the-job-status-to-the-windows-application-log.md)|  
   
 ## See Also  
-[Monitor and Respond to Events](monitor-and-respond-to-events.md)  
+[Monitor and Respond to Events](monitor-and-respond-to-events.md)

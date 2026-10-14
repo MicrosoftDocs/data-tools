@@ -1,8 +1,9 @@
 ---
-title: "User Assistance in SQL Server Management Studio"
-description: "User Assistance in SQL Server Management Studio"
-author: rwestMSFT
-ms.author: randolphwest
+title: User Assistance in SQL Server Management Studio
+description: User Assistance in SQL Server Management Studio
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/15/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

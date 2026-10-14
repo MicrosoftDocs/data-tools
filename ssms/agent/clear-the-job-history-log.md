@@ -1,8 +1,9 @@
 ---
-title: "Clear the Job History Log"
-description: "Clear the Job History Log"
-author: rwestMSFT
-ms.author: randolphwest
+title: Clear the Job History Log
+description: Clear the Job History Log
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -68,4 +69,4 @@ For detailed information, see [Implement SQL Server Agent Security](implement-sq
 ## <a name="SMO"></a>Using SQL Server Management Objects  
 **To clear the job history log**  
   
-Use the **PurgeJobHistory** method of the **JobServer** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell. For more information, see [SQL Server Management Objects (SMO)](/sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide).  
+Use the **PurgeJobHistory** method of the **JobServer** class by using a programming language that you choose, such as Visual Basic, Visual C#, or PowerShell. For more information, see [SQL Server Management Objects (SMO)](/sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide).

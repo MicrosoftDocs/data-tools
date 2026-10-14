@@ -1,9 +1,11 @@
 ---
-author: WilliamDAssafMSFT
-ms.author: wiassaf
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 07/02/2025
 ms.service: sql-server-management-studio
-ms.custom: ignite-2023
 ms.topic: include
+ms.custom:
+  - ignite-2023
 ---
 SQL analytics endpoint

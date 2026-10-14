@@ -2,9 +2,9 @@
 title: Use the Properties Window
 titleSuffix: SQL Server Management Studio
 description: Learn how to use the Properties window to see information about a SQL Server Management Studio item, such as a connection, and about database objects.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/03/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

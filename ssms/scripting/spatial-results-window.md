@@ -1,9 +1,10 @@
 ---
-title: "Spatial Results Window"
+title: Spatial Results Window
 description: Learn how to use the Spatial results window, which provides visual mapping tools for viewing spatial data. To view spatial results your query results must include a spatial column with either geometry or geography data.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -45,5 +46,4 @@ ms.collection:
  [View Spatial Data in Object Explorer](view-spatial-data-in-object-explorer.md)   
  [Spatial Data &#40;SQL Server&#41;](/sql/relational-databases/spatial/spatial-data-sql-server)   
  [Database Engine Query Editor &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)   
- [Query and Text Editors &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)  
-  
+ [Query and Text Editors &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)

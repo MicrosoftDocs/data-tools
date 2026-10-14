@@ -1,8 +1,9 @@
 ---
-title: "Create a Job Category"
-description: "Create a Job Category"
-author: rwestMSFT
-ms.author: randolphwest
+title: Create a Job Category
+description: Create a Job Category
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/19/2024
 ms.service: sql-server-management-studio
 ms.topic: how-to

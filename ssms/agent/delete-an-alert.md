@@ -1,8 +1,9 @@
 ---
-title: "Delete an Alert"
-description: "Delete an Alert"
-author: rwestMSFT
-ms.author: randolphwest
+title: Delete an Alert
+description: Delete an Alert
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 02/04/2021
 ms.service: sql-server-management-studio
 ms.topic: how-to

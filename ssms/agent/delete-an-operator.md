@@ -1,8 +1,9 @@
 ---
-title: "Delete an Operator"
-description: "Delete an Operator"
-author: rwestMSFT
-ms.author: randolphwest
+title: Delete an Operator
+description: Delete an Operator
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -69,4 +70,4 @@ Members of the **sysadmin** fixed server role can delete operators.
     GO  
     ```  
   
-For more information, see [sp_delete_operator (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-delete-operator-transact-sql).  
+For more information, see [sp_delete_operator (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-delete-operator-transact-sql).

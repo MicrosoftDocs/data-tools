@@ -1,8 +1,9 @@
 ---
-title: "View or Modify Jobs"
-description: "View or Modify Jobs"
-author: rwestMSFT
-ms.author: randolphwest
+title: View or Modify Jobs
+description: View or Modify Jobs
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -62,4 +63,4 @@ Members of the **sysadmin** fixed server role can view the definition or history
 |Describes how to change the properties of [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent jobs.|[Modify a Job](modify-a-job.md)|  
   
 ## See Also  
-[sysjobhistory](/sql/relational-databases/system-tables/dbo-sysjobhistory-transact-sql)  
+[sysjobhistory](/sql/relational-databases/system-tables/dbo-sysjobhistory-transact-sql)

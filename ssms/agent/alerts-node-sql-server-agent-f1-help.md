@@ -1,8 +1,9 @@
 ---
-title: "Alerts Node (SQL Server Agent F1 Help)"
-description: "Alerts Node (SQL Server Agent F1 Help)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Alerts Node (SQL Server Agent F1 Help)
+description: Alerts Node (SQL Server Agent F1 Help)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/05/2023
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

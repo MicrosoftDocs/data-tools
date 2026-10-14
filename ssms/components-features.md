@@ -2,9 +2,9 @@
 title: Components and Features
 titleSuffix: SQL Server Management Studio
 description: Discover capabilities and where to start with each component in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: erinstellato, drskwier
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 06/09/2026
 ms.service: sql-server-management-studio
 ms.topic: overview

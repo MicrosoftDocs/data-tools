@@ -1,8 +1,9 @@
 ---
-title: "Options (Environment - Fonts and Colors Page)"
-description: "Options (Environment - Fonts and Colors page)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Options (Environment - Fonts and Colors Page)
+description: Options (Environment - Fonts and Colors page)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

@@ -1,8 +1,9 @@
 ---
-title: "Add an Existing Project to a Solution"
-description: "Add an Existing Project to a Solution"
-author: rwestMSFT
-ms.author: randolphwest
+title: Add an Existing Project to a Solution
+description: Add an Existing Project to a Solution
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 02/19/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

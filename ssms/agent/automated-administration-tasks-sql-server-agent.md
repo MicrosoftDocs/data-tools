@@ -1,8 +1,9 @@
 ---
-title: "Automated Administration Tasks (SQL Server Agent)"
-description: "Automated Administration Tasks (SQL Server Agent)"
-author: rwestMSFT
-ms.author: randolphwest
+title: Automated Administration Tasks (SQL Server Agent)
+description: Automated Administration Tasks (SQL Server Agent)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -28,4 +29,4 @@ Microsoft [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] allows you to a
   
 [Monitor and Respond to Events](monitor-and-respond-to-events.md)  
   
-[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)  
+[Automated Administration Across an Enterprise](automated-administration-across-an-enterprise.md)

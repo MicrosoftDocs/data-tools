@@ -1,9 +1,10 @@
 ---
-title: "IntelliSense (SQL Server Management Studio)"
+title: IntelliSense (SQL Server Management Studio)
 description: Microsoft IntelliSense can assist the code-writing process in many ways. See an overview of how to use IntelliSense, with links to articles that provide the details.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/14/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/14/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -28,5 +29,4 @@ ms.collection:
 |Describes the conditions under which IntelliSense may not work.|Troubleshooting IntelliSense (SQL Server Management Studio)|  
   
 ## See Also  
- [Query and Text Editors &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)  
-  
+ [Query and Text Editors &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)

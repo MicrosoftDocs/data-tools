@@ -1,8 +1,9 @@
 ---
-title: "Create an Alert Using an Error Number"
-description: "Create an Alert Using an Error Number"
-author: rwestMSFT
-ms.author: randolphwest
+title: Create an Alert Using an Error Number
+description: Create an Alert Using an Error Number
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -84,4 +85,4 @@ By default, only members of the **sysadmin** fixed server role can execute **sp_
     GO  
     ```  
   
-For more information, see [sp_add_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-alert-transact-sql).  
+For more information, see [sp_add_alert (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-add-alert-transact-sql).

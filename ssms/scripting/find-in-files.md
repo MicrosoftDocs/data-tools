@@ -1,9 +1,10 @@
 ---
-title: "Find in Files"
+title: Find in Files
 description: Learn how to search for a string or expression in a specified set of files, and how to specify the location of the search results.
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "03/01/2017"
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 03/01/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:

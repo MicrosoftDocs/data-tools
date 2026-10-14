@@ -1,8 +1,9 @@
 ---
-title: "Select Object Types (Object Explorer)"
+title: Select Object Types (Object Explorer)
 description: Use this dialog box to specify the types of objects that appear in the Select Objects dialog box.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

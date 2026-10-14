@@ -1,8 +1,9 @@
 ---
-title: "New Proxy Account (Principals Tab)"
-description: "Proxy Account Properties - New Proxy Account (Principals Tab)"
-author: rwestMSFT
-ms.author: randolphwest
+title: New Proxy Account (Principals Tab)
+description: Proxy Account Properties - New Proxy Account (Principals Tab)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: ui-reference
@@ -31,4 +32,4 @@ Adds a principal to the list.
 Removes the selected principal from the list.  
   
 ## See Also  
-[Create a SQL Server Agent Proxy](create-a-sql-server-agent-proxy.md)  
+[Create a SQL Server Agent Proxy](create-a-sql-server-agent-proxy.md)

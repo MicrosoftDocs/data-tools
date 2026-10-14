@@ -1,9 +1,10 @@
 ---
-title: "Projects (SQL Server Management Studio)"
-description: "Projects (SQL Server Management Studio)"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Projects (SQL Server Management Studio)
+description: Projects (SQL Server Management Studio)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -51,4 +52,4 @@ To modify information about a connection, use the properties window in [!INCLUDE
 ## See Also  
 [Solution Explorer](solution-explorer.md)  
 [Solutions &#40;SQL Server Management Studio&#41;](solutions-sql-server-management-studio.md)  
-[Solution Explorer Source Control](solution-explorer.md)  
+[Solution Explorer Source Control](solution-explorer.md)

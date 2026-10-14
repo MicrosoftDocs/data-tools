@@ -1,9 +1,9 @@
 ---
 title: Migrate SQL Server to Azure SQL
 description: Learn how to assess, compare, size, plan, and migrate SQL Server databases to Azure using SQL Server Management Studio (SSMS) and Azure migration tools.
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: niball
+author: nilabjaball
+ms.author: niball
+ms.reviewer: mahyon, mbarickman
 ms.date: 09/18/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

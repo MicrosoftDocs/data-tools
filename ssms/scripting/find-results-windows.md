@@ -1,8 +1,9 @@
 ---
 title: Find Results Windows
 description: There are two Find Results windows to hold matches found by Find in Files and Replace in Files operations. Learn how to display these windows, and how to display the code file and line corresponding to a match.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

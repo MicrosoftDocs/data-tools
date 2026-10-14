@@ -1,9 +1,10 @@
 ---
-title: "Open a Template"
-description: "Open a Template"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Open a Template
+description: Open a Template
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -37,5 +38,4 @@ If opening a template launches a new editor window, the window will open with th
   
 ## See Also  
 [Template Explorer](template-explorer.md)  
-[Replace Template Parameters](replace-template-parameters.md)  
-  
+[Replace Template Parameters](replace-template-parameters.md)

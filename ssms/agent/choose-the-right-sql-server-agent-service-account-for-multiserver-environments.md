@@ -1,8 +1,9 @@
 ---
 title: Choose the Agent Service Account for Multiserver Environments
-description: "Choose the Right SQL Server Agent Service Account for Multiserver Environments"
-author: rwestMSFT
-ms.author: randolphwest
+description: Choose the Right SQL Server Agent Service Account for Multiserver Environments
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -33,4 +34,4 @@ The Windows account you choose for the [!INCLUDE[ssNoVersion](../includes/ssnove
   
     You can ignore this informational message. The enlistment operation should complete successfully.  
   
-For more information about choosing an account for the [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent service, see [Select an Account for the SQL Server Agent Service](select-an-account-for-the-sql-server-agent-service.md).  
+For more information about choosing an account for the [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Agent service, see [Select an Account for the SQL Server Agent Service](select-an-account-for-the-sql-server-agent-service.md).

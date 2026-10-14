@@ -1,9 +1,9 @@
 ---
 title: Roadmap for SQL Server Management Studio
 description: Roadmap for SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest, mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/30/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article

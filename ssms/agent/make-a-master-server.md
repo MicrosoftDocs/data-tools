@@ -1,8 +1,9 @@
 ---
 title: Make a Master Server
 description: Make a Master Server
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 05/14/2021
 ms.service: sql-server-management-studio
 ms.topic: how-to

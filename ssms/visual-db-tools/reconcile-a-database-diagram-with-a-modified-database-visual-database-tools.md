@@ -1,8 +1,9 @@
 ---
 title: Reconcile a Database Diagram with a Modified Database
-description: "Reconcile a database diagram with a modified database (Visual Database Tools)"
-author: rwestMSFT
-ms.author: randolphwest
+description: Reconcile a database diagram with a modified database (Visual Database Tools)
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 08/03/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

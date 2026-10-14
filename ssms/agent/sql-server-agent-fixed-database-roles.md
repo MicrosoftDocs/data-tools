@@ -1,8 +1,9 @@
 ---
 title: SQL Server Agent Fixed Database Roles
-description: "Learn about the fixed database roles in SQL Server's msdb database, which give administrators finer control over access to SQL Server Agent."
-author: rwestMSFT
-ms.author: randolphwest
+description: Learn about the fixed database roles in SQL Server's msdb database, which give administrators finer control over access to SQL Server Agent.
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: concept-article

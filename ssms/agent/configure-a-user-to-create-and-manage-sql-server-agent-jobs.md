@@ -1,8 +1,9 @@
 ---
 title: Configure a User to Create and Manage SQL Server Agent Jobs
 description: Learn how to configure a user to create and manage SQL Server Agent Jobs.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/07/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

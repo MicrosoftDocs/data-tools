@@ -1,8 +1,9 @@
 ---
-title: "Delete a Job Step Log"
-description: "Delete a Job Step Log"
-author: rwestMSFT
-ms.author: randolphwest
+title: Delete a Job Step Log
+description: Delete a Job Step Log
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -86,4 +87,4 @@ Use the **DeleteJobStepLogs** methods of the **Job** class by using a programmin
 $srv = new-object Microsoft.SqlServer.Management.Smo.Server("(local)")  
 $jb = $srv.JobServer.Jobs["Test Job"]  
 $jb.DeleteJobStepLogs(5)  
-```  
+```

@@ -1,9 +1,9 @@
 ---
 title: Upgrade SQL Server Using SSMS Migration Component
 description: Learn about the SQL Server migration component in SQL Server Management Studio (SSMS).
-author: rwestMSFT
-ms.author: randolphwest
-ms.reviewer: niball
+author: nilabjaball
+ms.author: niball
+ms.reviewer: mahyon, mbarickman
 ms.date: 08/17/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to

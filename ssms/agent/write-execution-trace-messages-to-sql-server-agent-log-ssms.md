@@ -1,8 +1,9 @@
 ---
 title: Write Execution Trace Messages to SQL Server Agent Error Log
-description: "Write Execution Trace Messages to the SQL Server Agent Error Log"
-author: rwestMSFT
-ms.author: randolphwest
+description: Write Execution Trace Messages to the SQL Server Agent Error Log
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -54,4 +55,4 @@ For more information about the Windows permissions required for the [!INCLUDE[ss
   
 3.  In the **SQL Server Agent Properties -**_server\_name_ dialog box, under **Error log** on the **General** page, select the **Include execution trace messages** check box.  
   
-4.  Click **OK**.  
+4.  Click **OK**.

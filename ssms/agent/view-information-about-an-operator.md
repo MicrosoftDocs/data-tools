@@ -1,8 +1,9 @@
 ---
-title: "View Information About an Operator"
-description: "View Information About an Operator"
-author: rwestMSFT
-ms.author: randolphwest
+title: View Information About an Operator
+description: View Information About an Operator
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
@@ -81,4 +82,4 @@ For details about the permissions of these roles, see [SQL Server Agent Fixed Da
     GO  
     ```  
   
-For more information, see [sp_help_operator (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-help-operator-transact-sql).  
+For more information, see [sp_help_operator (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-help-operator-transact-sql).

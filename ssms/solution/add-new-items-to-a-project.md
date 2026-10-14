@@ -1,9 +1,10 @@
 ---
-title: "Add New Items to a Project"
-description: "Add New Items to a Project"
-author: rwestMSFT
-ms.author: randolphwest
-ms.date: "01/19/2017"
+title: Add New Items to a Project
+description: Add New Items to a Project
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
+ms.date: 01/19/2017
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -48,4 +49,4 @@ SQL Server Management Studio does not allow you to create folders within project
 [Solution Explorer](solution-explorer.md)  
 [Associating File Extensions to a Code Editor](../scripting/associate-file-extensions-to-a-code-editor.md)  
 [Add Existing Items to a Project](add-existing-items-to-a-project.md)  
-[Remove or Delete an Item or Project](remove-or-delete-an-item-or-project.md)  
+[Remove or Delete an Item or Project](remove-or-delete-an-item-or-project.md)

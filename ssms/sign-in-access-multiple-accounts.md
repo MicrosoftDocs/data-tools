@@ -1,9 +1,9 @@
 ---
 title: Access Multiple Accounts in SQL Server Management Studio
 description: Learn how access multiple accounts in SQL Server Management Studio (SSMS).
-author: erinstellato-ms
-ms.author: erinstellato
-ms.reviewer: randolphwest, mbarickman
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

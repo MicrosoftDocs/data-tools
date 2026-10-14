@@ -1,8 +1,9 @@
 ---
-title: "Alert Properties - New Alert (Response Page)"
+title: Alert Properties - New Alert (Response Page)
 description: Specify a job that you want to run, and to obtain a list of operators to be notified, in response to a SQL Server Agent alert.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 12/01/2025
 ms.service: sql-server-management-studio
 ms.topic: ui-reference

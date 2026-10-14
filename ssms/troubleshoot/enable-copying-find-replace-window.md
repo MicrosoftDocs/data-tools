@@ -1,9 +1,9 @@
 ---
 title: Enable Copying from Find and Replace Window
 description: Use a workaround to enable copying from the Find and Replace window in SQL Server Management Studio.
-author: dzsquared
-ms.author: drskwier
-ms.reviewer: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 09/09/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to

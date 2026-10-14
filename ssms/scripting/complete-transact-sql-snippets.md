@@ -1,8 +1,9 @@
 ---
 title: Complete Transact-SQL Snippets
 description: A Transact-SQL snippet is a code template. Learn how to customize its use by inserting content at its replacement points, and by adding syntax elements to the template.
-author: rwestMSFT
-ms.author: randolphwest
+author: mbarickman
+ms.author: mbarickman
+ms.reviewer: mahyon
 ms.date: 10/30/2025
 ms.service: sql-server-management-studio
 ms.topic: how-to
