@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 10/25/2026
+ms.date: 10/29/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,31 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.11.3"></a>
+
+### 22.11.3
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.11.3
+- Release date: October 29, 2026
+
+#### What's new in 22.11.3
+
+| Feature | Details |
+| --- | --- |
+| Visual Studio | Updated to Visual Studio 18.11.3 [12327.326] |
+
+#### Bug fixes in 22.11.3
+
+| Feature | Description |
+| --- | --- |
+| Security | For a list of security vulnerabilities addressed, see the [Visual Studio Release Notes](/visualstudio/releases/2026/release-notes#18.11.3). |
+
+
 <a id="22.11.2"></a>
 
 ### 22.11.2
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.11.2
 - Release date: October 25, 2026
@@ -49,7 +69,7 @@ For previous versions of SSMS, see:
 | Feature | Description |
 | --- | --- |
 | GitHub Copilot in SSMS | Fixed an issue that generated the error `Requested model not available for session` when sending a prompt on GitHub Copilot while using Auto model mode. See [Visual Studio Copilot chat fails with 400 BadRequestFailure exception](https://developercommunity.visualstudio.com/t/Visual-Studio-Copilot-chat-fails-with-40/11163303). |
-| Security | For a list of security vulnerabilities addressed, see the [Visual Studio Release Notes](https://learn.microsoft.com/visualstudio/releases/2026/release-notes). |
+| Security | For a list of security vulnerabilities addressed, see the [Visual Studio Release Notes](/visualstudio/releases/2026/release-notes#18.11.2). |
 
 <a id="22.11.1"></a>
 
