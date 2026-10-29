@@ -42,7 +42,7 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Visual Studio | Updated to Visual Studio 18.11.3 [12327.326] |
+| Visual Studio | Updated to Visual Studio 18.11.3 [12328.437] |
 
 #### Bug fixes in 22.11.3
 
