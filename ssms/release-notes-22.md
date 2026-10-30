@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 10/29/2026
+ms.date: 10/30/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -105,7 +105,6 @@ For previous versions of SSMS, see:
 | Connection Dialog | Improved startup performance of the Modern Connection Dialog. |
 | Entra Integrated authentication | Added support for Microsoft Entra Integrated authentication when connecting to Azure SQL Database and Managed Instance when Web Account Manager setting is disabled. See [SSMS fails to use PRT for Microsoft.Data.SqlClient Integrated Authentication](https://developercommunity.visualstudio.com/t/SSMS-fails-to-use-PRT-for-MicrosoftData/11154133). |
 | Libraries | Updated Microsoft.Data.SqlClient to 6.1.6. |
-| Libraries | Updated MSODBCSQL to 18.7.1.1. |
 | Visual Studio | Updated to Visual Studio 18.11.0 [12306.390] |
 
 #### Bug fixes in 22.11.0
