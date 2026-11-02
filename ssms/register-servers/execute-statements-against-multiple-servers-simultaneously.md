@@ -9,6 +9,8 @@ ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
   - data-tools
+f1_keywords:
+  - "sql13.swb.sqleditors.multiserverresultssettings"
 helpviewer_keywords:
   - "multiserver queries"
   - "executing queries against multiple servers"
