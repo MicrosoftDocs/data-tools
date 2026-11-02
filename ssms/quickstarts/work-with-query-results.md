@@ -10,6 +10,10 @@ ms.service: sql-server-management-studio
 ms.topic: ui-reference
 ms.collection:
   - data-tools
+f1_keywords:
+  - "sql13.swb.tsqlresults.f1"
+  - "sql13.swb.query.grid.f1"
+  - "sql13.swb.query.text.f1"
 helpviewer_keywords:
   - "query results [SQL Server Management Studio]"
   - "results to grid [SQL Server Management Studio]"

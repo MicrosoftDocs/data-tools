@@ -13,10 +13,7 @@ f1_keywords:
   - "sql13.swb.query.advanced.f1"
   - "sql13.swb.query.ansi.f1"
   - "sql13.swb.query.general.f1"
-  - "sql13.swb.query.grid.f1"
-  - "sql13.swb.sqleditors.multiserverresultssettings"
   - "sql13.swb.tsqlquery.f1"
-  - "sql13.swb.tsqlresults.f1"
 helpviewer_keywords:
   - "SQL Server Management Studio [SQL Server], editor"
   - "SQL Server Management Studio [SQL Server], Database Engine Query Editor"
