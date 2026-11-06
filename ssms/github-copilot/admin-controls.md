@@ -39,7 +39,7 @@ If your organization needs to disable GitHub Copilot in SSMS while keeping it en
 
 1. Download the [Visual Studio Group Policy Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=104405) from the Microsoft Download Center.
 1. Save the template files to `C:\Windows\PolicyDefinitions`.
-1. Open the Windows Local Group Policy Editor and navigate to **Computer Configuration** > **Administrative Templates** > **Visual Studio** > **Copilot Settings**.
+1. Open the Windows Local Group Policy Editor and go to **Computer Configuration** > **Administrative Templates** > **Visual Studio** > **Copilot Settings**.
 1. Configure the applicable Copilot policies.
 1. Restart SSMS for the policy changes to take effect.
 
@@ -70,7 +70,7 @@ With SSMS 22.7 or later versions, administrators can configure execution context
 
 ## Configure the MCP server allow list
 
-With SSMS 22.7 or later versions, administrators can configure an allow list of approved MCP servers through the GitHub Copilot administration dashboard. When an allow list is configured, developers in the organization can only connect to MCP servers that appear on the approved list.
+By using SSMS 22.7 or later versions, administrators can configure an allow list of approved MCP servers through the GitHub Copilot administration dashboard. When an allow list is configured, developers in the organization can only connect to MCP servers that appear on the approved list.
 
 ### How the MCP server allow list works
 

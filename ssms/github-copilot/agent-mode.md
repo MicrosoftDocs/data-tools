@@ -201,7 +201,7 @@ Yes. You must be in Agent mode to use MCP tools. See [Use MCP servers with GitHu
 
 ### As an administrator, how do I control Agent mode for my organization?
 
-Administrators can manage Agent mode through GitHub Copilot policies on GitHub.com. With SSMS 22.7 or later versions, administrators can also disable Agent mode using the Visual Studio Administrative Templates (ADMX/ADML). For more information, see [Disable Agent mode](admin-controls.md#disable-agent-mode).
+Administrators can manage Agent mode through GitHub Copilot policies on GitHub.com. By using SSMS 22.7 or later, administrators can also disable Agent mode by using the Visual Studio Administrative Templates (ADMX/ADML). For more information, see [Disable Agent mode](admin-controls.md#disable-agent-mode).
 
 ## Related content
 
