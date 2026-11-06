@@ -5,7 +5,7 @@ description: Learn about administrative controls for GitHub Copilot in SQL Serve
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 09/28/2026
+ms.date: 11/06/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -17,26 +17,31 @@ ms.update-cycle: 180-days
 
 SQL Server Management Studio (SSMS) 22 introduces new features that enable administrators to configure and manage GitHub Copilot more effectively within their enterprise. These features provide administrators greater control over the use of Copilot within their organization.
 
-Admins can disable Copilot for individual accounts, disable it entirely, configure an `agentExecuteAsUser` in the database `CONSTITUTION.md` to specify a particular database user or SQL login to use when interacting with a database, and configure content exclusion to prevent certain files from being available to Copilot in SSMS.
+Admins can disable Copilot for individual accounts, disable it entirely, configure an `agentExecuteAsUser` in the database `CONSTITUTION.md` to specify a particular database user or SQL login to use when interacting with a database, configure an MCP server allow list, and configure content exclusion to prevent certain files from being available to Copilot in SSMS.
 
 In this article, you learn how to:
 
 - Disable Copilot
 - Configure execution context
+- Configure the MCP server allow list
 - Configure content exclusion
 
 ## Disable Copilot
 
-With SSMS 22.4.1 and later, administrators can disable Copilot for individual accounts or disable it entirely using the Visual Studio Administrative Templates (ADMX/ADML), and you can disable Copilot Free. Preventing unexpected access ensures that your environment remains protected.
+With SSMS 22.4.1 and later, administrators can manage GitHub Copilot using the Visual Studio Administrative Templates (ADMX/ADML). These policies can be configured and deployed using [Microsoft Intune](/visualstudio/install/administrative-templates#deploying-the-policies) or the [Local Group Policy Editor](/visualstudio/ide/visual-studio-github-copilot-admin#configure-copilot-group-policy).
 
-To configure and deploy these policies, you can use [Microsoft Intune](/visualstudio/install/administrative-templates#deploying-the-policies) or the [Local Group Policy Editor](/visualstudio/ide/visual-studio-github-copilot-admin#configure-copilot-group-policy) directly on the client machine.
+> [!IMPORTANT]  
+> GitHub Copilot in SSMS currently shares Group Policy settings with Visual Studio. Disabling GitHub Copilot through these policies affects both SSMS and Visual Studio. Separate Group Policy controls for SSMS aren't currently supported.
+
+If your organization needs to disable GitHub Copilot in SSMS while keeping it enabled in Visual Studio, see [Uninstall GitHub Copilot in SSMS](#uninstall-github-copilot-in-ssms) for an alternative approach.
 
 ### Configure Copilot group policy
 
-1. Visit the Microsoft Download Center to download the [Visual Studio Group Policy Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=104405). When prompted, ensure the files are saved to `C:\Windows\PolicyDefinitions`.
-1. Open the **Windows Local Group Policy Editor** and navigate to **Computer Configuration** > **Administrative Templates** > **SQL Server Management Studio** > **Copilot Settings**. Select a group policy.
-1. Once you select the group policy, configure it to enable or disable Copilot as needed.
-1. Restart SSMS to apply the new policy changes.
+1. Download the [Visual Studio Group Policy Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=104405) from the Microsoft Download Center.
+1. Save the template files to `C:\Windows\PolicyDefinitions`.
+1. Open the Windows Local Group Policy Editor and navigate to **Computer Configuration** > **Administrative Templates** > **Visual Studio** > **Copilot Settings**.
+1. Configure the applicable Copilot policies.
+1. Restart SSMS for the policy changes to take effect.
 
 ### Disable Copilot in GitHub
 
@@ -44,17 +49,20 @@ With SSMS 22.4.1 or later versions, administrators can disable Copilot for indiv
 
 For more information, see [Managing GitHub Copilot in your organization](https://docs.github.com/copilot/how-tos/administer-copilot/manage-for-organization).
 
+> [!NOTE]  
+> These controls manage GitHub Copilot access through GitHub organization or enterprise settings and license assignments. They aren't specific to SSMS. To disable GitHub Copilot only in SSMS, see [Uninstall GitHub Copilot in SSMS](#uninstall-github-copilot-in-ssms).
+
 ### Uninstall GitHub Copilot in SSMS
 
 If your organization requires that GitHub Copilot isn't available in SSMS, you can remove the AI Assistance workload through the Visual Studio Installer. For detailed steps, see [Uninstall GitHub Copilot in SSMS using the Visual Studio Installer](installation-state.md#uninstall-github-copilot-in-ssms-using-the-visual-studio-installer).
 
-You can also hide the Copilot badge in SSMS without uninstalling. For more information, see [Hide the Copilot badge](installation-state.md#hide-the-copilot-badge).
+You can also hide the Copilot badge in SSMS without uninstalling. Hiding the badge doesn't uninstall or disable GitHub Copilot. For more information, see [Hide the Copilot badge](installation-state.md#hide-the-copilot-badge).
 
 ### Disable Agent mode
 
 With SSMS 22.7 or later versions, administrators can fully disable Agent mode using [Visual Studio Administrative Templates (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=104405). With this policy setting, administrators can control which AI-assisted features are available in their organization, helping ensure usage aligns with security and compliance requirements.
 
-Policy location in the Local Group Policy Editor: **Computer Configuration** > **Administrative Templates** > **SQL Server Management Studio** > **Copilot Settings** > **Disable Agent Mode**
+Policy location in the Local Group Policy Editor: **Computer Configuration** > **Administrative Templates** > **Visual Studio** > **Copilot Settings** > **Disable Agent Mode**
 
 ## Configure the GitHub Copilot execution context for a database
 
@@ -62,7 +70,7 @@ With SSMS 22.7 or later versions, administrators can configure execution context
 
 ## Configure the MCP server allow list
 
-With SSMS 22.7, administrators can configure an allow list of approved MCP servers through the GitHub Copilot administration dashboard. When an allow list is configured, developers in the organization can only connect to MCP servers that appear on the approved list.
+With SSMS 22.7 or later versions, administrators can configure an allow list of approved MCP servers through the GitHub Copilot administration dashboard. When an allow list is configured, developers in the organization can only connect to MCP servers that appear on the approved list.
 
 ### How the MCP server allow list works
 

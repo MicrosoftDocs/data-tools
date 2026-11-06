@@ -5,7 +5,7 @@ description: Learn how to troubleshoot GitHub Copilot in SQL Server Management S
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 05/29/2026
+ms.date: 11/06/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -59,9 +59,9 @@ Occasionally, you might need to refresh your credentials due to expected timeout
 
 ### Copilot is disabled
 
-Your administrator can [disable GitHub Copilot](/visualstudio/ide/visual-studio-github-copilot-admin) for an individual or any Copilot license.
+Your administrator might have disabled GitHub Copilot through Group Policy or restricted your access through GitHub organization or enterprise settings. For more information, see [Admin controls for GitHub Copilot in SQL Server Management Studio](admin-controls.md).
 
-**Action**: Contact your IT department to confirm whether your administrator disabled Copilot.
+**Action**: Contact your IT department to confirm whether administrative policies or GitHub access settings prevent you from using Copilot. GitHub Copilot in SSMS shares Group Policy settings with Visual Studio, so policies configured for Visual Studio also affect SSMS.
 
 ### Log files
 

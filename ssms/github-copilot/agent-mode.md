@@ -5,7 +5,7 @@ description: Learn how to use GitHub Copilot Agent mode in SQL Server Management
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 09/28/2026
+ms.date: 11/06/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -201,7 +201,7 @@ Yes. You must be in Agent mode to use MCP tools. See [Use MCP servers with GitHu
 
 ### As an administrator, how do I control Agent mode for my organization?
 
-Administrators control Agent mode through the GitHub Copilot dashboard. For more information, see [Admin controls for GitHub Copilot in SQL Server Management Studio](admin-controls.md).
+Administrators can manage Agent mode through GitHub Copilot policies on GitHub.com. With SSMS 22.7 or later versions, administrators can also disable Agent mode using the Visual Studio Administrative Templates (ADMX/ADML). For more information, see [Disable Agent mode](admin-controls.md#disable-agent-mode).
 
 ## Related content
 
