@@ -5,7 +5,7 @@ description: Learn how to install GitHub Copilot in SQL Server Management Studio
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 05/19/2026
+ms.date: 11/06/2026
 ms.service: sql-server-management-studio
 ms.topic: how-to
 ms.collection:
@@ -90,6 +90,8 @@ If you don't want to install GitHub Copilot, you can [Hide the Copilot badge](#h
 ### Hide the Copilot badge
 
 You can hide the GitHub Copilot badge in SSMS by disabling the **Hide Copilot menu badge** option in **Tools** > **Options** > **Environment** > **Visual Experience**.
+
+Hiding the badge doesn't uninstall or disable GitHub Copilot. To manage Copilot access through administrative policies, see [Admin controls for GitHub Copilot in SQL Server Management Studio](admin-controls.md).
 
 ### Uninstall GitHub Copilot in SSMS using the Visual Studio Installer
 
