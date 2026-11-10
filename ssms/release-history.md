@@ -4,7 +4,7 @@ description: Learn about the release history for SQL Server Management Studio (S
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 10/29/2026
+ms.date: 11/10/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -65,6 +65,7 @@ The bootstrapper in the following table always installs the latest release of SS
 | Channel | Version | Bootstrapper |
 | --- | --- | --- |
 | Release | [!INCLUDE [latest-build](includes/latest-build.md)] | [SQL Server Management Studio GA](https://aka.ms/ssms/22/release/vs_SSMS.exe) |
+| Release | 22.11.3 | [SQL Server Management Studio 22.11.3](https://download.visualstudio.microsoft.com/download/pr/5f474104-723f-4007-bf4c-92e42a23dcc6/8784f511aa380e8637ce005bbecb81a6a071140465f33e7114deebd0caebf876/vs_SSMS.exe) |
 | Release | 22.11.2 | [SQL Server Management Studio 22.11.2](https://download.visualstudio.microsoft.com/download/pr/9a3f23c2-cc94-49a0-88c0-f9f19f2ac9df/55e97b2746e1a73a34c38e29d2e8170dc825eb836b879e7d676ab223515396d3/vs_SSMS.exe) |
 | Release | 22.11.1 | [SQL Server Management Studio 22.11.1](https://download.visualstudio.microsoft.com/download/pr/e07fb79d-d4ec-45bc-b19d-200bc819ee8d/bf9e70ba695a1aa4d6b991bd623541a2b8ce3fac3c17fe430291bc60c7692f59/vs_SSMS.exe) |
 | Release | 22.11.0 | [SQL Server Management Studio 22.11.0](https://download.visualstudio.microsoft.com/download/pr/4ee8a2e7-bc71-435a-8180-6703ab4d2017/dce5733b30d9048220fe35d92ef6a5101cdcde37aae738537b82c687645710fe/vs_SSMS.exe) |

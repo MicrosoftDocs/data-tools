@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 10/30/2026
+ms.date: 11/10/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,34 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+<a id="22.12.0"></a>
+
+### 22.12.0
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.12.0
+- Release date: November 10, 2026
+
+#### What's new in 22.12.0
+
+| Feature | Details |
+| --- | --- |
+| Libraries | Updated Microsoft ODBC Driver for SQL Server to version 18.7.1.1. |
+| Libraries | Updated SQL Server Management Objects (SMO) to version 181.38.1. |
+
+#### Bug fixes in 22.12.0
+
+| Feature | Description |
+| --- | --- |
+| Query Store | Fixed an issue that caused grid headers and tooltips in Query Store reports to display inconsistent or missing units for query metrics. See [Query Store Top Resource Queries shows inconsistent Logical Reads units](https://developercommunity.visualstudio.com/t/Query-Store-Top-Resource-Queries-shows-i/11088983). |
+| Query Window | Fixed an issue that caused unsaved query windows in different SSMS sessions to reuse the same temporary filename, resulting in incorrect file-change prompts. See [SQL Server reuses query filenames across sessions and reports false changes](https://developercommunity.visualstudio.com/t/SQL-Server-reuses-query-filenames-across/11151350). |
+| Results to Grid | Fixed an issue that made `NULL` values in XML columns difficult to read in selected cells when the results grid lost focus while using a dark theme. See [Results grid obscures XML NULL in unfocused selected cells when using dark theme](https://developercommunity.visualstudio.com/t/11143581). |
+| SQL Server Agent | Fixed an issue that prevented pager email subject prefixes and suffixes from being saved in SQL Server Agent Properties when the existing subject template was empty. See [SQL Server Agent fails to save pager email subject prefix](https://developercommunity.visualstudio.com/t/SQL-Server-Agent-fails-to-save-pager-ema/11168946). |
+
 <a id="22.11.3"></a>
 
 ### 22.11.3
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.11.3
 - Release date: October 29, 2026
