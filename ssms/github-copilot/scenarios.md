@@ -5,7 +5,7 @@ description: Learn about example scenarios for GitHub Copilot in SQL Server Mana
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 05/19/2026
+ms.date: 11/09/2026
 ms.service: sql-server-management-studio
 ms.topic: concept-article
 ms.collection:
@@ -101,6 +101,23 @@ Copilot can help you quickly develop objects in your database.
    ```copilot-prompt
    We need to generate data for each of the tables. Each table should have 100-1000 rows. The data needs to be realistic (we can't repeat names, products, etc.). Can you help generate scripts for that? It's ok if the scripts are long. Variability in the data is more important than having a short script. For the customers table, use a combination of 50 first names and 50 last names and also use 30 different city/state combinations.
    ```
+
+## Get help with query performance tuning 
+Copilot in agent mode can help you find and fix slow or resource-intensive queries. Connect the query editor to the database where the problem occurs, open the query, and ask agent to analyze it in the chat. Agent generates the estimated execution plan, finds the most costly operations and query anti-patterns, and recommends fixes in priority order. Fixes can include a rewritten query, a missing index, or a query hint, each with the reasoning behind it. Agent doesn't run your query without your permission, and it doesn't apply changes to your database. For the full capability, see [Query performance tuning with GitHub Copilot in SSMS](https://aka.ms/querytuningssmsghcp).
+
+Ask general questions about a query's performance. For example: 
+
+- `How can I improve this query`
+- `Why is this query slow`
+- `Are there any anti-patterns in this query`
+- `What's the bottleneck in this query or its execution plan`
+
+Ask for a specific fix. For example:
+
+- `Rewrite this query to improve its performance`
+- `Recommend an index that would improve this query’s performance`
+- `Recommend an appropriate query hint to improve this query’s performance`
+
 
 ## Other examples
 
