@@ -5,7 +5,7 @@ description: Discover capabilities and where to start with each component in SQL
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 06/09/2026
+ms.date: 11/05/2026
 ms.service: sql-server-management-studio
 ms.topic: overview
 ms.collection:
@@ -30,7 +30,7 @@ This article describes the components and features available in [!INCLUDE [ssman
 | **Template Explorer** | Build and manage files of boilerplate text that you use to speed the development of queries and scripts. | [Template Explorer](template/template-explorer.md) |
 | **Visual Database Tools** | Use the visual design tools included in SSMS to build queries, tables, and diagram databases. | [Visual Database Tools](visual-db-tools/visual-database-tools.md) |
 | **Query Editor** | Use the SSMS language editors to interactively build queries and scripts. | [Query Editor (SQL Server Management Studio)](f1-help/database-engine-query-editor-sql-server-management-studio.md) |
-| **Database DevOps** | Implement, manage, and collaborate on database changes with SQL database projects and source control. | [Database DevOps in SQL Server Management Studio](database-devops.md) |
+| **Database DevOps** | Develop and deploy database changes with SQL database projects and source control. Create and apply DACPAC or BACPAC files with the package wizards (Preview). | [Projects in SSMS](build-database-projects-by-using-sql-server-management-studio.md), [Create a DACPAC or BACPAC file](create-dacpac-bacpac.md), [Apply a DACPAC or BACPAC](apply-dacpac-bacpac.md), [Create a database from a DACPAC or BACPAC](create-database-from-dacpac-bacpac.md) |
 | **Schema Compare** | Compare schemas between databases, `.dacpac` files, and SQL database projects. View differences and apply changes to a target. | [Schema Compare in SQL Server Management Studio](schema-compare.md) |
 
 ## Management, security, and productivity

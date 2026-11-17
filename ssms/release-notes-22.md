@@ -154,7 +154,7 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Database DevOps | The **Database DevOps** workload is now generally available. See [Database DevOps in SQL Server Management Studio](database-devops.md). |
+| Database DevOps | The **Database DevOps** workload is now generally available. See [Projects in SQL Server Management Studio](build-database-projects-by-using-sql-server-management-studio.md). |
 | Fabric SQL Database | Added **Open in Fabric Portal** option when right-clicking a Fabric SQL Database connected in Object Explorer. |
 | GitHub Copilot Agent Mode | Agent Mode for GitHub Copilot in SSMS is now generally available. |
 | GitHub Copilot Agent Mode | Updated the bundled SQL Tools MCP server to version 3.0.17, adding the latest skills and access-mode improvements. Query execution permissions are now determined by the connected SQL account's permissions. |
@@ -580,7 +580,7 @@ For previous versions of SSMS, see:
 | Feature | Details |
 | --- | --- |
 | Connection Dialog | Added a new setting, **Automatically select the most recent connection**, in **Tools** > **Options** > **Connection Dialog** that controls the default behavior of the modern Connection Dialog when opened. |
-| Database DevOps (preview) | Added the **Database DevOps** workload (preview), that enables you to implement, manage, and collaborate on database changes using SQL database projects and source control. See [Database DevOps (preview) in SQL Server Management Studio](database-devops.md) and [Add support for SQL database projects](https://developercommunity.visualstudio.com/t/Add-support-for-SQL-database-projects/10864596). |
+| Database DevOps (preview) | Added the **Database DevOps** workload (preview), that enables you to implement, manage, and collaborate on database changes using SQL database projects and source control. See [Projects in SQL Server Management Studio](build-database-projects-by-using-sql-server-management-studio.md) and [Add support for SQL database projects](https://developercommunity.visualstudio.com/t/Add-support-for-SQL-database-projects/10864596). |
 | GitHub Copilot in SSMS | GitHub Copilot in SSMS is now generally available. |
 | GitHub Copilot in SSMS | Added support for user-level [custom instructions](github-copilot/custom-instructions.md). See [Copilot should support an Instructions file](https://developercommunity.visualstudio.com/t/Copilot-should-support-an-Instructions-f/10948846). |
 | Object Explorer | Added the ability to group database objects by schema to the Object Explorer. To toggle the setting on and off, select the icon for Group by schema (between the Refresh and Show Policy Health icons). Set the default behavior under **Tools** > **Options** > **SQL Server Object Explorer** > **General**. See [Group objects by schema in Object Explorer](https://developercommunity.visualstudio.com/t/Group-objects-by-schema-in-Object-Explor/10874158). |

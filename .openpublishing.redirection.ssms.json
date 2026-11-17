@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "ssms/database-devops.md",
+      "redirect_url": "/ssms/build-database-projects-by-using-sql-server-management-studio",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ssms/download-sql-server-management-studio-ssms.md",
       "redirect_url": "/ssms/install/install",
       "redirect_document_id": false
