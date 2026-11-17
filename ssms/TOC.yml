@@ -154,6 +154,8 @@ items:
         href: quickstarts/ssms-connect-query-sql-server-azure-vm.md
       - name: Connect and query Azure SQL Database
         href: quickstarts/ssms-connect-query-azure-sql-database.md
+      - name: Connect and query an Azure SQL Database container
+        href: quickstarts/ssms-connect-query-azure-sql-database-container.md
       - name: Connect and query Azure SQL Managed Instance
         href: quickstarts/ssms-connect-query-azure-sql-managed-instance.md
       - name: Connect and query SQL database in Microsoft Fabric
