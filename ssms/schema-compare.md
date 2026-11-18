@@ -116,5 +116,5 @@ Open an `.scmp` file in SSMS to run the same comparison again later or to share 
 ## Related content
 
 - [Schema comparison overview](/sql/tools/sql-database-projects/concepts/schema-comparison)
-- [Database DevOps in SQL Server Management Studio](database-devops.md)
+- [Projects in SQL Server Management Studio](build-database-projects-by-using-sql-server-management-studio.md)
 - [SQL database projects](/sql/tools/sql-database-projects/sql-database-projects)

@@ -850,12 +850,18 @@ items:
         href: /sql/relational-databases/import-export/import-flat-file-wizard
       - name: SQL Server Management Objects (SMO) >
         href: /sql/relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide
-      - name: Projects in SSMS
-        href: build-database-projects-by-using-sql-server-management-studio.md
       - name: Database DevOps in SSMS
-        href: database-devops.md
-      - name: Schema Compare in SSMS
-        href: schema-compare.md
+        items:
+          - name: Projects in SSMS
+            href: build-database-projects-by-using-sql-server-management-studio.md
+          - name: Create a DACPAC or BACPAC file
+            href: create-dacpac-bacpac.md
+          - name: Apply a DACPAC or BACPAC to an existing database
+            href: apply-dacpac-bacpac.md
+          - name: Create a database from a DACPAC or BACPAC
+            href: create-database-from-dacpac-bacpac.md
+          - name: Schema Compare in SSMS
+            href: schema-compare.md
 
       - name: Visual database tools
         items:

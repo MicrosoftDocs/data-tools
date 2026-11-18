@@ -4,7 +4,7 @@ description: Updates, improvements, and bug fixes for the current version of SQL
 author: mbarickman
 ms.author: mbarickman
 ms.reviewer: mahyon
-ms.date: 11/10/2026
+ms.date: 11/17/2026
 ms.service: sql-server-management-studio
 ms.topic: whats-new
 ms.collection:
@@ -29,11 +29,76 @@ For previous versions of SSMS, see:
 - [Release notes for SQL Server Management Studio (SSMS) 20](release-notes-20.md)
 - [Release notes for SQL Server Management Studio (SSMS) 19 and earlier versions](release-notes-19.md)
 
+### 22.12.1
+
+**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
+
+- Release number: 22.12.1
+- Release date: November 17, 2026
+
+#### What's new in 22.12.1
+
+| Feature | Details |
+| --- | --- |
+| Azure SQL Database Container deployment (preview) | Create and manage local Azure SQL Database containers using Docker Desktop through SSMS. |
+| Azure SQL Database / Azure Synapse Analytics | Updated **Properties** for Azure SQL databases and dedicated SQL pools to use the redesigned database configuration experience. |
+| Azure SQL Managed Instance | Enabled multi-node availability group support in the [Managed Instance link](/azure/azure-sql/managed-instance/managed-instance-link-extend-availability-group) wizard, with automatic configuration of individual Always On server nodes (preview). |
+| Connection dialog | Added keyboard accessibility for recent and favorite connections. See [Keyboard navigation for favorite connections](https://developercommunity.visualstudio.com/t/Preview-Connect-Dialog-not-keyboard-frie/10898047). |
+| Connection dialog | Updated the default layout of the Modern Connection dialog to horizontal. |
+| Data Classification | Improved dark-theme and high-contrast support, keyboard navigation, and screen-reader descriptions and reading order in classification reports. |
+| Data-tier application | Added an option to generate a deployment script for a `.dacpac` file from the Apply wizard before applying changes. |
+| Data-tier application | Added a unified wizard for exporting a database to a `.bacpac` file or extracting a database schema to a `.dacpac` file. |
+| Data-tier application | Added a command to create a database from a `.bacpac` or `.dacpac` file. |
+| Execution plans | Added version-store read counters to **Actual I/O Statistics** when provided by the database engine. |
+| Fabric SQL database | Added dialogs for creating and deleting SQL databases in Microsoft Fabric. |
+| Fabric Database Hub | Added an **Open in Fabric Database Hub** action to the database context menu for Azure SQL databases. |
+| Fabric Database Hub | Added an **Open in Fabric Database Hub** action to the context menu for Registered Servers groups. |
+| Generate Scripts (preview) | Added a redesigned **Generate Scripts (Preview)** wizard with search for database objects when selecting objects to script. The wizard is available in Object Explorer under **Tasks** on the database context menu. See [Object search in Generate Scripts](https://developercommunity.visualstudio.com/t/Search-for-database-objects-tables-use/10887552). |
+| GitHub Copilot in SSMS | Introduced a new Copilot SDK-based chat experience, available as an opt-in preview through the **New Copilot Chat experience** setting. This integration also adds bring your own model (BYOM) support (preview). |
+| GitHub Copilot Agent Mode | Added support for opening SSMS utilities from chat, including Activity Monitor, XEvent Profiler, Schema Compare, and Generate Scripts. |
+| Migration Assistant | Improved assessment performance for SQL Server instances with many databases. |
+| Query Editor | Improved Azure SQL Database switching performance when selecting a database from the current database drop-down menu. |
+| Results Grid | Added support for customizing the thousands separator used to display numbers in the results grid. |
+| SQL Formatter | Added settings for `JOIN`/`APPLY` indentation and starting the `SELECT` list on a new line. |
+| Visual Studio | Updated to Visual Studio 18.12.1 [12405.243]. |
+
+#### Bug fixes in 22.12.1
+
+| Feature | Description |
+| --- | --- |
+| Activity Monitor | Fixed an issue where the session details window opened on the first monitor and didn't support the dark theme. See [Activity Monitor session details window](https://developercommunity.visualstudio.com/t/View-Details-in-Activity-Monitor-opens-o/11022695). |
+| Connection dialog | Fixed an issue that cleared recent connections after an Active Directory password change. See [Recent connections after a domain password change](https://developercommunity.visualstudio.com/t/SSMS-clears-Recent-Connections-by-deleti/11125408). |
+| Connection dialog | Fixed an issue that prevented saving connection history when using Windows authentication across domains. |
+| Connection dialog | Fixed misaligned and clipped text in connection properties fields. See [Text alignment in the connection dialog](https://developercommunity.visualstudio.com/t/SSMS-connection-dialog-text-misaligned-a/11134215). |
+| Connection dialog | Fixed an issue where the **Connect** and **Cancel** buttons were inaccessible at 150% display scaling. See [Connection dialog buttons at 150% scaling](https://developercommunity.visualstudio.com/t/New-connection-dialog-hides-ConnectCanc/11135734). |
+| Connection dialog | Fixed an error when creating an Azure SQL firewall rule and an overlapping dialog that obscured action buttons. See [Azure firewall rule creation in SSMS](https://developercommunity.visualstudio.com/t/SSMS-22-Error-creating-Azure-Firewall-/11013271). |
+| Data-tier application | Updated the Apply wizard to display a message when there are no changes to apply or no potential data loss, instead of showing an empty grid. |
+| Fabric | Fixed an issue where Fabric operations could reuse authentication from a different connection. |
+| Fabric Warehouse | Fixed an issue where Object Explorer actions used the previous warehouse name after renaming a warehouse. |
+| GitHub Copilot in SSMS | Fixed an issue where an `@SSMS` request could finish without a response when the model request timed out. |
+| Log Viewer | Fixed an issue that prevented opening Windows NT logs on Windows Server 2025 with the error `The stub received bad data`. See [Windows NT logs on Windows Server 2025](https://developercommunity.visualstudio.com/t/SSMS-Windows-NT-Logs-fail-to-open-on-Win/11135440). |
+| Log Viewer | Fixed missing Integration Services log events. |
+| Log Viewer | Fixed an issue where the viewer remained at **Cancel pending...** after loading completed. |
+| Multi-server queries | Fixed an issue where query properties showed only the last unreachable server in the **Connection failures** list. |
+| Object Explorer | Fixed an issue where renaming a stored procedure whose name contained an underscore and an exclamation mark temporarily hid its schema name until Object Explorer was refreshed. See [Schema display after renaming a stored procedure](https://developercommunity.visualstudio.com/t/Object-Explorer-rename-temporarily-drops/11086494). |
+| Query Editor | Fixed an issue where the database drop-down list displayed error 916 for databases the connected user didn't have permission to access. See [Database selection with restricted permissions](https://developercommunity.visualstudio.com/t/SSMS-Query-Editor-database-dropdown-thro/11154361). |
+| Query Editor | Fixed an issue where the database drop-down list caused SSMS to become unresponsive after deleting a database. See [Database selection after deleting databases](https://developercommunity.visualstudio.com/t/SSMS-v22-database-dropdown-hangs-the-UI-/11024226). |
+| Query Editor | Fixed an issue where selecting **Query Options** > **Reset** applied changes before **OK** was selected. **Cancel** now preserves the query window's existing execution settings. |
+| Query Editor | Fixed an issue where the database drop-down list showed another query window's database when switching to a window with an executing query. |
+| Results Grid | Fixed an issue where **Save Results As** defaulted to the Documents folder instead of remembering the last folder used. See [Save location for query results](https://developercommunity.visualstudio.com/t/When-saving-query-results-form-grid-rem/11054661). |
+| Results Grid | Fixed an issue where exporting query results to an `.xlsx` file failed when text converted from `VARBINARY` contained a null character (`0x00`). See [Excel export with null characters](https://developercommunity.visualstudio.com/t/XLSX-export-fails-on-VARBINARY-text-cont/11158953). |
+| Results Grid | Fixed an issue where custom font and color settings weren't applied correctly to grid results. See [Grid Results font and color settings](https://developercommunity.visualstudio.com/t/Environment--Fonts-and-Color-Settings/11166132). |
+| Results Grid | Updated the help link for **Results to Grid** settings to point to current documentation. See [Results to Grid contextual help](https://developercommunity.visualstudio.com/t/SSMS-Results-to-Grid-help-opens-outdated/11170223). |
+| Schema Compare | Fixed screen-reader accessibility and keyboard-focus issues with **Include** controls in comparison results. |
+| SQL Formatter | Fixed an issue that moved the `AND` keyword ahead of a commented-out condition. See [Formatting commented-out conditions](https://developercommunity.visualstudio.com/t/SQL-formatter-moves-AND-before-commented/11164797). |
+| SQL Formatter | Fixed an issue where the **Format SQL** command was unavailable in the T-SQL editor for ARM64 devices. See [SQL Formatter command availability](https://developercommunity.visualstudio.com/t/SSMS-SQL-Formatter-command-is-unavailabl/11165075). |
+| SQL Formatter | Fixed unwanted line breaks after `FROM` and incorrect indentation of `JOIN` clauses. See [Formatting FROM and JOIN clauses](https://developercommunity.visualstudio.com/t/SQL-formatter-forces-line-break-after-FR/11170632). |
+| Table Designer | Fixed `json` and `vector` type recognition on Fabric SQL Database and Azure SQL Managed Instance. See [Editing tables with a JSON column](https://developercommunity.visualstudio.com/t/Error-when-editing-a-table-with-a-JSON-d/11062121). |
+| Template Explorer | Fixed invalid parameters and syntax in **Create Graph Edge Table** templates for SQL Server and Azure SQL Database. |
+
 <a id="22.12.0"></a>
 
 ### 22.12.0
-
-**[Download SQL Server Management Studio (SSMS) 22](https://aka.ms/ssms/22/release/vs_SSMS.exe)**
 
 - Release number: 22.12.0
 - Release date: November 10, 2026
@@ -154,7 +219,7 @@ For previous versions of SSMS, see:
 
 | Feature | Details |
 | --- | --- |
-| Database DevOps | The **Database DevOps** workload is now generally available. See [Database DevOps in SQL Server Management Studio](database-devops.md). |
+| Database DevOps | The **Database DevOps** workload is now generally available. See [Projects in SQL Server Management Studio](build-database-projects-by-using-sql-server-management-studio.md). |
 | Fabric SQL Database | Added **Open in Fabric Portal** option when right-clicking a Fabric SQL Database connected in Object Explorer. |
 | GitHub Copilot Agent Mode | Agent Mode for GitHub Copilot in SSMS is now generally available. |
 | GitHub Copilot Agent Mode | Updated the bundled SQL Tools MCP server to version 3.0.17, adding the latest skills and access-mode improvements. Query execution permissions are now determined by the connected SQL account's permissions. |
@@ -580,7 +645,7 @@ For previous versions of SSMS, see:
 | Feature | Details |
 | --- | --- |
 | Connection Dialog | Added a new setting, **Automatically select the most recent connection**, in **Tools** > **Options** > **Connection Dialog** that controls the default behavior of the modern Connection Dialog when opened. |
-| Database DevOps (preview) | Added the **Database DevOps** workload (preview), that enables you to implement, manage, and collaborate on database changes using SQL database projects and source control. See [Database DevOps (preview) in SQL Server Management Studio](database-devops.md) and [Add support for SQL database projects](https://developercommunity.visualstudio.com/t/Add-support-for-SQL-database-projects/10864596). |
+| Database DevOps (preview) | Added the **Database DevOps** workload (preview), that enables you to implement, manage, and collaborate on database changes using SQL database projects and source control. See [Projects in SQL Server Management Studio](build-database-projects-by-using-sql-server-management-studio.md) and [Add support for SQL database projects](https://developercommunity.visualstudio.com/t/Add-support-for-SQL-database-projects/10864596). |
 | GitHub Copilot in SSMS | GitHub Copilot in SSMS is now generally available. |
 | GitHub Copilot in SSMS | Added support for user-level [custom instructions](github-copilot/custom-instructions.md). See [Copilot should support an Instructions file](https://developercommunity.visualstudio.com/t/Copilot-should-support-an-Instructions-f/10948846). |
 | Object Explorer | Added the ability to group database objects by schema to the Object Explorer. To toggle the setting on and off, select the icon for Group by schema (between the Refresh and Show Policy Health icons). Set the default behavior under **Tools** > **Options** > **SQL Server Object Explorer** > **General**. See [Group objects by schema in Object Explorer](https://developercommunity.visualstudio.com/t/Group-objects-by-schema-in-Object-Explor/10874158). |
