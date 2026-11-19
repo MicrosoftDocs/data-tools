@@ -123,6 +123,8 @@ items:
                 href: github-copilot/admin-controls.md
           - name: Scenarios
             href: github-copilot/scenarios.md
+          - name: Query performance tuning in SSMS GitHub Copilot Agent mode (preview)
+            href: github-copilot/query-performance-tuning-ssms-github-copilot.md
           - name: Best practices
             href: github-copilot/best-practices.md
           - name: Troubleshoot GitHub Copilot in SSMS
