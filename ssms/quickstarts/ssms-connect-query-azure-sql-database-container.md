@@ -4,7 +4,7 @@ description: Create a local Azure SQL Database container with the SQL Server Man
 author: vamahtani
 ms.author: vamahtani
 ms.reviewer: mbarickman
-ms.date: 11/08/2026
+ms.date: 11/19/2026
 ms.service: sql-server-management-studio
 ms.topic: quickstart
 ms.collection:
@@ -45,7 +45,7 @@ A container packages the Azure SQL Database engine so that a container runtime c
 
 The container runs the Azure SQL Database engine, not the SQL Server container image. It supports Azure SQL Database T-SQL and the Tabular Data Stream (TDS) protocol used by SQL drivers. `SERVERPROPERTY('EngineEdition')` returns `5`, identifying the Azure SQL Database engine. Native vectors, vector search, and JSON help you explore AI-ready data scenarios locally.
 
-The container doesn't provide the managed cloud service. Azure-managed backups, high availability, elastic pools, and serverless auto-pause are cloud capabilities, not local container features. For more information, see [What is the Azure SQL Database container?](https://microsoft.github.io/azure-sql-database-container/what-is-the-container.html)
+The container doesn't provide the managed cloud service. Azure-managed backups, high availability, elastic pools, and serverless auto-pause are cloud capabilities, not local container features. For more information, see [What is the Azure SQL Database container?](https://microsoft.github.io/azure-sql-dev-hub/#containers)
 
 ## Choose your development database
 
@@ -65,7 +65,7 @@ The container doesn't provide the managed cloud service. Azure-managed backups, 
 - Make a local TCP port available for the database connection. This quickstart uses `1433`; use your actual host port if it differs.
 - Have internet access for the initial image download. After the image is cached, local queries don't require a cloud database. External AI endpoints and other online services still require connectivity.
 
-For engine resource requirements, see [container prerequisites](https://microsoft.github.io/azure-sql-database-container/prerequisites.html). The engine's broader platform support doesn't change the Windows x64-only scope of the SSMS container provisioning experience. ARM isn't supported for this SSMS workflow.
+For engine resource requirements, see [container prerequisites](https://microsoft.github.io/azure-sql-dev-hub/container/get-started.html#prerequisites). The engine's broader platform support doesn't change the Windows x64-only scope of the SSMS container provisioning experience. ARM isn't supported for this SSMS workflow.
 
 ## Create an Azure SQL Database container
 
@@ -344,7 +344,7 @@ Stopping the container preserves it for a later session; removing it deletes its
 
 ## Related content
 
-- [What is the Azure SQL Database container?](https://microsoft.github.io/azure-sql-database-container/what-is-the-container.html)
-- [Azure SQL Database container known limitations](https://microsoft.github.io/azure-sql-database-container/known-limitations.html)
+- [What is the Azure SQL Database container?](https://microsoft.github.io/azure-sql-dev-hub/container/get-started.html#prerequisites)
+- [Azure SQL Database container known limitations](https://microsoft.github.io/azure-sql-dev-hub/container/faq.html#feature-availability)
 - [Connect and query Azure SQL Database in the cloud](ssms-connect-query-azure-sql-database.md)
 - [Query Editor (SQL Server Management Studio)](../f1-help/database-engine-query-editor-sql-server-management-studio.md)
